@@ -1,0 +1,265 @@
+{
+  "number": 12,
+  "title": "主語と述語動詞の一致",
+  "fullTitle": "第12章　主語と述語動詞の一致",
+  "problems": [
+    {
+      "id": "431",
+      "tags": [],
+      "question": "Both he and I (　　) to go to China.",
+      "rawAnswer": "②",
+      "ja": "彼も私も中国に行く予定だ。",
+      "type": "choice",
+      "choices": [
+        "am",
+        "are",
+        "be",
+        "is"
+      ],
+      "answerIndex": 1,
+      "en": "Both he and I are to go to China."
+    },
+    {
+      "id": "432",
+      "tags": [],
+      "question": "Not only Larry and David but also Peter (　　) come to the airport to see me off.",
+      "rawAnswer": "①",
+      "ja": "ラリーとデイビッドだけでなく，ピーターも私を見送りに空港に来てくれている。",
+      "type": "choice",
+      "choices": [
+        "has",
+        "have",
+        "is",
+        "are"
+      ],
+      "answerIndex": 0,
+      "en": "Not only Larry and David but also Peter has come to the airport to see me off."
+    },
+    {
+      "id": "433",
+      "tags": [],
+      "question": "Neither my friend nor her brothers (　　) our wedding.",
+      "rawAnswer": "①",
+      "ja": "私の友人も彼女の兄弟も私たちの結婚式に出ない予定だ。",
+      "type": "choice",
+      "choices": [
+        "are attending",
+        "attends",
+        "doesn't attend",
+        "is attending"
+      ],
+      "answerIndex": 0,
+      "en": "Neither my friend nor her brothers are attending our wedding."
+    },
+    {
+      "id": "434",
+      "tags": [],
+      "question": "Either she or I (　　) to go.",
+      "rawAnswer": "①",
+      "ja": "彼女か私のどちらかが行くことになるだろう。",
+      "type": "choice",
+      "choices": [
+        "am",
+        "is",
+        "can",
+        "may"
+      ],
+      "answerIndex": 0,
+      "en": "Either she or I am to go."
+    },
+    {
+      "id": "435",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Mr. Tanaka as ①<u>well</u> as you ②<u>were</u> transferred ③<u>to</u> ④<u>the</u> Sales Promotion Department.",
+      "rawAnswer": "②→was",
+      "ja": "あなただけでなく田中さんも販売促進部に異動になった。",
+      "type": "error",
+      "en": "Mr. Tanaka as well as you was transferred to the Sales Promotion Department.",
+      "answerIndex": 1,
+      "correction": "was"
+    },
+    {
+      "id": "436",
+      "tags": [],
+      "question": "Most of the students here (　　) with their families.",
+      "rawAnswer": "①",
+      "ja": "ここの学生たちのほとんどは家族と一緒に暮らしている。",
+      "type": "choice",
+      "choices": [
+        "live",
+        "living",
+        "lives",
+        "is living"
+      ],
+      "answerIndex": 0,
+      "en": "Most of the students here live with their families."
+    },
+    {
+      "id": "437",
+      "tags": [],
+      "question": "Three fifths of the work (　　) finished.",
+      "rawAnswer": "②",
+      "ja": "その仕事の５分の３は終わった。",
+      "type": "choice",
+      "choices": [
+        "had",
+        "was",
+        "were",
+        "would"
+      ],
+      "answerIndex": 1,
+      "en": "Three fifths of the work was finished."
+    },
+    {
+      "id": "438",
+      "tags": [],
+      "question": "①<u>Only</u> 20% of electric cables ②<u>is</u> buried ③<u>beneath the streets</u> in Tokyo, ④<u>compared with</u> 100% in London and Paris.",
+      "rawAnswer": "②→are",
+      "ja": "ロンドンやパリが100％であるのに比べて，東京で地中に埋設されている電線は20％にすぎない。",
+      "type": "error",
+      "en": "Only 20% of electric cables are buried beneath the streets in Tokyo, compared with 100% in London and Paris.",
+      "answerIndex": 1,
+      "correction": "are"
+    },
+    {
+      "id": "439",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Since the beginning of the twentieth century, there (　　) many political and social changes in Africa.",
+      "rawAnswer": "①",
+      "ja": "20世紀初頭から，アフリカでは多くの政治的，社会的変化があった。",
+      "type": "choice",
+      "choices": [
+        "have been",
+        "are",
+        "are being",
+        "has been"
+      ],
+      "answerIndex": 0,
+      "en": "Since the beginning of the twentieth century, there have been many political and social changes in Africa."
+    },
+    {
+      "id": "440",
+      "tags": [],
+      "question": "The larger a ①<u>market</u> is, the ②<u>more</u> competition there ③<u>are</u> in ④<u>that</u> market.",
+      "rawAnswer": "③→is",
+      "ja": "市場が拡大すれば，それだけその市場における競争が増える。",
+      "type": "error",
+      "en": "The larger a market is, the more competition there is in that market.",
+      "answerIndex": 2,
+      "correction": "is"
+    },
+    {
+      "id": "441",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The number of students who wish to continue their studies after they finish their four-year program at Meiji University (　　) increasing.",
+      "rawAnswer": "①",
+      "ja": "明治大学での４年間の課程を終えたあとも勉強を続けたいと思う学生の数は増えている。",
+      "type": "choice",
+      "choices": [
+        "is",
+        "have",
+        "has",
+        "are"
+      ],
+      "answerIndex": 0,
+      "en": "The number of students who wish to continue their studies after they finish their four-year program at Meiji University is increasing."
+    },
+    {
+      "id": "442",
+      "tags": [],
+      "question": "A number of people (　　) invited to the party.",
+      "rawAnswer": "②",
+      "ja": "たくさんの人々がそのパーティーに招待された。",
+      "type": "choice",
+      "choices": [
+        "was",
+        "were",
+        "have",
+        "had"
+      ],
+      "answerIndex": 1,
+      "en": "A number of people were invited to the party."
+    },
+    {
+      "id": "443",
+      "tags": [],
+      "question": "The United Nations (　　) established after World War II.",
+      "rawAnswer": "①",
+      "ja": "国連は第二次世界大戦後に設立された。",
+      "type": "choice",
+      "choices": [
+        "was",
+        "were",
+        "was being",
+        "have been"
+      ],
+      "answerIndex": 0,
+      "en": "The United Nations was established after World War II."
+    },
+    {
+      "id": "444",
+      "tags": [],
+      "question": "Fifty minutes (　　) to finish this test.",
+      "rawAnswer": "①",
+      "ja": "50分はこのテストを終えるのに十分な時間ではない。",
+      "type": "choice",
+      "choices": [
+        "isn't enough time",
+        "aren't enough time",
+        "isn't enough times",
+        "aren't enough times"
+      ],
+      "answerIndex": 0,
+      "en": "Fifty minutes isn't enough time to finish this test."
+    },
+    {
+      "id": "445",
+      "tags": [],
+      "question": "Make sure that the poor (　　) properly cared for.",
+      "rawAnswer": "①",
+      "ja": "貧しい人々がきちんと世話を受けられるようにしなさい。",
+      "type": "choice",
+      "choices": [
+        "are",
+        "has",
+        "have",
+        "is"
+      ],
+      "answerIndex": 0,
+      "en": "Make sure that the poor are properly cared for."
+    },
+    {
+      "id": "446",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The number ①<u>of</u> people who ②<u>was</u> injured ③<u>was</u> greater than they ④<u>had expected</u>.",
+      "rawAnswer": "②→were",
+      "ja": "負傷者の数は彼らの予測を上回っていた。",
+      "type": "error",
+      "en": "The number of people who were injured was greater than they had expected.",
+      "answerIndex": 1,
+      "correction": "were"
+    },
+    {
+      "id": "447",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The ①<u>decrease</u> in job opportunities in recent years ②<u>have been</u> a serious blow to ③<u>those young people who</u> wish to work ④<u>upon graduating from</u> high school.",
+      "rawAnswer": "②→has been",
+      "ja": "近年の雇用機会の減少は，高校卒業と同時に働きたいと願う若者たちにとって，深刻な打撃となっている。",
+      "type": "error",
+      "en": "The decrease in job opportunities in recent years has been a serious blow to those young people who wish to work upon graduating from high school.",
+      "answerIndex": 1,
+      "correction": "has been"
+    }
+  ]
+}

@@ -69,8 +69,8 @@ def normalize_answer_index(ans):
 
 
 def strip_fuyou(answer):
-    """'have been to Nara（gone不要）' -> 'have been to Nara'"""
-    return re.sub(r'[（(][^（()）]*不要[)）]', '', answer).strip()
+    """'have been to Nara（gone不要）' -> 'have been to Nara' (不足の注記も除去)"""
+    return re.sub(r'[（(][^（()）]*(?:不要|不足)[)）]', '', answer).strip()
 
 
 def fill_blanks(text, answer):
@@ -122,9 +122,17 @@ def parse_problem(num, lines):
             answer = line[1:].strip()
             continue
         if answer is None:
-            body.append(line)
+            # 「■次の(a)，(b)の文が...」のような指示行の ■ は除去
+            body.append(line.lstrip('■').strip() if line.startswith('■') else line)
         else:
             post.append(line)
+
+    if answer is None and body:
+        # '#' が抜けた '(a) any　(b) No' 形式の解答行を救済する
+        last = body[-1]
+        if re.match(r'^\(a\)', last) and '(b)' in last and not BLANK_RE.search(last):
+            answer = last
+            body = body[:-1]
 
     if answer is None:
         raise ValueError(f'問題 {num}: 解答行 (#...) が見つかりません')
@@ -191,13 +199,23 @@ def parse_problem(num, lines):
         note = re.search(r'[（(]([^（()）]*不要)[)）]', answer)
         if note:
             prob['note'] = note.group(1)
+        # 1語不足: 並べ替え UI で解けるように不足語をチップに加える
+        missing = re.search(r'[（(]([^（()）]*?)不足[)）]', answer)
+        if missing and missing.group(1).strip():
+            prob['pieces'].append(missing.group(1).strip())
+            prob['note'] = '1語不足の語もチップに含まれています'
     elif has_blank:
         prob['type'] = 'fill'
         prob['answer'] = answer
         en_lines = [l for l in en_q if BLANK_RE.search(l)]
         b_lines = [l for l in en_lines if l.startswith('(b)')]
         base = strip_ab_label(b_lines[0] if b_lines else (en_lines[0] if en_lines else ''))
-        prob['en'] = fill_blanks(base, answer) if base else ''
+        # '(a) any　(b) No' のように (a)(b) 個別の解答を持つ場合は (b) の文を採用
+        ab = re.match(r'\(a\)\s*(.+?)[ 　]+\(b\)\s*(.+)', answer)
+        if ab and b_lines:
+            prob['en'] = fill_blanks(base, ab.group(2).strip())
+        else:
+            prob['en'] = fill_blanks(base, answer) if base else ''
     else:
         prob['type'] = 'rewrite'
         prob['answer'] = answer

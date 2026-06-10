@@ -1,0 +1,334 @@
+{
+  "number": 14,
+  "title": "否定",
+  "fullTitle": "第14章　否定",
+  "problems": [
+    {
+      "id": "475",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "次の(a)，(b)の文がほぼ同じ意味になるように，それぞれの空所に適語を入れなさい。\nその店ではすべてのペットの持ち込みを禁止している。\n(a) They do not allow (　　) pets in the store.\n(b) (　　) pets are allowed in the store.",
+      "rawAnswer": "(a) any　 (b) No",
+      "ja": "次の(a)，(b)の文がほぼ同じ意味になるように，それぞれの空所に適語を入れなさい。\nその店ではすべてのペットの持ち込みを禁止している。",
+      "type": "fill",
+      "answer": "(a) any　 (b) No",
+      "en": "No pets are allowed in the store."
+    },
+    {
+      "id": "476",
+      "tags": [],
+      "question": "夏には誰もが浜辺へ行きたがるわけではない。\n(　　) wants to go to the beach in summer.",
+      "rawAnswer": "④",
+      "ja": "夏には誰もが浜辺へ行きたがるわけではない。",
+      "type": "choice",
+      "choices": [
+        "Nobody",
+        "Not anyone",
+        "Not all",
+        "Not everyone"
+      ],
+      "answerIndex": 3,
+      "en": "Not everyone wants to go to the beach in summer."
+    },
+    {
+      "id": "477",
+      "tags": [],
+      "question": "\"You can get this sofa in two different colors, tomato red or lemon yellow.\"\n\"Well, I don't really like (　　) of the colors. They're too bright.\"",
+      "rawAnswer": "④",
+      "ja": "「このソファにはトマトレッドとレモンイエローの２色がございます」\n「そうですね，私は両方ともあまり好きではありません。明るすぎます」",
+      "type": "choice",
+      "choices": [
+        "all",
+        "neither",
+        "both",
+        "either"
+      ],
+      "answerIndex": 3,
+      "en": "\"Well, I don't really like either of the colors. They're too bright.\""
+    },
+    {
+      "id": "478",
+      "tags": [],
+      "question": "\"Are your parents travelling with you?\"　\"No, not (　　) of them. Only my mother.\"",
+      "rawAnswer": "③",
+      "ja": "「ご両親はあなたと一緒に旅行に行かれるのですか」「いいえ，２人ともというわけではありません。母だけです」",
+      "type": "choice",
+      "choices": [
+        "each",
+        "either",
+        "both",
+        "one"
+      ],
+      "answerIndex": 2,
+      "en": "\"Are your parents travelling with you?\"　\"No, not both of them. Only my mother.\""
+    },
+    {
+      "id": "479",
+      "tags": [],
+      "question": "Watching TV is not (　　) wrong, but it is important for children to form the habit of thinking for themselves.",
+      "rawAnswer": "④",
+      "ja": "テレビを見ることは必ずしも悪いことではないが，子どもにとっては自分で考える習慣を形成することが重要だ。",
+      "type": "choice",
+      "choices": [
+        "every",
+        "anytime",
+        "absolute",
+        "necessarily"
+      ],
+      "answerIndex": 3,
+      "en": "Watching TV is not necessarily wrong, but it is important for children to form the habit of thinking for themselves."
+    },
+    {
+      "id": "480",
+      "tags": [],
+      "question": "They were not in the (　　) anxious about it.",
+      "rawAnswer": "④",
+      "ja": "彼らはそのことを少しも心配していなかった。",
+      "type": "choice",
+      "choices": [
+        "all",
+        "last",
+        "latest",
+        "least"
+      ],
+      "answerIndex": 3,
+      "en": "They were not in the least anxious about it."
+    },
+    {
+      "id": "481",
+      "tags": [],
+      "question": "My brother speaks so fast that sometimes I can't understand him at (　　).",
+      "rawAnswer": "①",
+      "ja": "兄［弟］はとても早口なので，私は彼の言っていることがまったく理解できないときがある。",
+      "type": "choice",
+      "choices": [
+        "all",
+        "time",
+        "every",
+        "any"
+      ],
+      "answerIndex": 0,
+      "en": "My brother speaks so fast that sometimes I can't understand him at all."
+    },
+    {
+      "id": "482",
+      "tags": [],
+      "question": "The data given by Dr. Watson was (　　) no means reliable.",
+      "rawAnswer": "②",
+      "ja": "ワトソン博士から出されるデータは決して信用できなかった。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "by",
+        "in",
+        "with"
+      ],
+      "answerIndex": 1,
+      "en": "The data given by Dr. Watson was by no means reliable."
+    },
+    {
+      "id": "483",
+      "tags": [
+        "発展"
+      ],
+      "question": "Jim has no ambition (　　). He is quite content to stick to the job he has.",
+      "rawAnswer": "②",
+      "ja": "ジムにはまったく野心というものがない。彼は今の仕事をやり続けることに完全に満足している。",
+      "type": "choice",
+      "choices": [
+        "whichever",
+        "whatever",
+        "whoever",
+        "whomever"
+      ],
+      "answerIndex": 1,
+      "en": "Jim has no ambition whatever. He is quite content to stick to the job he has."
+    },
+    {
+      "id": "484",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "My sister doesn't like chocolate, and I don't (　　).",
+      "rawAnswer": "①",
+      "ja": "私の姉［妹］はチョコレートが好きではないし，私もまた好きではない。",
+      "type": "choice",
+      "choices": [
+        "either",
+        "like",
+        "prefer",
+        "too"
+      ],
+      "answerIndex": 0,
+      "en": "My sister doesn't like chocolate, and I don't either."
+    },
+    {
+      "id": "485",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "\"I saw Penny at the lecture this afternoon.\"  \"Yeah. I was very surprised to see her. She was the (　　) person I expected to see there.\"",
+      "rawAnswer": "①",
+      "ja": "「今日の午後の講義でペニーを見かけたよ」「ああ。彼女を見てすごく驚いたよ。そこで会うとはまったく思っていなかったからね」",
+      "type": "choice",
+      "choices": [
+        "last",
+        "best",
+        "least",
+        "great"
+      ],
+      "answerIndex": 0,
+      "en": "\"I saw Penny at the lecture this afternoon.\" \"Yeah. I was very surprised to see her. She was the last person I expected to see there.\""
+    },
+    {
+      "id": "486",
+      "tags": [],
+      "question": "The new film proved to be (　　) but a failure. It was an instant success the world over.",
+      "rawAnswer": "①",
+      "ja": "その新作映画は決して失敗作ではないことがわかった。それは世界中で瞬く間に成功を収めた。",
+      "type": "choice",
+      "choices": [
+        "anything",
+        "everything",
+        "nothing",
+        "something"
+      ],
+      "answerIndex": 0,
+      "en": "The new film proved to be anything but a failure. It was an instant success the world over."
+    },
+    {
+      "id": "487",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "His writing is <u>far from</u> correct.",
+      "rawAnswer": "①",
+      "ja": "彼の文章は決して正確ではない。",
+      "type": "choice",
+      "choices": [
+        "anything but",
+        "all but",
+        "nothing but",
+        "something but"
+      ],
+      "answerIndex": 0,
+      "en": "His writing is far from correct."
+    },
+    {
+      "id": "488",
+      "tags": [
+        "発展"
+      ],
+      "question": "All right, I believe you're innocent. But they don't trust you. We have yet (　　) a witness who can prove your story is true.",
+      "rawAnswer": "④",
+      "ja": "いいでしょう，あなたが無罪だと信じます。でも彼らはあなたを信用していませんよ。私たちは，あなたの話が真実だと証明できる証人をまだ見つけていないのですから。",
+      "type": "choice",
+      "choices": [
+        "find",
+        "finding",
+        "found",
+        "to find"
+      ],
+      "answerIndex": 3,
+      "en": "All right, I believe you're innocent. But they don't trust you. We have yet to find a witness who can prove your story is true."
+    },
+    {
+      "id": "489",
+      "tags": [
+        "発展"
+      ],
+      "question": "私たちの計画がうまくいくかどうかは，まだわからない。\nIt is yet (　　) whether our project will succeed or not.",
+      "rawAnswer": "③",
+      "ja": "私たちの計画がうまくいくかどうかは，まだわからない。",
+      "type": "choice",
+      "choices": [
+        "unending",
+        "impossible",
+        "to be seen",
+        "unfinished"
+      ],
+      "answerIndex": 2,
+      "en": "It is yet to be seen whether our project will succeed or not."
+    },
+    {
+      "id": "490",
+      "tags": [
+        "発展"
+      ],
+      "question": "彼が成功するかどうかこれから先でないとわからない。\nIt (seen / succeed / remains / be / will / he / to / if).",
+      "rawAnswer": "remains to be seen if he will succeed",
+      "ja": "彼が成功するかどうかこれから先でないとわからない。",
+      "type": "ordering",
+      "answer": "remains to be seen if he will succeed",
+      "pieces": [
+        "seen",
+        "succeed",
+        "remains",
+        "be",
+        "will",
+        "he",
+        "to",
+        "if"
+      ],
+      "en": "It remains to be seen if he will succeed."
+    },
+    {
+      "id": "491",
+      "tags": [],
+      "question": "その部屋の暑さは耐えられないほどでした。\nThe heat (was / room / of / the / than / could / I / more) bear.",
+      "rawAnswer": "of the room was more than I could",
+      "ja": "その部屋の暑さは耐えられないほどでした。",
+      "type": "ordering",
+      "answer": "of the room was more than I could",
+      "pieces": [
+        "was",
+        "room",
+        "of",
+        "the",
+        "than",
+        "could",
+        "I",
+        "more"
+      ],
+      "en": "The heat of the room was more than I could bear."
+    },
+    {
+      "id": "492",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "私はこの本を読むたびに新しい意味を発見します。（１語不要）\nI (always / book / finding / meaning / never / new / read / this / without / a) in it.",
+      "rawAnswer": "never read this book without finding a new meaning（always不要）",
+      "ja": "私はこの本を読むたびに新しい意味を発見します。（１語不要）",
+      "type": "ordering",
+      "answer": "never read this book without finding a new meaning",
+      "pieces": [
+        "always",
+        "book",
+        "finding",
+        "meaning",
+        "never",
+        "new",
+        "read",
+        "this",
+        "without",
+        "a"
+      ],
+      "en": "I never read this book without finding a new meaning in it.",
+      "note": "always不要"
+    },
+    {
+      "id": "493",
+      "tags": [
+        "発展"
+      ],
+      "question": "雨が降れば必ず土砂降りになる。\nIt never rains (　　) it pours.",
+      "rawAnswer": "but",
+      "ja": "雨が降れば必ず土砂降りになる。",
+      "type": "fill",
+      "answer": "but",
+      "en": "It never rains but it pours."
+    }
+  ]
+}

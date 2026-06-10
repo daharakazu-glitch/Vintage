@@ -1,0 +1,500 @@
+{
+  "number": 13,
+  "title": "疑問文",
+  "fullTitle": "第13章　疑問文",
+  "problems": [
+    {
+      "id": "448",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) did you spend your summer vacation?",
+      "rawAnswer": "①",
+      "ja": "夏休みはどう過ごしましたか。",
+      "type": "choice",
+      "choices": [
+        "How",
+        "Who",
+        "What",
+        "Which"
+      ],
+      "answerIndex": 0,
+      "en": "How did you spend your summer vacation?"
+    },
+    {
+      "id": "449",
+      "tags": [
+        "基本"
+      ],
+      "question": "How (　　) these trousers cost?",
+      "rawAnswer": "④",
+      "ja": "このズボンはいくらですか。",
+      "type": "choice",
+      "choices": [
+        "many do",
+        "do",
+        "much are",
+        "much do"
+      ],
+      "answerIndex": 3,
+      "en": "How much do these trousers cost?"
+    },
+    {
+      "id": "450",
+      "tags": [],
+      "question": "\"How (　　) do you go abroad each year?\"  \"Two or three times.\"",
+      "rawAnswer": "③",
+      "ja": "「毎年どのくらいの頻度で海外に行きますか」「２，３回です」",
+      "type": "choice",
+      "choices": [
+        "much",
+        "many",
+        "often",
+        "long"
+      ],
+      "answerIndex": 2,
+      "en": "\"How often do you go abroad each year?\" \"Two or three times.\""
+    },
+    {
+      "id": "451",
+      "tags": [],
+      "question": "How (　　) is it from Osaka to Kyoto?",
+      "rawAnswer": "③",
+      "ja": "大阪から京都まではどのくらいの距離ですか。",
+      "type": "choice",
+      "choices": [
+        "long",
+        "often",
+        "far",
+        "near"
+      ],
+      "answerIndex": 2,
+      "en": "How far is it from Osaka to Kyoto?"
+    },
+    {
+      "id": "452",
+      "tags": [
+        "基本"
+      ],
+      "question": "このホテルからその湖まで行くのにどのくらいかかりますか。\n(how / hotel / to / it / from / take / this / go / does / long) to the lake?",
+      "rawAnswer": "How long does it take to go from this hotel",
+      "ja": "このホテルからその湖まで行くのにどのくらいかかりますか。",
+      "type": "ordering",
+      "answer": "How long does it take to go from this hotel",
+      "pieces": [
+        "how",
+        "hotel",
+        "to",
+        "it",
+        "from",
+        "take",
+        "this",
+        "go",
+        "does",
+        "long"
+      ],
+      "en": "How long does it take to go from this hotel to the lake?"
+    },
+    {
+      "id": "453",
+      "tags": [],
+      "question": "How (　　) does the talk-show begin?",
+      "rawAnswer": "②",
+      "ja": "あとどれくらいでそのトークショーが始まりますか。",
+      "type": "choice",
+      "choices": [
+        "quickly",
+        "soon",
+        "fast",
+        "long"
+      ],
+      "answerIndex": 1,
+      "en": "How soon does the talk-show begin?"
+    },
+    {
+      "id": "454",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I wonder (　　) between Osaka and Kanazawa.",
+      "rawAnswer": "③",
+      "ja": "大阪から金沢まではどれくらいの距離があるのだろう。",
+      "type": "choice",
+      "choices": [
+        "how long it is",
+        "how long is it",
+        "how far it is",
+        "how far is it"
+      ],
+      "answerIndex": 2,
+      "en": "I wonder how far it is between Osaka and Kanazawa."
+    },
+    {
+      "id": "455",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "エリザベスは，100年前に生まれていたら，人生はどのように違っていたかについてよく考えたものだ。\nElisabeth would often think about (been / different / her life / how / if / would have) she had been born 100 years ago.",
+      "rawAnswer": "how different her life would have been if",
+      "ja": "エリザベスは，100年前に生まれていたら，人生はどのように違っていたかについてよく考えたものだ。",
+      "type": "ordering",
+      "answer": "how different her life would have been if",
+      "pieces": [
+        "been",
+        "different",
+        "her life",
+        "how",
+        "if",
+        "would have"
+      ],
+      "en": "Elisabeth would often think about how different her life would have been if she had been born 100 years ago."
+    },
+    {
+      "id": "456",
+      "tags": [],
+      "question": "トムがいつニューヨークからパリに向けて出発するのか知りませんか。\n(do / know / when / you / will / Tom / leave) New York for Paris?",
+      "rawAnswer": "Do you know when Tom will leave",
+      "ja": "トムがいつニューヨークからパリに向けて出発するのか知りませんか。",
+      "type": "ordering",
+      "answer": "Do you know when Tom will leave",
+      "pieces": [
+        "do",
+        "know",
+        "when",
+        "you",
+        "will",
+        "Tom",
+        "leave"
+      ],
+      "en": "Do you know when Tom will leave New York for Paris?"
+    },
+    {
+      "id": "457",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "お酒は何からできていると思いますか。\n(do / from / is / made/ sake / think / what / you)?",
+      "rawAnswer": "What do you think sake is made from",
+      "ja": "お酒は何からできていると思いますか。",
+      "type": "ordering",
+      "answer": "What do you think sake is made from",
+      "pieces": [
+        "do",
+        "from",
+        "is",
+        "made",
+        "sake",
+        "think",
+        "what",
+        "you"
+      ],
+      "en": "What do you think sake is made from?"
+    },
+    {
+      "id": "458",
+      "tags": [],
+      "question": "\"Didn't you go there to see her yesterday?\"　\"(　　)  I met her there and we went to the party together.\"",
+      "rawAnswer": "④",
+      "ja": "「昨日，彼女に会いにそこに行かなかったのですか」「いや，行きました。そこで彼女と会って，一緒にパーティーに出かけました」",
+      "type": "choice",
+      "choices": [
+        "No, I didn't.",
+        "No, I did.",
+        "Yes, I didn't.",
+        "Yes, I did."
+      ],
+      "answerIndex": 3,
+      "en": "\"Didn't you go there to see her yesterday?\"　\"Yes, I did. I met her there and we went to the party together.\""
+    },
+    {
+      "id": "459",
+      "tags": [],
+      "question": "You're not the new student, (　　)?",
+      "rawAnswer": "③",
+      "ja": "あなたは新入生ではありませんよね。",
+      "type": "choice",
+      "choices": [
+        "aren't you",
+        "you aren't",
+        "are you",
+        "you are"
+      ],
+      "answerIndex": 2,
+      "en": "You're not the new student, are you?"
+    },
+    {
+      "id": "460",
+      "tags": [],
+      "question": "What he said is difficult to understand, (　　)?",
+      "rawAnswer": "①",
+      "ja": "彼の言ったことは理解しにくいですよね。",
+      "type": "choice",
+      "choices": [
+        "isn't it",
+        "wasn't it",
+        "didn't he",
+        "doesn't he"
+      ],
+      "answerIndex": 0,
+      "en": "What he said is difficult to understand, isn't it?"
+    },
+    {
+      "id": "461",
+      "tags": [],
+      "question": "Let's go on a picnic, (　　)?",
+      "rawAnswer": "②",
+      "ja": "ピクニックに出かけましょうよ。",
+      "type": "choice",
+      "choices": [
+        "shall you",
+        "shall we",
+        "will you",
+        "will we"
+      ],
+      "answerIndex": 1,
+      "en": "Let's go on a picnic, shall we?"
+    },
+    {
+      "id": "462",
+      "tags": [],
+      "question": "There is a big dog in your garden, (　　)?",
+      "rawAnswer": "④",
+      "ja": "あなたの家の庭には大きな犬がいますよね。",
+      "type": "choice",
+      "choices": [
+        "aren't they",
+        "isn't it",
+        "don't you",
+        "isn't there"
+      ],
+      "answerIndex": 3,
+      "en": "There is a big dog in your garden, isn't there?"
+    },
+    {
+      "id": "463",
+      "tags": [],
+      "question": "君がどこで生まれたのかということは重要ではない。\nIt (importance / from / no / where / you / is / come / of).",
+      "rawAnswer": "is of no importance where you come from",
+      "ja": "君がどこで生まれたのかということは重要ではない。",
+      "type": "ordering",
+      "answer": "is of no importance where you come from",
+      "pieces": [
+        "importance",
+        "from",
+        "no",
+        "where",
+        "you",
+        "is",
+        "come",
+        "of"
+      ],
+      "en": "It is of no importance where you come from."
+    },
+    {
+      "id": "464",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "この本を読めば，19世紀における教育がどのようなものであったかがわかる。（１語不要）\nThis book (was / what / like / education / us / how / shows) in the nineteenth century.",
+      "rawAnswer": "shows us what education was like（how不要）",
+      "ja": "この本を読めば，19世紀における教育がどのようなものであったかがわかる。（１語不要）",
+      "type": "ordering",
+      "answer": "shows us what education was like",
+      "pieces": [
+        "was",
+        "what",
+        "like",
+        "education",
+        "us",
+        "how",
+        "shows"
+      ],
+      "en": "This book shows us what education was like in the nineteenth century.",
+      "note": "how不要"
+    },
+    {
+      "id": "465",
+      "tags": [],
+      "question": "フランスに行くことを決めたときは，まだ海外生活とはどういうものかわからなかった。（１語不要）\nWhen I decided to go to France, I had no idea (like / what / would / was / it / be) to live abroad.",
+      "rawAnswer": "what it would be like（was 不要）",
+      "ja": "フランスに行くことを決めたときは，まだ海外生活とはどういうものかわからなかった。（１語不要）",
+      "type": "ordering",
+      "answer": "what it would be like",
+      "pieces": [
+        "like",
+        "what",
+        "would",
+        "was",
+        "it",
+        "be"
+      ],
+      "en": "When I decided to go to France, I had no idea what it would be like to live abroad.",
+      "note": "was 不要"
+    },
+    {
+      "id": "466",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "授業で話し合った記事について，どう思いますか。（１語不要）\n(article / how / the / you / what / do / that / about / think) we discussed in class?",
+      "rawAnswer": "What do you think about the article that（how不要）",
+      "ja": "授業で話し合った記事について，どう思いますか。（１語不要）",
+      "type": "ordering",
+      "answer": "What do you think about the article that",
+      "pieces": [
+        "article",
+        "how",
+        "the",
+        "you",
+        "what",
+        "do",
+        "that",
+        "about",
+        "think"
+      ],
+      "en": "What do you think about the article that we discussed in class?",
+      "note": "how不要"
+    },
+    {
+      "id": "467",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "母が買ってくれたマフラーはどうなったのだろうか。\nI (become / bought / has / mother / my / of / scarf / the / what / wonder) for me.",
+      "rawAnswer": "wonder what has become of the scarf my mother bought",
+      "ja": "母が買ってくれたマフラーはどうなったのだろうか。",
+      "type": "ordering",
+      "answer": "wonder what has become of the scarf my mother bought",
+      "pieces": [
+        "become",
+        "bought",
+        "has",
+        "mother",
+        "my",
+        "of",
+        "scarf",
+        "the",
+        "what",
+        "wonder"
+      ],
+      "en": "I wonder what has become of the scarf my mother bought for me."
+    },
+    {
+      "id": "468",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "どうして昨日のパーティーに来なかったの。\nHow (not / did / come / you) join the party yesterday?",
+      "rawAnswer": "come you did not",
+      "ja": "どうして昨日のパーティーに来なかったの。",
+      "type": "ordering",
+      "answer": "come you did not",
+      "pieces": [
+        "not",
+        "did",
+        "come",
+        "you"
+      ],
+      "en": "How come you did not join the party yesterday?"
+    },
+    {
+      "id": "469",
+      "tags": [],
+      "question": "(　　) did you come here today for?",
+      "rawAnswer": "①",
+      "ja": "今日は何のためにこちらに来たのですか。",
+      "type": "choice",
+      "choices": [
+        "What",
+        "Why",
+        "When",
+        "Where"
+      ],
+      "answerIndex": 0,
+      "en": "What did you come here today for?"
+    },
+    {
+      "id": "470",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "\"I don't know what this word means.\"　\"Why (　　) you consult a dictionary?\"",
+      "rawAnswer": "①",
+      "ja": "「この単語の意味がわかりません」「辞書をひいてみたらどうですか」",
+      "type": "choice",
+      "choices": [
+        "don't",
+        "do",
+        "shall",
+        "can"
+      ],
+      "answerIndex": 0,
+      "en": "\"I don't know what this word means.\"　\"Why don't you consult a dictionary?\""
+    },
+    {
+      "id": "471",
+      "tags": [],
+      "question": "一緒に映画を見に行きませんか。\n(see / to / why / movie / we / go / don't / a)?",
+      "rawAnswer": "Why don't we go to see a movie",
+      "ja": "一緒に映画を見に行きませんか。",
+      "type": "ordering",
+      "answer": "Why don't we go to see a movie",
+      "pieces": [
+        "see",
+        "to",
+        "why",
+        "movie",
+        "we",
+        "go",
+        "don't",
+        "a"
+      ],
+      "en": "Why don't we go to see a movie?"
+    },
+    {
+      "id": "472",
+      "tags": [],
+      "question": "It's time for another meeting. What (　　) about this matter again tomorrow?",
+      "rawAnswer": "②",
+      "ja": "そろそろ別の会議の時間です。明日もう一度この件について話し合いませんか。",
+      "type": "choice",
+      "choices": [
+        "for talking",
+        "about talking",
+        "talking",
+        "to talk"
+      ],
+      "answerIndex": 1,
+      "en": "It's time for another meeting. What about talking about this matter again tomorrow?"
+    },
+    {
+      "id": "473",
+      "tags": [],
+      "question": "(　　) knows the trouble we have experienced?\n＝Nobody knows the trouble we have experienced.",
+      "rawAnswer": "Who",
+      "ja": "私たちが経験した苦労をだれが知っているだろうか。\n私たちが経験した苦労はだれも知らない。",
+      "type": "fill",
+      "answer": "Who",
+      "en": "Who knows the trouble we have experienced?"
+    },
+    {
+      "id": "474",
+      "tags": [],
+      "question": "そんなことをして何の役に立つのでしょうか。\n(the / is / what / of / use) doing such a thing?",
+      "rawAnswer": "What is the use of",
+      "ja": "そんなことをして何の役に立つのでしょうか。",
+      "type": "ordering",
+      "answer": "What is the use of",
+      "pieces": [
+        "the",
+        "is",
+        "what",
+        "of",
+        "use"
+      ],
+      "en": "What is the use of doing such a thing?"
+    }
+  ]
+}

@@ -902,7 +902,7 @@
     {
       "id": "311",
       "tags": [],
-      "question": "■英文の意味に最も近いものを，①～④から一つ選べ。\nYou need to speak up so everyone can hear you.",
+      "question": "英文の意味に最も近いものを，①～④から一つ選べ。\nYou need to speak up so everyone can hear you.",
       "rawAnswer": "③",
       "ja": "みんなに聞こえるようにあなたは大声で話す必要がある。\n①あなたが言うことをみんな聞く準備ができている。\n②あなたの言うことにみんなが賛成するとは限らない。\n③あなたはもっと大声で話さなければならない。さもないと，人々は聞き取ることができないだろう。\n④他のみんなの考えることにあなたは耳を傾けるべきだ。",
       "type": "choice",
