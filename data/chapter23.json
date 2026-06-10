@@ -1,0 +1,1147 @@
+{
+  "number": 23,
+  "title": "形容詞・副詞を中心とするイディオム",
+  "fullTitle": "第23章　形容詞・副詞を中心とするイディオム",
+  "problems": [
+    {
+      "id": "1115",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Kazumi is entirely dependent (　　) her parents.",
+      "rawAnswer": "②",
+      "ja": "カズミは完全に両親に依存している。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "upon",
+        "at",
+        "of"
+      ],
+      "answerIndex": 1,
+      "en": "Kazumi is entirely dependent upon her parents."
+    },
+    {
+      "id": "1116",
+      "tags": [],
+      "question": "I'm a student but working part-time to be (　　) of my family.",
+      "rawAnswer": "④",
+      "ja": "私は学生だが，家族から自立するためにアルバイトをしている。",
+      "type": "choice",
+      "choices": [
+        "intelligent",
+        "international",
+        "interesting",
+        "independent"
+      ],
+      "answerIndex": 3,
+      "en": "I'm a student but working part-time to be independent of my family."
+    },
+    {
+      "id": "1117",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I am quite familiar (　　) the place you visited last week.",
+      "rawAnswer": "④",
+      "ja": "私は，あなたが先週訪れた場所についてかなり詳しい。",
+      "type": "choice",
+      "choices": [
+        "to",
+        "for",
+        "at",
+        "with"
+      ],
+      "answerIndex": 3,
+      "en": "I am quite familiar with the place you visited last week."
+    },
+    {
+      "id": "1118",
+      "tags": [],
+      "question": "The song is now very familiar (　　) us.",
+      "rawAnswer": "④",
+      "ja": "その歌は，現在では私たちにとてもよく知られている。",
+      "type": "choice",
+      "choices": [
+        "about",
+        "at",
+        "in",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "The song is now very familiar to us."
+    },
+    {
+      "id": "1119",
+      "tags": [],
+      "question": "Most students were very <u>concerned about</u> the results of their final examinations.",
+      "rawAnswer": "③",
+      "ja": "ほとんどの学生たちは期末試験の結果をとても気にしていた。",
+      "type": "choice",
+      "choices": [
+        "satisfied with",
+        "surprised at",
+        "worried about",
+        "interested in"
+      ],
+      "answerIndex": 2,
+      "en": "Most students were very concerned about the results of their final examinations."
+    },
+    {
+      "id": "1120",
+      "tags": [],
+      "question": "She established an organization (　　) child adoption.",
+      "rawAnswer": "②",
+      "ja": "彼女は養子縁組に関わる組織を設立した。",
+      "type": "choice",
+      "choices": [
+        "been concerned with",
+        "concerned with",
+        "connected",
+        "having connected"
+      ],
+      "answerIndex": 1,
+      "en": "She established an organization concerned with child adoption."
+    },
+    {
+      "id": "1121",
+      "tags": [],
+      "question": "We are (　　) with the most serious problem in our company's history.",
+      "rawAnswer": "④",
+      "ja": "わが社の歴史の中で，最も深刻な問題に直面している。",
+      "type": "choice",
+      "choices": [
+        "made",
+        "loved",
+        "catch up",
+        "faced"
+      ],
+      "answerIndex": 3,
+      "en": "We are faced with the most serious problem in our company's history."
+    },
+    {
+      "id": "1122",
+      "tags": [],
+      "question": "Drinking water must be (　　) from anything capable of causing disease.",
+      "rawAnswer": "①",
+      "ja": "飲用水は，病気の原因となる可能性のあるものは何も含んでいてはならない。",
+      "type": "choice",
+      "choices": [
+        "free",
+        "apart",
+        "lack",
+        "except"
+      ],
+      "answerIndex": 0,
+      "en": "Drinking water must be free from anything capable of causing disease."
+    },
+    {
+      "id": "1123",
+      "tags": [],
+      "question": "Jack is sure (　　) overcoming the difficulties he meets.",
+      "rawAnswer": "①",
+      "ja": "自分が直面する困難を克服することをジャックは確信している。",
+      "type": "choice",
+      "choices": [
+        "of",
+        "in",
+        "with",
+        "from"
+      ],
+      "answerIndex": 0,
+      "en": "Jack is sure of overcoming the difficulties he meets."
+    },
+    {
+      "id": "1124",
+      "tags": [],
+      "question": "Be (　　) to call me when you arrive at the airport.",
+      "rawAnswer": "④",
+      "ja": "空港に着いたら，必ず私に電話しなさい。",
+      "type": "choice",
+      "choices": [
+        "afraid",
+        "easy",
+        "necessary",
+        "sure"
+      ],
+      "answerIndex": 3,
+      "en": "Be sure to call me when you arrive at the airport."
+    },
+    {
+      "id": "1125",
+      "tags": [],
+      "question": "The boy was very conscious (　　) his girlfriend's attitude toward him that night.",
+      "rawAnswer": "③",
+      "ja": "その少年は，その晩の彼に対するガールフレンドの態度をかなり意識していた。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "in",
+        "of",
+        "to"
+      ],
+      "answerIndex": 2,
+      "en": "The boy was very conscious of his girlfriend's attitude toward him that night."
+    },
+    {
+      "id": "1126",
+      "tags": [],
+      "question": "This evidence indicates that the governor is (　　) in the scandal.",
+      "rawAnswer": "②",
+      "ja": "この証拠は，知事がそのスキャンダルに関与していることを示唆している。",
+      "type": "choice",
+      "choices": [
+        "attended",
+        "involved",
+        "determined",
+        "obsessed"
+      ],
+      "answerIndex": 1,
+      "en": "This evidence indicates that the governor is involved in the scandal."
+    },
+    {
+      "id": "1127",
+      "tags": [],
+      "question": "I am (　　) about Italian food.",
+      "rawAnswer": "③",
+      "ja": "私はイタリア料理が大好きだ。",
+      "type": "choice",
+      "choices": [
+        "like",
+        "weakness",
+        "crazy",
+        "fever"
+      ],
+      "answerIndex": 2,
+      "en": "I am crazy about Italian food."
+    },
+    {
+      "id": "1128",
+      "tags": [],
+      "question": "Most of the students are quite <u>keen on</u> studying English.",
+      "rawAnswer": "③",
+      "ja": "ほとんどの学生は英語の勉強に大変熱心だ。",
+      "type": "choice",
+      "choices": [
+        "pessimistic on",
+        "clever about",
+        "enthusiastic about",
+        "skilled on"
+      ],
+      "answerIndex": 2,
+      "en": "Most of the students are quite keen on studying English."
+    },
+    {
+      "id": "1129",
+      "tags": [],
+      "question": "He was (　　) in a book and didn't seem to hear me.",
+      "rawAnswer": "①",
+      "ja": "彼は本に夢中で私の声が聞こえないようだった。",
+      "type": "choice",
+      "choices": [
+        "absorbed",
+        "considered",
+        "estimated",
+        "obtained"
+      ],
+      "answerIndex": 0,
+      "en": "He was absorbed in a book and didn't seem to hear me."
+    },
+    {
+      "id": "1130",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I am not very good (　　) learning new things.",
+      "rawAnswer": "③",
+      "ja": "私は新しいことを学ぶのがあまり得意ではない。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "for",
+        "at",
+        "with"
+      ],
+      "answerIndex": 2,
+      "en": "I am not very good at learning new things."
+    },
+    {
+      "id": "1131",
+      "tags": [],
+      "question": "He seems <u>to know nothing about</u> the matter.",
+      "rawAnswer": "①",
+      "ja": "彼はそのことを何も知らないらしい。",
+      "type": "choice",
+      "choices": [
+        "to be ignorant of",
+        "to be indifferent to",
+        "to be uninterested in",
+        "to be accustomed to"
+      ],
+      "answerIndex": 0,
+      "en": "He seems to know nothing about the matter."
+    },
+    {
+      "id": "1132",
+      "tags": [],
+      "question": "We <u>were short of</u> food.",
+      "rawAnswer": "④",
+      "ja": "私たちは食料不足だった。",
+      "type": "choice",
+      "choices": [
+        "dumped",
+        "found",
+        "collected",
+        "lacked"
+      ],
+      "answerIndex": 3,
+      "en": "We were short of food."
+    },
+    {
+      "id": "1133",
+      "tags": [
+        "発展"
+      ],
+      "question": "All prices are (　　) to change.",
+      "rawAnswer": "①",
+      "ja": "すべての価格は変更されることがあります。",
+      "type": "choice",
+      "choices": [
+        "subject",
+        "verb",
+        "object",
+        "predicate"
+      ],
+      "answerIndex": 0,
+      "en": "All prices are subject to change."
+    },
+    {
+      "id": "1134",
+      "tags": [
+        "発展"
+      ],
+      "question": "The translation is quite (　　) to the original.",
+      "rawAnswer": "②",
+      "ja": "その翻訳は原文にきわめて忠実である。",
+      "type": "choice",
+      "choices": [
+        "honest",
+        "true",
+        "complete",
+        "familiar"
+      ],
+      "answerIndex": 1,
+      "en": "The translation is quite true to the original."
+    },
+    {
+      "id": "1135",
+      "tags": [
+        "基本"
+      ],
+      "question": "The new teacher is really popular (　　) his pupils.",
+      "rawAnswer": "①",
+      "ja": "その新しい先生は，彼の教え子たちに本当に人気があります。",
+      "type": "choice",
+      "choices": [
+        "with",
+        "between",
+        "for",
+        "in"
+      ],
+      "answerIndex": 0,
+      "en": "The new teacher is really popular with his pupils."
+    },
+    {
+      "id": "1136",
+      "tags": [
+        "発展"
+      ],
+      "question": "Watson was very ill and not (　　) to the long journey.",
+      "rawAnswer": "③",
+      "ja": "ワトソンは重病で，長旅には耐えられなかった。",
+      "type": "choice",
+      "choices": [
+        "able",
+        "easy",
+        "equal",
+        "likely"
+      ],
+      "answerIndex": 2,
+      "en": "Watson was very ill and not equal to the long journey."
+    },
+    {
+      "id": "1137",
+      "tags": [],
+      "question": "The work of a nurse is (　　) to the work of a doctor.",
+      "rawAnswer": "④",
+      "ja": "看護師の仕事は医者の仕事と似ている。",
+      "type": "choice",
+      "choices": [
+        "regular",
+        "same",
+        "resemble",
+        "similar"
+      ],
+      "answerIndex": 3,
+      "en": "The work of a nurse is similar to the work of a doctor."
+    },
+    {
+      "id": "1138",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The student was absent (　　) school yesterday.",
+      "rawAnswer": "①",
+      "ja": "その学生は昨日学校を休んだ。",
+      "type": "choice",
+      "choices": [
+        "from",
+        "to",
+        "in",
+        "for"
+      ],
+      "answerIndex": 0,
+      "en": "The student was absent from school yesterday."
+    },
+    {
+      "id": "1139",
+      "tags": [
+        "基本"
+      ],
+      "question": "To my surprise, the room was (　　) of flowers.",
+      "rawAnswer": "③",
+      "ja": "私が驚いたことに，その部屋は花でいっぱいだった。",
+      "type": "choice",
+      "choices": [
+        "filling",
+        "filled",
+        "full",
+        "fully"
+      ],
+      "answerIndex": 2,
+      "en": "To my surprise, the room was full of flowers."
+    },
+    {
+      "id": "1140",
+      "tags": [
+        "基本"
+      ],
+      "question": "This train is bound (　　) Central Station.",
+      "rawAnswer": "①",
+      "ja": "この電車は中央駅行きです。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "into",
+        "at",
+        "in"
+      ],
+      "answerIndex": 0,
+      "en": "This train is bound for Central Station."
+    },
+    {
+      "id": "1141",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Sorry, I'm a little late (　　) my appointment. It took time to find a parking space.",
+      "rawAnswer": "③",
+      "ja": "ごめんなさい，約束に少し遅れました。駐車場を見つけるのに手間取ってしまって。",
+      "type": "choice",
+      "choices": [
+        "about",
+        "at",
+        "for",
+        "with"
+      ],
+      "answerIndex": 2,
+      "en": "Sorry, I'm a little late for my appointment. It took time to find a parking space."
+    },
+    {
+      "id": "1142",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "その作家は教育に関する論評でよく知られている。\nThat author is well known (　　) his comments on education.",
+      "rawAnswer": "for",
+      "ja": "その作家は教育に関する論評でよく知られている。",
+      "type": "fill",
+      "answer": "for",
+      "en": "That author is well known for his comments on education."
+    },
+    {
+      "id": "1143",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We are responsible (　　) our own choices.",
+      "rawAnswer": "①",
+      "ja": "私たちは自分自身の選択に対して責任がある。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "by",
+        "of",
+        "at"
+      ],
+      "answerIndex": 0,
+      "en": "We are responsible for our own choices."
+    },
+    {
+      "id": "1144",
+      "tags": [],
+      "question": "When I was a child, I was (　　) of dogs.",
+      "rawAnswer": "①",
+      "ja": "子どものとき，私は犬が怖かった。",
+      "type": "choice",
+      "choices": [
+        "afraid",
+        "frightening",
+        "scary",
+        "terrible"
+      ],
+      "answerIndex": 0,
+      "en": "When I was a child, I was afraid of dogs."
+    },
+    {
+      "id": "1145",
+      "tags": [],
+      "question": "I'm very worried (　　) taking final exams next week.",
+      "rawAnswer": "③",
+      "ja": "私は来週の期末試験を受けることがとても心配だ。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "at",
+        "about",
+        "of"
+      ],
+      "answerIndex": 2,
+      "en": "I'm very worried about taking final exams next week."
+    },
+    {
+      "id": "1146",
+      "tags": [],
+      "question": "People were fed (　　) with the noise coming from the nearby nightclubs.",
+      "rawAnswer": "③",
+      "ja": "人々は近くのナイトクラブからもれてくる騒音にうんざりしていた。",
+      "type": "choice",
+      "choices": [
+        "back",
+        "down",
+        "up",
+        "through"
+      ],
+      "answerIndex": 2,
+      "en": "People were fed up with the noise coming from the nearby nightclubs."
+    },
+    {
+      "id": "1147",
+      "tags": [],
+      "question": "You should be (　　) of yourself for doing such a silly thing.",
+      "rawAnswer": "③",
+      "ja": "あなたはそんな愚かなことをした自分を恥じるべきだ。",
+      "type": "choice",
+      "choices": [
+        "afraid",
+        "angry",
+        "ashamed",
+        "delighted"
+      ],
+      "answerIndex": 2,
+      "en": "You should be ashamed of yourself for doing such a silly thing."
+    },
+    {
+      "id": "1148",
+      "tags": [],
+      "question": "Peter has always been jealous (　　) Tom's natural athletic ability.",
+      "rawAnswer": "③",
+      "ja": "ピーターはずっとトムの天性の運動能力をねたんできた。",
+      "type": "choice",
+      "choices": [
+        "from",
+        "by",
+        "of",
+        "for"
+      ],
+      "answerIndex": 2,
+      "en": "Peter has always been jealous of Tom's natural athletic ability."
+    },
+    {
+      "id": "1149",
+      "tags": [],
+      "question": "She is (　　) about keeping her room clean.",
+      "rawAnswer": "④",
+      "ja": "彼女は自分の部屋をきれいにしておくことについて，口うるさい。",
+      "type": "choice",
+      "choices": [
+        "care",
+        "exciting",
+        "fond",
+        "particular"
+      ],
+      "answerIndex": 3,
+      "en": "She is particular about keeping her room clean."
+    },
+    {
+      "id": "1150",
+      "tags": [],
+      "question": "Many young people these days seem to be <u>indifferent to</u> what is happening in the world.",
+      "rawAnswer": "④",
+      "ja": "最近の若者の多くは世界で起きている出来事に無関心のようだ。",
+      "type": "choice",
+      "choices": [
+        "common to",
+        "interested in",
+        "familiar with",
+        "unconcerned about"
+      ],
+      "answerIndex": 3,
+      "en": "Many young people these days seem to be indifferent to what is happening in the world."
+    },
+    {
+      "id": "1151",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Bill's schoolmates were proud (　　) him because he told the truth.",
+      "rawAnswer": "③",
+      "ja": "ビルの学友たちは，彼が真実を話したので，彼を誇りに思った。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "with",
+        "of",
+        "in"
+      ],
+      "answerIndex": 2,
+      "en": "Bill's schoolmates were proud of him because he told the truth."
+    },
+    {
+      "id": "1152",
+      "tags": [],
+      "question": "This book (　　) of essays written over the last twenty years.",
+      "rawAnswer": "①",
+      "ja": "この本は，過去20年間に書かれた随筆で構成されている。",
+      "type": "choice",
+      "choices": [
+        "is composed",
+        "is consisted",
+        "is completed",
+        "is comprehended"
+      ],
+      "answerIndex": 0,
+      "en": "This book is composed of essays written over the last twenty years."
+    },
+    {
+      "id": "1153",
+      "tags": [],
+      "question": "People who are constantly exposed (　　) dust may suffer from breathing difficulties.",
+      "rawAnswer": "③",
+      "ja": "絶えずほこりにさらされている人々は，呼吸困難に苦しんでいる可能性もある。",
+      "type": "choice",
+      "choices": [
+        "against",
+        "by",
+        "to",
+        "from"
+      ],
+      "answerIndex": 2,
+      "en": "People who are constantly exposed to dust may suffer from breathing difficulties."
+    },
+    {
+      "id": "1154",
+      "tags": [],
+      "question": "Wendy's father is opposed (　　) her going to Egypt by herself.",
+      "rawAnswer": "④",
+      "ja": "ウェンディーの父親は彼女がひとりでエジプトに行くことに反対している。",
+      "type": "choice",
+      "choices": [
+        "against",
+        "for",
+        "over",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "Wendy's father is opposed to her going to Egypt by herself."
+    },
+    {
+      "id": "1155",
+      "tags": [],
+      "question": "As I was just getting (　　) with classical music, I had much to ask the musician.",
+      "rawAnswer": "④",
+      "ja": "私はちょうどクラシック音楽に親しみ始めたところだったので，その音楽家に尋ねたいことがたくさんあった。",
+      "type": "choice",
+      "choices": [
+        "fair",
+        "good",
+        "know",
+        "acquainted"
+      ],
+      "answerIndex": 3,
+      "en": "As I was just getting acquainted with classical music, I had much to ask the musician."
+    },
+    {
+      "id": "1156",
+      "tags": [],
+      "question": "Based (　　) various legal systems and cultural values, the document is an agreed set of standards.",
+      "rawAnswer": "③",
+      "ja": "さまざまな法律制度や文化的価値観に基づき，その文書は合意された一連の基準となっている。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "for",
+        "on",
+        "to"
+      ],
+      "answerIndex": 2,
+      "en": "Based on various legal systems and cultural values, the document is an agreed set of standards."
+    },
+    {
+      "id": "1157",
+      "tags": [],
+      "question": "I am (　　) to know the results of the examination in chemistry.",
+      "rawAnswer": "①",
+      "ja": "私は化学の試験結果を知りたいと切望している。",
+      "type": "choice",
+      "choices": [
+        "anxious",
+        "good",
+        "kind",
+        "rude"
+      ],
+      "answerIndex": 0,
+      "en": "I am anxious to know the results of the examination in chemistry."
+    },
+    {
+      "id": "1158",
+      "tags": [],
+      "question": "The girls were <u>eager to show off their new dresses</u> when they went to their friend's birthday party.",
+      "rawAnswer": "④",
+      "ja": "少女たちは，友人の誕生日パーティーに行ったとき，しきりに自分の新しいドレスを見せびらかしたがった。",
+      "type": "choice",
+      "choices": [
+        "reluctant to show their new dresses",
+        "ready to try on their new dresses",
+        "pleased to sew their new dresses",
+        "happy to display their new dresses"
+      ],
+      "answerIndex": 3,
+      "en": "The girls were eager to show off their new dresses when they went to their friend's birthday party."
+    },
+    {
+      "id": "1159",
+      "tags": [],
+      "question": "Mary was (　　) to go to the party at first, but she found that it was fun.",
+      "rawAnswer": "④",
+      "ja": "メアリーは最初そのパーティーに行く気がしなかったのだが，行ってみると楽しかった。",
+      "type": "choice",
+      "choices": [
+        "pleasant",
+        "likely",
+        "willing",
+        "reluctant"
+      ],
+      "answerIndex": 3,
+      "en": "Mary was reluctant to go to the party at first, but she found that it was fun."
+    },
+    {
+      "id": "1160",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "There (　　) be a technological development in the near future.",
+      "rawAnswer": "①",
+      "ja": "近い将来，技術的発展が見られそうである。",
+      "type": "choice",
+      "choices": [
+        "is likely to",
+        "like",
+        "likely",
+        "likes to"
+      ],
+      "answerIndex": 0,
+      "en": "There is likely to be a technological development in the near future."
+    },
+    {
+      "id": "1161",
+      "tags": [],
+      "question": "Television and video games <u>are apt to</u> deprive children of reading time.",
+      "rawAnswer": "②",
+      "ja": "テレビやビデオゲームは子どもたちから読書時間を奪いがちである。",
+      "type": "choice",
+      "choices": [
+        "happen to",
+        "tend to",
+        "rob",
+        "call"
+      ],
+      "answerIndex": 1,
+      "en": "Television and video games are apt to deprive children of reading time."
+    },
+    {
+      "id": "1162",
+      "tags": [],
+      "question": "Parents <u>are bound to</u> look after their children.",
+      "rawAnswer": "③",
+      "ja": "両親は必ず自分の子どもたちの面倒を見なければならない。",
+      "type": "choice",
+      "choices": [
+        "are allowed to",
+        "are asked to",
+        "are obliged to",
+        "are offered to"
+      ],
+      "answerIndex": 2,
+      "en": "Parents are bound to look after their children."
+    },
+    {
+      "id": "1163",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "When you enter a Japanese house, you are (　　) off your shoes.",
+      "rawAnswer": "④",
+      "ja": "日本家屋に入るときは，靴を脱ぐことになっています。",
+      "type": "choice",
+      "choices": [
+        "necessary to take",
+        "needed taking",
+        "requested taking",
+        "supposed to take"
+      ],
+      "answerIndex": 3,
+      "en": "When you enter a Japanese house, you are supposed to take off your shoes."
+    },
+    {
+      "id": "1164",
+      "tags": [],
+      "question": "He owns his house. It seems he is quite <u>well off</u>.",
+      "rawAnswer": "②",
+      "ja": "彼は自分の家を所有している。彼はかなり裕福なようだ。",
+      "type": "choice",
+      "choices": [
+        "happy",
+        "rich",
+        "healthy",
+        "gorgeous"
+      ],
+      "answerIndex": 1,
+      "en": "He owns his house. It seems he is quite well off."
+    },
+    {
+      "id": "1165",
+      "tags": [],
+      "question": "彼は昔より暮らし向きが良くありません。\nHe is (　　) off now than he used to be.",
+      "rawAnswer": "④",
+      "ja": "彼は昔より暮らし向きが良くありません。",
+      "type": "choice",
+      "choices": [
+        "well",
+        "badly",
+        "better",
+        "worse"
+      ],
+      "answerIndex": 3,
+      "en": "He is worse off now than he used to be."
+    },
+    {
+      "id": "1166",
+      "tags": [],
+      "question": "You hung that picture (　　) down. The bottom part should be on top.",
+      "rawAnswer": "③",
+      "ja": "あなたはその絵画を逆さまに掛けましたね。本来は下の部分が上に来るのですよ。",
+      "type": "choice",
+      "choices": [
+        "being",
+        "forward",
+        "upside",
+        "way"
+      ],
+      "answerIndex": 2,
+      "en": "You hung that picture upside down. The bottom part should be on top."
+    },
+    {
+      "id": "1167",
+      "tags": [],
+      "question": "The girl is wearing her sweater inside (　　).",
+      "rawAnswer": "①",
+      "ja": "その少女はセーターを裏返しに着ている。",
+      "type": "choice",
+      "choices": [
+        "out",
+        "down",
+        "up",
+        "back"
+      ],
+      "answerIndex": 0,
+      "en": "The girl is wearing her sweater inside out."
+    },
+    {
+      "id": "1168",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "He said you should do it <u>right away</u>.",
+      "rawAnswer": "①",
+      "ja": "あなたはすぐにそれをやるべきだと彼は言った。",
+      "type": "choice",
+      "choices": [
+        "at once",
+        "correctly",
+        "occasionally",
+        "regularly"
+      ],
+      "answerIndex": 0,
+      "en": "He said you should do it right away."
+    },
+    {
+      "id": "1169",
+      "tags": [
+        "発展"
+      ],
+      "question": "I love to visit the park <u>now and then</u>.",
+      "rawAnswer": "①",
+      "ja": "ときどきその公園を訪れることが私は大好きである。",
+      "type": "choice",
+      "choices": [
+        "occasionally",
+        "often",
+        "always",
+        "constantly"
+      ],
+      "answerIndex": 0,
+      "en": "I love to visit the park now and then."
+    },
+    {
+      "id": "1170",
+      "tags": [
+        "発展"
+      ],
+      "question": "I don't go to the movies often, just <u>off and on</u>.",
+      "rawAnswer": "②",
+      "ja": "私は頻繁には映画に行きません。時おり行く程度です。",
+      "type": "choice",
+      "choices": [
+        "gradually",
+        "occasionally",
+        "frequently",
+        "usually"
+      ],
+      "answerIndex": 1,
+      "en": "I don't go to the movies often, just off and on."
+    },
+    {
+      "id": "1171",
+      "tags": [
+        "発展"
+      ],
+      "question": "シアトルでは，よく雨が降る。（１語不足）\nIn Seattle, (it / more / often / rains / than).",
+      "rawAnswer": "it rains more often than not（not不足）",
+      "ja": "シアトルでは，よく雨が降る。（１語不足）",
+      "type": "ordering",
+      "answer": "it rains more often than not",
+      "pieces": [
+        "it",
+        "more",
+        "often",
+        "rains",
+        "than",
+        "not"
+      ],
+      "en": "In Seattle, it rains more often than not.",
+      "note": "1語不足の語もチップに含まれています"
+    },
+    {
+      "id": "1172",
+      "tags": [
+        "発展"
+      ],
+      "question": "My daughter told her boyfriend <u>once and for all</u> that she wouldn't date him any more.",
+      "rawAnswer": "①",
+      "ja": "私の娘は，もういっしょにデートはしないとボーイフレンドにきっぱりと告げた。",
+      "type": "choice",
+      "choices": [
+        "for the last time",
+        "again and again",
+        "all the time",
+        "only once"
+      ],
+      "answerIndex": 0,
+      "en": "My daughter told her boyfriend once and for all that she wouldn't date him any more."
+    },
+    {
+      "id": "1173",
+      "tags": [],
+      "question": "Our horse-riding club has won all the competitions (　　).",
+      "rawAnswer": "②",
+      "ja": "私たちの乗馬クラブはこれまですべての競技会で勝ってきた。",
+      "type": "choice",
+      "choices": [
+        "wholly",
+        "so far",
+        "previously",
+        "first"
+      ],
+      "answerIndex": 1,
+      "en": "Our horse-riding club has won all the competitions so far."
+    },
+    {
+      "id": "1174",
+      "tags": [
+        "発展"
+      ],
+      "question": "(　　) little is known of the causes of the disease.",
+      "rawAnswer": "②",
+      "ja": "今までのところ，その病気の原因はほとんど知られていない。",
+      "type": "choice",
+      "choices": [
+        "As follows",
+        "As yet",
+        "As with",
+        "As much"
+      ],
+      "answerIndex": 1,
+      "en": "As yet little is known of the causes of the disease."
+    },
+    {
+      "id": "1175",
+      "tags": [],
+      "question": "The war is as (　　) as over.",
+      "rawAnswer": "③",
+      "ja": "その戦争は終わったも同然だ。",
+      "type": "choice",
+      "choices": [
+        "bad",
+        "early",
+        "good",
+        "well"
+      ],
+      "answerIndex": 2,
+      "en": "The war is as good as over."
+    },
+    {
+      "id": "1176",
+      "tags": [],
+      "question": "Our teacher, as (　　) as many of our classmates, will get to the party on time.",
+      "rawAnswer": "③",
+      "ja": "たくさんの私たちの同級生だけでなく，私たちの先生も時間通りにパーティー会場に着くだろう。",
+      "type": "choice",
+      "choices": [
+        "far",
+        "long",
+        "well",
+        "soon"
+      ],
+      "answerIndex": 2,
+      "en": "Our teacher, as well as many of our classmates, will get to the party on time."
+    },
+    {
+      "id": "1177",
+      "tags": [],
+      "question": "Sometimes my job is boring, but <u>by and large</u> I enjoy it.",
+      "rawAnswer": "②",
+      "ja": "自分の仕事が退屈なときもあるが，概して私は仕事を楽しんでいる。",
+      "type": "choice",
+      "choices": [
+        "above all",
+        "on the whole",
+        "in particular",
+        "now and then"
+      ],
+      "answerIndex": 1,
+      "en": "Sometimes my job is boring, but by and large I enjoy it."
+    },
+    {
+      "id": "1178",
+      "tags": [
+        "発展"
+      ],
+      "question": "It is <u>next to</u> impossible for him to see her off at the airport.",
+      "rawAnswer": "①",
+      "ja": "空港で彼女を見送るなど，彼にはほとんど不可能なことだ。",
+      "type": "choice",
+      "choices": [
+        "almost",
+        "exactly",
+        "soon",
+        "simply"
+      ],
+      "answerIndex": 0,
+      "en": "It is next to impossible for him to see her off at the airport."
+    },
+    {
+      "id": "1179",
+      "tags": [],
+      "question": "She speaks English <u>more or less</u>.",
+      "rawAnswer": "③",
+      "ja": "彼女は多少の英語は話す。",
+      "type": "choice",
+      "choices": [
+        "at most",
+        "at least",
+        "to some degree",
+        "at best"
+      ],
+      "answerIndex": 2,
+      "en": "She speaks English more or less."
+    },
+    {
+      "id": "1180",
+      "tags": [],
+      "question": "<u>Sooner or later</u> he'll see what is right and wrong.",
+      "rawAnswer": "④",
+      "ja": "遅かれ早かれ，彼にも善悪がわかるだろう。",
+      "type": "choice",
+      "choices": [
+        "At one time",
+        "On time",
+        "Behind time",
+        "In time"
+      ],
+      "answerIndex": 3,
+      "en": "Sooner or later he'll see what is right and wrong."
+    },
+    {
+      "id": "1181",
+      "tags": [
+        "発展"
+      ],
+      "question": "We haven't got the money to phone home, (　　) stay in a hotel.",
+      "rawAnswer": "④",
+      "ja": "私たちは，ホテルに泊まるお金は言うまでもなく，家に電話をするお金も持っていない。",
+      "type": "choice",
+      "choices": [
+        "much more",
+        "as well as",
+        "besides",
+        "let alone"
+      ],
+      "answerIndex": 3,
+      "en": "We haven't got the money to phone home, let alone stay in a hotel."
+    },
+    {
+      "id": "1182",
+      "tags": [
+        "発展"
+      ],
+      "question": "What (　　) club activities and studying, I couldn't travel during the summer vacation.",
+      "rawAnswer": "③",
+      "ja": "クラブ活動やら勉強やらで，私はこの夏休みに旅行に行けなかった。",
+      "type": "choice",
+      "choices": [
+        "keeps",
+        "on",
+        "with",
+        "was"
+      ],
+      "answerIndex": 2,
+      "en": "What with club activities and studying, I couldn't travel during the summer vacation."
+    }
+  ]
+}

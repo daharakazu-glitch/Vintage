@@ -1,0 +1,654 @@
+{
+  "number": 25,
+  "title": "前置詞の働きをするイディオム（群前置詞）",
+  "fullTitle": "第25章　前置詞の働きをするイディオム（群前置詞）",
+  "problems": [
+    {
+      "id": "1269",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The train was delayed 30 minutes (　　) a heavy rainfall.",
+      "rawAnswer": "①",
+      "ja": "その電車は大雨のため30分遅れた。",
+      "type": "choice",
+      "choices": [
+        "because of",
+        "in spite of",
+        "according to",
+        "apart from"
+      ],
+      "answerIndex": 0,
+      "en": "The train was delayed 30 minutes because of a heavy rainfall."
+    },
+    {
+      "id": "1270",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "He failed the examination three times due (　　) his laziness.",
+      "rawAnswer": "③",
+      "ja": "彼は自らの怠惰が原因で３回試験に落ちた。",
+      "type": "choice",
+      "choices": [
+        "on",
+        "of",
+        "to",
+        "in"
+      ],
+      "answerIndex": 2,
+      "en": "He failed the examination three times due to his laziness."
+    },
+    {
+      "id": "1271",
+      "tags": [
+        "基本"
+      ],
+      "question": "The meeting was canceled (　　) the bad weather.",
+      "rawAnswer": "④",
+      "ja": "その会議は悪天候のため中止になった。",
+      "type": "choice",
+      "choices": [
+        "according to",
+        "by means of",
+        "on behalf of",
+        "owing to"
+      ],
+      "answerIndex": 3,
+      "en": "The meeting was canceled owing to the bad weather."
+    },
+    {
+      "id": "1272",
+      "tags": [],
+      "question": "Farms are going bankrupt <u>on account of</u> the crisis in agriculture.",
+      "rawAnswer": "②",
+      "ja": "農業危機のせいで，農場が破綻しようとしている。",
+      "type": "choice",
+      "choices": [
+        "as a condition of",
+        "because of",
+        "in spite of",
+        "in regard to"
+      ],
+      "answerIndex": 1,
+      "en": "Farms are going bankrupt on account of the crisis in agriculture."
+    },
+    {
+      "id": "1273",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "(　　) her support, I was able to finish writing this report on time.",
+      "rawAnswer": "④",
+      "ja": "彼女の援助のおかげで，私は予定通りにこの報告書を書き上げることができた。",
+      "type": "choice",
+      "choices": [
+        "According to",
+        "Besides",
+        "Instead of",
+        "Thanks to"
+      ],
+      "answerIndex": 3,
+      "en": "Thanks to her support, I was able to finish writing this report on time."
+    },
+    {
+      "id": "1274",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) its advantages, there are hardly any companies that are willing to try the new system.",
+      "rawAnswer": "③",
+      "ja": "その利点にもかかわらず，新しい方式を試してみようという企業はほとんどない。",
+      "type": "choice",
+      "choices": [
+        "In favor of",
+        "In respect of",
+        "In spite of",
+        "Instead of"
+      ],
+      "answerIndex": 2,
+      "en": "In spite of its advantages, there are hardly any companies that are willing to try the new system."
+    },
+    {
+      "id": "1275",
+      "tags": [
+        "発展"
+      ],
+      "question": "(　　) all his faults, he is still a gentleman.",
+      "rawAnswer": "④",
+      "ja": "欠点はあるが，それでも彼は紳士である。",
+      "type": "choice",
+      "choices": [
+        "Up",
+        "As",
+        "Into",
+        "With"
+      ],
+      "answerIndex": 3,
+      "en": "With all his faults, he is still a gentleman."
+    },
+    {
+      "id": "1276",
+      "tags": [
+        "発展"
+      ],
+      "question": "<u>For all</u> his honesty, they say bad things about him.",
+      "rawAnswer": "①",
+      "ja": "彼が誠実であるにもかかわらず，彼らは彼のことを悪く言う。",
+      "type": "choice",
+      "choices": [
+        "In spite of",
+        "As for",
+        "Because of",
+        "But for"
+      ],
+      "answerIndex": 0,
+      "en": "For all his honesty, they say bad things about him."
+    },
+    {
+      "id": "1277",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Anyone may join the tennis club (　　) how well they can play the game.",
+      "rawAnswer": "②",
+      "ja": "試合でのプレーのうまさとは無関係に，だれでもそのテニスクラブに加入できる。",
+      "type": "choice",
+      "choices": [
+        "not regarding",
+        "regardless of",
+        "without regard",
+        "with regard to"
+      ],
+      "answerIndex": 1,
+      "en": "Anyone may join the tennis club regardless of how well they can play the game."
+    },
+    {
+      "id": "1278",
+      "tags": [],
+      "question": "He went to Paris (　　) of studying music.",
+      "rawAnswer": "③",
+      "ja": "彼は音楽を勉強する目的でパリに行った。",
+      "type": "choice",
+      "choices": [
+        "of need",
+        "on account",
+        "for the purpose",
+        "in honor"
+      ],
+      "answerIndex": 2,
+      "en": "He went to Paris for the purpose of studying music."
+    },
+    {
+      "id": "1279",
+      "tags": [],
+      "question": "We bought the (view / a / with / to / moving / cottage) there when we retire.",
+      "rawAnswer": "cottage with a view to moving",
+      "ja": "私たちは定年後にそこに移り住む目的で，その小さな家を買った。",
+      "type": "ordering",
+      "answer": "cottage with a view to moving",
+      "pieces": [
+        "view",
+        "a",
+        "with",
+        "to",
+        "moving",
+        "cottage"
+      ],
+      "en": "We bought the cottage with a view to moving there when we retire."
+    },
+    {
+      "id": "1280",
+      "tags": [],
+      "question": "Mr. Suzuki gave up smoking for (　　) of his health.",
+      "rawAnswer": "④",
+      "ja": "スズキさんは健康のためにタバコを吸うのをやめた。",
+      "type": "choice",
+      "choices": [
+        "the care",
+        "want",
+        "aid",
+        "the sake"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Suzuki gave up smoking for the sake of his health."
+    },
+    {
+      "id": "1281",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Water must be thought of (　　) terms of the chains of life it supports.",
+      "rawAnswer": "②",
+      "ja": "水は，水が支えている生物の連鎖の点から考えられなければならない。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "in",
+        "on",
+        "with"
+      ],
+      "answerIndex": 1,
+      "en": "Water must be thought of in terms of the chains of life it supports."
+    },
+    {
+      "id": "1282",
+      "tags": [],
+      "question": "<u>In relation to</u> this project, my opinion differs from yours.",
+      "rawAnswer": "③",
+      "ja": "この事業に関しては，私の意見はあなたと違う。",
+      "type": "choice",
+      "choices": [
+        "In accordance with",
+        "In comparison to",
+        "In regard to",
+        "In attendance at"
+      ],
+      "answerIndex": 2,
+      "en": "In relation to this project, my opinion differs from yours."
+    },
+    {
+      "id": "1283",
+      "tags": [],
+      "question": "<u>As regards</u> that, I cannot agree with you.",
+      "rawAnswer": "①",
+      "ja": "そのことに関しては，私はあなたに賛同できません。",
+      "type": "choice",
+      "choices": [
+        "Concerning",
+        "For",
+        "With",
+        "Against"
+      ],
+      "answerIndex": 0,
+      "en": "As regards that, I cannot agree with you."
+    },
+    {
+      "id": "1284",
+      "tags": [],
+      "question": "Some people complained, but <u>as for</u> me, I'm perfectly satisfied.",
+      "rawAnswer": "②",
+      "ja": "不満を漏らした人たちもいるが，私について言えば，完全に満足している。",
+      "type": "choice",
+      "choices": [
+        "as a result of",
+        "concerning",
+        "paying no attention to",
+        "coming from"
+      ],
+      "answerIndex": 1,
+      "en": "Some people complained, but as for me, I'm perfectly satisfied."
+    },
+    {
+      "id": "1285",
+      "tags": [],
+      "question": "Frank was very uncertain as (　　) whether it was the job for him.",
+      "rawAnswer": "④",
+      "ja": "フランクには，それが自分に合う仕事なのかどうか，まったく確信がなかった。",
+      "type": "choice",
+      "choices": [
+        "far",
+        "about",
+        "from",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "Frank was very uncertain as to whether it was the job for him."
+    },
+    {
+      "id": "1286",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Prof. Smith always divides people into six groups (　　) the tasks they can perform.",
+      "rawAnswer": "②",
+      "ja": "スミス教授は，人々がこなせる課題に応じて，常に彼らを６つのグループに分ける。",
+      "type": "choice",
+      "choices": [
+        "depending with",
+        "according to",
+        "in addition to",
+        "as well as"
+      ],
+      "answerIndex": 1,
+      "en": "Prof. Smith always divides people into six groups according to the tasks they can perform."
+    },
+    {
+      "id": "1287",
+      "tags": [],
+      "question": "(　　) to his expectations, Peter ran out of money halfway through his vacation.",
+      "rawAnswer": "③",
+      "ja": "ピーターの予想に反して，彼は休暇が半分過ぎたところでお金がなくなってしまった。",
+      "type": "choice",
+      "choices": [
+        "Unlike",
+        "Likely",
+        "Contrary",
+        "Following"
+      ],
+      "answerIndex": 2,
+      "en": "Contrary to his expectations, Peter ran out of money halfway through his vacation."
+    },
+    {
+      "id": "1288",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "(　　) from their house in Los Angeles, they also have an apartment in New York.",
+      "rawAnswer": "③",
+      "ja": "ロサンゼルスの家の他に，彼らはニューヨークにもアパートを持っている。",
+      "type": "choice",
+      "choices": [
+        "Short",
+        "About",
+        "Apart",
+        "Go"
+      ],
+      "answerIndex": 2,
+      "en": "Apart from their house in Los Angeles, they also have an apartment in New York."
+    },
+    {
+      "id": "1289",
+      "tags": [],
+      "question": "He was deaf to everything (　　) than what he wanted to hear.",
+      "rawAnswer": "①",
+      "ja": "彼は自分が聞きたいと思ったこと以外にはすべて耳を貸さなかった。",
+      "type": "choice",
+      "choices": [
+        "other",
+        "apart",
+        "instead",
+        "except"
+      ],
+      "answerIndex": 0,
+      "en": "He was deaf to everything other than what he wanted to hear."
+    },
+    {
+      "id": "1290",
+      "tags": [
+        "発展",
+        "超頻出"
+      ],
+      "question": "It's (　　) each of you to help make the project a success.",
+      "rawAnswer": "④",
+      "ja": "その事業の成功を手助けするのは君たちそれぞれの責任だ。",
+      "type": "choice",
+      "choices": [
+        "as to",
+        "on account of",
+        "on top of",
+        "up to"
+      ],
+      "answerIndex": 3,
+      "en": "It's up to each of you to help make the project a success."
+    },
+    {
+      "id": "1291",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) being a librarian, her brother works as a taxi driver.",
+      "rawAnswer": "④",
+      "ja": "図書館員であることに加えて，彼女の兄［弟］はタクシーの運転手としても働いている。",
+      "type": "choice",
+      "choices": [
+        "Due to",
+        "In respect of",
+        "In behalf of",
+        "In addition to"
+      ],
+      "answerIndex": 3,
+      "en": "In addition to being a librarian, her brother works as a taxi driver."
+    },
+    {
+      "id": "1292",
+      "tags": [],
+      "question": "In (　　) with Spanish, English spelling is rather difficult.",
+      "rawAnswer": "②",
+      "ja": "スペイン語に比べれば，英語のつづり方はかなり難しい。",
+      "type": "choice",
+      "choices": [
+        "association",
+        "comparison",
+        "reality",
+        "advance"
+      ],
+      "answerIndex": 1,
+      "en": "In comparison with Spanish, English spelling is rather difficult."
+    },
+    {
+      "id": "1293",
+      "tags": [
+        "発展"
+      ],
+      "question": "She won her position by (　　) of her hard work.",
+      "rawAnswer": "③",
+      "ja": "彼女は必死に働いたおかげで自分の地位を勝ち取った。",
+      "type": "choice",
+      "choices": [
+        "effort",
+        "agency",
+        "virtue",
+        "lack"
+      ],
+      "answerIndex": 2,
+      "en": "She won her position by virtue of her hard work."
+    },
+    {
+      "id": "1294",
+      "tags": [],
+      "question": "My friend is going to fly back to California (　　) Hawaii.",
+      "rawAnswer": "②",
+      "ja": "私の友人はハワイ経由でカリフォルニアに飛行機で戻ってくるつもりだ。",
+      "type": "choice",
+      "choices": [
+        "by means of",
+        "by way of",
+        "in line with",
+        "in the course of"
+      ],
+      "answerIndex": 1,
+      "en": "My friend is going to fly back to California by way of Hawaii."
+    },
+    {
+      "id": "1295",
+      "tags": [],
+      "question": "These are the ruins the professor was in search (　　).",
+      "rawAnswer": "②",
+      "ja": "これらはその教授が探していた遺跡だ。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "of",
+        "on",
+        "about"
+      ],
+      "answerIndex": 1,
+      "en": "These are the ruins the professor was in search of."
+    },
+    {
+      "id": "1296",
+      "tags": [],
+      "question": "Next Tuesday, a concert will be held (　　) the tenth anniversary of the founding of our school.",
+      "rawAnswer": "②",
+      "ja": "来週の火曜日，私たちの学校の設立10周年を記念してコンサートが催される。",
+      "type": "choice",
+      "choices": [
+        "owing to",
+        "in honor of",
+        "on behalf of",
+        "for the purpose of"
+      ],
+      "answerIndex": 1,
+      "en": "Next Tuesday, a concert will be held in honor of the tenth anniversary of the founding of our school."
+    },
+    {
+      "id": "1297",
+      "tags": [],
+      "question": "Most people in the room <u>were in favor of</u> the antismoking campaign.",
+      "rawAnswer": "②",
+      "ja": "その部屋にいたほとんどの人は，禁煙運動に賛成だった。",
+      "type": "choice",
+      "choices": [
+        "demanded",
+        "supported",
+        "joined in",
+        "donated to"
+      ],
+      "answerIndex": 1,
+      "en": "Most people in the room were in favor of the antismoking campaign."
+    },
+    {
+      "id": "1298",
+      "tags": [],
+      "question": "John wore a sweater <u>instead of</u> a jacket.",
+      "rawAnswer": "②",
+      "ja": "ジョンはジャケットの代わりにセーターを着ていた。",
+      "type": "choice",
+      "choices": [
+        "in praise of",
+        "in place of",
+        "in turn of",
+        "in case of"
+      ],
+      "answerIndex": 1,
+      "en": "John wore a sweater instead of a jacket."
+    },
+    {
+      "id": "1299",
+      "tags": [],
+      "question": "I gave my old computer to a friend and said to her, \"In (　　) of any trouble, you can always give me a ring.\"",
+      "rawAnswer": "②",
+      "ja": "私は友人に自分の古いコンピューターをあげて，「何か問題が起きたら，いつでも私に電話をしてね」と彼女に言った。",
+      "type": "choice",
+      "choices": [
+        "fate",
+        "case",
+        "front",
+        "fact"
+      ],
+      "answerIndex": 1,
+      "en": "I gave my old computer to a friend and said to her, \"In case of any trouble, you can always give me a ring.\""
+    },
+    {
+      "id": "1300",
+      "tags": [],
+      "question": "Mr. Tanaka is <u>in charge of</u> the new project.",
+      "rawAnswer": "④",
+      "ja": "田中さんはその新しい事業の責任者だ。",
+      "type": "choice",
+      "choices": [
+        "interested in",
+        "indifferent to",
+        "satisfied with",
+        "responsible for"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Tanaka is in charge of the new project."
+    },
+    {
+      "id": "1301",
+      "tags": [],
+      "question": "He made a speech (　　) the committee.",
+      "rawAnswer": "③",
+      "ja": "彼は委員会を代表して演説をした。",
+      "type": "choice",
+      "choices": [
+        "in place with",
+        "by way of",
+        "on behalf of",
+        "by means with"
+      ],
+      "answerIndex": 2,
+      "en": "He made a speech on behalf of the committee."
+    },
+    {
+      "id": "1302",
+      "tags": [],
+      "question": "I'm willing to give you some money in (　　) for your labor.",
+      "rawAnswer": "③",
+      "ja": "私はあなたの働きのお返しとして，いくらかお金をあげても構わないと思っています。",
+      "type": "choice",
+      "choices": [
+        "addition",
+        "favor",
+        "return",
+        "stead"
+      ],
+      "answerIndex": 2,
+      "en": "I'm willing to give you some money in return for your labor."
+    },
+    {
+      "id": "1303",
+      "tags": [],
+      "question": "(a) When I saw the Statue of Liberty, I was very impressed.\n(b) I was very impressed at the (　　) of the Statue of Liberty.",
+      "rawAnswer": "sight",
+      "ja": "(a) 自由の女神を見たとき，私はとても感銘を受けた。\n(b) 自由の女神を見て，私はとても感銘を受けた。",
+      "type": "fill",
+      "answer": "sight",
+      "en": "I was very impressed at the sight of the Statue of Liberty."
+    },
+    {
+      "id": "1304",
+      "tags": [],
+      "question": "書き出しにしたがって，空所に適語を入れなさい。\nこの地域の貧しい人々は完全に環境に左右されている。\nThe poor people in this area are completely at the (m　　) of their circumstances.",
+      "rawAnswer": "mercy",
+      "ja": "書き出しにしたがって，空所に適語を入れなさい。\nこの地域の貧しい人々は完全に環境に左右されている。",
+      "type": "fill",
+      "answer": "mercy",
+      "en": "The poor people in this area are completely at the mercy of their circumstances."
+    },
+    {
+      "id": "1305",
+      "tags": [],
+      "question": "We want to increase our manufacturing output, but not (　　) the expense of the environment.",
+      "rawAnswer": "①",
+      "ja": "私たちは工業生産高を増やしたいと思っているが，環境を犠牲にしてまでそうしたいとは思わない。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "on",
+        "for",
+        "from"
+      ],
+      "answerIndex": 0,
+      "en": "We want to increase our manufacturing output, but not at the expense of the environment."
+    },
+    {
+      "id": "1306",
+      "tags": [],
+      "question": "The students were walking (　　) the direction of the sea.",
+      "rawAnswer": "①",
+      "ja": "学生たちは海の方へ向かって歩いていた。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "for",
+        "to",
+        "toward"
+      ],
+      "answerIndex": 0,
+      "en": "The students were walking in the direction of the sea."
+    },
+    {
+      "id": "1307",
+      "tags": [],
+      "question": "(　　) of an emergency, please proceed calmly to the nearest exit.",
+      "rawAnswer": "③",
+      "ja": "緊急の場合には落ち着いて最寄りの出口へと進んでください。",
+      "type": "choice",
+      "choices": [
+        "At the event",
+        "At the place",
+        "In the event",
+        "In the place"
+      ],
+      "answerIndex": 2,
+      "en": "In the event of an emergency, please proceed calmly to the nearest exit."
+    }
+  ]
+}

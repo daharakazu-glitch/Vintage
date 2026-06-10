@@ -38,6 +38,8 @@ BLANK_RE = re.compile(r'(?:\(\s*[　\s]*\)|\(　+\)|（\s*[　\s]*）|（　+）
 BLANK_RUN_RE = re.compile(r'(?:[（(][　\s]*[)）][ 　]*){1,}')
 # 整序英作文の語群: 全角・半角どちらのカッコにも対応 (■579, ■656)
 ORDERING_RE = re.compile(r'[（(]([^()（）]*\s/\s[^()（）]*)[)）]')
+# 頭文字ヒント付き空所 '( l　)' (■1082 など)
+HINT_BLANK_RE = re.compile(r'\(\s*[a-z][　]+\)')
 
 # 元データの誤植の修正 (問題番号 -> 正しい解答)
 ANSWER_OVERRIDES = {
@@ -175,7 +177,7 @@ def parse_problem(num, lines):
         'ja': translation or '\n'.join(ja_q),
     }
 
-    has_blank = bool(BLANK_RE.search(question))
+    has_blank = bool(BLANK_RE.search(question) or HINT_BLANK_RE.search(question))
     # 誤り指摘は ①<u>...</u> 形式。番号なしの <u> は下線部言い換えなどの4択
     has_numbered_underline = bool(re.search(r'[①②③④]<u>', question))
     has_ordering = bool(ORDERING_RE.search(question))
@@ -219,6 +221,9 @@ def parse_problem(num, lines):
             # 「(　　) (　　) ... he would lose the game.」形式 (■495):
             # 語群行とは別の空所行に解答を流し込む
             sentence = BLANK_RUN_RE.sub(clean + ' ', blank_line, count=1)
+        elif ordering_line.startswith(('(a)', '(b)')):
+            # (a)/(b) 書き換え形式 (■1094) は語群を含む行のみを正解文に使う
+            sentence = ORDERING_RE.sub(lambda _: f' {clean} ', strip_ab_label(ordering_line))
         else:
             # 整序部分が複数行にまたがる場合 (■579) があるため英文行を結合して置換する
             # 「mother（have / ...」のようにカッコ前後に空白がない原文に備えて空白を補う
@@ -235,13 +240,25 @@ def parse_problem(num, lines):
     elif has_blank:
         prob['type'] = 'fill'
         prob['answer'] = answer
-        en_lines = [l for l in en_q if BLANK_RE.search(l)]
+        en_lines = [l for l in en_q if BLANK_RE.search(l) or HINT_BLANK_RE.search(l)]
         b_lines = [l for l in en_lines if l.startswith('(b)')]
         base = strip_ab_label(b_lines[0] if b_lines else (en_lines[0] if en_lines else ''))
         # '(a) any　(b) No' のように (a)(b) 個別の解答を持つ場合は (b) の文を採用
         ab = re.match(r'\(a\)\s*(.+?)[ 　]+\(b\)\s*(.+)', answer)
         if ab and b_lines:
             prob['en'] = fill_blanks(base, ab.group(2).strip())
+        elif base and HINT_BLANK_RE.search(base):
+            # 頭文字ヒント付き空所 '( i　) ( d　)' は解答の語を順に流し込む
+            words = answer.split('/')[0].split()
+            blanks = len(HINT_BLANK_RE.findall(base))
+            if len(words) == blanks:
+                it = iter(words)
+                prob['en'] = re.sub(r'\s+([,.!?;:])', r'\1', re.sub(
+                    r'  +', ' ', HINT_BLANK_RE.sub(lambda _: next(it), base))).strip()
+            else:
+                prob['en'] = re.sub(r'\s+([,.!?;:])', r'\1', re.sub(
+                    r'  +', ' ', HINT_BLANK_RE.sub(' '.join(words), base, count=1)
+                    .replace('( ', '').replace('　)', ''))).strip()
         else:
             prob['en'] = fill_blanks(base, answer) if base else ''
     else:
@@ -266,7 +283,8 @@ def parse_docx(path):
     current = []
     for line in lines:
         s = line.strip()
-        mm = re.match(r'^■(\d+)', s)
+        # \d は全角数字にもマッチするため半角に限定 (「■２文が…」のような指示行と区別)
+        mm = re.match(r'^■([0-9]+)', s)
         if mm:
             if current_num is not None:
                 problems.append(parse_problem(current_num, current))

@@ -1,0 +1,567 @@
+{
+  "number": 21,
+  "title": "副詞の語法",
+  "fullTitle": "第21章　副詞の語法",
+  "problems": [
+    {
+      "id": "813",
+      "tags": [
+        "基本"
+      ],
+      "question": "It was not clear in the instructions whether the light should be left (　　) or turned off before leaving the room.",
+      "rawAnswer": "②",
+      "ja": "部屋を退出する際，照明はつけたままでいいのか，それとも消すべきなのか，指示書では明らかでなかった。",
+      "type": "choice",
+      "choices": [
+        "behind",
+        "on",
+        "over",
+        "out"
+      ],
+      "answerIndex": 1,
+      "en": "It was not clear in the instructions whether the light should be left on or turned off before leaving the room."
+    },
+    {
+      "id": "814",
+      "tags": [
+        "基本"
+      ],
+      "question": "A couple of salespersons left messages while you were (　　).",
+      "rawAnswer": "②",
+      "ja": "あなたの外出中に，数名のセールスマンが伝言を残した。",
+      "type": "choice",
+      "choices": [
+        "aside",
+        "out",
+        "upon",
+        "far"
+      ],
+      "answerIndex": 1,
+      "en": "A couple of salespersons left messages while you were out."
+    },
+    {
+      "id": "815",
+      "tags": [
+        "基本"
+      ],
+      "question": "After classes are (　　), Hiroshi usually hurries to the gym to play basketball.",
+      "rawAnswer": "④",
+      "ja": "ヒロシは授業が終わったあとはたいてい，バスケットボールをするために体育館へ急いで行く。",
+      "type": "choice",
+      "choices": [
+        "down",
+        "off",
+        "on",
+        "over"
+      ],
+      "answerIndex": 3,
+      "en": "After classes are over, Hiroshi usually hurries to the gym to play basketball."
+    },
+    {
+      "id": "816",
+      "tags": [
+        "基本"
+      ],
+      "question": "Susan has (　　) arrived in London and will meet with her client on Friday afternoon.",
+      "rawAnswer": "④",
+      "ja": "スーザンはすでにロンドンに到着して，金曜日の午後には顧客と会うことになっている。",
+      "type": "choice",
+      "choices": [
+        "still",
+        "soon",
+        "yet",
+        "already"
+      ],
+      "answerIndex": 3,
+      "en": "Susan has already arrived in London and will meet with her client on Friday afternoon."
+    },
+    {
+      "id": "817",
+      "tags": [
+        "基本"
+      ],
+      "question": "Robert lost his watch yesterday and hasn't found it (　　).",
+      "rawAnswer": "②",
+      "ja": "ロバートは昨日，腕時計をなくし，まだ見つけていない。",
+      "type": "choice",
+      "choices": [
+        "anymore",
+        "yet",
+        "anyhow",
+        "already"
+      ],
+      "answerIndex": 1,
+      "en": "Robert lost his watch yesterday and hasn't found it yet."
+    },
+    {
+      "id": "818",
+      "tags": [
+        "基本"
+      ],
+      "question": "I was offered that job at the international company, but I (　　) can't believe it.",
+      "rawAnswer": "③",
+      "ja": "私は国際的企業での仕事を提示されたが，まだそのことが信じられない。",
+      "type": "choice",
+      "choices": [
+        "hardly",
+        "seldom",
+        "still",
+        "yet"
+      ],
+      "answerIndex": 2,
+      "en": "I was offered that job at the international company, but I still can't believe it."
+    },
+    {
+      "id": "819",
+      "tags": [
+        "基本"
+      ],
+      "question": "The accident happened three hours (　　).",
+      "rawAnswer": "①",
+      "ja": "その事故は３時間前に起きた。",
+      "type": "choice",
+      "choices": [
+        "ago",
+        "since",
+        "early",
+        "before"
+      ],
+      "answerIndex": 0,
+      "en": "The accident happened three hours ago."
+    },
+    {
+      "id": "820",
+      "tags": [],
+      "question": "①<u>In 1945</u>, when he ②<u>was born</u> in the U.S.A., the war ③<u>had ended</u> only a few months ④<u>ago</u>.",
+      "rawAnswer": "④→before",
+      "ja": "1945年に彼はアメリカで生まれたが，そのほんの数か月前に戦争が終わったところだった。",
+      "type": "error",
+      "en": "In 1945, when he was born in the U.S.A., the war had ended only a few months before.",
+      "answerIndex": 3,
+      "correction": "before"
+    },
+    {
+      "id": "821",
+      "tags": [],
+      "question": "I have never been to Liberty Tower (　　).",
+      "rawAnswer": "③",
+      "ja": "以前にリバティータワーに行ったことはありません。",
+      "type": "choice",
+      "choices": [
+        "prior",
+        "previous",
+        "before",
+        "ago"
+      ],
+      "answerIndex": 2,
+      "en": "I have never been to Liberty Tower before."
+    },
+    {
+      "id": "822",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "How can we get rid of this noise pollution?  We can (　　) put up with it anymore.",
+      "rawAnswer": "③",
+      "ja": "どうすればこの騒音公害を一掃できますかね。これ以上ほとんどがまんできませんよ。",
+      "type": "choice",
+      "choices": [
+        "easily",
+        "surely",
+        "hardly",
+        "kindly"
+      ],
+      "answerIndex": 2,
+      "en": "How can we get rid of this noise pollution? We can hardly put up with it anymore."
+    },
+    {
+      "id": "823",
+      "tags": [],
+      "question": "She (　　) calls her mother, because they always get into arguments about her marriage.",
+      "rawAnswer": "③",
+      "ja": "自分の結婚のことでいつも口論になるので，彼女はめったに母親に電話をしない。",
+      "type": "choice",
+      "choices": [
+        "always",
+        "often",
+        "seldom",
+        "sometimes"
+      ],
+      "answerIndex": 2,
+      "en": "She seldom calls her mother, because they always get into arguments about her marriage."
+    },
+    {
+      "id": "824",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Scarcely (　　) in the office knew what they were supposed to do when the alarm went off.",
+      "rawAnswer": "③",
+      "ja": "警報機が鳴ったとき，オフィスにいたほとんどの人間は何をしなければならないのかわからなかった。",
+      "type": "choice",
+      "choices": [
+        "everyone",
+        "no one",
+        "anyone",
+        "all of them"
+      ],
+      "answerIndex": 2,
+      "en": "Scarcely anyone in the office knew what they were supposed to do when the alarm went off."
+    },
+    {
+      "id": "825",
+      "tags": [],
+      "question": "最近は忙しいので，ゴルフに行く機会がほとんどない。\nThese days I'm ( busy / hardly / so / ever / I / that) have a chance to play golf.",
+      "rawAnswer": "so busy that I hardly ever",
+      "ja": "最近は忙しいので，ゴルフに行く機会がほとんどない。",
+      "type": "ordering",
+      "answer": "so busy that I hardly ever",
+      "pieces": [
+        "busy",
+        "hardly",
+        "so",
+        "ever",
+        "I",
+        "that"
+      ],
+      "en": "These days I'm so busy that I hardly ever have a chance to play golf."
+    },
+    {
+      "id": "826",
+      "tags": [],
+      "question": "I was (　　) involved in a car accident. I narrowly escaped being run over.",
+      "rawAnswer": "③",
+      "ja": "私はもう少しで自動車事故に巻き込まれるところだった。かろうじて車にひかれるのを免れた。",
+      "type": "choice",
+      "choices": [
+        "mostly",
+        "most",
+        "almost",
+        "more"
+      ],
+      "answerIndex": 2,
+      "en": "I was almost involved in a car accident. I narrowly escaped being run over."
+    },
+    {
+      "id": "827",
+      "tags": [
+        "基本"
+      ],
+      "question": "My friends and I ①<u>stayed</u> behind after school to ②<u>study</u> ③<u>until</u> it was time for us to go ④<u>to home</u>.",
+      "rawAnswer": "④→home",
+      "ja": "友人たちと僕は，帰宅時間になるまで，放課後残って勉強した。",
+      "type": "error",
+      "en": "My friends and I stayed behind after school to study until it was time for us to go home.",
+      "answerIndex": 3,
+      "correction": "home"
+    },
+    {
+      "id": "828",
+      "tags": [
+        "基本"
+      ],
+      "question": "I have ①<u>never</u> traveled ②<u>in abroad</u>, so I want ③<u>to</u> ④<u>someday</u>.",
+      "rawAnswer": "②→abroad",
+      "ja": "海外旅行の経験がないので，いつかしてみたい。",
+      "type": "error",
+      "en": "I have never traveled abroad, so I want to someday.",
+      "answerIndex": 1,
+      "correction": "abroad"
+    },
+    {
+      "id": "829",
+      "tags": [],
+      "question": "The musicians ①<u>in the orchestra</u> ②<u>were very tired</u> ③<u>after playing</u> ④<u>hardly</u> all afternoon.",
+      "rawAnswer": "④→hard",
+      "ja": "そのオーケストラの演奏家たちは，午後の間ずっと熱心に練習したあとで，とても疲れていた。",
+      "type": "error",
+      "en": "The musicians in the orchestra were very tired after playing hard all afternoon.",
+      "answerIndex": 3,
+      "correction": "hard"
+    },
+    {
+      "id": "830",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The bus arrived ①<u>lately</u> ②<u>on account of</u> rain, so we ③<u>missed</u> the train we were supposed ④<u>to take</u>.",
+      "rawAnswer": "①→late",
+      "ja": "雨でバスが遅れて着いたので，私たちは乗るはずだった電車を逃した。",
+      "type": "error",
+      "en": "The bus arrived late on account of rain, so we missed the train we were supposed to take.",
+      "answerIndex": 0,
+      "correction": "late"
+    },
+    {
+      "id": "831",
+      "tags": [],
+      "question": "While I ①<u>was driving</u> ②<u>home</u>, I ③<u>near</u> hit a deer that ④<u>suddenly</u> appeared on the road.",
+      "rawAnswer": "③→nearly",
+      "ja": "車で帰宅する途中に，突然道路に現れたシカを危うくひきそうになった。",
+      "type": "error",
+      "en": "While I was driving home, I nearly hit a deer that suddenly appeared on the road.",
+      "answerIndex": 2,
+      "correction": "nearly"
+    },
+    {
+      "id": "832",
+      "tags": [],
+      "question": "Polluted air drifts all over. It even rises (　　) above the earth.",
+      "rawAnswer": "①",
+      "ja": "汚染された空気がいたるところに漂っている。それは地表から高いところまで上昇さえする。",
+      "type": "choice",
+      "choices": [
+        "high",
+        "highly",
+        "height",
+        "tall"
+      ],
+      "answerIndex": 0,
+      "en": "Polluted air drifts all over. It even rises high above the earth."
+    },
+    {
+      "id": "833",
+      "tags": [],
+      "question": "<u>It was fortunate that</u> his injuries were only slight.",
+      "rawAnswer": "③",
+      "ja": "彼のケガが軽いものですんだのは幸運だった。",
+      "type": "choice",
+      "choices": [
+        "If it was fortunate",
+        "The fortunate is",
+        "Fortunately",
+        "If it was fortunately"
+      ],
+      "answerIndex": 2,
+      "en": "It was fortunate that his injuries were only slight."
+    },
+    {
+      "id": "834",
+      "tags": [],
+      "question": "You don't like this dress?  Why don't you try something (　　)?",
+      "rawAnswer": "②",
+      "ja": "あなたはこのドレスが気に入らないのですか。何か他のものを試してみてはいかがですか。",
+      "type": "choice",
+      "choices": [
+        "another",
+        "else",
+        "more",
+        "other"
+      ],
+      "answerIndex": 1,
+      "en": "You don't like this dress? Why don't you try something else?"
+    },
+    {
+      "id": "835",
+      "tags": [],
+      "question": "Mr. Suzuki recently (　　) exception to something his colleague said.",
+      "rawAnswer": "③",
+      "ja": "鈴木さんは最近，同僚の言ったことに腹を立てた。",
+      "type": "choice",
+      "choices": [
+        "takes",
+        "taken",
+        "took",
+        "will take"
+      ],
+      "answerIndex": 2,
+      "en": "Mr. Suzuki recently took exception to something his colleague said."
+    },
+    {
+      "id": "836",
+      "tags": [],
+      "question": "The price of this suit is (　　) for our budget.",
+      "rawAnswer": "①",
+      "ja": "私たちの予算からすると，このスーツの値段はあまりにも高すぎる。",
+      "type": "choice",
+      "choices": [
+        "much too high",
+        "too high much",
+        "high too much",
+        "too much high"
+      ],
+      "answerIndex": 0,
+      "en": "The price of this suit is much too high for our budget."
+    },
+    {
+      "id": "837",
+      "tags": [],
+      "question": "It was twenty years ago when she saw him (　　).",
+      "rawAnswer": "②",
+      "ja": "彼女が彼と初めて会ったのは20年前のことだった。",
+      "type": "choice",
+      "choices": [
+        "at first",
+        "first",
+        "firstly",
+        "first-time"
+      ],
+      "answerIndex": 1,
+      "en": "It was twenty years ago when she saw him first."
+    },
+    {
+      "id": "838",
+      "tags": [],
+      "question": "(　　) I thought he was shy, but then I discovered he was just not interested in other people.",
+      "rawAnswer": "②",
+      "ja": "最初は彼のことを内気だと思ったが，そのあと，彼が単に他人に無関心だということがわかった。",
+      "type": "choice",
+      "choices": [
+        "For the first time",
+        "At first",
+        "Firstly",
+        "For a start"
+      ],
+      "answerIndex": 1,
+      "en": "At first I thought he was shy, but then I discovered he was just not interested in other people."
+    },
+    {
+      "id": "839",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We must go now; (　　) we won't be in time for the concert.",
+      "rawAnswer": "②",
+      "ja": "そろそろ出かけなくては。そうしないと私たちはコンサートに間に合いません。",
+      "type": "choice",
+      "choices": [
+        "because",
+        "otherwise",
+        "therefore",
+        "unless"
+      ],
+      "answerIndex": 1,
+      "en": "We must go now; otherwise we won't be in time for the concert."
+    },
+    {
+      "id": "840",
+      "tags": [
+        "発展"
+      ],
+      "question": "The bedroom is a bit too small, (　　) the house is satisfactory.",
+      "rawAnswer": "②",
+      "ja": "寝室が少し狭すぎるが，その他の点でその家は申し分ない。",
+      "type": "choice",
+      "choices": [
+        "but instead",
+        "but otherwise",
+        "now that",
+        "unless that"
+      ],
+      "answerIndex": 1,
+      "en": "The bedroom is a bit too small, but otherwise the house is satisfactory."
+    },
+    {
+      "id": "841",
+      "tags": [],
+      "question": "Jane is rather dishonest; (　　), we should be careful about what she says.",
+      "rawAnswer": "②",
+      "ja": "ジェーンはかなり信用できない。だから，彼女の発言には注意すべきだ。",
+      "type": "choice",
+      "choices": [
+        "however",
+        "therefore",
+        "meanwhile",
+        "moreover"
+      ],
+      "answerIndex": 1,
+      "en": "Jane is rather dishonest; therefore, we should be careful about what she says."
+    },
+    {
+      "id": "842",
+      "tags": [],
+      "question": "At first glance the idea appears to be attractive; (　　), there are some problems to be solved.",
+      "rawAnswer": "②",
+      "ja": "一見するとその考えは魅力的に思える。しかし，解決すべき問題がいくつかある。",
+      "type": "choice",
+      "choices": [
+        "therefore",
+        "however",
+        "furthermore",
+        "in addition"
+      ],
+      "answerIndex": 1,
+      "en": "At first glance the idea appears to be attractive; however, there are some problems to be solved."
+    },
+    {
+      "id": "843",
+      "tags": [],
+      "question": "It has snowed heavily for a week. <u>Consequently</u>, all the transportation in the city has stopped.",
+      "rawAnswer": "②",
+      "ja": "１週間大雪が降った。その結果，市内のすべての交通機関が止まった。",
+      "type": "choice",
+      "choices": [
+        "Unfortunately",
+        "As a result",
+        "In the meantime",
+        "Nevertheless"
+      ],
+      "answerIndex": 1,
+      "en": "It has snowed heavily for a week. Consequently, all the transportation in the city has stopped."
+    },
+    {
+      "id": "844",
+      "tags": [],
+      "question": "Cathy was completely exhausted after the long business trip; (　　), she went to work early in the morning.",
+      "rawAnswer": "②",
+      "ja": "キャシーは長期の出張で疲労困憊していた。それにもかかわらず，彼女は朝早く出勤した。",
+      "type": "choice",
+      "choices": [
+        "accordingly",
+        "nevertheless",
+        "otherwise",
+        "therefore"
+      ],
+      "answerIndex": 1,
+      "en": "Cathy was completely exhausted after the long business trip; nevertheless, she went to work early in the morning."
+    },
+    {
+      "id": "845",
+      "tags": [],
+      "question": "Her new skirt was too expensive. <u>Besides</u>, it looked terrible.",
+      "rawAnswer": "②",
+      "ja": "彼女の新しいスカートは値段が高すぎた。その上，見た目もひどかった。",
+      "type": "choice",
+      "choices": [
+        "However",
+        "Moreover",
+        "Otherwise",
+        "Nearly"
+      ],
+      "answerIndex": 1,
+      "en": "Her new skirt was too expensive. Besides, it looked terrible."
+    },
+    {
+      "id": "846",
+      "tags": [],
+      "question": "I like spring, <u>especially</u> at dawn.",
+      "rawAnswer": "①",
+      "ja": "私は春が好きだ。特に明け方が好きだ。",
+      "type": "choice",
+      "choices": [
+        "above all",
+        "for good",
+        "in fact",
+        "of course"
+      ],
+      "answerIndex": 0,
+      "en": "I like spring, especially at dawn."
+    },
+    {
+      "id": "847",
+      "tags": [],
+      "question": "Because I didn't have enough time to go to Hawaii for my vacation, I went to Shikoku (　　).",
+      "rawAnswer": "④",
+      "ja": "休暇でハワイに行くだけの時間がなかったので，その代わりに四国に行った。",
+      "type": "choice",
+      "choices": [
+        "also",
+        "at least",
+        "though",
+        "instead"
+      ],
+      "answerIndex": 3,
+      "en": "Because I didn't have enough time to go to Hawaii for my vacation, I went to Shikoku instead."
+    }
+  ]
+}

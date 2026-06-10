@@ -1,0 +1,5311 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage学習アプリ (第22章　動詞を中心とするイディオム)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Tinos:wght@700&display=swap');
+
+        body {
+            background-color: #166534;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .font-english {
+            font-family: 'Tinos', 'Times New Roman', serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-primary { background-color: #16a34a; color: white; }
+        .btn-primary:hover { background-color: #15803d; }
+        .btn-secondary { background-color: #6b7280; color: white; }
+        .btn-secondary:hover { background-color: #4b5563; }
+
+        .tag-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            margin-right: 4px;
+        }
+
+        .choice-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 8px 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background: white;
+            transition: all 0.15s;
+        }
+
+        .choice-btn:hover:not(:disabled) { border-color: #86efac; background: #f0fdf4; }
+        .choice-btn.correct { border-color: #22c55e; background: #dcfce7; }
+        .choice-btn.wrong { border-color: #ef4444; background: #fee2e2; }
+
+        .piece-chip {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 3px;
+            border: 2px solid #86efac;
+            border-radius: 9999px;
+            background: #f0fdf4;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.15s;
+            user-select: none;
+        }
+
+        .piece-chip:hover { background: #bbf7d0; }
+        .piece-chip.used { opacity: 0.25; pointer-events: none; }
+
+        .built-chip {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 3px;
+            border: 2px solid #16a34a;
+            border-radius: 9999px;
+            background: #dcfce7;
+            cursor: pointer;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .answer-area { display: none; }
+        .problem-item.show-answer .answer-area { display: block; }
+
+        .problem-item.problem-mastered {
+            background-color: #fefce8 !important;
+            border-color: #facc15 !important;
+        }
+
+        u { text-underline-offset: 4px; }
+    </style>
+</head>
+
+<body class="text-gray-800 m-0 p-0" style="height: 100vh; height: 100dvh; overflow: hidden;">
+
+    <div id="main-scroll-wrapper" style="height: 100%; width: 100%; overflow-y: auto; display: flex; flex-direction: column; position: relative;">
+
+        <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-4xl flex-grow flex flex-col">
+            <header class="flex-shrink-0 text-center mb-4 bg-green-800 p-4 rounded-xl shadow-lg">
+                <h1 class="text-2xl md:text-3xl font-bold text-white">Vintage 学習アプリ</h1>
+                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第22章　動詞を中心とするイディオム</h2>
+            </header>
+
+            <main class="flex-grow bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-lg mb-2">
+                <div class="flex justify-between items-center mb-6">
+                    <a href="index.html" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg shadow transition-colors text-sm">
+                        ← ダッシュボード
+                    </a>
+                    <button id="start-quiz-btn"
+                        class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">
+                        ランダムテスト
+                    </button>
+                </div>
+
+                <div class="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg mb-2">選択した問題でPDFを作成</h3>
+                    <p class="text-gray-600 mb-4 text-sm">学習したい問題のチェックボックスを選択してから、下のボタンを押してください。</p>
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" id="select-all-checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-500">
+                        <label for="select-all-checkbox" class="ml-2 block text-sm text-gray-900">すべて選択 / 解除</label>
+                    </div>
+                    <div class="flex justify-center">
+                        <button id="open-pdf-modal-btn"
+                            class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">PDFダウンロードの種類を選択</button>
+                    </div>
+                </div>
+
+                <div id="problem-list" class="space-y-6">
+                    <!-- Problems will be populated by JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Message/Score Modal -->
+    <div id="message-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div id="message-content" class="bg-white p-8 rounded-lg shadow-xl text-center max-w-lg mx-4">
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-40 p-4">
+        <div class="bg-white w-full max-w-2xl p-8 rounded-2xl shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button id="close-quiz-btn"
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <div id="quiz-content"></div>
+        </div>
+    </div>
+
+    <!-- PDF Download Modal -->
+    <div id="pdf-modal"
+        class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center z-50">
+        <div class="relative mx-auto p-5 border w-11/12 md:w-1/2 lg:w-1/3 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">ダウンロードするPDFの種類を選択</h3>
+                <div class="mt-4 px-7 py-3 space-y-3">
+                    <button id="download-list-btn" class="btn btn-primary w-full justify-start">1. 完全な問題リスト（解答・和訳付き）</button>
+                    <button id="download-choice-btn" class="btn btn-primary w-full justify-start">2. 4択・誤り指摘テスト</button>
+                    <button id="download-blank-btn" class="btn btn-primary w-full justify-start">3. 空所補充テスト（選択肢なし）</button>
+                    <button id="download-ordering-btn" class="btn btn-primary w-full justify-start">4. 整序英作文テスト</button>
+                    <button id="download-composition-btn" class="btn btn-primary w-full justify-start">5. 和文英訳テスト</button>
+                    <button id="download-mixed-btn" class="btn btn-primary w-full justify-start">6. ランダム混合テスト</button>
+                </div>
+                <div class="items-center px-4 py-3">
+                    <button id="close-modal-btn" class="btn btn-secondary w-full">キャンセル</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- App State ---
+        const chapterData = [
+ {
+  "id": "848",
+  "tags": [
+   "基本"
+  ],
+  "question": "I cannot (　　) a kimono by myself, so my mother always helps me.",
+  "rawAnswer": "①",
+  "ja": "私は着物を自分で着ることができないので，母がいつも私を手伝ってくれる。",
+  "type": "choice",
+  "choices": [
+   "put on",
+   "wear",
+   "wearing",
+   "wear out"
+  ],
+  "answerIndex": 0,
+  "en": "I cannot put on a kimono by myself, so my mother always helps me."
+ },
+ {
+  "id": "849",
+  "tags": [],
+  "question": "That hat is just the color I've been looking for. May I (　　), please?",
+  "rawAnswer": "②",
+  "ja": "あの帽子はまさに私が探していた色です。かぶってみてもいいですか。",
+  "type": "choice",
+  "choices": [
+   "do away with it",
+   "try it on",
+   "tear it off",
+   "search it"
+  ],
+  "answerIndex": 1,
+  "en": "That hat is just the color I've been looking for. May I try it on, please?"
+ },
+ {
+  "id": "850",
+  "tags": [
+   "基本"
+  ],
+  "question": "Please <u>take off</u> your shoes after you step into the entrance.",
+  "rawAnswer": "②",
+  "ja": "玄関に入りましたら靴をお脱ぎください。",
+  "type": "choice",
+  "choices": [
+   "repair",
+   "remove",
+   "regain",
+   "restrict"
+  ],
+  "answerIndex": 1,
+  "en": "Please take off your shoes after you step into the entrance."
+ },
+ {
+  "id": "851",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "He had to <u>turn down</u> his employees' request.",
+  "rawAnswer": "④",
+  "ja": "彼は従業員たちの要求を断らなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "accept",
+   "criticize",
+   "follow",
+   "reject"
+  ],
+  "answerIndex": 3,
+  "en": "He had to turn down his employees' request."
+ },
+ {
+  "id": "852",
+  "tags": [
+   "基本"
+  ],
+  "question": "Hey, I love this song. Could you turn (　　) the volume, please?",
+  "rawAnswer": "③",
+  "ja": "ねえ，僕はこの曲大好きだな。音を大きくしてもらえるかい。",
+  "type": "choice",
+  "choices": [
+   "out",
+   "into",
+   "up",
+   "from"
+  ],
+  "answerIndex": 2,
+  "en": "Hey, I love this song. Could you turn up the volume, please?"
+ },
+ {
+  "id": "853",
+  "tags": [
+   "基本"
+  ],
+  "question": "Please be sure to (　　) the gas before you leave the apartment.",
+  "rawAnswer": "①",
+  "ja": "アパートを出る前に，必ずガスを止めるようにしてください。",
+  "type": "choice",
+  "choices": [
+   "turn off",
+   "stop off",
+   "blow out",
+   "shut out"
+  ],
+  "answerIndex": 0,
+  "en": "Please be sure to turn off the gas before you leave the apartment."
+ },
+ {
+  "id": "854",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "The game has been <u>put off</u> due to the bad weather.",
+  "rawAnswer": "④",
+  "ja": "悪天候のため，その試合は延期された。",
+  "type": "choice",
+  "choices": [
+   "cancelled",
+   "expected",
+   "announced",
+   "postponed"
+  ],
+  "answerIndex": 3,
+  "en": "The game has been put off due to the bad weather."
+ },
+ {
+  "id": "855",
+  "tags": [],
+  "question": "The trip to Disneyland has been <u>called off</u> because of the weather.",
+  "rawAnswer": "④",
+  "ja": "天候が原因で，ディズニーランドへ出かけるのは中止になった。",
+  "type": "choice",
+  "choices": [
+   "postponed",
+   "designed",
+   "planned",
+   "cancelled"
+  ],
+  "answerIndex": 3,
+  "en": "The trip to Disneyland has been called off because of the weather."
+ },
+ {
+  "id": "856",
+  "tags": [],
+  "question": "Within a few days, I managed to <u>pick up</u> a little French.",
+  "rawAnswer": "②",
+  "ja": "数日間で，私は多少のフランス語をなんとか習得した。",
+  "type": "choice",
+  "choices": [
+   "load",
+   "learn",
+   "hear of",
+   "speak up"
+  ],
+  "answerIndex": 1,
+  "en": "Within a few days, I managed to pick up a little French."
+ },
+ {
+  "id": "857",
+  "tags": [],
+  "question": "Would you (　　) me up at the station at six?",
+  "rawAnswer": "②",
+  "ja": "６時に駅まで私を車で迎えに来てもらえますか。",
+  "type": "choice",
+  "choices": [
+   "bring",
+   "pick",
+   "catch",
+   "take"
+  ],
+  "answerIndex": 1,
+  "en": "Would you pick me up at the station at six?"
+ },
+ {
+  "id": "858",
+  "tags": [],
+  "question": "Cathy <u>picked out</u> a good book to give to her brother as a graduation gift.",
+  "rawAnswer": "④",
+  "ja": "キャシーは卒業祝いとして兄［弟］にあげるのにぴったりの本を選んだ。",
+  "type": "choice",
+  "choices": [
+   "delivered",
+   "hid",
+   "published",
+   "selected"
+  ],
+  "answerIndex": 3,
+  "en": "Cathy picked out a good book to give to her brother as a graduation gift."
+ },
+ {
+  "id": "859",
+  "tags": [],
+  "question": "Please (　　) away your things when you've finished using them.",
+  "rawAnswer": "④",
+  "ja": "使い終わったら，片付けてください。",
+  "type": "choice",
+  "choices": [
+   "go",
+   "get",
+   "pass",
+   "put"
+  ],
+  "answerIndex": 3,
+  "en": "Please put away your things when you've finished using them."
+ },
+ {
+  "id": "860",
+  "tags": [],
+  "question": "Every month I try to <u>put away</u> some money.",
+  "rawAnswer": "③",
+  "ja": "毎月，私はいくらかのお金を蓄えるよう努めている。",
+  "type": "choice",
+  "choices": [
+   "rescue",
+   "spend",
+   "save",
+   "make"
+  ],
+  "answerIndex": 2,
+  "en": "Every month I try to put away some money."
+ },
+ {
+  "id": "861",
+  "tags": [],
+  "question": "John is a hard worker and he makes it a rule to <u>put aside</u> 20 percent of his income every month.",
+  "rawAnswer": "①",
+  "ja": "ジョンは働き者で，毎月の収入の20パーセントを貯金するようにしている。",
+  "type": "choice",
+  "choices": [
+   "save",
+   "spend",
+   "send",
+   "score"
+  ],
+  "answerIndex": 0,
+  "en": "John is a hard worker and he makes it a rule to put aside 20 percent of his income every month."
+ },
+ {
+  "id": "862",
+  "tags": [],
+  "question": "I'm planning to <u>set up</u> a joint venture with them.",
+  "rawAnswer": "②",
+  "ja": "私は彼らとの共同事業を設立するつもりだ。",
+  "type": "choice",
+  "choices": [
+   "come over",
+   "establish",
+   "get out",
+   "make in"
+  ],
+  "answerIndex": 1,
+  "en": "I'm planning to set up a joint venture with them."
+ },
+ {
+  "id": "863",
+  "tags": [
+   "発展"
+  ],
+  "question": "Charley made (　　) a very good excuse about why he was late for class.",
+  "rawAnswer": "②",
+  "ja": "チャーリーは，なぜ授業に遅刻したのかについて，とてもうまい言い訳をでっちあげた。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "up",
+   "off",
+   "away"
+  ],
+  "answerIndex": 1,
+  "en": "Charley made up a very good excuse about why he was late for class."
+ },
+ {
+  "id": "864",
+  "tags": [],
+  "question": "The book contained many hard words, and Ann could not <u>make out</u> what the writer meant.",
+  "rawAnswer": "①",
+  "ja": "その本はたくさんの難解な語を含んでいたので，アンには作家の意図が理解できなかった。",
+  "type": "choice",
+  "choices": [
+   "understand",
+   "create",
+   "show",
+   "produce"
+  ],
+  "answerIndex": 0,
+  "en": "The book contained many hard words, and Ann could not make out what the writer meant."
+ },
+ {
+  "id": "865",
+  "tags": [],
+  "question": "Can you <u>figure out</u> this word?",
+  "rawAnswer": "②",
+  "ja": "この単語の意味がわかりますか。",
+  "type": "choice",
+  "choices": [
+   "hear",
+   "understand",
+   "imagine",
+   "calculate"
+  ],
+  "answerIndex": 1,
+  "en": "Can you figure out this word?"
+ },
+ {
+  "id": "866",
+  "tags": [],
+  "question": "I'm going to work out this math problem all by myself.",
+  "rawAnswer": "③",
+  "ja": "私はこの数学の問題を独力で解くつもりだ。",
+  "type": "choice",
+  "choices": [
+   "soak",
+   "apply",
+   "solve",
+   "decline"
+  ],
+  "answerIndex": 2,
+  "en": "I'm going to work out this math problem all by myself."
+ },
+ {
+  "id": "867",
+  "tags": [
+   "基本"
+  ],
+  "question": "Margaret was asked to <u>take on</u> the additional work at the office.",
+  "rawAnswer": "③",
+  "ja": "マーガレットは職場で追加の仕事を引き受けるよう頼まれた。",
+  "type": "choice",
+  "choices": [
+   "confuse",
+   "stop",
+   "undertake",
+   "remove"
+  ],
+  "answerIndex": 2,
+  "en": "Margaret was asked to take on the additional work at the office."
+ },
+ {
+  "id": "868",
+  "tags": [],
+  "question": "We will have to <u>take on</u> someone to do his work while he is away.",
+  "rawAnswer": "④",
+  "ja": "私たちは，彼がいない間，彼の仕事をしてくれる人間を雇わなければならないだろう。",
+  "type": "choice",
+  "choices": [
+   "dismiss",
+   "hide",
+   "remove",
+   "employ"
+  ],
+  "answerIndex": 3,
+  "en": "We will have to take on someone to do his work while he is away."
+ },
+ {
+  "id": "869",
+  "tags": [
+   "基本"
+  ],
+  "question": "It took a whole day to <u>put out</u> the fire.",
+  "rawAnswer": "③",
+  "ja": "火を消すのに丸１日かかった。",
+  "type": "choice",
+  "choices": [
+   "light",
+   "start",
+   "extinguish",
+   "cancel"
+  ],
+  "answerIndex": 2,
+  "en": "It took a whole day to put out the fire."
+ },
+ {
+  "id": "870",
+  "tags": [],
+  "question": "It is hard to <u>keep up</u> that kind of lifestyle.",
+  "rawAnswer": "②",
+  "ja": "そのような生活スタイルを維持するのは大変だ。",
+  "type": "choice",
+  "choices": [
+   "destroy",
+   "maintain",
+   "analyze",
+   "hide"
+  ],
+  "answerIndex": 1,
+  "en": "It is hard to keep up that kind of lifestyle."
+ },
+ {
+  "id": "871",
+  "tags": [],
+  "question": "He called up his former boss.",
+  "rawAnswer": "②",
+  "ja": "彼はかつての上司に電話した。",
+  "type": "choice",
+  "choices": [
+   "consulted",
+   "rang",
+   "shouted at",
+   "visited"
+  ],
+  "answerIndex": 1,
+  "en": "He called up his former boss."
+ },
+ {
+  "id": "872",
+  "tags": [],
+  "question": "I will gladly <u>back up</u> your suggestion.",
+  "rawAnswer": "④",
+  "ja": "あなたの提案をよろこんで支持しますよ。",
+  "type": "choice",
+  "choices": [
+   "satisfy",
+   "supply",
+   "provide",
+   "support"
+  ],
+  "answerIndex": 3,
+  "en": "I will gladly back up your suggestion."
+ },
+ {
+  "id": "873",
+  "tags": [],
+  "question": "John has (　　) his smoking from thirty to ten cigarettes a day.",
+  "rawAnswer": "①",
+  "ja": "ジョンは１日当たりの喫煙本数を30本から10本に減らした。",
+  "type": "choice",
+  "choices": [
+   "cut down",
+   "put up",
+   "shaken up",
+   "turned down"
+  ],
+  "answerIndex": 0,
+  "en": "John has cut down his smoking from thirty to ten cigarettes a day."
+ },
+ {
+  "id": "874",
+  "tags": [
+   "基本"
+  ],
+  "question": "Unknown words should be (　　) in a dictionary.",
+  "rawAnswer": "①",
+  "ja": "知らない単語は辞書で調べるべきだ。",
+  "type": "choice",
+  "choices": [
+   "looked up",
+   "checked with",
+   "consulted by",
+   "discovered from"
+  ],
+  "answerIndex": 0,
+  "en": "Unknown words should be looked up in a dictionary."
+ },
+ {
+  "id": "875",
+  "tags": [],
+  "question": "I want to <u>look over</u> the letter before it goes out.",
+  "rawAnswer": "③",
+  "ja": "発送する前に，私はその手紙に目を通したい。",
+  "type": "choice",
+  "choices": [
+   "put off",
+   "finish up",
+   "examine",
+   "add to"
+  ],
+  "answerIndex": 2,
+  "en": "I want to look over the letter before it goes out."
+ },
+ {
+  "id": "876",
+  "tags": [
+   "基本"
+  ],
+  "question": "This is a big decision, so please take time to (　　) it over.",
+  "rawAnswer": "④",
+  "ja": "これは重大な決断なので，時間をとってじっくり考えてください。",
+  "type": "choice",
+  "choices": [
+   "approve",
+   "insist",
+   "take",
+   "think"
+  ],
+  "answerIndex": 3,
+  "en": "This is a big decision, so please take time to think it over."
+ },
+ {
+  "id": "877",
+  "tags": [],
+  "question": "In order to apply for the dormitory, you need to (　　) your name, address, and telephone number on this form.",
+  "rawAnswer": "④",
+  "ja": "寮の申し込みをするには，この用紙にあなたの名前，住所，電話番号を記入していただく必要があります。",
+  "type": "choice",
+  "choices": [
+   "write off",
+   "give out",
+   "tell off",
+   "fill in"
+  ],
+  "answerIndex": 3,
+  "en": "In order to apply for the dormitory, you need to fill in your name, address, and telephone number on this form."
+ },
+ {
+  "id": "878",
+  "tags": [],
+  "question": "Please <u>fill out</u> this application form.",
+  "rawAnswer": "③",
+  "ja": "この申込用紙に必要事項を記入してください。",
+  "type": "choice",
+  "choices": [
+   "compose",
+   "compromise",
+   "complete",
+   "contain"
+  ],
+  "answerIndex": 2,
+  "en": "Please fill out this application form."
+ },
+ {
+  "id": "879",
+  "tags": [],
+  "question": "You are supposed to <u>hand in</u> the report by the end of this week.",
+  "rawAnswer": "②",
+  "ja": "あなたは今週末までにその報告書を提出することになっている。",
+  "type": "choice",
+  "choices": [
+   "complete",
+   "submit",
+   "acquire",
+   "read"
+  ],
+  "answerIndex": 1,
+  "en": "You are supposed to hand in the report by the end of this week."
+ },
+ {
+  "id": "880",
+  "tags": [],
+  "question": "You should (　　) your assignment no later than Monday.",
+  "rawAnswer": "③",
+  "ja": "月曜日までに宿題を提出しなさい。",
+  "type": "choice",
+  "choices": [
+   "get along",
+   "see off",
+   "turn in",
+   "try on"
+  ],
+  "answerIndex": 2,
+  "en": "You should turn in your assignment no later than Monday."
+ },
+ {
+  "id": "881",
+  "tags": [],
+  "question": "He <u>took back</u> what he had said previously.",
+  "rawAnswer": "②",
+  "ja": "彼は前に言ったことを撤回した。",
+  "type": "choice",
+  "choices": [
+   "persuaded",
+   "withdrew",
+   "pretended",
+   "established"
+  ],
+  "answerIndex": 1,
+  "en": "He took back what he had said previously."
+ },
+ {
+  "id": "882",
+  "tags": [],
+  "question": "It was with great difficulty that I <u>held back</u> my anger.",
+  "rawAnswer": "②",
+  "ja": "自分の怒りを抑えるのは非常に難しかった。",
+  "type": "choice",
+  "choices": [
+   "expressed",
+   "controlled",
+   "softened",
+   "showed"
+  ],
+  "answerIndex": 1,
+  "en": "It was with great difficulty that I held back my anger."
+ },
+ {
+  "id": "883",
+  "tags": [],
+  "question": "The manager suddenly resigned, and I took (　　) her position last week.",
+  "rawAnswer": "③",
+  "ja": "支配人が突然退職し，先週私は彼女の地位を引き継いだ。",
+  "type": "choice",
+  "choices": [
+   "down",
+   "off",
+   "over",
+   "through"
+  ],
+  "answerIndex": 2,
+  "en": "The manager suddenly resigned, and I took over her position last week."
+ },
+ {
+  "id": "884",
+  "tags": [],
+  "question": "She was <u>brought up</u> by her grandmother in Hokkaido.",
+  "rawAnswer": "④",
+  "ja": "彼女は北海道の祖母に育てられた。",
+  "type": "choice",
+  "choices": [
+   "spoiled",
+   "scolded",
+   "treasured",
+   "raised"
+  ],
+  "answerIndex": 3,
+  "en": "She was brought up by her grandmother in Hokkaido."
+ },
+ {
+  "id": "885",
+  "tags": [],
+  "question": "Heavy rains <u>brought about</u> heavy flooding.",
+  "rawAnswer": "③",
+  "ja": "豪雨が大洪水を引き起こした。",
+  "type": "choice",
+  "choices": [
+   "responded",
+   "saved",
+   "caused",
+   "transformed"
+  ],
+  "answerIndex": 2,
+  "en": "Heavy rains brought about heavy flooding."
+ },
+ {
+  "id": "886",
+  "tags": [],
+  "question": "I felt a little uncomfortable because everybody in the English class tried to <u>show off</u> their English skills.",
+  "rawAnswer": "④",
+  "ja": "英語の授業でみんなが自分の英語力を見せびらかそうとしたので，私は少し居心地が悪かった。",
+  "type": "choice",
+  "choices": [
+   "reservedly hide",
+   "bluntly criticize",
+   "modestly describe",
+   "proudly display"
+  ],
+  "answerIndex": 3,
+  "en": "I felt a little uncomfortable because everybody in the English class tried to show off their English skills."
+ },
+ {
+  "id": "887",
+  "tags": [
+   "基本"
+  ],
+  "question": "Most of the tasks were <u>carried out</u> carefully.",
+  "rawAnswer": "④",
+  "ja": "その任務のほとんどは慎重に遂行された。",
+  "type": "choice",
+  "choices": [
+   "given",
+   "held",
+   "discussed",
+   "completed"
+  ],
+  "answerIndex": 3,
+  "en": "Most of the tasks were carried out carefully."
+ },
+ {
+  "id": "888",
+  "tags": [],
+  "question": "Last month the company had to (　　) several hundred factory workers.",
+  "rawAnswer": "①",
+  "ja": "先月その会社は，数百人の工場労働者を一時解雇しなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "lay off",
+   "stir up",
+   "turn over",
+   "come across"
+  ],
+  "answerIndex": 0,
+  "en": "Last month the company had to lay off several hundred factory workers."
+ },
+ {
+  "id": "889",
+  "tags": [],
+  "question": "Why did Bill <u>leave out</u> the first two questions on his examination?",
+  "rawAnswer": "①",
+  "ja": "なぜビルは試験の最初の２問を抜かしたのですか。",
+  "type": "choice",
+  "choices": [
+   "omit",
+   "look up",
+   "answer",
+   "turn out"
+  ],
+  "answerIndex": 0,
+  "en": "Why did Bill leave out the first two questions on his examination?"
+ },
+ {
+  "id": "890",
+  "tags": [],
+  "question": "We left in a hurry and I must have left my keys (　　).",
+  "rawAnswer": "③",
+  "ja": "私たちは急いで出かけたので，私は鍵を置いてきてしまったにちがいない。",
+  "type": "choice",
+  "choices": [
+   "with me",
+   "alone",
+   "behind",
+   "a place"
+  ],
+  "answerIndex": 2,
+  "en": "We left in a hurry and I must have left my keys behind."
+ },
+ {
+  "id": "891",
+  "tags": [],
+  "question": "He will never <u>let you down</u>.",
+  "rawAnswer": "②",
+  "ja": "彼は決して君を失望させないだろう。",
+  "type": "choice",
+  "choices": [
+   "hold you",
+   "disappoint you",
+   "put you down",
+   "defend you"
+  ],
+  "answerIndex": 1,
+  "en": "He will never let you down."
+ },
+ {
+  "id": "892",
+  "tags": [],
+  "question": "Police have not <u>ruled out</u> the possibility that the man was murdered.",
+  "rawAnswer": "③",
+  "ja": "警察は，その男性が殺されたという可能性を排除していない。",
+  "type": "choice",
+  "choices": [
+   "been aware of",
+   "attached importance to",
+   "excluded",
+   "supported"
+  ],
+  "answerIndex": 2,
+  "en": "Police have not ruled out the possibility that the man was murdered."
+ },
+ {
+  "id": "893",
+  "tags": [],
+  "question": "People are often <u>taken in</u> by the fact that advertisements appear in reputable magazines and papers.",
+  "rawAnswer": "③",
+  "ja": "信頼できる雑誌や新聞に宣伝広告が掲載されるという事実によって，人々はしばしばだまされる。",
+  "type": "choice",
+  "choices": [
+   "accused",
+   "criticized",
+   "deceived",
+   "gratified"
+  ],
+  "answerIndex": 2,
+  "en": "People are often taken in by the fact that advertisements appear in reputable magazines and papers."
+ },
+ {
+  "id": "894",
+  "tags": [],
+  "question": "He listened to the lecture, but could take (　　) none of it.",
+  "rawAnswer": "①",
+  "ja": "彼はその講義を聴いたが，何ひとつ理解できなかった。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "through",
+   "to",
+   "up"
+  ],
+  "answerIndex": 0,
+  "en": "He listened to the lecture, but could take in none of it."
+ },
+ {
+  "id": "895",
+  "tags": [],
+  "question": "\"I hear your daughter has gone to the US to study English.\"\n\"That's right. We saw her (　　) at the airport last Sunday.\"",
+  "rawAnswer": "off",
+  "ja": "「あなたの娘さんは英語の勉強をしにアメリカへ行ったそうですね」\n「そうなんです。私たちは先週の日曜日，空港で彼女を見送りました」",
+  "type": "fill",
+  "answer": "off",
+  "en": "\"That's right. We saw her off at the airport last Sunday.\""
+ },
+ {
+  "id": "896",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "The team (　　) of two professionals and five amateurs.",
+  "rawAnswer": "①",
+  "ja": "そのチームは２人のプロと５人のアマチュアから構成されている。",
+  "type": "choice",
+  "choices": [
+   "consists",
+   "includes",
+   "limits",
+   "made"
+  ],
+  "answerIndex": 0,
+  "en": "The team consists of two professionals and five amateurs."
+ },
+ {
+  "id": "897",
+  "tags": [],
+  "question": "The main duty of the midwife (　　) in assisting in the birthing process.",
+  "rawAnswer": "③",
+  "ja": "助産師の主たる仕事は出産の過程を手助けすることだ。",
+  "type": "choice",
+  "choices": [
+   "grows up",
+   "organizes",
+   "consists",
+   "establishes"
+  ],
+  "answerIndex": 2,
+  "en": "The main duty of the midwife consists in assisting in the birthing process."
+ },
+ {
+  "id": "898",
+  "tags": [],
+  "question": "その店は女性の服を売っています。\nThe shop (　　) in women's clothing.",
+  "rawAnswer": "deals",
+  "ja": "その店は女性の服を売っています。",
+  "type": "fill",
+  "answer": "deals",
+  "en": "The shop deals in women's clothing."
+ },
+ {
+  "id": "899",
+  "tags": [],
+  "question": "The international community is ready to <u>deal with</u> serious issues.",
+  "rawAnswer": "②",
+  "ja": "国際社会は深刻な問題に対処する準備ができている。",
+  "type": "choice",
+  "choices": [
+   "discover",
+   "handle",
+   "produce",
+   "understand"
+  ],
+  "answerIndex": 1,
+  "en": "The international community is ready to deal with serious issues."
+ },
+ {
+  "id": "900",
+  "tags": [],
+  "question": "Another issue to think about is how banks cope (　　) computer hackers.",
+  "rawAnswer": "③",
+  "ja": "考慮すべきもう１つの問題は，いかに銀行がコンピューターハッカーにうまく対処するかということだ。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "at",
+   "with",
+   "to"
+  ],
+  "answerIndex": 2,
+  "en": "Another issue to think about is how banks cope with computer hackers."
+ },
+ {
+  "id": "901",
+  "tags": [],
+  "question": "Tooth decay often (　　) from eating sweets.",
+  "rawAnswer": "①",
+  "ja": "虫歯はしばしば甘いものを食べることから生じる。",
+  "type": "choice",
+  "choices": [
+   "results",
+   "is resulted",
+   "causes",
+   "is caused"
+  ],
+  "answerIndex": 0,
+  "en": "Tooth decay often results from eating sweets."
+ },
+ {
+  "id": "902",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Lack of preparation and effort (　　) in a poor performance.",
+  "rawAnswer": "④",
+  "ja": "準備と努力が足りないと，成績不振に終わる。",
+  "type": "choice",
+  "choices": [
+   "amounts",
+   "brings",
+   "causes",
+   "results"
+  ],
+  "answerIndex": 3,
+  "en": "Lack of preparation and effort results in a poor performance."
+ },
+ {
+  "id": "903",
+  "tags": [],
+  "question": "(a) I'm very glad to hear that you have succeeded so well.\n(b) I'm very glad to hear (　　) your great (　　).",
+  "rawAnswer": "of，success",
+  "ja": "(a) あなたが大成功を収めたと聞いて，私はとてもうれしいです。\n(b) あなたの大成功のことを聞いて，私はとてもうれしいです。",
+  "type": "fill",
+  "answer": "of，success",
+  "en": "I'm very glad to hear of，success your great of，success."
+ },
+ {
+  "id": "904",
+  "tags": [],
+  "question": "(a) Have you received a letter from him lately?\n(b) Have you (　　) from him lately?",
+  "rawAnswer": "heard",
+  "ja": "(a) 最近彼から手紙を受け取りましたか。\n(b) 最近彼から便りがありましたか。",
+  "type": "fill",
+  "answer": "heard",
+  "en": "Have you heard from him lately?"
+ },
+ {
+  "id": "905",
+  "tags": [],
+  "question": "I wonder why you won't agree (　　) my plan.",
+  "rawAnswer": "④",
+  "ja": "どうして君は僕の計画に同意してくれないのだろうか。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "in",
+   "of",
+   "to"
+  ],
+  "answerIndex": 3,
+  "en": "I wonder why you won't agree to my plan."
+ },
+ {
+  "id": "906",
+  "tags": [],
+  "question": "I'd better not eat fried oysters. Oily food does not (　　) with me.",
+  "rawAnswer": "④",
+  "ja": "私は，カキフライは食べない方がいい。油っぽいものは私の体には合わない。",
+  "type": "choice",
+  "choices": [
+   "taste",
+   "digest",
+   "satisfy",
+   "agree"
+  ],
+  "answerIndex": 3,
+  "en": "I'd better not eat fried oysters. Oily food does not agree with me."
+ },
+ {
+  "id": "907",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "It (　　) on the circumstances whether they go on a strike.",
+  "rawAnswer": "②",
+  "ja": "彼らがストライキをするかどうかは状況次第だ。",
+  "type": "choice",
+  "choices": [
+   "appears",
+   "depends",
+   "differs",
+   "insists"
+  ],
+  "answerIndex": 1,
+  "en": "It depends on the circumstances whether they go on a strike."
+ },
+ {
+  "id": "908",
+  "tags": [],
+  "question": "Craft shops in many small villages (　　) tour buses to bring them customers.",
+  "rawAnswer": "③",
+  "ja": "多くの小さな村の民芸品店は，観光バスが客を連れてくるのを当てにしている。",
+  "type": "choice",
+  "choices": [
+   "take after",
+   "stand out",
+   "rely on",
+   "attend"
+  ],
+  "answerIndex": 2,
+  "en": "Craft shops in many small villages rely on tour buses to bring them customers."
+ },
+ {
+  "id": "909",
+  "tags": [],
+  "question": "He's a reliable boss, so you can always count (　　) him.",
+  "rawAnswer": "②",
+  "ja": "彼は信頼できる上司なので，あなたはいつでも彼を頼りにできる。",
+  "type": "choice",
+  "choices": [
+   "by",
+   "on",
+   "out",
+   "to"
+  ],
+  "answerIndex": 1,
+  "en": "He's a reliable boss, so you can always count on him."
+ },
+ {
+  "id": "910",
+  "tags": [],
+  "question": "We live (　　) the very small income of our father.",
+  "rawAnswer": "③",
+  "ja": "私たちは父親の非常にわずかな収入で暮らしている。",
+  "type": "choice",
+  "choices": [
+   "with",
+   "in",
+   "on",
+   "for"
+  ],
+  "answerIndex": 2,
+  "en": "We live on the very small income of our father."
+ },
+ {
+  "id": "911",
+  "tags": [],
+  "question": "She got (　　) her office half an hour late because of the traffic jam.",
+  "rawAnswer": "④",
+  "ja": "交通渋滞のため，彼女は30分遅れで職場に着いた。",
+  "type": "choice",
+  "choices": [
+   "at",
+   "up",
+   "on",
+   "to"
+  ],
+  "answerIndex": 3,
+  "en": "She got to her office half an hour late because of the traffic jam."
+ },
+ {
+  "id": "912",
+  "tags": [
+   "基本"
+  ],
+  "question": "He ①<u>will</u> ②<u>be arriving</u> ③<u>to</u> the station ④<u>on</u> schedule.",
+  "rawAnswer": "③→at",
+  "ja": "彼は予定通りに駅に着くことだろう。",
+  "type": "error",
+  "en": "He will be arriving at the station on schedule.",
+  "answerIndex": 2,
+  "correction": "at"
+ },
+ {
+  "id": "913",
+  "tags": [],
+  "question": "Mr. Kimura specialized (　　) commerce when he was in university.",
+  "rawAnswer": "②",
+  "ja": "木村さんは大学時代，商業を専攻していた。",
+  "type": "choice",
+  "choices": [
+   "at",
+   "in",
+   "for",
+   "on"
+  ],
+  "answerIndex": 1,
+  "en": "Mr. Kimura specialized in commerce when he was in university."
+ },
+ {
+  "id": "914",
+  "tags": [],
+  "question": "My cousin Bob majored (　　) French in college.",
+  "rawAnswer": "③",
+  "ja": "いとこのボブは大学でフランス語を専攻した。",
+  "type": "choice",
+  "choices": [
+   "at",
+   "for",
+   "in",
+   "on"
+  ],
+  "answerIndex": 2,
+  "en": "My cousin Bob majored in French in college."
+ },
+ {
+  "id": "915",
+  "tags": [],
+  "question": "We had to do (　　) petrol during the fuel crisis.",
+  "rawAnswer": "④",
+  "ja": "燃料危機の間はガソリンなしですまさなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "into",
+   "to",
+   "with",
+   "without"
+  ],
+  "answerIndex": 3,
+  "en": "We had to do without petrol during the fuel crisis."
+ },
+ {
+  "id": "916",
+  "tags": [],
+  "question": "Yoko has to <u>dispense with</u> her father's support.",
+  "rawAnswer": "③",
+  "ja": "ヨウコは父親の援助なしでやっていかなくてはならない。",
+  "type": "choice",
+  "choices": [
+   "put down",
+   "come across",
+   "do without",
+   "agree with"
+  ],
+  "answerIndex": 2,
+  "en": "Yoko has to dispense with her father's support."
+ },
+ {
+  "id": "917",
+  "tags": [],
+  "question": "The sales manager stuck (　　) the original plan even though the market situation had changed.",
+  "rawAnswer": "①",
+  "ja": "営業部長は，市場の状況が変化したにもかかわらず，当初の計画に固執した。",
+  "type": "choice",
+  "choices": [
+   "to",
+   "on",
+   "up",
+   "for"
+  ],
+  "answerIndex": 0,
+  "en": "The sales manager stuck to the original plan even though the market situation had changed."
+ },
+ {
+  "id": "918",
+  "tags": [],
+  "question": "I <u>ran across</u> an old friend in town last week.",
+  "rawAnswer": "①",
+  "ja": "先週，私は町で古い友人に偶然出会った。",
+  "type": "choice",
+  "choices": [
+   "met by chance",
+   "found easily",
+   "saw off",
+   "heard of"
+  ],
+  "answerIndex": 0,
+  "en": "I ran across an old friend in town last week."
+ },
+ {
+  "id": "919",
+  "tags": [],
+  "question": "Mary was walking down the street when she suddenly <u>ran into</u> Joan.",
+  "rawAnswer": "④",
+  "ja": "メアリーが通りを歩いていると，ばったりジョーンと出くわした。",
+  "type": "choice",
+  "choices": [
+   "saw off",
+   "got over",
+   "looked into",
+   "met by chance"
+  ],
+  "answerIndex": 3,
+  "en": "Mary was walking down the street when she suddenly ran into Joan."
+ },
+ {
+  "id": "920",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Where did you come (　　) such a rare old photo?",
+  "rawAnswer": "①",
+  "ja": "君はどこでそんなに珍しい古い写真を見つけたんだい。",
+  "type": "choice",
+  "choices": [
+   "across",
+   "about",
+   "to",
+   "true"
+  ],
+  "answerIndex": 0,
+  "en": "Where did you come across such a rare old photo?"
+ },
+ {
+  "id": "921",
+  "tags": [],
+  "question": "It never (　　) to her that graduate school would be so difficult.",
+  "rawAnswer": "②",
+  "ja": "大学院がこんなに大変だとは彼女は思いもしなかった。",
+  "type": "choice",
+  "choices": [
+   "happened",
+   "occurred",
+   "reminded",
+   "thought"
+  ],
+  "answerIndex": 1,
+  "en": "It never occurred to her that graduate school would be so difficult."
+ },
+ {
+  "id": "922",
+  "tags": [],
+  "question": "Julie <u>hit on</u> the idea while they were discussing the problem.",
+  "rawAnswer": "①",
+  "ja": "彼らがその問題について議論している最中，ジュリーはその考えを思いついた。",
+  "type": "choice",
+  "choices": [
+   "discovered",
+   "opposed",
+   "suggested",
+   "supported"
+  ],
+  "answerIndex": 0,
+  "en": "Julie hit on the idea while they were discussing the problem."
+ },
+ {
+  "id": "923",
+  "tags": [],
+  "question": "The university does not (　　) of smoking on campus at all.",
+  "rawAnswer": "①",
+  "ja": "その大学は大学構内での喫煙にはまったく賛成していない。",
+  "type": "choice",
+  "choices": [
+   "approve",
+   "consist",
+   "dispose",
+   "learn"
+  ],
+  "answerIndex": 0,
+  "en": "The university does not approve of smoking on campus at all."
+ },
+ {
+  "id": "924",
+  "tags": [],
+  "question": "You were foolish enough to part (　　) all your money on one night.",
+  "rawAnswer": "④",
+  "ja": "一晩でお金をすべて使ってしまうなんて，君は愚かだった。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "in",
+   "on",
+   "with"
+  ],
+  "answerIndex": 3,
+  "en": "You were foolish enough to part with all your money on one night."
+ },
+ {
+  "id": "925",
+  "tags": [],
+  "question": "There is too much noise for me to (　　) on my homework.",
+  "rawAnswer": "③",
+  "ja": "騒々しすぎて，私は宿題に集中できない。",
+  "type": "choice",
+  "choices": [
+   "hold",
+   "lead",
+   "concentrate",
+   "count"
+  ],
+  "answerIndex": 2,
+  "en": "There is too much noise for me to concentrate on my homework."
+ },
+ {
+  "id": "926",
+  "tags": [],
+  "question": "Susan's savings will soon <u>amount to</u> one million yen.",
+  "rawAnswer": "②",
+  "ja": "スーザンの貯金はまもなく総計100万円になるだろう。",
+  "type": "choice",
+  "choices": [
+   "look like",
+   "total",
+   "decrease to",
+   "exceed"
+  ],
+  "answerIndex": 1,
+  "en": "Susan's savings will soon amount to one million yen."
+ },
+ {
+  "id": "927",
+  "tags": [],
+  "question": "The student <u>referred to</u> the accident he had witnessed.",
+  "rawAnswer": "②",
+  "ja": "その学生は彼が目撃した事故に言及した。",
+  "type": "choice",
+  "choices": [
+   "made",
+   "mentioned",
+   "passed",
+   "submitted"
+  ],
+  "answerIndex": 1,
+  "en": "The student referred to the accident he had witnessed."
+ },
+ {
+  "id": "928",
+  "tags": [],
+  "question": "Mr. Brown (　　) angrily at the class. \"Who has taken my homework folder?\" he shouted.",
+  "rawAnswer": "②",
+  "ja": "ブラウン先生は腹立たしげにクラスの生徒たちをにらみつけた。彼は「私の宿題ファイルをとったのはだれだ」と怒鳴った。",
+  "type": "choice",
+  "choices": [
+   "glimpsed",
+   "stared",
+   "viewed",
+   "watched"
+  ],
+  "answerIndex": 1,
+  "en": "Mr. Brown stared angrily at the class. \"Who has taken my homework folder?\" he shouted."
+ },
+ {
+  "id": "929",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "My sister insisted (　　) the problem by myself.",
+  "rawAnswer": "③",
+  "ja": "私の姉［妹］は，私に自力でその問題を解くように要求した［解きなさいと言った］。",
+  "type": "choice",
+  "choices": [
+   "me to solve",
+   "on me to solve",
+   "on my solving",
+   "that I should be solved"
+  ],
+  "answerIndex": 2,
+  "en": "My sister insisted on my solving the problem by myself."
+ },
+ {
+  "id": "930",
+  "tags": [],
+  "question": "If you persist (　　) late, I'm afraid I'll have to report it to the director.",
+  "rawAnswer": "②",
+  "ja": "あなたが遅刻を続けるなら，残念ながらそのことを部長に報告しなければなりません。",
+  "type": "choice",
+  "choices": [
+   "for arriving",
+   "in arriving",
+   "of arriving",
+   "to arrive"
+  ],
+  "answerIndex": 1,
+  "en": "If you persist in arriving late, I'm afraid I'll have to report it to the director."
+ },
+ {
+  "id": "931",
+  "tags": [],
+  "question": "If a holiday (　　) on a Sunday, we usually get the next Monday off.",
+  "rawAnswer": "②",
+  "ja": "祝日が日曜日にあたれば，たいてい次の月曜日が休みになる。",
+  "type": "choice",
+  "choices": [
+   "turns",
+   "falls",
+   "sets",
+   "goes"
+  ],
+  "answerIndex": 1,
+  "en": "If a holiday falls on a Sunday, we usually get the next Monday off."
+ },
+ {
+  "id": "932",
+  "tags": [],
+  "question": "The famous actor died (　　) cancer.",
+  "rawAnswer": "③",
+  "ja": "その有名な俳優はガンで亡くなった。",
+  "type": "choice",
+  "choices": [
+   "by",
+   "in",
+   "of",
+   "out"
+  ],
+  "answerIndex": 2,
+  "en": "The famous actor died of cancer."
+ },
+ {
+  "id": "933",
+  "tags": [
+   "基本"
+  ],
+  "question": "Simon succeeded (　　) starting the car.",
+  "rawAnswer": "②",
+  "ja": "サイモンはその車のエンジンをかけることに成功した。",
+  "type": "choice",
+  "choices": [
+   "on",
+   "in",
+   "for",
+   "to"
+  ],
+  "answerIndex": 1,
+  "en": "Simon succeeded in starting the car."
+ },
+ {
+  "id": "934",
+  "tags": [],
+  "question": "The (disease / from / heart / number / of / people / suffering) has increased.",
+  "rawAnswer": "number of people suffering from heart disease",
+  "ja": "心臓病を患う人の数が増えてきた。",
+  "type": "ordering",
+  "answer": "number of people suffering from heart disease",
+  "pieces": [
+   "disease",
+   "from",
+   "heart",
+   "number",
+   "of",
+   "people",
+   "suffering"
+  ],
+  "en": "The number of people suffering from heart disease has increased."
+ },
+ {
+  "id": "935",
+  "tags": [],
+  "question": "Please refrain (　　) smoking.",
+  "rawAnswer": "③",
+  "ja": "喫煙はご遠慮ください。",
+  "type": "choice",
+  "choices": [
+   "at",
+   "for",
+   "from",
+   "on"
+  ],
+  "answerIndex": 2,
+  "en": "Please refrain from smoking."
+ },
+ {
+  "id": "936",
+  "tags": [],
+  "question": "She had better <u>set about</u> her work immediately.",
+  "rawAnswer": "④",
+  "ja": "彼女はすぐに自分の仕事にとりかかった方がいい。",
+  "type": "choice",
+  "choices": [
+   "stop",
+   "choose",
+   "decide",
+   "begin"
+  ],
+  "answerIndex": 3,
+  "en": "She had better set about her work immediately."
+ },
+ {
+  "id": "937",
+  "tags": [],
+  "question": "An old woman was run (　　) by a truck.",
+  "rawAnswer": "①",
+  "ja": "１人のおばあさんがトラックにひかれた。",
+  "type": "choice",
+  "choices": [
+   "over",
+   "on",
+   "under",
+   "up"
+  ],
+  "answerIndex": 0,
+  "en": "An old woman was run over by a truck."
+ },
+ {
+  "id": "938",
+  "tags": [],
+  "question": "It is necessary for him to <u>get over</u> his depression.",
+  "rawAnswer": "①",
+  "ja": "うつ状態を乗り越えることが彼には必要だ。",
+  "type": "choice",
+  "choices": [
+   "overcome",
+   "analyze",
+   "obtain",
+   "consult"
+  ],
+  "answerIndex": 0,
+  "en": "It is necessary for him to get over his depression."
+ },
+ {
+  "id": "939",
+  "tags": [],
+  "question": "Would you like to (　　) your speech with me before you go to the conference?",
+  "rawAnswer": "④",
+  "ja": "会議に向かう前に，あなたの演説の見直しをいっしょにしませんか。",
+  "type": "choice",
+  "choices": [
+   "take over",
+   "turn over",
+   "get over",
+   "go over"
+  ],
+  "answerIndex": 3,
+  "en": "Would you like to go over your speech with me before you go to the conference?"
+ },
+ {
+  "id": "940",
+  "tags": [
+   "基本"
+  ],
+  "question": "I <u>called on</u> you last night but you were not in.",
+  "rawAnswer": "③",
+  "ja": "昨晩，あなたを訪ねたのですが，ご不在でした。",
+  "type": "choice",
+  "choices": [
+   "telephoned",
+   "remembered",
+   "visited",
+   "saw"
+  ],
+  "answerIndex": 2,
+  "en": "I called on you last night but you were not in."
+ },
+ {
+  "id": "941",
+  "tags": [
+   "基本"
+  ],
+  "question": "Please keep (　　) the grass when you play catch there.",
+  "rawAnswer": "②",
+  "ja": "そこでキャッチボールをするときは，芝生に入らないようにしてください。",
+  "type": "choice",
+  "choices": [
+   "up",
+   "off",
+   "in",
+   "from"
+  ],
+  "answerIndex": 1,
+  "en": "Please keep off the grass when you play catch there."
+ },
+ {
+  "id": "942",
+  "tags": [],
+  "question": "The company <u>went through</u> a difficult time.",
+  "rawAnswer": "②",
+  "ja": "その会社は苦難の時期を経験した。",
+  "type": "choice",
+  "choices": [
+   "stopped",
+   "experienced",
+   "examined",
+   "heard"
+  ],
+  "answerIndex": 1,
+  "en": "The company went through a difficult time."
+ },
+ {
+  "id": "943",
+  "tags": [],
+  "question": "I'll have to (　　) the phone now. I'm out of time.",
+  "rawAnswer": "①",
+  "ja": "もう電話を切らないといけません。私にはもう時間がありません。",
+  "type": "choice",
+  "choices": [
+   "hang up",
+   "set about",
+   "hang on",
+   "make up"
+  ],
+  "answerIndex": 0,
+  "en": "I'll have to hang up the phone now. I'm out of time."
+ },
+ {
+  "id": "944",
+  "tags": [
+   "基本"
+  ],
+  "question": "I'll <u>carry on</u> my business there.",
+  "rawAnswer": "①",
+  "ja": "私はそこで自分の事業を続けるつもりだ。",
+  "type": "choice",
+  "choices": [
+   "continue",
+   "convey",
+   "delay",
+   "transport"
+  ],
+  "answerIndex": 0,
+  "en": "I'll carry on my business there."
+ },
+ {
+  "id": "945",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "He <u>takes after</u> his older brother.",
+  "rawAnswer": "④",
+  "ja": "彼は彼の兄に似ている。",
+  "type": "choice",
+  "choices": [
+   "cares",
+   "hates",
+   "likes",
+   "resembles"
+  ],
+  "answerIndex": 3,
+  "en": "He takes after his older brother."
+ },
+ {
+  "id": "946",
+  "tags": [],
+  "question": "My sister would often <u>stand by</u> me when I was in trouble.",
+  "rawAnswer": "④",
+  "ja": "私が困ったときは，よく姉［妹］が力になってくれたものだ。",
+  "type": "choice",
+  "choices": [
+   "assist",
+   "comfort",
+   "prepare",
+   "support"
+  ],
+  "answerIndex": 3,
+  "en": "My sister would often stand by me when I was in trouble."
+ },
+ {
+  "id": "947",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "The white bird in this picture <u>stands for</u> peace.",
+  "rawAnswer": "③",
+  "ja": "この絵画の中の白い鳥は平和を表している。",
+  "type": "choice",
+  "choices": [
+   "guards",
+   "loves",
+   "represents",
+   "worships"
+  ],
+  "answerIndex": 2,
+  "en": "The white bird in this picture stands for peace."
+ },
+ {
+  "id": "948",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "My friend said that he would look (　　) my dog for me while I am away on vacation next week.",
+  "rawAnswer": "③",
+  "ja": "私の友人は，来週私が休暇でいない間，代わりに私の犬の世話をしてくれると言った。",
+  "type": "choice",
+  "choices": [
+   "of",
+   "at",
+   "after",
+   "into"
+  ],
+  "answerIndex": 2,
+  "en": "My friend said that he would look after my dog for me while I am away on vacation next week."
+ },
+ {
+  "id": "949",
+  "tags": [
+   "基本"
+  ],
+  "question": "The police are looking (　　) the cause of the murder.",
+  "rawAnswer": "④",
+  "ja": "警察はその殺人事件の原因を調べているところだ。",
+  "type": "choice",
+  "choices": [
+   "after",
+   "around",
+   "like",
+   "into"
+  ],
+  "answerIndex": 3,
+  "en": "The police are looking into the cause of the murder."
+ },
+ {
+  "id": "950",
+  "tags": [
+   "基本"
+  ],
+  "question": "I can't find my keys. Could you help me (　　) them?",
+  "rawAnswer": "④",
+  "ja": "私の鍵が見つからないのです。探すのを手伝ってもらえませんか。",
+  "type": "choice",
+  "choices": [
+   "look after",
+   "look to",
+   "look at",
+   "look for"
+  ],
+  "answerIndex": 3,
+  "en": "I can't find my keys. Could you help me look for them?"
+ },
+ {
+  "id": "951",
+  "tags": [],
+  "question": "The house was broken (　　) while the owner was on holiday.",
+  "rawAnswer": "②",
+  "ja": "家主が休暇で出かけている間にその家は泥棒に入られた。",
+  "type": "choice",
+  "choices": [
+   "away",
+   "into",
+   "out",
+   "with"
+  ],
+  "answerIndex": 1,
+  "en": "The house was broken into while the owner was on holiday."
+ },
+ {
+  "id": "952",
+  "tags": [],
+  "question": "She <u>waited on</u> shoppers all day at the department store.",
+  "rawAnswer": "②",
+  "ja": "彼女は１日中デパートで買い物客の応対をした。",
+  "type": "choice",
+  "choices": [
+   "spoke to",
+   "served",
+   "showed",
+   "looked for"
+  ],
+  "answerIndex": 1,
+  "en": "She waited on shoppers all day at the department store."
+ },
+ {
+  "id": "953",
+  "tags": [],
+  "question": "How did you <u>come by</u> such a precious painting?",
+  "rawAnswer": "①",
+  "ja": "こんな貴重な絵をどうやって手に入れたのですか。",
+  "type": "choice",
+  "choices": [
+   "obtain",
+   "search",
+   "sell",
+   "create"
+  ],
+  "answerIndex": 0,
+  "en": "How did you come by such a precious painting?"
+ },
+ {
+  "id": "954",
+  "tags": [
+   "発展"
+  ],
+  "question": "My uncle is going to (　　) for governor in the election next fall.",
+  "rawAnswer": "①",
+  "ja": "私のおじは，来年の秋の選挙で知事に立候補するつもりだ。",
+  "type": "choice",
+  "choices": [
+   "run",
+   "walk",
+   "come",
+   "fly"
+  ],
+  "answerIndex": 0,
+  "en": "My uncle is going to run for governor in the election next fall."
+ },
+ {
+  "id": "955",
+  "tags": [],
+  "question": "In conclusion, I want to thank all who have (　　) to our success.",
+  "rawAnswer": "②",
+  "ja": "最後に，私たちの成功に貢献してくださった方すべてに感謝したいと思います。",
+  "type": "choice",
+  "choices": [
+   "applied",
+   "contributed",
+   "reported",
+   "enabled"
+  ],
+  "answerIndex": 1,
+  "en": "In conclusion, I want to thank all who have contributed to our success."
+ },
+ {
+  "id": "956",
+  "tags": [
+   "基本"
+  ],
+  "question": "You can pay (　　) your purchases at any of the cashiers.",
+  "rawAnswer": "③",
+  "ja": "買い物の支払いはどのレジでもできます。",
+  "type": "choice",
+  "choices": [
+   "up",
+   "by",
+   "for",
+   "with"
+  ],
+  "answerIndex": 2,
+  "en": "You can pay for your purchases at any of the cashiers."
+ },
+ {
+  "id": "957",
+  "tags": [],
+  "question": "When are you going to apply (　　) the job?",
+  "rawAnswer": "②",
+  "ja": "いつその仕事に応募するつもりですか。",
+  "type": "choice",
+  "choices": [
+   "at",
+   "for",
+   "in",
+   "on"
+  ],
+  "answerIndex": 1,
+  "en": "When are you going to apply for the job?"
+ },
+ {
+  "id": "958",
+  "tags": [],
+  "question": "It is not always easy for some new students to (　　) to the busy life at university.",
+  "rawAnswer": "②",
+  "ja": "新入生の中には，大学での多忙な生活になじむことが必ずしも簡単ではない人たちもいる。",
+  "type": "choice",
+  "choices": [
+   "accustom",
+   "adapt",
+   "adopt",
+   "learn"
+  ],
+  "answerIndex": 1,
+  "en": "It is not always easy for some new students to adapt to the busy life at university."
+ },
+ {
+  "id": "959",
+  "tags": [],
+  "question": "Our students' accident <u>added to</u> the teachers' troubles.",
+  "rawAnswer": "③",
+  "ja": "私たちの生徒たちが事故を起こし，教師たちの苦労が増えた。",
+  "type": "choice",
+  "choices": [
+   "led",
+   "demanded",
+   "increased",
+   "calculated"
+  ],
+  "answerIndex": 2,
+  "en": "Our students' accident added to the teachers' troubles."
+ },
+ {
+  "id": "960",
+  "tags": [],
+  "question": "The doctor (　　) immediately after the car accident, and the victim survived.",
+  "rawAnswer": "④",
+  "ja": "自動車事故の直後に医者が呼ばれ，その被害者は生き延びた。",
+  "type": "choice",
+  "choices": [
+   "could not get there",
+   "was lost",
+   "had been seen",
+   "was sent for"
+  ],
+  "answerIndex": 3,
+  "en": "The doctor was sent for immediately after the car accident, and the victim survived."
+ },
+ {
+  "id": "961",
+  "tags": [
+   "基本"
+  ],
+  "question": "Don't <u>ask for<u/> money.",
+  "rawAnswer": "②",
+  "ja": "お金を要求してはならない。",
+  "type": "choice",
+  "choices": [
+   "waste",
+   "request",
+   "think about",
+   "look after"
+  ],
+  "answerIndex": 1,
+  "en": "Don't ask for<u/> money."
+ },
+ {
+  "id": "962",
+  "tags": [],
+  "question": "The economy has high inflation, so the workers <u>called for</u> a salary increase.",
+  "rawAnswer": "③",
+  "ja": "経済が激しいインフレ状態なので，労働者たちは給料の増額を要求した。",
+  "type": "choice",
+  "choices": [
+   "decided",
+   "declared",
+   "demanded",
+   "demonstrated"
+  ],
+  "answerIndex": 2,
+  "en": "The economy has high inflation, so the workers called for a salary increase."
+ },
+ {
+  "id": "963",
+  "tags": [
+   "基本"
+  ],
+  "question": "You must <u>believe in</u> your own abilities.",
+  "rawAnswer": "④",
+  "ja": "あなたは自分自身の能力を信じなければなりません。",
+  "type": "choice",
+  "choices": [
+   "trade",
+   "train",
+   "transform",
+   "trust"
+  ],
+  "answerIndex": 3,
+  "en": "You must believe in your own abilities."
+ },
+ {
+  "id": "964",
+  "tags": [
+   "発展"
+  ],
+  "question": "If anything goes wrong, I'll (　　) for the consequences.",
+  "rawAnswer": "②",
+  "ja": "万一の［もしもの］ときには私が責任を取ります。",
+  "type": "choice",
+  "choices": [
+   "call",
+   "answer",
+   "indict",
+   "long"
+  ],
+  "answerIndex": 1,
+  "en": "If anything goes wrong, I'll answer for the consequences."
+ },
+ {
+  "id": "965",
+  "tags": [],
+  "question": "A lack of sleep is (　　) my health.",
+  "rawAnswer": "④",
+  "ja": "寝不足が体にこたえている。",
+  "type": "choice",
+  "choices": [
+   "asking for",
+   "depriving of",
+   "heating off",
+   "telling on"
+  ],
+  "answerIndex": 3,
+  "en": "A lack of sleep is telling on my health."
+ },
+ {
+  "id": "966",
+  "tags": [],
+  "question": "The chef used to <u>see to</u> a lot of dishes at dinner.",
+  "rawAnswer": "②",
+  "ja": "そのシェフは，かつて夕食時の多くの料理を担当していた。",
+  "type": "choice",
+  "choices": [
+   "avoid",
+   "deal with",
+   "enjoy",
+   "look for"
+  ],
+  "answerIndex": 1,
+  "en": "The chef used to see to a lot of dishes at dinner."
+ },
+ {
+  "id": "967",
+  "tags": [],
+  "question": "I was introduced to the new boss yesterday. I can't say I (　　) him.",
+  "rawAnswer": "③",
+  "ja": "私は昨日新しい上司に紹介された。私は，彼が気に入ったとは言い難い。",
+  "type": "choice",
+  "choices": [
+   "took on",
+   "took off",
+   "took to",
+   "took up"
+  ],
+  "answerIndex": 2,
+  "en": "I was introduced to the new boss yesterday. I can't say I took to him."
+ },
+ {
+  "id": "968",
+  "tags": [
+   "発展"
+  ],
+  "question": "It started raining, so Kiyomi made (　　) the nearest shelter.",
+  "rawAnswer": "①",
+  "ja": "雨が降り始めたので，キヨミは雨宿りができそうな最も近い場所に向かった。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "out",
+   "to",
+   "up"
+  ],
+  "answerIndex": 0,
+  "en": "It started raining, so Kiyomi made for the nearest shelter."
+ },
+ {
+  "id": "969",
+  "tags": [],
+  "question": "I don't care (　　) the expense. I just want the party to be a real success.",
+  "rawAnswer": "①",
+  "ja": "費用のことは気にしません。私はただパーティーを本当に成功させたいのです。",
+  "type": "choice",
+  "choices": [
+   "about",
+   "for",
+   "in",
+   "on"
+  ],
+  "answerIndex": 0,
+  "en": "I don't care about the expense. I just want the party to be a real success."
+ },
+ {
+  "id": "970",
+  "tags": [
+   "基本"
+  ],
+  "question": "It has become more difficult for families to (　　) for their elderly at home.",
+  "rawAnswer": "①",
+  "ja": "家庭で家族が老人の世話をすることはより難しくなってしまった。",
+  "type": "choice",
+  "choices": [
+   "care",
+   "help",
+   "support",
+   "treat"
+  ],
+  "answerIndex": 0,
+  "en": "It has become more difficult for families to care for their elderly at home."
+ },
+ {
+  "id": "971",
+  "tags": [],
+  "question": "He is an old man, and he doesn't <u>care for</u> long trips.",
+  "rawAnswer": "①",
+  "ja": "彼は高齢で，長旅は好まない。",
+  "type": "choice",
+  "choices": [
+   "like",
+   "worry about",
+   "take care of",
+   "look for"
+  ],
+  "answerIndex": 0,
+  "en": "He is an old man, and he doesn't care for long trips."
+ },
+ {
+  "id": "972",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "We couldn't <u>account for</u> the fact that she left without saying good-bye.",
+  "rawAnswer": "②",
+  "ja": "彼女がさよならも告げずに去ってしまった事実は，私たちには説明がつかなかった。",
+  "type": "choice",
+  "choices": [
+   "deny",
+   "explain",
+   "conceal",
+   "accept"
+  ],
+  "answerIndex": 1,
+  "en": "We couldn't account for the fact that she left without saying good-bye."
+ },
+ {
+  "id": "973",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Asian countries such as Japan, China and South Korea (　　) about 45% of the international students at the university in 2006.",
+  "rawAnswer": "②",
+  "ja": "日本や中国，韓国といったアジア諸国は，2006年のその大学における留学生のおよそ45パーセントを占めていた。",
+  "type": "choice",
+  "choices": [
+   "made up for",
+   "accounted for",
+   "sent for",
+   "stood up for"
+  ],
+  "answerIndex": 1,
+  "en": "Asian countries such as Japan, China and South Korea accounted for about 45% of the international students at the university in 2006."
+ },
+ {
+  "id": "974",
+  "tags": [
+   "基本"
+  ],
+  "question": "The plane will be ready to (　　) off in a few minutes.",
+  "rawAnswer": "④",
+  "ja": "その飛行機はあと数分で離陸準備が整う。",
+  "type": "choice",
+  "choices": [
+   "hand",
+   "look",
+   "make",
+   "take"
+  ],
+  "answerIndex": 3,
+  "en": "The plane will be ready to take off in a few minutes."
+ },
+ {
+  "id": "975",
+  "tags": [],
+  "question": "The heavy rain forced us to spend the last night at a hotel.\n＝Because of the heavy rain, we had to (　　) up at a hotel last night",
+  "rawAnswer": "④",
+  "ja": "大雨のせいで昨夜ホテルに宿泊せざるを得なかった。",
+  "type": "choice",
+  "choices": [
+   "go",
+   "like",
+   "take",
+   "put"
+  ],
+  "answerIndex": 3,
+  "en": "＝Because of the heavy rain, we had to put up at a hotel last night"
+ },
+ {
+  "id": "976",
+  "tags": [],
+  "question": "コンピューターは，すごく便利かもしれないけれど，私のコンピューターは，私の車と同じでよく故障するのが問題だ。\nComputers may be very useful, but the problem is that mine breaks (　　) as often as my car does.",
+  "rawAnswer": "down",
+  "ja": "コンピューターは，すごく便利かもしれないけれど，私のコンピューターは，私の車と同じでよく故障するのが問題だ。",
+  "type": "fill",
+  "answer": "down",
+  "en": "Computers may be very useful, but the problem is that mine breaks down as often as my car does."
+ },
+ {
+  "id": "977",
+  "tags": [],
+  "question": "Before the meeting breaks (　　), I'd like to say something to you all.",
+  "rawAnswer": "④",
+  "ja": "会議が終わる前に，みなさんに言いたいことがあります。",
+  "type": "choice",
+  "choices": [
+   "out",
+   "off",
+   "on",
+   "up"
+  ],
+  "answerIndex": 3,
+  "en": "Before the meeting breaks up, I'd like to say something to you all."
+ },
+ {
+  "id": "978",
+  "tags": [],
+  "question": "Unfortunately the murderer <u>turned out</u> to be my neighbor.",
+  "rawAnswer": "④",
+  "ja": "残念ながら，殺人犯は私の隣人だと判明した。",
+  "type": "choice",
+  "choices": [
+   "brought",
+   "managed",
+   "exploded",
+   "proved"
+  ],
+  "answerIndex": 3,
+  "en": "Unfortunately the murderer turned out to be my neighbor."
+ },
+ {
+  "id": "979",
+  "tags": [
+   "基本"
+  ],
+  "question": "I <u>stayed up</u> until midnight to watch the TV show last night.",
+  "rawAnswer": "①",
+  "ja": "昨晩，私はテレビ番組を見るために深夜まで起きていた。",
+  "type": "choice",
+  "choices": [
+   "didn't go to bed",
+   "didn't mind the noise",
+   "kept silent",
+   "was in a rush"
+  ],
+  "answerIndex": 0,
+  "en": "I stayed up until midnight to watch the TV show last night."
+ },
+ {
+  "id": "980",
+  "tags": [
+   "基本"
+  ],
+  "question": "\" (　　) There's a motorbike about to pass us.\"\n\"Yes, I saw it coming, but thanks for warning me.\"",
+  "rawAnswer": "①",
+  "ja": "「気をつけて！　バイクが１台私たちのそばを通り過ぎようとしてますよ」\n「ええ，来るのが見えました。でも注意してくれてありがとう」",
+  "type": "choice",
+  "choices": [
+   "Watch out!",
+   "Dangerous!",
+   "Be careless!",
+   "Take Attention!"
+  ],
+  "answerIndex": 0,
+  "en": "\" Watch out! There's a motorbike about to pass us.\""
+ },
+ {
+  "id": "981",
+  "tags": [],
+  "question": "He was shocked to hear that his friend had <u>passed away</u>.",
+  "rawAnswer": "①",
+  "ja": "友人が亡くなったと聞いて，彼はショックを受けた。",
+  "type": "choice",
+  "choices": [
+   "died",
+   "disappeared",
+   "left",
+   "retired"
+  ],
+  "answerIndex": 0,
+  "en": "He was shocked to hear that his friend had passed away."
+ },
+ {
+  "id": "982",
+  "tags": [],
+  "question": "Try to keep up with the others in the group. Don't (　　).",
+  "rawAnswer": "④",
+  "ja": "グループ内の他の人たちについていくようにしなさい。遅れをとってはいけません。",
+  "type": "choice",
+  "choices": [
+   "hold over",
+   "leave behind",
+   "carry over",
+   "fall behind"
+  ],
+  "answerIndex": 3,
+  "en": "Try to keep up with the others in the group. Don't fall behind."
+ },
+ {
+  "id": "983",
+  "tags": [],
+  "question": "His shoes (　　) quickly when he takes a walk every day.",
+  "rawAnswer": "③",
+  "ja": "彼は毎日散歩をするので，彼の靴はすぐにすり減る。",
+  "type": "choice",
+  "choices": [
+   "put off",
+   "put on",
+   "wear out",
+   "wear on"
+  ],
+  "answerIndex": 2,
+  "en": "His shoes wear out quickly when he takes a walk every day."
+ },
+ {
+  "id": "984",
+  "tags": [],
+  "question": "\"Do wolves still live in the wild in Japan?\"\n\"No. They died (　　) about a hundred years ago.\"",
+  "rawAnswer": "④",
+  "ja": "「日本にはまだ野生のオオカミはいますか」\n「いいえ。およそ百年前に絶滅しました」",
+  "type": "choice",
+  "choices": [
+   "of",
+   "over",
+   "on",
+   "out"
+  ],
+  "answerIndex": 3,
+  "en": "\"No. They died out about a hundred years ago.\""
+ },
+ {
+  "id": "985",
+  "tags": [],
+  "question": "Jim and Mary <u>set off</u> to visit their relatives in Virginia while their daughters stayed home to study because they were behind in their school work.",
+  "rawAnswer": "②",
+  "ja": "ジムとメアリーはバージニア州の親戚を訪ねるために出発したが，娘たちは学業が遅れているので勉強するために家に残った。",
+  "type": "choice",
+  "choices": [
+   "set up",
+   "set out",
+   "set in",
+   "showed up"
+  ],
+  "answerIndex": 1,
+  "en": "Jim and Mary set off to visit their relatives in Virginia while their daughters stayed home to study because they were behind in their school work."
+ },
+ {
+  "id": "986",
+  "tags": [],
+  "question": "Why don't you go on a picnic before the rainy season <u>starts</u>?",
+  "rawAnswer": "①",
+  "ja": "梅雨が始まる前にピクニックに行きませんか。",
+  "type": "choice",
+  "choices": [
+   "sets in",
+   "turns in",
+   "sets up",
+   "turns out"
+  ],
+  "answerIndex": 0,
+  "en": "Why don't you go on a picnic before the rainy season starts?"
+ },
+ {
+  "id": "987",
+  "tags": [],
+  "question": "Why don't you (　　) in and see me some time?",
+  "rawAnswer": "②",
+  "ja": "いつか私に会いに家に寄ってくださいよ。",
+  "type": "choice",
+  "choices": [
+   "fit",
+   "drop",
+   "take",
+   "set"
+  ],
+  "answerIndex": 1,
+  "en": "Why don't you drop in and see me some time?"
+ },
+ {
+  "id": "988",
+  "tags": [],
+  "question": "The bomb <u>went off</u>.",
+  "rawAnswer": "④",
+  "ja": "その爆弾は爆発した。",
+  "type": "choice",
+  "choices": [
+   "explained",
+   "exercised",
+   "experimented",
+   "exploded"
+  ],
+  "answerIndex": 3,
+  "en": "The bomb went off."
+ },
+ {
+  "id": "989",
+  "tags": [],
+  "question": "Mary fainted but <u>regained consciousness</u> after a while.",
+  "rawAnswer": "④",
+  "ja": "メアリーは失神したが，しばらくして意識を取り戻した。",
+  "type": "choice",
+  "choices": [
+   "came at",
+   "came in",
+   "came on",
+   "came to"
+  ],
+  "answerIndex": 3,
+  "en": "Mary fainted but regained consciousness after a while."
+ },
+ {
+  "id": "990",
+  "tags": [],
+  "question": "The big car <u>pulled up</u> at the traffic light.",
+  "rawAnswer": "②",
+  "ja": "その大きな車は信号で止まった。",
+  "type": "choice",
+  "choices": [
+   "hurried",
+   "stopped",
+   "turned",
+   "started"
+  ],
+  "answerIndex": 1,
+  "en": "The big car pulled up at the traffic light."
+ },
+ {
+  "id": "991",
+  "tags": [],
+  "question": "His light brown hair makes him <u>stand out</u> from others in the group.",
+  "rawAnswer": "④",
+  "ja": "その明るい茶色の髪のせいで，彼はその集まりの他の人たちよりも目立つ。",
+  "type": "choice",
+  "choices": [
+   "favorable",
+   "absent",
+   "available",
+   "distinct"
+  ],
+  "answerIndex": 3,
+  "en": "His light brown hair makes him stand out from others in the group."
+ },
+ {
+  "id": "992",
+  "tags": [],
+  "question": "Bill's new book will <u>be published</u> at the end of this month.",
+  "rawAnswer": "③",
+  "ja": "ビルの新しい本は今月末に出版されるだろう。",
+  "type": "choice",
+  "choices": [
+   "look out",
+   "force out",
+   "come out",
+   "figure out"
+  ],
+  "answerIndex": 2,
+  "en": "Bill's new book will be published at the end of this month."
+ },
+ {
+  "id": "993",
+  "tags": [],
+  "question": "It really gets on my nerves that Robert <u>shows up</u> late for every class.",
+  "rawAnswer": "①",
+  "ja": "ロバートがどの授業にも遅れて現れるのには，本当にいらいらする。",
+  "type": "choice",
+  "choices": [
+   "comes",
+   "expands",
+   "leaves",
+   "overflows"
+  ],
+  "answerIndex": 0,
+  "en": "It really gets on my nerves that Robert shows up late for every class."
+ },
+ {
+  "id": "994",
+  "tags": [],
+  "question": "I'm sure your ring will <u>turn up</u> soon.",
+  "rawAnswer": "③",
+  "ja": "君の指輪はきっとすぐに出てくるよ。",
+  "type": "choice",
+  "choices": [
+   "be bought",
+   "submit",
+   "be found",
+   "sell"
+  ],
+  "answerIndex": 2,
+  "en": "I'm sure your ring will turn up soon."
+ },
+ {
+  "id": "995",
+  "tags": [],
+  "question": "Many diseases <u>broke out</u> after the war.",
+  "rawAnswer": "③",
+  "ja": "戦後，多くの病気が発生した。",
+  "type": "choice",
+  "choices": [
+   "died",
+   "disappeared",
+   "appeared",
+   "changed"
+  ],
+  "answerIndex": 2,
+  "en": "Many diseases broke out after the war."
+ },
+ {
+  "id": "996",
+  "tags": [],
+  "question": "How did this accident <u>come about</u>?",
+  "rawAnswer": "③",
+  "ja": "この事故はどうやって起きたのですか。",
+  "type": "choice",
+  "choices": [
+   "appear",
+   "end",
+   "happen",
+   "descend"
+  ],
+  "answerIndex": 2,
+  "en": "How did this accident come about?"
+ },
+ {
+  "id": "997",
+  "tags": [],
+  "question": "Please don't <u>break in on</u> our conversation.",
+  "rawAnswer": "③",
+  "ja": "私たちの会話に割り込まないでください。",
+  "type": "choice",
+  "choices": [
+   "injure",
+   "interpret",
+   "interrupt",
+   "start"
+  ],
+  "answerIndex": 2,
+  "en": "Please don't break in on our conversation."
+ },
+ {
+  "id": "998",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "In order for your business to succeed, you need to <u>come up with</u> a new strategy.",
+  "rawAnswer": "③",
+  "ja": "あなたのビジネスが成功するためには，あなたは新しい戦略を考え出す必要がある。",
+  "type": "choice",
+  "choices": [
+   "pick out",
+   "put away",
+   "think of",
+   "try on"
+  ],
+  "answerIndex": 2,
+  "en": "In order for your business to succeed, you need to come up with a new strategy."
+ },
+ {
+  "id": "999",
+  "tags": [
+   "基本"
+  ],
+  "question": "China will soon (　　) with Japan in the field of computer engineering.",
+  "rawAnswer": "④",
+  "ja": "中国は，コンピューター工学の分野でまもなく日本に追いつくだろう。",
+  "type": "choice",
+  "choices": [
+   "overcome",
+   "surpass",
+   "go on ahead",
+   "catch up"
+  ],
+  "answerIndex": 3,
+  "en": "China will soon catch up with Japan in the field of computer engineering."
+ },
+ {
+  "id": "1000",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Mr. Roberts gave an interesting lecture today. But most of the students were not able to (　　) his rapid pace.",
+  "rawAnswer": "②",
+  "ja": "今日，ロバーツ先生は興味深い講義を行った。しかし，学生のほとんどは彼の速いペースについていけなかった。",
+  "type": "choice",
+  "choices": [
+   "cut down on",
+   "keep up with",
+   "look forward to",
+   "run out of"
+  ],
+  "answerIndex": 1,
+  "en": "Mr. Roberts gave an interesting lecture today. But most of the students were not able to keep up with his rapid pace."
+ },
+ {
+  "id": "1001",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "We had to <u>put up with</u> intense heat this summer.",
+  "rawAnswer": "②",
+  "ja": "私たちはこの夏の猛暑に耐えなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "disregard",
+   "endure",
+   "overcome",
+   "forget"
+  ],
+  "answerIndex": 1,
+  "en": "We had to put up with intense heat this summer."
+ },
+ {
+  "id": "1002",
+  "tags": [],
+  "question": "Sometimes technology falls (　　) its promises.",
+  "rawAnswer": "①",
+  "ja": "科学技術は時に，期待される結果に及ばないこともある。",
+  "type": "choice",
+  "choices": [
+   "short of",
+   "across",
+   "fast",
+   "apart"
+  ],
+  "answerIndex": 0,
+  "en": "Sometimes technology falls short of its promises."
+ },
+ {
+  "id": "1003",
+  "tags": [],
+  "question": "He is (　　) short of money.",
+  "rawAnswer": "①",
+  "ja": "彼は金欠だ。",
+  "type": "choice",
+  "choices": [
+   "running",
+   "walking",
+   "expecting",
+   "saving"
+  ],
+  "answerIndex": 0,
+  "en": "He is running short of money."
+ },
+ {
+  "id": "1004",
+  "tags": [],
+  "question": "The truck stopped in the middle of the road. It seemed to have (　　) fuel.",
+  "rawAnswer": "④",
+  "ja": "そのトラックは道路の真ん中で停止した。燃料がなくなったようだった。",
+  "type": "choice",
+  "choices": [
+   "cut down on",
+   "kept up with",
+   "looked forward to",
+   "run out of"
+  ],
+  "answerIndex": 3,
+  "en": "The truck stopped in the middle of the road. It seemed to have run out of fuel."
+ },
+ {
+  "id": "1005",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Although Bill was only twenty, people <u>looked up to</u> him as a great leader.",
+  "rawAnswer": "④",
+  "ja": "ビルはわずか20歳だったが，人々は彼を偉大な指導者として尊敬していた。",
+  "type": "choice",
+  "choices": [
+   "neglected",
+   "elected",
+   "called",
+   "respected"
+  ],
+  "answerIndex": 3,
+  "en": "Although Bill was only twenty, people looked up to him as a great leader."
+ },
+ {
+  "id": "1006",
+  "tags": [],
+  "question": "Living in a rich country, we should not <u>look down on</u> homeless people.",
+  "rawAnswer": "④",
+  "ja": "豊かな国に住んでいるからといって，私たちはホームレスの人々を見下すべきではない。",
+  "type": "choice",
+  "choices": [
+   "praise",
+   "regard",
+   "analyze",
+   "disrespect"
+  ],
+  "answerIndex": 3,
+  "en": "Living in a rich country, we should not look down on homeless people."
+ },
+ {
+  "id": "1007",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "I feel quite uncomfortable in his presence; he is very hard to get (　　) with.",
+  "rawAnswer": "③",
+  "ja": "彼といっしょにいると，私はかなり居心地が悪い。というのも，彼はとても付き合いにくい人間だからだ。",
+  "type": "choice",
+  "choices": [
+   "friend",
+   "away",
+   "along",
+   "together"
+  ],
+  "answerIndex": 2,
+  "en": "I feel quite uncomfortable in his presence; he is very hard to get along with."
+ },
+ {
+  "id": "1008",
+  "tags": [],
+  "question": "She (　　) on with the colleagues in her office.",
+  "rawAnswer": "②",
+  "ja": "彼女は職場の同僚たちと仲良くやっている。",
+  "type": "choice",
+  "choices": [
+   "goes",
+   "gets",
+   "helps",
+   "puts"
+  ],
+  "answerIndex": 1,
+  "en": "She gets on with the colleagues in her office."
+ },
+ {
+  "id": "1009",
+  "tags": [],
+  "question": "Would you help me with my homework when you get (　　) with yours?",
+  "rawAnswer": "①",
+  "ja": "あなたの宿題が終わったら，私のを手伝ってくれませんか。",
+  "type": "choice",
+  "choices": [
+   "through",
+   "over",
+   "by",
+   "away"
+  ],
+  "answerIndex": 0,
+  "en": "Would you help me with my homework when you get through with yours?"
+ },
+ {
+  "id": "1010",
+  "tags": [],
+  "question": "My only daughter always studied hard and was able to <u>live up to</u> my expectations.",
+  "rawAnswer": "③",
+  "ja": "私の一人娘はずっと一生懸命勉強し，私の期待に応えることができた。",
+  "type": "choice",
+  "choices": [
+   "demand",
+   "increase",
+   "meet",
+   "surprise"
+  ],
+  "answerIndex": 2,
+  "en": "My only daughter always studied hard and was able to live up to my expectations."
+ },
+ {
+  "id": "1011",
+  "tags": [],
+  "question": "Sandy <u>speaks ill of</u> her colleagues very often.",
+  "rawAnswer": "②",
+  "ja": "サンディーはしょっちゅう彼女の同僚の悪口を言う。",
+  "type": "choice",
+  "choices": [
+   "chats with",
+   "criticizes",
+   "quarrels with",
+   "scolds"
+  ],
+  "answerIndex": 1,
+  "en": "Sandy speaks ill of her colleagues very often."
+ },
+ {
+  "id": "1012",
+  "tags": [],
+  "question": "All of us must look (　　) pickpockets as we walk the streets.",
+  "rawAnswer": "①",
+  "ja": "通りを歩くときは，私たちみんながスリに注意しなければいけない。",
+  "type": "choice",
+  "choices": [
+   "out for",
+   "up to",
+   "aside from",
+   "forward to"
+  ],
+  "answerIndex": 0,
+  "en": "All of us must look out for pickpockets as we walk the streets."
+ },
+ {
+  "id": "1013",
+  "tags": [],
+  "question": "Tom <u>stood up for</u> his friend in the argument.",
+  "rawAnswer": "①",
+  "ja": "トムは討論中，彼の友人を擁護した。",
+  "type": "choice",
+  "choices": [
+   "defended",
+   "gave his number to",
+   "punished",
+   "fought with"
+  ],
+  "answerIndex": 0,
+  "en": "Tom stood up for his friend in the argument."
+ },
+ {
+  "id": "1014",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Nothing can <u>make up for</u> the loss of nature.",
+  "rawAnswer": "②",
+  "ja": "何物も自然の損失を埋め合わせることはできない。",
+  "type": "choice",
+  "choices": [
+   "send for",
+   "compensate for",
+   "seek for",
+   "stand for"
+  ],
+  "answerIndex": 1,
+  "en": "Nothing can make up for the loss of nature."
+ },
+ {
+  "id": "1015",
+  "tags": [],
+  "question": "The government finally <u>did away with</u> the law.",
+  "rawAnswer": "①",
+  "ja": "政府は最終的にその法律を廃止した。",
+  "type": "choice",
+  "choices": [
+   "abolished",
+   "announced",
+   "devised",
+   "recognized"
+  ],
+  "answerIndex": 0,
+  "en": "The government finally did away with the law."
+ },
+ {
+  "id": "1016",
+  "tags": [],
+  "question": "We need to <u>brush up on</u> our math skills before the next test.",
+  "rawAnswer": "③",
+  "ja": "次の試験の前に，私たちは数学の能力を磨き直す必要がある。",
+  "type": "choice",
+  "choices": [
+   "involve",
+   "discuss",
+   "improve",
+   "describe"
+  ],
+  "answerIndex": 2,
+  "en": "We need to brush up on our math skills before the next test."
+ },
+ {
+  "id": "1017",
+  "tags": [],
+  "question": "They should <u>get rid of</u> their differences and become friends.",
+  "rawAnswer": "①",
+  "ja": "彼らは意見の相違を取り払って友人になるべきだ。",
+  "type": "choice",
+  "choices": [
+   "remove",
+   "get involved in",
+   "give away",
+   "cultivate"
+  ],
+  "answerIndex": 0,
+  "en": "They should get rid of their differences and become friends."
+ },
+ {
+  "id": "1018",
+  "tags": [],
+  "question": "My mother finally has <u>given in</u> to my view.",
+  "rawAnswer": "①",
+  "ja": "母はついに折れて私の考えを受け入れた。",
+  "type": "choice",
+  "choices": [
+   "yielded",
+   "got",
+   "succeeded",
+   "opposed"
+  ],
+  "answerIndex": 0,
+  "en": "My mother finally has given in to my view."
+ },
+ {
+  "id": "1019",
+  "tags": [
+   "発展"
+  ],
+  "question": "Susan had to make (　　) with her old dress because she couldn't afford to buy a new one.",
+  "rawAnswer": "④",
+  "ja": "スーザンは新しい服を買う余裕がなかったので，古いドレスで間に合わせなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "get",
+   "go",
+   "set",
+   "do"
+  ],
+  "answerIndex": 3,
+  "en": "Susan had to make do with her old dress because she couldn't afford to buy a new one."
+ },
+ {
+  "id": "1020",
+  "tags": [],
+  "question": "Customs that older Britons have always taken very seriously are being (　　) by many young people in the UK today.",
+  "rawAnswer": "①",
+  "ja": "年配のイギリス人たちが常に重きを置いてきた慣習は，今日のイギリスの多くの若者たちからは軽んじられている。",
+  "type": "choice",
+  "choices": [
+   "made light of",
+   "made the most of",
+   "made something of",
+   "made short of"
+  ],
+  "answerIndex": 0,
+  "en": "Customs that older Britons have always taken very seriously are being made light of by many young people in the UK today."
+ },
+ {
+  "id": "1021",
+  "tags": [],
+  "question": "I didn't <u>make much of</u> her opinion.",
+  "rawAnswer": "③",
+  "ja": "私は彼女の意見を重要視しなかった。",
+  "type": "choice",
+  "choices": [
+   "accept",
+   "agree with",
+   "value",
+   "welcome"
+  ],
+  "answerIndex": 2,
+  "en": "I didn't make much of her opinion."
+ },
+ {
+  "id": "1022",
+  "tags": [],
+  "question": "(a) She felt like slapping him in the face, but changed her mind.\n(b) She felt like slapping him in the face, but thought (　　) of it.",
+  "rawAnswer": "①",
+  "ja": "(a) 彼女は彼のほおをたたいてやりたい気分だったが，考えが変わった。\n(b) 彼女は彼のほおをたたいてやりたい気分だったが，思い直した。",
+  "type": "choice",
+  "choices": [
+   "better",
+   "bad",
+   "good",
+   "much"
+  ],
+  "answerIndex": 0,
+  "en": "She felt like slapping him in the face, but thought better of it."
+ },
+ {
+  "id": "1023",
+  "tags": [],
+  "question": "私はルームメートを探している。\nI am looking ( for / room / share / someone / the / to / with ).",
+  "rawAnswer": "for someone to share the room with",
+  "ja": "私はルームメートを探している。",
+  "type": "ordering",
+  "answer": "for someone to share the room with",
+  "pieces": [
+   "for",
+   "room",
+   "share",
+   "someone",
+   "the",
+   "to",
+   "with"
+  ],
+  "en": "I am looking for someone to share the room with."
+ },
+ {
+  "id": "1024",
+  "tags": [],
+  "question": "What is frequently said among many linguists is that language is one of the characteristics which (　　) humans from the other animals.",
+  "rawAnswer": "③",
+  "ja": "多くの言語学者たちの間でしきりに言われていることは，言語は人間を他の動物たちと区別する特徴の１つだということだ。",
+  "type": "choice",
+  "choices": [
+   "differs",
+   "diversifies",
+   "distinguishes",
+   "distracts"
+  ],
+  "answerIndex": 2,
+  "en": "What is frequently said among many linguists is that language is one of the characteristics which distinguishes humans from the other animals."
+ },
+ {
+  "id": "1025",
+  "tags": [],
+  "question": "The two girls were so much alike that I couldn't (　　) one from the other.",
+  "rawAnswer": "③",
+  "ja": "２人の少女はあまりにも似ていたので，私は区別することができなかった。",
+  "type": "choice",
+  "choices": [
+   "speak",
+   "talk",
+   "tell",
+   "say"
+  ],
+  "answerIndex": 2,
+  "en": "The two girls were so much alike that I couldn't tell one from the other."
+ },
+ {
+  "id": "1026",
+  "tags": [],
+  "question": "彼は何冊かの本をアメリカへ注文した。\nHe ordered some books (　　) America.",
+  "rawAnswer": "from",
+  "ja": "彼は何冊かの本をアメリカへ注文した。",
+  "type": "fill",
+  "answer": "from",
+  "en": "He ordered some books from America."
+ },
+ {
+  "id": "1027",
+  "tags": [
+   "基本"
+  ],
+  "question": "Today, people (　　) much less time on their children than before.",
+  "rawAnswer": "③",
+  "ja": "今日，人々は自分の子どもに以前よりもはるかに少ない時間しか費やしていない。",
+  "type": "choice",
+  "choices": [
+   "hand",
+   "make",
+   "spend",
+   "take"
+  ],
+  "answerIndex": 2,
+  "en": "Today, people spend much less time on their children than before."
+ },
+ {
+  "id": "1028",
+  "tags": [],
+  "question": "I congratulated her (　　) winning the tournament.",
+  "rawAnswer": "②",
+  "ja": "彼女はトーナメントで優勝したので，私は彼女にお祝いの言葉を述べた。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "on",
+   "by",
+   "with"
+  ],
+  "answerIndex": 1,
+  "en": "I congratulated her on winning the tournament."
+ },
+ {
+  "id": "1029",
+  "tags": [],
+  "question": "The students (　　) most of their free time to the cleanup campaign sponsored by the local community.",
+  "rawAnswer": "①",
+  "ja": "学生たちは，地元団体が後援する清掃運動に自由時間の大部分を提供した。",
+  "type": "choice",
+  "choices": [
+   "contributed",
+   "attributed",
+   "substituted",
+   "distributed"
+  ],
+  "answerIndex": 0,
+  "en": "The students contributed most of their free time to the cleanup campaign sponsored by the local community."
+ },
+ {
+  "id": "1030",
+  "tags": [],
+  "question": "He decided to (　　) the rest of his life to helping young people in developing countries.",
+  "rawAnswer": "④",
+  "ja": "彼は，発展途上国の若者たちを助けることに，自分の残りの人生をささげようと決めた。",
+  "type": "choice",
+  "choices": [
+   "perform",
+   "promise",
+   "remain",
+   "devote"
+  ],
+  "answerIndex": 3,
+  "en": "He decided to devote the rest of his life to helping young people in developing countries."
+ },
+ {
+  "id": "1031",
+  "tags": [],
+  "question": "The executives attributed the slowdown (　　) the government's economic policy.",
+  "rawAnswer": "③",
+  "ja": "重役たちは，景気後退を政府の経済政策のせいにした。",
+  "type": "choice",
+  "choices": [
+   "from",
+   "in",
+   "to",
+   "except"
+  ],
+  "answerIndex": 2,
+  "en": "The executives attributed the slowdown to the government's economic policy."
+ },
+ {
+  "id": "1032",
+  "tags": [],
+  "question": "I am going to leave Tokyo (　　) Osaka.",
+  "rawAnswer": "③",
+  "ja": "私は大阪に向けて東京を発つ予定だ。",
+  "type": "choice",
+  "choices": [
+   "on",
+   "to",
+   "for",
+   "near"
+  ],
+  "answerIndex": 2,
+  "en": "I am going to leave Tokyo for Osaka."
+ },
+ {
+  "id": "1033",
+  "tags": [],
+  "question": "Can I exchange dollars (　　) yen here?",
+  "rawAnswer": "②",
+  "ja": "ここでドルを円に両替できますか。",
+  "type": "choice",
+  "choices": [
+   "by",
+   "for",
+   "from",
+   "in"
+  ],
+  "answerIndex": 1,
+  "en": "Can I exchange dollars for yen here?"
+ },
+ {
+  "id": "1034",
+  "tags": [],
+  "question": "Even though Nancy is over twenty, she is often (　　) for a high school student.",
+  "rawAnswer": "④",
+  "ja": "ナンシーは20歳を越えているが，しばしば高校生と間違われる。",
+  "type": "choice",
+  "choices": [
+   "regarded",
+   "thought",
+   "seen",
+   "taken"
+  ],
+  "answerIndex": 3,
+  "en": "Even though Nancy is over twenty, she is often taken for a high school student."
+ },
+ {
+  "id": "1035",
+  "tags": [],
+  "question": "The teacher mistook me (　　) my twin brother.",
+  "rawAnswer": "④",
+  "ja": "先生は私を双子の兄［弟］と間違えた。",
+  "type": "choice",
+  "choices": [
+   "with",
+   "by",
+   "from",
+   "for"
+  ],
+  "answerIndex": 3,
+  "en": "The teacher mistook me for my twin brother."
+ },
+ {
+  "id": "1036",
+  "tags": [
+   "基本"
+  ],
+  "question": "I asked the waiter (　　) tea, but he brought milk.",
+  "rawAnswer": "④",
+  "ja": "私は給仕に紅茶を頼んだが，彼はミルクを持ってきた。",
+  "type": "choice",
+  "choices": [
+   "of",
+   "about",
+   "to",
+   "for"
+  ],
+  "answerIndex": 3,
+  "en": "I asked the waiter for tea, but he brought milk."
+ },
+ {
+  "id": "1037",
+  "tags": [],
+  "question": "Grandma had four daughters and no sons. She named each of her four daughters (　　) a flower.",
+  "rawAnswer": "③",
+  "ja": "祖母には娘が４人いたが，息子は１人もいなかった。彼女は娘たち４人それぞれに，花にちなんだ名前をつけた。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "of",
+   "after",
+   "with"
+  ],
+  "answerIndex": 2,
+  "en": "Grandma had four daughters and no sons. She named each of her four daughters after a flower."
+ },
+ {
+  "id": "1038",
+  "tags": [],
+  "question": "While he was studying at university, he depended on his parents (　　) financial support.",
+  "rawAnswer": "④",
+  "ja": "大学で学んでいる間，彼は両親に経済的援助を頼った。",
+  "type": "choice",
+  "choices": [
+   "in",
+   "of",
+   "on",
+   "for"
+  ],
+  "answerIndex": 3,
+  "en": "While he was studying at university, he depended on his parents for financial support."
+ },
+ {
+  "id": "1039",
+  "tags": [],
+  "question": "In my anguish, I (　　) to my father for help.",
+  "rawAnswer": "④",
+  "ja": "苦痛のあまり，私は援助を父に頼った。",
+  "type": "choice",
+  "choices": [
+   "appeared",
+   "asked",
+   "made",
+   "turned"
+  ],
+  "answerIndex": 3,
+  "en": "In my anguish, I turned to my father for help."
+ },
+ {
+  "id": "1040",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "I have to <u>take part in</u> a meeting.",
+  "rawAnswer": "④",
+  "ja": "私は会議に出席しなければなりません。",
+  "type": "choice",
+  "choices": [
+   "be absent from",
+   "be late for",
+   "leave for",
+   "participate in"
+  ],
+  "answerIndex": 3,
+  "en": "I have to take part in a meeting."
+ },
+ {
+  "id": "1041",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "Tourism plays an important (　　) in the economy of Switzerland.",
+  "rawAnswer": "③",
+  "ja": "観光事業は，スイス経済において重要な役割を果たしている。",
+  "type": "choice",
+  "choices": [
+   "favor",
+   "name",
+   "part",
+   "spot"
+  ],
+  "answerIndex": 2,
+  "en": "Tourism plays an important part in the economy of Switzerland."
+ },
+ {
+  "id": "1042",
+  "tags": [],
+  "question": "I try to do my (　　) in protecting the environment by reducing my garbage.",
+  "rawAnswer": "③",
+  "ja": "私は，自分のゴミを減らすことによって，環境保護における自分の役割を果たそうと努めている。",
+  "type": "choice",
+  "choices": [
+   "thinking",
+   "position",
+   "part",
+   "way"
+  ],
+  "answerIndex": 2,
+  "en": "I try to do my part in protecting the environment by reducing my garbage."
+ },
+ {
+  "id": "1043",
+  "tags": [],
+  "question": "裏庭の塀の下を，その猫が走っていくのがチラッと見えた。\nI caught (　　) of the cat running under the fence in the backyard.",
+  "rawAnswer": "sight",
+  "ja": "裏庭の塀の下を，その猫が走っていくのがチラッと見えた。",
+  "type": "fill",
+  "answer": "sight",
+  "en": "I caught sight of the cat running under the fence in the backyard."
+ },
+ {
+  "id": "1044",
+  "tags": [],
+  "question": "We caught sight of a ship in the distance, but soon (　　) sight of it.",
+  "rawAnswer": "③",
+  "ja": "私たちは遠くに船が見えたのだが，やがて見失った。",
+  "type": "choice",
+  "choices": [
+   "avoided",
+   "escaped",
+   "lost",
+   "neglected"
+  ],
+  "answerIndex": 2,
+  "en": "We caught sight of a ship in the distance, but soon lost sight of it."
+ },
+ {
+  "id": "1045",
+  "tags": [],
+  "question": "You should (　　) your time in everything that you do.",
+  "rawAnswer": "④",
+  "ja": "あなたのすべての行動にゆっくり時間をかけるべきです。",
+  "type": "choice",
+  "choices": [
+   "come",
+   "make",
+   "go",
+   "take"
+  ],
+  "answerIndex": 3,
+  "en": "You should take your time in everything that you do."
+ },
+ {
+  "id": "1046",
+  "tags": [],
+  "question": "\"How did you (　　) time while you were waiting for me?\"\n\"Well, I looked at some books in the college bookshop.\"",
+  "rawAnswer": "④",
+  "ja": "「僕を待っている間，君はどうやって時間をつぶしたんだい」\n「ええと，大学の本屋で何冊か本を見ていたんだ」",
+  "type": "choice",
+  "choices": [
+   "save",
+   "keep",
+   "lose",
+   "kill"
+  ],
+  "answerIndex": 3,
+  "en": "\"How did you kill time while you were waiting for me?\""
+ },
+ {
+  "id": "1047",
+  "tags": [],
+  "question": "No solution was reached in the discussion, as neither side would <u>give way</u> to the other.",
+  "rawAnswer": "④",
+  "ja": "どちら側も互いに譲ろうとしなかったので，話し合いでは何の解決にも至らなかった。",
+  "type": "choice",
+  "choices": [
+   "attack",
+   "insist",
+   "persuade",
+   "yield"
+  ],
+  "answerIndex": 3,
+  "en": "No solution was reached in the discussion, as neither side would give way to the other."
+ },
+ {
+  "id": "1048",
+  "tags": [],
+  "question": "They drove slowly to (　　) for each other.",
+  "rawAnswer": "①",
+  "ja": "彼らは互いに道をあけようと，ゆっくり運転した。",
+  "type": "choice",
+  "choices": [
+   "make way",
+   "put ahead",
+   "lead in",
+   "come in"
+  ],
+  "answerIndex": 0,
+  "en": "They drove slowly to make way for each other."
+ },
+ {
+  "id": "1049",
+  "tags": [],
+  "question": "Her husband wants to have his own (　　) in everything.",
+  "rawAnswer": "④",
+  "ja": "彼女の夫は何でも自分の思い通りにしたがる。",
+  "type": "choice",
+  "choices": [
+   "habit",
+   "means",
+   "opinion",
+   "way"
+  ],
+  "answerIndex": 3,
+  "en": "Her husband wants to have his own way in everything."
+ },
+ {
+  "id": "1050",
+  "tags": [
+   "基本"
+  ],
+  "question": "The next Olympics will (　　) place in Tokyo.",
+  "rawAnswer": "④",
+  "ja": "次のオリンピックは東京で催される。",
+  "type": "choice",
+  "choices": [
+   "approve",
+   "insist",
+   "stick",
+   "take"
+  ],
+  "answerIndex": 3,
+  "en": "The next Olympics will take place in Tokyo."
+ },
+ {
+  "id": "1051",
+  "tags": [],
+  "question": "Today, e-mail has almost (　　) the place of writing letters.",
+  "rawAnswer": "①",
+  "ja": "今日では，Eメールはほぼ手紙に取って代わってしまった。",
+  "type": "choice",
+  "choices": [
+   "taken",
+   "made",
+   "got",
+   "had"
+  ],
+  "answerIndex": 0,
+  "en": "Today, e-mail has almost taken the place of writing letters."
+ },
+ {
+  "id": "1052",
+  "tags": [],
+  "question": "(a) Smoking affects our health in a negative way.\n(b) Smoking has a bad (　　) on our health.",
+  "rawAnswer": "③",
+  "ja": "(a) (b) 喫煙は私たちの健康に悪い影響を及ぼす。",
+  "type": "choice",
+  "choices": [
+   "procedure",
+   "expense",
+   "effect",
+   "taste"
+  ],
+  "answerIndex": 2,
+  "en": "Smoking has a bad effect on our health."
+ },
+ {
+  "id": "1053",
+  "tags": [],
+  "question": "The pill I took is starting to take (　　). My stomach feels a little better already.",
+  "rawAnswer": "①",
+  "ja": "私の飲んだ薬が効き始めている。胃の調子がすでに少しよくなった感じだ。",
+  "type": "choice",
+  "choices": [
+   "effect",
+   "effectively",
+   "effective",
+   "effecting"
+  ],
+  "answerIndex": 0,
+  "en": "The pill I took is starting to take effect. My stomach feels a little better already."
+ },
+ {
+  "id": "1054",
+  "tags": [],
+  "question": "When talking with people from foreign countries, we should always <u>take into account</u> their cultural background.",
+  "rawAnswer": "④",
+  "ja": "外国人と話しているときは，私たちは常に彼らの文化的背景を考慮に入れるべきだ。",
+  "type": "choice",
+  "choices": [
+   "improve",
+   "neglect",
+   "explain",
+   "consider"
+  ],
+  "answerIndex": 3,
+  "en": "When talking with people from foreign countries, we should always take into account their cultural background."
+ },
+ {
+  "id": "1055",
+  "tags": [],
+  "question": "You should take what he said into (　　).",
+  "rawAnswer": "④",
+  "ja": "君は彼の言ったことを考慮に入れるべきだ。",
+  "type": "choice",
+  "choices": [
+   "amount",
+   "counting",
+   "liking",
+   "consideration"
+  ],
+  "answerIndex": 3,
+  "en": "You should take what he said into consideration."
+ },
+ {
+  "id": "1056",
+  "tags": [],
+  "question": "She <u>felt ashamed</u> because she couldn't answer the question.",
+  "rawAnswer": "②",
+  "ja": "その質問に答えられなかったので，彼女は面目を失った。",
+  "type": "choice",
+  "choices": [
+   "lost interest",
+   "lost face",
+   "lost her way",
+   "lost time"
+  ],
+  "answerIndex": 1,
+  "en": "She felt ashamed because she couldn't answer the question."
+ },
+ {
+  "id": "1057",
+  "tags": [
+   "発展"
+  ],
+  "question": "The quarrelling boys stood (　　) faces at each other.",
+  "rawAnswer": "③",
+  "ja": "そのけんかをしている少年たちは，お互いにしかめ面をして立っていた。",
+  "type": "choice",
+  "choices": [
+   "doing",
+   "getting",
+   "making",
+   "taking"
+  ],
+  "answerIndex": 2,
+  "en": "The quarrelling boys stood making faces at each other."
+ },
+ {
+  "id": "1058",
+  "tags": [],
+  "question": "You must always keep (　　) on these children; they aren't good swimmers.",
+  "rawAnswer": "①",
+  "ja": "この子どもたちから常に目を離さないように。彼らは泳ぎがうまくないのだから。",
+  "type": "choice",
+  "choices": [
+   "an eye",
+   "attention",
+   "care",
+   "insight"
+  ],
+  "answerIndex": 0,
+  "en": "You must always keep an eye on these children; they aren't good swimmers."
+ },
+ {
+  "id": "1059",
+  "tags": [],
+  "question": "(a) On hearing the news, she burst out crying.\n(b) On hearing the news, she burst (　　) tears.",
+  "rawAnswer": "into",
+  "ja": "(a) (b) その知らせを聞いたとたん，彼女は突然泣き出した。",
+  "type": "fill",
+  "answer": "into",
+  "en": "On hearing the news, she burst into tears."
+ },
+ {
+  "id": "1060",
+  "tags": [],
+  "question": "The teacher told Jack to hold his (　　).",
+  "rawAnswer": "④",
+  "ja": "先生はジャックに黙っているようにと言った。",
+  "type": "choice",
+  "choices": [
+   "cheek",
+   "lip",
+   "nose",
+   "tongue"
+  ],
+  "answerIndex": 3,
+  "en": "The teacher told Jack to hold his tongue."
+ },
+ {
+  "id": "1061",
+  "tags": [
+   "発展"
+  ],
+  "question": "The canyon is so large that seeing it takes my breath (　　).",
+  "rawAnswer": "①",
+  "ja": "その峡谷はあまりに広大なので，その眺めに私は息をのむ。",
+  "type": "choice",
+  "choices": [
+   "away",
+   "in",
+   "out",
+   "up"
+  ],
+  "answerIndex": 0,
+  "en": "The canyon is so large that seeing it takes my breath away."
+ },
+ {
+  "id": "1062",
+  "tags": [],
+  "question": "Tomorrow is not a holiday. Don't believe George. He's just pulling your (　　).",
+  "rawAnswer": "③",
+  "ja": "明日は休日ではありませんよ。ジョージの言うことを信じてはいけません。彼は君をからかっているだけです。",
+  "type": "choice",
+  "choices": [
+   "face",
+   "head",
+   "leg",
+   "neck"
+  ],
+  "answerIndex": 2,
+  "en": "Tomorrow is not a holiday. Don't believe George. He's just pulling your leg."
+ },
+ {
+  "id": "1063",
+  "tags": [],
+  "question": "When the President entered, all those present <u>rose to their feet</u>.",
+  "rawAnswer": "④",
+  "ja": "大統領が入ってくると，列席者は皆立ち上がった。",
+  "type": "choice",
+  "choices": [
+   "sat down",
+   "followed up",
+   "began to walk",
+   "stood up"
+  ],
+  "answerIndex": 3,
+  "en": "When the President entered, all those present rose to their feet."
+ },
+ {
+  "id": "1064",
+  "tags": [],
+  "question": "I wish that noise would stop. It gets on my (　　).",
+  "rawAnswer": "④",
+  "ja": "あの騒音が止んでくれたらよいのだが。それは私をいらいらさせる。",
+  "type": "choice",
+  "choices": [
+   "head",
+   "brain",
+   "feelings",
+   "nerves"
+  ],
+  "answerIndex": 3,
+  "en": "I wish that noise would stop. It gets on my nerves."
+ },
+ {
+  "id": "1065",
+  "tags": [],
+  "question": "She always stays calm. I've never seen her lose her (　　).",
+  "rawAnswer": "③",
+  "ja": "彼女はいつも平静を保っている。私は，彼女が腹を立てるところを見たことがない。",
+  "type": "choice",
+  "choices": [
+   "temptation",
+   "temple",
+   "temper",
+   "temperature"
+  ],
+  "answerIndex": 2,
+  "en": "She always stays calm. I've never seen her lose her temper."
+ },
+ {
+  "id": "1066",
+  "tags": [],
+  "question": "I can't learn so many words by (　　) at one time.",
+  "rawAnswer": "②",
+  "ja": "私には，一度にこんなにたくさんの単語を暗記することはできない。",
+  "type": "choice",
+  "choices": [
+   "mind",
+   "heart",
+   "brain",
+   "oneself"
+  ],
+  "answerIndex": 1,
+  "en": "I can't learn so many words by heart at one time."
+ },
+ {
+  "id": "1067",
+  "tags": [],
+  "question": "He has to <u>make up his mind</u> which university is better for him.",
+  "rawAnswer": "①",
+  "ja": "どちらの大学の方が自分にとってよいのか，彼は決めなければならない。",
+  "type": "choice",
+  "choices": [
+   "decide",
+   "worry about",
+   "tell",
+   "argue"
+  ],
+  "answerIndex": 0,
+  "en": "He has to make up his mind which university is better for him."
+ },
+ {
+  "id": "1068",
+  "tags": [],
+  "question": "You should <u>keep in mind</u> what I said yesterday.",
+  "rawAnswer": "①",
+  "ja": "昨日私が言ったことを，あなたは心に留めておくべきだ。",
+  "type": "choice",
+  "choices": [
+   "not forget",
+   "not mind",
+   "not remove",
+   "not remember"
+  ],
+  "answerIndex": 0,
+  "en": "You should keep in mind what I said yesterday."
+ },
+ {
+  "id": "1069",
+  "tags": [],
+  "question": "Michael (　　), so we can trust him.",
+  "rawAnswer": "③",
+  "ja": "マイケルは約束を守るので，私たちは彼を信頼できる。",
+  "type": "choice",
+  "choices": [
+   "keeps fit",
+   "breaks the rules",
+   "keeps his word",
+   "breaks his promises"
+  ],
+  "answerIndex": 2,
+  "en": "Michael keeps his word, so we can trust him."
+ },
+ {
+  "id": "1070",
+  "tags": [
+   "発展"
+  ],
+  "question": "We <u>had words</u> again last night, so today we're not speaking.",
+  "rawAnswer": "①",
+  "ja": "私たちは昨晩また口論をしたので，今日は口をきいていない。",
+  "type": "choice",
+  "choices": [
+   "had a quarrel",
+   "talked a lot",
+   "had a discussion",
+   "made a decision"
+  ],
+  "answerIndex": 0,
+  "en": "We had words again last night, so today we're not speaking."
+ },
+ {
+  "id": "1071",
+  "tags": [],
+  "question": "The airplane (　　) fire soon after it was struck by lightning.",
+  "rawAnswer": "④",
+  "ja": "その飛行機は，雷に打たれるとまもなく炎上した。",
+  "type": "choice",
+  "choices": [
+   "went",
+   "flew",
+   "made",
+   "caught"
+  ],
+  "answerIndex": 3,
+  "en": "The airplane caught fire soon after it was struck by lightning."
+ },
+ {
+  "id": "1072",
+  "tags": [],
+  "question": "My mother has <u>gained</u> weight again. She needs some exercise.",
+  "rawAnswer": "③",
+  "ja": "母はまた太った。母には運動が必要だ。",
+  "type": "choice",
+  "choices": [
+   "stayed on",
+   "kept on",
+   "put on",
+   "taken on"
+  ],
+  "answerIndex": 2,
+  "en": "My mother has gained weight again. She needs some exercise."
+ },
+ {
+  "id": "1073",
+  "tags": [],
+  "question": "Paul makes it a rule to <u>keep good hours</u>.",
+  "rawAnswer": "②",
+  "ja": "ポールは早寝早起きをするようにしている。",
+  "type": "choice",
+  "choices": [
+   "enjoy himself",
+   "get up and go to bed early",
+   "have a nice time",
+   "read books"
+  ],
+  "answerIndex": 1,
+  "en": "Paul makes it a rule to keep good hours."
+ },
+ {
+  "id": "1074",
+  "tags": [],
+  "question": "He was slow in putting his idea (　　) practice.",
+  "rawAnswer": "②",
+  "ja": "彼は自分の考えを実行に移すのが遅かった。",
+  "type": "choice",
+  "choices": [
+   "across",
+   "into",
+   "to",
+   "upon"
+  ],
+  "answerIndex": 1,
+  "en": "He was slow in putting his idea into practice."
+ },
+ {
+  "id": "1075",
+  "tags": [],
+  "question": "I've come to ask a big (　　) of you.",
+  "rawAnswer": "②",
+  "ja": "君に重要なお願いがあってやってきたんだ。",
+  "type": "choice",
+  "choices": [
+   "question",
+   "favor",
+   "kindness",
+   "service"
+  ],
+  "answerIndex": 1,
+  "en": "I've come to ask a big favor of you."
+ },
+ {
+  "id": "1076",
+  "tags": [],
+  "question": "He always <u>finds fault with</u> something in my personality.",
+  "rawAnswer": "①",
+  "ja": "彼はいつも私の性格について何かけちをつける。",
+  "type": "choice",
+  "choices": [
+   "criticizes",
+   "praises",
+   "respects",
+   "despises"
+  ],
+  "answerIndex": 0,
+  "en": "He always finds fault with something in my personality."
+ },
+ {
+  "id": "1077",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "He <u>got in touch with</u> me as soon as he arrived in Nagoya.",
+  "rawAnswer": "④",
+  "ja": "彼は名古屋に着くとすぐに，私に連絡をしてきた。",
+  "type": "choice",
+  "choices": [
+   "grasped",
+   "told",
+   "heard",
+   "contacted"
+  ],
+  "answerIndex": 3,
+  "en": "He got in touch with me as soon as he arrived in Nagoya."
+ },
+ {
+  "id": "1078",
+  "tags": [],
+  "question": "Your behavior will (　　) rise to misunderstanding.",
+  "rawAnswer": "④",
+  "ja": "あなたのふるまいは誤解を生むだろう。",
+  "type": "choice",
+  "choices": [
+   "cause",
+   "get",
+   "lead",
+   "give"
+  ],
+  "answerIndex": 3,
+  "en": "Your behavior will give rise to misunderstanding."
+ },
+ {
+  "id": "1079",
+  "tags": [],
+  "question": "My sister (　　) birth to a baby boy the day before yesterday.",
+  "rawAnswer": "④",
+  "ja": "私の姉［妹］はおととい，男の赤ちゃんを産んだ。",
+  "type": "choice",
+  "choices": [
+   "offered",
+   "did",
+   "got",
+   "gave"
+  ],
+  "answerIndex": 3,
+  "en": "My sister gave birth to a baby boy the day before yesterday."
+ },
+ {
+  "id": "1080",
+  "tags": [],
+  "question": "What he says does not make any (　　) to me.",
+  "rawAnswer": "④",
+  "ja": "彼の言うことは私にはまったく理解できない。",
+  "type": "choice",
+  "choices": [
+   "cause",
+   "means",
+   "reason",
+   "sense"
+  ],
+  "answerIndex": 3,
+  "en": "What he says does not make any sense to me."
+ },
+ {
+  "id": "1081",
+  "tags": [],
+  "question": "It will <u>make no difference</u> whether he joins us or not.",
+  "rawAnswer": "②",
+  "ja": "彼が私たちの仲間に加わろうが加わるまいが，どうでもよいことだ。",
+  "type": "choice",
+  "choices": [
+   "be different",
+   "be unimportant",
+   "be unknown",
+   "be impossible"
+  ],
+  "answerIndex": 1,
+  "en": "It will make no difference whether he joins us or not."
+ },
+ {
+  "id": "1082",
+  "tags": [],
+  "question": "書き出しにしたがって，空所に適語を入れなさい。\n私は野菜を育てて売ることで生計をたてるつもりだ。\nI'm going to make a ( l　　) by growing and selling vegetables.",
+  "rawAnswer": "living",
+  "ja": "書き出しにしたがって，空所に適語を入れなさい。\n私は野菜を育てて売ることで生計をたてるつもりだ。",
+  "type": "fill",
+  "answer": "living",
+  "en": "I'm going to make a living by growing and selling vegetables."
+ },
+ {
+  "id": "1083",
+  "tags": [
+   "発展"
+  ],
+  "question": "I'm afraid we won't be able to (　　) it on time because of the traffic.",
+  "rawAnswer": "③",
+  "ja": "渋滞のため，残念ながら私たちは時間に間に合いそうにありません。",
+  "type": "choice",
+  "choices": [
+   "arrive",
+   "come",
+   "make",
+   "success"
+  ],
+  "answerIndex": 2,
+  "en": "I'm afraid we won't be able to make it on time because of the traffic."
+ },
+ {
+  "id": "1084",
+  "tags": [],
+  "question": "You should make (　　) of this opportunity.",
+  "rawAnswer": "④",
+  "ja": "あなたはこの機会を利用するべきだ。",
+  "type": "choice",
+  "choices": [
+   "emphasis",
+   "glimpse",
+   "impact",
+   "use"
+  ],
+  "answerIndex": 3,
+  "en": "You should make use of this opportunity."
+ },
+ {
+  "id": "1085",
+  "tags": [],
+  "question": "Companies should take (　　) of this wonderful opportunity to get new customers.",
+  "rawAnswer": "②",
+  "ja": "企業はこのすばらしい機会を利用して新規の顧客を獲得すべきだ。",
+  "type": "choice",
+  "choices": [
+   "merchandise",
+   "advantage",
+   "advice",
+   "industry"
+  ],
+  "answerIndex": 1,
+  "en": "Companies should take advantage of this wonderful opportunity to get new customers."
+ },
+ {
+  "id": "1086",
+  "tags": [],
+  "question": "Guests are free to (　　) themselves of our hotel facilities.",
+  "rawAnswer": "①",
+  "ja": "お客様は，当ホテルの設備をご自由にお使いいただけます。",
+  "type": "choice",
+  "choices": [
+   "avail",
+   "get",
+   "leave",
+   "make"
+  ],
+  "answerIndex": 0,
+  "en": "Guests are free to avail themselves of our hotel facilities."
+ },
+ {
+  "id": "1087",
+  "tags": [],
+  "question": "Kunio was (　　) fun of by his friends at school.",
+  "rawAnswer": "④",
+  "ja": "クニオは学校で友人たちにからかわれた。",
+  "type": "choice",
+  "choices": [
+   "cooked",
+   "created",
+   "prepared",
+   "made"
+  ],
+  "answerIndex": 3,
+  "en": "Kunio was made fun of by his friends at school."
+ },
+ {
+  "id": "1088",
+  "tags": [],
+  "question": "If you really stand up and start singing on your own during the solemn ceremony, you will (　　) a fool of yourself.",
+  "rawAnswer": "②",
+  "ja": "もし本当に君が厳粛な儀式の最中にひとりで立ち上がって歌い始めれば，笑いものになるよ。",
+  "type": "choice",
+  "choices": [
+   "show",
+   "make",
+   "get",
+   "drive"
+  ],
+  "answerIndex": 1,
+  "en": "If you really stand up and start singing on your own during the solemn ceremony, you will make a fool of yourself."
+ },
+ {
+  "id": "1089",
+  "tags": [
+   "発展"
+  ],
+  "question": "The only way to (　　) ends meet will be to cut back on the cost of equipment.",
+  "rawAnswer": "①",
+  "ja": "収支を合わせる唯一の方法は，設備費を削減することだろう。",
+  "type": "choice",
+  "choices": [
+   "make",
+   "reach",
+   "satisfy",
+   "approach"
+  ],
+  "answerIndex": 0,
+  "en": "The only way to make ends meet will be to cut back on the cost of equipment."
+ },
+ {
+  "id": "1090",
+  "tags": [],
+  "question": "I (　　) it a rule to get up early in the morning.",
+  "rawAnswer": "④",
+  "ja": "私は朝早く起きるようにしている。",
+  "type": "choice",
+  "choices": [
+   "give",
+   "do",
+   "perform",
+   "make"
+  ],
+  "answerIndex": 3,
+  "en": "I make it a rule to get up early in the morning."
+ },
+ {
+  "id": "1091",
+  "tags": [],
+  "question": "高校生だった頃，花子はこの深夜番組を必ず見るようにしていた。\nAs a high school student, Hanako (　　) watching this\nlate-night TV program.",
+  "rawAnswer": "③",
+  "ja": "高校生だった頃，花子はこの深夜番組を必ず見るようにしていた。",
+  "type": "choice",
+  "choices": [
+   "made up her mind",
+   "made it a rule to",
+   "made a point of",
+   "made sense of"
+  ],
+  "answerIndex": 2,
+  "en": "As a high school student, Hanako made a point of watching this"
+ },
+ {
+  "id": "1092",
+  "tags": [
+   "基本"
+  ],
+  "question": "We're looking for someone to (　　) care of our pets.",
+  "rawAnswer": "①",
+  "ja": "私たちは，ペットの世話をしてくれる人を探している。",
+  "type": "choice",
+  "choices": [
+   "take",
+   "get",
+   "give",
+   "be"
+  ],
+  "answerIndex": 0,
+  "en": "We're looking for someone to take care of our pets."
+ },
+ {
+  "id": "1093",
+  "tags": [],
+  "question": "Helen asked him to (　　) the office while she was away.",
+  "rawAnswer": "①",
+  "ja": "ヘレンは，自分が不在の間，事務所の管理をするよう彼に頼んだ。",
+  "type": "choice",
+  "choices": [
+   "take charge of",
+   "take notice of",
+   "take pride in",
+   "take the place of"
+  ],
+  "answerIndex": 0,
+  "en": "Helen asked him to take charge of the office while she was away."
+ },
+ {
+  "id": "1094",
+  "tags": [],
+  "question": "２文がほぼ同じ意味になるように，与えられた語を並べかえなさい。\n(a) My protests were ignored.\n(b) Nobody ( any / my / notice / of / protests / took ).",
+  "rawAnswer": "took any notice of my protests",
+  "ja": "(a) 私の抗議は無視された。\n(b) だれも私の抗議に注目しなかった。",
+  "type": "ordering",
+  "answer": "took any notice of my protests",
+  "pieces": [
+   "any",
+   "my",
+   "notice",
+   "of",
+   "protests",
+   "took"
+  ],
+  "en": "Nobody took any notice of my protests."
+ },
+ {
+  "id": "1095",
+  "tags": [
+   "基本"
+  ],
+  "question": "We take great pride (　　) our unique Japanese cultural traditions.",
+  "rawAnswer": "②",
+  "ja": "私たちは，日本の独特な伝統文化をとても誇りに思っている。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "in",
+   "of",
+   "on"
+  ],
+  "answerIndex": 1,
+  "en": "We take great pride in our unique Japanese cultural traditions."
+ },
+ {
+  "id": "1096",
+  "tags": [
+   "基本"
+  ],
+  "question": "Take a close (　　) at the dish on the table. It is made of rubber!",
+  "rawAnswer": "②",
+  "ja": "テーブルの上の料理を近くで見てごらんなさい。それはゴムでできているのですよ！",
+  "type": "choice",
+  "choices": [
+   "smell",
+   "look",
+   "bite",
+   "touch"
+  ],
+  "answerIndex": 1,
+  "en": "Take a close look at the dish on the table. It is made of rubber!"
+ },
+ {
+  "id": "1097",
+  "tags": [],
+  "question": "わざわざ迎えに来るようなことはしないでください。\nDon't (to / the / come / take / trouble) and meet me.",
+  "rawAnswer": "take the trouble to come",
+  "ja": "わざわざ迎えに来るようなことはしないでください。",
+  "type": "ordering",
+  "answer": "take the trouble to come",
+  "pieces": [
+   "to",
+   "the",
+   "come",
+   "take",
+   "trouble"
+  ],
+  "en": "Don't take the trouble to come and meet me."
+ },
+ {
+  "id": "1098",
+  "tags": [],
+  "question": "Tony Blair has done more than any other Western leader to force people to pay (　　) to climate change and poverty in Africa.",
+  "rawAnswer": "①",
+  "ja": "トニー・ブレアは，他の西洋諸国のどの指導者よりも，人々の注意を気候変化とアフリカにおける貧困に向けさせた。",
+  "type": "choice",
+  "choices": [
+   "attention",
+   "interest",
+   "money",
+   "taxes"
+  ],
+  "answerIndex": 0,
+  "en": "Tony Blair has done more than any other Western leader to force people to pay attention to climate change and poverty in Africa."
+ },
+ {
+  "id": "1099",
+  "tags": [],
+  "question": "His daughter came (　　) age last year.",
+  "rawAnswer": "③",
+  "ja": "彼の娘は昨年成人になった。",
+  "type": "choice",
+  "choices": [
+   "on",
+   "to",
+   "of",
+   "for"
+  ],
+  "answerIndex": 2,
+  "en": "His daughter came of age last year."
+ },
+ {
+  "id": "1100",
+  "tags": [],
+  "question": "The first Japanese law against workplace sex discrimination came (　　) existence in the 1980s.",
+  "rawAnswer": "②",
+  "ja": "職場での性差別を禁止する最初の日本の法律は，1980年代に成立した。",
+  "type": "choice",
+  "choices": [
+   "around",
+   "into",
+   "on",
+   "under"
+  ],
+  "answerIndex": 1,
+  "en": "The first Japanese law against workplace sex discrimination came into existence in the 1980s."
+ },
+ {
+  "id": "1101",
+  "tags": [],
+  "question": "The sudden change in weather (　　) an end to our picnic.",
+  "rawAnswer": "④",
+  "ja": "天気の急激な変化が私たちのピクニックを終わらせた。",
+  "type": "choice",
+  "choices": [
+   "gave",
+   "did",
+   "caused",
+   "put"
+  ],
+  "answerIndex": 3,
+  "en": "The sudden change in weather put an end to our picnic."
+ },
+ {
+  "id": "1102",
+  "tags": [
+   "発展"
+  ],
+  "question": "I finally <u>came to terms with</u> my terminal cancer.",
+  "rawAnswer": "①",
+  "ja": "私は自分の末期ガンをようやく受け入れた。",
+  "type": "choice",
+  "choices": [
+   "accepted",
+   "cured",
+   "refused",
+   "condemned"
+  ],
+  "answerIndex": 0,
+  "en": "I finally came to terms with my terminal cancer."
+ },
+ {
+  "id": "1103",
+  "tags": [],
+  "question": "おめでとう。君の演技は完璧だった。\nCongratulations! Your performance left (　　) to be desired.",
+  "rawAnswer": "nothing",
+  "ja": "おめでとう。君の演技は完璧だった。",
+  "type": "fill",
+  "answer": "nothing",
+  "en": "Congratulations! Your performance left nothing to be desired."
+ },
+ {
+  "id": "1104",
+  "tags": [],
+  "question": "(a) This Russian composition is far from perfect.\n(b) This Russian composition (　　) much to be desired.",
+  "rawAnswer": "leaves",
+  "ja": "(a) このロシア語の作文は決して完璧ではない。\n(b) このロシア語の作文は改善の余地がかなりある。",
+  "type": "fill",
+  "answer": "leaves",
+  "en": "This Russian composition leaves much to be desired."
+ },
+ {
+  "id": "1105",
+  "tags": [],
+  "question": "This is my first trip abroad, so I'm going to (　　) it.",
+  "rawAnswer": "②",
+  "ja": "これが初めての海外旅行なので，私は存分に楽しむつもりだ。",
+  "type": "choice",
+  "choices": [
+   "make sense of",
+   "make the most of",
+   "make off with",
+   "make way for"
+  ],
+  "answerIndex": 1,
+  "en": "This is my first trip abroad, so I'm going to make the most of it."
+ },
+ {
+  "id": "1106",
+  "tags": [
+   "発展"
+  ],
+  "question": "My cousin's death from cancer <u>brought home to me</u> the danger of being a heavy smoker.",
+  "rawAnswer": "①",
+  "ja": "いとこのガンによる死は，ヘビースモーカーであることの危険性を私に痛感させた。",
+  "type": "choice",
+  "choices": [
+   "caused me to realize",
+   "helped me to get rid of",
+   "taught me how to fight",
+   "told me to risk"
+  ],
+  "answerIndex": 0,
+  "en": "My cousin's death from cancer brought home to me the danger of being a heavy smoker."
+ },
+ {
+  "id": "1107",
+  "tags": [],
+  "question": "This contract still (　　) good.",
+  "rawAnswer": "②",
+  "ja": "この契約はまだ有効です。",
+  "type": "choice",
+  "choices": [
+   "does",
+   "holds",
+   "lasts",
+   "stays"
+  ],
+  "answerIndex": 1,
+  "en": "This contract still holds good."
+ },
+ {
+  "id": "1108",
+  "tags": [],
+  "question": "The twins are so similar that most people cannot tell them (　　).",
+  "rawAnswer": "④",
+  "ja": "その双子はとても似ているので，ほとんどの人は２人を見分けられない。",
+  "type": "choice",
+  "choices": [
+   "at all",
+   "afar",
+   "alike",
+   "apart"
+  ],
+  "answerIndex": 3,
+  "en": "The twins are so similar that most people cannot tell them apart."
+ },
+ {
+  "id": "1109",
+  "tags": [],
+  "question": "She <u>indicates</u> that money alone never makes great schools.",
+  "rawAnswer": "①",
+  "ja": "お金だけでは決して偉大な学校は作れないと彼女は指摘する。",
+  "type": "choice",
+  "choices": [
+   "points out",
+   "points in",
+   "makes believe",
+   "makes sure"
+  ],
+  "answerIndex": 0,
+  "en": "She indicates that money alone never makes great schools."
+ },
+ {
+  "id": "1110",
+  "tags": [
+   "発展"
+  ],
+  "question": "I (　　) to it that things were done as she wished.",
+  "rawAnswer": "③",
+  "ja": "私は，彼女の願い通りに事が運ぶよう取りはからった。",
+  "type": "choice",
+  "choices": [
+   "cared",
+   "heard",
+   "saw",
+   "watched"
+  ],
+  "answerIndex": 2,
+  "en": "I saw to it that things were done as she wished."
+ },
+ {
+  "id": "1111",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "I took it (　　) granted that he had received the letter.",
+  "rawAnswer": "④",
+  "ja": "私は，彼がその手紙を受け取ったのは当然だと思った。",
+  "type": "choice",
+  "choices": [
+   "to",
+   "in",
+   "from",
+   "for"
+  ],
+  "answerIndex": 3,
+  "en": "I took it for granted that he had received the letter."
+ },
+ {
+  "id": "1112",
+  "tags": [],
+  "question": "大阪へ引っ越した後も確実に連絡を取り合うよう，彼は彼女を説得した。\nHe (that / sure / persuaded / to / make / her) they kept in touch even after he moved to Osaka.",
+  "rawAnswer": "persuaded her to make sure that",
+  "ja": "大阪へ引っ越した後も確実に連絡を取り合うよう，彼は彼女を説得した。",
+  "type": "ordering",
+  "answer": "persuaded her to make sure that",
+  "pieces": [
+   "that",
+   "sure",
+   "persuaded",
+   "to",
+   "make",
+   "her"
+  ],
+  "en": "He persuaded her to make sure that they kept in touch even after he moved to Osaka."
+ },
+ {
+  "id": "1113",
+  "tags": [],
+  "question": "Let's <u>make believe</u> that we know nothing about the matter.",
+  "rawAnswer": "④",
+  "ja": "その件については私たちは何も知らないふりをしよう。",
+  "type": "choice",
+  "choices": [
+   "insist",
+   "accept",
+   "forget",
+   "pretend"
+  ],
+  "answerIndex": 3,
+  "en": "Let's make believe that we know nothing about the matter."
+ },
+ {
+  "id": "1114",
+  "tags": [],
+  "question": "私は真実を話さざるをえなかった。（１語不足）\n(choice / had / I / no / tell / the / to / truth).",
+  "rawAnswer": "I had no choice but to tell the truth.（but不足）",
+  "ja": "私は真実を話さざるをえなかった。（１語不足）",
+  "type": "ordering",
+  "answer": "I had no choice but to tell the truth.",
+  "pieces": [
+   "choice",
+   "had",
+   "I",
+   "no",
+   "tell",
+   "the",
+   "to",
+   "truth",
+   "but"
+  ],
+  "en": "I had no choice but to tell the truth..",
+  "note": "1語不足の語もチップに含まれています"
+ }
+];
+
+        const CIRCLED = ['①', '②', '③', '④', '⑤', '⑥'];
+        let activeProblemElement = null;
+        let selectedProblems = new Set();
+
+        const problemList = document.getElementById('problem-list');
+        const startQuizBtn = document.getElementById('start-quiz-btn');
+        const messageModal = document.getElementById('message-modal');
+        const messageContent = document.getElementById('message-content');
+        const quizModal = document.getElementById('quiz-modal');
+        const closeQuizBtn = document.getElementById('close-quiz-btn');
+        const quizContent = document.getElementById('quiz-content');
+        const selectAllCheckbox = document.getElementById('select-all-checkbox');
+        const pdfModal = document.getElementById('pdf-modal');
+        const openPdfModalBtn = document.getElementById('open-pdf-modal-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        // --- Voice Synthesis Setup ---
+        if (typeof speechSynthesis !== 'undefined') {
+            speechSynthesis.getVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = () => { speechSynthesis.getVoices(); };
+            }
+        }
+
+        function getBestEnglishVoice(voices) {
+            const excludedVoices = [
+                'albert', 'bad news', 'bells', 'boing', 'bubbles', 'cellos',
+                'deranged', 'good news', 'hysterical', 'pipe organ', 'trinoids',
+                'whisper', 'zarvox', 'fred', 'juniper', 'ralph', 'kathy', 'siri'
+            ];
+
+            const englishVoices = voices.filter(v => {
+                const lang = v.lang.toLowerCase();
+                const name = v.name.toLowerCase();
+                return lang.startsWith('en') && !excludedVoices.some(ex => name.includes(ex));
+            });
+
+            if (englishVoices.length === 0) {
+                return voices.find(v => v.lang.toLowerCase().startsWith('en')) || null;
+            }
+
+            const isGoogle = v => v.name.toLowerCase().includes('google');
+            const isSamantha = v => v.name.toLowerCase().includes('samantha');
+            const isDaniel = v => v.name.toLowerCase().includes('daniel');
+            const isPremium = v => v.name.toLowerCase().includes('premium') || v.name.toLowerCase().includes('enhanced') || v.name.toLowerCase().includes('natural');
+            const isUS = v => v.lang.toLowerCase() === 'en-us';
+            const isGB = v => v.lang.toLowerCase() === 'en-gb';
+
+            let voice = englishVoices.find(v => isUS(v) && isGoogle(v));
+            if (voice) return voice;
+            voice = englishVoices.find(v => isGB(v) && isGoogle(v));
+            if (voice) return voice;
+            voice = englishVoices.find(isGoogle);
+            if (voice) return voice;
+            voice = englishVoices.find(isSamantha);
+            if (voice) return voice;
+            voice = englishVoices.find(isDaniel);
+            if (voice) return voice;
+            voice = englishVoices.find(v => isUS(v) && isPremium(v));
+            if (voice) return voice;
+            voice = englishVoices.find(isPremium);
+            if (voice) return voice;
+            voice = englishVoices.find(v => isUS(v));
+            if (voice) return voice;
+            voice = englishVoices.find(v => isGB(v));
+            if (voice) return voice;
+            return englishVoices[0];
+        }
+
+        // --- Rendering helpers ---
+        const TYPE_LABELS = {
+            choice: '4択', error: '誤り指摘', ordering: '整序英作文',
+            fill: '空所補充', rewrite: '書き換え'
+        };
+
+        function tagBadges(item) {
+            let html = `<span class="tag-badge bg-gray-200 text-gray-600">${TYPE_LABELS[item.type] || ''}</span>`;
+            (item.tags || []).forEach(tag => {
+                if (tag === '基本') html += `<span class="tag-badge bg-blue-100 text-blue-700">基本</span>`;
+                else if (tag === '発展') html += `<span class="tag-badge bg-purple-100 text-purple-700">発展</span>`;
+                else if (tag.includes('頻出')) html += `<span class="tag-badge bg-red-100 text-red-700">●${tag}</span>`;
+                else html += `<span class="tag-badge bg-gray-100 text-gray-700">${tag}</span>`;
+            });
+            return html;
+        }
+
+        function isJaLine(line) {
+            return /[぀-ヿ一-鿿。，、]/.test(line) && !/<u>/.test(line) && !/[a-zA-Z]{3}/.test(line);
+        }
+
+        function questionHtml(item) {
+            return item.question.split('\n').map(line => {
+                if (isJaLine(line)) return `<p class="mb-1 text-gray-700">${line}</p>`;
+                return `<p class="mb-1 font-english">${line}</p>`;
+            }).join('');
+        }
+
+        function shuffle(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function normalizeSentence(s) {
+            return s.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        }
+
+        function answerSummary(item) {
+            if (item.type === 'choice') {
+                return `${CIRCLED[item.answerIndex] || ''} ${item.choices[item.answerIndex] || ''}`;
+            }
+            if (item.type === 'error') return item.rawAnswer;
+            return item.answer || item.rawAnswer;
+        }
+
+        // --- Interaction builders per type ---
+        function buildInteraction(item, container, onAnswered) {
+            if (item.type === 'choice') {
+                const wrap = document.createElement('div');
+                wrap.className = 'space-y-2 mt-3';
+                item.choices.forEach((choice, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn font-english';
+                    btn.innerHTML = `${CIRCLED[idx]}　${choice}`;
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        const correct = idx === item.answerIndex;
+                        btn.classList.add(correct ? 'correct' : 'wrong');
+                        wrap.querySelectorAll('button').forEach((b, i) => {
+                            b.disabled = true;
+                            if (i === item.answerIndex) b.classList.add('correct');
+                        });
+                        onAnswered(correct);
+                    };
+                    wrap.appendChild(btn);
+                });
+                container.appendChild(wrap);
+            } else if (item.type === 'error') {
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = '下線部①〜④のうち、誤りを含むものを選んでください。';
+                container.appendChild(hint);
+                const wrap = document.createElement('div');
+                wrap.className = 'flex gap-2 mt-2 flex-wrap';
+                for (let idx = 0; idx < 4; idx++) {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn font-english';
+                    btn.style.width = 'auto';
+                    btn.textContent = CIRCLED[idx];
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        const correct = idx === item.answerIndex;
+                        btn.classList.add(correct ? 'correct' : 'wrong');
+                        wrap.querySelectorAll('button').forEach((b, i) => {
+                            b.disabled = true;
+                            if (i === item.answerIndex) b.classList.add('correct');
+                        });
+                        onAnswered(correct);
+                    };
+                    wrap.appendChild(btn);
+                }
+                container.appendChild(wrap);
+            } else if (item.type === 'ordering') {
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = '語句を正しい順に並べてください。' + (item.note ? `（${item.note}）` : '');
+                container.appendChild(hint);
+
+                const builtArea = document.createElement('div');
+                builtArea.className = 'min-h-[44px] p-2 border-2 border-dashed border-gray-300 rounded-lg mt-2 bg-gray-50';
+                container.appendChild(builtArea);
+
+                const chipArea = document.createElement('div');
+                chipArea.className = 'mt-2';
+                container.appendChild(chipArea);
+
+                let built = [];
+
+                function renderChips() {
+                    builtArea.innerHTML = '';
+                    built.forEach((piece, bi) => {
+                        const chip = document.createElement('span');
+                        chip.className = 'built-chip font-english';
+                        chip.textContent = piece;
+                        chip.title = 'クリックで戻す';
+                        chip.onclick = (e) => {
+                            e.stopPropagation();
+                            built.splice(bi, 1);
+                            renderChips();
+                        };
+                        builtArea.appendChild(chip);
+                    });
+                    chipArea.querySelectorAll('.piece-chip').forEach(chip => {
+                        const idx = Number(chip.dataset.idx);
+                        const usedCount = built.filter(b => b === chip.dataset.piece).length;
+                        const sameChips = Array.from(chipArea.querySelectorAll('.piece-chip')).filter(c => c.dataset.piece === chip.dataset.piece);
+                        sameChips.forEach((c, i) => c.classList.toggle('used', i < usedCount));
+                    });
+                }
+
+                shuffle(item.pieces.map((p, i) => ({ p, i }))).forEach(({ p, i }) => {
+                    const chip = document.createElement('span');
+                    chip.className = 'piece-chip font-english';
+                    chip.textContent = p;
+                    chip.dataset.piece = p;
+                    chip.dataset.idx = i;
+                    chip.onclick = (e) => {
+                        e.stopPropagation();
+                        if (chip.classList.contains('used')) return;
+                        built.push(p);
+                        renderChips();
+                    };
+                    chipArea.appendChild(chip);
+                });
+
+                const btnRow = document.createElement('div');
+                btnRow.className = 'flex gap-2 mt-3';
+                const checkBtn = document.createElement('button');
+                checkBtn.className = 'bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                checkBtn.textContent = '答え合わせ';
+                checkBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    const correct = normalizeSentence(built.join(' ')) === normalizeSentence(item.answer);
+                    builtArea.style.borderColor = correct ? '#22c55e' : '#ef4444';
+                    builtArea.style.background = correct ? '#dcfce7' : '#fee2e2';
+                    checkBtn.disabled = true;
+                    resetBtn.disabled = true;
+                    onAnswered(correct);
+                };
+                const resetBtn = document.createElement('button');
+                resetBtn.className = 'bg-gray-400 hover:bg-gray-500 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                resetBtn.textContent = 'やり直す';
+                resetBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    built = [];
+                    renderChips();
+                };
+                btnRow.appendChild(checkBtn);
+                btnRow.appendChild(resetBtn);
+                container.appendChild(btnRow);
+            } else {
+                // fill / rewrite: 解答を頭の中で考え、表示して自己採点
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = item.type === 'fill' ? '空所に入る語句を考えてから、解答を表示して自己採点してください。' : '答えを考えてから、解答を表示して自己採点してください。';
+                container.appendChild(hint);
+                const btnRow = document.createElement('div');
+                btnRow.className = 'flex gap-2 mt-2 flex-wrap';
+                const revealBtn = document.createElement('button');
+                revealBtn.className = 'bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                revealBtn.textContent = '解答を表示';
+                const okBtn = document.createElement('button');
+                okBtn.className = 'hidden bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                okBtn.textContent = '○ できた';
+                const ngBtn = document.createElement('button');
+                ngBtn.className = 'hidden bg-red-400 hover:bg-red-500 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                ngBtn.textContent = '× できなかった';
+                revealBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    revealBtn.classList.add('hidden');
+                    okBtn.classList.remove('hidden');
+                    ngBtn.classList.remove('hidden');
+                    container.closest('.problem-item').classList.add('show-answer');
+                };
+                okBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(true); };
+                ngBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(false); };
+                btnRow.appendChild(revealBtn);
+                btnRow.appendChild(okBtn);
+                btnRow.appendChild(ngBtn);
+                container.appendChild(btnRow);
+            }
+        }
+
+        // --- Main render ---
+        function renderChapter() {
+            problemList.innerHTML = '';
+            chapterData.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'problem-item p-4 border border-gray-200 rounded-lg bg-white transition-shadow duration-300 hover:shadow-md';
+                div.dataset.id = item.id;
+                div.dataset.fullSentence = item.en || '';
+
+                div.innerHTML = `
+        <div class="flex items-start space-x-3">
+            <input type="checkbox" class="problem-checkbox mt-1 h-5 w-5 rounded border-gray-300 text-green-600 focus:ring-green-500" data-id="${item.id}">
+            <span class="text-sm font-bold text-gray-400 w-12 flex-shrink-0">${item.id}</span>
+            <div class="flex-1 cursor-pointer min-w-0">
+                <div class="mb-2">${tagBadges(item)}</div>
+                <div class="question-area">${questionHtml(item)}</div>
+                <div class="interaction-area"></div>
+                <div class="answer-area mt-4 p-4 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                    <p class="font-bold text-green-800 mb-1">解答: <span class="font-english">${answerSummary(item)}</span></p>
+                    ${item.en ? `<p class="font-english text-green-900 mb-1">${item.en}</p>` : ''}
+                    ${item.ja ? `<p class="text-gray-700 text-sm whitespace-pre-wrap">${item.ja}</p>` : ''}
+                </div>
+                <div class="action-buttons mt-4 hidden flex-wrap gap-2">
+                    <button class="play-sound-btn-local bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">音声再生</button>
+                    <button class="play-slow-btn-local bg-teal-500 hover:bg-teal-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">ゆっくり</button>
+                    <button class="record-btn-local bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">録音評価</button>
+                    <button class="toggle-master-btn-local bg-gray-500 hover:bg-gray-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">⭐ マスター</button>
+                </div>
+            </div>
+        </div>
+        `;
+
+                const interactionArea = div.querySelector('.interaction-area');
+                buildInteraction(item, interactionArea, (correct) => {
+                    div.classList.add('show-answer');
+                    div.querySelector('.action-buttons').classList.remove('hidden');
+                    div.querySelector('.action-buttons').classList.add('flex');
+                    activateProblem(div);
+                    if (window.saveSolvedResult) window.saveSolvedResult(item.id, correct);
+                });
+
+                problemList.appendChild(div);
+            });
+
+            document.querySelectorAll('.problem-item .flex-1').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.classList.contains('piece-chip') || e.target.classList.contains('built-chip')) return;
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                });
+
+                item.querySelector('.play-sound-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    playSound(1.0);
+                });
+
+                item.querySelector('.play-slow-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    playSound(0.7);
+                });
+
+                item.querySelector('.record-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    handleRecording();
+                });
+
+                item.querySelector('.toggle-master-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const wrapper = e.currentTarget.closest('.problem-item');
+                    const problemId = wrapper.dataset.id;
+                    const isMastered = wrapper.classList.contains('problem-mastered');
+                    if (window.toggleProblemMasterState) {
+                        window.toggleProblemMasterState(problemId, !isMastered);
+                    } else {
+                        wrapper.classList.toggle('problem-mastered');
+                        e.currentTarget.innerText = wrapper.classList.contains('problem-mastered') ? '⭐ マスター解除' : '⭐ マスター';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.problem-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (e.target.checked) selectedProblems.add(e.target.dataset.id);
+                    else selectedProblems.delete(e.target.dataset.id);
+                });
+            });
+
+            if (window.applyLoadedMasteredProblems) {
+                window.applyLoadedMasteredProblems(window.localMasteredProblems);
+            }
+        }
+
+        function activateProblem(wrapper) {
+            if (activeProblemElement && activeProblemElement !== wrapper) {
+                activeProblemElement.classList.remove('ring-2', 'ring-green-400', 'shadow-xl');
+            }
+            activeProblemElement = wrapper;
+            activeProblemElement.classList.add('ring-2', 'ring-green-400', 'shadow-xl');
+        }
+
+        function showMessage(htmlContent, duration = null) {
+            messageContent.innerHTML = htmlContent;
+            messageModal.classList.remove('hidden');
+            if (duration) setTimeout(() => messageModal.classList.add('hidden'), duration);
+        }
+
+        // --- Audio ---
+        function playSound(speed = 1.0) {
+            if (!activeProblemElement) return;
+            const text = activeProblemElement.dataset.fullSentence;
+            if (!text) {
+                showMessage('<p>この問題には読み上げる英文がありません。</p>', 2000);
+                return;
+            }
+
+            try { speechSynthesis.cancel(); } catch (e) { }
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = speed;
+
+            const voices = speechSynthesis.getVoices();
+            const bestVoice = getBestEnglishVoice(voices);
+            if (bestVoice) {
+                utterance.voice = bestVoice;
+                utterance.lang = bestVoice.lang;
+            }
+            utterance.onerror = (e) => console.error('SpeechSynthesis error:', e.error);
+            speechSynthesis.speak(utterance);
+        }
+
+        // --- Recording / pronunciation evaluation ---
+        function handleRecording() {
+            if (!activeProblemElement) return;
+            if (!activeProblemElement.dataset.fullSentence) {
+                showMessage('<p>この問題には評価対象の英文がありません。</p>', 2000);
+                return;
+            }
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognition) {
+                showMessage('<p>お使いのブラウザは音声認識に対応していません。</p>', 3000);
+                return;
+            }
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'en-US';
+            recognition.onstart = () => showMessage('<p class="text-2xl">マイクに向かって英文を読んでください...</p><div class="animate-pulse text-red-500 text-4xl mt-4">●</div>');
+            recognition.onresult = (event) => evaluatePronunciation(event.results[0][0].transcript);
+            recognition.onerror = () => showMessage('<p>認識エラーが発生しました。</p>', 2000);
+            recognition.start();
+        }
+
+        function evaluatePronunciation(transcript) {
+            const original = activeProblemElement.dataset.fullSentence.toLowerCase().replace(/[^\w\s]/g, '');
+            const user = transcript.toLowerCase().replace(/[^\w\s]/g, '');
+            const score = Math.min(100, Math.floor((user.split(' ').filter(w => original.includes(w)).length / original.split(' ').length) * 100) + 15);
+
+            if (score >= 80) {
+                const problemId = activeProblemElement.dataset.id;
+                if (window.toggleProblemMasterState) {
+                    window.toggleProblemMasterState(problemId, true);
+                } else {
+                    activeProblemElement.classList.add('problem-mastered');
+                    const btn = activeProblemElement.querySelector('.toggle-master-btn-local');
+                    if (btn) btn.innerText = '⭐ マスター解除';
+                }
+            }
+
+            if (window.saveVintageScore) window.saveVintageScore('pronunciationScore_' + activeProblemElement.dataset.id, score);
+            showMessage(`
+                <h3 class="text-2xl font-bold mb-4">評価結果</h3>
+                <p class="text-7xl font-bold text-green-600 mb-4">${score}<span class="text-2xl">点</span></p>
+                <p class="text-gray-600 mb-2"><strong>認識結果:</strong> ${transcript}</p>
+                ${score >= 80 ? '<p class="text-yellow-600 font-bold">⭐ 80点以上！この問題をマスターしました</p>' : ''}
+                <button onclick="document.getElementById('message-modal').classList.add('hidden')" class="mt-6 bg-green-600 text-white py-2 px-6 rounded-lg">閉じる</button>
+            `);
+        }
+
+        // --- Random Quiz (choice / error 問題から10問) ---
+        function startQuiz() {
+            const pool = chapterData.filter(d => d.type === 'choice' || d.type === 'error');
+            if (pool.length === 0) {
+                showMessage('<p>この章には選択式の問題がありません。</p>', 2500);
+                return;
+            }
+            const questions = shuffle(pool).slice(0, Math.min(10, pool.length));
+            let currentIdx = 0, score = 0;
+
+            function nextQuestion() {
+                if (currentIdx >= questions.length) {
+                    const finalScore = Math.round(score / questions.length * 100);
+                    if (window.saveVintageScore) window.saveVintageScore('quizScore', finalScore);
+                    quizContent.innerHTML = `<h3 class="text-3xl font-bold mb-4">結果: ${score}/${questions.length}</h3><p class="text-6xl text-purple-600 font-bold">${finalScore}点</p>`;
+                    return;
+                }
+                const q = questions[currentIdx];
+                let optionsHtml, prompt;
+                if (q.type === 'choice') {
+                    prompt = '空所に入る最も適切なものを選んでください。';
+                    optionsHtml = q.choices.map((opt, idx) =>
+                        `<button data-idx="${idx}" class="quiz-opt p-3 border-2 border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-300 font-english transition-colors text-left">${CIRCLED[idx]}　${opt}</button>`).join('');
+                } else {
+                    prompt = '下線部①〜④のうち、誤りを含むものを選んでください。';
+                    optionsHtml = [0, 1, 2, 3].map(idx =>
+                        `<button data-idx="${idx}" class="quiz-opt p-3 border-2 border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-300 font-english transition-colors text-left">${CIRCLED[idx]}</button>`).join('');
+                }
+
+                quizContent.innerHTML = `
+                    <p class="mb-2 text-gray-500">問題 ${currentIdx + 1}/${questions.length}　[${q.id}]</p>
+                    <p class="text-sm text-gray-500 mb-2">${prompt}</p>
+                    <div class="text-lg font-bold mb-6 text-green-900">${questionHtml(q)}</div>
+                    <div class="grid grid-cols-1 gap-3">${optionsHtml}</div>
+                    <div id="quiz-feedback" class="mt-4"></div>
+                `;
+                quizContent.querySelectorAll('.quiz-opt').forEach(btn => {
+                    btn.onclick = () => {
+                        const idx = Number(btn.dataset.idx);
+                        const correct = idx === q.answerIndex;
+                        if (correct) { btn.classList.add('bg-green-200', 'border-green-400'); score++; }
+                        else btn.classList.add('bg-red-200', 'border-red-400');
+                        quizContent.querySelectorAll('.quiz-opt').forEach((b) => {
+                            b.disabled = true;
+                            if (Number(b.dataset.idx) === q.answerIndex) b.classList.add('bg-green-200', 'border-green-400');
+                        });
+                        document.getElementById('quiz-feedback').innerHTML = `
+                            <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                                <p class="font-bold text-green-800">解答: <span class="font-english">${answerSummary(q)}</span></p>
+                                ${q.en ? `<p class="font-english text-green-900">${q.en}</p>` : ''}
+                                ${q.ja ? `<p class="text-gray-700 text-sm whitespace-pre-wrap">${q.ja}</p>` : ''}
+                            </div>`;
+                        setTimeout(() => { currentIdx++; nextQuestion(); }, 3500);
+                    };
+                });
+            }
+            quizModal.classList.remove('hidden');
+            nextQuestion();
+        }
+
+        // --- PDF (印刷) ---
+        function openPrintWindow(content, title) {
+            const win = window.open('', '_blank');
+            win.document.write(`<html><head><title>${title}</title><style>
+                body{font-family:'Noto Sans JP',sans-serif;padding:40px;line-height:1.7}
+                h1{font-size:1.4rem;border-bottom:2px solid #166534;padding-bottom:8px}
+                ol li{margin-bottom:16px}
+                .en{font-family:'Times New Roman',serif}
+                .ja{color:#444;font-size:0.9rem}
+                .meta{color:#888;font-size:0.8rem}
+                .ans{margin-top:50px;border-top:1px solid #000;padding-top:20px;page-break-before:always}
+                .ans li{margin-bottom:6px}
+                u{text-underline-offset:4px}
+            </style></head><body><h1>${title}</h1>${content}</body></html>`);
+            win.document.close();
+            setTimeout(() => { win.focus(); win.print(); }, 500);
+        }
+
+        function getSelected() {
+            return Array.from(selectedProblems)
+                .map(id => chapterData.find(d => d.id == id))
+                .filter(Boolean)
+                .sort((a, b) => String(a.id).localeCompare(String(b.id), undefined, { numeric: true }));
+        }
+
+        function requireSelection(items, typeName) {
+            if (items.length === 0) {
+                pdfModal.classList.add('hidden');
+                showMessage(`<p>選択した問題の中に「${typeName}」に使える問題がありません。</p>`, 2500);
+                return false;
+            }
+            return true;
+        }
+
+        function blankQuestionText(item) {
+            // 選択肢なしの空所問題として表示する英文
+            return item.question.split('\n').map(line =>
+                isJaLine(line) ? `<span class="ja">${line}</span>` : `<span class="en">${line}</span>`
+            ).join('<br>');
+        }
+
+        function choicesLine(item) {
+            return item.choices.map((c, i) => `${CIRCLED[i]} ${c}`).join('　');
+        }
+
+        function pdfChoiceItem(item) {
+            if (item.type === 'choice') {
+                return `<li>[${item.id}] ${blankQuestionText(item)}<br><span class="en">${choicesLine(item)}</span></li>`;
+            }
+            return `<li>[${item.id}] <span class="meta">誤りを含む下線部を選びなさい。</span><br>${blankQuestionText(item)}</li>`;
+        }
+
+        function pdfOrderingItem(item) {
+            return `<li>[${item.id}] ${blankQuestionText(item)}</li>`;
+        }
+
+        function pdfCompositionItem(item) {
+            const ja = (item.ja || '').split('\n')[0];
+            return `<li>[${item.id}] <span class="ja">${ja}</span><br><span class="en">____________________________________________</span></li>`;
+        }
+
+        document.getElementById('download-list-btn').onclick = () => {
+            const items = getSelected();
+            if (!requireSelection(items, '問題リスト')) return;
+            const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}<br>
+                <strong>解答:</strong> <span class="en">${answerSummary(i)}</span>
+                ${i.en ? `<br><span class="en">${i.en}</span>` : ''}
+                ${i.ja ? `<br><span class="ja">${i.ja.replace(/\n/g, '<br>')}</span>` : ''}</li>`).join('')}</ol>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム 問題リスト');
+        };
+
+        document.getElementById('download-choice-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'choice' || i.type === 'error');
+            if (!requireSelection(items, '4択・誤り指摘テスト')) return;
+            const html = `<ol>${items.map(pdfChoiceItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${answerSummary(i)}</li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム 4択・誤り指摘テスト');
+        };
+
+        document.getElementById('download-blank-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'choice' || i.type === 'fill');
+            if (!requireSelection(items, '空所補充テスト')) return;
+            const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}
+                ${i.ja && i.type === 'choice' ? `<br><span class="ja">${i.ja.split('\n')[0]}</span>` : ''}</li>`).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${i.type === 'choice' ? i.choices[i.answerIndex] : (i.answer || i.rawAnswer)}</li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム 空所補充テスト');
+        };
+
+        document.getElementById('download-ordering-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'ordering');
+            if (!requireSelection(items, '整序英作文テスト')) return;
+            const html = `<ol>${items.map(pdfOrderingItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム 整序英作文テスト');
+        };
+
+        document.getElementById('download-composition-btn').onclick = () => {
+            const items = getSelected().filter(i => i.en && i.ja);
+            if (!requireSelection(items, '和文英訳テスト')) return;
+            const html = `<ol>${items.map(pdfCompositionItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム 和文英訳テスト');
+        };
+
+        document.getElementById('download-mixed-btn').onclick = () => {
+            const items = getSelected();
+            if (!requireSelection(items, 'ランダム混合テスト')) return;
+            const html = `<ol>${items.map(i => {
+                const r = Math.random();
+                if ((i.type === 'choice' || i.type === 'error') && r < 0.5) return pdfChoiceItem(i);
+                if (i.type === 'ordering') return pdfOrderingItem(i);
+                if (i.en && i.ja && r >= 0.5) return pdfCompositionItem(i);
+                return `<li>[${i.id}] ${blankQuestionText(i)}</li>`;
+            }).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en || answerSummary(i)}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第22章　動詞を中心とするイディオム ランダム混合テスト');
+        };
+
+        // --- Event wiring ---
+        startQuizBtn.onclick = startQuiz;
+        closeQuizBtn.onclick = () => quizModal.classList.add('hidden');
+        openPdfModalBtn.onclick = () => selectedProblems.size ? pdfModal.classList.remove('hidden') : showMessage('問題を選択してください', 2000);
+        closeModalBtn.onclick = () => pdfModal.classList.add('hidden');
+        selectAllCheckbox.onchange = (e) => {
+            document.querySelectorAll('.problem-checkbox').forEach(cb => {
+                cb.checked = e.target.checked;
+                if (e.target.checked) selectedProblems.add(cb.dataset.id);
+                else selectedProblems.delete(cb.dataset.id);
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', renderChapter);
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCNrvDMnlN_geijgRguQrolnTIZ_rdZwyw",
+            authDomain: "sokudoku-stories-db.firebaseapp.com",
+            projectId: "sokudoku-stories-db",
+            storageBucket: "sokudoku-stories-db.firebasestorage.app",
+            messagingSenderId: "979353290932",
+            appId: "1:979353290932:web:f0c512cfbe64a7afe36fe1"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Vintage のデータは 'vintage_' プレフィックスで LEAP のデータと分離する
+        const appId = "vintage_chapter22";
+
+        window.localMasteredProblems = {};
+
+        window.applyLoadedMasteredProblems = (mastered) => {
+            window.localMasteredProblems = mastered || {};
+            document.querySelectorAll('.problem-item').forEach(wrapper => {
+                const problemId = wrapper.dataset.id;
+                const btn = wrapper.querySelector('.toggle-master-btn-local');
+                if (window.localMasteredProblems[problemId] === true) {
+                    wrapper.classList.add('problem-mastered');
+                    if (btn) btn.innerText = '⭐ マスター解除';
+                } else {
+                    wrapper.classList.remove('problem-mastered');
+                    if (btn) btn.innerText = '⭐ マスター';
+                }
+            });
+        };
+
+        window.toggleProblemMasterState = (problemId, makeMastered) => {
+            window.localMasteredProblems[problemId] = makeMastered;
+            if (window.currentUser) {
+                const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+                setDoc(docRef, { masteredWords: { [problemId]: makeMastered } }, { merge: true })
+                    .then(() => window.applyLoadedMasteredProblems(window.localMasteredProblems))
+                    .catch(e => {
+                        console.error("Error updating master state:", e);
+                        alert("マスター状態の保存に失敗しました: " + e.message);
+                    });
+            } else {
+                window.applyLoadedMasteredProblems(window.localMasteredProblems);
+                console.warn("Saving locally only.");
+            }
+        };
+
+        window.saveSolvedResult = (problemId, correct) => {
+            if (!window.currentUser) return;
+            const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+            setDoc(docRef, {
+                solvedProblems: { [problemId]: correct },
+                lastAccessed: new Date().toISOString()
+            }, { merge: true }).catch(e => console.error("Solved save error:", e));
+        };
+
+        window.saveVintageScore = (type, score) => {
+            if (window.currentUser) {
+                const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+                setDoc(docRef, { [type]: score }, { merge: true })
+                    .catch(e => {
+                        console.error("Score save error:", e);
+                        alert("テスト結果の保存に失敗しました: " + e.message);
+                    });
+            } else {
+                console.error("Score save failed: No user is logged in.");
+                alert("ログイン状態が確認できないため、テスト結果を保存できませんでした。ダッシュボードから再度ログインしてください。");
+            }
+        };
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                window.currentUser = user;
+                const docRef = doc(db, "leap_users", user.uid, "progress", appId);
+
+                getDoc(docRef).then((docSnap) => {
+                    let mastered = {};
+                    let alreadyStarted = false;
+
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        alreadyStarted = data.started || false;
+                        mastered = data.masteredWords || {};
+                    }
+
+                    window.applyLoadedMasteredProblems(mastered);
+
+                    if (!alreadyStarted) {
+                        setDoc(docRef, {
+                            started: true,
+                            lastAccessed: new Date().toISOString()
+                        }, { merge: true }).catch(e => console.error("Progress save error:", e));
+                    }
+                }).catch(e => {
+                    console.error("Error loading progress:", e);
+                    window.applyLoadedMasteredProblems(window.localMasteredProblems || {});
+                });
+
+                setDoc(doc(db, "leap_users", user.uid), {
+                    displayName: user.displayName,
+                    email: user.email,
+                    photoURL: user.photoURL,
+                    lastLogin: new Date().toISOString()
+                }, { merge: true }).catch(e => console.error("User profile save error:", e));
+            } else {
+                console.warn("No user session active on this page.");
+            }
+        });
+    </script>
+</body>
+
+</html>

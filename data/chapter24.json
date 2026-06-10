@@ -1,0 +1,1386 @@
+{
+  "number": 24,
+  "title": "名詞を中心とするイディオム",
+  "fullTitle": "第24章　名詞を中心とするイディオム",
+  "problems": [
+    {
+      "id": "1183",
+      "tags": [],
+      "question": "うわあ，あの建物が燃えている。\nOh, no! That building is (　　) fire.",
+      "rawAnswer": "on",
+      "ja": "うわあ，あの建物が燃えている。",
+      "type": "fill",
+      "answer": "on",
+      "en": "Oh, no! That building is on fire."
+    },
+    {
+      "id": "1184",
+      "tags": [
+        "発展"
+      ],
+      "question": "She often worked for twenty-four hours (　　).",
+      "rawAnswer": "②",
+      "ja": "彼女はしばしば24時間続けて働いた。",
+      "type": "choice",
+      "choices": [
+        "end on",
+        "on end",
+        "at an end",
+        "end for end"
+      ],
+      "answerIndex": 1,
+      "en": "She often worked for twenty-four hours on end."
+    },
+    {
+      "id": "1185",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Everybody was surprised when they found out that he did it <u>on purpose</u>.",
+      "rawAnswer": "③",
+      "ja": "彼が故意にそうしたのだとわかったときは，だれもが驚いた。",
+      "type": "choice",
+      "choices": [
+        "probably",
+        "eventually",
+        "intentionally",
+        "lately"
+      ],
+      "answerIndex": 2,
+      "en": "Everybody was surprised when they found out that he did it on purpose."
+    },
+    {
+      "id": "1186",
+      "tags": [
+        "基本"
+      ],
+      "question": "I went to the wrong place (　　) mistake.",
+      "rawAnswer": "④",
+      "ja": "私は誤って違う場所に行ってしまった。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "with",
+        "of",
+        "by"
+      ],
+      "answerIndex": 3,
+      "en": "I went to the wrong place by mistake."
+    },
+    {
+      "id": "1187",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Yesterday I met her <u>by chance</u> at the station.",
+      "rawAnswer": "①",
+      "ja": "昨日，私は駅で偶然彼女に会った。",
+      "type": "choice",
+      "choices": [
+        "accidentally",
+        "actually",
+        "purposefully",
+        "unfortunately"
+      ],
+      "answerIndex": 0,
+      "en": "Yesterday I met her by chance at the station."
+    },
+    {
+      "id": "1188",
+      "tags": [],
+      "question": "Christopher Columbus was an Italian (　　) birth.",
+      "rawAnswer": "①",
+      "ja": "クリストファー・コロンブスは，生まれはイタリア人だった。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "from",
+        "on"
+      ],
+      "answerIndex": 0,
+      "en": "Christopher Columbus was an Italian by birth."
+    },
+    {
+      "id": "1189",
+      "tags": [],
+      "question": "He is timid (　　) nature.",
+      "rawAnswer": "②",
+      "ja": "彼は生まれつき内気だ。",
+      "type": "choice",
+      "choices": [
+        "upon",
+        "by",
+        "at",
+        "for"
+      ],
+      "answerIndex": 1,
+      "en": "He is timid by nature."
+    },
+    {
+      "id": "1190",
+      "tags": [],
+      "question": "Tomoko and Susan have been friends for (　　). They first met each other back in nursery school.",
+      "rawAnswer": "①",
+      "ja": "トモコとスーザンは長年の友だちだ。二人は保育園にいたときに初めて出会った。",
+      "type": "choice",
+      "choices": [
+        "ages",
+        "periods",
+        "lots",
+        "lives"
+      ],
+      "answerIndex": 0,
+      "en": "Tomoko and Susan have been friends for ages. They first met each other back in nursery school."
+    },
+    {
+      "id": "1191",
+      "tags": [],
+      "question": "David's wife dislikes his smoking habit so much that she wants him to quit <u>for good</u>.",
+      "rawAnswer": "②",
+      "ja": "デイビッドの妻は彼の喫煙癖がとても嫌いなので，きっぱりとやめてほしいと思っている。",
+      "type": "choice",
+      "choices": [
+        "all of a sudden",
+        "permanently",
+        "punctually",
+        "right away"
+      ],
+      "answerIndex": 1,
+      "en": "David's wife dislikes his smoking habit so much that she wants him to quit for good."
+    },
+    {
+      "id": "1192",
+      "tags": [],
+      "question": "I promise that I will return the book to you next week without (　　).",
+      "rawAnswer": "①",
+      "ja": "私は必ず来週あなたに本を返すと約束します。",
+      "type": "choice",
+      "choices": [
+        "fail",
+        "miss",
+        "mistake",
+        "neglect"
+      ],
+      "answerIndex": 0,
+      "en": "I promise that I will return the book to you next week without fail."
+    },
+    {
+      "id": "1193",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "All the doctor's efforts were (　　) and the patient finally died.",
+      "rawAnswer": "③",
+      "ja": "すべての医者の努力も空しく，患者はついに亡くなった。",
+      "type": "choice",
+      "choices": [
+        "at once",
+        "for good",
+        "in vain",
+        "off and on"
+      ],
+      "answerIndex": 2,
+      "en": "All the doctor's efforts were in vain and the patient finally died."
+    },
+    {
+      "id": "1194",
+      "tags": [],
+      "question": "書き出しにしたがって，空所に適語を入れなさい。\n私は明日の朝までにこの報告書を詳細に検討しなければならない。\nI have to go through this report ( i　　) ( d　　) by tomorrow morning.",
+      "rawAnswer": "in detail",
+      "ja": "書き出しにしたがって，空所に適語を入れなさい。\n私は明日の朝までにこの報告書を詳細に検討しなければならない。",
+      "type": "fill",
+      "answer": "in detail",
+      "en": "I have to go through this report in detail by tomorrow morning."
+    },
+    {
+      "id": "1195",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Kate will prepare it <u>in advance</u>.",
+      "rawAnswer": "②",
+      "ja": "ケイトはあらかじめその準備をするだろう。",
+      "type": "choice",
+      "choices": [
+        "someday",
+        "beforehand",
+        "right away",
+        "on time"
+      ],
+      "answerIndex": 1,
+      "en": "Kate will prepare it in advance."
+    },
+    {
+      "id": "1196",
+      "tags": [],
+      "question": "Don't be (　　) to come to a conclusion. You should be more careful as you've got plenty of time.",
+      "rawAnswer": "②",
+      "ja": "急いで結論を出さないでください。時間は十分あるのだから，あなたはもっと慎重になるべきです。",
+      "type": "choice",
+      "choices": [
+        "at large",
+        "in haste",
+        "on purpose",
+        "out of temper"
+      ],
+      "answerIndex": 1,
+      "en": "Don't be in haste to come to a conclusion. You should be more careful as you've got plenty of time."
+    },
+    {
+      "id": "1197",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "ジョンとビルは双子だが，共通点はそれほど多くないみたいだ。\nJohn and Bill are twins, but they don't seem to have much in (　　).",
+      "rawAnswer": "common",
+      "ja": "ジョンとビルは双子だが，共通点はそれほど多くないみたいだ。",
+      "type": "fill",
+      "answer": "common",
+      "en": "John and Bill are twins, but they don't seem to have much in common."
+    },
+    {
+      "id": "1198",
+      "tags": [],
+      "question": "Some students study in (　　), and some don't care.",
+      "rawAnswer": "②",
+      "ja": "真剣に勉強している生徒もいれば，関心のない生徒もいる。",
+      "type": "choice",
+      "choices": [
+        "properly",
+        "earnest",
+        "carefulness",
+        "enthusiasm"
+      ],
+      "answerIndex": 1,
+      "en": "Some students study in earnest, and some don't care."
+    },
+    {
+      "id": "1199",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I don't think I'll need any money but I'll bring some just in (　　).",
+      "rawAnswer": "④",
+      "ja": "お金が必要になるとは思わないが，念のため少し持っていくとしよう。",
+      "type": "choice",
+      "choices": [
+        "place",
+        "time",
+        "front",
+        "case"
+      ],
+      "answerIndex": 3,
+      "en": "I don't think I'll need any money but I'll bring some just in case."
+    },
+    {
+      "id": "1200",
+      "tags": [],
+      "question": "書き出しにしたがって，空所に適語を入れなさい。\n公の場でも内輪でも，自分にはユーモアのセンスがないと認めるアメリカ人は一人もいないだろう。\nNo American person, in public or in ( p　　), would admit to not having a sense of humor.",
+      "rawAnswer": "private",
+      "ja": "書き出しにしたがって，空所に適語を入れなさい。\n公の場でも内輪でも，自分にはユーモアのセンスがないと認めるアメリカ人は一人もいないだろう。",
+      "type": "fill",
+      "answer": "private",
+      "en": "No American person, in public or in private, would admit to not having a sense of humor."
+    },
+    {
+      "id": "1201",
+      "tags": [],
+      "question": "You must talk to her <u>in person</u> about that issue.",
+      "rawAnswer": "②",
+      "ja": "その問題についてあなたは彼女と直接話さなければならない。",
+      "type": "choice",
+      "choices": [
+        "certainly",
+        "directly",
+        "secretly",
+        "solely"
+      ],
+      "answerIndex": 1,
+      "en": "You must talk to her in person about that issue."
+    },
+    {
+      "id": "1202",
+      "tags": [],
+      "question": "My grandmother is getting better <u>by degrees</u>.",
+      "rawAnswer": "③",
+      "ja": "私の祖母は徐々に回復してきている。",
+      "type": "choice",
+      "choices": [
+        "consequently",
+        "generally",
+        "gradually",
+        "happily"
+      ],
+      "answerIndex": 2,
+      "en": "My grandmother is getting better by degrees."
+    },
+    {
+      "id": "1203",
+      "tags": [],
+      "question": "We must take care of the baby <u>by turns</u>.",
+      "rawAnswer": "②",
+      "ja": "私たちは交替で赤ちゃんの面倒をみなければならない。",
+      "type": "choice",
+      "choices": [
+        "carefully",
+        "one after another",
+        "from morning till night",
+        "kindly"
+      ],
+      "answerIndex": 1,
+      "en": "We must take care of the baby by turns."
+    },
+    {
+      "id": "1204",
+      "tags": [],
+      "question": "The delivery will arrive <u>before long</u>.",
+      "rawAnswer": "④",
+      "ja": "その配達物はまもなく届くだろう。",
+      "type": "choice",
+      "choices": [
+        "late",
+        "now",
+        "earlier",
+        "soon"
+      ],
+      "answerIndex": 3,
+      "en": "The delivery will arrive before long."
+    },
+    {
+      "id": "1205",
+      "tags": [],
+      "question": "Many dreams come true <u>in time</u>.",
+      "rawAnswer": "①",
+      "ja": "たくさんの夢がそのうちに現実となる。",
+      "type": "choice",
+      "choices": [
+        "sooner or later",
+        "forever",
+        "too early",
+        "punctually"
+      ],
+      "answerIndex": 0,
+      "en": "Many dreams come true in time."
+    },
+    {
+      "id": "1206",
+      "tags": [],
+      "question": "You only have five minutes to get to the bank. If you take more than that, it will be too late ─ you won't be (　　) time.",
+      "rawAnswer": "①",
+      "ja": "その銀行に着くまであなたにはたった５分の猶予しかありません。それ以上時間をかけたら遅すぎるでしょう。間に合いませんよ。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "during",
+        "with",
+        "for"
+      ],
+      "answerIndex": 0,
+      "en": "You only have five minutes to get to the bank. If you take more than that, it will be too late ─ you won't be in time."
+    },
+    {
+      "id": "1207",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We arrived there on (　　).",
+      "rawAnswer": "①",
+      "ja": "私たちは時間通りにそこに着いた。",
+      "type": "choice",
+      "choices": [
+        "time",
+        "expect",
+        "scheduled",
+        "timetable"
+      ],
+      "answerIndex": 0,
+      "en": "We arrived there on time."
+    },
+    {
+      "id": "1208",
+      "tags": [],
+      "question": "Changes in language will continue forever, but no one knows (　　) sure who does the changing.",
+      "rawAnswer": "①",
+      "ja": "言葉の変化は永遠に続いていくだろうが，変えているのはだれなのか，はっきりと知る者はいない。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "by",
+        "in",
+        "with"
+      ],
+      "answerIndex": 0,
+      "en": "Changes in language will continue forever, but no one knows for sure who does the changing."
+    },
+    {
+      "id": "1209",
+      "tags": [],
+      "question": "You needn't worry at all. Everything is (　　) control.",
+      "rawAnswer": "①",
+      "ja": "君が心配する必要はまったくない。すべては管理されている。",
+      "type": "choice",
+      "choices": [
+        "under",
+        "above",
+        "to",
+        "between"
+      ],
+      "answerIndex": 0,
+      "en": "You needn't worry at all. Everything is under control."
+    },
+    {
+      "id": "1210",
+      "tags": [],
+      "question": "Another hotel is (　　) construction near the theme park.",
+      "rawAnswer": "④",
+      "ja": "テーマパークの近くでは別のホテルが建設中だ。",
+      "type": "choice",
+      "choices": [
+        "on",
+        "in the middle of",
+        "between",
+        "under"
+      ],
+      "answerIndex": 3,
+      "en": "Another hotel is under construction near the theme park."
+    },
+    {
+      "id": "1211",
+      "tags": [],
+      "question": "Our project is already <u>under way</u>.",
+      "rawAnswer": "②",
+      "ja": "私たちの計画はすでに進行中だ。",
+      "type": "choice",
+      "choices": [
+        "in trouble",
+        "in progress",
+        "under review",
+        "under control"
+      ],
+      "answerIndex": 1,
+      "en": "Our project is already under way."
+    },
+    {
+      "id": "1212",
+      "tags": [],
+      "question": "I got a ticket for the baseball game for (　　).",
+      "rawAnswer": "①",
+      "ja": "私は野球の試合のチケットをただで手に入れた。",
+      "type": "choice",
+      "choices": [
+        "nothing",
+        "good",
+        "all things",
+        "all methods"
+      ],
+      "answerIndex": 0,
+      "en": "I got a ticket for the baseball game for nothing."
+    },
+    {
+      "id": "1213",
+      "tags": [],
+      "question": "The President said the soldiers had not died for (　　).",
+      "rawAnswer": "②",
+      "ja": "大統領は，兵士たちはむだ死にしたわけではないと語った。",
+      "type": "choice",
+      "choices": [
+        "anything",
+        "nothing",
+        "something",
+        "thing"
+      ],
+      "answerIndex": 1,
+      "en": "The President said the soldiers had not died for nothing."
+    },
+    {
+      "id": "1214",
+      "tags": [],
+      "question": "We don't call him a great debater (　　) nothing.",
+      "rawAnswer": "②",
+      "ja": "私たちは理由もなく彼をディベートの達人と呼ぶわけではない。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "for",
+        "of",
+        "with"
+      ],
+      "answerIndex": 1,
+      "en": "We don't call him a great debater for nothing."
+    },
+    {
+      "id": "1215",
+      "tags": [],
+      "question": "It is a good idea to have an English dictionary at (　　) when you study English.",
+      "rawAnswer": "①",
+      "ja": "英語を勉強するときに，手元に英語の辞書を置いておくのはよい考えだ。",
+      "type": "choice",
+      "choices": [
+        "hand",
+        "part",
+        "convenience",
+        "edge"
+      ],
+      "answerIndex": 0,
+      "en": "It is a good idea to have an English dictionary at hand when you study English."
+    },
+    {
+      "id": "1216",
+      "tags": [],
+      "question": "I could not go to the party because I was <u>on duty</u>.",
+      "rawAnswer": "③",
+      "ja": "私は勤務に当たっていたので，パーティーに行くことができなかった。",
+      "type": "choice",
+      "choices": [
+        "in class",
+        "in trouble",
+        "at work",
+        "at ease"
+      ],
+      "answerIndex": 2,
+      "en": "I could not go to the party because I was on duty."
+    },
+    {
+      "id": "1217",
+      "tags": [],
+      "question": "私が戻るまでどうぞこの部屋でくつろいでいてください。\nPlease (at / in / home / make / yourself) this room until I come back.",
+      "rawAnswer": "make yourself at home in",
+      "ja": "私が戻るまでどうぞこの部屋でくつろいでいてください。",
+      "type": "ordering",
+      "answer": "make yourself at home in",
+      "pieces": [
+        "at",
+        "in",
+        "home",
+        "make",
+        "yourself"
+      ],
+      "en": "Please make yourself at home in this room until I come back."
+    },
+    {
+      "id": "1218",
+      "tags": [],
+      "question": "He (home / is / in / at) environmental problems.",
+      "rawAnswer": "is at home in",
+      "ja": "彼は環境問題に詳しい。",
+      "type": "ordering",
+      "answer": "is at home in",
+      "pieces": [
+        "home",
+        "is",
+        "in",
+        "at"
+      ],
+      "en": "He is at home in environmental problems."
+    },
+    {
+      "id": "1219",
+      "tags": [
+        "発展"
+      ],
+      "question": "The police spokesman announced that the escaped murderer was still (　　). Apparently, they don't have a clue where he is.",
+      "rawAnswer": "①",
+      "ja": "警察の報道官は，逃亡した殺人犯はいまだ捕まっていないと発表した。どうやら彼らには犯人の居場所の手がかりがないようだ。",
+      "type": "choice",
+      "choices": [
+        "at large",
+        "in haste",
+        "on purpose",
+        "out of temper"
+      ],
+      "answerIndex": 0,
+      "en": "The police spokesman announced that the escaped murderer was still at large. Apparently, they don't have a clue where he is."
+    },
+    {
+      "id": "1220",
+      "tags": [],
+      "question": "After he talked with the professor, he <u>felt at ease</u> about next week's exam.",
+      "rawAnswer": "④",
+      "ja": "彼は教授と話した後，来週の試験について気が楽になった。",
+      "type": "choice",
+      "choices": [
+        "knew answers",
+        "thought simply",
+        "lost courage",
+        "became relaxed"
+      ],
+      "answerIndex": 3,
+      "en": "After he talked with the professor, he felt at ease about next week's exam."
+    },
+    {
+      "id": "1221",
+      "tags": [
+        "基本"
+      ],
+      "question": "This kind of view is, <u>in fact</u>, quite a familiar one in this technology.",
+      "rawAnswer": "①",
+      "ja": "この種の見解は，実際のところ，この技術的方法においてはきわめてよく知られたものだ。",
+      "type": "choice",
+      "choices": [
+        "actually",
+        "commonly",
+        "particularly",
+        "reportedly"
+      ],
+      "answerIndex": 0,
+      "en": "This kind of view is, in fact, quite a familiar one in this technology."
+    },
+    {
+      "id": "1222",
+      "tags": [],
+      "question": "This story, (　　), is about the life of a man.",
+      "rawAnswer": "③",
+      "ja": "この話は，要するに，ある男の人生についてだ。",
+      "type": "choice",
+      "choices": [
+        "at hand",
+        "at once",
+        "in short",
+        "in haste"
+      ],
+      "answerIndex": 2,
+      "en": "This story, in short, is about the life of a man."
+    },
+    {
+      "id": "1223",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "So you got here after (　　) !",
+      "rawAnswer": "④",
+      "ja": "それで，君は結局ここに来たんだね！",
+      "type": "choice",
+      "choices": [
+        "always",
+        "almost",
+        "most",
+        "all"
+      ],
+      "answerIndex": 3,
+      "en": "So you got here after all!"
+    },
+    {
+      "id": "1224",
+      "tags": [],
+      "question": "書き出しにしたがって，空所に適語を入れなさい。\n我が社はこれから５年間でアジア，特に中国でビジネスを展開する計画だ。\nDuring the next five years our company plans to expand business in Asia, in ( p　　) in China.",
+      "rawAnswer": "particular",
+      "ja": "書き出しにしたがって，空所に適語を入れなさい。\n我が社はこれから５年間でアジア，特に中国でビジネスを展開する計画だ。",
+      "type": "fill",
+      "answer": "particular",
+      "en": "During the next five years our company plans to expand business in Asia, in particular in China."
+    },
+    {
+      "id": "1225",
+      "tags": [],
+      "question": "Children need a lot of things, but <u>above all</u>, they need love.",
+      "rawAnswer": "①",
+      "ja": "子どもたちにはたくさんのものが必要だが，とりわけ，愛を必要とする。",
+      "type": "choice",
+      "choices": [
+        "especially",
+        "lately",
+        "on earth",
+        "voluntarily"
+      ],
+      "answerIndex": 0,
+      "en": "Children need a lot of things, but above all, they need love."
+    },
+    {
+      "id": "1226",
+      "tags": [],
+      "question": "I moved out of my parents' house because I wanted to live <u>on my own</u> for a while.",
+      "rawAnswer": "④",
+      "ja": "私はしばらく一人で生活したかったので，両親の家から引っ越した。",
+      "type": "choice",
+      "choices": [
+        "by force",
+        "by heart",
+        "by mistake",
+        "by myself"
+      ],
+      "answerIndex": 3,
+      "en": "I moved out of my parents' house because I wanted to live on my own for a while."
+    },
+    {
+      "id": "1227",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "He was ( 　　)  what to do.",
+      "rawAnswer": "④",
+      "ja": "彼は何をしたらよいのか途方にくれた。",
+      "type": "choice",
+      "choices": [
+        "out of mind",
+        "in common",
+        "at best",
+        "at a loss"
+      ],
+      "answerIndex": 3,
+      "en": "He was at a loss what to do."
+    },
+    {
+      "id": "1228",
+      "tags": [],
+      "question": "You shouldn't worry, because you have the best medical advice in the country ( 　　) your disposal.",
+      "rawAnswer": "①",
+      "ja": "心配しなくていい，君はその国の最良の医師の診察を自由に受けられるのだから。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "for",
+        "on",
+        "under"
+      ],
+      "answerIndex": 0,
+      "en": "You shouldn't worry, because you have the best medical advice in the country at your disposal."
+    },
+    {
+      "id": "1229",
+      "tags": [],
+      "question": "Mark had never acted on the stage and he was <u>ill at ease</u>.",
+      "rawAnswer": "④",
+      "ja": "マークはそれまで一度も舞台で演じたことがなかったので，そわそわしていた。",
+      "type": "choice",
+      "choices": [
+        "pleased",
+        "unsatisfied",
+        "cautious",
+        "uncomfortable"
+      ],
+      "answerIndex": 3,
+      "en": "Mark had never acted on the stage and he was ill at ease."
+    },
+    {
+      "id": "1230",
+      "tags": [],
+      "question": "書き出しにしたがって，空所に適語を入れなさい。\nこの庭の造りは私の好みにぴったりだ。\nThe design of this garden is exactly to my ( t　　).",
+      "rawAnswer": "taste",
+      "ja": "書き出しにしたがって，空所に適語を入れなさい。\nこの庭の造りは私の好みにぴったりだ。",
+      "type": "fill",
+      "answer": "taste",
+      "en": "The design of this garden is exactly to my taste."
+    },
+    {
+      "id": "1231",
+      "tags": [],
+      "question": "I can express myself in English ( 　　）, but I still have a lot to study.",
+      "rawAnswer": "④",
+      "ja": "私はある程度は英語で自分の考えを表現できるが，まだ学ぶことはたくさんある。",
+      "type": "choice",
+      "choices": [
+        "as much as possible",
+        "by all means",
+        "for the moment",
+        "to some extent"
+      ],
+      "answerIndex": 3,
+      "en": "I can express myself in English ( 　　）, but I still have a lot to study."
+    },
+    {
+      "id": "1232",
+      "tags": [],
+      "question": "They tried to maintain peace (　　) any cost.",
+      "rawAnswer": "③",
+      "ja": "彼らはどんな犠牲を払っても平和を維持しようとした。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "for",
+        "at",
+        "by"
+      ],
+      "answerIndex": 2,
+      "en": "They tried to maintain peace at any cost."
+    },
+    {
+      "id": "1233",
+      "tags": [],
+      "question": "The plan must be carried out by all (　　).",
+      "rawAnswer": "①",
+      "ja": "その計画はぜひとも実行されなければならない。",
+      "type": "choice",
+      "choices": [
+        "means",
+        "costs",
+        "odds",
+        "ways"
+      ],
+      "answerIndex": 0,
+      "en": "The plan must be carried out by all means."
+    },
+    {
+      "id": "1234",
+      "tags": [],
+      "question": "\"Excuse me. Are you Mr. Chang by any (　　)?\" \"Yes, I am. Oh, you must be Mr. Suzuki. It's so nice to meet you.\"",
+      "rawAnswer": "①",
+      "ja": "「すみません。もしかして，あなたはチャンさんですか」「はい，そうです。あなたは鈴木さんですよね。お会いできてとてもうれしいです」",
+      "type": "choice",
+      "choices": [
+        "chance",
+        "means",
+        "mistake",
+        "ways"
+      ],
+      "answerIndex": 0,
+      "en": "\"Excuse me. Are you Mr. Chang by any chance?\" \"Yes, I am. Oh, you must be Mr. Suzuki. It's so nice to meet you.\""
+    },
+    {
+      "id": "1235",
+      "tags": [],
+      "question": "If you wish to do it, I won't stand (　　).",
+      "rawAnswer": "②",
+      "ja": "あなたがそうしたいと願うなら，私はあなたの邪魔はしない。",
+      "type": "choice",
+      "choices": [
+        "on your way",
+        "in your way",
+        "your way",
+        "ahead of you"
+      ],
+      "answerIndex": 1,
+      "en": "If you wish to do it, I won't stand in your way."
+    },
+    {
+      "id": "1236",
+      "tags": [],
+      "question": "Keep all medicines out of (　　) of our baby.",
+      "rawAnswer": "①",
+      "ja": "薬はすべて，赤ちゃんの手の届かないところにしまっておきなさい。",
+      "type": "choice",
+      "choices": [
+        "reach",
+        "hand",
+        "touch",
+        "area"
+      ],
+      "answerIndex": 0,
+      "en": "Keep all medicines out of reach of our baby."
+    },
+    {
+      "id": "1237",
+      "tags": [],
+      "question": "Professor Smith's fashion sense is hopelessly <u>out of date</u>.",
+      "rawAnswer": "④",
+      "ja": "スミス教授のファッション感覚は救いようがないほど時代遅れだ。",
+      "type": "choice",
+      "choices": [
+        "fashionable",
+        "popular",
+        "attractive",
+        "old-fashioned"
+      ],
+      "answerIndex": 3,
+      "en": "Professor Smith's fashion sense is hopelessly out of date."
+    },
+    {
+      "id": "1238",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "If the copy machine is out of (　　), please contact the customer service center.",
+      "rawAnswer": "④",
+      "ja": "コピー機が故障しているのなら，顧客サービスセンターに連絡してください。",
+      "type": "choice",
+      "choices": [
+        "work",
+        "mind",
+        "condition",
+        "order"
+      ],
+      "answerIndex": 3,
+      "en": "If the copy machine is out of order, please contact the customer service center."
+    },
+    {
+      "id": "1239",
+      "tags": [],
+      "question": "The situation is getting (　　). I'm no longer in control.",
+      "rawAnswer": "①",
+      "ja": "状況は手に負えなくなりつつある。もはや私には制御できない。",
+      "type": "choice",
+      "choices": [
+        "out of hand",
+        "inside out",
+        "out of sight",
+        "inside the mirror"
+      ],
+      "answerIndex": 0,
+      "en": "The situation is getting out of hand. I'm no longer in control."
+    },
+    {
+      "id": "1240",
+      "tags": [],
+      "question": "Her remarks are always to the (　　).",
+      "rawAnswer": "②",
+      "ja": "彼女の発言はいつも要領を得ている。",
+      "type": "choice",
+      "choices": [
+        "practice",
+        "point",
+        "process",
+        "principle"
+      ],
+      "answerIndex": 1,
+      "en": "Her remarks are always to the point."
+    },
+    {
+      "id": "1241",
+      "tags": [],
+      "question": "The Japanese economy has been recovering <u>gradually</u>.",
+      "rawAnswer": "②",
+      "ja": "日本経済は徐々に回復してきている。",
+      "type": "choice",
+      "choices": [
+        "quite a little",
+        "little by little",
+        "for a little",
+        "after a little"
+      ],
+      "answerIndex": 1,
+      "en": "The Japanese economy has been recovering gradually."
+    },
+    {
+      "id": "1242",
+      "tags": [],
+      "question": "<u>All at once</u> we heard a scream.",
+      "rawAnswer": "②",
+      "ja": "突然，私たちは叫び声を聞いた。",
+      "type": "choice",
+      "choices": [
+        "Appropriately",
+        "Suddenly",
+        "Accordingly",
+        "Technically"
+      ],
+      "answerIndex": 1,
+      "en": "All at once we heard a scream."
+    },
+    {
+      "id": "1243",
+      "tags": [
+        "発展"
+      ],
+      "question": "You don't have to give me your answer on the (　　).",
+      "rawAnswer": "④",
+      "ja": "あなたは即座に私に返事をする必要はありません。",
+      "type": "choice",
+      "choices": [
+        "favor",
+        "name",
+        "part",
+        "spot"
+      ],
+      "answerIndex": 3,
+      "en": "You don't have to give me your answer on the spot."
+    },
+    {
+      "id": "1244",
+      "tags": [],
+      "question": "After the long mountain climb, I went home and fell asleep <u>in no time</u>.",
+      "rawAnswer": "①",
+      "ja": "長時間の山登りの後，私は帰宅し，すぐに眠りに落ちた。",
+      "type": "choice",
+      "choices": [
+        "immediately",
+        "slowly",
+        "eagerly",
+        "patiently"
+      ],
+      "answerIndex": 0,
+      "en": "After the long mountain climb, I went home and fell asleep in no time."
+    },
+    {
+      "id": "1245",
+      "tags": [],
+      "question": "I was passing by the office, when I overheard John talking (　　) my back.",
+      "rawAnswer": "①",
+      "ja": "私が職場のそばを通り過ぎようとしたら，ジョンが私の陰口を言っているのがふと耳に入った。",
+      "type": "choice",
+      "choices": [
+        "behind",
+        "from",
+        "over",
+        "through"
+      ],
+      "answerIndex": 0,
+      "en": "I was passing by the office, when I overheard John talking behind my back."
+    },
+    {
+      "id": "1246",
+      "tags": [
+        "発展"
+      ],
+      "question": "She is <u>second to none</u> in her class in English.",
+      "rawAnswer": "②",
+      "ja": "彼女は英語ではクラスのだれにも負けない。",
+      "type": "choice",
+      "choices": [
+        "miserable",
+        "the best student",
+        "not so good",
+        "by far the worst"
+      ],
+      "answerIndex": 1,
+      "en": "She is second to none in her class in English."
+    },
+    {
+      "id": "1247",
+      "tags": [
+        "発展"
+      ],
+      "question": "On (　　) thought, I'd better do it.",
+      "rawAnswer": "③",
+      "ja": "考え直してみると，僕はそれをやったほうがいい。",
+      "type": "choice",
+      "choices": [
+        "two",
+        "twice",
+        "second",
+        "repeated"
+      ],
+      "answerIndex": 2,
+      "en": "On second thought, I'd better do it."
+    },
+    {
+      "id": "1248",
+      "tags": [],
+      "question": "Ms. Kato is a famous designer, and in her (　　), long skirts will be in fashion this year.",
+      "rawAnswer": "②",
+      "ja": "加藤さんは有名なデザイナーで，彼女の考えでは，今年は長いスカートが流行るだろうとのことだ。",
+      "type": "choice",
+      "choices": [
+        "point",
+        "opinion",
+        "voice",
+        "order"
+      ],
+      "answerIndex": 1,
+      "en": "Ms. Kato is a famous designer, and in her opinion, long skirts will be in fashion this year."
+    },
+    {
+      "id": "1249",
+      "tags": [],
+      "question": "I didn't agree with everything he said at first, but (　　) his argument is right.",
+      "rawAnswer": "④",
+      "ja": "最初は，私は彼の言うことすべてに賛成したわけではなかったが，彼の主張はある意味で正しい。",
+      "type": "choice",
+      "choices": [
+        "against his will",
+        "on the way",
+        "by the way",
+        "in a sense"
+      ],
+      "answerIndex": 3,
+      "en": "I didn't agree with everything he said at first, but in a sense his argument is right."
+    },
+    {
+      "id": "1250",
+      "tags": [],
+      "question": "<u>As a rule</u>, I get up at 7:00 every morning.",
+      "rawAnswer": "②",
+      "ja": "たいてい，私は毎朝７時に起床する。",
+      "type": "choice",
+      "choices": [
+        "Sometimes",
+        "Usually",
+        "Always",
+        "Often"
+      ],
+      "answerIndex": 1,
+      "en": "As a rule, I get up at 7:00 every morning."
+    },
+    {
+      "id": "1251",
+      "tags": [],
+      "question": "(　　) I had a happy childhood growing up in the country.",
+      "rawAnswer": "③",
+      "ja": "私は田舎で育ち，概して幸せな子ども時代を過ごした。",
+      "type": "choice",
+      "choices": [
+        "Apart from",
+        "Sometime",
+        "On the whole",
+        "Almost"
+      ],
+      "answerIndex": 2,
+      "en": "On the whole I had a happy childhood growing up in the country."
+    },
+    {
+      "id": "1252",
+      "tags": [],
+      "question": "彼は全力を尽くしたが，結局何も得られずに終わった。\nHe did as much as he could, but he got nothing in the (　　).",
+      "rawAnswer": "end",
+      "ja": "彼は全力を尽くしたが，結局何も得られずに終わった。",
+      "type": "fill",
+      "answer": "end",
+      "en": "He did as much as he could, but he got nothing in the end."
+    },
+    {
+      "id": "1253",
+      "tags": [],
+      "question": "Her sister makes money by playing the violin; (　　), she is a professional musician.",
+      "rawAnswer": "③",
+      "ja": "彼女の姉［妹］はバイオリンの演奏で収入を得ている。言いかえれば，彼女はプロの音楽家だ。",
+      "type": "choice",
+      "choices": [
+        "as a result",
+        "for example",
+        "in other words",
+        "on the other hand"
+      ],
+      "answerIndex": 2,
+      "en": "Her sister makes money by playing the violin; in other words, she is a professional musician."
+    },
+    {
+      "id": "1254",
+      "tags": [],
+      "question": "I'm not tired. (　　) the contrary, I could walk for miles.",
+      "rawAnswer": "④",
+      "ja": "私は疲れていません。それどころか何マイルだって歩けますよ。",
+      "type": "choice",
+      "choices": [
+        "By",
+        "For",
+        "In",
+        "On"
+      ],
+      "answerIndex": 3,
+      "en": "I'm not tired. On the contrary, I could walk for miles."
+    },
+    {
+      "id": "1255",
+      "tags": [],
+      "question": "We have heard nothing (　　) the contrary.",
+      "rawAnswer": "④",
+      "ja": "私たちは，それに反することは何も耳にしていない。",
+      "type": "choice",
+      "choices": [
+        "of",
+        "by",
+        "in",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "We have heard nothing to the contrary."
+    },
+    {
+      "id": "1256",
+      "tags": [],
+      "question": "Hanako says she's happy in Yokohama. Oh, and <u>by the way</u>, she has a new job.",
+      "rawAnswer": "④",
+      "ja": "ハナコは横浜で幸せにやっているそうだ。ああ，ところで，彼女は新しい仕事に就いたんだよ。",
+      "type": "choice",
+      "choices": [
+        "completely",
+        "ordinary",
+        "generally",
+        "incidentally"
+      ],
+      "answerIndex": 3,
+      "en": "Hanako says she's happy in Yokohama. Oh, and by the way, she has a new job."
+    },
+    {
+      "id": "1257",
+      "tags": [
+        "基本"
+      ],
+      "question": "Everything was exciting to me when I visited Spain (　　).",
+      "rawAnswer": "④",
+      "ja": "初めてスペインを訪れたとき，私にとってはすべてのことが刺激的でした。",
+      "type": "choice",
+      "choices": [
+        "at first time",
+        "for first",
+        "for the first",
+        "for the first time"
+      ],
+      "answerIndex": 3,
+      "en": "Everything was exciting to me when I visited Spain for the first time."
+    },
+    {
+      "id": "1258",
+      "tags": [
+        "発展"
+      ],
+      "question": "You can keep buying on your credit card for the time (　　), but you'll have trouble paying those bills later.",
+      "rawAnswer": "①",
+      "ja": "さしあたり君はクレジットカードで買い物を続けられるが，あとで勘定を払うのに苦労することだろう。",
+      "type": "choice",
+      "choices": [
+        "being",
+        "now",
+        "past",
+        "present"
+      ],
+      "answerIndex": 0,
+      "en": "You can keep buying on your credit card for the time being, but you'll have trouble paying those bills later."
+    },
+    {
+      "id": "1259",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Jenny's parents visited their daughter <u>from time to time</u> when she lived in Kyoto.",
+      "rawAnswer": "②",
+      "ja": "ジェニーの両親は，娘が京都に住んでいたときにときどき彼女のもとを訪ねた。",
+      "type": "choice",
+      "choices": [
+        "quite often",
+        "occasionally",
+        "many times",
+        "all the time"
+      ],
+      "answerIndex": 1,
+      "en": "Jenny's parents visited their daughter from time to time when she lived in Kyoto."
+    },
+    {
+      "id": "1260",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "This flower does not need much care except for water <u>once in a while</u>.",
+      "rawAnswer": "②",
+      "ja": "ときどき水をやる以外，この花は大した世話は必要ない。",
+      "type": "choice",
+      "choices": [
+        "every day",
+        "sometimes",
+        "frequently",
+        "usually"
+      ],
+      "answerIndex": 1,
+      "en": "This flower does not need much care except for water once in a while."
+    },
+    {
+      "id": "1261",
+      "tags": [],
+      "question": "<u>All of a sudden</u>, it started to rain heavily.",
+      "rawAnswer": "④",
+      "ja": "突然，雨が激しく降り出した。",
+      "type": "choice",
+      "choices": [
+        "All too often",
+        "Once in a while",
+        "At any moment",
+        "All at once"
+      ],
+      "answerIndex": 3,
+      "en": "All of a sudden, it started to rain heavily."
+    },
+    {
+      "id": "1262",
+      "tags": [
+        "発展"
+      ],
+      "question": "My old friend called me <u>out of the blue</u>.",
+      "rawAnswer": "③",
+      "ja": "私の昔の友人が突然電話してきた。",
+      "type": "choice",
+      "choices": [
+        "sadly",
+        "just in time",
+        "unexpectedly",
+        "in a good mood"
+      ],
+      "answerIndex": 2,
+      "en": "My old friend called me out of the blue."
+    },
+    {
+      "id": "1263",
+      "tags": [
+        "発展"
+      ],
+      "question": "His efforts bore fruit (　　) the long run.",
+      "rawAnswer": "④",
+      "ja": "結局，彼の努力は実を結んだ。",
+      "type": "choice",
+      "choices": [
+        "to",
+        "by",
+        "for",
+        "in"
+      ],
+      "answerIndex": 3,
+      "en": "His efforts bore fruit in the long run."
+    },
+    {
+      "id": "1264",
+      "tags": [
+        "発展"
+      ],
+      "question": "Could you turn it the (　　) way around?",
+      "rawAnswer": "①",
+      "ja": "それを逆向きに回していただけますか。",
+      "type": "choice",
+      "choices": [
+        "other",
+        "another",
+        "both",
+        "each"
+      ],
+      "answerIndex": 0,
+      "en": "Could you turn it the other way around?"
+    },
+    {
+      "id": "1265",
+      "tags": [],
+      "question": "The manager's proposal was <u>out of the question</u>.",
+      "rawAnswer": "④",
+      "ja": "その上司の提案は論外だった。",
+      "type": "choice",
+      "choices": [
+        "complicated",
+        "confusing",
+        "elementary",
+        "impossible"
+      ],
+      "answerIndex": 3,
+      "en": "The manager's proposal was out of the question."
+    },
+    {
+      "id": "1266",
+      "tags": [],
+      "question": "(　　) a matter of fact, I have been to London four times.",
+      "rawAnswer": "④",
+      "ja": "実際のところ，私は４回ロンドンに行ったことがある。",
+      "type": "choice",
+      "choices": [
+        "Of",
+        "On",
+        "In",
+        "As"
+      ],
+      "answerIndex": 3,
+      "en": "As a matter of fact, I have been to London four times."
+    },
+    {
+      "id": "1267",
+      "tags": [],
+      "question": "The job wasn't very interesting, but (　　) it was well-paid.",
+      "rawAnswer": "②",
+      "ja": "その仕事はあまりおもしろくなかったが，その一方で報酬が良かった。",
+      "type": "choice",
+      "choices": [
+        "on the contrary",
+        "on the other hand",
+        "in addition",
+        "all the more"
+      ],
+      "answerIndex": 1,
+      "en": "The job wasn't very interesting, but on the other hand it was well-paid."
+    },
+    {
+      "id": "1268",
+      "tags": [],
+      "question": "より現実的な視点から見て，この計画は大きな変更を必要とするだろう。\nFrom a more realistic point (　　) (　　), this plan will need some big changes.",
+      "rawAnswer": "of view",
+      "ja": "より現実的な視点から見て，この計画は大きな変更を必要とするだろう。",
+      "type": "fill",
+      "answer": "of view",
+      "en": "From a more realistic point of view, this plan will need some big changes."
+    }
+  ]
+}
