@@ -1,0 +1,601 @@
+{
+  "number": 4,
+  "title": "仮定法",
+  "fullTitle": "第4章　仮定法",
+  "problems": [
+    {
+      "id": "080",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "This computer would be perfect if it (　　) a little lighter.",
+      "rawAnswer": "③",
+      "ja": "もう少し軽ければ，このコンピューターは完璧だろう。",
+      "type": "choice",
+      "choices": [
+        "is",
+        "has",
+        "were",
+        "has been"
+      ],
+      "answerIndex": 2,
+      "en": "This computer would be perfect if it were a little lighter."
+    },
+    {
+      "id": "081",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "John (　　) the team if he had time, but he is really busy now.",
+      "rawAnswer": "③",
+      "ja": "ジョンは，時間があればそのチームに加わるだろうが，彼は今本当に忙しい。",
+      "type": "choice",
+      "choices": [
+        "joins",
+        "joined",
+        "would join",
+        "have joined"
+      ],
+      "answerIndex": 2,
+      "en": "John would join the team if he had time, but he is really busy now."
+    },
+    {
+      "id": "082",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "If I ①<u>were</u> a company owner, I ②<u>will</u> start a special online system to communicate directly ③<u>with</u> all employees in order ④<u>to</u> learn what they think.",
+      "rawAnswer": "②→would",
+      "ja": "私が社主なら，従業員の考えていることを知るために，彼ら全員と直接意思の疎通を図る特別なオンラインシステムを立ち上げるだろう。",
+      "type": "error",
+      "en": "If I were a company owner, I would start a special online system to communicate directly with all employees in order to learn what they think.",
+      "answerIndex": 1,
+      "correction": "would"
+    },
+    {
+      "id": "083",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "If I (　　) harder, I could have played the violin better.",
+      "rawAnswer": "④",
+      "ja": "もっと必死で練習していたら，私はもっとうまくバイオリンを弾くことができただろう。",
+      "type": "choice",
+      "choices": [
+        "practice",
+        "have practiced",
+        "will practice",
+        "had practiced"
+      ],
+      "answerIndex": 3,
+      "en": "If I had practiced harder, I could have played the violin better."
+    },
+    {
+      "id": "084",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "If we had known about his busy schedule, we (　　) the meeting.",
+      "rawAnswer": "④",
+      "ja": "私たちが彼の忙しいスケジュールを知っていたら，その会議を延期しただろうに。",
+      "type": "choice",
+      "choices": [
+        "would put off",
+        "put off",
+        "have put off",
+        "would have put off"
+      ],
+      "answerIndex": 3,
+      "en": "If we had known about his busy schedule, we would have put off the meeting."
+    },
+    {
+      "id": "085",
+      "tags": [],
+      "question": "No one would have ①<u>attended</u> the meeting if you ②<u>told</u> ③<u>the truth about</u> the ④<u>speaker</u>.",
+      "rawAnswer": "②→had told",
+      "ja": "あなたがその演説者にまつわる真相を話していたら，会議にはだれも出席しなかっただろう。",
+      "type": "error",
+      "en": "No one would have attended the meeting if you had told the truth about the speaker.",
+      "answerIndex": 1,
+      "correction": "had told"
+    },
+    {
+      "id": "086",
+      "tags": [],
+      "question": "If you had taken my advice at that time, you (　　) more successful now.",
+      "rawAnswer": "②",
+      "ja": "あの時あなたが私の忠告を聞いていたら，今ごろもっと成功しているだろうに。",
+      "type": "choice",
+      "choices": [
+        "are",
+        "would be",
+        "will have been",
+        "would have been"
+      ],
+      "answerIndex": 1,
+      "en": "If you had taken my advice at that time, you would be more successful now."
+    },
+    {
+      "id": "087",
+      "tags": [],
+      "question": "If I (　　) him that day, my life would be totally different now.",
+      "rawAnswer": "④",
+      "ja": "あの日彼に会わなかったら，私の人生は今ごろまったく違うものになっているだろう。",
+      "type": "choice",
+      "choices": [
+        "didn't meet",
+        "would meet",
+        "don't meet",
+        "hadn't met"
+      ],
+      "answerIndex": 3,
+      "en": "If I hadn't met him that day, my life would be totally different now."
+    },
+    {
+      "id": "088",
+      "tags": [
+        "基本"
+      ],
+      "question": "核戦争が起こったら，人類の破滅は避けられないだろう。\nThe destruction of humankind (be / if / inevitable / to / a nuclear war / were / would) break out.",
+      "rawAnswer": "would be inevitable if a nuclear war were to",
+      "ja": "核戦争が起こったら，人類の破滅は避けられないだろう。",
+      "type": "ordering",
+      "answer": "would be inevitable if a nuclear war were to",
+      "pieces": [
+        "be",
+        "if",
+        "inevitable",
+        "to",
+        "a nuclear war",
+        "were",
+        "would"
+      ],
+      "en": "The destruction of humankind would be inevitable if a nuclear war were to break out."
+    },
+    {
+      "id": "089",
+      "tags": [
+        "基本"
+      ],
+      "question": "I don't think he will stop by my office. But if he (　　) while I'm out, give him more information about that.",
+      "rawAnswer": "③",
+      "ja": "彼は私の職場に立ち寄らないと思います。でも万一彼が私の外出中に来たら，あの件についての追加情報を渡してください。",
+      "type": "choice",
+      "choices": [
+        "came",
+        "will come",
+        "should come",
+        "had come"
+      ],
+      "answerIndex": 2,
+      "en": "I don't think he will stop by my office. But if he should come while I'm out, give him more information about that."
+    },
+    {
+      "id": "090",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "He wishes he (　　) somewhere more exciting.",
+      "rawAnswer": "③",
+      "ja": "彼はどこかもっと刺激的な場所に住んでいればいいのにと思っている。",
+      "type": "choice",
+      "choices": [
+        "live",
+        "lives",
+        "lived",
+        "to has lived"
+      ],
+      "answerIndex": 2,
+      "en": "He wishes he lived somewhere more exciting."
+    },
+    {
+      "id": "091",
+      "tags": [
+        "基本"
+      ],
+      "question": "I wish I (　　) enough money to buy the house around this time last year.",
+      "rawAnswer": "③",
+      "ja": "去年の今頃，その家を買うのに十分なお金を持っていたらよかったのになあと思う。",
+      "type": "choice",
+      "choices": [
+        "had",
+        "could have",
+        "had had",
+        "should have"
+      ],
+      "answerIndex": 2,
+      "en": "I wish I had had enough money to buy the house around this time last year."
+    },
+    {
+      "id": "092",
+      "tags": [],
+      "question": "I wish he (　　) more quickly.",
+      "rawAnswer": "④",
+      "ja": "私は，彼がもっと速く仕事をしてくれればいいのにと思う。",
+      "type": "choice",
+      "choices": [
+        "has worked",
+        "is working",
+        "will work",
+        "would work"
+      ],
+      "answerIndex": 3,
+      "en": "I wish he would work more quickly."
+    },
+    {
+      "id": "093",
+      "tags": [],
+      "question": "(　　) I had studied English much harder when I was young!",
+      "rawAnswer": "②",
+      "ja": "若いころもっと一生懸命英語を勉強していたならなあ。",
+      "type": "choice",
+      "choices": [
+        "How",
+        "If only",
+        "What if",
+        "Wishing"
+      ],
+      "answerIndex": 1,
+      "en": "If only I had studied English much harder when I was young!"
+    },
+    {
+      "id": "094",
+      "tags": [],
+      "question": "\"May I smoke here?\"  \"I'd rather (　　).\"",
+      "rawAnswer": "①",
+      "ja": "「ここでタバコを吸ってもいいですか」「遠慮していただけませんか」",
+      "type": "choice",
+      "choices": [
+        "you didn't",
+        "you won't",
+        "you not to",
+        "for you not to"
+      ],
+      "answerIndex": 0,
+      "en": "\"May I smoke here?\" \"I'd rather you didn't.\""
+    },
+    {
+      "id": "095",
+      "tags": [
+        "基本"
+      ],
+      "question": "Although we met today for the first time, I feel as if you (　　) my old friend.",
+      "rawAnswer": "③",
+      "ja": "私たちは今日初めて会ったのに，私はあなたが私の昔からの友人であるかのような気がします。",
+      "type": "choice",
+      "choices": [
+        "have been",
+        "seem",
+        "were",
+        "would be"
+      ],
+      "answerIndex": 2,
+      "en": "Although we met today for the first time, I feel as if you were my old friend."
+    },
+    {
+      "id": "096",
+      "tags": [
+        "基本"
+      ],
+      "question": "彼は何事もなかったかのように振る舞った。\nHe (had / if / acted / nothing / occurred / as).",
+      "rawAnswer": "acted as if nothing had occurred",
+      "ja": "彼は何事もなかったかのように振る舞った。",
+      "type": "ordering",
+      "answer": "acted as if nothing had occurred",
+      "pieces": [
+        "had",
+        "if",
+        "acted",
+        "nothing",
+        "occurred",
+        "as"
+      ],
+      "en": "He acted as if nothing had occurred."
+    },
+    {
+      "id": "097",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "It's time you (　　) those trousers.",
+      "rawAnswer": "④",
+      "ja": "もうあのズボンを洗う時期ですよ。",
+      "type": "choice",
+      "choices": [
+        "are washing",
+        "had washed",
+        "wash",
+        "washed"
+      ],
+      "answerIndex": 3,
+      "en": "It's time you washed those trousers."
+    },
+    {
+      "id": "098",
+      "tags": [],
+      "question": "It is (　　) time they came to the conclusion that he is guilty.",
+      "rawAnswer": "④",
+      "ja": "彼らはとっくに，彼が有罪だという結論に達してよいころだ。",
+      "type": "choice",
+      "choices": [
+        "tall",
+        "large",
+        "long",
+        "high"
+      ],
+      "answerIndex": 3,
+      "en": "It is high time they came to the conclusion that he is guilty."
+    },
+    {
+      "id": "099",
+      "tags": [
+        "基本"
+      ],
+      "question": "コンピューターがなければ，私たちの暮らしはもっと不便でしょう。（１語不要）\n(it / not / but / were / for / if) computers, our lives would be much more inconvenient.",
+      "rawAnswer": "If it were not for（but不要）",
+      "ja": "コンピューターがなければ，私たちの暮らしはもっと不便でしょう。（１語不要）",
+      "type": "ordering",
+      "answer": "If it were not for",
+      "pieces": [
+        "it",
+        "not",
+        "but",
+        "were",
+        "for",
+        "if"
+      ],
+      "en": "If it were not for computers, our lives would be much more inconvenient.",
+      "note": "but不要"
+    },
+    {
+      "id": "100",
+      "tags": [
+        "基本"
+      ],
+      "question": "If it (　　) your help, I should have given up.",
+      "rawAnswer": "①",
+      "ja": "もしあなたの助けがなかったら，私はあきらめていただろう。",
+      "type": "choice",
+      "choices": [
+        "had not been for",
+        "had not been",
+        "were not",
+        "were without"
+      ],
+      "answerIndex": 0,
+      "en": "If it had not been for your help, I should have given up."
+    },
+    {
+      "id": "101",
+      "tags": [],
+      "question": "(　　) the traffic accident, we would have arrived earlier.",
+      "rawAnswer": "①",
+      "ja": "交通事故がなかったら，われわれはもっと早く到着していただろう。",
+      "type": "choice",
+      "choices": [
+        "But for",
+        "Just only",
+        "Out of",
+        "The same as"
+      ],
+      "answerIndex": 0,
+      "en": "But for the traffic accident, we would have arrived earlier."
+    },
+    {
+      "id": "102",
+      "tags": [],
+      "question": "(a) If it had not been for your advice, I would have failed.\n(b) (　　) your advice, I would have failed.",
+      "rawAnswer": "④",
+      "ja": "もしあなたの忠告がなかったら，私は失敗していただろう。",
+      "type": "choice",
+      "choices": [
+        "Except",
+        "For",
+        "With",
+        "Without"
+      ],
+      "answerIndex": 3,
+      "en": "Without your advice, I would have failed."
+    },
+    {
+      "id": "103",
+      "tags": [],
+      "question": "(　　) in her position, I would decline the offer.",
+      "rawAnswer": "④",
+      "ja": "もし彼女の立場なら，私はその申し出を断るだろう。",
+      "type": "choice",
+      "choices": [
+        "If I had",
+        "If I have been",
+        "If were I",
+        "Were I"
+      ],
+      "answerIndex": 3,
+      "en": "Were I in her position, I would decline the offer."
+    },
+    {
+      "id": "104",
+      "tags": [],
+      "question": "(　　) what you were intending to do, I would have stopped you.",
+      "rawAnswer": "②",
+      "ja": "もしあなたが何をするつもりかわかっていたら，私はあなたを止めただろうに。",
+      "type": "choice",
+      "choices": [
+        "Have I realized",
+        "Had I realized",
+        "If I realize",
+        "If I would realize"
+      ],
+      "answerIndex": 1,
+      "en": "Had I realized what you were intending to do, I would have stopped you."
+    },
+    {
+      "id": "105",
+      "tags": [],
+      "question": "もし海が２メートル上昇すれば，この島の大半は海の中だ。\n(meters / to rise / were / two / the sea), most of this island would be under water.",
+      "rawAnswer": "Were the sea to rise two meters",
+      "ja": "もし海が２メートル上昇すれば，この島の大半は海の中だ。",
+      "type": "ordering",
+      "answer": "Were the sea to rise two meters",
+      "pieces": [
+        "meters",
+        "to rise",
+        "were",
+        "two",
+        "the sea"
+      ],
+      "en": "Were the sea to rise two meters, most of this island would be under water."
+    },
+    {
+      "id": "106",
+      "tags": [],
+      "question": "(　　) you happen to meet them, please give them my best regards.",
+      "rawAnswer": "②",
+      "ja": "彼らにたまたま会うことがあれば，よろしくお伝えください。",
+      "type": "choice",
+      "choices": [
+        "Shall",
+        "Should",
+        "Will",
+        "Would"
+      ],
+      "answerIndex": 1,
+      "en": "Should you happen to meet them, please give them my best regards."
+    },
+    {
+      "id": "107",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "あの非常にうまい守りがなければ，そのゲームに負けてしまったであろう。\n(been / for / had / it / not / that) great defensive play, we would have lost the game.",
+      "rawAnswer": "Had it not been for that",
+      "ja": "あの非常にうまい守りがなければ，そのゲームに負けてしまったであろう。",
+      "type": "ordering",
+      "answer": "Had it not been for that",
+      "pieces": [
+        "been",
+        "for",
+        "had",
+        "it",
+        "not",
+        "that"
+      ],
+      "en": "Had it not been for that great defensive play, we would have lost the game."
+    },
+    {
+      "id": "108",
+      "tags": [],
+      "question": "もう少しだけ辛抱強かったら，その賞を取れたかもしれないのに。\nYou (been / had / have won / might / that prize / you) a little more patient.",
+      "rawAnswer": "might have won that prize had you been",
+      "ja": "もう少しだけ辛抱強かったら，その賞を取れたかもしれないのに。",
+      "type": "ordering",
+      "answer": "might have won that prize had you been",
+      "pieces": [
+        "been",
+        "had",
+        "have won",
+        "might",
+        "that prize",
+        "you"
+      ],
+      "en": "You might have won that prize had you been a little more patient."
+    },
+    {
+      "id": "109",
+      "tags": [],
+      "question": "(　　) a little more support from the government, the African children would have survived.",
+      "rawAnswer": "②",
+      "ja": "政府からの援助がもう少しあったら，そのアフリカの子どもたちは生き延びていただろう。",
+      "type": "choice",
+      "choices": [
+        "Thanks to",
+        "With",
+        "For",
+        "But"
+      ],
+      "answerIndex": 1,
+      "en": "With a little more support from the government, the African children would have survived."
+    },
+    {
+      "id": "110",
+      "tags": [],
+      "question": "We went by taxi; (　　), we would have been late.",
+      "rawAnswer": "①",
+      "ja": "私たちはタクシーで行った。そうしなければ遅れていただろう。",
+      "type": "choice",
+      "choices": [
+        "otherwise",
+        "therefore",
+        "in particular",
+        "instead"
+      ],
+      "answerIndex": 0,
+      "en": "We went by taxi; otherwise, we would have been late."
+    },
+    {
+      "id": "111",
+      "tags": [
+        "発展"
+      ],
+      "question": "もっと注意をしていれば，彼はそんな間違いをしなくてすんだのに。\nGreater care (a / from / have / him / prevented / making / such / would) mistake.",
+      "rawAnswer": "would have prevented him from making such a",
+      "ja": "もっと注意をしていれば，彼はそんな間違いをしなくてすんだのに。",
+      "type": "ordering",
+      "answer": "would have prevented him from making such a",
+      "pieces": [
+        "a",
+        "from",
+        "have",
+        "him",
+        "prevented",
+        "making",
+        "such",
+        "would"
+      ],
+      "en": "Greater care would have prevented him from making such a mistake."
+    },
+    {
+      "id": "112",
+      "tags": [
+        "発展"
+      ],
+      "question": "(a) To see us walking together, they would take you for my sister.\n(b) If (　　) us walking together, they would take you for my sister.",
+      "rawAnswer": "③",
+      "ja": "私たちが一緒に歩いているところを見れば，彼らは君を私の姉［妹］と間違うだろう。",
+      "type": "choice",
+      "choices": [
+        "they will see",
+        "they have seen",
+        "they saw",
+        "they would see"
+      ],
+      "answerIndex": 2,
+      "en": "If they saw us walking together, they would take you for my sister."
+    },
+    {
+      "id": "113",
+      "tags": [
+        "発展"
+      ],
+      "question": "I am disappointed with the result because we (　　) the game against their team last night.",
+      "rawAnswer": "①",
+      "ja": "昨夜は私たちが彼らのチームに勝てた可能性もあったので，私はその試合結果にがっかりしている。",
+      "type": "choice",
+      "choices": [
+        "could have won",
+        "could win",
+        "should be winning",
+        "should win"
+      ],
+      "answerIndex": 0,
+      "en": "I am disappointed with the result because we could have won the game against their team last night."
+    }
+  ]
+}

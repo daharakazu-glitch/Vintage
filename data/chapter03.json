@@ -1,0 +1,683 @@
+{
+  "number": 3,
+  "title": "助動詞",
+  "fullTitle": "第3章　助動詞",
+  "problems": [
+    {
+      "id": "040",
+      "tags": [],
+      "question": "皆様のご多幸とご健康をお祈りします。\n(　　) you all be happy and well.",
+      "rawAnswer": "③",
+      "ja": "皆様のご多幸とご健康をお祈りします。",
+      "type": "choice",
+      "choices": [
+        "Fortunately",
+        "If only",
+        "May",
+        "Suppose"
+      ],
+      "answerIndex": 2,
+      "en": "May you all be happy and well."
+    },
+    {
+      "id": "041",
+      "tags": [
+        "基本"
+      ],
+      "question": "彼はメアリーのボーイフレンドのはずがない。\nHe (　　) be Mary's boyfriend.",
+      "rawAnswer": "②",
+      "ja": "彼はメアリーのボーイフレンドのはずがない。",
+      "type": "choice",
+      "choices": [
+        "mustn't",
+        "can't",
+        "won't",
+        "may not"
+      ],
+      "answerIndex": 1,
+      "en": "He can't be Mary's boyfriend."
+    },
+    {
+      "id": "042",
+      "tags": [],
+      "question": "(　　) it be true that he bought a sports car?",
+      "rawAnswer": "①",
+      "ja": "彼がスポーツカーを買ったというのは本当だろうか。",
+      "type": "choice",
+      "choices": [
+        "Can",
+        "Had",
+        "Has",
+        "Did"
+      ],
+      "answerIndex": 0,
+      "en": "Can it be true that he bought a sports car?"
+    },
+    {
+      "id": "043",
+      "tags": [
+        "基本"
+      ],
+      "question": "Excuse me for rushing off. I (　　) get back to the office.",
+      "rawAnswer": "③",
+      "ja": "急いで飛び出してしまってすみません。私は職場に戻らないといけないのです。",
+      "type": "choice",
+      "choices": [
+        "would",
+        "need",
+        "must",
+        "may"
+      ],
+      "answerIndex": 2,
+      "en": "Excuse me for rushing off. I must get back to the office."
+    },
+    {
+      "id": "044",
+      "tags": [
+        "基本"
+      ],
+      "question": "I promised I would be on time. I (　　) be late.",
+      "rawAnswer": "③",
+      "ja": "私は時間通りに行くと約束した。遅れてはならない。",
+      "type": "choice",
+      "choices": [
+        "need not",
+        "might not",
+        "must not",
+        "don't have to"
+      ],
+      "answerIndex": 2,
+      "en": "I promised I would be on time. I must not be late."
+    },
+    {
+      "id": "045",
+      "tags": [
+        "基本"
+      ],
+      "question": "He (　　) be in because I can hear his radio.",
+      "rawAnswer": "④",
+      "ja": "彼のラジオの音が聞こえるので，彼は中にいるにちがいない。",
+      "type": "choice",
+      "choices": [
+        "shall",
+        "must have",
+        "has",
+        "must"
+      ],
+      "answerIndex": 3,
+      "en": "He must be in because I can hear his radio."
+    },
+    {
+      "id": "046",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My brother was in an accident a few days ago and I (　　) him to the hospital then.",
+      "rawAnswer": "②",
+      "ja": "私の兄［弟］が数日前に事故にあい，その時私は彼を病院へ連れて行かなければならなかった。",
+      "type": "choice",
+      "choices": [
+        "should take",
+        "had to take",
+        "can take",
+        "had better take"
+      ],
+      "answerIndex": 1,
+      "en": "My brother was in an accident a few days ago and I had to take him to the hospital then."
+    },
+    {
+      "id": "047",
+      "tags": [],
+      "question": "Oh, it's already eleven o'clock?  (　　) go home now.",
+      "rawAnswer": "②",
+      "ja": "おっと，もう11時？　もう家に帰らなきゃ。",
+      "type": "choice",
+      "choices": [
+        "I've gotten",
+        "I've got to",
+        "I had had to",
+        "I'm having to"
+      ],
+      "answerIndex": 1,
+      "en": "Oh, it's already eleven o'clock? I've got to go home now."
+    },
+    {
+      "id": "048",
+      "tags": [
+        "基本"
+      ],
+      "question": "You (　　) talk about yourself if you don't want to.",
+      "rawAnswer": "①",
+      "ja": "自分のことについて話したくなければ，話す必要はない。",
+      "type": "choice",
+      "choices": [
+        "don't have to",
+        "don't have",
+        "have not to",
+        "have not"
+      ],
+      "answerIndex": 0,
+      "en": "You don't have to talk about yourself if you don't want to."
+    },
+    {
+      "id": "049",
+      "tags": [],
+      "question": "あなたはEメールを送ってくれるだけでいいんです。\nYou (　　) only to send me an e-mail.",
+      "rawAnswer": "have/need",
+      "ja": "あなたはEメールを送ってくれるだけでいいんです。",
+      "type": "fill",
+      "answer": "have/need",
+      "en": "You have only to send me an e-mail."
+    },
+    {
+      "id": "050",
+      "tags": [
+        "基本"
+      ],
+      "question": "The train for Osaka will be leaving in two minutes. You (　　) hurry up now.",
+      "rawAnswer": "②",
+      "ja": "大阪行きの電車は２分後に出ます。急いだ方がいいですよ。",
+      "type": "choice",
+      "choices": [
+        "used to",
+        "should",
+        "mustn't",
+        "had to"
+      ],
+      "answerIndex": 1,
+      "en": "The train for Osaka will be leaving in two minutes. You should hurry up now."
+    },
+    {
+      "id": "051",
+      "tags": [
+        "基本"
+      ],
+      "question": "He (　　) to look after his children better.",
+      "rawAnswer": "②",
+      "ja": "彼はもっとちゃんと自分の子どもたちの面倒を見るべきだ。",
+      "type": "choice",
+      "choices": [
+        "must",
+        "ought",
+        "have",
+        "should"
+      ],
+      "answerIndex": 1,
+      "en": "He ought to look after his children better."
+    },
+    {
+      "id": "052",
+      "tags": [],
+      "question": "I (　　) not to tell my father the true state of his health.",
+      "rawAnswer": "④",
+      "ja": "私は父に，彼の本当の健康状態を告げるべきではない。",
+      "type": "choice",
+      "choices": [
+        "must",
+        "should",
+        "better",
+        "ought"
+      ],
+      "answerIndex": 3,
+      "en": "I ought not to tell my father the true state of his health."
+    },
+    {
+      "id": "053",
+      "tags": [],
+      "question": "(a) In many schools in the U.S.A., you don't have to wear a uniform.\n(b) In many schools in the U.S.A., you (　　) (　　) (　　) a uniform.",
+      "rawAnswer": "need not wear",
+      "ja": "(a) (b) アメリカ合衆国の多くの学校では，制服を着る必要がない。",
+      "type": "fill",
+      "answer": "need not wear",
+      "en": "In many schools in the U.S.A., you need not wear a uniform."
+    },
+    {
+      "id": "054",
+      "tags": [
+        "発展"
+      ],
+      "question": "How (　　) you speak to me like that!",
+      "rawAnswer": "③",
+      "ja": "よくもまあ僕にそんな口がきけるね！",
+      "type": "choice",
+      "choices": [
+        "might",
+        "do",
+        "dare",
+        "may"
+      ],
+      "answerIndex": 2,
+      "en": "How dare you speak to me like that!"
+    },
+    {
+      "id": "055",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We all tried to push the truck, but it (　　) move. Finally, we called the car service center.",
+      "rawAnswer": "④",
+      "ja": "私たちみんなでそのトラックを押そうとしたが，どうしても動かなかった。結局，私たちは自動車サー\nビスセンターに電話をかけた。",
+      "type": "choice",
+      "choices": [
+        "will",
+        "would",
+        "won't",
+        "wouldn't"
+      ],
+      "answerIndex": 3,
+      "en": "We all tried to push the truck, but it wouldn't move. Finally, we called the car service center."
+    },
+    {
+      "id": "056",
+      "tags": [],
+      "question": "Peter would rather stay home than (　　) to the movies.",
+      "rawAnswer": "②",
+      "ja": "ピーターは映画に行くよりも，むしろ家にいたいと思う。",
+      "type": "choice",
+      "choices": [
+        "having gone",
+        "go",
+        "gone",
+        "to go"
+      ],
+      "answerIndex": 1,
+      "en": "Peter would rather stay home than go to the movies."
+    },
+    {
+      "id": "057",
+      "tags": [],
+      "question": "As it is raining, I would (　　) stay at home.",
+      "rawAnswer": "④",
+      "ja": "雨が降っているので，私はむしろ家にいたい。",
+      "type": "choice",
+      "choices": [
+        "better",
+        "have",
+        "like",
+        "rather"
+      ],
+      "answerIndex": 3,
+      "en": "As it is raining, I would rather stay at home."
+    },
+    {
+      "id": "058",
+      "tags": [],
+      "question": "彼はこの映画をむしろ見たくありません。\n(this / he / not / rather / see / movie / would).",
+      "rawAnswer": "He would rather not see this movie",
+      "ja": "彼はこの映画をむしろ見たくありません。",
+      "type": "ordering",
+      "answer": "He would rather not see this movie",
+      "pieces": [
+        "this",
+        "he",
+        "not",
+        "rather",
+        "see",
+        "movie",
+        "would"
+      ],
+      "en": "He would rather not see this movie."
+    },
+    {
+      "id": "059",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "If you have a toothache, you (　　) the dentist right now.",
+      "rawAnswer": "④",
+      "ja": "歯が痛いのなら，あなたは今すぐ歯医者に診てもらった方がいい。",
+      "type": "choice",
+      "choices": [
+        "have better to see",
+        "have better see",
+        "had better to see",
+        "had better see"
+      ],
+      "answerIndex": 3,
+      "en": "If you have a toothache, you had better see the dentist right now."
+    },
+    {
+      "id": "060",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "You (　　) go jogging after dark in this neighborhood.",
+      "rawAnswer": "②",
+      "ja": "この近辺では暗くなってからジョギングに出かけない方がいいですよ。",
+      "type": "choice",
+      "choices": [
+        "had not better",
+        "had better not",
+        "not had better",
+        "had not better to"
+      ],
+      "answerIndex": 1,
+      "en": "You had better not go jogging after dark in this neighborhood."
+    },
+    {
+      "id": "061",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "In ①<u>fact</u>, ②<u>since</u> French fashions were ③<u>so</u> popular, American dressmakers used to ④<u>changing</u> their names to French ones.",
+      "rawAnswer": "④→change",
+      "ja": "実際，フランスのファッションはとても人気があったので，アメリカの洋裁師たちは自らの名前をフランス風に変えたものだ。",
+      "type": "error",
+      "en": "In fact, since French fashions were so popular, American dressmakers used to change their names to French ones.",
+      "answerIndex": 3,
+      "correction": "change"
+    },
+    {
+      "id": "062",
+      "tags": [],
+      "question": "My sister (　　) in Chicago, but she moved to Los Angeles last year.",
+      "rawAnswer": "②",
+      "ja": "私の姉［妹］は以前シカゴに住んでいたが，去年ロサンゼルスに引っ越した。",
+      "type": "choice",
+      "choices": [
+        "is used to living",
+        "used to live",
+        "used to living",
+        "was used to live"
+      ],
+      "answerIndex": 1,
+      "en": "My sister used to live in Chicago, but she moved to Los Angeles last year."
+    },
+    {
+      "id": "063",
+      "tags": [],
+      "question": "When we were children, we (　　) go skating every winter.",
+      "rawAnswer": "②",
+      "ja": "子どものころ，私たちは毎冬スケートをしに行ったものだ。",
+      "type": "choice",
+      "choices": [
+        "liked",
+        "would",
+        "might",
+        "wanted"
+      ],
+      "answerIndex": 1,
+      "en": "When we were children, we would go skating every winter."
+    },
+    {
+      "id": "064",
+      "tags": [
+        "基本"
+      ],
+      "question": "Tom (　　) there yesterday, but we didn't see him.",
+      "rawAnswer": "②",
+      "ja": "トムは昨日そこにいたかもしれないが，私たちは彼を見かけなかった。",
+      "type": "choice",
+      "choices": [
+        "might be",
+        "may have been",
+        "should be",
+        "must have to be"
+      ],
+      "answerIndex": 1,
+      "en": "Tom may have been there yesterday, but we didn't see him."
+    },
+    {
+      "id": "065",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The wedding party (　　) a lot of money. There were a lot of guests, and the hotel was the best in the city.",
+      "rawAnswer": "①",
+      "ja": "その結婚披露宴には大金がかかったにちがいない。たくさんの招待客がいたし，街で一番のホテルだった。",
+      "type": "choice",
+      "choices": [
+        "must have cost",
+        "cannot have cost",
+        "could not cost",
+        "will cost"
+      ],
+      "answerIndex": 0,
+      "en": "The wedding party must have cost a lot of money. There were a lot of guests, and the hotel was the best in the city."
+    },
+    {
+      "id": "066",
+      "tags": [
+        "基本"
+      ],
+      "question": "Kate (　　) her way, for she has come here several times.",
+      "rawAnswer": "③",
+      "ja": "ケイトが道に迷ったはずはない。というのも彼女は何度かここに来たことがあるのだから。",
+      "type": "choice",
+      "choices": [
+        "couldn't lose",
+        "could have lost",
+        "can't have lost",
+        "can be lost"
+      ],
+      "answerIndex": 2,
+      "en": "Kate can't have lost her way, for she has come here several times."
+    },
+    {
+      "id": "067",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I (　　) called you this morning, but I was too busy to do so.",
+      "rawAnswer": "③",
+      "ja": "私は今朝あなたに電話すべきだったのだが，忙しすぎてできなかった。",
+      "type": "choice",
+      "choices": [
+        "must have",
+        "must not have",
+        "should have",
+        "should not have"
+      ],
+      "answerIndex": 2,
+      "en": "I should have called you this morning, but I was too busy to do so."
+    },
+    {
+      "id": "068",
+      "tags": [],
+      "question": "Our French teacher (　　) here by now because he took the early bus.",
+      "rawAnswer": "①",
+      "ja": "私たちのフランス語の先生は，今ごろはもうここに着いているはずだ。彼は早めのバスに乗ったのだから。",
+      "type": "choice",
+      "choices": [
+        "ought to have arrived",
+        "may arrive",
+        "can arrive",
+        "must arrive"
+      ],
+      "answerIndex": 0,
+      "en": "Our French teacher ought to have arrived here by now because he took the early bus."
+    },
+    {
+      "id": "069",
+      "tags": [
+        "基本"
+      ],
+      "question": "\"You are soaking wet. You (　　) out in the rain.\"  \"I know, but they were expecting me.\"",
+      "rawAnswer": "②",
+      "ja": "「君はびしょ濡れだね。雨の中を出かけるべきではなかったのに」「わかってるけど，彼らが僕を待ってたんだ」",
+      "type": "choice",
+      "choices": [
+        "wouldn't have gone",
+        "shouldn't have gone",
+        "could have gone",
+        "couldn't have gone"
+      ],
+      "answerIndex": 1,
+      "en": "\"You are soaking wet. You shouldn't have gone out in the rain.\" \"I know, but they were expecting me.\""
+    },
+    {
+      "id": "070",
+      "tags": [],
+      "question": "あんな寒い夜に彼女を待たせておくべきではなかった。\nYou (to / not / kept / have / ought) her waiting on such a cold night.",
+      "rawAnswer": "ought not to have kept",
+      "ja": "あんな寒い夜に彼女を待たせておくべきではなかった。",
+      "type": "ordering",
+      "answer": "ought not to have kept",
+      "pieces": [
+        "to",
+        "not",
+        "kept",
+        "have",
+        "ought"
+      ],
+      "en": "You ought not to have kept her waiting on such a cold night."
+    },
+    {
+      "id": "071",
+      "tags": [],
+      "question": "Contrary to the weather forecast, it did not rain yesterday. We (　　) all our raincoats and umbrellas.",
+      "rawAnswer": "③",
+      "ja": "天気予報に反して，昨日は雨が降らなかった。私たちはレインコートも傘もまったく持ってくる必要がなかった。",
+      "type": "choice",
+      "choices": [
+        "must have brought",
+        "should have brought",
+        "needn't have brought",
+        "couldn't have brought"
+      ],
+      "answerIndex": 2,
+      "en": "Contrary to the weather forecast, it did not rain yesterday. We needn't have brought all our raincoats and umbrellas."
+    },
+    {
+      "id": "072",
+      "tags": [],
+      "question": "It is regrettable that Annie (　　) waste her artistic talent.",
+      "rawAnswer": "③",
+      "ja": "アニーが芸術的才能を無駄にしているのは残念なことだ。",
+      "type": "choice",
+      "choices": [
+        "could not",
+        "ought to",
+        "should",
+        "should not"
+      ],
+      "answerIndex": 2,
+      "en": "It is regrettable that Annie should waste her artistic talent."
+    },
+    {
+      "id": "073",
+      "tags": [],
+      "question": "It is essential that the documents (　　) kept in the safe.",
+      "rawAnswer": "③",
+      "ja": "その書類を金庫に保管することは不可欠だ。",
+      "type": "choice",
+      "choices": [
+        "is",
+        "being",
+        "be",
+        "were"
+      ],
+      "answerIndex": 2,
+      "en": "It is essential that the documents be kept in the safe."
+    },
+    {
+      "id": "074",
+      "tags": [],
+      "question": "友を選ぶのにいくら注意してもしすぎることはありません。\n(your friends / cannot / in / you / of / careful / too / choice / be / the).",
+      "rawAnswer": "You cannot be too careful in the choice of your friends",
+      "ja": "友を選ぶのにいくら注意してもしすぎることはありません。",
+      "type": "ordering",
+      "answer": "You cannot be too careful in the choice of your friends",
+      "pieces": [
+        "your friends",
+        "cannot",
+        "in",
+        "you",
+        "of",
+        "careful",
+        "too",
+        "choice",
+        "be",
+        "the"
+      ],
+      "en": "You cannot be too careful in the choice of your friends."
+    },
+    {
+      "id": "075",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Anyone watching the musical cannot (　　) feeling happiness, joy and pride.",
+      "rawAnswer": "③",
+      "ja": "そのミュージカルを見ている者はだれでも幸福や喜び，誇りを感じずにはいられない。",
+      "type": "choice",
+      "choices": [
+        "but",
+        "also",
+        "help",
+        "without"
+      ],
+      "answerIndex": 2,
+      "en": "Anyone watching the musical cannot help feeling happiness, joy and pride."
+    },
+    {
+      "id": "076",
+      "tags": [],
+      "question": "I could not (　　) help my brother with his math homework.",
+      "rawAnswer": "③",
+      "ja": "私は弟の数学の宿題を手伝わないではいられなかった。",
+      "type": "choice",
+      "choices": [
+        "so",
+        "much",
+        "but",
+        "doing"
+      ],
+      "answerIndex": 2,
+      "en": "I could not but help my brother with his math homework."
+    },
+    {
+      "id": "077",
+      "tags": [],
+      "question": "(a) Tom has good reason to be angry.\n(b) Tom may (　　) be angry.",
+      "rawAnswer": "well",
+      "ja": "(a) トムには腹を立てるもっともな理由がある。\n(b) トムが腹を立てるのももっともだ。",
+      "type": "fill",
+      "answer": "well",
+      "en": "Tom may well be angry."
+    },
+    {
+      "id": "078",
+      "tags": [
+        "発展"
+      ],
+      "question": "I (as / at / home / stay / might / well) as join in a package tour.",
+      "rawAnswer": "might as well stay at home",
+      "ja": "パック旅行に参加するくらいなら，私は家にいる方がいい。",
+      "type": "ordering",
+      "answer": "might as well stay at home",
+      "pieces": [
+        "as",
+        "at",
+        "home",
+        "stay",
+        "might",
+        "well"
+      ],
+      "en": "I might as well stay at home as join in a package tour."
+    },
+    {
+      "id": "079",
+      "tags": [
+        "発展"
+      ],
+      "question": "It takes so long by train. You (　　) as well fly.",
+      "rawAnswer": "②",
+      "ja": "電車ではすごく時間がかかります。あなたは飛行機を使った方がいいでしょう。",
+      "type": "choice",
+      "choices": [
+        "should",
+        "might",
+        "can",
+        "would"
+      ],
+      "answerIndex": 1,
+      "en": "It takes so long by train. You might as well fly."
+    }
+  ]
+}

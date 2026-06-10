@@ -1,0 +1,716 @@
+{
+  "number": 5,
+  "title": "不定詞",
+  "fullTitle": "第5章　不定詞",
+  "problems": [
+    {
+      "id": "114",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "私の将来の目標は高校で英語を教えることです。\nMy future goal (to / at / high school / English / is / teach).",
+      "rawAnswer": "is to teach English at high school",
+      "ja": "私の将来の目標は高校で英語を教えることです。",
+      "type": "ordering",
+      "answer": "is to teach English at high school",
+      "pieces": [
+        "to",
+        "at",
+        "high school",
+        "English",
+        "is",
+        "teach"
+      ],
+      "en": "My future goal is to teach English at high school."
+    },
+    {
+      "id": "115",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "その計画をいつ始めるかもっと真剣に議論すべきだ。\n(be / should / start / the project / to / when) discussed more seriously.",
+      "rawAnswer": "When to start the project should be",
+      "ja": "その計画をいつ始めるかもっと真剣に議論すべきだ。",
+      "type": "ordering",
+      "answer": "When to start the project should be",
+      "pieces": [
+        "be",
+        "should",
+        "start",
+        "the project",
+        "to",
+        "when"
+      ],
+      "en": "When to start the project should be discussed more seriously."
+    },
+    {
+      "id": "116",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "母語と大きく異なる外国語を学ぶことは容易ではない。\nIt's (a foreign language / easy / learn / not / to) which is very different from your own language.",
+      "rawAnswer": "not easy to learn a foreign language",
+      "ja": "母語と大きく異なる外国語を学ぶことは容易ではない。",
+      "type": "ordering",
+      "answer": "not easy to learn a foreign language",
+      "pieces": [
+        "a foreign language",
+        "easy",
+        "learn",
+        "not",
+        "to"
+      ],
+      "en": "It's not easy to learn a foreign language which is very different from your own language."
+    },
+    {
+      "id": "117",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "レースの終盤になって，彼はとてもスピードを保てそうもないことに気づいた。\nAs he approached the end of the race, he (found / hard / his / it / maintain / speed / to).",
+      "rawAnswer": "found it hard to maintain his speed",
+      "ja": "レースの終盤になって，彼はとてもスピードを保てそうもないことに気づいた。",
+      "type": "ordering",
+      "answer": "found it hard to maintain his speed",
+      "pieces": [
+        "found",
+        "hard",
+        "his",
+        "it",
+        "maintain",
+        "speed",
+        "to"
+      ],
+      "en": "As he approached the end of the race, he found it hard to maintain his speed."
+    },
+    {
+      "id": "118",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "子どもはみんな，遊び相手をしてくれるペットが必要だ。\nEvery kid (have / with / a pet / to play / should).",
+      "rawAnswer": "should have a pet to play with",
+      "ja": "子どもはみんな，遊び相手をしてくれるペットが必要だ。",
+      "type": "ordering",
+      "answer": "should have a pet to play with",
+      "pieces": [
+        "have",
+        "with",
+        "a pet",
+        "to play",
+        "should"
+      ],
+      "en": "Every kid should have a pet to play with."
+    },
+    {
+      "id": "119",
+      "tags": [
+        "基本"
+      ],
+      "question": "You should go to Tokyo Dome (　　) a baseball game.",
+      "rawAnswer": "①",
+      "ja": "君は野球の試合を見るために東京ドームへ行くべきだ。",
+      "type": "choice",
+      "choices": [
+        "to see",
+        "with seeing",
+        "see",
+        "to seeing"
+      ],
+      "answerIndex": 0,
+      "en": "You should go to Tokyo Dome to see a baseball game."
+    },
+    {
+      "id": "120",
+      "tags": [
+        "基本"
+      ],
+      "question": "(a) He was very happy when he heard the news.\n(b) He was very happy (　　) (　　) the news.",
+      "rawAnswer": "to hear",
+      "ja": "(a) その知らせを聞いたとき，彼はとてもうれしかった。\n(b) その知らせを聞いて，彼はとてもうれしかった。",
+      "type": "fill",
+      "answer": "to hear",
+      "en": "He was very happy to hear the news."
+    },
+    {
+      "id": "121",
+      "tags": [],
+      "question": "We thought (to try / he must / been crazy / dangerous jump / have / such a) but he accomplished it successfully.",
+      "rawAnswer": "he must have been crazy to try such a dangerous jump",
+      "ja": "そんな危険な跳躍に挑むなんて彼は正気を失っていたにちがいない，と私たちは思ったが，彼は見事にやり遂げた。",
+      "type": "ordering",
+      "answer": "he must have been crazy to try such a dangerous jump",
+      "pieces": [
+        "to try",
+        "he must",
+        "been crazy",
+        "dangerous jump",
+        "have",
+        "such a"
+      ],
+      "en": "We thought he must have been crazy to try such a dangerous jump but he accomplished it successfully."
+    },
+    {
+      "id": "122",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "It was careless (　　) her front door unlocked all last night.",
+      "rawAnswer": "②",
+      "ja": "昨晩ずっと玄関の鍵をかけないままにしておくとは，彼女は不注意だった。",
+      "type": "choice",
+      "choices": [
+        "for her to leave",
+        "of her to leave",
+        "for her leaving",
+        "of her leave"
+      ],
+      "answerIndex": 1,
+      "en": "It was careless of her to leave her front door unlocked all last night."
+    },
+    {
+      "id": "123",
+      "tags": [],
+      "question": "This question is (answer / difficult / than / to / more) that one.",
+      "rawAnswer": "more difficult to answer than",
+      "ja": "この問題はあの問題よりも答えるのが難しい。",
+      "type": "ordering",
+      "answer": "more difficult to answer than",
+      "pieces": [
+        "answer",
+        "difficult",
+        "than",
+        "to",
+        "more"
+      ],
+      "en": "This question is more difficult to answer than that one."
+    },
+    {
+      "id": "124",
+      "tags": [],
+      "question": "Mary is easy (　　).",
+      "rawAnswer": "②",
+      "ja": "メアリーとは一緒に働きやすい。",
+      "type": "choice",
+      "choices": [
+        "to work",
+        "to work with",
+        "to work with her",
+        "to work with you"
+      ],
+      "answerIndex": 1,
+      "en": "Mary is easy to work with."
+    },
+    {
+      "id": "125",
+      "tags": [],
+      "question": "彼は目を覚ますと，見知らぬ人々に囲まれているのに気づいた。\nHe (strange / to / people / by / awoke / surrounded / himself / find).",
+      "rawAnswer": "awoke to find himself surrounded by strange people",
+      "ja": "彼は目を覚ますと，見知らぬ人々に囲まれているのに気づいた。",
+      "type": "ordering",
+      "answer": "awoke to find himself surrounded by strange people",
+      "pieces": [
+        "strange",
+        "to",
+        "people",
+        "by",
+        "awoke",
+        "surrounded",
+        "himself",
+        "find"
+      ],
+      "en": "He awoke to find himself surrounded by strange people."
+    },
+    {
+      "id": "126",
+      "tags": [],
+      "question": "あひるの子は成長して美しい白鳥になった。\nThe duckling (grown / up / be / has / to) a beautiful swan.",
+      "rawAnswer": "has grown up to be",
+      "ja": "あひるの子は成長して美しい白鳥になった。",
+      "type": "ordering",
+      "answer": "has grown up to be",
+      "pieces": [
+        "grown",
+        "up",
+        "be",
+        "has",
+        "to"
+      ],
+      "en": "The duckling has grown up to be a beautiful swan."
+    },
+    {
+      "id": "127",
+      "tags": [],
+      "question": "His grandfather lived (　　) ninety-two and was the head of the company for many years.",
+      "rawAnswer": "②",
+      "ja": "彼の祖父は92歳まで生き，長年その会社の代表を務めた。",
+      "type": "choice",
+      "choices": [
+        "being",
+        "to be",
+        "for being",
+        "till he would be"
+      ],
+      "answerIndex": 1,
+      "en": "His grandfather lived to be ninety-two and was the head of the company for many years."
+    },
+    {
+      "id": "128",
+      "tags": [],
+      "question": "Caesar entered the town (　　) that the enemy had already fled.",
+      "rawAnswer": "③",
+      "ja": "シーザーはその町に入ったが，敵はすでに逃げ出していた。",
+      "type": "choice",
+      "choices": [
+        "of finding",
+        "found",
+        "only to find",
+        "only to be found"
+      ],
+      "answerIndex": 2,
+      "en": "Caesar entered the town only to find that the enemy had already fled."
+    },
+    {
+      "id": "129",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "彼女は子どもたちにボートの近くで泳がないように注意した。\nShe (to / the / warned / not / children / swim / near) the boats.",
+      "rawAnswer": "warned the children not to swim near",
+      "ja": "彼女は子どもたちにボートの近くで泳がないように注意した。",
+      "type": "ordering",
+      "answer": "warned the children not to swim near",
+      "pieces": [
+        "to",
+        "the",
+        "warned",
+        "not",
+        "children",
+        "swim",
+        "near"
+      ],
+      "en": "She warned the children not to swim near the boats."
+    },
+    {
+      "id": "130",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "母親は，スージーがひとりで家にいるのは危険だと反対した。\nHer mother objected that it is (stay / to / her / on / home / for / dangerous / Susie) own.",
+      "rawAnswer": "dangerous for Susie to stay home on her",
+      "ja": "母親は，スージーがひとりで家にいるのは危険だと反対した。",
+      "type": "ordering",
+      "answer": "dangerous for Susie to stay home on her",
+      "pieces": [
+        "stay",
+        "to",
+        "her",
+        "on",
+        "home",
+        "for",
+        "dangerous",
+        "Susie"
+      ],
+      "en": "Her mother objected that it is dangerous for Susie to stay home on her own."
+    },
+    {
+      "id": "131",
+      "tags": [],
+      "question": "彼女はあまりかんしゃくを起こさないほうがよいでしょう。\nIt would be better (her temper / for / not / lose / her / to) so often.",
+      "rawAnswer": "for her not to lose her temper",
+      "ja": "彼女はあまりかんしゃくを起こさないほうがよいでしょう。",
+      "type": "ordering",
+      "answer": "for her not to lose her temper",
+      "pieces": [
+        "her temper",
+        "for",
+        "not",
+        "lose",
+        "her",
+        "to"
+      ],
+      "en": "It would be better for her not to lose her temper so often."
+    },
+    {
+      "id": "132",
+      "tags": [],
+      "question": "This guidebook makes (countries / decide / easier / for / it / to / to / us / visit / which).",
+      "rawAnswer": "it easier for us to decide which countries to visit",
+      "ja": "このガイドブックのおかげで，どの国を訪問したらいいかがより決めやすくなる。",
+      "type": "ordering",
+      "answer": "it easier for us to decide which countries to visit",
+      "pieces": [
+        "countries",
+        "decide",
+        "easier",
+        "for",
+        "it",
+        "to",
+        "to",
+        "us",
+        "visit",
+        "which"
+      ],
+      "en": "This guidebook makes it easier for us to decide which countries to visit."
+    },
+    {
+      "id": "133",
+      "tags": [
+        "基本"
+      ],
+      "question": "(a) It seems that she went back to her hometown yesterday.\n(b) She seems (　　) (　　) (　　) back to her hometown yesterday.",
+      "rawAnswer": "to have gone",
+      "ja": "昨日，彼女は故郷に帰ったようだ。",
+      "type": "fill",
+      "answer": "to have gone",
+      "en": "She seems to have gone back to her hometown yesterday."
+    },
+    {
+      "id": "134",
+      "tags": [],
+      "question": "Nobodyで始まる英文に書きかえなさい。\nIt is said that nobody knew the truth.",
+      "rawAnswer": "Nobody is said to have known the truth .",
+      "ja": "だれも真実を知らなかったと言われている。",
+      "type": "rewrite",
+      "answer": "Nobody is said to have known the truth .",
+      "en": "Nobody is said to have known the truth."
+    },
+    {
+      "id": "135",
+      "tags": [],
+      "question": "I'm not sure whether we'll be able to buy the house, but we hope (　　).",
+      "rawAnswer": "④",
+      "ja": "その家を購入できるかどうかわからないが，私たちは購入したいと思っている。",
+      "type": "choice",
+      "choices": [
+        "do",
+        "it",
+        "that",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "I'm not sure whether we'll be able to buy the house, but we hope to."
+    },
+    {
+      "id": "136",
+      "tags": [
+        "発展"
+      ],
+      "question": "The boy turned on his father's computer, though he had been told (　　).",
+      "rawAnswer": "②",
+      "ja": "そうしないよう言われていたのだが，その少年は父親のコンピューターの電源を入れた。",
+      "type": "choice",
+      "choices": [
+        "not do it",
+        "not to",
+        "to do not",
+        "to not"
+      ],
+      "answerIndex": 1,
+      "en": "The boy turned on his father's computer, though he had been told not to."
+    },
+    {
+      "id": "137",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "この問題は複雑で，私はどこから手をつけたらよいかわからない。\nThis problem (complex / for / is / me / to / too) know where to start.",
+      "rawAnswer": "is too complex for me to",
+      "ja": "この問題は複雑で，私はどこから手をつけたらよいかわからない。",
+      "type": "ordering",
+      "answer": "is too complex for me to",
+      "pieces": [
+        "complex",
+        "for",
+        "is",
+        "me",
+        "to",
+        "too"
+      ],
+      "en": "This problem is too complex for me to know where to start."
+    },
+    {
+      "id": "138",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "この家は私たちが住めるだけの広さがある。\nThis house is (enough / for / in / large / us / live / to).",
+      "rawAnswer": "large enough for us to live in",
+      "ja": "この家は私たちが住めるだけの広さがある。",
+      "type": "ordering",
+      "answer": "large enough for us to live in",
+      "pieces": [
+        "enough",
+        "for",
+        "in",
+        "large",
+        "us",
+        "live",
+        "to"
+      ],
+      "en": "This house is large enough for us to live in."
+    },
+    {
+      "id": "139",
+      "tags": [],
+      "question": "(a) They are so rich that they can travel abroad every year by ship.\n(b) They are rich (　　) (　　) travel abroad every year by ship.",
+      "rawAnswer": "enough to",
+      "ja": "(a) 彼らはとても裕福なので，毎年船で海外旅行ができる。\n(b) 彼らは毎年船で海外旅行をするほど裕福だ。",
+      "type": "fill",
+      "answer": "enough to",
+      "en": "They are rich enough to travel abroad every year by ship."
+    },
+    {
+      "id": "140",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The girl was so kind (　　) me to the station.",
+      "rawAnswer": "①",
+      "ja": "その少女は親切にも私を駅まで連れて行ってくれた。",
+      "type": "choice",
+      "choices": [
+        "as to take",
+        "for taking",
+        "in order to take",
+        "that it takes"
+      ],
+      "answerIndex": 0,
+      "en": "The girl was so kind as to take me to the station."
+    },
+    {
+      "id": "141",
+      "tags": [
+        "基本"
+      ],
+      "question": "I'm going to study harder (　　) pass my exams in June.",
+      "rawAnswer": "④",
+      "ja": "私は，６月の試験に受かるように，もっと必死で勉強するつもりだ。",
+      "type": "choice",
+      "choices": [
+        "so to",
+        "for to",
+        "in order that",
+        "in order to"
+      ],
+      "answerIndex": 3,
+      "en": "I'm going to study harder in order to pass my exams in June."
+    },
+    {
+      "id": "142",
+      "tags": [
+        "基本"
+      ],
+      "question": "時勢に遅れないように，新聞に毎日，目を通すようにしている。\nI make it a rule to read the newspapers every day (as / to fall / not / times / behind / so / the).",
+      "rawAnswer": "so as not to fall behind the times",
+      "ja": "時勢に遅れないように，新聞に毎日，目を通すようにしている。",
+      "type": "ordering",
+      "answer": "so as not to fall behind the times",
+      "pieces": [
+        "as",
+        "to fall",
+        "not",
+        "times",
+        "behind",
+        "so",
+        "the"
+      ],
+      "en": "I make it a rule to read the newspapers every day so as not to fall behind the times."
+    },
+    {
+      "id": "143",
+      "tags": [
+        "基本"
+      ],
+      "question": "Last night I heard my sister (　　) with you on the phone.",
+      "rawAnswer": "①",
+      "ja": "昨夜あなたと私の姉［妹］が電話で話をするのが聞こえた。",
+      "type": "choice",
+      "choices": [
+        "talk",
+        "talks",
+        "to talk",
+        "be talking"
+      ],
+      "answerIndex": 0,
+      "en": "Last night I heard my sister talk with you on the phone."
+    },
+    {
+      "id": "144",
+      "tags": [],
+      "question": "(a) They made me read a newspaper every day.\n(b) I (　　) (　　) (　　) read a newspaper every day.",
+      "rawAnswer": "was made to",
+      "ja": "(a) 彼らは毎日，私に新聞を読ませた。(b) 私は毎日，新聞を読まされた。",
+      "type": "fill",
+      "answer": "was made to",
+      "en": "I was made to read a newspaper every day."
+    },
+    {
+      "id": "145",
+      "tags": [
+        "発展"
+      ],
+      "question": "手紙を封筒に入れて投函してくれさえすればよいのだ。\nAll (have / to / you / put / is / do / the) letter in an envelope and mail it.",
+      "rawAnswer": "you have to do is put the",
+      "ja": "手紙を封筒に入れて投函してくれさえすればよいのだ。",
+      "type": "ordering",
+      "answer": "you have to do is put the",
+      "pieces": [
+        "have",
+        "to",
+        "you",
+        "put",
+        "is",
+        "do",
+        "the"
+      ],
+      "en": "All you have to do is put the letter in an envelope and mail it."
+    },
+    {
+      "id": "146",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The president of the company announced today that a new store is (　　) next year.",
+      "rawAnswer": "④",
+      "ja": "その会社の社長は今日，来年新店舗が建てられる予定だと発表した。",
+      "type": "choice",
+      "choices": [
+        "building",
+        "built",
+        "to be building",
+        "to be built"
+      ],
+      "answerIndex": 3,
+      "en": "The president of the company announced today that a new store is to be built next year."
+    },
+    {
+      "id": "147",
+      "tags": [],
+      "question": "The key (to / not / was / found / be) anywhere.",
+      "rawAnswer": "was not to be found",
+      "ja": "その鍵はどこにも見つけられなかった。",
+      "type": "ordering",
+      "answer": "was not to be found",
+      "pieces": [
+        "to",
+        "not",
+        "was",
+        "found",
+        "be"
+      ],
+      "en": "The key was not to be found anywhere."
+    },
+    {
+      "id": "148",
+      "tags": [],
+      "question": "この課題は遅くとも水曜日には提出してください。\nThis assignment is (at / be / by / submitted / the / to / Wednesday) latest.",
+      "rawAnswer": "to be submitted by Wednesday at the",
+      "ja": "この課題は遅くとも水曜日には提出してください。",
+      "type": "ordering",
+      "answer": "to be submitted by Wednesday at the",
+      "pieces": [
+        "at",
+        "be",
+        "by",
+        "submitted",
+        "the",
+        "to",
+        "Wednesday"
+      ],
+      "en": "This assignment is to be submitted by Wednesday at the latest."
+    },
+    {
+      "id": "149",
+      "tags": [],
+      "question": "If you (　　) your dream, you must study much harder.",
+      "rawAnswer": "③",
+      "ja": "夢を実現するつもりなら，あなたはもっと勉強しなければならない。",
+      "type": "choice",
+      "choices": [
+        "are realized",
+        "are realizing",
+        "are to realize",
+        "would be realize"
+      ],
+      "answerIndex": 2,
+      "en": "If you are to realize your dream, you must study much harder."
+    },
+    {
+      "id": "150",
+      "tags": [],
+      "question": "The food was delicious, (　　) the wine. The guests must have enjoyed the party.",
+      "rawAnswer": "②",
+      "ja": "ワインは言うまでもなく，料理もおいしかった。招待客はそのパーティーを楽しんだにちがいない。",
+      "type": "choice",
+      "choices": [
+        "the less",
+        "to say nothing of",
+        "on behalf of",
+        "as far as"
+      ],
+      "answerIndex": 1,
+      "en": "The food was delicious, to say nothing of the wine. The guests must have enjoyed the party."
+    },
+    {
+      "id": "151",
+      "tags": [],
+      "question": "(a) It goes without saying that health is more important than wealth.\n(b) (　　) (　　) (　　), health is more important than wealth.",
+      "rawAnswer": "Needless to say",
+      "ja": "(a) 健康が財産よりも大事なのは言うまでもない。\n(b) 言うまでもなく，健康は財産よりも大事だ。",
+      "type": "fill",
+      "answer": "Needless to say",
+      "en": "Needless to say, health is more important than wealth."
+    },
+    {
+      "id": "152",
+      "tags": [],
+      "question": "Strange (　　), I didn't really enjoy the musical.",
+      "rawAnswer": "③",
+      "ja": "奇妙なことに，私はそのミュージカルをあまり楽しまなかった。",
+      "type": "choice",
+      "choices": [
+        "said",
+        "saying",
+        "to say",
+        "say"
+      ],
+      "answerIndex": 2,
+      "en": "Strange to say, I didn't really enjoy the musical."
+    },
+    {
+      "id": "153",
+      "tags": [],
+      "question": "バッグを失くしたんだが，さらに悪いことにその中にお金がすべて入っていたんだ。\nI lost my bag, and (　　) (　　) matters worse it had all my money in it.",
+      "rawAnswer": "to make",
+      "ja": "バッグを失くしたんだが，さらに悪いことにその中にお金がすべて入っていたんだ。",
+      "type": "fill",
+      "answer": "to make",
+      "en": "I lost my bag, and to make matters worse it had all my money in it."
+    },
+    {
+      "id": "154",
+      "tags": [],
+      "question": "To (　　) the truth, I still haven't finished my homework.",
+      "rawAnswer": "②",
+      "ja": "実を言うと，私はまだ宿題を終わらせていない。",
+      "type": "choice",
+      "choices": [
+        "say",
+        "tell",
+        "speak",
+        "mention"
+      ],
+      "answerIndex": 1,
+      "en": "To tell the truth, I still haven't finished my homework."
+    }
+  ]
+}

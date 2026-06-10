@@ -1,0 +1,155 @@
+{
+  "number": 2,
+  "title": "受動態",
+  "fullTitle": "第2章　受動態",
+  "problems": [
+    {
+      "id": "032",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The tallest building in my town (　　) 50 years ago.",
+      "rawAnswer": "④",
+      "ja": "私の町で一番高い建物は50年前に建てられた。",
+      "type": "choice",
+      "choices": [
+        "has built",
+        "has been built",
+        "built",
+        "was built"
+      ],
+      "answerIndex": 3,
+      "en": "The tallest building in my town was built 50 years ago."
+    },
+    {
+      "id": "033",
+      "tags": [
+        "基本"
+      ],
+      "question": "He (　　) captain of the team by the boys.",
+      "rawAnswer": "②",
+      "ja": "彼は少年たちによってチームのキャプテンに選ばれた。",
+      "type": "choice",
+      "choices": [
+        "has chosen",
+        "was chosen",
+        "chose",
+        "chooses"
+      ],
+      "answerIndex": 1,
+      "en": "He was chosen captain of the team by the boys."
+    },
+    {
+      "id": "034",
+      "tags": [
+        "基本"
+      ],
+      "question": "How often are the flowers (　　) during the summer?",
+      "rawAnswer": "②",
+      "ja": "その花は夏の間どれくらいの頻度で水をあげればいいですか。",
+      "type": "choice",
+      "choices": [
+        "water",
+        "watered",
+        "been watered",
+        "watering"
+      ],
+      "answerIndex": 1,
+      "en": "How often are the flowers watered during the summer?"
+    },
+    {
+      "id": "035",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The presidential election (　　) in two years.",
+      "rawAnswer": "②",
+      "ja": "大統領選挙は２年後に行われる。",
+      "type": "choice",
+      "choices": [
+        "will hold",
+        "will be held",
+        "will held",
+        "are hold"
+      ],
+      "answerIndex": 1,
+      "en": "The presidential election will be held in two years."
+    },
+    {
+      "id": "036",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Fortunately, the hospital's new air-conditioning system (　　) when the first heat wave of the summer arrived.",
+      "rawAnswer": "①",
+      "ja": "その夏初めての熱波が襲ったとき，幸運にもその病院の新しい空調システムはすでに設置されていた。",
+      "type": "choice",
+      "choices": [
+        "had already been installed",
+        "had already been installing",
+        "had already installed",
+        "already installed"
+      ],
+      "answerIndex": 0,
+      "en": "Fortunately, the hospital's new air-conditioning system had already been installed when the first heat wave of the summer arrived."
+    },
+    {
+      "id": "037",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "It has been hard to concentrate on my studies lately because a road (　　) in front of my house.",
+      "rawAnswer": "③",
+      "ja": "自宅の前で道路が造られているので，このところずっと，勉強に集中しにくい。",
+      "type": "choice",
+      "choices": [
+        "builds",
+        "has built",
+        "is being built",
+        "is building"
+      ],
+      "answerIndex": 2,
+      "en": "It has been hard to concentrate on my studies lately because a road is being built in front of my house."
+    },
+    {
+      "id": "038",
+      "tags": [],
+      "question": "On her way home from school, the little girl was (　　) a stranger.",
+      "rawAnswer": "①",
+      "ja": "学校からの帰宅途中，その幼い少女は見知らぬ人に話しかけられた。",
+      "type": "choice",
+      "choices": [
+        "spoken to by",
+        "spoken to",
+        "spoke",
+        "spoken by to"
+      ],
+      "answerIndex": 0,
+      "en": "On her way home from school, the little girl was spoken to by a stranger."
+    },
+    {
+      "id": "039",
+      "tags": [],
+      "question": "だれも人前で笑いものにされるのは好まない。\n(be / fun / in / likes / made / nobody / of / to) public.",
+      "rawAnswer": "Nobody likes to be made fun of in",
+      "ja": "だれも人前で笑いものにされるのは好まない。",
+      "type": "ordering",
+      "answer": "Nobody likes to be made fun of in",
+      "pieces": [
+        "be",
+        "fun",
+        "in",
+        "likes",
+        "made",
+        "nobody",
+        "of",
+        "to"
+      ],
+      "en": "Nobody likes to be made fun of in public."
+    }
+  ]
+}

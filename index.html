@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage 学習ダッシュボード</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; background-color: #f6faf6; }
+        h1 { color: #14532d; text-align: center; margin-bottom: 5px; }
+        .version-subtitle { text-align: center; color: #64748b; font-size: 1.1rem; margin-bottom: 20px; font-weight: bold; }
+        .part-section { margin-bottom: 40px; max-width: 1000px; margin-left: auto; margin-right: auto; }
+        .part-title { color: #16a34a; border-bottom: 2px solid #dcfce7; padding-bottom: 10px; margin-bottom: 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 15px; }
+        a.chapter-card { display: block; padding: 15px; text-align: center; background-color: white; color: #16a34a; text-decoration: none; border-radius: 8px; font-weight: bold; border: 1px solid #d1e7d1; transition: all 0.2s; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        a.chapter-card:hover { background-color: #16a34a; color: white; transform: translateY(-2px); box-shadow: 0 4px 6px rgba(0,0,0,0.15); }
+        .chapter-name { font-size: 0.85rem; display: block; margin-top: 2px; }
+        .problem-count { font-size: 0.7rem; color: #94a3b8; display: block; margin-top: 2px; }
+        a.chapter-card:hover .problem-count { color: #dcfce7; }
+        .started { background-color: #f0fdf4 !important; border-color: #86efac !important; color: #15803d; }
+        .mastered { background-color: #fefce8 !important; border-color: #fde047 !important; color: #a16207; }
+        .status-badge { font-size: 0.7rem; background: #16a34a; color: white; padding: 3px 8px; border-radius: 12px; margin-top: 8px; display: inline-block; }
+        .status-badge-progress { font-size: 0.7rem; background: #f59e0b; color: white; padding: 3px 8px; border-radius: 12px; margin-top: 8px; display: inline-block; }
+        .status-badge-mastered { font-size: 0.7rem; background: #eab308; color: white; padding: 3px 8px; border-radius: 12px; margin-top: 8px; display: inline-block; }
+        .coming-soon { display: block; padding: 15px; text-align: center; background-color: #f1f5f9; color: #94a3b8; border-radius: 8px; font-weight: bold; border: 1px dashed #cbd5e1; }
+        .coming-soon .chapter-name { font-size: 0.75rem; }
+        #auth-container { text-align: center; margin-bottom: 20px; }
+        .progress-bar-track { background: #e2e8f0; border-radius: 9999px; height: 10px; overflow: hidden; margin-top: 8px; }
+        .progress-bar-fill { background: linear-gradient(90deg, #22c55e, #eab308); height: 100%; border-radius: 9999px; transition: width 0.5s; }
+    </style>
+</head>
+<body>
+    <div style="text-align: center; margin: 25px auto 25px;">
+        <div style="display:inline-block; background: linear-gradient(135deg, #14532d, #16a34a); color: white; padding: 25px 50px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+            <div style="font-size: 2.2rem; font-weight: bold; font-family: 'Times New Roman', serif; letter-spacing: 2px;">Vintage</div>
+            <div style="font-size: 0.9rem; margin-top: 4px;">英文法・語法 学習ダッシュボード</div>
+        </div>
+    </div>
+    <div id="auth-container"></div>
+
+    <div id="dashboard-container">
+        <!-- Content will be populated here -->
+    </div>
+
+    <script>
+        // 生成済みの章 (generate_apps.py が自動更新)
+        const chaptersInfo = [{"number": 1, "title": "時制", "file": "chapter01.html", "problemCount": 31}, {"number": 2, "title": "受動態", "file": "chapter02.html", "problemCount": 8}, {"number": 3, "title": "助動詞", "file": "chapter03.html", "problemCount": 40}, {"number": 4, "title": "仮定法", "file": "chapter04.html", "problemCount": 34}, {"number": 5, "title": "不定詞", "file": "chapter05.html", "problemCount": 41}];
+        const TOTAL_CHAPTERS = 30;
+
+        const container = document.getElementById('dashboard-container');
+        const authDiv = document.getElementById('auth-container');
+
+        function countMastered(data) {
+            if (!data) return 0;
+            if (data.masteredWords) {
+                return Object.values(data.masteredWords).filter(v => v === true).length;
+            }
+            return Object.keys(data).filter(key => key.startsWith('masteredWords.') && data[key] === true).length;
+        }
+
+        function renderGrid(progressData) {
+            container.innerHTML = '';
+
+            const section = document.createElement('div');
+            section.className = 'part-section';
+
+            const title = document.createElement('h2');
+            title.className = 'part-title';
+            title.textContent = '章一覧';
+            section.appendChild(title);
+
+            const grid = document.createElement('div');
+            grid.className = 'grid';
+
+            const byNumber = {};
+            chaptersInfo.forEach(ch => { byNumber[ch.number] = ch; });
+
+            for (let n = 1; n <= TOTAL_CHAPTERS; n++) {
+                const ch = byNumber[n];
+                if (!ch) {
+                    const card = document.createElement('div');
+                    card.className = 'coming-soon';
+                    card.innerHTML = `<strong>第${n}章</strong><span class="chapter-name">準備中</span>`;
+                    grid.appendChild(card);
+                    continue;
+                }
+
+                const link = document.createElement('a');
+                link.className = 'chapter-card';
+                link.href = ch.file;
+                link.target = "_blank";
+                link.rel = "noopener noreferrer";
+                const progressDocId = "vintage_" + ch.file.replace('.html', '');
+
+                link.innerHTML = `<strong>第${ch.number}章</strong><span class="chapter-name">${ch.title}</span><span class="problem-count">全${ch.problemCount}問</span>`;
+
+                const data = progressData[progressDocId];
+                if (data) {
+                    const masteredCount = countMastered(data);
+                    const totalCount = ch.problemCount || 0;
+
+                    if (totalCount > 0 && masteredCount === totalCount) {
+                        link.classList.add('mastered');
+                        link.innerHTML += `<br><span class="status-badge-mastered">👑 コンプリート</span>`;
+                    } else if (masteredCount > 0) {
+                        link.classList.add('started');
+                        link.innerHTML += `<br><span class="status-badge-progress">⭐ ${masteredCount} / ${totalCount}</span>`;
+                    } else if (data.started) {
+                        link.classList.add('started');
+                        link.innerHTML += '<br><span class="status-badge">学習中</span>';
+                    }
+                }
+                grid.appendChild(link);
+            }
+
+            section.appendChild(grid);
+            container.appendChild(section);
+        }
+
+        // Firebase の読み込みを待たずにまず章一覧を表示する
+        renderGrid({});
+        window.renderGrid = renderGrid;
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCNrvDMnlN_geijgRguQrolnTIZ_rdZwyw",
+            authDomain: "sokudoku-stories-db.firebaseapp.com",
+            projectId: "sokudoku-stories-db",
+            storageBucket: "sokudoku-stories-db.firebasestorage.app",
+            messagingSenderId: "979353290932",
+            appId: "1:979353290932:web:f0c512cfbe64a7afe36fe1"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const provider = new GoogleAuthProvider();
+
+        onAuthStateChanged(auth, async (user) => {
+            if (user) {
+                setDoc(doc(db, "leap_users", user.uid), {
+                    displayName: user.displayName,
+                    email: user.email,
+                    photoURL: user.photoURL,
+                    lastLogin: new Date().toISOString()
+                }, { merge: true }).catch(e => console.error(e));
+
+                authDiv.innerHTML = `<div style="padding:20px; color:#64748b;">読み込み中...</div>`;
+
+                let progressData = {};
+                let startedCount = 0;
+                let totalMastered = 0;
+
+                const totalCourseProblems = chaptersInfo.reduce((sum, ch) => sum + (ch.problemCount || 0), 0);
+
+                try {
+                    const snap = await getDocs(collection(db, "leap_users", user.uid, "progress"));
+                    snap.forEach(d => {
+                        const data = d.data();
+                        progressData[d.id] = data;
+
+                        // Vintage ダッシュボードでは 'vintage_' で始まる進捗のみ集計
+                        if (d.id.startsWith("vintage_")) {
+                            totalMastered += countMastered(data);
+                            if (data.started) startedCount++;
+                        }
+                    });
+                } catch (err) {
+                    console.error(err);
+                    alert("データ取得エラー: " + err.message);
+                }
+
+                const pct = totalCourseProblems > 0 ? Math.round(totalMastered / totalCourseProblems * 100) : 0;
+
+                authDiv.innerHTML = `
+                    <div style="background: white; border-radius: 12px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 650px; margin: 0 auto; text-align: left; border: 1px solid #d1e7d1;">
+                        <div style="display:flex; justify-content:space-between; align-items:center;">
+                            <div style="display:flex; align-items:center; gap:15px;">
+                                <img src="${user.photoURL}" style="width:60px; height:60px; border-radius:50%; object-fit: cover;">
+                                <div>
+                                    <h2 style="margin:0; font-size:1.3rem;">${user.displayName}</h2>
+                                    <div style="margin-top:5px; font-size:0.85rem; color:#64748b; display:flex; flex-direction:column; gap:3px;">
+                                        <span>学習中の章: ${startedCount} / ${chaptersInfo.length}</span>
+                                        <span style="color: #a16207; font-weight: bold;">⭐ マスターした問題数: ${totalMastered} / ${totalCourseProblems}（${pct}%）</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button id="btn-logout" style="background:#f1f5f9; color:#475569; border:none; padding:10px 20px; border-radius:8px; font-weight:bold; cursor:pointer;">ログアウト</button>
+                        </div>
+                        <div class="progress-bar-track"><div class="progress-bar-fill" style="width:${pct}%"></div></div>
+                    </div>
+                `;
+                document.getElementById('btn-logout').onclick = () => signOut(auth);
+                renderGrid(progressData);
+            } else {
+                authDiv.innerHTML = `<button id="btn-login" style="padding:10px 20px; font-weight:bold; background:#14532d; color:white; border:none; border-radius:5px; cursor:pointer;">Googleでログイン</button>
+                    <p style="color:#94a3b8; font-size:0.85rem; margin-top:8px;">ログインすると学習進捗が記録されます（未ログインでも学習は可能です）</p>`;
+                document.getElementById('btn-login').onclick = () => signInWithPopup(auth, provider).catch(e => alert("ログインエラー: " + e.message));
+                renderGrid({});
+            }
+        });
+    </script>
+</body>
+</html>

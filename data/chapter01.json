@@ -1,0 +1,535 @@
+{
+  "number": 1,
+  "title": "時制",
+  "fullTitle": "第1章　時制",
+  "problems": [
+    {
+      "id": "001",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My father usually (　　) home from work at 7:00 p.m.",
+      "rawAnswer": "②",
+      "ja": "私の父は，ふだんは午後７時に仕事から帰宅する。",
+      "type": "choice",
+      "choices": [
+        "is coming",
+        "comes",
+        "come",
+        "has come"
+      ],
+      "answerIndex": 1,
+      "en": "My father usually comes home from work at 7:00 p.m."
+    },
+    {
+      "id": "002",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The man (　　) his job in 2011, and he has been looking for a job since then.",
+      "rawAnswer": "③",
+      "ja": "その男性は2011年に失業して，それ以来ずっと仕事を探している。",
+      "type": "choice",
+      "choices": [
+        "has lost",
+        "had lost",
+        "lost",
+        "loses"
+      ],
+      "answerIndex": 2,
+      "en": "The man lost his job in 2011, and he has been looking for a job since then."
+    },
+    {
+      "id": "003",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Until next summer, the pool (　　) under construction.",
+      "rawAnswer": "④",
+      "ja": "次の夏まで，そのプールは工事中となります。",
+      "type": "choice",
+      "choices": [
+        "was",
+        "has been",
+        "had been",
+        "will be"
+      ],
+      "answerIndex": 3,
+      "en": "Until next summer, the pool will be under construction."
+    },
+    {
+      "id": "004",
+      "tags": [
+        "基本"
+      ],
+      "question": "Please be quiet. I (　　) on a difficult question now.",
+      "rawAnswer": "④",
+      "ja": "静かにしてください。私は今，難しい問題に取り組んでいるところなのです。",
+      "type": "choice",
+      "choices": [
+        "work",
+        "worked",
+        "have worked",
+        "am working"
+      ],
+      "answerIndex": 3,
+      "en": "Please be quiet. I am working on a difficult question now."
+    },
+    {
+      "id": "005",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Sandy (　　) in the library when I saw her two hours ago.",
+      "rawAnswer": "①",
+      "ja": "２時間前に私が見かけたとき，サンディーは図書館で勉強していた。",
+      "type": "choice",
+      "choices": [
+        "was studying",
+        "has studied",
+        "has been studying",
+        "is studying"
+      ],
+      "answerIndex": 0,
+      "en": "Sandy was studying in the library when I saw her two hours ago."
+    },
+    {
+      "id": "006",
+      "tags": [],
+      "question": "When Ken comes home from school this afternoon, his mother (　　) cooking roast chicken.",
+      "rawAnswer": "①",
+      "ja": "ケンが今日の午後に学校から戻るころ，彼の母はローストチキンを作っているだろう。",
+      "type": "choice",
+      "choices": [
+        "will be",
+        "would be",
+        "has been",
+        "had been"
+      ],
+      "answerIndex": 0,
+      "en": "When Ken comes home from school this afternoon, his mother will be cooking roast chicken."
+    },
+    {
+      "id": "007",
+      "tags": [
+        "基本"
+      ],
+      "question": "\"Are you free tonight?\"  \"I'm sorry, but (　　) dinner with my parents.\"",
+      "rawAnswer": "②",
+      "ja": "「今晩ひまですか」「残念ですが，両親と食事をすることになっています」",
+      "type": "choice",
+      "choices": [
+        "I had",
+        "I'm having",
+        "I've had",
+        "I'd had"
+      ],
+      "answerIndex": 1,
+      "en": "\"Are you free tonight?\" \"I'm sorry, but I'm having dinner with my parents.\""
+    },
+    {
+      "id": "008",
+      "tags": [],
+      "question": "Do you mean that the whole building (　　) to you?",
+      "rawAnswer": "③",
+      "ja": "建物全体が君の所有物ということですか。",
+      "type": "choice",
+      "choices": [
+        "is belonged",
+        "is belonging",
+        "belongs",
+        "belong"
+      ],
+      "answerIndex": 2,
+      "en": "Do you mean that the whole building belongs to you?"
+    },
+    {
+      "id": "009",
+      "tags": [],
+      "question": "She ①<u>is resembling</u> her sister ②<u>in</u> appearance ③<u>but</u> not ④<u>in</u> character.",
+      "rawAnswer": "①→resembles",
+      "ja": "彼女は外見は姉［妹］に似ているが，性格は似ていない。",
+      "type": "error",
+      "en": "She resembles her sister in appearance but not in character.",
+      "answerIndex": 0,
+      "correction": "resembles"
+    },
+    {
+      "id": "010",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "She (　　) absent from school since the day before yesterday.",
+      "rawAnswer": "②",
+      "ja": "おとといから彼女は学校を休んでいる。",
+      "type": "choice",
+      "choices": [
+        "was",
+        "has been",
+        "had been",
+        "will have been"
+      ],
+      "answerIndex": 1,
+      "en": "She has been absent from school since the day before yesterday."
+    },
+    {
+      "id": "011",
+      "tags": [
+        "基本"
+      ],
+      "question": "When I arrived at the classroom, the English exam (　　) already.",
+      "rawAnswer": "③",
+      "ja": "教室に着いたとき，英語のテストはすでに始まっていた。",
+      "type": "choice",
+      "choices": [
+        "has started",
+        "to start",
+        "had started",
+        "starts"
+      ],
+      "answerIndex": 2,
+      "en": "When I arrived at the classroom, the English exam had started already."
+    },
+    {
+      "id": "012",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The professor read my technical report which I (　　) the day before.",
+      "rawAnswer": "④",
+      "ja": "教授は私が前日に書いた技術報告書を読んだ。",
+      "type": "choice",
+      "choices": [
+        "will be writing",
+        "have written",
+        "have been writing",
+        "had written"
+      ],
+      "answerIndex": 3,
+      "en": "The professor read my technical report which I had written the day before."
+    },
+    {
+      "id": "013",
+      "tags": [
+        "基本"
+      ],
+      "question": "Paul's yacht (　　) at Hawaii by the end of next March.",
+      "rawAnswer": "④",
+      "ja": "ポールのヨットは，来年の３月末までにはハワイに到着しているだろう。",
+      "type": "choice",
+      "choices": [
+        "arrived",
+        "has arrived",
+        "used to arrive",
+        "will have arrived"
+      ],
+      "answerIndex": 3,
+      "en": "Paul's yacht will have arrived at Hawaii by the end of next March."
+    },
+    {
+      "id": "014",
+      "tags": [
+        "基本"
+      ],
+      "question": "There is a new road to the freeway. They just (　　) it yesterday.",
+      "rawAnswer": "③",
+      "ja": "高速道路への新しい道路がある。それは昨日開通したばかりだ。",
+      "type": "choice",
+      "choices": [
+        "are opening",
+        "have opened",
+        "opened",
+        "would open"
+      ],
+      "answerIndex": 2,
+      "en": "There is a new road to the freeway. They just opened it yesterday."
+    },
+    {
+      "id": "015",
+      "tags": [],
+      "question": "He (　　) Chicago many times when he lived in the U.S.",
+      "rawAnswer": "④",
+      "ja": "彼はアメリカ合衆国に住んでいたとき，何度もシカゴを訪れた。",
+      "type": "choice",
+      "choices": [
+        "has visited",
+        "has been visiting",
+        "has been visited",
+        "visited"
+      ],
+      "answerIndex": 3,
+      "en": "He visited Chicago many times when he lived in the U.S."
+    },
+    {
+      "id": "016",
+      "tags": [],
+      "question": "奈良にちょうど行ってきたところですが，これから京都へ行きます。（１語不要）\nWe (to / have / been / gone / Nara) and now we are leaving for Kyoto.",
+      "rawAnswer": "have been to Nara（gone不要）",
+      "ja": "奈良にちょうど行ってきたところですが，これから京都へ行きます。（１語不要）",
+      "type": "ordering",
+      "answer": "have been to Nara",
+      "pieces": [
+        "to",
+        "have",
+        "been",
+        "gone",
+        "Nara"
+      ],
+      "en": "We have been to Nara and now we are leaving for Kyoto.",
+      "note": "gone不要"
+    },
+    {
+      "id": "017",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "We are all tired of snow. It (　　) for four weeks now.",
+      "rawAnswer": "①",
+      "ja": "私たちはみんな雪にうんざりしている。もう４週間降り続いている。",
+      "type": "choice",
+      "choices": [
+        "has been snowing",
+        "is snowing",
+        "snowed",
+        "will be snowing"
+      ],
+      "answerIndex": 0,
+      "en": "We are all tired of snow. It has been snowing for four weeks now."
+    },
+    {
+      "id": "018",
+      "tags": [],
+      "question": "Mr. Brown (　　) for nearly thirty minutes when his client arrived.",
+      "rawAnswer": "④",
+      "ja": "ブラウン氏は，彼の顧客が到着したときには，30分近く待っていた。",
+      "type": "choice",
+      "choices": [
+        "will have waited",
+        "has been waiting",
+        "has waited",
+        "had been waiting"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Brown had been waiting for nearly thirty minutes when his client arrived."
+    },
+    {
+      "id": "019",
+      "tags": [],
+      "question": "He (　　) at the local hospital for 10 years by the end of next month.",
+      "rawAnswer": "③",
+      "ja": "彼は来月末までで地元の病院に10年間勤務したことになる。",
+      "type": "choice",
+      "choices": [
+        "has worked",
+        "has been working",
+        "will have been working",
+        "is working"
+      ],
+      "answerIndex": 2,
+      "en": "He will have been working at the local hospital for 10 years by the end of next month."
+    },
+    {
+      "id": "020",
+      "tags": [
+        "基本"
+      ],
+      "question": "Mike and Bill (　　) each other since they were children.",
+      "rawAnswer": "②",
+      "ja": "マイクとビルは子どものころからお互いを知っている。",
+      "type": "choice",
+      "choices": [
+        "know",
+        "have known",
+        "have been knowing",
+        "will have known"
+      ],
+      "answerIndex": 1,
+      "en": "Mike and Bill have known each other since they were children."
+    },
+    {
+      "id": "021",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I'll wait here until you (　　).",
+      "rawAnswer": "①",
+      "ja": "私はあなたが戻るまでここで待っています。",
+      "type": "choice",
+      "choices": [
+        "come back",
+        "will come back",
+        "are coming back",
+        "will have come back"
+      ],
+      "answerIndex": 0,
+      "en": "I'll wait here until you come back."
+    },
+    {
+      "id": "022",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "You have to return the book as soon as you (　　) reading it.",
+      "rawAnswer": "④",
+      "ja": "あなたは，読み終えたらすぐにその本を返さなければいけません。",
+      "type": "choice",
+      "choices": [
+        "are finishing",
+        "will have finished",
+        "will finish",
+        "have finished"
+      ],
+      "answerIndex": 3,
+      "en": "You have to return the book as soon as you have finished reading it."
+    },
+    {
+      "id": "023",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Your host family will be waiting for you at the train station when you (　　).",
+      "rawAnswer": "①",
+      "ja": "あなたが到着するころ，ホストファミリーが鉄道の駅であなたを待っているだろう。",
+      "type": "choice",
+      "choices": [
+        "arrive",
+        "arrived",
+        "will arrive",
+        "would arrive"
+      ],
+      "answerIndex": 0,
+      "en": "Your host family will be waiting for you at the train station when you arrive."
+    },
+    {
+      "id": "024",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Mr. Tanaka is out now, and I don't know when he (　　) in the office.",
+      "rawAnswer": "④",
+      "ja": "田中さんは今外出していて，私は彼が事務所にいつ戻るかわからない。",
+      "type": "choice",
+      "choices": [
+        "be back",
+        "is back",
+        "is being back",
+        "will be back"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Tanaka is out now, and I don't know when he will be back in the office."
+    },
+    {
+      "id": "025",
+      "tags": [
+        "基本"
+      ],
+      "question": "The game will be called off if it (　　) tomorrow.",
+      "rawAnswer": "④",
+      "ja": "もし明日，雨が降れば，その試合は中止されるだろう。",
+      "type": "choice",
+      "choices": [
+        "raining",
+        "to rain",
+        "will rain",
+        "rains"
+      ],
+      "answerIndex": 3,
+      "en": "The game will be called off if it rains tomorrow."
+    },
+    {
+      "id": "026",
+      "tags": [],
+      "question": "I'd really ①<u>love to go</u> to the concert because my favorite band ②<u>is playing</u>, but I'm ③<u>not sure</u> if my mother ④<u>says OK</u>.",
+      "rawAnswer": "④→will say OK",
+      "ja": "私の大好きなバンドが演奏するから私はそのコンサートにぜひとも行きたいのだけど，母がいいと言うかどうかわからない。",
+      "type": "error",
+      "en": "I'd really love to go to the concert because my favorite band is playing, but I'm not sure if my mother will say OK.",
+      "answerIndex": 3,
+      "correction": "will say OK"
+    },
+    {
+      "id": "027",
+      "tags": [
+        "基本"
+      ],
+      "question": "Look at those black clouds. It (　　) rain very soon.",
+      "rawAnswer": "②",
+      "ja": "あの黒い雲を見て。今にも雨が降りそうだ。",
+      "type": "choice",
+      "choices": [
+        "wouldn't",
+        "is going to",
+        "do",
+        "shall not"
+      ],
+      "answerIndex": 1,
+      "en": "Look at those black clouds. It is going to rain very soon."
+    },
+    {
+      "id": "028",
+      "tags": [],
+      "question": "I was (　　) go out when my boss came in.",
+      "rawAnswer": "③",
+      "ja": "上司が入ってきたとき，私はまさに出かけるところだった。",
+      "type": "choice",
+      "choices": [
+        "thinking of",
+        "free of",
+        "about to",
+        "aimed to"
+      ],
+      "answerIndex": 2,
+      "en": "I was about to go out when my boss came in."
+    },
+    {
+      "id": "029",
+      "tags": [],
+      "question": "It (　　) ten years since the two companies merged.",
+      "rawAnswer": "①",
+      "ja": "その２社が合併してから10年が経った。",
+      "type": "choice",
+      "choices": [
+        "has been",
+        "has passed",
+        "is passed",
+        "passed"
+      ],
+      "answerIndex": 0,
+      "en": "It has been ten years since the two companies merged."
+    },
+    {
+      "id": "030",
+      "tags": [],
+      "question": "Ten years (　　) since I left my home to work in this city.",
+      "rawAnswer": "③",
+      "ja": "私がこの都市で働くために家を出てから，10年が経った。",
+      "type": "choice",
+      "choices": [
+        "had passed",
+        "passed",
+        "have passed",
+        "is passed"
+      ],
+      "answerIndex": 2,
+      "en": "Ten years have passed since I left my home to work in this city."
+    },
+    {
+      "id": "031",
+      "tags": [],
+      "question": "(a) It's been almost ten years since our grandfather died.\n(b) Our grandfather has been (　　) (　　) almost ten years.",
+      "rawAnswer": "dead for",
+      "ja": "私たちの祖父が亡くなってからほぼ10年になる。",
+      "type": "fill",
+      "answer": "dead for",
+      "en": "Our grandfather has been dead for almost ten years."
+    }
+  ]
+}
