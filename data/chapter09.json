@@ -176,7 +176,7 @@
       "ja": "(a) マイクはコーヒーが好きではない。紅茶も好きではない。\n(b) マイクはコーヒーも紅茶も好きではない。",
       "type": "fill",
       "answer": "neither, nor",
-      "en": "Mike likes neither, nor coffee neither, nor tea."
+      "en": "Mike likes neither coffee nor tea."
     },
     {
       "id": "270",

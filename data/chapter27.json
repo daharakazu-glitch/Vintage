@@ -1,0 +1,1075 @@
+{
+  "number": 27,
+  "title": "会話表現",
+  "fullTitle": "第27章　会話表現",
+  "problems": [
+    {
+      "id": "1324",
+      "tags": [
+        "基本"
+      ],
+      "question": "「元気ですか」\n「元気です。ありがとう」\n\"(　　) are you doing?\"\n\"I'm fine, thank you.\"",
+      "rawAnswer": "How",
+      "ja": "「元気ですか」\n「元気です。ありがとう」",
+      "type": "fill",
+      "answer": "How",
+      "en": "\"How are you doing?\""
+    },
+    {
+      "id": "1325",
+      "tags": [
+        "発展"
+      ],
+      "question": "「いかがお過ごしですか」\n「まあまあです」\n\"How have you (　　)?\"\n\"Not too bad.\"",
+      "rawAnswer": "been",
+      "ja": "「いかがお過ごしですか」\n「まあまあです」",
+      "type": "fill",
+      "answer": "been",
+      "en": "\"How have you been?\""
+    },
+    {
+      "id": "1326",
+      "tags": [],
+      "question": "「どう，調子は」\n「かなりいいよ」\n\"How's (　　) (　　)?\"\n\"Pretty good, thanks.\"",
+      "rawAnswer": "it[everything] going",
+      "ja": "「どう，調子は」\n「かなりいいよ」",
+      "type": "fill",
+      "answer": "it[everything] going",
+      "en": "\"How's it going?\""
+    },
+    {
+      "id": "1327",
+      "tags": [],
+      "question": "「どう，調子は」\n「別に，相変わらずだよ」\n\"What's (　　)?\"\n\"Not much.\"",
+      "rawAnswer": "up[new]",
+      "ja": "「どう，調子は」\n「別に，相変わらずだよ」",
+      "type": "fill",
+      "answer": "up[new]",
+      "en": "\"What's up?\""
+    },
+    {
+      "id": "1328",
+      "tags": [
+        "基本"
+      ],
+      "question": "「こんにちは。僕はフランク・ウィリアムズです。はじめまして」\n「こんにちは，フランク。私はクレア・パーカーです。こちらこそ，はじめまして」\n\"Hi, I'm Frank Williams. Nice (　　) (　　) you.\"\n\"Hello, Frank. I'm Clare Parker. Nice (　　) (　　) you, too.\"",
+      "rawAnswer": "to meet, to meet",
+      "ja": "「こんにちは。僕はフランク・ウィリアムズです。はじめまして」\n「こんにちは，フランク。私はクレア・パーカーです。こちらこそ，はじめまして」",
+      "type": "fill",
+      "answer": "to meet, to meet",
+      "en": "\"Hi, I'm Frank Williams. Nice to meet you.\" \"Hello, Frank. I'm Clare Parker. Nice to meet you, too.\""
+    },
+    {
+      "id": "1329",
+      "tags": [
+        "基本"
+      ],
+      "question": "「お会いできてよかったです」\n「こちらこそ，お話しできてよかったです」\n\"Nice (　　) you.\"\n\"Nice talking to you, too.\"",
+      "rawAnswer": "meeting",
+      "ja": "「お会いできてよかったです」\n「こちらこそ，お話しできてよかったです」",
+      "type": "fill",
+      "answer": "meeting",
+      "en": "\"Nice meeting you.\""
+    },
+    {
+      "id": "1330",
+      "tags": [],
+      "question": "「久しぶりだね。どうしてた」\n「まずまずだよ。君はどう？」\n\"Long (　　), no (　　). How have you been?\"\n\"Not too bad. How about you?\"",
+      "rawAnswer": "time, see",
+      "ja": "「久しぶりだね。どうしてた」\n「まずまずだよ。君はどう？」",
+      "type": "fill",
+      "answer": "time, see",
+      "en": "\"Long time, no see. How have you been?\""
+    },
+    {
+      "id": "1331",
+      "tags": [
+        "基本"
+      ],
+      "question": "「ご出身はどちらですか」「鹿児島です」\n\"Where (　　) you from? = Where (　　) you come from?\"\n\"I'm from Kagoshima.\"",
+      "rawAnswer": "are, do",
+      "ja": "「ご出身はどちらですか」「鹿児島です」",
+      "type": "fill",
+      "answer": "are, do",
+      "en": "\"Where are you from?"
+    },
+    {
+      "id": "1332",
+      "tags": [],
+      "question": "「お勤めはどちらですか」「ABC会社です」\n\"(　　) do you work for?\"\n\"I work for ABC company.\"",
+      "rawAnswer": "Who",
+      "ja": "「お勤めはどちらですか」「ABC会社です」",
+      "type": "fill",
+      "answer": "Who",
+      "en": "\"Who do you work for?\""
+    },
+    {
+      "id": "1333",
+      "tags": [],
+      "question": "「そろそろ失礼しなければなりません」\n「もう少しいらしてはいかがですか」\n\"I've (　　) (　　) go now. = I (　　) go now.\"\n\"Why don't you stay a little longer?\"",
+      "rawAnswer": "got to, must",
+      "ja": "「そろそろ失礼しなければなりません」\n「もう少しいらしてはいかがですか」",
+      "type": "fill",
+      "answer": "got to, must",
+      "en": "\"I've got to go now."
+    },
+    {
+      "id": "1334",
+      "tags": [],
+      "question": "「それじゃ，また」「良い一日を」\n\"(　　) you. = I'll (　　) (　　) you.\"\n\"Have a nice day.\"",
+      "rawAnswer": "See, be seeing",
+      "ja": "「それじゃ，また」「良い一日を」",
+      "type": "fill",
+      "answer": "See, be seeing",
+      "en": "\"See you."
+    },
+    {
+      "id": "1335",
+      "tags": [],
+      "question": "「じゃあね」「じゃあね」\n\"Take (　　). = Take (　　) (　　).\"\n\"So long.\"",
+      "rawAnswer": "care, it easy",
+      "ja": "「じゃあね」「じゃあね」",
+      "type": "fill",
+      "answer": "care, it easy",
+      "en": "\"Take care."
+    },
+    {
+      "id": "1336",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「今日は姉と買い物に行くんです」\n「楽しんできてね。お姉さんによろしく」\n\"I'm going shopping with my sister today.\"\n\"Oh, have fun. (　　) hello to your sister. = (　　) me to your sister.\n= (　　) my regards to your sister.\"",
+      "rawAnswer": "Say, Remember, Give",
+      "ja": "「今日は姉と買い物に行くんです」\n「楽しんできてね。お姉さんによろしく」",
+      "type": "fill",
+      "answer": "Say, Remember, Give",
+      "en": "\"Oh, have fun. Say hello to your sister."
+    },
+    {
+      "id": "1337",
+      "tags": [],
+      "question": "「良い週末を」「ありがとう。そちらこそ」\n\"Have a nice weekend.\"\n\"Thanks. You, (　　). = (　　) to you.\"",
+      "rawAnswer": "too, Same",
+      "ja": "「良い週末を」「ありがとう。そちらこそ」",
+      "type": "fill",
+      "answer": "too, Same",
+      "en": "\"Thanks. You, too."
+    },
+    {
+      "id": "1338",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "「夕食に招いてくれて本当にありがとう」「どういたしまして」\n\"(　　) a lot (　　) inviting me to dinner.\n= (　　) you very much (　　) inviting me to dinner.\"\n\"You're welcome.\"",
+      "rawAnswer": "Thanks, for, Thank, for",
+      "ja": "「夕食に招いてくれて本当にありがとう」「どういたしまして」",
+      "type": "fill",
+      "answer": "Thanks, for, Thank, for",
+      "en": "\"Thanks a lot for inviting me to dinner."
+    },
+    {
+      "id": "1339",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「コーヒーはどうですか」\n「いや，もう行かなくてはならないのです。ありがとう」\n\"Would you like some coffee?\"\n\"Oh, I've got to go now. Thanks (　　). = Thanks just (　　) (　　).\"",
+      "rawAnswer": "anyway, the same",
+      "ja": "「コーヒーはどうですか」\n「いや，もう行かなくてはならないのです。ありがとう」",
+      "type": "fill",
+      "answer": "anyway, the same",
+      "en": "\"Oh, I've got to go now. Thanks anyway."
+    },
+    {
+      "id": "1340",
+      "tags": [],
+      "question": "「宿題を手伝うよ」\n「ありがとう。本当に感謝するよ」\n\"I'll help you with your homework.\"\n\"Thank you. I really appreciate (　　).\"",
+      "rawAnswer": "it",
+      "ja": "「宿題を手伝うよ」\n「ありがとう。本当に感謝するよ」",
+      "type": "fill",
+      "answer": "it",
+      "en": "\"Thank you. I really appreciate it.\""
+    },
+    {
+      "id": "1341",
+      "tags": [],
+      "question": "「誕生日プレゼントを持ってきたよ」\n「わあ。本当にありがとう」\n\"I brought you a birthday present.\"\n\"Wow. It's very nice (　　) (　　).\"",
+      "rawAnswer": "of you",
+      "ja": "「誕生日プレゼントを持ってきたよ」\n「わあ。本当にありがとう」",
+      "type": "fill",
+      "answer": "of you",
+      "en": "\"Wow. It's very nice of you.\""
+    },
+    {
+      "id": "1342",
+      "tags": [
+        "基本"
+      ],
+      "question": "「ご忠告感謝します」\n「どういたしまして」\n\"Thanks for the advice.\"\n\"Don't (　　) it. = You're (　　).\"",
+      "rawAnswer": "mention, welcome",
+      "ja": "「ご忠告感謝します」\n「どういたしまして」",
+      "type": "fill",
+      "answer": "mention, welcome",
+      "en": "\"Don't mention it."
+    },
+    {
+      "id": "1343",
+      "tags": [
+        "基本"
+      ],
+      "question": "「お待たせして申し訳ありません」\n「大丈夫ですよ。着いたばかりですから」\n\"I'm (　　) to have kept you waiting.\"\n\"That's OK. I just got here.\"",
+      "rawAnswer": "sorry",
+      "ja": "「お待たせして申し訳ありません」\n「大丈夫ですよ。着いたばかりですから」",
+      "type": "fill",
+      "answer": "sorry",
+      "en": "\"I'm sorry to have kept you waiting.\""
+    },
+    {
+      "id": "1344",
+      "tags": [
+        "基本"
+      ],
+      "question": "「すみませんが，ハンカチを落としましたよ」\n「あら，どうもありがとうございます」\n\"(　　) (　　), but you dropped your handkerchief.\"\n\"Oh, thank you.\"",
+      "rawAnswer": "Excuse me",
+      "ja": "「すみませんが，ハンカチを落としましたよ」\n「あら，どうもありがとうございます」",
+      "type": "fill",
+      "answer": "Excuse me",
+      "en": "\"Excuse me, but you dropped your handkerchief.\""
+    },
+    {
+      "id": "1345",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "「遅くなってごめんなさい」\n「気にしないで」\n\"I'm sorry I'm late.\"\n\"(　　) mind. = Don't (　　).\"",
+      "rawAnswer": "Never, worry",
+      "ja": "「遅くなってごめんなさい」\n「気にしないで」",
+      "type": "fill",
+      "answer": "Never, worry",
+      "en": "\"Never mind."
+    },
+    {
+      "id": "1346",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「窓を開けてもよろしいですか」\n「いいですよ」\n\"Would you (　　) (　　) I opened the window?\"\n\"No, not at all.\"",
+      "rawAnswer": "mind if",
+      "ja": "「窓を開けてもよろしいですか」\n「いいですよ」",
+      "type": "fill",
+      "answer": "mind if",
+      "en": "\"Would you mind if I opened the window?\""
+    },
+    {
+      "id": "1347",
+      "tags": [],
+      "question": "「車をお借りしてもよろしいですか」\n「いいですよ」\n\"I (　　) (　　) I could borrow your car.\"\n\"No problem.\"",
+      "rawAnswer": "wonder if",
+      "ja": "「車をお借りしてもよろしいですか」\n「いいですよ」",
+      "type": "fill",
+      "answer": "wonder if",
+      "en": "\"I wonder if I could borrow your car.\""
+    },
+    {
+      "id": "1348",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「あなたの計画についてもっと教えていただけると幸いです」\n「いいですよ。でももう行かなければならないので，あとでメールをします」\n\"I would (　　) (　　) if you could tell me more about your plan.\"\n\"OK, but I've got to go now. I'll e-mail you later.\"",
+      "rawAnswer": "appreciate it",
+      "ja": "「あなたの計画についてもっと教えていただけると幸いです」\n「いいですよ。でももう行かなければならないので，あとでメールをします」",
+      "type": "fill",
+      "answer": "appreciate it",
+      "en": "\"I would appreciate it if you could tell me more about your plan.\""
+    },
+    {
+      "id": "1349",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "A:「お願いを聞いていただけますでしょうか」\nB:「もちろん。何でしょうか」\nA:「ノートパソコンを貸していただけますか。私のパソコンが壊れているのです」\nA: (　　) you (　　) me a favor? = (　　) I (　　) a favor of you?\nB: Sure. What is it?\nA: Could you lend me your notebook computer?  My PC is broken.",
+      "rawAnswer": "Could[Would], do, May, ask",
+      "ja": "A:「お願いを聞いていただけますでしょうか」\nB:「もちろん。何でしょうか」\nA:「ノートパソコンを貸していただけますか。私のパソコンが壊れているのです」",
+      "type": "fill",
+      "answer": "Could[Would], do, May, ask",
+      "en": "Could you do me a favor?"
+    },
+    {
+      "id": "1350",
+      "tags": [],
+      "question": "「家まで車で送ってもらえますか」\n「はい，喜んで」\n\"Could you drive me home?\"\n\"I'd (　　) (　　) to. = I'd (　　) to.\"",
+      "rawAnswer": "be happy, love",
+      "ja": "「家まで車で送ってもらえますか」\n「はい，喜んで」",
+      "type": "fill",
+      "answer": "be happy, love",
+      "en": "\"I'd be happy to."
+    },
+    {
+      "id": "1351",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「質問をしてもよろしいですか」\n「もちろん。何でしょうか」\n\"May I ask you a question?\"\n\"(　　). What is it?\"",
+      "rawAnswer": "Sure[Certainly]",
+      "ja": "「質問をしてもよろしいですか」\n「もちろん。何でしょうか」",
+      "type": "fill",
+      "answer": "Sure[Certainly]",
+      "en": "\"Sure. What is it?\""
+    },
+    {
+      "id": "1352",
+      "tags": [],
+      "question": "「ちょっと失礼してもよろしいですか」\n「はい，どうぞ」\n\"Do you mind if I leave the table?\"\n\"OK, go (　　).\"",
+      "rawAnswer": "ahead",
+      "ja": "「ちょっと失礼してもよろしいですか」\n「はい，どうぞ」",
+      "type": "fill",
+      "answer": "ahead",
+      "en": "\"OK, go ahead.\""
+    },
+    {
+      "id": "1353",
+      "tags": [],
+      "question": "「ここに座ってもいいですか」\n「どうぞ，どうぞ」\n\"May I sit here?\"\n\"(　　) all (　　).\"",
+      "rawAnswer": "By, means",
+      "ja": "「ここに座ってもいいですか」\n「どうぞ，どうぞ」",
+      "type": "fill",
+      "answer": "By, means",
+      "en": "\"By all means.\""
+    },
+    {
+      "id": "1354",
+      "tags": [
+        "基本"
+      ],
+      "question": "「この道は混んでいるなあ」\n「別の道にしたらどうですか」\n\"There is a lot of traffic on this road.\"\n\"(　　) (　　) you try another road?\"",
+      "rawAnswer": "Why don't",
+      "ja": "「この道は混んでいるなあ」\n「別の道にしたらどうですか」",
+      "type": "fill",
+      "answer": "Why don't",
+      "en": "\"Why don't you try another road?\""
+    },
+    {
+      "id": "1355",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「週末は何をしたいですか」「ボウリングに行くのはどう」\n\"What do you want to do this weekend?\"\n\"(　　) (　　) going bowling?\n= (　　) do you (　　) (　　) going bowling?\"",
+      "rawAnswer": "How[What] about, What, say to",
+      "ja": "「週末は何をしたいですか」「ボウリングに行くのはどう」",
+      "type": "fill",
+      "answer": "How[What] about, What, say to",
+      "en": "\"How about going bowling?"
+    },
+    {
+      "id": "1356",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「ご一緒してもいいですか」「もちろん」\n\"May I join you?\"\n\"(　　) not?\"",
+      "rawAnswer": "Why",
+      "ja": "「ご一緒してもいいですか」「もちろん」",
+      "type": "fill",
+      "answer": "Why",
+      "en": "\"Why not?\""
+    },
+    {
+      "id": "1357",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「一休みしませんか」「いいですね」\n\"Why don't we take a break?\"\n\"(　　) good! = (　　) (　　) a good idea!\"",
+      "rawAnswer": "Sounds, Sounds like",
+      "ja": "「一休みしませんか」「いいですね」",
+      "type": "fill",
+      "answer": "Sounds, Sounds like",
+      "en": "\"Sounds good!"
+    },
+    {
+      "id": "1358",
+      "tags": [],
+      "question": "「私の新しいシャツはどうですか」「すてきですよ」\n\"(　　) do you (　　) my new shirt?\"\n\"You look great.\"",
+      "rawAnswer": "How, like",
+      "ja": "「私の新しいシャツはどうですか」「すてきですよ」",
+      "type": "fill",
+      "answer": "How, like",
+      "en": "\"How do you like my new shirt?\""
+    },
+    {
+      "id": "1359",
+      "tags": [],
+      "question": "「今の部屋の感想はどうですか」「とても快適です」\n\"(　　) do you feel about the room now?\"\n\"It's so comfortable.\"",
+      "rawAnswer": "How",
+      "ja": "「今の部屋の感想はどうですか」「とても快適です」",
+      "type": "fill",
+      "answer": "How",
+      "en": "\"How do you feel about the room now?\""
+    },
+    {
+      "id": "1360",
+      "tags": [],
+      "question": "「その映画をどう思いますか」「とても気に入ってます」\n\"(　　) do you think about the movie?\"\n\"I really like it.\"",
+      "rawAnswer": "What",
+      "ja": "「その映画をどう思いますか」「とても気に入ってます」",
+      "type": "fill",
+      "answer": "What",
+      "en": "\"What do you think about the movie?\""
+    },
+    {
+      "id": "1361",
+      "tags": [],
+      "question": "「あなたのご意見は」「特にありません」\n\"(　　) do you think?\" \"Nothing in particular.\"",
+      "rawAnswer": "What",
+      "ja": "「あなたのご意見は」「特にありません」",
+      "type": "fill",
+      "answer": "What",
+      "en": "\"What do you think?\" \"Nothing in particular.\""
+    },
+    {
+      "id": "1362",
+      "tags": [
+        "発展"
+      ],
+      "question": "A:「遅かれ早かれ，あなたは先生に怒られることになると思うわ」\nB:「どういうこと，ママ？　単刀直入に言ってよ」\nA:「最近ちょくちょく学校に遅刻しているわね」\nA: I guess your teacher will get angry with you sooner or later.\nB: What do you mean, Mom? Just get to the (　　).\nA: You've been late for school so often these days.",
+      "rawAnswer": "point",
+      "ja": "A:「遅かれ早かれ，あなたは先生に怒られることになると思うわ」\nB:「どういうこと，ママ？　単刀直入に言ってよ」\nA:「最近ちょくちょく学校に遅刻しているわね」",
+      "type": "fill",
+      "answer": "point",
+      "en": "What do you mean, Mom? Just get to the point."
+    },
+    {
+      "id": "1363",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「風邪を引いたようです」「それはお気の毒に」\n\"I think I've caught a cold.\"\n\"That's (　　) (　　).\"",
+      "rawAnswer": "too bad",
+      "ja": "「風邪を引いたようです」「それはお気の毒に」",
+      "type": "fill",
+      "answer": "too bad",
+      "en": "\"That's too bad.\""
+    },
+    {
+      "id": "1364",
+      "tags": [],
+      "question": "「試合に負けました」「本当に残念です」\n\"We lost the game.\" \"(　　) a (　　) !\"",
+      "rawAnswer": "What, shame[pity]",
+      "ja": "「試合に負けました」「本当に残念です」",
+      "type": "fill",
+      "answer": "What, shame[pity]",
+      "en": "\"We lost the game.\" \"What a shame!\""
+    },
+    {
+      "id": "1365",
+      "tags": [],
+      "question": "「ラグビーのルールがわかりますか」「わかりません」\n\"Do you know the rules of rugby?\"\n\"I have (　　) (　　).\"",
+      "rawAnswer": "no idea",
+      "ja": "「ラグビーのルールがわかりますか」「わかりません」",
+      "type": "fill",
+      "answer": "no idea",
+      "en": "\"I have no idea.\""
+    },
+    {
+      "id": "1366",
+      "tags": [],
+      "question": "「のど自慢大会で優勝したよ」「よくやった」\n\"I won the singing contest.\"\n\"Good (　　) ! = Well (　　) ! = (　　) for you.\"",
+      "rawAnswer": "job, done, Good",
+      "ja": "「のど自慢大会で優勝したよ」「よくやった」",
+      "type": "fill",
+      "answer": "job, done, Good",
+      "en": "\"Good job!"
+    },
+    {
+      "id": "1367",
+      "tags": [],
+      "question": "「運転免許試験に受かりました」「おめでとうございます」\n\"I've just passed my driving test.\" \"(　　) !\"",
+      "rawAnswer": "Congratulations",
+      "ja": "「運転免許試験に受かりました」「おめでとうございます」",
+      "type": "fill",
+      "answer": "Congratulations",
+      "en": "\"I've just passed my driving test.\" \"Congratulations!\""
+    },
+    {
+      "id": "1368",
+      "tags": [],
+      "question": "「結婚するんです」「まさか。冗談でしょう」\n\"I'm getting married.\"\n\"Come on. You're (　　)! = No (　　)!\"",
+      "rawAnswer": "kidding, kidding",
+      "ja": "「結婚するんです」「まさか。冗談でしょう」",
+      "type": "fill",
+      "answer": "kidding, kidding",
+      "en": "\"Come on. You're kidding!"
+    },
+    {
+      "id": "1369",
+      "tags": [],
+      "question": "A:「高校を卒業したら留学することに決めたよ」\nB:「本気なの」\nA:「本気だよ」\nA: I decided to study abroad after I graduate from high school.\nB: Are you serious?\nA: I (　　) it.",
+      "rawAnswer": "mean",
+      "ja": "A:「高校を卒業したら留学することに決めたよ」\nB:「本気なの」\nA:「本気だよ」",
+      "type": "fill",
+      "answer": "mean",
+      "en": "I mean it."
+    },
+    {
+      "id": "1370",
+      "tags": [
+        "基本"
+      ],
+      "question": "「コーヒーをもう一杯いかがですか」「いいえ，けっこうです」\n\"Would you like another coffee?\"\n\"No, (　　). = No, (　　) (　　).\"",
+      "rawAnswer": "thanks, thank you",
+      "ja": "「コーヒーをもう一杯いかがですか」「いいえ，けっこうです」",
+      "type": "fill",
+      "answer": "thanks, thank you",
+      "en": "\"No, thanks."
+    },
+    {
+      "id": "1371",
+      "tags": [],
+      "question": "「今晩，映画を見に行きませんか」\n「とんでもない！　明日，テストがあるのよ。今夜は勉強しなくちゃ」\n\"Do you want to see a movie tonight?\"\n\"No (　　) !  I have a test tomorrow. I have to study tonight.\"",
+      "rawAnswer": "way",
+      "ja": "「今晩，映画を見に行きませんか」\n「とんでもない！　明日，テストがあるのよ。今夜は勉強しなくちゃ」",
+      "type": "fill",
+      "answer": "way",
+      "en": "\"No way! I have a test tomorrow. I have to study tonight.\""
+    },
+    {
+      "id": "1372",
+      "tags": [],
+      "question": "「お昼を食べに行きませんか」\n「せっかくですが，先約があります」\n\"How about going out for lunch?\"\n\"I (　　) I (　　), but I have another appointment.\"",
+      "rawAnswer": "wish, could",
+      "ja": "「お昼を食べに行きませんか」\n「せっかくですが，先約があります」",
+      "type": "fill",
+      "answer": "wish, could",
+      "en": "\"I wish I could, but I have another appointment.\""
+    },
+    {
+      "id": "1373",
+      "tags": [],
+      "question": "「もっと運動したほうがいいと思いますよ」\n「おっしゃることはわかりますが，ここのところ十分な時間がないんです」\n\"I think you should exercise more.\"\n\"I know (　　) you (　　), but I don't have enough time these days.\"",
+      "rawAnswer": "what, mean",
+      "ja": "「もっと運動したほうがいいと思いますよ」\n「おっしゃることはわかりますが，ここのところ十分な時間がないんです」",
+      "type": "fill",
+      "answer": "what, mean",
+      "en": "\"I know what you mean, but I don't have enough time these days.\""
+    },
+    {
+      "id": "1374",
+      "tags": [],
+      "question": "A:「ねえ，何だかわかる？」\nB:「何？」\nA:「ジェーンがトムと結婚するの！」\nA: (　　) what!\nB: What?\nA: Jane is getting married to Tom!",
+      "rawAnswer": "Guess",
+      "ja": "A:「ねえ，何だかわかる？」\nB:「何？」\nA:「ジェーンがトムと結婚するの！」",
+      "type": "fill",
+      "answer": "Guess",
+      "en": "Guess what!"
+    },
+    {
+      "id": "1375",
+      "tags": [],
+      "question": "「あのねえ。明日はママの誕生日だよ」\n「忘れるところだった。プレゼントに何か買いに行こう」\n\"You know (　　)? Tomorrow is Mom's birthday.\"\n\"I almost forgot. Let's get a present for her.\"",
+      "rawAnswer": "what[something]",
+      "ja": "「あのねえ。明日はママの誕生日だよ」\n「忘れるところだった。プレゼントに何か買いに行こう」",
+      "type": "fill",
+      "answer": "what[something]",
+      "en": "\"You know what? Tomorrow is Mom's birthday.\""
+    },
+    {
+      "id": "1376",
+      "tags": [
+        "基本"
+      ],
+      "question": "「いつが都合がいいですか」\n「えーと，そうですねえ…火曜日の７時はいかがですか」\n\"When is it convenient for you?\"\n\"Let (　　) (　　)... How about Tuesday at seven?\"",
+      "rawAnswer": "me see",
+      "ja": "「いつが都合がいいですか」\n「えーと，そうですねえ…火曜日の７時はいかがですか」",
+      "type": "fill",
+      "answer": "me see",
+      "en": "\"Let me see... How about Tuesday at seven?\""
+    },
+    {
+      "id": "1377",
+      "tags": [],
+      "question": "「人生とは，ときに大変だね」\n「その通り」\n\"Life is sometimes hard.\"\n\"That's (　　) sure. = That's (　　).\"",
+      "rawAnswer": "for, right",
+      "ja": "「人生とは，ときに大変だね」\n「その通り」",
+      "type": "fill",
+      "answer": "for, right",
+      "en": "\"That's for sure."
+    },
+    {
+      "id": "1378",
+      "tags": [],
+      "question": "「映画は楽しめましたか」\n「もちろん。いままで見た中でいちばんいい映画でした」\n（Yes以外で）\n\"Did you enjoy the movie?\"\n\"(　　)! I've never seen such a good movie!\"",
+      "rawAnswer": "Definitely[Absolutely, Certainly, Sure]",
+      "ja": "「映画は楽しめましたか」\n「もちろん。いままで見た中でいちばんいい映画でした」\n（Yes以外で）",
+      "type": "fill",
+      "answer": "Definitely[Absolutely, Certainly, Sure]",
+      "en": "\"Definitely! I've never seen such a good movie!\""
+    },
+    {
+      "id": "1379",
+      "tags": [
+        "発展"
+      ],
+      "question": "「今日の会議はとても退屈だったね」\n「まさにおっしゃる通りです」\n\"Today's meeting was so boring.\"\n\"I (　　) agree (　　).\"",
+      "rawAnswer": "couldn't, more",
+      "ja": "「今日の会議はとても退屈だったね」\n「まさにおっしゃる通りです」",
+      "type": "fill",
+      "answer": "couldn't, more",
+      "en": "\"I couldn't agree more.\""
+    },
+    {
+      "id": "1380",
+      "tags": [
+        "発展"
+      ],
+      "question": "「いままで食べた中で最高の夕食だったよ」\n「本当にその通りですね！」\n\"That was the best dinner I've ever had.\"\n\"You can (　　) that (　　). = You (　　) (　　).\"",
+      "rawAnswer": "say, again, said it",
+      "ja": "「いままで食べた中で最高の夕食だったよ」\n「本当にその通りですね！」",
+      "type": "fill",
+      "answer": "say, again, said it",
+      "en": "\"You can say that again."
+    },
+    {
+      "id": "1381",
+      "tags": [],
+      "question": "「いつ会えますか。５時に図書館の前でいかがですか」\n「それで結構です。それじゃあ」\n\"When can we meet? How about at 5:00 in front of the library?\"\n\"That will be (　　). See you then.\"",
+      "rawAnswer": "fine",
+      "ja": "「いつ会えますか。５時に図書館の前でいかがですか」\n「それで結構です。それじゃあ」",
+      "type": "fill",
+      "answer": "fine",
+      "en": "\"That will be fine. See you then.\""
+    },
+    {
+      "id": "1382",
+      "tags": [
+        "基本"
+      ],
+      "question": "「いらっしゃいませ」\n「あのカメラを見せてもらえますか」\n\"May I (　　) you?\"\n\"Yes. Can I see that camera, please?\"",
+      "rawAnswer": "help",
+      "ja": "「いらっしゃいませ」\n「あのカメラを見せてもらえますか」",
+      "type": "fill",
+      "answer": "help",
+      "en": "\"May I help you?\""
+    },
+    {
+      "id": "1383",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「何かおさがしですか」\n「いえ，見ているだけです」\n\"May I help you?\"\n\"Oh, no, thank you. I'm (　　) (　　).\"",
+      "rawAnswer": "just looking",
+      "ja": "「何かおさがしですか」\n「いえ，見ているだけです」",
+      "type": "fill",
+      "answer": "just looking",
+      "en": "\"Oh, no, thank you. I'm just looking.\""
+    },
+    {
+      "id": "1384",
+      "tags": [],
+      "question": "A:「何かおさがしですか」\nB:「ええ。父へのプレゼントをさがしているのですが」\nA:「何か決めているものがありますか」\nA: Can I help you?\nB: Yes. I'm looking for a present for my father.\nA: Do you have anything (　　) (　　)?",
+      "rawAnswer": "in mind",
+      "ja": "A:「何かおさがしですか」\nB:「ええ。父へのプレゼントをさがしているのですが」\nA:「何か決めているものがありますか」",
+      "type": "fill",
+      "answer": "in mind",
+      "en": "Do you have anything in mind?"
+    },
+    {
+      "id": "1385",
+      "tags": [],
+      "question": "「他に何かございますか」「いいえ，それで全部です」\n\"(　　) else?\" \"No. That's it.\"",
+      "rawAnswer": "Anything",
+      "ja": "「他に何かございますか」「いいえ，それで全部です」",
+      "type": "fill",
+      "answer": "Anything",
+      "en": "\"Anything else?\" \"No. That's it.\""
+    },
+    {
+      "id": "1386",
+      "tags": [],
+      "question": "「現金ですか，カードですか」「現金でお願いします」\n\"Cash or (　　)?\" \"I'll pay in cash.\"",
+      "rawAnswer": "charge",
+      "ja": "「現金ですか，カードですか」「現金でお願いします」",
+      "type": "fill",
+      "answer": "charge",
+      "en": "\"Cash or charge?\" \"I'll pay in cash.\""
+    },
+    {
+      "id": "1387",
+      "tags": [],
+      "question": "「ご注文は何にしますか」「コーヒーを２つください」\n\"May I (　　) your (　　)? = Are you (　　) to (　　)?\"\n\"Two coffees, please.\"",
+      "rawAnswer": "take, order, ready, order",
+      "ja": "「ご注文は何にしますか」「コーヒーを２つください」",
+      "type": "fill",
+      "answer": "take, order, ready, order",
+      "en": "\"May I take your order?"
+    },
+    {
+      "id": "1388",
+      "tags": [],
+      "question": "「ご用は伺っていますか」\n「いいえ，まだです。メニューをもらえますか」\n\"Have you been (　　) (　　)? = Have you (　　) (　　)?\"\n\"No, not yet. Can I have the menu, please?\"",
+      "rawAnswer": "waited on, been served",
+      "ja": "「ご用は伺っていますか」\n「いいえ，まだです。メニューをもらえますか」",
+      "type": "fill",
+      "answer": "waited on, been served",
+      "en": "\"Have you been waited on?"
+    },
+    {
+      "id": "1389",
+      "tags": [],
+      "question": "「もう少しいかがですか」「いいえ，結構です。もう十分いただきました」\n\"Would you like some more?\"\n\"No, thank you. I've (　　) (　　). = I'm (　　).\"",
+      "rawAnswer": "had enough, full",
+      "ja": "「もう少しいかがですか」「いいえ，結構です。もう十分いただきました」",
+      "type": "fill",
+      "answer": "had enough, full",
+      "en": "\"No, thank you. I've had enough."
+    },
+    {
+      "id": "1390",
+      "tags": [
+        "発展"
+      ],
+      "question": "「チキンサンドをください」\n「私にも同じものをください」\n\"I'll have the chicken sandwich.\"\n\"Same (　　), please. = Same (　　) (　　), please.\"",
+      "rawAnswer": "here, for me",
+      "ja": "「チキンサンドをください」\n「私にも同じものをください」",
+      "type": "fill",
+      "answer": "here, for me",
+      "en": "\"Same here, please."
+    },
+    {
+      "id": "1391",
+      "tags": [],
+      "question": "「割り勘にしましょう」\n「いやいや，今晩は私が払います。今日はあなたの誕生日だもの」\n\"Shall we (　　) the (　　)?\"\n\"No, no. I'll pay tonight. Today's your birthday.\"",
+      "rawAnswer": "split, bill",
+      "ja": "「割り勘にしましょう」\n「いやいや，今晩は私が払います。今日はあなたの誕生日だもの」",
+      "type": "fill",
+      "answer": "split, bill",
+      "en": "\"Shall we split the bill?\""
+    },
+    {
+      "id": "1392",
+      "tags": [],
+      "question": "「夕食はおいしかったですね。いくら払えばいいですか」\n「心配しないでください。ここは私に払わせてください」\n\"The dinner was great. How much should I pay?\"\n\"Don't worry about it. It's (　　) me.\"",
+      "rawAnswer": "on",
+      "ja": "「夕食はおいしかったですね。いくら払えばいいですか」\n「心配しないでください。ここは私に払わせてください」",
+      "type": "fill",
+      "answer": "on",
+      "en": "\"Don't worry about it. It's on me.\""
+    },
+    {
+      "id": "1393",
+      "tags": [],
+      "question": "「こちらでお召し上がりですか，お持ち帰りですか」\n「ここで食べていきます」\n\"For (　　) or to (　　)?\"\n\"For (　　), please.\"",
+      "rawAnswer": "here, go, here",
+      "ja": "「こちらでお召し上がりですか，お持ち帰りですか」\n「ここで食べていきます」",
+      "type": "fill",
+      "answer": "here, go, here",
+      "en": "\"For here or to go?\" \"For here, please.\""
+    },
+    {
+      "id": "1394",
+      "tags": [],
+      "question": "A:「いくらですか」\nB:「９ドルです」\nA:「はい，10ドルです。おつりはいいですよ」\nA: How much is it?\nB: Nine dollars.\nA: Here's ten dollars. Keep the (　　).",
+      "rawAnswer": "change",
+      "ja": "A:「いくらですか」\nB:「９ドルです」\nA:「はい，10ドルです。おつりはいいですよ」",
+      "type": "fill",
+      "answer": "change",
+      "en": "Here's ten dollars. Keep the change."
+    },
+    {
+      "id": "1395",
+      "tags": [],
+      "question": "すみません。空港にはどうやって行けばいいですか」\n「88番のバスに乗ってください」\n\"Excuse me, but (　　) can I (　　) to the airport?\"\n\"Take the number 88 bus.\"",
+      "rawAnswer": "how, get",
+      "ja": "すみません。空港にはどうやって行けばいいですか」\n「88番のバスに乗ってください」",
+      "type": "fill",
+      "answer": "how, get",
+      "en": "\"Excuse me, but how can I get to the airport?\""
+    },
+    {
+      "id": "1396",
+      "tags": [],
+      "question": "「ABC書店への行き方を教えていただけますか」\n「この通りをまっすぐ行けば右側にあります。すぐわかりますよ」\n\"Could you tell me how to get to the ABC bookstore?\"\n\"Go straight down this street. You'll find it on the right. You (　　) (　　) it.\"",
+      "rawAnswer": "can't miss",
+      "ja": "「ABC書店への行き方を教えていただけますか」\n「この通りをまっすぐ行けば右側にあります。すぐわかりますよ」",
+      "type": "fill",
+      "answer": "can't miss",
+      "en": "\"Go straight down this street. You'll find it on the right. You can't miss it.\""
+    },
+    {
+      "id": "1397",
+      "tags": [
+        "基本"
+      ],
+      "question": "「もしもし，トムをお願いします」「どちら様でしょうか」\n\"Hello, may I (　　) (　　) Tom?\"\n\"Can I have your name?\"",
+      "rawAnswer": "speak[talk] to[with]",
+      "ja": "「もしもし，トムをお願いします」「どちら様でしょうか」",
+      "type": "fill",
+      "answer": "speak[talk] to[with]",
+      "en": "\"Hello, may I speak to Tom?\""
+    },
+    {
+      "id": "1398",
+      "tags": [],
+      "question": "「トムをお願いします」「私がトムですが」\n\"Could I talk to Tom?\"\n\"This is (　　). = (　　).\"",
+      "rawAnswer": "he, Speaking",
+      "ja": "「トムをお願いします」「私がトムですが」",
+      "type": "fill",
+      "answer": "he, Speaking",
+      "en": "\"This is he."
+    },
+    {
+      "id": "1399",
+      "tags": [],
+      "question": "A:「ジョン・スミスさんはいらっしゃいますか」\nB:「どちら様ですか」\nA:「ヤマダユウコです」\nA: May I talk to John Smith?\nB: Who's (　　), please? = Who is (　　), please?\nA: This is Yuko Yamada speaking.",
+      "rawAnswer": "calling, this",
+      "ja": "A:「ジョン・スミスさんはいらっしゃいますか」\nB:「どちら様ですか」\nA:「ヤマダユウコです」",
+      "type": "fill",
+      "answer": "calling, this",
+      "en": "Who's calling, please?"
+    },
+    {
+      "id": "1400",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「スミスさんはいらっしゃいますか」\n「すみません。今，会議中です。何かお伝えすることはありますか」\n\"May I talk to Mr. Smith?\"\n\"I'm sorry. He's in a meeting now. Can I (　　) a message?\"",
+      "rawAnswer": "take",
+      "ja": "「スミスさんはいらっしゃいますか」\n「すみません。今，会議中です。何かお伝えすることはありますか」",
+      "type": "fill",
+      "answer": "take",
+      "en": "\"I'm sorry. He's in a meeting now. Can I take a message?\""
+    },
+    {
+      "id": "1401",
+      "tags": [],
+      "question": "「こんにちは，ジョン。今，話せますか」\n「今はやることがたくさんあるから。５分後にかけ直していいですか」\n\"Hello, John. Can I talk to you now?\"\n\"I've got a lot of stuff to do right now. Can I call you (　　) in five minutes?\"",
+      "rawAnswer": "back",
+      "ja": "「こんにちは，ジョン。今，話せますか」\n「今はやることがたくさんあるから。５分後にかけ直していいですか」",
+      "type": "fill",
+      "answer": "back",
+      "en": "\"I've got a lot of stuff to do right now. Can I call you back in five minutes?\""
+    },
+    {
+      "id": "1402",
+      "tags": [],
+      "question": "「こんにちは，ABC出版です。どのようなご用でしょうか」\n「メアリー・スミスと申します。ジョンソンさんにつないでもらえますか」\n\"Hello, this is ABC publishing company. How may I help you?\"\n\"This is Mary Smith. Could you (　　) me (　　) to Mr. Johnson?\"",
+      "rawAnswer": "put, through",
+      "ja": "「こんにちは，ABC出版です。どのようなご用でしょうか」\n「メアリー・スミスと申します。ジョンソンさんにつないでもらえますか」",
+      "type": "fill",
+      "answer": "put, through",
+      "en": "\"This is Mary Smith. Could you put me through to Mr. Johnson?\""
+    },
+    {
+      "id": "1403",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「カーペンターさんはいらっしゃいますか」\n「少々お待ちください」\n\"May I talk to Mr. Carpenter?\"\n\"(　　) (　　), please. = Please (　　) the (　　).\"",
+      "rawAnswer": "Hold[Hang] on, hold, line",
+      "ja": "「カーペンターさんはいらっしゃいますか」\n「少々お待ちください」",
+      "type": "fill",
+      "answer": "Hold[Hang] on, hold, line",
+      "en": "\"Hold on, please."
+    },
+    {
+      "id": "1404",
+      "tags": [],
+      "question": "「ウィリアムズさんはいらっしゃいますか」\n「申し訳ございません。ただいま不在です。ご伝言を承りましょうか」\n\"Could I speak to Mr. Williams?\"\n\"I'm sorry. He is (　　) now. Can I take a message?\"",
+      "rawAnswer": "out",
+      "ja": "「ウィリアムズさんはいらっしゃいますか」\n「申し訳ございません。ただいま不在です。ご伝言を承りましょうか」",
+      "type": "fill",
+      "answer": "out",
+      "en": "\"I'm sorry. He is out now. Can I take a message?\""
+    },
+    {
+      "id": "1405",
+      "tags": [],
+      "question": "「スズキさんはいらっしゃいますか」\n「申し訳ございません。別の電話に出ています」\n\"May I talk to Mr. Suzuki?\"\n\"I'm sorry. He is (　　) another (　　).\"",
+      "rawAnswer": "on, line[phone]",
+      "ja": "「スズキさんはいらっしゃいますか」\n「申し訳ございません。別の電話に出ています」",
+      "type": "fill",
+      "answer": "on, line[phone]",
+      "en": "\"I'm sorry. He is on another line.\""
+    },
+    {
+      "id": "1406",
+      "tags": [],
+      "question": "「トムに電話通じましたか」「いいえ。話し中です」\n\"Did you reach Tom?\"\n\"No. The (　　) is (　　).\"",
+      "rawAnswer": "line, busy",
+      "ja": "「トムに電話通じましたか」「いいえ。話し中です」",
+      "type": "fill",
+      "answer": "line, busy",
+      "en": "\"No. The line is busy.\""
+    },
+    {
+      "id": "1407",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「もしもし，スミスさんですか」「いいえ。番号が違うと思いますよ」\n\"Hello, is this Mr. Smith?\"\n\"No. I'm afraid you (　　) the (　　) number.\"",
+      "rawAnswer": "have, wrong",
+      "ja": "「もしもし，スミスさんですか」「いいえ。番号が違うと思いますよ」",
+      "type": "fill",
+      "answer": "have, wrong",
+      "en": "\"No. I'm afraid you have the wrong number.\""
+    },
+    {
+      "id": "1408",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「どうしたの。顔色悪いよ」「微熱があるんです」\n\"What's (　　)? You look pale.\"\n\"I have a slight fever.\"",
+      "rawAnswer": "wrong",
+      "ja": "「どうしたの。顔色悪いよ」「微熱があるんです」",
+      "type": "fill",
+      "answer": "wrong",
+      "en": "\"What's wrong? You look pale.\""
+    },
+    {
+      "id": "1409",
+      "tags": [],
+      "question": "「どうしたの。体調が悪そうだけど」「ひどい頭痛がします」\n\"What's up (　　) you? You look sick.\"\n\"I have a bad headache.\"",
+      "rawAnswer": "with",
+      "ja": "「どうしたの。体調が悪そうだけど」「ひどい頭痛がします」",
+      "type": "fill",
+      "answer": "with",
+      "en": "\"What's up with you? You look sick.\""
+    },
+    {
+      "id": "1410",
+      "tags": [],
+      "question": "「大丈夫ですか。あまり食べませんでしたね」「食欲がないのです」\n\"Are you OK? You didn't eat much.\"\n\"I (　　) no (　　). = I have (　　) my (　　).\"",
+      "rawAnswer": "have, appetite, lost, appetite",
+      "ja": "「大丈夫ですか。あまり食べませんでしたね」「食欲がないのです」",
+      "type": "fill",
+      "answer": "have, appetite, lost, appetite",
+      "en": "\"I have no appetite."
+    },
+    {
+      "id": "1411",
+      "tags": [],
+      "question": "「気分が良くないの」「風邪を引いたみたい」\n\"Aren't you feeling well?\"\n\"I think I (　　) a (　　).\"",
+      "rawAnswer": "have, cold",
+      "ja": "「気分が良くないの」「風邪を引いたみたい」",
+      "type": "fill",
+      "answer": "have, cold",
+      "en": "\"I think I have a cold.\""
+    },
+    {
+      "id": "1412",
+      "tags": [],
+      "question": "「今，何時ですか」「午後６時です」\n\"Do you (　　) (　　) time?\"\n\"Yes. It's 6:00 p.m.\"",
+      "rawAnswer": "have the",
+      "ja": "「今，何時ですか」「午後６時です」",
+      "type": "fill",
+      "answer": "have the",
+      "en": "\"Do you have the time?\""
+    },
+    {
+      "id": "1413",
+      "tags": [],
+      "question": "「他に何か」「いや，これで全部です。手伝ってくれてありがとう」\n\"Anything else?\"\n\"No, (　　) it. Thank you for your help.\"",
+      "rawAnswer": "that's",
+      "ja": "「他に何か」「いや，これで全部です。手伝ってくれてありがとう」",
+      "type": "fill",
+      "answer": "that's",
+      "en": "\"No, that's it. Thank you for your help.\""
+    },
+    {
+      "id": "1414",
+      "tags": [
+        "基本"
+      ],
+      "question": "「トム，夕食ですよ」「すぐ行くよ，お母さん」\n\"Tom! Dinner is ready!\" \"I'm (　　), Mom.\"",
+      "rawAnswer": "coming",
+      "ja": "「トム，夕食ですよ」「すぐ行くよ，お母さん」",
+      "type": "fill",
+      "answer": "coming",
+      "en": "\"Tom! Dinner is ready!\" \"I'm coming, Mom.\""
+    },
+    {
+      "id": "1415",
+      "tags": [],
+      "question": "A:「チキンがいいですか，それとも魚がいいですか」\nB:「今，何と言ったのですか」\nA:「チキンがいいですか，それとも魚がいいですか」\nB:「チキンをお願いします」\nA: Would you like chicken or fish?\nB: (　　)? = (　　) (　　)?\nA: Would you like chicken or fish?\nB: Chicken, please.",
+      "rawAnswer": "Pardon, Excuse me",
+      "ja": "A:「チキンがいいですか，それとも魚がいいですか」\nB:「今，何と言ったのですか」\nA:「チキンがいいですか，それとも魚がいいですか」\nB:「チキンをお願いします」",
+      "type": "fill",
+      "answer": "Pardon, Excuse me",
+      "en": "Pardon?"
+    },
+    {
+      "id": "1416",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「塩を取ってください」\n「いいですよ。はい，どうぞ」\n\"Pass me the salt, please.\"\n\"Sure. Here you (　　). = Here it (　　).\"",
+      "rawAnswer": "go[are], is",
+      "ja": "「塩を取ってください」\n「いいですよ。はい，どうぞ」",
+      "type": "fill",
+      "answer": "go[are], is",
+      "en": "\"Sure. Here you go."
+    },
+    {
+      "id": "1417",
+      "tags": [],
+      "question": "「さあ着きました」\n「長いドライブでしたね」\n\"Here we (　　).\" \"It was a long drive.\"",
+      "rawAnswer": "are",
+      "ja": "「さあ着きました」\n「長いドライブでしたね」",
+      "type": "fill",
+      "answer": "are",
+      "en": "\"Here we are.\" \"It was a long drive.\""
+    },
+    {
+      "id": "1418",
+      "tags": [],
+      "question": "「今週末に，私たちといっしょにキャンプに行けそうですか」\n「状況次第です。犬を世話してくれる人を見つける必要があるわ」\n\"Will you be able to go camping with us this weekend?\"\n\"It (　　). I'll need to find someone to look after my dog.\"",
+      "rawAnswer": "depends",
+      "ja": "「今週末に，私たちといっしょにキャンプに行けそうですか」\n「状況次第です。犬を世話してくれる人を見つける必要があるわ」",
+      "type": "fill",
+      "answer": "depends",
+      "en": "\"It depends. I'll need to find someone to look after my dog.\""
+    },
+    {
+      "id": "1419",
+      "tags": [
+        "発展"
+      ],
+      "question": "「どうぞお先に」\n「ご親切にどうも」\n\"(　　) you.\" \"That's very kind of you.\"",
+      "rawAnswer": "After",
+      "ja": "「どうぞお先に」\n「ご親切にどうも」",
+      "type": "fill",
+      "answer": "After",
+      "en": "\"After you.\" \"That's very kind of you.\""
+    },
+    {
+      "id": "1420",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "「クレアに何が起こったの？」\n「あなたには関係ないわ」\n\"What happened to Clare?\"\n\"(　　) of your (　　). = (　　) your own (　　).\"",
+      "rawAnswer": "None, business, Mind, business",
+      "ja": "「クレアに何が起こったの？」\n「あなたには関係ないわ」",
+      "type": "fill",
+      "answer": "None, business, Mind, business",
+      "en": "\"None of your business."
+    },
+    {
+      "id": "1421",
+      "tags": [],
+      "question": "「時間通りに着きそうにないなあ」\n「走れば間に合うよ」\n\"I don't think we will arrive there on time.\" \"If we run, we can (　　) it.\"",
+      "rawAnswer": "make",
+      "ja": "「時間通りに着きそうにないなあ」\n「走れば間に合うよ」",
+      "type": "fill",
+      "answer": "make",
+      "en": "\"I don't think we will arrive there on time.\" \"If we run, we can make it.\""
+    },
+    {
+      "id": "1422",
+      "tags": [],
+      "question": "「アイスクリームを食べすぎだよ」\n「わかってる，でも，どうしようもないの。大好きなのよ」\n\"You eat too much ice cream.\"\n\"I know, but I can't (　　) it. I love it so much.\"",
+      "rawAnswer": "help",
+      "ja": "「アイスクリームを食べすぎだよ」\n「わかってる，でも，どうしようもないの。大好きなのよ」",
+      "type": "fill",
+      "answer": "help",
+      "en": "\"I know, but I can't help it. I love it so much.\""
+    }
+  ]
+}

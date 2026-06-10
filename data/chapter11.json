@@ -238,7 +238,7 @@
       "ja": "(a)(b) 彼女は女優というよりも歌手だ。",
       "type": "fill",
       "answer": "not so much，as",
-      "en": "She is not so much，as an actress not so much，as a singer."
+      "en": "She is not so much an actress as a singer."
     },
     {
       "id": "387",
@@ -381,7 +381,7 @@
       "ja": "マイクは彼の兄ほど怒りっぽくない。",
       "type": "fill",
       "answer": "less，than",
-      "en": "Mike is less，than ill-tempered less，than his elder brother."
+      "en": "Mike is less ill-tempered than his elder brother."
     },
     {
       "id": "396",

@@ -1,0 +1,254 @@
+{
+  "number": 26,
+  "title": "ことわざ・慣用表現",
+  "fullTitle": "第26章　ことわざ・慣用表現",
+  "problems": [
+    {
+      "id": "1308",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "(a) \"She finally decided to study English after she started working.\"\n(b) \"Better (　　) than never.\"",
+      "rawAnswer": "②",
+      "ja": "(a) 「彼女は働き始めてからようやく英語を勉強しようと決心した」\n(b) 「遅くても何もしないよりはましだ」〈ことわざ〉",
+      "type": "choice",
+      "choices": [
+        "early",
+        "late",
+        "slow",
+        "soon"
+      ],
+      "answerIndex": 1,
+      "en": "\"Better late than never.\""
+    },
+    {
+      "id": "1309",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "A bird (two / the hand / in / is / worth) in the bush.",
+      "rawAnswer": "(A bird) in the hand is worth two (in the bush.)",
+      "ja": "明日の百より今日の五十。〈ことわざ〉",
+      "type": "ordering",
+      "answer": "in the hand is worth two",
+      "pieces": [
+        "two",
+        "the hand",
+        "in",
+        "is",
+        "worth"
+      ],
+      "en": "A bird in the hand is worth two in the bush."
+    },
+    {
+      "id": "1310",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "継続は力なり。\n(　　) makes perfect.",
+      "rawAnswer": "Practice",
+      "ja": "継続は力なり。",
+      "type": "fill",
+      "answer": "Practice",
+      "en": "Practice makes perfect."
+    },
+    {
+      "id": "1311",
+      "tags": [],
+      "question": "A friend (is / indeed / friend / need / a / in).",
+      "rawAnswer": "(A friend) in need is a friend indeed (.)",
+      "ja": "まさかのときの友こそ真の友。〈ことわざ〉",
+      "type": "ordering",
+      "answer": "in need is a friend indeed",
+      "pieces": [
+        "is",
+        "indeed",
+        "friend",
+        "need",
+        "a",
+        "in"
+      ],
+      "en": "A friend in need is a friend indeed."
+    },
+    {
+      "id": "1312",
+      "tags": [],
+      "question": "早起きは三文の得。\nThe early bird catches the (w　　).",
+      "rawAnswer": "worm",
+      "ja": "早起きは三文の得。",
+      "type": "fill",
+      "answer": "worm",
+      "en": "The early bird catches the worm."
+    },
+    {
+      "id": "1313",
+      "tags": [],
+      "question": "１日１個のりんごを食べれば医者知らず。\nAn apple a day keeps the doctor (　　).",
+      "rawAnswer": "④",
+      "ja": "１日１個のりんごを食べれば医者知らず。",
+      "type": "choice",
+      "choices": [
+        "up",
+        "in",
+        "out",
+        "away"
+      ],
+      "answerIndex": 3,
+      "en": "An apple a day keeps the doctor away."
+    },
+    {
+      "id": "1314",
+      "tags": [],
+      "question": "According to the proverb, blood is (　　) than water.",
+      "rawAnswer": "②",
+      "ja": "ことわざによれば，血は水よりも濃い。",
+      "type": "choice",
+      "choices": [
+        "heavier",
+        "thicker",
+        "thinner",
+        "lighter"
+      ],
+      "answerIndex": 1,
+      "en": "According to the proverb, blood is thicker than water."
+    },
+    {
+      "id": "1315",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I can finish this project in no time. It's <u>a piece of cake</u>.",
+      "rawAnswer": "④",
+      "ja": "このプロジェクトはあっという間に終えることができる。朝飯前だ。",
+      "type": "choice",
+      "choices": [
+        "amusing",
+        "difficult",
+        "early",
+        "easy"
+      ],
+      "answerIndex": 3,
+      "en": "I can finish this project in no time. It's a piece of cake."
+    },
+    {
+      "id": "1316",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "He is <u>a pain in the neck</u>.",
+      "rawAnswer": "④",
+      "ja": "彼は面倒くさい人物だ。",
+      "type": "choice",
+      "choices": [
+        "a counselor",
+        "a deception",
+        "a liar",
+        "a nuisance"
+      ],
+      "answerIndex": 3,
+      "en": "He is a pain in the neck."
+    },
+    {
+      "id": "1317",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Rumor (　　) the head teacher is going to leave our school.",
+      "rawAnswer": "①",
+      "ja": "うわさでは校長が学校を辞めることになったらしい。",
+      "type": "choice",
+      "choices": [
+        "has it that",
+        "is said what",
+        "that there",
+        "whether it was"
+      ],
+      "answerIndex": 0,
+      "en": "Rumor has it that the head teacher is going to leave our school."
+    },
+    {
+      "id": "1318",
+      "tags": [],
+      "question": "I'm sorry, but I didn't mean it. It was just a slip of the (　　).",
+      "rawAnswer": "④",
+      "ja": "ごめんなさい，でもそんなつもりではなかった。つい口が滑ってしまっただけだ。",
+      "type": "choice",
+      "choices": [
+        "eye",
+        "head",
+        "nose",
+        "tongue"
+      ],
+      "answerIndex": 3,
+      "en": "I'm sorry, but I didn't mean it. It was just a slip of the tongue."
+    },
+    {
+      "id": "1319",
+      "tags": [],
+      "question": "子供たちはその本をとても面白がり，先生が朗読する間，熱心に耳を傾けました。\nThe children were very interested in the book and they (while, read, the, ears, teacher, were, it, all).",
+      "rawAnswer": "(The children were very interested in the book and they) were all ears while the teacher read it.",
+      "ja": "子供たちはその本をとても面白がり，先生が朗読する間，熱心に耳を傾けました。",
+      "type": "rewrite",
+      "answer": "(The children were very interested in the book and they) were all ears while the teacher read it.",
+      "en": "(The children were very interested in the book and they) were all ears while the teacher read it."
+    },
+    {
+      "id": "1320",
+      "tags": [],
+      "question": "今日はもう仕事を切り上げませんか。\nWhy don't we call it a (　　)?",
+      "rawAnswer": "day",
+      "ja": "今日はもう仕事を切り上げませんか。",
+      "type": "fill",
+      "answer": "day",
+      "en": "Why don't we call it a day?"
+    },
+    {
+      "id": "1321",
+      "tags": [],
+      "question": "(　　) to think of it, I haven't had a vacation in almost two years!",
+      "rawAnswer": "④",
+      "ja": "考えてみると，私はほぼ２年間休暇がない！",
+      "type": "choice",
+      "choices": [
+        "Wish",
+        "Get",
+        "Turn",
+        "Come"
+      ],
+      "answerIndex": 3,
+      "en": "Come to think of it, I haven't had a vacation in almost two years!"
+    },
+    {
+      "id": "1322",
+      "tags": [],
+      "question": "(　　) what may, I will never give up.",
+      "rawAnswer": "①",
+      "ja": "どんなことがあっても，私は決してあきらめない。",
+      "type": "choice",
+      "choices": [
+        "Come",
+        "Read",
+        "Say",
+        "Went"
+      ],
+      "answerIndex": 0,
+      "en": "Come what may, I will never give up."
+    },
+    {
+      "id": "1323",
+      "tags": [],
+      "question": "<u>The chances are</u> that they'll be late as usual.",
+      "rawAnswer": "③",
+      "ja": "彼らはいつものように遅れる可能性が高い。",
+      "type": "choice",
+      "choices": [
+        "It is not true",
+        "It is impossible",
+        "It is likely",
+        "It is unlikely"
+      ],
+      "answerIndex": 2,
+      "en": "The chances are that they'll be late as usual."
+    }
+  ]
+}

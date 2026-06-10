@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage学習アプリ (第11章　比較)</title>
+    <title>Vintage学習アプリ (第29章　重要多義語)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Tinos:wght@700&display=swap');
@@ -111,7 +111,7 @@
         <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-4xl flex-grow flex flex-col">
             <header class="flex-shrink-0 text-center mb-4 bg-green-800 p-4 rounded-xl shadow-lg">
                 <h1 class="text-2xl md:text-3xl font-bold text-white">Vintage 学習アプリ</h1>
-                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第11章　比較</h2>
+                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第29章　重要多義語</h2>
             </header>
 
             <main class="flex-grow bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-lg mb-2">
@@ -186,993 +186,297 @@
         // --- App State ---
         const chapterData = [
  {
-  "id": "374",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "The crowd was surprised to see that a seven-year-old boy was able to swim as (　　) the teenagers.",
-  "rawAnswer": "①",
-  "ja": "７歳の少年が10代の若者と同じくらい速く泳げることがわかり，群衆は驚いた。",
-  "type": "choice",
-  "choices": [
-   "fast as",
-   "fast still",
-   "faster so",
-   "faster than"
-  ],
-  "answerIndex": 0,
-  "en": "The crowd was surprised to see that a seven-year-old boy was able to swim as fast as the teenagers."
- },
- {
-  "id": "375",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "Travelling into the city center is as convenient by subway (　　) by bus.",
-  "rawAnswer": "③",
-  "ja": "街の中心に移動するのはバスと同じくらい地下鉄も便利だ。",
-  "type": "choice",
-  "choices": [
-   "instead of",
-   "than it is",
-   "as it is",
-   "compared to"
-  ],
-  "answerIndex": 2,
-  "en": "Travelling into the city center is as convenient by subway as it is by bus."
- },
- {
-  "id": "376",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "この映画は皆が言うほど面白くない。\nThis movie (say / not / it / interesting / people / as / is / so) is.",
-  "rawAnswer": "is not so interesting as people say it",
-  "ja": "この映画は皆が言うほど面白くない。",
-  "type": "ordering",
-  "answer": "is not so interesting as people say it",
-  "pieces": [
-   "say",
-   "not",
-   "it",
-   "interesting",
-   "people",
-   "as",
-   "is",
-   "so"
-  ],
-  "en": "This movie is not so interesting as people say it is."
- },
- {
-  "id": "377",
+  "id": "1514",
   "tags": [],
-  "question": "私にはその計画をやり遂げるのに十分な資金がありません。\nI haven't got (as / as / I really / much / need / money) to complete the project.",
-  "rawAnswer": "as much money as I really need",
-  "ja": "私にはその計画をやり遂げるのに十分な資金がありません。",
-  "type": "ordering",
-  "answer": "as much money as I really need",
-  "pieces": [
-   "as",
-   "as",
-   "I really",
-   "much",
-   "need",
-   "money"
-  ],
-  "en": "I haven't got as much money as I really need to complete the project."
- },
- {
-  "id": "378",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "Traveling by air costs (　　) taking the train.",
-  "rawAnswer": "③",
-  "ja": "飛行機での移動は，電車の２倍の費用がかかる。",
-  "type": "choice",
-  "choices": [
-   "as much as twice",
-   "as much twice as",
-   "twice as much as",
-   "as twice much as"
-  ],
-  "answerIndex": 2,
-  "en": "Traveling by air costs twice as much as taking the train."
- },
- {
-  "id": "379",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "Carol is the daughter of a luxury hotel owner, and last month she bought a sports car which was (　　) as mine.",
-  "rawAnswer": "②",
-  "ja": "キャロルは高級ホテルのオーナーの娘で，先月，私の車の10倍の値段のスポーツカーを購入した。",
-  "type": "choice",
-  "choices": [
-   "as ten times expensive",
-   "ten times as expensive",
-   "more ten times expensive",
-   "ten times more expensive"
-  ],
-  "answerIndex": 1,
-  "en": "Carol is the daughter of a luxury hotel owner, and last month she bought a sports car which was ten times as expensive as mine."
- },
- {
-  "id": "380",
-  "tags": [],
-  "question": "前の事務所の大きさは新しい事務所の３分の１だった。\nOur old office (large / as / third / was / one) as our new one.",
-  "rawAnswer": "was one third as large",
-  "ja": "前の事務所の大きさは新しい事務所の３分の１だった。",
-  "type": "ordering",
-  "answer": "was one third as large",
-  "pieces": [
-   "large",
-   "as",
-   "third",
-   "was",
-   "one"
-  ],
-  "en": "Our old office was one third as large as our new one."
- },
- {
-  "id": "381",
-  "tags": [],
-  "question": "このエアコンの消費電力はあのエアコンの２分の１だ。\nThis air conditioner uses (electricity / much / as / that / one / as / half).",
-  "rawAnswer": "half as much electricity as that one",
-  "ja": "このエアコンの消費電力はあのエアコンの２分の１だ。",
-  "type": "ordering",
-  "answer": "half as much electricity as that one",
-  "pieces": [
-   "electricity",
-   "much",
-   "as",
-   "that",
-   "one",
-   "as",
-   "half"
-  ],
-  "en": "This air conditioner uses half as much electricity as that one."
- },
- {
-  "id": "382",
-  "tags": [],
-  "question": "Our new computer is almost (　　) conventional ones.",
-  "rawAnswer": "②",
-  "ja": "私たちの新しいコンピューターは従来のもののほぼ半分の大きさだ。",
-  "type": "choice",
-  "choices": [
-   "half size",
-   "half the size of",
-   "half of the size",
-   "the half size"
-  ],
-  "answerIndex": 1,
-  "en": "Our new computer is almost half the size of conventional ones."
- },
- {
-  "id": "383",
-  "tags": [],
-  "question": "A car (approximately one-tenth / runs / speed / at / of / the) a jet plane.",
-  "rawAnswer": "runs at approximately one-tenth the speed of",
-  "ja": "車はジェット機のおよそ10分の１の速さで走る。",
-  "type": "ordering",
-  "answer": "runs at approximately one-tenth the speed of",
-  "pieces": [
-   "approximately one-tenth",
-   "runs",
-   "speed",
-   "at",
-   "of",
-   "the"
-  ],
-  "en": "A car runs at approximately one-tenth the speed of a jet plane."
- },
- {
-  "id": "384",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "We didn't want to go home, so we killed (　　) at the restaurant.",
-  "rawAnswer": "②",
-  "ja": "私たちは家に帰りたくなかったので，レストランでできる限りの時間をつぶした。",
-  "type": "choice",
-  "choices": [
-   "time as much as possible",
-   "as much time as possible",
-   "as much as time",
-   "many time as we liked"
-  ],
-  "answerIndex": 1,
-  "en": "We didn't want to go home, so we killed as much time as possible at the restaurant."
- },
- {
-  "id": "385",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "Read this book (　　).",
-  "rawAnswer": "①",
-  "ja": "できるだけ注意深くこの本を読みなさい。",
-  "type": "choice",
-  "choices": [
-   "as carefully as you can",
-   "as carefully as you possible",
-   "so carefully as possible",
-   "so carefully as you can"
-  ],
-  "answerIndex": 0,
-  "en": "Read this book as carefully as you can."
- },
- {
-  "id": "386",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "(a) She is a singer rather than an actress.\n(b) She is (　　) (　　) (　　) an actress (　　) a singer.",
-  "rawAnswer": "not so much，as",
-  "ja": "(a)(b) 彼女は女優というよりも歌手だ。",
+  "question": "(a) I'm sure he will come, but why not give him a call just in (　　)?\n(b) Jane said Mark is sick. If that is the (　　), we need more staff for today.",
+  "rawAnswer": "case",
+  "ja": "(a) 彼は必ず来ると思うが，念のため彼に電話してみたらどうだろう。\n(b) ジェーンはマークが病気だと言った。もしそれが本当なら，今日はもっとスタッフが必要だ。",
   "type": "fill",
-  "answer": "not so much，as",
-  "en": "She is not so much an actress as a singer."
+  "answer": "case",
+  "en": "Jane said Mark is sick. If that is the case, we need more staff for today."
  },
  {
-  "id": "387",
+  "id": "1515",
   "tags": [],
-  "question": "He did not (　　) a word of thanks when I helped him with his assignment.",
-  "rawAnswer": "③",
-  "ja": "私が彼の宿題を手伝ったとき，彼は感謝の言葉さえ言わなかった。",
-  "type": "choice",
-  "choices": [
-   "so to say",
-   "say so much",
-   "so much as say",
-   "much as say as"
-  ],
-  "answerIndex": 2,
-  "en": "He did not so much as say a word of thanks when I helped him with his assignment."
+  "question": "(a) She (　　) her family badly since she had been away from home for two years.\n(b) I'm absolutely starving. I (　　) lunch.",
+  "rawAnswer": "missed",
+  "ja": "(a) 家を離れて２年になるので，彼女は家族がとても恋しかった。\n(b) 本当にお腹がぺこぺこなんだよ。昼食を食べそこねたんだ。",
+  "type": "fill",
+  "answer": "missed",
+  "en": "I'm absolutely starving. I missed lunch."
  },
  {
-  "id": "388",
+  "id": "1516",
   "tags": [],
-  "question": "The angry person went away without so much (　　) some apologetic words.",
-  "rawAnswer": "①",
-  "ja": "謝罪の言葉すら言わずに，その怒った人は立ち去った。",
-  "type": "choice",
-  "choices": [
-   "as saying",
-   "in saying",
-   "saying",
-   "saying about"
-  ],
-  "answerIndex": 0,
-  "en": "The angry person went away without so much as saying some apologetic words."
+  "question": "(a) You should (　　) up when an elderly person needs a seat on the train.\n(b) I cannot (　　) his behavior. He always talks too much and never listens to others.",
+  "rawAnswer": "stand",
+  "ja": "(a) 電車で高齢者が座席を必要とする場合は，（座席から）立ち上がるべきだ。\n(b) 彼の振る舞いには我慢できない。彼はいつも口数が多過ぎ，他人の言うことは決して聞こうとしない。",
+  "type": "fill",
+  "answer": "stand",
+  "en": "I cannot stand his behavior. He always talks too much and never listens to others."
  },
  {
-  "id": "389",
+  "id": "1517",
   "tags": [],
-  "question": "He is (　　) diligent a man as ever lived.",
-  "rawAnswer": "①",
-  "ja": "彼は並外れて勤勉な男だ。",
-  "type": "choice",
-  "choices": [
-   "as",
-   "such",
-   "very",
-   "more"
-  ],
-  "answerIndex": 0,
-  "en": "He is as diligent a man as ever lived."
+  "question": "(a) I took a (　　) from mowing the lawn because I was tired.\n(b) Bill asked the cashier to (　　) a hundred-dollar bill.",
+  "rawAnswer": "break",
+  "ja": "(a) 私は疲れたので，芝刈りを一休みした。\n(b) ビルはレジ係に100ドル札をくずしてくれと頼んだ。",
+  "type": "fill",
+  "answer": "break",
+  "en": "Bill asked the cashier to break a hundred-dollar bill."
  },
  {
-  "id": "390",
+  "id": "1518",
+  "tags": [
+   "基本"
+  ],
+  "question": "(a) My apartment is (　　) to the station. It's really convenient.\n(b) Will you (　　) the door? It's cold in here.",
+  "rawAnswer": "close",
+  "ja": "(a) 私のアパートは駅に近い。本当に便利だ。\n(b) ドアを閉めてくれませんか。ここは寒いので。",
+  "type": "fill",
+  "answer": "close",
+  "en": "Will you close the door? It's cold in here."
+ },
+ {
+  "id": "1519",
+  "tags": [
+   "基本"
+  ],
+  "question": "(a) I think my interview went (　　) smoothly.\n(b) Mary wore a (　　) blue dress to the dance.",
+  "rawAnswer": "pretty",
+  "ja": "(a) 私の面接はかなり円滑に進んだと思う。\n(b) メアリーはダンスパーティーにかわいらしいブルーのドレスを着て行った。",
+  "type": "fill",
+  "answer": "pretty",
+  "en": "Mary wore a pretty blue dress to the dance."
+ },
+ {
+  "id": "1520",
   "tags": [],
-  "question": "This is as difficult a task as (　　) I have ever faced.",
-  "rawAnswer": "③",
-  "ja": "これは私が今まで直面したどの課題にも劣らず困難な課題だ。",
-  "type": "choice",
-  "choices": [
-   "every",
-   "none",
-   "any",
-   "much"
-  ],
-  "answerIndex": 2,
-  "en": "This is as difficult a task as any I have ever faced."
+  "question": "(a) You should sit down and (　　) for a while.\n(b) Mr. Wang is Chinese and the (　　) of us are Japanese.",
+  "rawAnswer": "rest",
+  "ja": "(a) あなたは腰を下ろしてしばらく休憩するべきだ。\n(b) 王さんは中国人で，私たちの残りは全員日本人です。",
+  "type": "fill",
+  "answer": "rest",
+  "en": "Mr. Wang is Chinese and the rest of us are Japanese."
  },
  {
-  "id": "391",
+  "id": "1521",
   "tags": [],
-  "question": "We were surprised to hear that (　　) 200 people attended the lecture.",
-  "rawAnswer": "④",
-  "ja": "200人もの人々がその講義に出席したと聞いて，私たちは驚いた。",
-  "type": "choice",
-  "choices": [
-   "so many",
-   "as much",
-   "so much as",
-   "as many as"
-  ],
-  "answerIndex": 3,
-  "en": "We were surprised to hear that as many as 200 people attended the lecture."
+  "question": "(a) Canada is the (　　) biggest country in the world, but much of it is almost empty of people.\n(b) \"Are you coming?\" \"Just a (　　). I have to put my shoes on.\"",
+  "rawAnswer": "second",
+  "ja": "(a) カナダは世界で２番目に大きな国だが，その多くはほとんど人が住んでいない。\n(b) 「君も行きますか」「ちょっと待って。靴を履くから」",
+  "type": "fill",
+  "answer": "second",
+  "en": "\"Are you coming?\" \"Just a second. I have to put my shoes on.\""
  },
  {
-  "id": "392",
+  "id": "1522",
   "tags": [],
-  "question": "In some parts of the world, people working six or seven days a week make (　　) four dollars.",
-  "rawAnswer": "④",
-  "ja": "世界の一部の地域では，週に６，７日働いてもわずか４ドルしか稼げない人たちもいる。",
-  "type": "choice",
-  "choices": [
-   "little as",
-   "as few as",
-   "many as",
-   "as little as"
-  ],
-  "answerIndex": 3,
-  "en": "In some parts of the world, people working six or seven days a week make as little as four dollars."
+  "question": "(a) He went to the (　　) to buy some groceries.\n(b) I (　　) my winter clothes in this closet.",
+  "rawAnswer": "store",
+  "ja": "(a) 彼は食料品を買いにその店に行った。\n(b) 冬物の洋服はこのクローゼットにしまっている。",
+  "type": "fill",
+  "answer": "store",
+  "en": "I store my winter clothes in this closet."
  },
  {
-  "id": "393",
+  "id": "1523",
   "tags": [],
-  "question": "They invented printing as (　　) as the fifteenth century.",
-  "rawAnswer": "④",
-  "ja": "早くも15世紀に彼らは印刷術を発明した。",
-  "type": "choice",
-  "choices": [
-   "soon",
-   "quickly",
-   "fast",
-   "early"
-  ],
-  "answerIndex": 3,
-  "en": "They invented printing as early as the fifteenth century."
+  "question": "(a) He bought the (　　) issue of that magazine.\n(b) The (　　) in the river was very strong.",
+  "rawAnswer": "current",
+  "ja": "(a) 彼はその雑誌の最新号を買った。\n(b) その川の流れはとても激しかった。",
+  "type": "fill",
+  "answer": "current",
+  "en": "The current in the river was very strong."
  },
  {
-  "id": "394",
+  "id": "1524",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "(a) Some scientists wonder if catfish can (　　) an earthquake before it occurs.\n(b) Dogs have a keen (　　) of smell.\n(c) That is true, in a (　　).",
+  "rawAnswer": "sense",
+  "ja": "(a) ナマズは地震を事前に感知できるのだろうかと考える科学者もいる。\n(b) 犬は鋭い嗅覚を持っている。\n(c) ある意味で，そのことは本当だ。",
+  "type": "fill",
+  "answer": "sense",
+  "en": "Dogs have a keen sense of smell."
+ },
+ {
+  "id": "1525",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "(a) I'm sorry that I can't (　　) so fast.\n(b) Two of my friends (　　) nice restaurants.\n(c) He will (　　) for President in the next election.",
+  "rawAnswer": "run",
+  "ja": "(a) そんなに速く走れなくてすみません。\n(b) 私の友人の中で２人がすてきなレストランを経営している。\n(c) 彼は次の選挙で大統領に立候補するだろう。",
+  "type": "fill",
+  "answer": "run",
+  "en": "Two of my friends run nice restaurants."
+ },
+ {
+  "id": "1526",
+  "tags": [],
+  "question": "(a) He was sick yesterday, but today he looked just (　　).\n(b) A (　　) rain was falling.\n(c) She had to pay a (　　) for illegal parking.",
+  "rawAnswer": "fine",
+  "ja": "(a) 彼は昨日は病気だったが，今日はとても元気そうに見えた。\n(b) 小ぬか雨が降っていた。\n(c) 彼女は駐車違反で罰金を支払わなければならなかった。",
+  "type": "fill",
+  "answer": "fine",
+  "en": "A fine rain was falling."
+ },
+ {
+  "id": "1527",
+  "tags": [],
+  "question": "(a) What (　　) of business is he in?\n(b) Hold the (　　), please. I'll put you through to Mr. Smith.\n(c) She had to (　　) up speakers for the conference.",
+  "rawAnswer": "line",
+  "ja": "(a) 彼はどんな商売についていますか。\n(b) 少々お待ちください。スミス氏におつなぎします。\n(c) 彼女は会議で話す人を手配しなければならなかった。",
+  "type": "fill",
+  "answer": "line",
+  "en": "Hold the line, please. I'll put you through to Mr. Smith."
+ },
+ {
+  "id": "1528",
+  "tags": [],
+  "question": "(a) Can you (　　) that box on the top shelf?\n(b) If I see her, I'll tell her you've been trying to (　　) her.\n(c) Keep chemicals out of the (　　) of children.",
+  "rawAnswer": "reach",
+  "ja": "(a) いちばん上の棚にあるあの箱に手が届きますか。\n(b) 彼女に会ったら，君が彼女に連絡を取ろうとしていたと伝えます。\n(c) 化学薬品は子どもの手の届かないところに保管しなさい。",
+  "type": "fill",
+  "answer": "reach",
+  "en": "If I see her, I'll tell her you've been trying to reach her."
+ },
+ {
+  "id": "1529",
+  "tags": [],
+  "question": "(a) I have written several novels in the (　　) five years.\n(b) He is the (　　) person to do such a foolish thing.\n(c) The battery of this shaver will (　　) about one year.",
+  "rawAnswer": "last",
+  "ja": "(a) 私はこの５年間で何冊かの小説を書いた。\n(b) 彼はそんな愚かなことをするような人では決してない。\n(c) このひげそりのバッテリーは約１年もちます。",
+  "type": "fill",
+  "answer": "last",
+  "en": "He is the last person to do such a foolish thing."
+ },
+ {
+  "id": "1530",
+  "tags": [],
+  "question": "(a) The ballgame was played on a (　　) day.\n(b) It quickly became (　　) why he was chosen class president.\n(c) After a long flight, David wanted to (　　) customs quickly.",
+  "rawAnswer": "clear",
+  "ja": "(a) 晴れた日に野球の試合が行われた。\n(b) なぜ彼が学級委員長に選ばれたのかすぐに明らかになった。\n(c) 長い空の旅の後で，デイビッドはさっさと税関を通過したいと思った。",
+  "type": "fill",
+  "answer": "clear",
+  "en": "It quickly became clear why he was chosen class president."
+ },
+ {
+  "id": "1531",
+  "tags": [],
+  "question": "(a) He was given a great (　　) of work to do.\n(b) I made a (　　) with him to teach me Spanish in exchange for my teaching him guitar.\n(c) As manager of the office, I have to (　　) with all sorts of problems every day.",
+  "rawAnswer": "deal",
+  "ja": "(a) 彼はたくさんの仕事を与えられた。\n(b) 私が彼にギターを教えるのと引き換えに，彼が私にスペイン語を教えるという合意に達した。\n(c) 私は部長として毎日あらゆる問題を処理しなければならない。",
+  "type": "fill",
+  "answer": "deal",
+  "en": "I made a deal with him to teach me Spanish in exchange for my teaching him guitar."
+ },
+ {
+  "id": "1532",
+  "tags": [],
+  "question": "(a) In her present (　　) of mind, she cannot make a decision.\n(b) Hawaii is the only island (　　) of the USA.\n(c) You should (　　) your opinion clearly.",
+  "rawAnswer": "state",
+  "ja": "(a) 現在の心理状態では，彼女は決定することはできない。\n(b) ハワイはアメリカ合衆国の唯一の島の州である。\n(c) 自分の意見をはっきりと述べるべきだ。",
+  "type": "fill",
+  "answer": "state",
+  "en": "Hawaii is the only island state of the USA."
+ },
+ {
+  "id": "1533",
+  "tags": [],
+  "question": "(a) Critics (　　) out that the prince, on his income, should be paying tax.\n(b) The supports beneath the iron bridge have decayed to the (　　) where they are hazardous.\n(c) Let's stick to discussing whether the road should be built at all. The exact cost is beside the (　　).",
+  "rawAnswer": "point",
+  "ja": "(a) 王子は収入に基づいて税金を払うべきだと評論家たちは指摘している。\n(b) 鉄橋の支柱は腐食して危険な段階に達している。\n(c) そもそも道路を建設すべきかどうかという議論に専念しましょう。正確な費用は重要ではありません。",
+  "type": "fill",
+  "answer": "point",
+  "en": "The supports beneath the iron bridge have decayed to the point where they are hazardous."
+ },
+ {
+  "id": "1534",
+  "tags": [],
+  "question": "(a) There is still wide disagreement among doctors as to the (　　) of the disease.\n(b) Some people are enthusiastic about raising a fund in support of a good (　　), such as a charity.\n(c) Eating too much fat is considered to (　　) heart disease.",
+  "rawAnswer": "cause",
+  "ja": "(a) その病気の原因に関しては医者の間でまだ大きく意見が分かれている。\n(b) 慈善事業などの立派な大義を支持して熱心に資金集めをする人もいる。\n(c) 脂肪を摂りすぎることが心臓病を引き起こすと考えられている。",
+  "type": "fill",
+  "answer": "cause",
+  "en": "Some people are enthusiastic about raising a fund in support of a good cause, such as a charity."
+ },
+ {
+  "id": "1535",
+  "tags": [],
+  "question": "(a) Please bear in (　　) that the meeting starts early tomorrow.\n(b) He must be out of his (　　) to do such a thing.\n(c) Do you (　　) my smoking?\n(d) I heard the station announcement, \"(　　) the gap!\"",
+  "rawAnswer": "mind",
+  "ja": "(a) 明日の会議は早く始まることを覚えておいてください。\n(b) そんなことをするとは彼は頭がおかしいに違いない。\n(c) タバコを吸っても構いませんか。\n(d) 「電車とホームの隙間にご注意下さい」という駅のアナウンスが聞こえた。",
+  "type": "fill",
+  "answer": "mind",
+  "en": "He must be out of his mind to do such a thing."
+ },
+ {
+  "id": "1536",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "(a) This exam will be (　　) in ten minutes.\n(b) She was (　　) eighty when she started learning English.\n(c) Let's talk (　　) a cup of tea.\n(d) She is crying (　　) the loss of her dog.",
+  "rawAnswer": "over",
+  "ja": "(a) この試験は10分後に終わる。\n(b) 英語を学び始めたとき，彼女は80歳を超えていた。\n(c) お茶を飲みながら話そう。\n(d) 彼女は飼い犬を亡くしたことで泣いている。",
+  "type": "fill",
+  "answer": "over",
+  "en": "She was over eighty when she started learning English."
+ },
+ {
+  "id": "1537",
   "tags": [
    "基本",
    "超頻出"
   ],
-  "question": "Jiro's car is (　　) more economical than my car.",
-  "rawAnswer": "③",
-  "ja": "ジロウの車は私の車よりもはるかに経済的だ。",
-  "type": "choice",
-  "choices": [
-   "so",
-   "too",
-   "much",
-   "very"
-  ],
-  "answerIndex": 2,
-  "en": "Jiro's car is much more economical than my car."
- },
- {
-  "id": "395",
-  "tags": [
-   "基本"
-  ],
-  "question": "(a) Mike is not so ill-tempered as his elder brother.\n(b) Mike is (　　) ill-tempered (　　) his elder brother.",
-  "rawAnswer": "less，than",
-  "ja": "マイクは彼の兄ほど怒りっぽくない。",
+  "question": "(a) It was quite (　　) of you to refuse the offer.\n(b) If you face the north, the east is on your (　　).\n(c) Might is (　　).\n(d) The criminal is revealed (　　) at the beginning of the film.",
+  "rawAnswer": "right",
+  "ja": "(a) その申し出を断るとは君はまったく正しかった。\n(b) 北を向けば，東は右方向になる。\n(c) 力は正義なり［勝てば官軍］。〈ことわざ〉\n(d) 犯人はまさに映画の最初で明かされる。",
   "type": "fill",
-  "answer": "less，than",
-  "en": "Mike is less ill-tempered than his elder brother."
+  "answer": "right",
+  "en": "If you face the north, the east is on your right."
  },
  {
-  "id": "396",
+  "id": "1538",
   "tags": [],
-  "question": "He is (　　) than clever.",
-  "rawAnswer": "③",
-  "ja": "彼は利口というよりも聡明だ。",
-  "type": "choice",
-  "choices": [
-   "wise",
-   "wiser",
-   "more wise",
-   "the most wise"
-  ],
-  "answerIndex": 2,
-  "en": "He is more wise than clever."
- },
- {
-  "id": "397",
-  "tags": [],
-  "question": "オリオン座の星ベテルギウスは直径が太陽の700倍もある。\nBetelgeuse, a star in the constellation of Orion, has a diameter (700 / larger/ of / sun / than / that / the / times).",
-  "rawAnswer": "700 times larger than that of the sun",
-  "ja": "オリオン座の星ベテルギウスは直径が太陽の700倍もある。",
-  "type": "ordering",
-  "answer": "700 times larger than that of the sun",
-  "pieces": [
-   "700",
-   "larger",
-   "of",
-   "sun",
-   "than",
-   "that",
-   "the",
-   "times"
-  ],
-  "en": "Betelgeuse, a star in the constellation of Orion, has a diameter 700 times larger than that of the sun."
- },
- {
-  "id": "398",
-  "tags": [],
-  "question": "John is (　　) of the two boys.",
-  "rawAnswer": "③",
-  "ja": "ジョンは２人の少年のうちの背の高い方だ。",
-  "type": "choice",
-  "choices": [
-   "the most tall",
-   "taller",
-   "the taller",
-   "more tall"
-  ],
-  "answerIndex": 2,
-  "en": "John is the taller of the two boys."
- },
- {
-  "id": "399",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "(　　) went on, the more tired the players became.",
-  "rawAnswer": "③",
-  "ja": "試合が長引けば長引くほど，選手たちはますます疲れてきた。",
-  "type": "choice",
-  "choices": [
-   "The long game",
-   "The longer game",
-   "The longer the game",
-   "The longest the game"
-  ],
-  "answerIndex": 2,
-  "en": "The longer the game went on, the more tired the players became."
- },
- {
-  "id": "400",
-  "tags": [
-   "基本",
-   "超頻出"
-  ],
-  "question": "時間をかければかけるほど英語は上達する。\nThe more (you / your / the / improves / time / spend, / more / English).",
-  "rawAnswer": "time you spend, the more your English improves",
-  "ja": "時間をかければかけるほど英語は上達する。",
-  "type": "ordering",
-  "answer": "time you spend, the more your English improves",
-  "pieces": [
-   "you",
-   "your",
-   "the",
-   "improves",
-   "time",
-   "spend,",
-   "more",
-   "English"
-  ],
-  "en": "The more time you spend, the more your English improves."
- },
- {
-  "id": "401",
-  "tags": [
-   "発展"
-  ],
-  "question": "ビルは，父親が仕事で忙しいのでますます兄に頼るようになった。\nBill came to depend on (more / brother / was / his / all / his / the / because / father) busy with his job.",
-  "rawAnswer": "his brother all the more because his father was",
-  "ja": "ビルは，父親が仕事で忙しいのでますます兄に頼るようになった。",
-  "type": "ordering",
-  "answer": "his brother all the more because his father was",
-  "pieces": [
-   "more",
-   "brother",
-   "was",
-   "his",
-   "all",
-   "his",
-   "the",
-   "because",
-   "father"
-  ],
-  "en": "Bill came to depend on his brother all the more because his father was busy with his job."
- },
- {
-  "id": "402",
-  "tags": [
-   "発展"
-  ],
-  "question": "ジェームズは裕福であっても少しも幸せではない。（２語不要）\nJames is (for / happier / happy / less / none / the) his wealth.",
-  "rawAnswer": "none the happier for（happy, less不要）",
-  "ja": "ジェームズは裕福であっても少しも幸せではない。（２語不要）",
-  "type": "ordering",
-  "answer": "none the happier for",
-  "pieces": [
-   "for",
-   "happier",
-   "happy",
-   "less",
-   "none",
-   "the"
-  ],
-  "en": "James is none the happier for his wealth.",
-  "note": "happy, less不要"
- },
- {
-  "id": "403",
-  "tags": [
-   "基本"
-  ],
-  "question": "１か月以上も海外にいたら，日本食が食べたくなるでしょうね。\nI will begin to miss Japanese food (a month / I / than / more / if / stay abroad for).",
-  "rawAnswer": "if I stay abroad for more than a month",
-  "ja": "１か月以上も海外にいたら，日本食が食べたくなるでしょうね。",
-  "type": "ordering",
-  "answer": "if I stay abroad for more than a month",
-  "pieces": [
-   "a month",
-   "I",
-   "than",
-   "more",
-   "if",
-   "stay abroad for"
-  ],
-  "en": "I will begin to miss Japanese food if I stay abroad for more than a month."
- },
- {
-  "id": "404",
-  "tags": [
-   "基本"
-  ],
-  "question": "京都まではバスで２時間かかりません。\n(two hours / journey to / less than / the bus / takes / Kyoto).",
-  "rawAnswer": "The bus journey to Kyoto takes less than two hours",
-  "ja": "京都まではバスで２時間かかりません。",
-  "type": "ordering",
-  "answer": "The bus journey to Kyoto takes less than two hours",
-  "pieces": [
-   "two hours",
-   "journey to",
-   "less than",
-   "the bus",
-   "takes",
-   "Kyoto"
-  ],
-  "en": "The bus journey to Kyoto takes less than two hours."
- },
- {
-  "id": "405",
-  "tags": [],
-  "question": "I had <u>no more than</u> two thousand yen when I arrived at the station.",
-  "rawAnswer": "③",
-  "ja": "駅に着いたとき，私はわずか2,000円しか持っていなかった。",
-  "type": "choice",
-  "choices": [
-   "much",
-   "often",
-   "only",
-   "as much as"
-  ],
-  "answerIndex": 2,
-  "en": "I had no more than two thousand yen when I arrived at the station."
- },
- {
-  "id": "406",
-  "tags": [],
-  "question": "(a) The painting cost him no less than a million dollars.\n(b) He paid as (　　) as a million dollars for the painting.",
-  "rawAnswer": "②",
-  "ja": "(a) (b) 彼はその絵に100万ドルも支払った。",
-  "type": "choice",
-  "choices": [
-   "little",
-   "much",
-   "many",
-   "good"
-  ],
-  "answerIndex": 1,
-  "en": "He paid as much as a million dollars for the painting."
- },
- {
-  "id": "407",
-  "tags": [
-   "発展"
-  ],
-  "question": "A whale is (　　) a horse is.",
-  "rawAnswer": "③",
-  "ja": "馬がそうでないように，クジラも魚ではない。",
-  "type": "choice",
-  "choices": [
-   "not more a fish than",
-   "not a fish less than",
-   "no more a fish than",
-   "not less a mammal than"
-  ],
-  "answerIndex": 2,
-  "en": "A whale is no more a fish than a horse is."
- },
- {
-  "id": "408",
-  "tags": [
-   "発展"
-  ],
-  "question": "I don't believe his story (　　) than you do.",
-  "rawAnswer": "①",
-  "ja": "あなたと同様に，私も彼の話を信じません。",
-  "type": "choice",
-  "choices": [
-   "any more",
-   "as much",
-   "no more",
-   "not much"
-  ],
-  "answerIndex": 0,
-  "en": "I don't believe his story any more than you do."
- },
- {
-  "id": "409",
-  "tags": [
-   "発展"
-  ],
-  "question": "私には，彼女がアインシュタインと同じくらい頭が良いように思える。（１語不足）\nIt seems to me that (Einstein / she / than / is / no / intelligent).",
-  "rawAnswer": "she is no less intelligent than Einstein（less不足）",
-  "ja": "私には，彼女がアインシュタインと同じくらい頭が良いように思える。（１語不足）",
-  "type": "ordering",
-  "answer": "she is no less intelligent than Einstein",
-  "pieces": [
-   "Einstein",
-   "she",
-   "than",
-   "is",
-   "no",
-   "intelligent",
-   "less"
-  ],
-  "en": "It seems to me that she is no less intelligent than Einstein.",
-  "note": "1語不足の語もチップに含まれています"
- },
- {
-  "id": "410",
-  "tags": [
-   "発展"
-  ],
-  "question": "The man was none (　　) the writer the journalists had been looking for.",
-  "rawAnswer": "③",
-  "ja": "その男性は，記者たちが探していた作家に他ならなかった。",
-  "type": "choice",
-  "choices": [
-   "another than",
-   "anyone or other",
-   "other than",
-   "some than"
-  ],
-  "answerIndex": 2,
-  "en": "The man was none other than the writer the journalists had been looking for."
- },
- {
-  "id": "411",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "その子どもたちは冬に湖で泳ぐような愚かなことはしなかった。\nThe children (swim / to / in / knew / than / better / the) lake in the winter.",
-  "rawAnswer": "knew better than to swim in the",
-  "ja": "その子どもたちは冬に湖で泳ぐような愚かなことはしなかった。",
-  "type": "ordering",
-  "answer": "knew better than to swim in the",
-  "pieces": [
-   "swim",
-   "to",
-   "in",
-   "knew",
-   "than",
-   "better",
-   "the"
-  ],
-  "en": "The children knew better than to swim in the lake in the winter."
- },
- {
-  "id": "412",
-  "tags": [
-   "発展"
-  ],
-  "question": "私はほとんど英語を話せません。ドイツ語はなおさらです。（コンマを１か所用いること）\nI can (less / much / hardly / speak English / German).",
-  "rawAnswer": "hardly speak English, much less German",
-  "ja": "私はほとんど英語を話せません。ドイツ語はなおさらです。（コンマを１か所用いること）",
-  "type": "ordering",
-  "answer": "hardly speak English, much less German",
-  "pieces": [
-   "less",
-   "much",
-   "hardly",
-   "speak English",
-   "German"
-  ],
-  "en": "I can hardly speak English, much less German."
- },
- {
-  "id": "413",
-  "tags": [],
-  "question": "When he was driving ①<u>me</u> ②<u>home</u>, he told me ③<u>that</u> he was ④<u>not longer</u> living with his wife.",
-  "rawAnswer": "④→no longer",
-  "ja": "私を家まで車で送ってくれているときに，妻とはもはや一緒に暮らしていないと彼は言った。",
-  "type": "error",
-  "en": "When he was driving me home, he told me that he was no longer living with his wife.",
-  "answerIndex": 3,
-  "correction": "no longer"
- },
- {
-  "id": "414",
-  "tags": [],
-  "question": "Our teacher has told us that DVDs are (　　) videotapes for foreign language learning.",
-  "rawAnswer": "①",
-  "ja": "私たちの先生は，外国語を学ぶためにはビデオテープよりもDVDの方が優れていると言っている。",
-  "type": "choice",
-  "choices": [
-   "superior to",
-   "more better than",
-   "such good as",
-   "useful than"
-  ],
-  "answerIndex": 0,
-  "en": "Our teacher has told us that DVDs are superior to videotapes for foreign language learning."
- },
- {
-  "id": "415",
-  "tags": [
-   "基本"
-  ],
-  "question": "I prefer staying home (　　) going out on Sundays.",
-  "rawAnswer": "④",
-  "ja": "私は，日曜日は外出するよりも家にいたい。",
-  "type": "choice",
-  "choices": [
-   "by",
-   "for",
-   "from",
-   "to"
-  ],
-  "answerIndex": 3,
-  "en": "I prefer staying home to going out on Sundays."
- },
- {
-  "id": "416",
-  "tags": [],
-  "question": "Although he only joined the firm last year, he is (　　) to me already.",
-  "rawAnswer": "③",
-  "ja": "彼は去年，入社したばかりだが，すでに僕よりも地位が上である。",
-  "type": "choice",
-  "choices": [
-   "better",
-   "higher",
-   "senior",
-   "older"
-  ],
-  "answerIndex": 2,
-  "en": "Although he only joined the firm last year, he is senior to me already."
- },
- {
-  "id": "417",
-  "tags": [
-   "基本"
-  ],
-  "question": "Diamonds are (　　) all substances; they can be cut only by other diamonds.",
-  "rawAnswer": "①",
-  "ja": "ダイヤモンドはあらゆる物質の中で最も硬く，別のダイヤモンドによってしか切ることができない。",
-  "type": "choice",
-  "choices": [
-   "the hardest of",
-   "more than hard",
-   "harder of",
-   "hardest"
-  ],
-  "answerIndex": 0,
-  "en": "Diamonds are the hardest of all substances; they can be cut only by other diamonds."
- },
- {
-  "id": "418",
-  "tags": [],
-  "question": "Of ①<u>all the films</u> released this month, ②<u>the one</u> with ③<u>lots of</u> special effects is ④<u>too</u> far the most exciting.",
-  "rawAnswer": "④→by",
-  "ja": "今月公開されたすべての映画の中では，特殊効果をふんだんに用いたその映画がずばぬけておもしろい。",
-  "type": "error",
-  "en": "Of all the films released this month, the one with lots of special effects is by far the most exciting.",
-  "answerIndex": 3,
-  "correction": "by"
- },
- {
-  "id": "419",
-  "tags": [],
-  "question": "これは私が今までにエッセイを書いたテーマの中でも飛びぬけてすばらしい。\nThis is (theme / on / the / best / very) which I have ever written an essay.",
-  "rawAnswer": "the very best theme on",
-  "ja": "これは私が今までにエッセイを書いたテーマの中でも飛びぬけてすばらしい。",
-  "type": "ordering",
-  "answer": "the very best theme on",
-  "pieces": [
-   "theme",
-   "on",
-   "the",
-   "best",
-   "very"
-  ],
-  "en": "This is the very best theme on which I have ever written an essay."
- },
- {
-  "id": "420",
-  "tags": [],
-  "question": "This shopping mall is the second (　　) one in New York.",
-  "rawAnswer": "③",
-  "ja": "このショッピングモールはニューヨークで２番目に大きいものだ。",
-  "type": "choice",
-  "choices": [
-   "large",
-   "larger",
-   "largest",
-   "as large"
-  ],
-  "answerIndex": 2,
-  "en": "This shopping mall is the second largest one in New York."
- },
- {
-  "id": "421",
-  "tags": [],
-  "question": "①<u>Although</u> it is ②<u>neither</u> new nor big, the house we bought ③<u>is</u> one of the most elegant ④<u>building</u> in this city.",
-  "rawAnswer": "④→buildings",
-  "ja": "新しくもなく大きくもないが，私たちが買った家は，この街で最も洗練された建物の１つだ。",
-  "type": "error",
-  "en": "Although it is neither new nor big, the house we bought is one of the most elegant buildings in this city.",
-  "answerIndex": 3,
-  "correction": "buildings"
- },
- {
-  "id": "422",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "The curry at that restaurant is (　　) I've ever had.",
-  "rawAnswer": "②",
-  "ja": "あのレストランのカレーは今まで食べた中で一番まずい。",
-  "type": "choice",
-  "choices": [
-   "much worse",
-   "the worst",
-   "too bad",
-   "worse"
-  ],
-  "answerIndex": 1,
-  "en": "The curry at that restaurant is the worst I've ever had."
- },
- {
-  "id": "423",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "こんなに賢いロボットは見たことがない。\nThis is (seen / cleverest / have / ever / robot / I / the).",
-  "rawAnswer": "the cleverest robot I have ever seen",
-  "ja": "こんなに賢いロボットは見たことがない。",
-  "type": "ordering",
-  "answer": "the cleverest robot I have ever seen",
-  "pieces": [
-   "seen",
-   "cleverest",
-   "have",
-   "ever",
-   "robot",
-   "I",
-   "the"
-  ],
-  "en": "This is the cleverest robot I have ever seen."
- },
- {
-  "id": "424",
-  "tags": [],
-  "question": "(　　) least 530 of them died in this fire.",
-  "rawAnswer": "③",
-  "ja": "この火災で彼らのうち少なくとも530名が死亡した。",
-  "type": "choice",
-  "choices": [
-   "Among",
-   "For",
-   "At",
-   "During"
-  ],
-  "answerIndex": 2,
-  "en": "At least 530 of them died in this fire."
- },
- {
-  "id": "425",
-  "tags": [],
-  "question": "その男の子はこのクラスで一番利口だ。\n(other / as smart / student / is / as / no / in this class) the boy.",
-  "rawAnswer": "No other student in this class is as smart as",
-  "ja": "その男の子はこのクラスで一番利口だ。",
-  "type": "ordering",
-  "answer": "No other student in this class is as smart as",
-  "pieces": [
-   "other",
-   "as smart",
-   "student",
-   "is",
-   "as",
-   "no",
-   "in this class"
-  ],
-  "en": "No other student in this class is as smart as the boy."
- },
- {
-  "id": "426",
-  "tags": [],
-  "question": "(　　) is so precious as time.",
-  "rawAnswer": "③",
-  "ja": "時間ほど貴重なものはない。",
-  "type": "choice",
-  "choices": [
-   "Anything",
-   "Everything",
-   "Nothing",
-   "Something"
-  ],
-  "answerIndex": 2,
-  "en": "Nothing is so precious as time."
- },
- {
-  "id": "427",
-  "tags": [],
-  "question": "日本には，富士山ほど高い山は他にない。\nNo (mountain / Japan / than / higher / other / is / in) Mt. Fuji.",
-  "rawAnswer": "other mountain in Japan is higher than",
-  "ja": "日本には，富士山ほど高い山は他にない。",
-  "type": "ordering",
-  "answer": "other mountain in Japan is higher than",
-  "pieces": [
-   "mountain",
-   "Japan",
-   "than",
-   "higher",
-   "other",
-   "is",
-   "in"
-  ],
-  "en": "No other mountain in Japan is higher than Mt. Fuji."
- },
- {
-  "id": "428",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "私に関する限り，今は健康が一番大切なのだ。\nAs for myself, (　　) (　　) (　　) precious than my health now.",
-  "rawAnswer": "nothing is more",
-  "ja": "私に関する限り，今は健康が一番大切なのだ。",
+  "question": "(a) My father earns a six- (　　) salary.\n(b) He's become a public (　　).\n(c) Miki is a (　　) skater.\n(d) I can't (　　) out why she said so.",
+  "rawAnswer": "figure",
+  "ja": "(a) 父は６<ruby>桁<rt>けた<rt></ruby>.の給与を稼ぐ。（父は何十万ドルも稼ぐ）\n(b) 彼は有名人になった。\n(c) ミキはフィギュアスケートの選手だ。\n(d) なぜ彼女がそんなことを言ったのか理解できない。",
   "type": "fill",
-  "answer": "nothing is more",
-  "en": "As for myself, nothing is more precious than my health now."
+  "answer": "figure",
+  "en": "He's become a public figure."
  },
  {
-  "id": "429",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "(a) The ostrich is the largest bird in the world.\n(b) The ostrich is larger than (　　) (　　) (　　) in the world.",
-  "rawAnswer": "any other bird",
-  "ja": "(a) ダチョウは世界最大の鳥だ。\n(b) ダチョウは世界中の他のどの鳥よりも大きい。",
-  "type": "fill",
-  "answer": "any other bird",
-  "en": "The ostrich is larger than any other bird in the world."
- },
- {
-  "id": "430",
+  "id": "1539",
   "tags": [],
-  "question": "Time is more precious than (　　).",
-  "rawAnswer": "②",
-  "ja": "時間は他の何よりも貴重なものだ。",
-  "type": "choice",
-  "choices": [
-   "all things",
-   "anything else",
-   "everything",
-   "nothing"
-  ],
-  "answerIndex": 1,
-  "en": "Time is more precious than anything else."
+  "question": "(a) Her husband is so (　　) with money.\n(b) Rembrandt lived in a (　　) house in a (　　) street.\n(c) What does that sign (　　)?\n(d) This new project will (　　) working overtime.",
+  "rawAnswer": "mean",
+  "ja": "(a) 彼女の夫はお金にとてもけちだ。\n(b) レンブラントはみすぼらしい通りのみすぼらしい家に住んでいた。\n(c) その標識の意味は何ですか。\n(d) この新プロジェクトを始めると，残業をすることになるだろう。",
+  "type": "fill",
+  "answer": "mean",
+  "en": "Rembrandt lived in a mean house in a mean street."
+ },
+ {
+  "id": "1540",
+  "tags": [],
+  "question": "(a) He had a (　　) sleep last night.\n(b) A (　　) mind in a (　　) body.\n(c) My dog went out of the house without making a (　　).\n(d) The two words, \"son\" and \"sun,\" (　　) the same, but they are spelled differently.",
+  "rawAnswer": "sound",
+  "ja": "(a) 彼は昨晩熟睡した。\n(b) 健全な肉体には健全な精神が宿る。〈ことわざ〉\n(c) 私の犬は音を立てずに家の外へ出た。\n(d) 「son（息子）」と「sun（太陽）」という２つの単語の発音は同じだが，つづりは異なる。",
+  "type": "fill",
+  "answer": "sound",
+  "en": "A sound mind in a sound body."
+ },
+ {
+  "id": "1541",
+  "tags": [],
+  "question": "(a) The opera singer had to give up the title role in Carmen (　　) to a bad cold.\n(b) The report is (　　) on Wednesday, but I haven't even started to write it.\n(c) The matter will be settled in (　　) course of time.\n(b) The professor was satisfied because he was treated with (　　) respect.\n(e) Her first baby is (　　) in June.",
+  "rawAnswer": "due",
+  "ja": "(a) ひどい風邪のせいで，そのオペラ歌手はカルメンの主役をあきらめなければならなかった。\n(b) そのレポートの締め切りは水曜日だが，まだ書き始めてすらいない。\n(c) その問題はそのうち解決するだろう。\n(d) しかるべき敬意をもって扱われたので，その教授は満足した。\n(e) 彼女の初めての子どもは６月に生まれる予定だ。",
+  "type": "fill",
+  "answer": "due",
+  "en": "The report is due on Wednesday, but I haven't even started to write it."
  }
 ];
 
@@ -1760,7 +1064,7 @@
                 <strong>解答:</strong> <span class="en">${answerSummary(i)}</span>
                 ${i.en ? `<br><span class="en">${i.en}</span>` : ''}
                 ${i.ja ? `<br><span class="ja">${i.ja.replace(/\n/g, '<br>')}</span>` : ''}</li>`).join('')}</ol>`;
-            openPrintWindow(html, '第11章　比較 問題リスト');
+            openPrintWindow(html, '第29章　重要多義語 問題リスト');
         };
 
         document.getElementById('download-choice-btn').onclick = () => {
@@ -1768,7 +1072,7 @@
             if (!requireSelection(items, '4択・誤り指摘テスト')) return;
             const html = `<ol>${items.map(pdfChoiceItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${answerSummary(i)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第11章　比較 4択・誤り指摘テスト');
+            openPrintWindow(html, '第29章　重要多義語 4択・誤り指摘テスト');
         };
 
         document.getElementById('download-blank-btn').onclick = () => {
@@ -1777,7 +1081,7 @@
             const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}
                 ${i.ja && i.type === 'choice' ? `<br><span class="ja">${i.ja.split('\n')[0]}</span>` : ''}</li>`).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${i.type === 'choice' ? i.choices[i.answerIndex] : (i.answer || i.rawAnswer)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第11章　比較 空所補充テスト');
+            openPrintWindow(html, '第29章　重要多義語 空所補充テスト');
         };
 
         document.getElementById('download-ordering-btn').onclick = () => {
@@ -1785,7 +1089,7 @@
             if (!requireSelection(items, '整序英作文テスト')) return;
             const html = `<ol>${items.map(pdfOrderingItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第11章　比較 整序英作文テスト');
+            openPrintWindow(html, '第29章　重要多義語 整序英作文テスト');
         };
 
         document.getElementById('download-composition-btn').onclick = () => {
@@ -1793,7 +1097,7 @@
             if (!requireSelection(items, '和文英訳テスト')) return;
             const html = `<ol>${items.map(pdfCompositionItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第11章　比較 和文英訳テスト');
+            openPrintWindow(html, '第29章　重要多義語 和文英訳テスト');
         };
 
         document.getElementById('download-mixed-btn').onclick = () => {
@@ -1807,7 +1111,7 @@
                 return `<li>[${i.id}] ${blankQuestionText(i)}</li>`;
             }).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en || answerSummary(i)}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第11章　比較 ランダム混合テスト');
+            openPrintWindow(html, '第29章　重要多義語 ランダム混合テスト');
         };
 
         // --- Event wiring ---
@@ -1845,7 +1149,7 @@
         const db = getFirestore(app);
 
         // Vintage のデータは 'vintage_' プレフィックスで LEAP のデータと分離する
-        const appId = "vintage_chapter11";
+        const appId = "vintage_chapter29";
 
         window.localMasteredProblems = {};
 

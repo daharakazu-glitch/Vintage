@@ -11,7 +11,7 @@
       "ja": "(a) 彼は彼女に，「君ならこの質問に答えられるかもしれない」と言った。\n(b) 彼は，彼女ならその質問に答えられるかもしれないと彼女に言った。",
       "type": "fill",
       "answer": "told, she might",
-      "en": "He told, she might her that told, she might be able to answer that question."
+      "en": "He told her that she might be able to answer that question."
     },
     {
       "id": "521",
@@ -47,7 +47,7 @@
       "ja": "(a)「ドライブに行こう」と彼は私たちに言った。\n(b) 私たちがドライブに行くことを彼は提案した。",
       "type": "fill",
       "answer": "suggested[proposed], we should",
-      "en": "He suggested[proposed], we should that suggested[proposed], we should go for a drive."
+      "en": "He suggested that we should go for a drive."
     },
     {
       "id": "524",
@@ -57,7 +57,7 @@
       "ja": "(a) 彼は，「忙しいですか」と私に言った。\n(b) 彼は，忙しいかどうか私に尋ねた。",
       "type": "fill",
       "answer": "asked, if[whether] I was",
-      "en": "He asked, if[whether] I was me asked, if[whether] I was busy."
+      "en": "He asked me if I was busy."
     },
     {
       "id": "525",
@@ -67,7 +67,7 @@
       "ja": "(a) 彼は，「彼女はどこに住んでいますか」と私に言った。\n(b) 彼は，彼女がどこに住んでいるのか私に尋ねた。",
       "type": "fill",
       "answer": "asked, where, lived",
-      "en": "He asked, where, lived me asked, where, lived she asked, where, lived."
+      "en": "He asked me where she lived."
     }
   ]
 }

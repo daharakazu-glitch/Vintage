@@ -97,6 +97,23 @@ def fill_blanks(text, answer):
     return re.sub(r'\s+([,.!?;:])', r'\1', re.sub(r'  +', ' ', result)).strip()
 
 
+def fill_answer_blanks(text, answer):
+    """fill 問題の正解文を作る。会話表現 (■1330 'time, see' など) では
+    カンマ区切りの解答が複数の空所に順番に対応する。"""
+    ans = re.sub(r'\[[^\]]*\]', '', answer.split('/')[0]).strip()  # 別解 [..] を除去
+    parts = [p.strip() for p in re.split(r'[，,]', ans) if p.strip()]
+    runs = BLANK_RUN_RE.findall(text)
+    if len(parts) > 1 and len(parts) == len(runs):
+        it = iter(parts)
+        result = BLANK_RUN_RE.sub(lambda _: next(it) + ' ', text)
+    else:
+        result = BLANK_RUN_RE.sub((ans if len(parts) <= 1 else parts[0]) + ' ', text)
+    # '... = 言い換え' の別表現や話者ラベルは音声用の文からは外す
+    result = re.split(r'\s*=\s*', result)[0]
+    result = re.sub(r'^[AB]\s*[:：]\s*', '', result.strip())
+    return re.sub(r'\s+([,.!?;:])', r'\1', re.sub(r'  +', ' ', result)).strip()
+
+
 def strip_ab_label(line):
     return re.sub(r'^\([ab]\)\s*', '', line).strip()
 
@@ -154,11 +171,15 @@ def parse_problem(num, lines):
 
     answer = ANSWER_OVERRIDES.get(num, answer)
 
-    # 選択肢行 (①で始まる行)。意味一致問題などでは選択肢が複数行に分かれる
+    # 選択肢行 (①で始まる行)。意味一致問題などでは選択肢が複数行に分かれる。
+    # 下線部の用法選択問題 (■1559) では下線 <u> を含む英文の選択肢が4行並ぶ
+    marked = [l for l in body if re.match(r'^[①②③④]', l) and '<u>' in l]
+    underlined_as_choices = len(marked) >= 2
     choice_lines = []
     q_lines = []
     for line in body:
-        if re.match(r'^[①②③④]', line) and '<u>' not in line:
+        if re.match(r'^[①②③④]', line) and (
+                '<u>' not in line or underlined_as_choices):
             choice_lines.append(line)
         else:
             q_lines.append(line)
@@ -210,6 +231,10 @@ def parse_problem(num, lines):
     elif has_ordering:
         prob['type'] = 'ordering'
         clean = strip_fuyou(answer)
+        # ことわざ問題 (■1309) は問題文で与え済みの部分が '(A bird) ... (in the bush.)'
+        # のように括弧で示されるため、並べ替え対象の語句だけを解答とする
+        if re.search(r'\([^()]+\)', clean):
+            clean = re.sub(r'\s+', ' ', re.sub(r'\([^()]+\)', '', clean)).strip()
         prob['answer'] = clean
         m = ORDERING_RE.search(question)
         prob['pieces'] = [p.strip() for p in m.group(1).split('/')]
@@ -242,7 +267,8 @@ def parse_problem(num, lines):
         prob['answer'] = answer
         en_lines = [l for l in en_q if BLANK_RE.search(l) or HINT_BLANK_RE.search(l)]
         b_lines = [l for l in en_lines if l.startswith('(b)')]
-        base = strip_ab_label(b_lines[0] if b_lines else (en_lines[0] if en_lines else ''))
+        # 会話表現では空所が複数行 (両話者の発話) にまたがるため結合する
+        base = strip_ab_label(b_lines[0] if b_lines else ' '.join(en_lines))
         # '(a) any　(b) No' のように (a)(b) 個別の解答を持つ場合は (b) の文を採用
         ab = re.match(r'\(a\)\s*(.+?)[ 　]+\(b\)\s*(.+)', answer)
         if ab and b_lines:
@@ -260,7 +286,7 @@ def parse_problem(num, lines):
                     r'  +', ' ', HINT_BLANK_RE.sub(' '.join(words), base, count=1)
                     .replace('( ', '').replace('　)', ''))).strip()
         else:
-            prob['en'] = fill_blanks(base, answer) if base else ''
+            prob['en'] = fill_answer_blanks(base, answer) if base else ''
     else:
         prob['type'] = 'rewrite'
         prob['answer'] = answer
