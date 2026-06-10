@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage学習アプリ (第15章　語順（倒置）・省略・強調)</title>
+    <title>Vintage学習アプリ (第16章　話法)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Tinos:wght@700&display=swap');
@@ -111,7 +111,7 @@
         <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-4xl flex-grow flex flex-col">
             <header class="flex-shrink-0 text-center mb-4 bg-green-800 p-4 rounded-xl shadow-lg">
                 <h1 class="text-2xl md:text-3xl font-bold text-white">Vintage 学習アプリ</h1>
-                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第15章　語順（倒置）・省略・強調</h2>
+                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第16章　話法</h2>
             </header>
 
             <main class="flex-grow bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-lg mb-2">
@@ -186,471 +186,70 @@
         // --- App State ---
         const chapterData = [
  {
-  "id": "494",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "Never (　　) I dream of making a fortune by investing in the stock market.",
-  "rawAnswer": "②",
-  "ja": "株式市場に投資して財産を築くなどとは，夢にも思わなかった。",
-  "type": "choice",
-  "choices": [
-   "had",
-   "did",
-   "am",
-   "have"
-  ],
-  "answerIndex": 1,
-  "en": "Never did I dream of making a fortune by investing in the stock market."
- },
- {
-  "id": "495",
+  "id": "520",
   "tags": [],
-  "question": "我々は，彼がその試合に負けるなどとは思ってもみなかった。（１語不要）\n(　　) (　　) (　　) (　　) (　　) he would lose the game.\n(think / did / that / little / we / no)",
-  "rawAnswer": "Little did we think that（no不要）",
-  "ja": "我々は，彼がその試合に負けるなどとは思ってもみなかった。（１語不要）",
-  "type": "ordering",
-  "answer": "Little did we think that",
-  "pieces": [
-   "think",
-   "did",
-   "that",
-   "little",
-   "we",
-   "no"
-  ],
-  "en": "Little did we think that he would lose the game.",
-  "note": "no不要"
+  "question": "(a) He said to her, \"You may be able to answer this question.”\n(b) He (　　) her that (　　) (　　) be able to answer that question.",
+  "rawAnswer": "told, she might",
+  "ja": "(a) 彼は彼女に，「君ならこの質問に答えられるかもしれない」と言った。\n(b) 彼は，彼女ならその質問に答えられるかもしれないと彼女に言った。",
+  "type": "fill",
+  "answer": "told, she might",
+  "en": "He told, she might her that told, she might be able to answer that question."
  },
  {
-  "id": "496",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "今ほど緊張したことはこれまでになかった。\nAt (been / have / I / more nervous / no / time) than I am now.",
-  "rawAnswer": "no time have I been more nervous",
-  "ja": "今ほど緊張したことはこれまでになかった。",
-  "type": "ordering",
-  "answer": "no time have I been more nervous",
-  "pieces": [
-   "been",
-   "have",
-   "I",
-   "more nervous",
-   "no",
-   "time"
-  ],
-  "en": "At no time have I been more nervous than I am now."
- },
- {
-  "id": "497",
+  "id": "521",
   "tags": [],
-  "question": "労働者は賃上げを要求するだけでなく，労働時間の削減も望んでいる。\nNot (a pay increase / do / only / the workers / want), but they also want reduced hours.",
-  "rawAnswer": "only do the workers want a pay increase",
-  "ja": "労働者は賃上げを要求するだけでなく，労働時間の削減も望んでいる。",
-  "type": "ordering",
-  "answer": "only do the workers want a pay increase",
-  "pieces": [
-   "a pay increase",
-   "do",
-   "only",
-   "the workers",
-   "want"
-  ],
-  "en": "Not only do the workers want a pay increase, but they also want reduced hours."
- },
- {
-  "id": "498",
-  "tags": [],
-  "question": "最近になってようやく，親の教えの大切さがわかった。\nOnly (have/ I / importance / lessons / my / of / parents' / realized / recently / the).",
-  "rawAnswer": "recently have I realized the importance of my parents' lessons",
-  "ja": "最近になってようやく，親の教えの大切さがわかった。",
-  "type": "ordering",
-  "answer": "recently have I realized the importance of my parents' lessons",
-  "pieces": [
-   "have",
-   "I",
-   "importance",
-   "lessons",
-   "my",
-   "of",
-   "parents'",
-   "realized",
-   "recently",
-   "the"
-  ],
-  "en": "Only recently have I realized the importance of my parents' lessons."
- },
- {
-  "id": "499",
-  "tags": [],
-  "question": "そのオペラはイタリア語で公演され，私には一言もわからなかったし，そのストーリーも知らなかった。\nThe opera was performed in Italian, and I did not understand a word of it, (the story / I / did / know / nor).",
-  "rawAnswer": "nor did I know the story",
-  "ja": "そのオペラはイタリア語で公演され，私には一言もわからなかったし，そのストーリーも知らなかった。",
-  "type": "ordering",
-  "answer": "nor did I know the story",
-  "pieces": [
-   "the story",
-   "I",
-   "did",
-   "know",
-   "nor"
-  ],
-  "en": "The opera was performed in Italian, and I did not understand a word of it, nor did I know the story."
- },
- {
-  "id": "500",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "\"I haven't been here before.\"　\"Is that so? (　　).\"",
-  "rawAnswer": "④",
-  "ja": "「ここには今まで来たことがない」「そうですか？ 私もありません」",
-  "type": "choice",
-  "choices": [
-   "I haven't neither",
-   "Nor I haven't",
-   "I neither did",
-   "Neither have I"
-  ],
-  "answerIndex": 3,
-  "en": "\"I haven't been here before.\"　\"Is that so? Neither have I.\""
- },
- {
-  "id": "501",
-  "tags": [],
-  "question": "\"I didn't make any mistakes in the math quiz!\"　\"(　　) did I.\"",
+  "question": "(a) My mother said to me, \"Don't talk to wolves in the woods.\"\n(b) My mother told (　　) in the woods.",
   "rawAnswer": "③",
-  "ja": "「数学の小テストで１問もミスをしなかったぞ！」「僕もしなかったよ」",
+  "ja": "(a) 「森でオオカミに話しかけてはいけません」と母は私に言った。\n(b) 森でオオカミに話しかけないようにと母は私に言った。",
   "type": "choice",
   "choices": [
-   "Also",
-   "But",
-   "Nor",
-   "Yet"
+   "me to speak not wolves",
+   "not to me talk to wolves",
+   "me not to talk to wolves",
+   "to me not to speak wolves"
   ],
   "answerIndex": 2,
-  "en": "\"I didn't make any mistakes in the math quiz!\"　\"Nor did I.\""
+  "en": "My mother told me not to talk to wolves in the woods."
  },
  {
-  "id": "502",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "As fuel prices rose, bus companies raised their fares and (　　).",
-  "rawAnswer": "①",
-  "ja": "燃料の価格が上がったので，バス会社は運賃を引き上げ，航空会社も同様にした。",
-  "type": "choice",
-  "choices": [
-   "so did the airlines",
-   "neither did the airlines",
-   "so the airlines have done",
-   "neither the airlines did"
-  ],
-  "answerIndex": 0,
-  "en": "As fuel prices rose, bus companies raised their fares and so did the airlines."
- },
- {
-  "id": "503",
+  "id": "522",
   "tags": [],
-  "question": "先週の日曜日はとても天気が良かったので田舎にドライブに出かけた。\nLast Sunday was (beautiful / day / that / we / a / so) took a drive in the country.",
-  "rawAnswer": "so beautiful a day that we",
-  "ja": "先週の日曜日はとても天気が良かったので田舎にドライブに出かけた。",
-  "type": "ordering",
-  "answer": "so beautiful a day that we",
-  "pieces": [
-   "beautiful",
-   "day",
-   "that",
-   "we",
-   "a",
-   "so"
-  ],
-  "en": "Last Sunday was so beautiful a day that we took a drive in the country."
+  "question": "(a) He said to us, \"Please don't wait for me if I am late.\"\n(b) He asked us (　　) (　　) wait for him if he was late.",
+  "rawAnswer": "not to",
+  "ja": "(a) 彼は私たちに「もし私が遅れたら私を待たないでください」と言った。\n(b) 彼は私たちにもし彼が遅れたら待たないようにと言った。",
+  "type": "fill",
+  "answer": "not to",
+  "en": "He asked us not to wait for him if he was late."
  },
  {
-  "id": "504",
+  "id": "523",
   "tags": [],
-  "question": "Chopin (as / a / good / as / pianist / was) a composer.",
-  "rawAnswer": "was as good a pianist as",
-  "ja": "ショパンは優れた作曲家であり，同時にすばらしいピアニストでもあった。",
-  "type": "ordering",
-  "answer": "was as good a pianist as",
-  "pieces": [
-   "as",
-   "a",
-   "good",
-   "as",
-   "pianist",
-   "was"
-  ],
-  "en": "Chopin was as good a pianist as a composer."
+  "question": "(a) He said to us, \"Let's go for a drive.\"\n(b) He (　　) that (　　) (　　) go for a drive.",
+  "rawAnswer": "suggested[proposed], we should",
+  "ja": "(a)「ドライブに行こう」と彼は私たちに言った。\n(b) 私たちがドライブに行くことを彼は提案した。",
+  "type": "fill",
+  "answer": "suggested[proposed], we should",
+  "en": "He suggested[proposed], we should that suggested[proposed], we should go for a drive."
  },
  {
-  "id": "505",
+  "id": "524",
   "tags": [],
-  "question": "It was much (　　) problem, so nobody was able to solve it.",
-  "rawAnswer": "④",
-  "ja": "それはあまりに難解な問題だったので，だれも解くことができなかった。",
-  "type": "choice",
-  "choices": [
-   "a too difficult",
-   "too a difficult",
-   "too difficult",
-   "too difficult a"
-  ],
-  "answerIndex": 3,
-  "en": "It was much too difficult a problem, so nobody was able to solve it."
+  "question": "(a) He said to me, \"Are you busy?\"\n(b) He (　　) me (　　) (　　) (　　) busy.",
+  "rawAnswer": "asked, if[whether] I was",
+  "ja": "(a) 彼は，「忙しいですか」と私に言った。\n(b) 彼は，忙しいかどうか私に尋ねた。",
+  "type": "fill",
+  "answer": "asked, if[whether] I was",
+  "en": "He asked, if[whether] I was me asked, if[whether] I was busy."
  },
  {
-  "id": "506",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "I think he is (　　) teacher.",
-  "rawAnswer": "②",
-  "ja": "彼はとても忍耐強い教師だと思います。",
-  "type": "choice",
-  "choices": [
-   "a so patient",
-   "such a patient",
-   "so a patient",
-   "a such patient"
-  ],
-  "answerIndex": 1,
-  "en": "I think he is such a patient teacher."
- },
- {
-  "id": "507",
-  "tags": [
-   "基本"
-  ],
-  "question": "My child leaves her toys all over the room and I have to pick (　　).",
-  "rawAnswer": "①",
-  "ja": "子どもが部屋中におもちゃを放りっぱなしにするので，私が拾い集めないといけない。",
-  "type": "choice",
-  "choices": [
-   "them up",
-   "themselves up",
-   "up them",
-   "up themselves"
-  ],
-  "answerIndex": 0,
-  "en": "My child leaves her toys all over the room and I have to pick them up."
- },
- {
-  "id": "508",
+  "id": "525",
   "tags": [],
-  "question": "Among the audience (　　) the President and her daughter.",
-  "rawAnswer": "④",
-  "ja": "観客の中には大統領とその娘がいた。",
-  "type": "choice",
-  "choices": [
-   "being",
-   "having been",
-   "was",
-   "were"
-  ],
-  "answerIndex": 3,
-  "en": "Among the audience were the President and her daughter."
- },
- {
-  "id": "509",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "The lady is very quiet and doesn't speak unless (　　).",
-  "rawAnswer": "①",
-  "ja": "その女性はとても物静かで，話しかけられない限り，口をきくことはない。",
-  "type": "choice",
-  "choices": [
-   "spoken to",
-   "she is not spoken",
-   "she speaks",
-   "never speaking"
-  ],
-  "answerIndex": 0,
-  "en": "The lady is very quiet and doesn't speak unless spoken to."
- },
- {
-  "id": "510",
-  "tags": [],
-  "question": "There are few mistakes, if (　　), in this long essay.",
-  "rawAnswer": "②",
-  "ja": "この長い作文には，たとえあるにしても，ほとんど間違いはない。",
-  "type": "choice",
-  "choices": [
-   "some",
-   "any",
-   "even",
-   "there are"
-  ],
-  "answerIndex": 1,
-  "en": "There are few mistakes, if any, in this long essay."
- },
- {
-  "id": "511",
-  "tags": [],
-  "question": "Mr. and Mrs. Thatcher seldom, if (　　), go out in the evening.",
-  "rawAnswer": "④",
-  "ja": "サッチャー夫妻は，たとえあるにしても，めったに夜は外出しない。",
-  "type": "choice",
-  "choices": [
-   "any",
-   "few",
-   "little",
-   "ever"
-  ],
-  "answerIndex": 3,
-  "en": "Mr. and Mrs. Thatcher seldom, if ever, go out in the evening."
- },
- {
-  "id": "512",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "君に解いてもらいたいのは他でもなくこの問題なんだ。\nIt is this question (solve / I / to / you / want / that).",
-  "rawAnswer": "that I want you to solve",
-  "ja": "君に解いてもらいたいのは他でもなくこの問題なんだ。",
-  "type": "ordering",
-  "answer": "that I want you to solve",
-  "pieces": [
-   "solve",
-   "I",
-   "to",
-   "you",
-   "want",
-   "that"
-  ],
-  "en": "It is this question that I want you to solve."
- },
- {
-  "id": "513",
-  "tags": [],
-  "question": "It was because he was ill (　　) we gave up traveling.",
-  "rawAnswer": "④",
-  "ja": "私たちが旅行をやめたのは，彼が病気だったからだ。",
-  "type": "choice",
-  "choices": [
-   "as",
-   "for",
-   "so",
-   "that"
-  ],
-  "answerIndex": 3,
-  "en": "It was because he was ill that we gave up traveling."
- },
- {
-  "id": "514",
-  "tags": [],
-  "question": "警察が到着したのは，事故があって２時間も経ってからでした。\nIt was (after / not / that / the accident / the police / two hours / until) arrived.",
-  "rawAnswer": "not until two hours after the accident that the police",
-  "ja": "警察が到着したのは，事故があって２時間も経ってからでした。",
-  "type": "ordering",
-  "answer": "not until two hours after the accident that the police",
-  "pieces": [
-   "after",
-   "not",
-   "that",
-   "the accident",
-   "the police",
-   "two hours",
-   "until"
-  ],
-  "en": "It was not until two hours after the accident that the police arrived."
- },
- {
-  "id": "515",
-  "tags": [],
-  "question": "(　　) you went into the room with?",
-  "rawAnswer": "④",
-  "ja": "その部屋にあなたと一緒に入った人はいったい誰だったのですか。",
-  "type": "choice",
-  "choices": [
-   "Who she was",
-   "What is she",
-   "Who it was that",
-   "Who was it that"
-  ],
-  "answerIndex": 3,
-  "en": "Who was it that you went into the room with?"
- },
- {
-  "id": "516",
-  "tags": [],
-  "question": "子どもたちが育つ世界は大人が創っている。\n(adults / children / create / it is / the world / their / where / who) will grow up.",
-  "rawAnswer": "It is adults who create the world where their children",
-  "ja": "子どもたちが育つ世界は大人が創っている。",
-  "type": "ordering",
-  "answer": "It is adults who create the world where their children",
-  "pieces": [
-   "adults",
-   "children",
-   "create",
-   "it is",
-   "the world",
-   "their",
-   "where",
-   "who"
-  ],
-  "en": "It is adults who create the world where their children will grow up."
- },
- {
-  "id": "517",
-  "tags": [],
-  "question": "私は，子どものころにピアノが弾けるようになれなかったことを，本当に悔やんでいます。\nI (piano / do / learning / play / to / the / not / regret) when I was a child.",
-  "rawAnswer": "do regret not learning to play the piano",
-  "ja": "私は，子どものころにピアノが弾けるようになれなかったことを，本当に悔やんでいます。",
-  "type": "ordering",
-  "answer": "do regret not learning to play the piano",
-  "pieces": [
-   "piano",
-   "do",
-   "learning",
-   "play",
-   "to",
-   "the",
-   "not",
-   "regret"
-  ],
-  "en": "I do regret not learning to play the piano when I was a child."
- },
- {
-  "id": "518",
-  "tags": [],
-  "question": "What (　　) earth are you doing?",
-  "rawAnswer": "④",
-  "ja": "いったいあなたは何をしているのですか。",
-  "type": "choice",
-  "choices": [
-   "by",
-   "for",
-   "from",
-   "on"
-  ],
-  "answerIndex": 3,
-  "en": "What on earth are you doing?"
- },
- {
-  "id": "519",
-  "tags": [],
-  "question": "これは私が買いたかった，まさにその本です。\nThis (book / the / is / I / wanted / that / buy / very / to).",
-  "rawAnswer": "is the very book that I wanted to buy",
-  "ja": "これは私が買いたかった，まさにその本です。",
-  "type": "ordering",
-  "answer": "is the very book that I wanted to buy",
-  "pieces": [
-   "book",
-   "the",
-   "is",
-   "I",
-   "wanted",
-   "that",
-   "buy",
-   "very",
-   "to"
-  ],
-  "en": "This is the very book that I wanted to buy."
+  "question": "(a) He said to me, \"Where does she live?\"\n(b) He (　　) me (　　) she (　　).",
+  "rawAnswer": "asked, where, lived",
+  "ja": "(a) 彼は，「彼女はどこに住んでいますか」と私に言った。\n(b) 彼は，彼女がどこに住んでいるのか私に尋ねた。",
+  "type": "fill",
+  "answer": "asked, where, lived",
+  "en": "He asked, where, lived me asked, where, lived she asked, where, lived."
  }
 ];
 
@@ -1238,7 +837,7 @@
                 <strong>解答:</strong> <span class="en">${answerSummary(i)}</span>
                 ${i.en ? `<br><span class="en">${i.en}</span>` : ''}
                 ${i.ja ? `<br><span class="ja">${i.ja.replace(/\n/g, '<br>')}</span>` : ''}</li>`).join('')}</ol>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 問題リスト');
+            openPrintWindow(html, '第16章　話法 問題リスト');
         };
 
         document.getElementById('download-choice-btn').onclick = () => {
@@ -1246,7 +845,7 @@
             if (!requireSelection(items, '4択・誤り指摘テスト')) return;
             const html = `<ol>${items.map(pdfChoiceItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${answerSummary(i)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 4択・誤り指摘テスト');
+            openPrintWindow(html, '第16章　話法 4択・誤り指摘テスト');
         };
 
         document.getElementById('download-blank-btn').onclick = () => {
@@ -1255,7 +854,7 @@
             const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}
                 ${i.ja && i.type === 'choice' ? `<br><span class="ja">${i.ja.split('\n')[0]}</span>` : ''}</li>`).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${i.type === 'choice' ? i.choices[i.answerIndex] : (i.answer || i.rawAnswer)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 空所補充テスト');
+            openPrintWindow(html, '第16章　話法 空所補充テスト');
         };
 
         document.getElementById('download-ordering-btn').onclick = () => {
@@ -1263,7 +862,7 @@
             if (!requireSelection(items, '整序英作文テスト')) return;
             const html = `<ol>${items.map(pdfOrderingItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 整序英作文テスト');
+            openPrintWindow(html, '第16章　話法 整序英作文テスト');
         };
 
         document.getElementById('download-composition-btn').onclick = () => {
@@ -1271,7 +870,7 @@
             if (!requireSelection(items, '和文英訳テスト')) return;
             const html = `<ol>${items.map(pdfCompositionItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 和文英訳テスト');
+            openPrintWindow(html, '第16章　話法 和文英訳テスト');
         };
 
         document.getElementById('download-mixed-btn').onclick = () => {
@@ -1285,7 +884,7 @@
                 return `<li>[${i.id}] ${blankQuestionText(i)}</li>`;
             }).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en || answerSummary(i)}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 ランダム混合テスト');
+            openPrintWindow(html, '第16章　話法 ランダム混合テスト');
         };
 
         // --- Event wiring ---
@@ -1323,7 +922,7 @@
         const db = getFirestore(app);
 
         // Vintage のデータは 'vintage_' プレフィックスで LEAP のデータと分離する
-        const appId = "vintage_chapter15";
+        const appId = "vintage_chapter16";
 
         window.localMasteredProblems = {};
 

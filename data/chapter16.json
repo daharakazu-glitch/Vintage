@@ -1,0 +1,73 @@
+{
+  "number": 16,
+  "title": "話法",
+  "fullTitle": "第16章　話法",
+  "problems": [
+    {
+      "id": "520",
+      "tags": [],
+      "question": "(a) He said to her, \"You may be able to answer this question.”\n(b) He (　　) her that (　　) (　　) be able to answer that question.",
+      "rawAnswer": "told, she might",
+      "ja": "(a) 彼は彼女に，「君ならこの質問に答えられるかもしれない」と言った。\n(b) 彼は，彼女ならその質問に答えられるかもしれないと彼女に言った。",
+      "type": "fill",
+      "answer": "told, she might",
+      "en": "He told, she might her that told, she might be able to answer that question."
+    },
+    {
+      "id": "521",
+      "tags": [],
+      "question": "(a) My mother said to me, \"Don't talk to wolves in the woods.\"\n(b) My mother told (　　) in the woods.",
+      "rawAnswer": "③",
+      "ja": "(a) 「森でオオカミに話しかけてはいけません」と母は私に言った。\n(b) 森でオオカミに話しかけないようにと母は私に言った。",
+      "type": "choice",
+      "choices": [
+        "me to speak not wolves",
+        "not to me talk to wolves",
+        "me not to talk to wolves",
+        "to me not to speak wolves"
+      ],
+      "answerIndex": 2,
+      "en": "My mother told me not to talk to wolves in the woods."
+    },
+    {
+      "id": "522",
+      "tags": [],
+      "question": "(a) He said to us, \"Please don't wait for me if I am late.\"\n(b) He asked us (　　) (　　) wait for him if he was late.",
+      "rawAnswer": "not to",
+      "ja": "(a) 彼は私たちに「もし私が遅れたら私を待たないでください」と言った。\n(b) 彼は私たちにもし彼が遅れたら待たないようにと言った。",
+      "type": "fill",
+      "answer": "not to",
+      "en": "He asked us not to wait for him if he was late."
+    },
+    {
+      "id": "523",
+      "tags": [],
+      "question": "(a) He said to us, \"Let's go for a drive.\"\n(b) He (　　) that (　　) (　　) go for a drive.",
+      "rawAnswer": "suggested[proposed], we should",
+      "ja": "(a)「ドライブに行こう」と彼は私たちに言った。\n(b) 私たちがドライブに行くことを彼は提案した。",
+      "type": "fill",
+      "answer": "suggested[proposed], we should",
+      "en": "He suggested[proposed], we should that suggested[proposed], we should go for a drive."
+    },
+    {
+      "id": "524",
+      "tags": [],
+      "question": "(a) He said to me, \"Are you busy?\"\n(b) He (　　) me (　　) (　　) (　　) busy.",
+      "rawAnswer": "asked, if[whether] I was",
+      "ja": "(a) 彼は，「忙しいですか」と私に言った。\n(b) 彼は，忙しいかどうか私に尋ねた。",
+      "type": "fill",
+      "answer": "asked, if[whether] I was",
+      "en": "He asked, if[whether] I was me asked, if[whether] I was busy."
+    },
+    {
+      "id": "525",
+      "tags": [],
+      "question": "(a) He said to me, \"Where does she live?\"\n(b) He (　　) me (　　) she (　　).",
+      "rawAnswer": "asked, where, lived",
+      "ja": "(a) 彼は，「彼女はどこに住んでいますか」と私に言った。\n(b) 彼は，彼女がどこに住んでいるのか私に尋ねた。",
+      "type": "fill",
+      "answer": "asked, where, lived",
+      "en": "He asked, where, lived me asked, where, lived she asked, where, lived."
+    }
+  ]
+}

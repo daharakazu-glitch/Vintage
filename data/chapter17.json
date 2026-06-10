@@ -1,0 +1,2533 @@
+{
+  "number": 17,
+  "title": "動詞の語法",
+  "fullTitle": "第17章　動詞の語法",
+  "problems": [
+    {
+      "id": "526",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "It might be wise of you to avoid (　　) abroad next year.",
+      "rawAnswer": "①",
+      "ja": "来年の留学は避けたほうがあなたにとって賢明かもしれない。",
+      "type": "choice",
+      "choices": [
+        "studying",
+        "studying in",
+        "to study",
+        "to study in"
+      ],
+      "answerIndex": 0,
+      "en": "It might be wise of you to avoid studying abroad next year."
+    },
+    {
+      "id": "527",
+      "tags": [],
+      "question": "If you are ①<u>the</u> kind of person who suffers ②<u>from</u> stress, you ③<u>should</u> consider ④<u>to take</u> more time to relax.",
+      "rawAnswer": "④→taking",
+      "ja": "あなたがストレスに苦しむタイプの人間なら，リラックスする時間をもっととることを考慮すべきだ。",
+      "type": "error",
+      "en": "If you are the kind of person who suffers from stress, you should consider taking more time to relax.",
+      "answerIndex": 3,
+      "correction": "taking"
+    },
+    {
+      "id": "528",
+      "tags": [],
+      "question": "My brother denied (　　) my model plane, even though he was the only person who was in my room at that time.",
+      "rawAnswer": "③",
+      "ja": "その時僕の部屋にいたのは兄［弟］だけだったにもかかわらず，彼は僕の模型飛行機を壊したことを否定した。",
+      "type": "choice",
+      "choices": [
+        "to breaking",
+        "to break",
+        "having broken",
+        "being broken"
+      ],
+      "answerIndex": 2,
+      "en": "My brother denied having broken my model plane, even though he was the only person who was in my room at that time."
+    },
+    {
+      "id": "529",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My friend had a nice time in England and enjoyed (　　) a different culture.",
+      "rawAnswer": "①",
+      "ja": "私の友人はイギリスで楽しい時間を過ごし，異文化体験を楽しんだ。",
+      "type": "choice",
+      "choices": [
+        "experiencing",
+        "experiences",
+        "of experiencing",
+        "to experience"
+      ],
+      "answerIndex": 0,
+      "en": "My friend had a nice time in England and enjoyed experiencing a different culture."
+    },
+    {
+      "id": "530",
+      "tags": [
+        "基本"
+      ],
+      "question": "Have you finished (　　) your essay?",
+      "rawAnswer": "②",
+      "ja": "レポートは書き終えましたか。",
+      "type": "choice",
+      "choices": [
+        "to write",
+        "writing",
+        "to have written",
+        "to be writing"
+      ],
+      "answerIndex": 1,
+      "en": "Have you finished writing your essay?"
+    },
+    {
+      "id": "531",
+      "tags": [],
+      "question": "After several frustrating weeks, Masao finally ①<u>gave up</u>②<u>to try</u> ③<u>to teach</u> his wife ④<u>how to drive</u>.",
+      "rawAnswer": "②→trying",
+      "ja": "数週間いらいらして過ごしたあと，マサオはついに妻に車の運転の仕方を教えようとするのをあきらめた。",
+      "type": "error",
+      "en": "After several frustrating weeks, Masao finally gave uptrying to teach his wife how to drive.",
+      "answerIndex": 1,
+      "correction": "trying"
+    },
+    {
+      "id": "532",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Would you mind (　　) the window for me? I feel a little cold.",
+      "rawAnswer": "④",
+      "ja": "窓を閉めていただけませんか。少し寒いので。",
+      "type": "choice",
+      "choices": [
+        "close",
+        "to close",
+        "closed",
+        "closing"
+      ],
+      "answerIndex": 3,
+      "en": "Would you mind closing the window for me? I feel a little cold."
+    },
+    {
+      "id": "533",
+      "tags": [
+        "基本"
+      ],
+      "question": "The doctor has advised me not to eat eggs anymore, so I've stopped (　　) them.",
+      "rawAnswer": "②",
+      "ja": "医者がこれ以上卵を食べないようにと忠告したので，私は卵を買うのをやめた。",
+      "type": "choice",
+      "choices": [
+        "to have bought",
+        "buying",
+        "for buying",
+        "to buy"
+      ],
+      "answerIndex": 1,
+      "en": "The doctor has advised me not to eat eggs anymore, so I've stopped buying them."
+    },
+    {
+      "id": "534",
+      "tags": [],
+      "question": "How much can you (　　) to spend on your vacation?",
+      "rawAnswer": "③",
+      "ja": "休暇のためにどれだけのお金を使う余裕がありますか。",
+      "type": "choice",
+      "choices": [
+        "invest",
+        "account",
+        "afford",
+        "contribute"
+      ],
+      "answerIndex": 2,
+      "en": "How much can you afford to spend on your vacation?"
+    },
+    {
+      "id": "535",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My grandfather was hospitalized so I decided (　　) as often as possible.",
+      "rawAnswer": "③",
+      "ja": "祖父が入院したので，私はできるだけ頻繁にお見舞いに行こうと決めた。",
+      "type": "choice",
+      "choices": [
+        "visiting him",
+        "him visited",
+        "to visit him",
+        "visit him"
+      ],
+      "answerIndex": 2,
+      "en": "My grandfather was hospitalized so I decided to visit him as often as possible."
+    },
+    {
+      "id": "536",
+      "tags": [],
+      "question": "I expect ①<u>entering</u> a ②<u>famous</u> university ③<u>in</u> the USA ④<u>in the spring</u>.",
+      "rawAnswer": "①→to enter",
+      "ja": "春にはアメリカの有名大学に入学するつもりだ。",
+      "type": "error",
+      "en": "I expect to enter a famous university in the USA in the spring.",
+      "answerIndex": 0,
+      "correction": "to enter"
+    },
+    {
+      "id": "537",
+      "tags": [],
+      "question": "Ken has never failed (　　) a birthday present to his mother.",
+      "rawAnswer": "③",
+      "ja": "ケンは母親には必ず誕生日プレゼントをあげてきた。",
+      "type": "choice",
+      "choices": [
+        "of giving",
+        "for giving",
+        "to give",
+        "give"
+      ],
+      "answerIndex": 2,
+      "en": "Ken has never failed to give a birthday present to his mother."
+    },
+    {
+      "id": "538",
+      "tags": [
+        "基本"
+      ],
+      "question": "I hope (　　) to Hawaii next month.",
+      "rawAnswer": "②",
+      "ja": "来月ハワイに行きたいと思う。",
+      "type": "choice",
+      "choices": [
+        "going",
+        "to go",
+        "with going",
+        "for going"
+      ],
+      "answerIndex": 1,
+      "en": "I hope to go to Hawaii next month."
+    },
+    {
+      "id": "539",
+      "tags": [],
+      "question": "I could tell David was only (　　) to read because his book was upside down.",
+      "rawAnswer": "③",
+      "ja": "デイビッドの本がさかさまだったので，私には彼が読むふりをしているだけだとわかった。",
+      "type": "choice",
+      "choices": [
+        "deceiving",
+        "behaving",
+        "pretending",
+        "acting"
+      ],
+      "answerIndex": 2,
+      "en": "I could tell David was only pretending to read because his book was upside down."
+    },
+    {
+      "id": "540",
+      "tags": [],
+      "question": "The number of young people who are (　　) to make their pension and national health insurance payments is on the rise.",
+      "rawAnswer": "③",
+      "ja": "年金と国民健康保険の支払いを拒む若者の数が増えている。",
+      "type": "choice",
+      "choices": [
+        "discharging",
+        "excluding",
+        "refusing",
+        "rejecting"
+      ],
+      "answerIndex": 2,
+      "en": "The number of young people who are refusing to make their pension and national health insurance payments is on the rise."
+    },
+    {
+      "id": "541",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "She remembered the teacher (　　) it.",
+      "rawAnswer": "②",
+      "ja": "先生がそのことについて話したのを彼女は覚えていた。",
+      "type": "choice",
+      "choices": [
+        "talk about",
+        "talking about",
+        "to talk about",
+        "talks about"
+      ],
+      "answerIndex": 1,
+      "en": "She remembered the teacher talking about it."
+    },
+    {
+      "id": "542",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Remember (　　) your books back to the library by the end of the week.",
+      "rawAnswer": "④",
+      "ja": "週末までに本を図書館に返すのを忘れないように。",
+      "type": "choice",
+      "choices": [
+        "take",
+        "taking",
+        "to be taking",
+        "to take"
+      ],
+      "answerIndex": 3,
+      "en": "Remember to take your books back to the library by the end of the week."
+    },
+    {
+      "id": "543",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I'll never forget (　　) the beautiful sea from the hill on my last trip.",
+      "rawAnswer": "③",
+      "ja": "この前の旅行で，丘から美しい海を見たことを私は決して忘れないだろう。",
+      "type": "choice",
+      "choices": [
+        "see",
+        "to see",
+        "seeing",
+        "seen"
+      ],
+      "answerIndex": 2,
+      "en": "I'll never forget seeing the beautiful sea from the hill on my last trip."
+    },
+    {
+      "id": "544",
+      "tags": [
+        "基本"
+      ],
+      "question": "I forgot (　　) by the supermarket and so have nothing to eat now.",
+      "rawAnswer": "①",
+      "ja": "スーパーに立ち寄るのを忘れたので，今は食べるものが何もない。",
+      "type": "choice",
+      "choices": [
+        "to stop",
+        "stopping",
+        "to have stopped",
+        "having stopped"
+      ],
+      "answerIndex": 0,
+      "en": "I forgot to stop by the supermarket and so have nothing to eat now."
+    },
+    {
+      "id": "545",
+      "tags": [],
+      "question": "I regret (　　) him my dictionary. I cannot do my work without it.",
+      "rawAnswer": "③",
+      "ja": "私は彼に辞書を貸したことを後悔している。それなしでは自分の仕事ができない。",
+      "type": "choice",
+      "choices": [
+        "lent",
+        "to lend",
+        "lending",
+        "to have lent"
+      ],
+      "answerIndex": 2,
+      "en": "I regret lending him my dictionary. I cannot do my work without it."
+    },
+    {
+      "id": "546",
+      "tags": [],
+      "question": "I regret (　　) that I cannot join your team.",
+      "rawAnswer": "②",
+      "ja": "残念ながら私はあなたのチームには参加できません。",
+      "type": "choice",
+      "choices": [
+        "saying",
+        "to say",
+        "say",
+        "said"
+      ],
+      "answerIndex": 1,
+      "en": "I regret to say that I cannot join your team."
+    },
+    {
+      "id": "547",
+      "tags": [
+        "基本"
+      ],
+      "question": "彼は少女に自分が勇気のあるところを印象づけようとした。\nHe (with / impress / the girl / tried / to) his courage.",
+      "rawAnswer": "tried to impress the girl with",
+      "ja": "彼は少女に自分が勇気のあるところを印象づけようとした。",
+      "type": "ordering",
+      "answer": "tried to impress the girl with",
+      "pieces": [
+        "with",
+        "impress",
+        "the girl",
+        "tried",
+        "to"
+      ],
+      "en": "He tried to impress the girl with his courage."
+    },
+    {
+      "id": "548",
+      "tags": [],
+      "question": "I'm sorry. I didn't mean (　　) on your foot.",
+      "rawAnswer": "④",
+      "ja": "ごめんなさい。あなたの足を踏むつもりはなかったんです。",
+      "type": "choice",
+      "choices": [
+        "step",
+        "stepping",
+        "to stepping",
+        "to step"
+      ],
+      "answerIndex": 3,
+      "en": "I'm sorry. I didn't mean to step on your foot."
+    },
+    {
+      "id": "549",
+      "tags": [],
+      "question": "After playing with sand, your hands need (　　).",
+      "rawAnswer": "②",
+      "ja": "砂遊びのあとは，手洗いが必要だ。",
+      "type": "choice",
+      "choices": [
+        "to wash",
+        "washing",
+        "being washed",
+        "to be washing"
+      ],
+      "answerIndex": 1,
+      "en": "After playing with sand, your hands need washing."
+    },
+    {
+      "id": "550",
+      "tags": [],
+      "question": "My watch loses ten minutes a day, so it needs (　　).",
+      "rawAnswer": "③",
+      "ja": "私の時計は１日に10分遅れるので，修理の必要がある。",
+      "type": "choice",
+      "choices": [
+        "being repaired",
+        "repaired",
+        "to be repaired",
+        "to repair"
+      ],
+      "answerIndex": 2,
+      "en": "My watch loses ten minutes a day, so it needs to be repaired."
+    },
+    {
+      "id": "551",
+      "tags": [],
+      "question": "If you intend to climb such a high mountain, these shoes want (　　).",
+      "rawAnswer": "③",
+      "ja": "そんな高い山に登るつもりなら，この靴は修理が必要だ。",
+      "type": "choice",
+      "choices": [
+        "to repair",
+        "to have repaired",
+        "repairing",
+        "being repaired"
+      ],
+      "answerIndex": 2,
+      "en": "If you intend to climb such a high mountain, these shoes want repairing."
+    },
+    {
+      "id": "552",
+      "tags": [
+        "発展"
+      ],
+      "question": "I told her to shut up but she (　　) on talking and talking.",
+      "rawAnswer": "④",
+      "ja": "彼女に黙るように言ったが，彼女は延々としゃべり続けた。",
+      "type": "choice",
+      "choices": [
+        "came",
+        "put",
+        "tried",
+        "went"
+      ],
+      "answerIndex": 3,
+      "en": "I told her to shut up but she went on talking and talking."
+    },
+    {
+      "id": "553",
+      "tags": [
+        "発展"
+      ],
+      "question": "After he had given an explanation of the difficulties, he (suggest / went / ways / overcoming / on / of / to) them.",
+      "rawAnswer": "went on to suggest ways of overcoming",
+      "ja": "問題点の説明をしたあと，続けて彼はそれらを乗り切る方法を提案した。",
+      "type": "ordering",
+      "answer": "went on to suggest ways of overcoming",
+      "pieces": [
+        "suggest",
+        "went",
+        "ways",
+        "overcoming",
+        "on",
+        "of",
+        "to"
+      ],
+      "en": "After he had given an explanation of the difficulties, he went on to suggest ways of overcoming them."
+    },
+    {
+      "id": "554",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Mary's father will not (　　) her do any part-time work until after her exams are over.",
+      "rawAnswer": "③",
+      "ja": "メアリーの父は，試験が終わるまでは彼女にアルバイトをさせるつもりはない。",
+      "type": "choice",
+      "choices": [
+        "allow",
+        "consent",
+        "let",
+        "permit"
+      ],
+      "answerIndex": 2,
+      "en": "Mary's father will not let her do any part-time work until after her exams are over."
+    },
+    {
+      "id": "555",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Mr. Jones (　　) the students repeat the same phrase without looking at their textbooks.",
+      "rawAnswer": "④",
+      "ja": "ジョーンズ先生は生徒たちに，教科書を見ずに同じフレーズを繰り返させた。",
+      "type": "choice",
+      "choices": [
+        "got",
+        "forced",
+        "ordered",
+        "made"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Jones made the students repeat the same phrase without looking at their textbooks."
+    },
+    {
+      "id": "556",
+      "tags": [],
+      "question": "ジェーンのような誠実な人が約束を破ったのはなぜだと思いますか。\n(an honest person / do / like Jane / made / what / you think) break her promise?",
+      "rawAnswer": "What do you think made an honest person like Jane",
+      "ja": "ジェーンのような誠実な人が約束を破ったのはなぜだと思いますか。",
+      "type": "ordering",
+      "answer": "What do you think made an honest person like Jane",
+      "pieces": [
+        "an honest person",
+        "do",
+        "like Jane",
+        "made",
+        "what",
+        "you think"
+      ],
+      "en": "What do you think made an honest person like Jane break her promise?"
+    },
+    {
+      "id": "557",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Because my mother was sick in bed, she had me (　　) the dishes after dinner.",
+      "rawAnswer": "①",
+      "ja": "母は病気で寝ていたので，夕食後の皿洗いを私にやらせた。",
+      "type": "choice",
+      "choices": [
+        "wash",
+        "washed",
+        "have washed",
+        "to wash"
+      ],
+      "answerIndex": 0,
+      "en": "Because my mother was sick in bed, she had me wash the dishes after dinner."
+    },
+    {
+      "id": "558",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We are going to have the house (　　) this weekend.",
+      "rawAnswer": "③",
+      "ja": "私たちは今週末に家を塗装してもらうことになっている。",
+      "type": "choice",
+      "choices": [
+        "to be painted",
+        "to paint",
+        "painted",
+        "painting"
+      ],
+      "answerIndex": 2,
+      "en": "We are going to have the house painted this weekend."
+    },
+    {
+      "id": "559",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The bus was so crowded that I (　　) while I was on it.",
+      "rawAnswer": "①",
+      "ja": "バスはとても混んでいたので，乗っている間に足を踏まれた。",
+      "type": "choice",
+      "choices": [
+        "had my foot stepped on",
+        "had my foot to be stepped on",
+        "had to be stepped on my foot",
+        "was stepped on my foot"
+      ],
+      "answerIndex": 0,
+      "en": "The bus was so crowded that I had my foot stepped on while I was on it."
+    },
+    {
+      "id": "560",
+      "tags": [
+        "基本"
+      ],
+      "question": "I don't know how I can get my children (　　) their homework.",
+      "rawAnswer": "④",
+      "ja": "どうすれば子どもたちに宿題をさせることができるのか，私にはわからない。",
+      "type": "choice",
+      "choices": [
+        "did",
+        "do",
+        "done",
+        "to do"
+      ],
+      "answerIndex": 3,
+      "en": "I don't know how I can get my children to do their homework."
+    },
+    {
+      "id": "561",
+      "tags": [],
+      "question": "Could you give me a ride to the station tomorrow morning? I must get my car (　　) at the garage.",
+      "rawAnswer": "③",
+      "ja": "明日の朝，駅まで車に乗せてもらえませんか。私の車は工場で修理してもらわないといけないので。",
+      "type": "choice",
+      "choices": [
+        "repair",
+        "repairing",
+        "repaired",
+        "to repair"
+      ],
+      "answerIndex": 2,
+      "en": "Could you give me a ride to the station tomorrow morning? I must get my car repaired at the garage."
+    },
+    {
+      "id": "562",
+      "tags": [],
+      "question": "A lazy student stood in front of his stern teacher and said, \"I'm sorry. I could not get the homework (　　) by the deadline.\"",
+      "rawAnswer": "②",
+      "ja": "ある怠惰な生徒が，厳格な教師の前に立ち，「すみません。期限までに宿題をすることができませんでした」と言った。",
+      "type": "choice",
+      "choices": [
+        "be done",
+        "done",
+        "to do",
+        "doing"
+      ],
+      "answerIndex": 1,
+      "en": "A lazy student stood in front of his stern teacher and said, \"I'm sorry. I could not get the homework done by the deadline.\""
+    },
+    {
+      "id": "563",
+      "tags": [
+        "基本"
+      ],
+      "question": "I ①<u>was</u> sitting in my car, ②<u>and</u> I saw a strange man ③<u>to enter</u> the building and then a little later ④<u>run</u> out again.",
+      "rawAnswer": "③→enter",
+      "ja": "私は車の中に座っていて，見知らぬ男がその建物に入っていき，少ししてからまた飛び出してくるのを目撃した。",
+      "type": "error",
+      "en": "I was sitting in my car, and I saw a strange man enter the building and then a little later run out again.",
+      "answerIndex": 2,
+      "correction": "enter"
+    },
+    {
+      "id": "564",
+      "tags": [],
+      "question": "When I fell, I felt something (　　) wrong with my foot.",
+      "rawAnswer": "③",
+      "ja": "転んだときに，足がどこかおかしくなるのを感じた。",
+      "type": "choice",
+      "choices": [
+        "goes",
+        "has gone",
+        "go",
+        "will go"
+      ],
+      "answerIndex": 2,
+      "en": "When I fell, I felt something go wrong with my foot."
+    },
+    {
+      "id": "565",
+      "tags": [],
+      "question": "The doctor (　　) me to go home and to go to bed.",
+      "rawAnswer": "④",
+      "ja": "その医者は，家に帰って寝るようにと私に忠告した。",
+      "type": "choice",
+      "choices": [
+        "suggested",
+        "said",
+        "agreed",
+        "advised"
+      ],
+      "answerIndex": 3,
+      "en": "The doctor advised me to go home and to go to bed."
+    },
+    {
+      "id": "566",
+      "tags": [
+        "基本"
+      ],
+      "question": "He (　　) me to take a day off.",
+      "rawAnswer": "②",
+      "ja": "彼は私に休暇を１日取ることを許可してくれた。",
+      "type": "choice",
+      "choices": [
+        "admitted",
+        "allowed",
+        "forgave",
+        "let"
+      ],
+      "answerIndex": 1,
+      "en": "He allowed me to take a day off."
+    },
+    {
+      "id": "567",
+      "tags": [
+        "基本"
+      ],
+      "question": "I ①<u>asked</u> the waitress ②<u>bring</u> me a cup of tea, ③<u>but</u> she ④<u>brought</u> me coffee.",
+      "rawAnswer": "②→to bring",
+      "ja": "ウェイトレスに紅茶を１杯持ってくるよう頼んだが，彼女はコーヒーを持ってきた。",
+      "type": "error",
+      "en": "I asked the waitress to bring me a cup of tea, but she brought me coffee.",
+      "answerIndex": 1,
+      "correction": "to bring"
+    },
+    {
+      "id": "568",
+      "tags": [
+        "基本"
+      ],
+      "question": "What on earth (　　) you to change your mind so suddenly?",
+      "rawAnswer": "①",
+      "ja": "いったいなぜそんなに突然あなたは気が変わったんだい。",
+      "type": "choice",
+      "choices": [
+        "caused",
+        "made",
+        "let",
+        "had"
+      ],
+      "answerIndex": 0,
+      "en": "What on earth caused you to change your mind so suddenly?"
+    },
+    {
+      "id": "569",
+      "tags": [],
+      "question": "Illness (　　) him to resign.",
+      "rawAnswer": "①",
+      "ja": "彼は病気で退職せざるを得なかった。",
+      "type": "choice",
+      "choices": [
+        "compelled",
+        "forwarded",
+        "made",
+        "was prevented"
+      ],
+      "answerIndex": 0,
+      "en": "Illness compelled him to resign."
+    },
+    {
+      "id": "570",
+      "tags": [],
+      "question": "私たちの旅行は，台風で延期になった。\n(forced / to / our trip / the typhoon / put off / us).",
+      "rawAnswer": "The typhoon forced us to put off our trip",
+      "ja": "私たちの旅行は，台風で延期になった。",
+      "type": "ordering",
+      "answer": "The typhoon forced us to put off our trip",
+      "pieces": [
+        "forced",
+        "to",
+        "our trip",
+        "the typhoon",
+        "put off",
+        "us"
+      ],
+      "en": "The typhoon forced us to put off our trip."
+    },
+    {
+      "id": "571",
+      "tags": [
+        "基本"
+      ],
+      "question": "この新しい顕微鏡で，私たちは信じられないほど小さい物体の詳細な観察ができる。\nThis new (incredibly small / microscope / observe / objects / enables / in / to / us) great detail.",
+      "rawAnswer": "microscope enables us to observe incredibly small objects in",
+      "ja": "この新しい顕微鏡で，私たちは信じられないほど小さい物体の詳細な観察ができる。",
+      "type": "ordering",
+      "answer": "microscope enables us to observe incredibly small objects in",
+      "pieces": [
+        "incredibly small",
+        "microscope",
+        "observe",
+        "objects",
+        "enables",
+        "in",
+        "to",
+        "us"
+      ],
+      "en": "This new microscope enables us to observe incredibly small objects in great detail."
+    },
+    {
+      "id": "572",
+      "tags": [],
+      "question": "単語のつづりがわからないときはいつでも辞書を引くようにと先生がおっしゃった。\nOur teacher (a dictionary / are / consult / encouraged / of /to / uncertain / us / we / whenever) the spelling of a word.",
+      "rawAnswer": "encouraged us to consult a dictionary whenever we are uncertain of",
+      "ja": "単語のつづりがわからないときはいつでも辞書を引くようにと先生がおっしゃった。",
+      "type": "ordering",
+      "answer": "encouraged us to consult a dictionary whenever we are uncertain of",
+      "pieces": [
+        "a dictionary",
+        "are",
+        "consult",
+        "encouraged",
+        "of",
+        "to",
+        "uncertain",
+        "us",
+        "we",
+        "whenever"
+      ],
+      "en": "Our teacher encouraged us to consult a dictionary whenever we are uncertain of the spelling of a word."
+    },
+    {
+      "id": "573",
+      "tags": [
+        "基本"
+      ],
+      "question": "The bus was late again!  I had (　　) it to arrive at 6 o'clock.",
+      "rawAnswer": "③",
+      "ja": "またバスが遅れた！　６時に到着すると思っていたのだが。",
+      "type": "choice",
+      "choices": [
+        "waited",
+        "hoped",
+        "expected",
+        "liked"
+      ],
+      "answerIndex": 2,
+      "en": "The bus was late again! I had expected it to arrive at 6 o'clock."
+    },
+    {
+      "id": "574",
+      "tags": [
+        "基本"
+      ],
+      "question": "We all tried to (　　) her to dance.",
+      "rawAnswer": "②",
+      "ja": "私たちはみな，彼女を説得して踊らせようとした。",
+      "type": "choice",
+      "choices": [
+        "argue",
+        "persuade",
+        "claim",
+        "make"
+      ],
+      "answerIndex": 1,
+      "en": "We all tried to persuade her to dance."
+    },
+    {
+      "id": "575",
+      "tags": [],
+      "question": "In many countries, drivers are (　　) to wear seatbelts at all times.",
+      "rawAnswer": "①",
+      "ja": "多くの国では，運転手は常にシートベルトの着用を義務づけられている。",
+      "type": "choice",
+      "choices": [
+        "required",
+        "fined",
+        "exposed",
+        "compared"
+      ],
+      "answerIndex": 0,
+      "en": "In many countries, drivers are required to wear seatbelts at all times."
+    },
+    {
+      "id": "576",
+      "tags": [
+        "基本"
+      ],
+      "question": "Her parents don't want (　　) married.",
+      "rawAnswer": "③",
+      "ja": "彼女の両親は彼女に結婚してほしいとは思っていない。",
+      "type": "choice",
+      "choices": [
+        "that she gets",
+        "her get",
+        "her to get",
+        "that she got"
+      ],
+      "answerIndex": 2,
+      "en": "Her parents don't want her to get married."
+    },
+    {
+      "id": "577",
+      "tags": [],
+      "question": "I suggested (　　) more careful.",
+      "rawAnswer": "④",
+      "ja": "私は彼女に，もっと注意したらどうかと提案した。",
+      "type": "choice",
+      "choices": [
+        "her to be",
+        "that she were",
+        "for her be",
+        "that she be"
+      ],
+      "answerIndex": 3,
+      "en": "I suggested that she be more careful."
+    },
+    {
+      "id": "578",
+      "tags": [],
+      "question": "The teacher ordered that every student (　　) a study plan for the summer vacation.",
+      "rawAnswer": "③",
+      "ja": "先生はどの生徒も夏休みの学習計画をたてるように命じた。",
+      "type": "choice",
+      "choices": [
+        "had made",
+        "has made",
+        "make",
+        "to make"
+      ],
+      "answerIndex": 2,
+      "en": "The teacher ordered that every student make a study plan for the summer vacation."
+    },
+    {
+      "id": "579",
+      "tags": [],
+      "question": "母は僕の部屋をぜひ一度見たいと言った。\nMy mother（ have / should / she / that / insisted / look / a）\nat my room.",
+      "rawAnswer": "insisted that she should have a look",
+      "ja": "母は僕の部屋をぜひ一度見たいと言った。",
+      "type": "ordering",
+      "answer": "insisted that she should have a look",
+      "pieces": [
+        "have",
+        "should",
+        "she",
+        "that",
+        "insisted",
+        "look",
+        "a"
+      ],
+      "en": "My mother insisted that she should have a look at my room."
+    },
+    {
+      "id": "580",
+      "tags": [],
+      "question": "I recommended that he (　　) on time to the interview.",
+      "rawAnswer": "①",
+      "ja": "私は，面接には時間通りに来るよう，彼に勧めた。",
+      "type": "choice",
+      "choices": [
+        "come",
+        "comes",
+        "will come",
+        "would come"
+      ],
+      "answerIndex": 0,
+      "en": "I recommended that he come on time to the interview."
+    },
+    {
+      "id": "581",
+      "tags": [
+        "基本"
+      ],
+      "question": "After the car hit the boy, he (　　) unconscious for two days.",
+      "rawAnswer": "①",
+      "ja": "その少年は車にひかれてから２日間意識不明のままだった。",
+      "type": "choice",
+      "choices": [
+        "remained",
+        "remembered",
+        "removed",
+        "rescued"
+      ],
+      "answerIndex": 0,
+      "en": "After the car hit the boy, he remained unconscious for two days."
+    },
+    {
+      "id": "582",
+      "tags": [],
+      "question": "この薬を飲めば，あなたは数日で気分が良くなるでしょう。\n(better / make / medicine / will / this / feel / you) in a few days.",
+      "rawAnswer": "This medicine will make you feel better",
+      "ja": "この薬を飲めば，あなたは数日で気分が良くなるでしょう。",
+      "type": "ordering",
+      "answer": "This medicine will make you feel better",
+      "pieces": [
+        "better",
+        "make",
+        "medicine",
+        "will",
+        "this",
+        "feel",
+        "you"
+      ],
+      "en": "This medicine will make you feel better in a few days."
+    },
+    {
+      "id": "583",
+      "tags": [
+        "発展"
+      ],
+      "question": "何がうまくいかなかったのか私には正確に説明できない。\nI cannot explain exactly what has (　　) (　　).",
+      "rawAnswer": "gone wrong",
+      "ja": "何がうまくいかなかったのか私には正確に説明できない。",
+      "type": "fill",
+      "answer": "gone wrong",
+      "en": "I cannot explain exactly what has gone wrong."
+    },
+    {
+      "id": "584",
+      "tags": [],
+      "question": "Her dreams have (　　) true.",
+      "rawAnswer": "②",
+      "ja": "彼女の夢は実現した。",
+      "type": "choice",
+      "choices": [
+        "turned",
+        "come",
+        "gotten",
+        "gone"
+      ],
+      "answerIndex": 1,
+      "en": "Her dreams have come true."
+    },
+    {
+      "id": "585",
+      "tags": [
+        "基本"
+      ],
+      "question": "The baby (　　) her mother.",
+      "rawAnswer": "④",
+      "ja": "その赤ちゃんは母親に似ている。",
+      "type": "choice",
+      "choices": [
+        "looks",
+        "resembles to",
+        "looks after",
+        "resembles"
+      ],
+      "answerIndex": 3,
+      "en": "The baby resembles her mother."
+    },
+    {
+      "id": "586",
+      "tags": [],
+      "question": "With ①<u>a huge smile</u>, Catherine ②<u>waved</u> her hand ③<u>happily</u> as she approached ④<u>to me</u>.",
+      "rawAnswer": "④→me",
+      "ja": "キャサリンは満面の笑みを浮かべて，私に近づきながらうれしそうに手を振った。",
+      "type": "error",
+      "en": "With a huge smile, Catherine waved her hand happily as she approached me.",
+      "answerIndex": 3,
+      "correction": "me"
+    },
+    {
+      "id": "587",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "We (　　) the matter far into the night.",
+      "rawAnswer": "①",
+      "ja": "私たちは夜遅くまでその件について話し合った。",
+      "type": "choice",
+      "choices": [
+        "discussed",
+        "discussed about",
+        "discussed on",
+        "discussed over"
+      ],
+      "answerIndex": 0,
+      "en": "We discussed the matter far into the night."
+    },
+    {
+      "id": "588",
+      "tags": [
+        "基本"
+      ],
+      "question": "①<u>Although</u> Mary and I are ②<u>from</u> different ethnic backgrounds, I ③<u>have decided</u> to marry ④<u>with her</u>.",
+      "rawAnswer": "④→her",
+      "ja": "メアリーと私は民族的背景は異なるが，私は彼女と結婚することに決めた。",
+      "type": "error",
+      "en": "Although Mary and I are from different ethnic backgrounds, I have decided to marry her.",
+      "answerIndex": 3,
+      "correction": "her"
+    },
+    {
+      "id": "589",
+      "tags": [],
+      "question": "ケイトと結婚してどれぐらいになりますか。（１語不足）\n(been / have / how / Kate / long / married / you)?",
+      "rawAnswer": "How long have you been married to Kate（to不足）",
+      "ja": "ケイトと結婚してどれぐらいになりますか。（１語不足）",
+      "type": "ordering",
+      "answer": "How long have you been married to Kate",
+      "pieces": [
+        "been",
+        "have",
+        "how",
+        "Kate",
+        "long",
+        "married",
+        "you",
+        "to"
+      ],
+      "en": "How long have you been married to Kate?",
+      "note": "1語不足の語もチップに含まれています"
+    },
+    {
+      "id": "590",
+      "tags": [
+        "基本"
+      ],
+      "question": "She hopes to work for a travel agency after she (　　) college.",
+      "rawAnswer": "①",
+      "ja": "大学卒業後，彼女は旅行代理店で働くことを希望している。",
+      "type": "choice",
+      "choices": [
+        "graduates from",
+        "graduated from",
+        "has graduated",
+        "graduates"
+      ],
+      "answerIndex": 0,
+      "en": "She hopes to work for a travel agency after she graduates from college."
+    },
+    {
+      "id": "591",
+      "tags": [
+        "発展"
+      ],
+      "question": "When I realized I was wrong, I apologized (　　).",
+      "rawAnswer": "④",
+      "ja": "私は自分が間違っていることに気づいて，彼に自分の間違いを謝罪した。",
+      "type": "choice",
+      "choices": [
+        "him my mistake",
+        "him for my mistake",
+        "to him my mistake",
+        "to him for my mistake"
+      ],
+      "answerIndex": 3,
+      "en": "When I realized I was wrong, I apologized to him for my mistake."
+    },
+    {
+      "id": "592",
+      "tags": [],
+      "question": "彼女が仕事のことで不満を言うのを聞いたことがありますか。\nHave (about / complain / ever heard / her / her job / you)?",
+      "rawAnswer": "you ever heard her complain about her job",
+      "ja": "彼女が仕事のことで不満を言うのを聞いたことがありますか。",
+      "type": "ordering",
+      "answer": "you ever heard her complain about her job",
+      "pieces": [
+        "about",
+        "complain",
+        "ever heard",
+        "her",
+        "her job",
+        "you"
+      ],
+      "en": "Have you ever heard her complain about her job?"
+    },
+    {
+      "id": "593",
+      "tags": [],
+      "question": "The new software program will (　　) us a lot of time and labor.",
+      "rawAnswer": "③",
+      "ja": "新しいソフトウェアプログラムを使えば，私たちは多くの時間と労力を省けるだろう。",
+      "type": "choice",
+      "choices": [
+        "give",
+        "get",
+        "save",
+        "make"
+      ],
+      "answerIndex": 2,
+      "en": "The new software program will save us a lot of time and labor."
+    },
+    {
+      "id": "594",
+      "tags": [],
+      "question": "その事故で自分の車は大破したので，店で修理してもらうのにかなり費用がかさんだ。\nIt (a lot of money / cost / me / my car / repaired / to have) at the shop because it was heavily damaged in the accident.",
+      "rawAnswer": "cost me a lot of money to have my car repaired",
+      "ja": "その事故で自分の車は大破したので，店で修理してもらうのにかなり費用がかさんだ。",
+      "type": "ordering",
+      "answer": "cost me a lot of money to have my car repaired",
+      "pieces": [
+        "a lot of money",
+        "cost",
+        "me",
+        "my car",
+        "repaired",
+        "to have"
+      ],
+      "en": "It cost me a lot of money to have my car repaired at the shop because it was heavily damaged in the accident."
+    },
+    {
+      "id": "595",
+      "tags": [],
+      "question": "It took me ①<u>for five hours</u> to finish ②<u>this homework</u>, so I ③<u>could not</u> go to the video shop ④<u>to return</u> my overdue DVDs.",
+      "rawAnswer": "①→five hours",
+      "ja": "この宿題を終えるのに５時間かかったので，返却期限の過ぎているDVDをビデオ店に返しに行くことができなかった。",
+      "type": "error",
+      "en": "It took me five hours to finish this homework, so I could not go to the video shop to return my overdue DVDs.",
+      "answerIndex": 0,
+      "correction": "five hours"
+    },
+    {
+      "id": "596",
+      "tags": [],
+      "question": "その品物を届けるのが少しでも遅れれば，私たちは大いに迷惑を被ることになる。\nAny (cause / delay / delivering / in / the goods / will) us a lot of trouble.",
+      "rawAnswer": "delay in delivering the goods will cause",
+      "ja": "その品物を届けるのが少しでも遅れれば，私たちは大いに迷惑を被ることになる。",
+      "type": "ordering",
+      "answer": "delay in delivering the goods will cause",
+      "pieces": [
+        "cause",
+        "delay",
+        "delivering",
+        "in",
+        "the goods",
+        "will"
+      ],
+      "en": "Any delay in delivering the goods will cause us a lot of trouble."
+    },
+    {
+      "id": "597",
+      "tags": [
+        "発展"
+      ],
+      "question": "私が成功したのは彼女の助言のおかげだ。\nIt is (advice / her / I / my / owe / that / to) success.",
+      "rawAnswer": "to her advice that I owe my",
+      "ja": "私が成功したのは彼女の助言のおかげだ。",
+      "type": "ordering",
+      "answer": "to her advice that I owe my",
+      "pieces": [
+        "advice",
+        "her",
+        "I",
+        "my",
+        "owe",
+        "that",
+        "to"
+      ],
+      "en": "It is to her advice that I owe my success."
+    },
+    {
+      "id": "598",
+      "tags": [
+        "発展"
+      ],
+      "question": "A change of air will (　　) her good.",
+      "rawAnswer": "④",
+      "ja": "気分転換が彼女のためには良いでしょう。",
+      "type": "choice",
+      "choices": [
+        "effect",
+        "give",
+        "allow",
+        "do"
+      ],
+      "answerIndex": 3,
+      "en": "A change of air will do her good."
+    },
+    {
+      "id": "599",
+      "tags": [
+        "発展"
+      ],
+      "question": "Drinking and smoking will (　　) you great harm.",
+      "rawAnswer": "③",
+      "ja": "飲酒と喫煙は体に大きな害をもたらす。",
+      "type": "choice",
+      "choices": [
+        "have",
+        "be",
+        "do",
+        "help"
+      ],
+      "answerIndex": 2,
+      "en": "Drinking and smoking will do you great harm."
+    },
+    {
+      "id": "600",
+      "tags": [],
+      "question": "Could you (　　) me a favor and take out the garbage?",
+      "rawAnswer": "③",
+      "ja": "お願いがあるのですが，ゴミを出してもらえますでしょうか。",
+      "type": "choice",
+      "choices": [
+        "call",
+        "carry",
+        "do",
+        "take"
+      ],
+      "answerIndex": 2,
+      "en": "Could you do me a favor and take out the garbage?"
+    },
+    {
+      "id": "601",
+      "tags": [],
+      "question": "The latest computers with new software are (　　) well now.",
+      "rawAnswer": "①",
+      "ja": "新しいソフトが入った最新のコンピューターは，現在よく売れている。",
+      "type": "choice",
+      "choices": [
+        "selling",
+        "sold",
+        "to be sold",
+        "to sell"
+      ],
+      "answerIndex": 0,
+      "en": "The latest computers with new software are selling well now."
+    },
+    {
+      "id": "602",
+      "tags": [
+        "発展"
+      ],
+      "question": "Some day you will realize that honesty (　　).",
+      "rawAnswer": "②",
+      "ja": "正直は割に合うということに，いつかあなたも気づくでしょう。",
+      "type": "choice",
+      "choices": [
+        "buys",
+        "pays",
+        "gives",
+        "sells"
+      ],
+      "answerIndex": 1,
+      "en": "Some day you will realize that honesty pays."
+    },
+    {
+      "id": "603",
+      "tags": [
+        "発展"
+      ],
+      "question": "Any dictionary (　　) as long as it is an English dictionary.",
+      "rawAnswer": "①",
+      "ja": "英語の辞書でありさえすれば，どんな辞書でもかまいません。",
+      "type": "choice",
+      "choices": [
+        "will do",
+        "should go",
+        "may use",
+        "can run"
+      ],
+      "answerIndex": 0,
+      "en": "Any dictionary will do as long as it is an English dictionary."
+    },
+    {
+      "id": "604",
+      "tags": [
+        "発展"
+      ],
+      "question": "There was a notice board. It (　　)\"Keep off the grass.\"",
+      "rawAnswer": "②",
+      "ja": "掲示板があり，そこには「芝生立ち入り禁止」と書いてあった。",
+      "type": "choice",
+      "choices": [
+        "looked",
+        "read",
+        "saw",
+        "wrote"
+      ],
+      "answerIndex": 1,
+      "en": "There was a notice board. It read \"Keep off the grass.\""
+    },
+    {
+      "id": "605",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I can't (　　) this noise any longer.",
+      "rawAnswer": "④",
+      "ja": "これ以上この騒音には耐えられない。",
+      "type": "choice",
+      "choices": [
+        "draw",
+        "loose",
+        "note",
+        "stand"
+      ],
+      "answerIndex": 3,
+      "en": "I can't stand this noise any longer."
+    },
+    {
+      "id": "606",
+      "tags": [],
+      "question": "If you have a bad headache, go and (　　) the doctor.",
+      "rawAnswer": "③",
+      "ja": "頭痛がひどいなら，医者に行って診てもらいなさい。",
+      "type": "choice",
+      "choices": [
+        "take a look at",
+        "examined by",
+        "see",
+        "meet"
+      ],
+      "answerIndex": 2,
+      "en": "If you have a bad headache, go and see the doctor."
+    },
+    {
+      "id": "607",
+      "tags": [
+        "発展"
+      ],
+      "question": "この丘からは，関東平野の見晴らしが良い。\nThis hill (　　) a fine view of the Kanto Plains.",
+      "rawAnswer": "④",
+      "ja": "この丘からは，関東平野の見晴らしが良い。",
+      "type": "choice",
+      "choices": [
+        "sees",
+        "looks",
+        "appears",
+        "commands"
+      ],
+      "answerIndex": 3,
+      "en": "This hill commands a fine view of the Kanto Plains."
+    },
+    {
+      "id": "608",
+      "tags": [],
+      "question": "\"Why did Jack quit his job?\"\n\"He wanted to (　　) his dream of opening his own cafe.\"",
+      "rawAnswer": "④",
+      "ja": "「どうしてジャックは仕事を辞めたのですか」\n「自分の喫茶店を開くという夢を実現したかったからです」",
+      "type": "choice",
+      "choices": [
+        "come true",
+        "increase",
+        "make sure",
+        "realize"
+      ],
+      "answerIndex": 3,
+      "en": "\"He wanted to realize his dream of opening his own cafe.\""
+    },
+    {
+      "id": "609",
+      "tags": [],
+      "question": "\"Why have you decided to live in the country?\"\n\"Because of the air pollution. I really (　　) clean, fresh air.\"",
+      "rawAnswer": "④",
+      "ja": "「どうして田舎に住むことにしたのですか」\n「大気汚染のせいですよ。きれいで新鮮な空気が本当に恋しいんです」",
+      "type": "choice",
+      "choices": [
+        "keep",
+        "avoid",
+        "make",
+        "miss"
+      ],
+      "answerIndex": 3,
+      "en": "\"Because of the air pollution. I really miss clean, fresh air.\""
+    },
+    {
+      "id": "610",
+      "tags": [
+        "基本"
+      ],
+      "question": "Mary (　　) many different kinds of flowers in her garden.",
+      "rawAnswer": "①",
+      "ja": "メアリーは自分の庭でたくさんの異なる種類の花を育てている。",
+      "type": "choice",
+      "choices": [
+        "raises",
+        "rises",
+        "is rising",
+        "rose"
+      ],
+      "answerIndex": 0,
+      "en": "Mary raises many different kinds of flowers in her garden."
+    },
+    {
+      "id": "611",
+      "tags": [
+        "基本"
+      ],
+      "question": "The temperature will ①<u>raise</u> ②<u>to</u> 38 ③<u>degrees</u> Celsius, and ④<u>it</u> will be very uncomfortable this afternoon.",
+      "rawAnswer": "①→rise",
+      "ja": "気温は摂氏38度まで上昇し，非常に過ごしにくい午後になるでしょう。",
+      "type": "error",
+      "en": "The temperature will rise to 38 degrees Celsius, and it will be very uncomfortable this afternoon.",
+      "answerIndex": 0,
+      "correction": "rise"
+    },
+    {
+      "id": "612",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "This time tomorrow, she will (　　) on the beach.",
+      "rawAnswer": "③",
+      "ja": "明日の今ごろは，彼女はビーチに寝そべっているだろう。",
+      "type": "choice",
+      "choices": [
+        "be laying",
+        "lay",
+        "be lying",
+        "lie"
+      ],
+      "answerIndex": 2,
+      "en": "This time tomorrow, she will be lying on the beach."
+    },
+    {
+      "id": "613",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "He (　　) himself on the sofa and quickly fell asleep.",
+      "rawAnswer": "④",
+      "ja": "彼はソファに身を横たえ，すぐに眠りに落ちた。",
+      "type": "choice",
+      "choices": [
+        "lied",
+        "lay",
+        "lain",
+        "laid"
+      ],
+      "answerIndex": 3,
+      "en": "He laid himself on the sofa and quickly fell asleep."
+    },
+    {
+      "id": "614",
+      "tags": [],
+      "question": "Jennifer (　　) her own work experience in India.",
+      "rawAnswer": "②",
+      "ja": "ジェニファーはインドでの彼女の実務経験について語った。",
+      "type": "choice",
+      "choices": [
+        "spoke for",
+        "talked about",
+        "said",
+        "told"
+      ],
+      "answerIndex": 1,
+      "en": "Jennifer talked about her own work experience in India."
+    },
+    {
+      "id": "615",
+      "tags": [],
+      "question": "You're always free to (　　) \"No!\"",
+      "rawAnswer": "②",
+      "ja": "あなたはいつでも自由に「いいえ！」と言えるのですよ。",
+      "type": "choice",
+      "choices": [
+        "hear",
+        "say",
+        "speak",
+        "tell"
+      ],
+      "answerIndex": 1,
+      "en": "You're always free to say \"No!\""
+    },
+    {
+      "id": "616",
+      "tags": [],
+      "question": "I cannot (　　) you how lucky I was to have a chance to see that painting.",
+      "rawAnswer": "①",
+      "ja": "あの絵を見る機会に恵まれて私がどれだけ運が良かったか，あなたに伝えることができません。",
+      "type": "choice",
+      "choices": [
+        "tell",
+        "talk",
+        "speak",
+        "say"
+      ],
+      "answerIndex": 0,
+      "en": "I cannot tell you how lucky I was to have a chance to see that painting."
+    },
+    {
+      "id": "617",
+      "tags": [],
+      "question": "I heard somebody (　　) Lydia about the news, and I noticed that it upset her.",
+      "rawAnswer": "②",
+      "ja": "私はだれかがリディアにそのニュースについて話すのを聞き，そのことで彼女が動揺したのに気がついた。",
+      "type": "choice",
+      "choices": [
+        "talked",
+        "tell",
+        "say",
+        "saying"
+      ],
+      "answerIndex": 1,
+      "en": "I heard somebody tell Lydia about the news, and I noticed that it upset her."
+    },
+    {
+      "id": "618",
+      "tags": [],
+      "question": "The nurse (　　) enter the room because the patient was in critical condition.",
+      "rawAnswer": "④",
+      "ja": "患者が危篤状態なので，部屋には入らないようにと看護師は私たちに告げた。",
+      "type": "choice",
+      "choices": [
+        "said us not to",
+        "talked us not to",
+        "told to us not to",
+        "told us not to"
+      ],
+      "answerIndex": 3,
+      "en": "The nurse told us not to enter the room because the patient was in critical condition."
+    },
+    {
+      "id": "619",
+      "tags": [],
+      "question": "The newspaper (　　) it was going to rain.",
+      "rawAnswer": "①",
+      "ja": "新聞には，雨になると書いてあった。",
+      "type": "choice",
+      "choices": [
+        "said",
+        "spoke",
+        "talked",
+        "told"
+      ],
+      "answerIndex": 0,
+      "en": "The newspaper said it was going to rain."
+    },
+    {
+      "id": "620",
+      "tags": [
+        "発展"
+      ],
+      "question": "Alex has (　　) him to travel alone for six months around the Northern Hemisphere.",
+      "rawAnswer": "③",
+      "ja": "アレックスは両親を説得して，６か月間，北半球を一人で旅行することを許してもらった。",
+      "type": "choice",
+      "choices": [
+        "persuaded his parents of allowing",
+        "persuaded to his parents into accept",
+        "talked his parents into allowing",
+        "talked to his parents into allow"
+      ],
+      "answerIndex": 2,
+      "en": "Alex has talked his parents into allowing him to travel alone for six months around the Northern Hemisphere."
+    },
+    {
+      "id": "621",
+      "tags": [
+        "発展"
+      ],
+      "question": "彼女は夫を説きふせてたばこをやめさせた。\nShe (of / talked / out / smoking / her husband).",
+      "rawAnswer": "talked her husband out of smoking",
+      "ja": "彼女は夫を説きふせてたばこをやめさせた。",
+      "type": "ordering",
+      "answer": "talked her husband out of smoking",
+      "pieces": [
+        "of",
+        "talked",
+        "out",
+        "smoking",
+        "her husband"
+      ],
+      "en": "She talked her husband out of smoking."
+    },
+    {
+      "id": "622",
+      "tags": [],
+      "question": "I try to (　　) politely to my teachers.",
+      "rawAnswer": "③",
+      "ja": "私は先生たちには礼儀正しく話すよう努めている。",
+      "type": "choice",
+      "choices": [
+        "hear",
+        "say",
+        "speak",
+        "tell"
+      ],
+      "answerIndex": 2,
+      "en": "I try to speak politely to my teachers."
+    },
+    {
+      "id": "623",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(a) I never look at this picture without remembering the days when I lived in California.\n(b) This picture (　　) me of the days when I lived in California.",
+      "rawAnswer": "reminds",
+      "ja": "(a) (b) この写真を見るといつも，カリフォルニアで暮らした日々を思い出す。",
+      "type": "fill",
+      "answer": "reminds",
+      "en": "This picture reminds me of the days when I lived in California."
+    },
+    {
+      "id": "624",
+      "tags": [],
+      "question": "彼女はこの詩を読むといつも母のことを思い出す。\n(this poem / being / her mother / she cannot read / of / without / reminded).",
+      "rawAnswer": "She cannot read this poem without being reminded of her mother",
+      "ja": "彼女はこの詩を読むといつも母のことを思い出す。",
+      "type": "ordering",
+      "answer": "She cannot read this poem without being reminded of her mother",
+      "pieces": [
+        "this poem",
+        "being",
+        "her mother",
+        "she cannot read",
+        "of",
+        "without",
+        "reminded"
+      ],
+      "en": "She cannot read this poem without being reminded of her mother."
+    },
+    {
+      "id": "625",
+      "tags": [],
+      "question": "私たちは喜んでその仕事の手伝いをすると彼に伝えました。\nWe informed (help him / him / of / our willingness / to / with) the work.",
+      "rawAnswer": "him of our willingness to help him with",
+      "ja": "私たちは喜んでその仕事の手伝いをすると彼に伝えました。",
+      "type": "ordering",
+      "answer": "him of our willingness to help him with",
+      "pieces": [
+        "help him",
+        "him",
+        "of",
+        "our willingness",
+        "to",
+        "with"
+      ],
+      "en": "We informed him of our willingness to help him with the work."
+    },
+    {
+      "id": "626",
+      "tags": [
+        "発展"
+      ],
+      "question": "彼が友人からお金を盗んだのではないかと疑うことになろうとは，思いもよらなかった。\nIt never occurred to me to (from / him / money / of / stealing / suspect) his friend.",
+      "rawAnswer": "suspect him of stealing money from",
+      "ja": "彼が友人からお金を盗んだのではないかと疑うことになろうとは，思いもよらなかった。",
+      "type": "ordering",
+      "answer": "suspect him of stealing money from",
+      "pieces": [
+        "from",
+        "him",
+        "money",
+        "of",
+        "stealing",
+        "suspect"
+      ],
+      "en": "It never occurred to me to suspect him of stealing money from his friend."
+    },
+    {
+      "id": "627",
+      "tags": [],
+      "question": "If you violate a traffic law, the police may deprive you (　　) your driver's licence.",
+      "rawAnswer": "③",
+      "ja": "道路交通法に違反すると，警察が運転免許証を取り上げる場合もある。",
+      "type": "choice",
+      "choices": [
+        "from",
+        "by",
+        "of",
+        "at"
+      ],
+      "answerIndex": 2,
+      "en": "If you violate a traffic law, the police may deprive you of your driver's licence."
+    },
+    {
+      "id": "628",
+      "tags": [
+        "基本"
+      ],
+      "question": "They robbed (　　) on his way home from the office.",
+      "rawAnswer": "④",
+      "ja": "彼らは，職場からの帰宅途中の彼から現金を奪った。",
+      "type": "choice",
+      "choices": [
+        "his money",
+        "his money of him",
+        "him from his money",
+        "him of his money"
+      ],
+      "answerIndex": 3,
+      "en": "They robbed him of his money on his way home from the office."
+    },
+    {
+      "id": "629",
+      "tags": [],
+      "question": "Due to a bomb threat they cleared the stadium (　　) spectators.",
+      "rawAnswer": "②",
+      "ja": "爆弾が爆発する恐れがあったため，彼らは競技場から観客を避難させた。",
+      "type": "choice",
+      "choices": [
+        "from",
+        "of",
+        "off",
+        "on"
+      ],
+      "answerIndex": 1,
+      "en": "Due to a bomb threat they cleared the stadium of spectators."
+    },
+    {
+      "id": "630",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "交通事故のために彼らは時間通りにそこに着くことができなかった。\nThe traffic accident (from / there / prevented / getting / time / them / on).",
+      "rawAnswer": "prevented them from getting there on time",
+      "ja": "交通事故のために彼らは時間通りにそこに着くことができなかった。",
+      "type": "ordering",
+      "answer": "prevented them from getting there on time",
+      "pieces": [
+        "from",
+        "there",
+        "prevented",
+        "getting",
+        "time",
+        "them",
+        "on"
+      ],
+      "en": "The traffic accident prevented them from getting there on time."
+    },
+    {
+      "id": "631",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Urgent business stopped Tom (　　) the big party for his parents' fiftieth wedding anniversary.",
+      "rawAnswer": "②",
+      "ja": "急な用事で，トムは両親の結婚50周年を祝う盛大なパーティーに参加できなかった。",
+      "type": "choice",
+      "choices": [
+        "attend",
+        "from attending",
+        "to attend",
+        "to have attend"
+      ],
+      "answerIndex": 1,
+      "en": "Urgent business stopped Tom from attending the big party for his parents' fiftieth wedding anniversary."
+    },
+    {
+      "id": "632",
+      "tags": [],
+      "question": "時間がなかったので，あなたに手紙を書くことができませんでした。（１語不足）\n(time / me / lack / writing / kept / of / you / to).",
+      "rawAnswer": "Lack of time kept me from writing to you（from不足）",
+      "ja": "時間がなかったので，あなたに手紙を書くことができませんでした。（１語不足）",
+      "type": "ordering",
+      "answer": "Lack of time kept me from writing to you",
+      "pieces": [
+        "time",
+        "me",
+        "lack",
+        "writing",
+        "kept",
+        "of",
+        "you",
+        "to",
+        "from"
+      ],
+      "en": "Lack of time kept me from writing to you.",
+      "note": "1語不足の語もチップに含まれています"
+    },
+    {
+      "id": "633",
+      "tags": [],
+      "question": "Tom is prohibited by his father (　　) cards.",
+      "rawAnswer": "②",
+      "ja": "トムはトランプ遊びを父親に禁じられている。",
+      "type": "choice",
+      "choices": [
+        "play",
+        "from playing",
+        "playing",
+        "from play"
+      ],
+      "answerIndex": 1,
+      "en": "Tom is prohibited by his father from playing cards."
+    },
+    {
+      "id": "634",
+      "tags": [
+        "発展"
+      ],
+      "question": "My parents are trying to (　　) me from moving to London, but I'm planning to go anyway.",
+      "rawAnswer": "①",
+      "ja": "両親は私にロンドンへ引っ越すのを思いとどまらせようとしているが，私はそれでもやはり行くつもりでいる。",
+      "type": "choice",
+      "choices": [
+        "discourage",
+        "recall",
+        "observe",
+        "relieve"
+      ],
+      "answerIndex": 0,
+      "en": "My parents are trying to discourage me from moving to London, but I'm planning to go anyway."
+    },
+    {
+      "id": "635",
+      "tags": [
+        "基本"
+      ],
+      "question": "On your arrival at the front desk, you will be (　　) your room key and meal tickets.",
+      "rawAnswer": "③",
+      "ja": "受付に来られましたら，お部屋の鍵とお食事券をお渡しします。",
+      "type": "choice",
+      "choices": [
+        "provided",
+        "provided by",
+        "provided with",
+        "provided for"
+      ],
+      "answerIndex": 2,
+      "en": "On your arrival at the front desk, you will be provided with your room key and meal tickets."
+    },
+    {
+      "id": "636",
+      "tags": [],
+      "question": "村のその小さな店には子どもたちに必要なものがそろっていた。\nThe small shop in the village (children / they / supplied / with / what / needed).",
+      "rawAnswer": "supplied children with what they needed",
+      "ja": "村のその小さな店には子どもたちに必要なものがそろっていた。",
+      "type": "ordering",
+      "answer": "supplied children with what they needed",
+      "pieces": [
+        "children",
+        "they",
+        "supplied",
+        "with",
+        "what",
+        "needed"
+      ],
+      "en": "The small shop in the village supplied children with what they needed."
+    },
+    {
+      "id": "637",
+      "tags": [
+        "発展"
+      ],
+      "question": "My computer is <u>equipped</u> with extras like a DVD player.",
+      "rawAnswer": "①",
+      "ja": "私のコンピューターにはDVDプレーヤーのような追加の機能が備わっている。",
+      "type": "choice",
+      "choices": [
+        "supplied",
+        "stuck",
+        "charged",
+        "covered"
+      ],
+      "answerIndex": 0,
+      "en": "My computer is equipped with extras like a DVD player."
+    },
+    {
+      "id": "638",
+      "tags": [
+        "基本"
+      ],
+      "question": "The actor blamed (　　) his poor acting in the movie.",
+      "rawAnswer": "③",
+      "ja": "その俳優は，その映画で下手な芝居をした自分を責めた。",
+      "type": "choice",
+      "choices": [
+        "himself by",
+        "by himself",
+        "himself for",
+        "for himself"
+      ],
+      "answerIndex": 2,
+      "en": "The actor blamed himself for his poor acting in the movie."
+    },
+    {
+      "id": "639",
+      "tags": [
+        "発展"
+      ],
+      "question": "The train driver has been accused (　　) causing death and bodily injury through professional negligence.",
+      "rawAnswer": "④",
+      "ja": "その列車の運転士は業務上過失致死傷罪に問われている。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "in",
+        "of"
+      ],
+      "answerIndex": 3,
+      "en": "The train driver has been accused of causing death and bodily injury through professional negligence."
+    },
+    {
+      "id": "640",
+      "tags": [
+        "基本"
+      ],
+      "question": "あなたが私にしてくれたことについては，いくら感謝しても足りません。\nI can (enough / for / never / thank / what / you) you've done for me.",
+      "rawAnswer": "never thank you enough for what",
+      "ja": "あなたが私にしてくれたことについては，いくら感謝しても足りません。",
+      "type": "ordering",
+      "answer": "never thank you enough for what",
+      "pieces": [
+        "enough",
+        "for",
+        "never",
+        "thank",
+        "what",
+        "you"
+      ],
+      "en": "I can never thank you enough for what you've done for me."
+    },
+    {
+      "id": "641",
+      "tags": [],
+      "question": "Please excuse me (　　) being late. I was caught in heavy traffic.",
+      "rawAnswer": "①",
+      "ja": "遅れて申し訳ありません。渋滞にあいました。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "from",
+        "in",
+        "with"
+      ],
+      "answerIndex": 0,
+      "en": "Please excuse me for being late. I was caught in heavy traffic."
+    },
+    {
+      "id": "642",
+      "tags": [],
+      "question": "私は彼のしたことが許せなかった。\nI (he / for / had / him / done / what / forgive / couldn't).",
+      "rawAnswer": "couldn't forgive him for what he had done",
+      "ja": "私は彼のしたことが許せなかった。",
+      "type": "ordering",
+      "answer": "couldn't forgive him for what he had done",
+      "pieces": [
+        "he",
+        "for",
+        "had",
+        "him",
+        "done",
+        "what",
+        "forgive",
+        "couldn't"
+      ],
+      "en": "I couldn't forgive him for what he had done."
+    },
+    {
+      "id": "643",
+      "tags": [
+        "基本"
+      ],
+      "question": "その男は状況が深刻だと思った。\nThe man (　　) the situation as serious.",
+      "rawAnswer": "②",
+      "ja": "その男は状況が深刻だと思った。",
+      "type": "choice",
+      "choices": [
+        "thought",
+        "regarded",
+        "looked",
+        "told"
+      ],
+      "answerIndex": 1,
+      "en": "The man regarded the situation as serious."
+    },
+    {
+      "id": "644",
+      "tags": [],
+      "question": "私たちは親類ではないが，私が彼を兄弟のように思っている。\nWe are not related, but I (　　) upon him as a brother.",
+      "rawAnswer": "look",
+      "ja": "私たちは親類ではないが，私が彼を兄弟のように思っている。",
+      "type": "fill",
+      "answer": "look",
+      "en": "We are not related, but I look upon him as a brother."
+    },
+    {
+      "id": "645",
+      "tags": [
+        "発展"
+      ],
+      "question": "I don't know why but it (as / me / none / strange / of / struck / that) the passengers uttered a word.",
+      "rawAnswer": "struck me as strange that none of",
+      "ja": "なぜだかはわからないが，乗客のだれ一人として言葉を発しないのは奇妙だという印象を私は受けた。",
+      "type": "ordering",
+      "answer": "struck me as strange that none of",
+      "pieces": [
+        "as",
+        "me",
+        "none",
+        "strange",
+        "of",
+        "struck",
+        "that"
+      ],
+      "en": "I don't know why but it struck me as strange that none of the passengers uttered a word."
+    },
+    {
+      "id": "646",
+      "tags": [],
+      "question": "This train will (　　) you to the airport.",
+      "rawAnswer": "④",
+      "ja": "この電車に乗れば空港まで行けます。",
+      "type": "choice",
+      "choices": [
+        "accompany",
+        "overtake",
+        "terminate",
+        "take"
+      ],
+      "answerIndex": 3,
+      "en": "This train will take you to the airport."
+    },
+    {
+      "id": "647",
+      "tags": [],
+      "question": "About ten minutes' walk (　　) me to the post office.",
+      "rawAnswer": "②",
+      "ja": "10分ほど歩くと郵便局に着いた。",
+      "type": "choice",
+      "choices": [
+        "left",
+        "brought",
+        "reached",
+        "arrived"
+      ],
+      "answerIndex": 1,
+      "en": "About ten minutes' walk brought me to the post office."
+    },
+    {
+      "id": "648",
+      "tags": [
+        "発展"
+      ],
+      "question": "\"How do I like you in that uniform? You look great. It really (　　) you!\"",
+      "rawAnswer": "②",
+      "ja": "「そのユニフォームを着た君をどう思うかって？　素敵だよ。すごく君に似合っている」",
+      "type": "choice",
+      "choices": [
+        "winks",
+        "suits",
+        "looks",
+        "gets"
+      ],
+      "answerIndex": 1,
+      "en": "\"How do I like you in that uniform? You look great. It really suits you!\""
+    },
+    {
+      "id": "649",
+      "tags": [
+        "発展"
+      ],
+      "question": "Which dressing <u>goes with</u> this kind of salad?",
+      "rawAnswer": "①",
+      "ja": "この種類のサラダにはどちらのドレッシングが合いますか。",
+      "type": "choice",
+      "choices": [
+        "matches",
+        "spoils",
+        "decays",
+        "destroys"
+      ],
+      "answerIndex": 0,
+      "en": "Which dressing goes with this kind of salad?"
+    },
+    {
+      "id": "650",
+      "tags": [
+        "基本"
+      ],
+      "question": "I (　　) money from my friend last week.",
+      "rawAnswer": "③",
+      "ja": "私は先週，友人から金を借りた。",
+      "type": "choice",
+      "choices": [
+        "rented",
+        "lent",
+        "borrowed",
+        "sent"
+      ],
+      "answerIndex": 2,
+      "en": "I borrowed money from my friend last week."
+    },
+    {
+      "id": "651",
+      "tags": [
+        "基本"
+      ],
+      "question": "My friend (　　) me some money, which I paid back later on.",
+      "rawAnswer": "③",
+      "ja": "友人がいくらか金を貸してくれたが，私は後日，返金した。",
+      "type": "choice",
+      "choices": [
+        "lost",
+        "borrowed",
+        "lent",
+        "presented"
+      ],
+      "answerIndex": 2,
+      "en": "My friend lent me some money, which I paid back later on."
+    },
+    {
+      "id": "652",
+      "tags": [
+        "発展"
+      ],
+      "question": "彼は試験に合格しなかったと私は思う。\nI (　　) he has passed the examination.",
+      "rawAnswer": "doubt",
+      "ja": "彼は試験に合格しなかったと私は思う。",
+      "type": "fill",
+      "answer": "doubt",
+      "en": "I doubt he has passed the examination."
+    },
+    {
+      "id": "653",
+      "tags": [
+        "発展"
+      ],
+      "question": "ひょっとして，ビルがお金を盗ったんじゃないか。",
+      "rawAnswer": "③",
+      "ja": "ひょっとして，ビルがお金を盗ったんじゃないか。",
+      "type": "choice",
+      "choices": [
+        "I doubt Bill robbed the money.",
+        "I doubt Bill stole the money.",
+        "I suspect Bill stole the money.",
+        "I suspect Bill robbed the money."
+      ],
+      "answerIndex": 2,
+      "en": "I suspect Bill stole the money."
+    },
+    {
+      "id": "654",
+      "tags": [
+        "発展"
+      ],
+      "question": "多くの人はビルを口数の少ない人だと思っている。\nMany consider (a / be / Bill / few words / man of / to).",
+      "rawAnswer": "Bill to be a man of few words",
+      "ja": "多くの人はビルを口数の少ない人だと思っている。",
+      "type": "ordering",
+      "answer": "Bill to be a man of few words",
+      "pieces": [
+        "a",
+        "be",
+        "Bill",
+        "few words",
+        "man of",
+        "to"
+      ],
+      "en": "Many consider Bill to be a man of few words."
+    },
+    {
+      "id": "655",
+      "tags": [
+        "基本"
+      ],
+      "question": "Everyone (　　) that she manages to finish on time.",
+      "rawAnswer": "①",
+      "ja": "彼女が何とか時間通りに終えることを全員が望んでいる。",
+      "type": "choice",
+      "choices": [
+        "hopes",
+        "wishes",
+        "wonders",
+        "helps"
+      ],
+      "answerIndex": 0,
+      "en": "Everyone hopes that she manages to finish on time."
+    },
+    {
+      "id": "656",
+      "tags": [],
+      "question": "私たちはあなたが早く回復なさることを願っています。\n（quick / are / we / hoping / for / recovery / your).",
+      "rawAnswer": "We are hoping for your quick recovery",
+      "ja": "私たちはあなたが早く回復なさることを願っています。",
+      "type": "ordering",
+      "answer": "We are hoping for your quick recovery",
+      "pieces": [
+        "quick",
+        "are",
+        "we",
+        "hoping",
+        "for",
+        "recovery",
+        "your"
+      ],
+      "en": "We are hoping for your quick recovery."
+    },
+    {
+      "id": "657",
+      "tags": [],
+      "question": "彼がプロジェクトについて何か新しいアイデアを思いついてくれることを，みんなが期待している。\nEveryone (him / hoping / come / is / for / to) up with some new ideas concerning the project.",
+      "rawAnswer": "is hoping for him to come",
+      "ja": "彼がプロジェクトについて何か新しいアイデアを思いついてくれることを，みんなが期待している。",
+      "type": "ordering",
+      "answer": "is hoping for him to come",
+      "pieces": [
+        "him",
+        "hoping",
+        "come",
+        "is",
+        "for",
+        "to"
+      ],
+      "en": "Everyone is hoping for him to come up with some new ideas concerning the project."
+    },
+    {
+      "id": "658",
+      "tags": [],
+      "question": "宿題を手伝ってくれませんか？\n(help / homework / me / my / with / would / you)?",
+      "rawAnswer": "Would you help me with my homework",
+      "ja": "宿題を手伝ってくれませんか？",
+      "type": "ordering",
+      "answer": "Would you help me with my homework",
+      "pieces": [
+        "help",
+        "homework",
+        "me",
+        "my",
+        "with",
+        "would",
+        "you"
+      ],
+      "en": "Would you help me with my homework?"
+    },
+    {
+      "id": "659",
+      "tags": [
+        "発展"
+      ],
+      "question": "大統領は，働きたい人たちの求職活動の支援を政府が行っていくと宣言した。\nThe president announced that the government would (find / for those / help / jobs / wanted to work / who).",
+      "rawAnswer": "help find jobs for those who wanted to work",
+      "ja": "大統領は，働きたい人たちの求職活動の支援を政府が行っていくと宣言した。",
+      "type": "ordering",
+      "answer": "help find jobs for those who wanted to work",
+      "pieces": [
+        "find",
+        "for those",
+        "help",
+        "jobs",
+        "wanted to work",
+        "who"
+      ],
+      "en": "The president announced that the government would help find jobs for those who wanted to work."
+    },
+    {
+      "id": "660",
+      "tags": [],
+      "question": "店員はその客が食品を車に運ぶのを手伝った。\nThe clerk (carry out / groceries / helped / his / the car / the customer / to).",
+      "rawAnswer": "helped the customer carry out his groceries to the car",
+      "ja": "店員はその客が食品を車に運ぶのを手伝った。",
+      "type": "ordering",
+      "answer": "helped the customer carry out his groceries to the car",
+      "pieces": [
+        "carry out",
+        "groceries",
+        "helped",
+        "his",
+        "the car",
+        "the customer",
+        "to"
+      ],
+      "en": "The clerk helped the customer carry out his groceries to the car."
+    },
+    {
+      "id": "661",
+      "tags": [],
+      "question": "Paul suggested (　　) a party for Vicky when she came back home.",
+      "rawAnswer": "①",
+      "ja": "ヴィッキーが帰宅したら彼女のためにパーティーを開こうとポールは提案した。",
+      "type": "choice",
+      "choices": [
+        "having",
+        "to have",
+        "will have",
+        "being having"
+      ],
+      "answerIndex": 0,
+      "en": "Paul suggested having a party for Vicky when she came back home."
+    },
+    {
+      "id": "662",
+      "tags": [
+        "発展"
+      ],
+      "question": "My teacher suggested (　　) go to see a doctor alone.",
+      "rawAnswer": "④",
+      "ja": "私の先生は彼女に一人で医者に診てもらうように提案した。",
+      "type": "choice",
+      "choices": [
+        "her to",
+        "her",
+        "her that she",
+        "to her that she"
+      ],
+      "answerIndex": 3,
+      "en": "My teacher suggested to her that she go to see a doctor alone."
+    },
+    {
+      "id": "663",
+      "tags": [],
+      "question": "Will you (　　) me that we have an appointment tomorrow afternoon?",
+      "rawAnswer": "④",
+      "ja": "明日の午後に約束があることを（私が忘れていたら）注意していただけますか。",
+      "type": "choice",
+      "choices": [
+        "recall",
+        "regret",
+        "remember",
+        "remind"
+      ],
+      "answerIndex": 3,
+      "en": "Will you remind me that we have an appointment tomorrow afternoon?"
+    },
+    {
+      "id": "664",
+      "tags": [
+        "発展"
+      ],
+      "question": "The teacher (the / time / hand in / on / us / homework / to / reminded).",
+      "rawAnswer": "reminded us to hand in the homework on time",
+      "ja": "先生は私たちに期限通りに宿題を提出するのを忘れないように念を押した。",
+      "type": "ordering",
+      "answer": "reminded us to hand in the homework on time",
+      "pieces": [
+        "the",
+        "time",
+        "hand in",
+        "on",
+        "us",
+        "homework",
+        "to",
+        "reminded"
+      ],
+      "en": "The teacher reminded us to hand in the homework on time."
+    },
+    {
+      "id": "665",
+      "tags": [
+        "発展"
+      ],
+      "question": "They all (　　) their host mothers' help and support.",
+      "rawAnswer": "②",
+      "ja": "彼らは全員，それぞれのホームステイ先のお母さんたちからの助けと支えに感謝した。",
+      "type": "choice",
+      "choices": [
+        "thanked",
+        "appreciated",
+        "expressed",
+        "obliged"
+      ],
+      "answerIndex": 1,
+      "en": "They all appreciated their host mothers' help and support."
+    },
+    {
+      "id": "666",
+      "tags": [
+        "発展"
+      ],
+      "question": "We're facing troubles now. I would (appreciate / could / if / it / you) assist us.",
+      "rawAnswer": "appreciate it if you could",
+      "ja": "現在やっかいなことに直面しています。助けていただけると幸いです。",
+      "type": "ordering",
+      "answer": "appreciate it if you could",
+      "pieces": [
+        "appreciate",
+        "could",
+        "if",
+        "it",
+        "you"
+      ],
+      "en": "We're facing troubles now. I would appreciate it if you could assist us."
+    },
+    {
+      "id": "667",
+      "tags": [
+        "発展"
+      ],
+      "question": "I'd rather (　　) a map than tell someone how to get there.",
+      "rawAnswer": "①",
+      "ja": "私はそこへの行き方を相手に口で伝えるよりは，むしろ地図を描きます。",
+      "type": "choice",
+      "choices": [
+        "draw",
+        "paint",
+        "strike",
+        "write"
+      ],
+      "answerIndex": 0,
+      "en": "I'd rather draw a map than tell someone how to get there."
+    },
+    {
+      "id": "668",
+      "tags": [],
+      "question": "Do you mind (　　) the window?",
+      "rawAnswer": "①",
+      "ja": "窓を開けてもいいですか。",
+      "type": "choice",
+      "choices": [
+        "if I open",
+        "if you open",
+        "to open",
+        "your opening"
+      ],
+      "answerIndex": 0,
+      "en": "Do you mind if I open the window?"
+    },
+    {
+      "id": "669",
+      "tags": [],
+      "question": "自分のしたことを他人に認めてもらおうともらうまいと問題ではない。\nIt (approve / doesn't / matter / may / others / whether) of your work or not.",
+      "rawAnswer": "doesn't matter whether others may approve",
+      "ja": "自分のしたことを他人に認めてもらおうともらうまいと問題ではない。",
+      "type": "ordering",
+      "answer": "doesn't matter whether others may approve",
+      "pieces": [
+        "approve",
+        "doesn't",
+        "matter",
+        "may",
+        "others",
+        "whether"
+      ],
+      "en": "It doesn't matter whether others may approve of your work or not."
+    },
+    {
+      "id": "670",
+      "tags": [
+        "発展"
+      ],
+      "question": "娘は私に新しいDVDレコーダーの使い方を説明してくれた。\nMy daughter (use / to / explained / how / me / to) the new DVD recorder.",
+      "rawAnswer": "explained to me how to use",
+      "ja": "娘は私に新しいDVDレコーダーの使い方を説明してくれた。",
+      "type": "ordering",
+      "answer": "explained to me how to use",
+      "pieces": [
+        "use",
+        "to",
+        "explained",
+        "how",
+        "me",
+        "to"
+      ],
+      "en": "My daughter explained to me how to use the new DVD recorder."
+    },
+    {
+      "id": "671",
+      "tags": [],
+      "question": "After a cup of coffee, I (　　) what his message really meant.",
+      "rawAnswer": "④",
+      "ja": "コーヒーを１杯飲んだあと，私には彼のメッセージの真意がわかってきた。",
+      "type": "choice",
+      "choices": [
+        "became to realize",
+        "came realizing",
+        "became realizing",
+        "came to realize"
+      ],
+      "answerIndex": 3,
+      "en": "After a cup of coffee, I came to realize what his message really meant."
+    }
+  ]
+}

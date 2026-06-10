@@ -1,0 +1,536 @@
+{
+  "number": 18,
+  "title": "名詞の語法",
+  "fullTitle": "第18章　名詞の語法",
+  "problems": [
+    {
+      "id": "672",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I wonder ①<u>if</u> anyone ②<u>can</u> give me good ③<u>advices</u> about ④<u>how to</u> improve my English.",
+      "rawAnswer": "③→advice",
+      "ja": "どうすれば英語が上達するか，だれか良いアドバイスをくれないかな。",
+      "type": "error",
+      "en": "I wonder if anyone can give me good advice about how to improve my English.",
+      "answerIndex": 2,
+      "correction": "advice"
+    },
+    {
+      "id": "673",
+      "tags": [],
+      "question": "We've just bought (　　), such as tables, chairs, etc.",
+      "rawAnswer": "④",
+      "ja": "私たちは，テーブルやイスなどの新しい庭園家具をいくつか購入したばかりだ。",
+      "type": "choice",
+      "choices": [
+        "a few new garden furniture",
+        "some new garden furnitures",
+        "many new garden furnitures",
+        "some new garden furniture"
+      ],
+      "answerIndex": 3,
+      "en": "We've just bought some new garden furniture, such as tables, chairs, etc."
+    },
+    {
+      "id": "674",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We got (　　) about the flight from the travel agency.",
+      "rawAnswer": "②",
+      "ja": "私たちは旅行代理店からそのフライトに関する情報をいくつか入手した。",
+      "type": "choice",
+      "choices": [
+        "an information",
+        "some information",
+        "some informations",
+        "some piece of information"
+      ],
+      "answerIndex": 1,
+      "en": "We got some information about the flight from the travel agency."
+    },
+    {
+      "id": "675",
+      "tags": [],
+      "question": "I have done all (　　), and I'd like to take a short break.",
+      "rawAnswer": "③",
+      "ja": "もう宿題はすべて済ませてしまったので，少し休憩を取りたいと思う。",
+      "type": "choice",
+      "choices": [
+        "a homework",
+        "homeworks",
+        "my homework",
+        "homeworks of mine"
+      ],
+      "answerIndex": 2,
+      "en": "I have done all my homework, and I'd like to take a short break."
+    },
+    {
+      "id": "676",
+      "tags": [],
+      "question": "How (　　) can we take on the airplane with us?",
+      "rawAnswer": "②",
+      "ja": "荷物はいくつ飛行機内に持ち込めますか。",
+      "type": "choice",
+      "choices": [
+        "many baggages",
+        "many pieces of baggage",
+        "many pieces of baggages",
+        "many of baggages"
+      ],
+      "answerIndex": 1,
+      "en": "How many pieces of baggage can we take on the airplane with us?"
+    },
+    {
+      "id": "677",
+      "tags": [],
+      "question": "The car crashed into a tree and suffered (　　).",
+      "rawAnswer": "③",
+      "ja": "その車は木に衝突して，いくらか損傷を受けた。",
+      "type": "choice",
+      "choices": [
+        "a damage",
+        "damages",
+        "some damage",
+        "some damages"
+      ],
+      "answerIndex": 2,
+      "en": "The car crashed into a tree and suffered some damage."
+    },
+    {
+      "id": "678",
+      "tags": [],
+      "question": "He made an effort to become a professional golfer, but he made (　　) progress.",
+      "rawAnswer": "④",
+      "ja": "彼はプロゴルファーになるために努力したが，ほとんど上達しなかった。",
+      "type": "choice",
+      "choices": [
+        "a few",
+        "few",
+        "a little",
+        "little"
+      ],
+      "answerIndex": 3,
+      "en": "He made an effort to become a professional golfer, but he made little progress."
+    },
+    {
+      "id": "679",
+      "tags": [],
+      "question": "That street always has (　　).",
+      "rawAnswer": "②",
+      "ja": "あの通りはいつも交通量が多い。",
+      "type": "choice",
+      "choices": [
+        "a busy traffic",
+        "a lot of traffic",
+        "heavy traffics",
+        "many traffics"
+      ],
+      "answerIndex": 1,
+      "en": "That street always has a lot of traffic."
+    },
+    {
+      "id": "680",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The evidence clearly shows that there is still (　　) for doubt about it.",
+      "rawAnswer": "①",
+      "ja": "その件についてはまだ疑いの余地があると，その証拠がはっきりと示している。",
+      "type": "choice",
+      "choices": [
+        "room",
+        "rooms",
+        "a room",
+        "the room"
+      ],
+      "answerIndex": 0,
+      "en": "The evidence clearly shows that there is still room for doubt about it."
+    },
+    {
+      "id": "681",
+      "tags": [],
+      "question": "The square was destroyed to <u>make room for</u> university buildings.",
+      "rawAnswer": "②",
+      "ja": "大学の建物のためにスペースを空ける目的で，その広場が取り壊された。",
+      "type": "choice",
+      "choices": [
+        "prepare for",
+        "create space for",
+        "establish",
+        "introduce"
+      ],
+      "answerIndex": 1,
+      "en": "The square was destroyed to make room for university buildings."
+    },
+    {
+      "id": "682",
+      "tags": [],
+      "question": "Why don't you make (　　) with that girl? She is very nice.",
+      "rawAnswer": "③",
+      "ja": "あの女の子と友だちになったらどう？　彼女はとてもいい子だよ。",
+      "type": "choice",
+      "choices": [
+        "a friend",
+        "friend",
+        "friends",
+        "the friend"
+      ],
+      "answerIndex": 2,
+      "en": "Why don't you make friends with that girl? She is very nice."
+    },
+    {
+      "id": "683",
+      "tags": [],
+      "question": "Mr. Tanaka changed (　　) at Nagoya for Toyohashi.",
+      "rawAnswer": "④",
+      "ja": "田中さんは，名古屋駅で豊橋行きの電車に乗り換えた。",
+      "type": "choice",
+      "choices": [
+        "train",
+        "a train",
+        "its train",
+        "trains"
+      ],
+      "answerIndex": 3,
+      "en": "Mr. Tanaka changed trains at Nagoya for Toyohashi."
+    },
+    {
+      "id": "684",
+      "tags": [
+        "発展"
+      ],
+      "question": "It's a long trip, so we should take (　　) driving, don't you think?",
+      "rawAnswer": "②",
+      "ja": "長旅なので，交替で運転するべきだと思いませんか。",
+      "type": "choice",
+      "choices": [
+        "handles",
+        "turns",
+        "orders",
+        "changes"
+      ],
+      "answerIndex": 1,
+      "en": "It's a long trip, so we should take turns driving, don't you think?"
+    },
+    {
+      "id": "685",
+      "tags": [],
+      "question": "The singer <u>took great pains</u> to improve her image.",
+      "rawAnswer": "②",
+      "ja": "その歌手はイメージアップをしようと大変な努力をした。",
+      "type": "choice",
+      "choices": [
+        "hid herself from the public",
+        "made a special effort",
+        "needed a lot of time",
+        "was criticized very sharply"
+      ],
+      "answerIndex": 1,
+      "en": "The singer took great pains to improve her image."
+    },
+    {
+      "id": "686",
+      "tags": [],
+      "question": "Don't forget to give my best (　　) to your parents when you go back home.",
+      "rawAnswer": "②",
+      "ja": "家に帰ったら，忘れずにご両親によろしく伝えてください。",
+      "type": "choice",
+      "choices": [
+        "regard",
+        "regards",
+        "reward",
+        "rewarding"
+      ],
+      "answerIndex": 1,
+      "en": "Don't forget to give my best regards to your parents when you go back home."
+    },
+    {
+      "id": "687",
+      "tags": [],
+      "question": "\"Please give my best (　　) to your parents.\" \"Thanks, I will.\"",
+      "rawAnswer": "④",
+      "ja": "「両親によろしくお伝えください」「ありがとう，そうします」",
+      "type": "choice",
+      "choices": [
+        "cares",
+        "feelings",
+        "promises",
+        "wishes"
+      ],
+      "answerIndex": 3,
+      "en": "\"Please give my best wishes to your parents.\" \"Thanks, I will.\""
+    },
+    {
+      "id": "688",
+      "tags": [
+        "発展",
+        "超頻出"
+      ],
+      "question": "Mary quarreled with her father a week ago. She is now barely (　　) with him.",
+      "rawAnswer": "①",
+      "ja": "メアリーは１週間前に父親と口論になった。今では彼とはほとんど口もきかない。",
+      "type": "choice",
+      "choices": [
+        "on speaking terms",
+        "on good feelings",
+        "in familiar relation",
+        "on bad conditions"
+      ],
+      "answerIndex": 0,
+      "en": "Mary quarreled with her father a week ago. She is now barely on speaking terms with him."
+    },
+    {
+      "id": "689",
+      "tags": [
+        "発展"
+      ],
+      "question": "Credit cards can be useful, but they encourage some people to live beyond their (　　).",
+      "rawAnswer": "②",
+      "ja": "クレジットカードは便利ではあるが，収入の範囲を超えた暮らしを助長する場合もある。",
+      "type": "choice",
+      "choices": [
+        "ability",
+        "means",
+        "power",
+        "ways"
+      ],
+      "answerIndex": 1,
+      "en": "Credit cards can be useful, but they encourage some people to live beyond their means."
+    },
+    {
+      "id": "690",
+      "tags": [],
+      "question": "The mother made (　　) for her son to see the doctor at 3 o'clock.",
+      "rawAnswer": "③",
+      "ja": "その母親は息子のために３時に医者の予約をとった。",
+      "type": "choice",
+      "choices": [
+        "a reservation",
+        "a booking",
+        "an appointment",
+        "an opening"
+      ],
+      "answerIndex": 2,
+      "en": "The mother made an appointment for her son to see the doctor at 3 o'clock."
+    },
+    {
+      "id": "691",
+      "tags": [],
+      "question": "Hello, I would like to make (　　) for a table for four tonight.",
+      "rawAnswer": "③",
+      "ja": "もしもし，今夜４人分の席を予約したいのですが。",
+      "type": "choice",
+      "choices": [
+        "a keeping",
+        "a visit",
+        "a reservation",
+        "an appointment"
+      ],
+      "answerIndex": 2,
+      "en": "Hello, I would like to make a reservation for a table for four tonight."
+    },
+    {
+      "id": "692",
+      "tags": [],
+      "question": "My son is in the (　　) of washing his hands many times a day.",
+      "rawAnswer": "①",
+      "ja": "私の息子は１日に何度も手を洗う習慣がある。",
+      "type": "choice",
+      "choices": [
+        "habit",
+        "manner",
+        "custom",
+        "taste"
+      ],
+      "answerIndex": 0,
+      "en": "My son is in the habit of washing his hands many times a day."
+    },
+    {
+      "id": "693",
+      "tags": [],
+      "question": "My brother's daughter Connie is my favorite (　　).",
+      "rawAnswer": "④",
+      "ja": "兄［弟］の娘のコニーは私のお気に入りの姪だ。",
+      "type": "choice",
+      "choices": [
+        "aunt",
+        "cousin",
+        "nephew",
+        "niece"
+      ],
+      "answerIndex": 3,
+      "en": "My brother's daughter Connie is my favorite niece."
+    },
+    {
+      "id": "694",
+      "tags": [],
+      "question": "It was announced yesterday that train companies would raise their (　　) by more than 10%.",
+      "rawAnswer": "③",
+      "ja": "昨日，鉄道会社が運賃を10％以上引き上げることが発表された。",
+      "type": "choice",
+      "choices": [
+        "fees",
+        "bills",
+        "fares",
+        "terms"
+      ],
+      "answerIndex": 2,
+      "en": "It was announced yesterday that train companies would raise their fares by more than 10%."
+    },
+    {
+      "id": "695",
+      "tags": [],
+      "question": "As the (　　) of living is higher in Tokyo than in Nagoya, I decided to live in Nagoya.",
+      "rawAnswer": "①",
+      "ja": "名古屋よりも東京のほうが生活費が高いので，私は名古屋に住むことにした。",
+      "type": "choice",
+      "choices": [
+        "cost",
+        "expensive",
+        "money",
+        "charge"
+      ],
+      "answerIndex": 0,
+      "en": "As the cost of living is higher in Tokyo than in Nagoya, I decided to live in Nagoya."
+    },
+    {
+      "id": "696",
+      "tags": [],
+      "question": "She drove too fast, so the police made her pay a (　　) of 150 dollars.",
+      "rawAnswer": "②",
+      "ja": "彼女はスピードを出しすぎたので，警察は150ドルの罰金を彼女に科した。",
+      "type": "choice",
+      "choices": [
+        "punish",
+        "fine",
+        "cost",
+        "charge"
+      ],
+      "answerIndex": 1,
+      "en": "She drove too fast, so the police made her pay a fine of 150 dollars."
+    },
+    {
+      "id": "697",
+      "tags": [],
+      "question": "The supermarket is crowded with (　　) every Sunday.",
+      "rawAnswer": "①",
+      "ja": "そのスーパーは毎週日曜日，買い物客で混雑する。",
+      "type": "choice",
+      "choices": [
+        "customers",
+        "sellers",
+        "guests",
+        "visitors"
+      ],
+      "answerIndex": 0,
+      "en": "The supermarket is crowded with customers every Sunday."
+    },
+    {
+      "id": "698",
+      "tags": [],
+      "question": "It was a miracle that all the (　　) survived the plane crash.",
+      "rawAnswer": "②",
+      "ja": "その飛行機事故で乗客が全員生き延びたのは奇跡だった。",
+      "type": "choice",
+      "choices": [
+        "clients",
+        "passengers",
+        "spectators",
+        "guests"
+      ],
+      "answerIndex": 1,
+      "en": "It was a miracle that all the passengers survived the plane crash."
+    },
+    {
+      "id": "699",
+      "tags": [],
+      "question": "When she finally succeeded after hours of work, she felt that her (　　) had been worthwhile.",
+      "rawAnswer": "①",
+      "ja": "何時間も働いてようやくうまくいったとき，彼女は自分の苦労は価値あるものだったと感じた。",
+      "type": "choice",
+      "choices": [
+        "labor",
+        "marsh",
+        "moisture",
+        "traffic"
+      ],
+      "answerIndex": 0,
+      "en": "When she finally succeeded after hours of work, she felt that her labor had been worthwhile."
+    },
+    {
+      "id": "700",
+      "tags": [],
+      "question": "Mary told me about her <u>occupation</u>.",
+      "rawAnswer": "②",
+      "ja": "メアリーは自分の職業について私に語った。",
+      "type": "choice",
+      "choices": [
+        "hobby",
+        "profession",
+        "dream",
+        "assignment"
+      ],
+      "answerIndex": 1,
+      "en": "Mary told me about her occupation."
+    },
+    {
+      "id": "701",
+      "tags": [],
+      "question": "In many of the developing countries of Asia and Africa where the urbanization process has only recently begun, about (　　) of the population lives in urban areas.",
+      "rawAnswer": "②",
+      "ja": "都市化の進行がごく最近になって始まったばかりのアジアやアフリカの発展途上国の多くでは，人口の約３分の１が都市部に住んでいる。",
+      "type": "choice",
+      "choices": [
+        "one of three",
+        "one-third",
+        "every three persons",
+        "the third"
+      ],
+      "answerIndex": 1,
+      "en": "In many of the developing countries of Asia and Africa where the urbanization process has only recently begun, about one-third of the population lives in urban areas."
+    },
+    {
+      "id": "702",
+      "tags": [],
+      "question": "①<u>Being terribly wounded</u>, approximately ②<u>two-third</u> of the soldiers ③<u>were lying</u> on the ground after the fighting ④<u>ended</u> in the area.",
+      "rawAnswer": "②→two-thirds／two thirds",
+      "ja": "その地域での戦闘が終わったあと，兵士たちのおよそ３分の２が，重傷のまま地面に横たわっていた。",
+      "type": "error",
+      "en": "Being terribly wounded, approximately two-thirds／two thirds of the soldiers were lying on the ground after the fighting ended in the area.",
+      "answerIndex": 1,
+      "correction": "two-thirds／two thirds"
+    },
+    {
+      "id": "703",
+      "tags": [],
+      "question": "It is hard to believe that ①<u>a year and half</u> ②<u>have passed</u> ③<u>since</u> ④<u>the last time</u> our whole family got together.",
+      "rawAnswer": "①→a year and a half／one and a half years",
+      "ja": "私たち家族全員が最後に集まってから，１年半が過ぎたなんて信じがたい。",
+      "type": "error",
+      "en": "It is hard to believe that a year and a half／one and a half years have passed since the last time our whole family got together.",
+      "answerIndex": 0,
+      "correction": "a year and a half／one and a half years"
+    },
+    {
+      "id": "704",
+      "tags": [],
+      "question": "It (half / to the station / walk / takes / an / to / hour).",
+      "rawAnswer": "takes half an hour to walk to the station",
+      "ja": "駅までは徒歩で30分かかる。",
+      "type": "ordering",
+      "answer": "takes half an hour to walk to the station",
+      "pieces": [
+        "half",
+        "to the station",
+        "walk",
+        "takes",
+        "an",
+        "to",
+        "hour"
+      ],
+      "en": "It takes half an hour to walk to the station."
+    }
+  ]
+}

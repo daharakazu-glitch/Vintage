@@ -36,6 +36,14 @@ W = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 CIRCLED = ['①', '②', '③', '④', '⑤', '⑥']
 BLANK_RE = re.compile(r'(?:\(\s*[　\s]*\)|\(　+\)|（\s*[　\s]*）|（　+）)')
 BLANK_RUN_RE = re.compile(r'(?:[（(][　\s]*[)）][ 　]*){1,}')
+# 整序英作文の語群: 全角・半角どちらのカッコにも対応 (■579, ■656)
+ORDERING_RE = re.compile(r'[（(]([^()（）]*\s/\s[^()（）]*)[)）]')
+
+# 元データの誤植の修正 (問題番号 -> 正しい解答)
+ANSWER_OVERRIDES = {
+    # ■556: 語群は 'an honest person' だが解答が 'an honest woman' になっている
+    '556': 'What do you think made an honest person like Jane',
+}
 
 
 def docx_lines(path):
@@ -52,6 +60,11 @@ def docx_lines(path):
 def is_japanese(line):
     return any('぀' <= ch <= 'ヿ' or '一' <= ch <= '鿿'
                or ch in '。，、．「」' for ch in line)
+
+
+def ja_char_count(line):
+    return sum(1 for ch in line if '぀' <= ch <= 'ヿ' or '一' <= ch <= '鿿'
+               or ch in '。，、．「」')
 
 
 def split_choices(line):
@@ -137,6 +150,8 @@ def parse_problem(num, lines):
     if answer is None:
         raise ValueError(f'問題 {num}: 解答行 (#...) が見つかりません')
 
+    answer = ANSWER_OVERRIDES.get(num, answer)
+
     # 選択肢行 (①で始まる行)。意味一致問題などでは選択肢が複数行に分かれる
     choice_lines = []
     q_lines = []
@@ -147,8 +162,8 @@ def parse_problem(num, lines):
             q_lines.append(line)
 
     question = '\n'.join(q_lines)
-    ja_q = [l for l in q_lines if is_japanese(l) and '<u>' not in l
-            and not re.search(r'[a-zA-Z]{3,}', l)]
+    # 日本語文字が3つ以上あれば日本語行とみなす ('DVD' など英字混じりにも対応)
+    ja_q = [l for l in q_lines if ja_char_count(l) >= 3 and '<u>' not in l]
     en_q = [l for l in q_lines if l not in ja_q]
     translation = '\n'.join(post)
 
@@ -163,7 +178,7 @@ def parse_problem(num, lines):
     has_blank = bool(BLANK_RE.search(question))
     # 誤り指摘は ①<u>...</u> 形式。番号なしの <u> は下線部言い換えなどの4択
     has_numbered_underline = bool(re.search(r'[①②③④]<u>', question))
-    has_ordering = bool(re.search(r'\([^()]*\s/\s[^()]*\)', question))
+    has_ordering = bool(ORDERING_RE.search(question))
 
     if has_numbered_underline:
         prob['type'] = 'error'
@@ -187,14 +202,27 @@ def parse_problem(num, lines):
             # 空所なし (下線部言い換え・意味一致など) は英文をそのまま使う
             plain = [re.sub(r'</?u>', '', l) for l in en_q if re.search(r'[a-zA-Z]{3,}', l)]
             prob['en'] = base or (plain[0] if plain else '')
+            # 日本語文に対する英文選択問題は正解の選択肢を正解英文とする
+            if not prob['en'] and idx is not None and len(prob['choices']) > idx:
+                prob['en'] = prob['choices'][idx]
     elif has_ordering:
         prob['type'] = 'ordering'
         clean = strip_fuyou(answer)
         prob['answer'] = clean
-        m = re.search(r'\(([^()]*\s/\s[^()]*)\)', question)
+        m = ORDERING_RE.search(question)
         prob['pieces'] = [p.strip() for p in m.group(1).split('/')]
-        en_line = next((l for l in en_q if re.search(r'\([^()]*\s/\s[^()]*\)', l)), '')
-        sentence = re.sub(r'\([^()]*\s/\s[^()]*\)', clean, en_line)
+        ordering_line = next((l for l in en_q if ORDERING_RE.search(l)), '')
+        rest = ORDERING_RE.sub('', ordering_line).strip(' 　.,!?')
+        blank_line = next((l for l in en_q
+                           if BLANK_RUN_RE.search(l) and not ORDERING_RE.search(l)), '')
+        if not rest and blank_line:
+            # 「(　　) (　　) ... he would lose the game.」形式 (■495):
+            # 語群行とは別の空所行に解答を流し込む
+            sentence = BLANK_RUN_RE.sub(clean + ' ', blank_line, count=1)
+        else:
+            # 整序部分が複数行にまたがる場合 (■579) があるため英文行を結合して置換する
+            # 「mother（have / ...」のようにカッコ前後に空白がない原文に備えて空白を補う
+            sentence = ORDERING_RE.sub(lambda _: f' {clean} ', ' '.join(en_q))
         prob['en'] = re.sub(r'\s+([,.!?;:])', r'\1', re.sub(r'\s+', ' ', sentence)).strip()
         note = re.search(r'[（(]([^（()）]*不要)[)）]', answer)
         if note:

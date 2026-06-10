@@ -7,7 +7,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vintage学習アプリ (第15章　語順（倒置）・省略・強調)</title>
+    <title>Vintage学習アプリ (第20章　形容詞の語法)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Tinos:wght@700&display=swap');
@@ -111,7 +111,7 @@
         <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-4xl flex-grow flex flex-col">
             <header class="flex-shrink-0 text-center mb-4 bg-green-800 p-4 rounded-xl shadow-lg">
                 <h1 class="text-2xl md:text-3xl font-bold text-white">Vintage 学習アプリ</h1>
-                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第15章　語順（倒置）・省略・強調</h2>
+                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第20章　形容詞の語法</h2>
             </header>
 
             <main class="flex-grow bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-lg mb-2">
@@ -186,471 +186,813 @@
         // --- App State ---
         const chapterData = [
  {
-  "id": "494",
+  "id": "763",
   "tags": [
+   "基本",
    "超頻出"
   ],
-  "question": "Never (　　) I dream of making a fortune by investing in the stock market.",
-  "rawAnswer": "②",
-  "ja": "株式市場に投資して財産を築くなどとは，夢にも思わなかった。",
-  "type": "choice",
-  "choices": [
-   "had",
-   "did",
-   "am",
-   "have"
-  ],
-  "answerIndex": 1,
-  "en": "Never did I dream of making a fortune by investing in the stock market."
- },
- {
-  "id": "495",
-  "tags": [],
-  "question": "我々は，彼がその試合に負けるなどとは思ってもみなかった。（１語不要）\n(　　) (　　) (　　) (　　) (　　) he would lose the game.\n(think / did / that / little / we / no)",
-  "rawAnswer": "Little did we think that（no不要）",
-  "ja": "我々は，彼がその試合に負けるなどとは思ってもみなかった。（１語不要）",
-  "type": "ordering",
-  "answer": "Little did we think that",
-  "pieces": [
-   "think",
-   "did",
-   "that",
-   "little",
-   "we",
-   "no"
-  ],
-  "en": "Little did we think that he would lose the game.",
-  "note": "no不要"
- },
- {
-  "id": "496",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "今ほど緊張したことはこれまでになかった。\nAt (been / have / I / more nervous / no / time) than I am now.",
-  "rawAnswer": "no time have I been more nervous",
-  "ja": "今ほど緊張したことはこれまでになかった。",
-  "type": "ordering",
-  "answer": "no time have I been more nervous",
-  "pieces": [
-   "been",
-   "have",
-   "I",
-   "more nervous",
-   "no",
-   "time"
-  ],
-  "en": "At no time have I been more nervous than I am now."
- },
- {
-  "id": "497",
-  "tags": [],
-  "question": "労働者は賃上げを要求するだけでなく，労働時間の削減も望んでいる。\nNot (a pay increase / do / only / the workers / want), but they also want reduced hours.",
-  "rawAnswer": "only do the workers want a pay increase",
-  "ja": "労働者は賃上げを要求するだけでなく，労働時間の削減も望んでいる。",
-  "type": "ordering",
-  "answer": "only do the workers want a pay increase",
-  "pieces": [
-   "a pay increase",
-   "do",
-   "only",
-   "the workers",
-   "want"
-  ],
-  "en": "Not only do the workers want a pay increase, but they also want reduced hours."
- },
- {
-  "id": "498",
-  "tags": [],
-  "question": "最近になってようやく，親の教えの大切さがわかった。\nOnly (have/ I / importance / lessons / my / of / parents' / realized / recently / the).",
-  "rawAnswer": "recently have I realized the importance of my parents' lessons",
-  "ja": "最近になってようやく，親の教えの大切さがわかった。",
-  "type": "ordering",
-  "answer": "recently have I realized the importance of my parents' lessons",
-  "pieces": [
-   "have",
-   "I",
-   "importance",
-   "lessons",
-   "my",
-   "of",
-   "parents'",
-   "realized",
-   "recently",
-   "the"
-  ],
-  "en": "Only recently have I realized the importance of my parents' lessons."
- },
- {
-  "id": "499",
-  "tags": [],
-  "question": "そのオペラはイタリア語で公演され，私には一言もわからなかったし，そのストーリーも知らなかった。\nThe opera was performed in Italian, and I did not understand a word of it, (the story / I / did / know / nor).",
-  "rawAnswer": "nor did I know the story",
-  "ja": "そのオペラはイタリア語で公演され，私には一言もわからなかったし，そのストーリーも知らなかった。",
-  "type": "ordering",
-  "answer": "nor did I know the story",
-  "pieces": [
-   "the story",
-   "I",
-   "did",
-   "know",
-   "nor"
-  ],
-  "en": "The opera was performed in Italian, and I did not understand a word of it, nor did I know the story."
- },
- {
-  "id": "500",
-  "tags": [
-   "超頻出"
-  ],
-  "question": "\"I haven't been here before.\"　\"Is that so? (　　).\"",
-  "rawAnswer": "④",
-  "ja": "「ここには今まで来たことがない」「そうですか？ 私もありません」",
-  "type": "choice",
-  "choices": [
-   "I haven't neither",
-   "Nor I haven't",
-   "I neither did",
-   "Neither have I"
-  ],
-  "answerIndex": 3,
-  "en": "\"I haven't been here before.\"　\"Is that so? Neither have I.\""
- },
- {
-  "id": "501",
-  "tags": [],
-  "question": "\"I didn't make any mistakes in the math quiz!\"　\"(　　) did I.\"",
+  "question": "Driving downtown to the stadium for the baseball game was easy. We got there quickly because there was (　　) traffic.",
   "rawAnswer": "③",
-  "ja": "「数学の小テストで１問もミスをしなかったぞ！」「僕もしなかったよ」",
+  "ja": "野球の試合のために車で繁華街を通って野球場へ行くのはたやすかった。交通量がほとんどなかったので，すぐにそこに着いた。",
   "type": "choice",
   "choices": [
-   "Also",
-   "But",
-   "Nor",
-   "Yet"
+   "few",
+   "a few",
+   "little",
+   "a little"
   ],
   "answerIndex": 2,
-  "en": "\"I didn't make any mistakes in the math quiz!\"　\"Nor did I.\""
+  "en": "Driving downtown to the stadium for the baseball game was easy. We got there quickly because there was little traffic."
  },
  {
-  "id": "502",
+  "id": "764",
   "tags": [
+   "基本",
    "超頻出"
   ],
-  "question": "As fuel prices rose, bus companies raised their fares and (　　).",
-  "rawAnswer": "①",
-  "ja": "燃料の価格が上がったので，バス会社は運賃を引き上げ，航空会社も同様にした。",
-  "type": "choice",
-  "choices": [
-   "so did the airlines",
-   "neither did the airlines",
-   "so the airlines have done",
-   "neither the airlines did"
-  ],
-  "answerIndex": 0,
-  "en": "As fuel prices rose, bus companies raised their fares and so did the airlines."
- },
- {
-  "id": "503",
-  "tags": [],
-  "question": "先週の日曜日はとても天気が良かったので田舎にドライブに出かけた。\nLast Sunday was (beautiful / day / that / we / a / so) took a drive in the country.",
-  "rawAnswer": "so beautiful a day that we",
-  "ja": "先週の日曜日はとても天気が良かったので田舎にドライブに出かけた。",
-  "type": "ordering",
-  "answer": "so beautiful a day that we",
-  "pieces": [
-   "beautiful",
-   "day",
-   "that",
-   "we",
-   "a",
-   "so"
-  ],
-  "en": "Last Sunday was so beautiful a day that we took a drive in the country."
- },
- {
-  "id": "504",
-  "tags": [],
-  "question": "Chopin (as / a / good / as / pianist / was) a composer.",
-  "rawAnswer": "was as good a pianist as",
-  "ja": "ショパンは優れた作曲家であり，同時にすばらしいピアニストでもあった。",
-  "type": "ordering",
-  "answer": "was as good a pianist as",
-  "pieces": [
-   "as",
-   "a",
-   "good",
-   "as",
-   "pianist",
-   "was"
-  ],
-  "en": "Chopin was as good a pianist as a composer."
- },
- {
-  "id": "505",
-  "tags": [],
-  "question": "It was much (　　) problem, so nobody was able to solve it.",
+  "question": "I can't decide now. I need (　　) time to think about it.",
   "rawAnswer": "④",
-  "ja": "それはあまりに難解な問題だったので，だれも解くことができなかった。",
+  "ja": "今は決められません。それについて考える時間が少し必要です。",
   "type": "choice",
   "choices": [
-   "a too difficult",
-   "too a difficult",
-   "too difficult",
-   "too difficult a"
+   "few",
+   "a few",
+   "little",
+   "a little"
   ],
   "answerIndex": 3,
-  "en": "It was much too difficult a problem, so nobody was able to solve it."
+  "en": "I can't decide now. I need a little time to think about it."
  },
  {
-  "id": "506",
+  "id": "765",
   "tags": [
+   "基本",
    "超頻出"
   ],
-  "question": "I think he is (　　) teacher.",
-  "rawAnswer": "②",
-  "ja": "彼はとても忍耐強い教師だと思います。",
+  "question": "My daughter has (　　) close friends at school.",
+  "rawAnswer": "③",
+  "ja": "私の娘は学校に数少ない親友がいる。",
   "type": "choice",
   "choices": [
-   "a so patient",
-   "such a patient",
-   "so a patient",
-   "a such patient"
+   "a little",
+   "a little of",
+   "a few",
+   "a few of"
   ],
-  "answerIndex": 1,
-  "en": "I think he is such a patient teacher."
+  "answerIndex": 2,
+  "en": "My daughter has a few close friends at school."
  },
  {
-  "id": "507",
+  "id": "766",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "There were (　　) people at the meeting, so the room was nearly empty.",
+  "rawAnswer": "③",
+  "ja": "会議にはほとんど人がいなかったので，部屋はからっぽに近かった。",
+  "type": "choice",
+  "choices": [
+   "big",
+   "number",
+   "few",
+   "little"
+  ],
+  "answerIndex": 2,
+  "en": "There were few people at the meeting, so the room was nearly empty."
+ },
+ {
+  "id": "767",
   "tags": [
    "基本"
   ],
-  "question": "My child leaves her toys all over the room and I have to pick (　　).",
-  "rawAnswer": "①",
-  "ja": "子どもが部屋中におもちゃを放りっぱなしにするので，私が拾い集めないといけない。",
-  "type": "choice",
-  "choices": [
-   "them up",
-   "themselves up",
-   "up them",
-   "up themselves"
-  ],
-  "answerIndex": 0,
-  "en": "My child leaves her toys all over the room and I have to pick them up."
- },
- {
-  "id": "508",
-  "tags": [],
-  "question": "Among the audience (　　) the President and her daughter.",
+  "question": "It is not good for your health to put (　　) sugar in your coffee.",
   "rawAnswer": "④",
-  "ja": "観客の中には大統領とその娘がいた。",
+  "ja": "コーヒーに砂糖を入れすぎると，健康に良くないですよ。",
   "type": "choice",
   "choices": [
-   "being",
-   "having been",
-   "was",
-   "were"
+   "a lot",
+   "lots",
+   "too many",
+   "too much"
   ],
   "answerIndex": 3,
-  "en": "Among the audience were the President and her daughter."
+  "en": "It is not good for your health to put too much sugar in your coffee."
  },
  {
-  "id": "509",
+  "id": "768",
+  "tags": [
+   "基本"
+  ],
+  "question": "Have you had (　　) experiences abroad?",
+  "rawAnswer": "③",
+  "ja": "海外経験は多いですか。",
+  "type": "choice",
+  "choices": [
+   "little",
+   "lots",
+   "many",
+   "much"
+  ],
+  "answerIndex": 2,
+  "en": "Have you had many experiences abroad?"
+ },
+ {
+  "id": "769",
   "tags": [
    "超頻出"
   ],
-  "question": "The lady is very quiet and doesn't speak unless (　　).",
-  "rawAnswer": "①",
-  "ja": "その女性はとても物静かで，話しかけられない限り，口をきくことはない。",
+  "question": "There were <u>quite a few</u> students absent from class.",
+  "rawAnswer": "④",
+  "ja": "授業を休んだ学生がかなり大勢いた。",
   "type": "choice",
   "choices": [
-   "spoken to",
-   "she is not spoken",
-   "she speaks",
-   "never speaking"
+   "a limited number of",
+   "an extremely small number of",
+   "a small number of",
+   "a fairly large number of"
   ],
-  "answerIndex": 0,
-  "en": "The lady is very quiet and doesn't speak unless spoken to."
+  "answerIndex": 3,
+  "en": "There were quite a few students absent from class."
  },
  {
-  "id": "510",
-  "tags": [],
-  "question": "There are few mistakes, if (　　), in this long essay.",
-  "rawAnswer": "②",
-  "ja": "この長い作文には，たとえあるにしても，ほとんど間違いはない。",
+  "id": "770",
+  "tags": [
+   "基本"
+  ],
+  "question": "We'll get (　　) information from the tourist office.",
+  "rawAnswer": "①",
+  "ja": "私たちは旅行案内所から情報を入手するつもりだ。",
   "type": "choice",
   "choices": [
    "some",
    "any",
-   "even",
-   "there are"
+   "an",
+   "every"
+  ],
+  "answerIndex": 0,
+  "en": "We'll get some information from the tourist office."
+ },
+ {
+  "id": "771",
+  "tags": [],
+  "question": "Come here and sit down by me. There is (　　) room for you.",
+  "rawAnswer": "②",
+  "ja": "ここに来て私のそばに座りなさい。十分なスペースがあるから。",
+  "type": "choice",
+  "choices": [
+   "a",
+   "enough",
+   "little",
+   "the"
   ],
   "answerIndex": 1,
-  "en": "There are few mistakes, if any, in this long essay."
+  "en": "Come here and sit down by me. There is enough room for you."
  },
  {
-  "id": "511",
+  "id": "772",
   "tags": [],
-  "question": "Mr. and Mrs. Thatcher seldom, if (　　), go out in the evening.",
-  "rawAnswer": "④",
-  "ja": "サッチャー夫妻は，たとえあるにしても，めったに夜は外出しない。",
+  "question": "A great (　　) of money has been spent on this building.",
+  "rawAnswer": "①",
+  "ja": "この建物にたくさんのお金が費やされてきた。",
   "type": "choice",
   "choices": [
-   "any",
-   "few",
-   "little",
-   "ever"
+   "deal",
+   "number",
+   "price",
+   "cost"
   ],
-  "answerIndex": 3,
-  "en": "Mr. and Mrs. Thatcher seldom, if ever, go out in the evening."
+  "answerIndex": 0,
+  "en": "A great deal of money has been spent on this building."
  },
  {
-  "id": "512",
+  "id": "773",
+  "tags": [],
+  "question": "<u>A great number of</u> members opposed my proposal at the meeting.",
+  "rawAnswer": "②",
+  "ja": "会議では多くの参加者が私の提案に反対した。",
+  "type": "choice",
+  "choices": [
+   "A few",
+   "Many",
+   "The number of",
+   "A minimum of"
+  ],
+  "answerIndex": 1,
+  "en": "A great number of members opposed my proposal at the meeting."
+ },
+ {
+  "id": "774",
   "tags": [
+   "基本"
+  ],
+  "question": "I don't mind being transferred as long as the job is (　　).",
+  "rawAnswer": "③",
+  "ja": "仕事がおもしろいのであれば，転勤も気にしません。",
+  "type": "choice",
+  "choices": [
+   "interest",
+   "interested",
+   "interesting",
+   "interests"
+  ],
+  "answerIndex": 2,
+  "en": "I don't mind being transferred as long as the job is interesting."
+ },
+ {
+  "id": "775",
+  "tags": [
+   "基本"
+  ],
+  "question": "When he was ①<u>asked</u> why he was studying ②<u>so</u> hard, he replied ③<u>that</u> he was ④<u>interesting</u> in English culture.",
+  "rawAnswer": "④→interested",
+  "ja": "なぜそんなに必死に勉強しているのかと聞かれて，彼は，英国文化に興味があるからと答えた。",
+  "type": "error",
+  "en": "When he was asked why he was studying so hard, he replied that he was interested in English culture.",
+  "answerIndex": 3,
+  "correction": "interested"
+ },
+ {
+  "id": "776",
+  "tags": [
+   "基本",
    "超頻出"
   ],
-  "question": "君に解いてもらいたいのは他でもなくこの問題なんだ。\nIt is this question (solve / I / to / you / want / that).",
-  "rawAnswer": "that I want you to solve",
-  "ja": "君に解いてもらいたいのは他でもなくこの問題なんだ。",
-  "type": "ordering",
-  "answer": "that I want you to solve",
-  "pieces": [
-   "solve",
-   "I",
-   "to",
-   "you",
-   "want",
-   "that"
-  ],
-  "en": "It is this question that I want you to solve."
- },
- {
-  "id": "513",
-  "tags": [],
-  "question": "It was because he was ill (　　) we gave up traveling.",
-  "rawAnswer": "④",
-  "ja": "私たちが旅行をやめたのは，彼が病気だったからだ。",
+  "question": "It was (　　) that so many people came to see our performance.",
+  "rawAnswer": "①",
+  "ja": "私たちの公演をそんなにたくさんの人が見に来てくれたのは，胸躍る出来事だった。",
   "type": "choice",
   "choices": [
-   "as",
-   "for",
-   "so",
-   "that"
+   "exciting",
+   "excited",
+   "excitement",
+   "to excite"
   ],
-  "answerIndex": 3,
-  "en": "It was because he was ill that we gave up traveling."
+  "answerIndex": 0,
+  "en": "It was exciting that so many people came to see our performance."
  },
  {
-  "id": "514",
-  "tags": [],
-  "question": "警察が到着したのは，事故があって２時間も経ってからでした。\nIt was (after / not / that / the accident / the police / two hours / until) arrived.",
-  "rawAnswer": "not until two hours after the accident that the police",
-  "ja": "警察が到着したのは，事故があって２時間も経ってからでした。",
-  "type": "ordering",
-  "answer": "not until two hours after the accident that the police",
-  "pieces": [
-   "after",
-   "not",
-   "that",
-   "the accident",
-   "the police",
-   "two hours",
-   "until"
+  "id": "777",
+  "tags": [
+   "基本",
+   "超頻出"
   ],
-  "en": "It was not until two hours after the accident that the police arrived."
- },
- {
-  "id": "515",
-  "tags": [],
-  "question": "(　　) you went into the room with?",
-  "rawAnswer": "④",
-  "ja": "その部屋にあなたと一緒に入った人はいったい誰だったのですか。",
+  "question": "When some (　　) children got onto the train, it became very noisy.",
+  "rawAnswer": "②",
+  "ja": "興奮した子どもたちが電車に乗り込んできて，とても騒がしくなった。",
   "type": "choice",
   "choices": [
-   "Who she was",
-   "What is she",
-   "Who it was that",
-   "Who was it that"
+   "excite",
+   "excited",
+   "exciting",
+   "to excite"
   ],
-  "answerIndex": 3,
-  "en": "Who was it that you went into the room with?"
+  "answerIndex": 1,
+  "en": "When some excited children got onto the train, it became very noisy."
  },
  {
-  "id": "516",
+  "id": "778",
   "tags": [],
-  "question": "子どもたちが育つ世界は大人が創っている。\n(adults / children / create / it is / the world / their / where / who) will grow up.",
-  "rawAnswer": "It is adults who create the world where their children",
-  "ja": "子どもたちが育つ世界は大人が創っている。",
-  "type": "ordering",
-  "answer": "It is adults who create the world where their children",
-  "pieces": [
-   "adults",
-   "children",
-   "create",
-   "it is",
-   "the world",
-   "their",
-   "where",
-   "who"
-  ],
-  "en": "It is adults who create the world where their children will grow up."
- },
- {
-  "id": "517",
-  "tags": [],
-  "question": "私は，子どものころにピアノが弾けるようになれなかったことを，本当に悔やんでいます。\nI (piano / do / learning / play / to / the / not / regret) when I was a child.",
-  "rawAnswer": "do regret not learning to play the piano",
-  "ja": "私は，子どものころにピアノが弾けるようになれなかったことを，本当に悔やんでいます。",
-  "type": "ordering",
-  "answer": "do regret not learning to play the piano",
-  "pieces": [
-   "piano",
-   "do",
-   "learning",
-   "play",
-   "to",
-   "the",
-   "not",
-   "regret"
-  ],
-  "en": "I do regret not learning to play the piano when I was a child."
- },
- {
-  "id": "518",
-  "tags": [],
-  "question": "What (　　) earth are you doing?",
+  "question": "My job at the company was very (　　).",
   "rawAnswer": "④",
-  "ja": "いったいあなたは何をしているのですか。",
+  "ja": "その会社での私の仕事はとても退屈なものだった。",
   "type": "choice",
   "choices": [
-   "by",
-   "for",
-   "from",
-   "on"
+   "bored",
+   "boredom",
+   "bore",
+   "boring"
   ],
   "answerIndex": 3,
-  "en": "What on earth are you doing?"
+  "en": "My job at the company was very boring."
  },
  {
-  "id": "519",
+  "id": "779",
   "tags": [],
-  "question": "これは私が買いたかった，まさにその本です。\nThis (book / the / is / I / wanted / that / buy / very / to).",
-  "rawAnswer": "is the very book that I wanted to buy",
-  "ja": "これは私が買いたかった，まさにその本です。",
-  "type": "ordering",
-  "answer": "is the very book that I wanted to buy",
-  "pieces": [
-   "book",
-   "the",
-   "is",
-   "I",
-   "wanted",
-   "that",
-   "buy",
-   "very",
-   "to"
+  "question": "①<u>Students were boring</u> ②<u>because</u> the teacher ③<u>just forced them</u> ④<u>to learn grammar</u> and vocabulary.",
+  "rawAnswer": "①→Students were bored",
+  "ja": "先生が文法と語いを学ぶことばかり強要するので，生徒たちはうんざりしていた。",
+  "type": "error",
+  "en": "Students were bored because the teacher just forced them to learn grammar and vocabulary.",
+  "answerIndex": 0,
+  "correction": "Students were bored"
+ },
+ {
+  "id": "780",
+  "tags": [],
+  "question": "They were (　　) with the results.",
+  "rawAnswer": "②",
+  "ja": "彼らはその結果にがっかりした。",
+  "type": "choice",
+  "choices": [
+   "disappoint",
+   "disappointed",
+   "disappointing",
+   "to disappoint"
   ],
-  "en": "This is the very book that I wanted to buy."
+  "answerIndex": 1,
+  "en": "They were disappointed with the results."
+ },
+ {
+  "id": "781",
+  "tags": [],
+  "question": "\"It is ①<u>extremely disappointed</u> to find that so many shops or shopkeepers ②<u>are still</u> prepared to sell knives to ③<u>people under 16</u>,\" ④<u>said a researcher</u>.",
+  "rawAnswer": "①→extremely disappointing",
+  "ja": "「16歳未満の人に平気でナイフを売る店や店主が依然として非常に多いということは極めて残念である」と，調査員は述べた。",
+  "type": "error",
+  "en": "\"It is extremely disappointing to find that so many shops or shopkeepers are still prepared to sell knives to people under 16,\" said a researcher.",
+  "answerIndex": 0,
+  "correction": "extremely disappointing"
+ },
+ {
+  "id": "782",
+  "tags": [],
+  "question": "Many students seem more (　　) now about how to write a research paper.",
+  "rawAnswer": "③",
+  "ja": "研究論文をどう書けばよいのか，今では多くの生徒たちがいっそう困惑しているようだ。",
+  "type": "choice",
+  "choices": [
+   "confusing",
+   "confusion",
+   "confused",
+   "confuse"
+  ],
+  "answerIndex": 2,
+  "en": "Many students seem more confused now about how to write a research paper."
+ },
+ {
+  "id": "783",
+  "tags": [],
+  "question": "George looked (　　) when I apologized to him for my rudeness.",
+  "rawAnswer": "②",
+  "ja": "私の無礼を謝ると，ジョージは満足したようだった。",
+  "type": "choice",
+  "choices": [
+   "satisfy",
+   "satisfied",
+   "satisfying",
+   "to satisfy"
+  ],
+  "answerIndex": 1,
+  "en": "George looked satisfied when I apologized to him for my rudeness."
+ },
+ {
+  "id": "784",
+  "tags": [],
+  "question": "Despite their efforts to capture the bear (　　), they finally had to shoot it.",
+  "rawAnswer": "④",
+  "ja": "彼らはその熊を生け捕りにしようと努力したが，最終的には射殺しなければならなかった。",
+  "type": "choice",
+  "choices": [
+   "lived",
+   "lives",
+   "lively",
+   "alive"
+  ],
+  "answerIndex": 3,
+  "en": "Despite their efforts to capture the bear alive, they finally had to shoot it."
+ },
+ {
+  "id": "785",
+  "tags": [],
+  "question": "I was so tired that it was really hard to stay (　　) in class.",
+  "rawAnswer": "②",
+  "ja": "私は非常に疲れていたので，授業中に起きているのはとても難しかった。",
+  "type": "choice",
+  "choices": [
+   "waking",
+   "awake",
+   "woken",
+   "wake"
+  ],
+  "answerIndex": 1,
+  "en": "I was so tired that it was really hard to stay awake in class."
+ },
+ {
+  "id": "786",
+  "tags": [],
+  "question": "空所に共通する１語を書きなさい。\n(a) We do not have any more information at the (　　) time.\n(b) There were 200 people (　　) at the meeting.",
+  "rawAnswer": "present",
+  "ja": "(a) 現在のところ，私たちにはこれ以上の情報はない。\n(b) その会議には200人が出席した。",
+  "type": "fill",
+  "answer": "present",
+  "en": "There were 200 people present at the meeting."
+ },
+ {
+  "id": "787",
+  "tags": [],
+  "question": "I would like to see you tomorrow. What time (　　)?",
+  "rawAnswer": "②",
+  "ja": "明日あなたにお目にかかりたいと思います。何時が都合がよろしいですか。",
+  "type": "choice",
+  "choices": [
+   "are you convenient",
+   "is convenient for you",
+   "is convenience",
+   "convenient are you"
+  ],
+  "answerIndex": 1,
+  "en": "I would like to see you tomorrow. What time is convenient for you?"
+ },
+ {
+  "id": "788",
+  "tags": [],
+  "question": "It seemed (　　) for us to finish the task by the next day.",
+  "rawAnswer": "③",
+  "ja": "私たちが次の日までにその仕事を終えるのは不可能なようだった。",
+  "type": "choice",
+  "choices": [
+   "unable",
+   "incapable",
+   "impossible",
+   "terrible"
+  ],
+  "answerIndex": 2,
+  "en": "It seemed impossible for us to finish the task by the next day."
+ },
+ {
+  "id": "789",
+  "tags": [
+   "基本"
+  ],
+  "question": "John is not (　　) to come to the class.",
+  "rawAnswer": "①",
+  "ja": "ジョンは授業には出られません。",
+  "type": "choice",
+  "choices": [
+   "able",
+   "capable",
+   "possible",
+   "probably"
+  ],
+  "answerIndex": 0,
+  "en": "John is not able to come to the class."
+ },
+ {
+  "id": "790",
+  "tags": [],
+  "question": "She is (　　) of great patience when she deals with children.",
+  "rawAnswer": "②",
+  "ja": "子どもを扱うにあたって，彼女は多大な忍耐力を発揮できる。",
+  "type": "choice",
+  "choices": [
+   "possible",
+   "capable",
+   "careful",
+   "able"
+  ],
+  "answerIndex": 1,
+  "en": "She is capable of great patience when she deals with children."
+ },
+ {
+  "id": "791",
+  "tags": [],
+  "question": "The price of fresh vegetables is getting too (　　) to afford them.",
+  "rawAnswer": "④",
+  "ja": "新鮮な野菜の値段が上がりすぎていて，買うことができない。",
+  "type": "choice",
+  "choices": [
+   "expensive",
+   "reasonable",
+   "cheap",
+   "high"
+  ],
+  "answerIndex": 3,
+  "en": "The price of fresh vegetables is getting too high to afford them."
+ },
+ {
+  "id": "792",
+  "tags": [],
+  "question": "The soccer game was shown on a big screen in front of (　　) audience.",
+  "rawAnswer": "①",
+  "ja": "そのサッカーの試合は，大観衆の前の巨大スクリーンに映し出された。",
+  "type": "choice",
+  "choices": [
+   "a large",
+   "a lot of",
+   "many",
+   "much"
+  ],
+  "answerIndex": 0,
+  "en": "The soccer game was shown on a big screen in front of a large audience."
+ },
+ {
+  "id": "793",
+  "tags": [],
+  "question": "David and James are (　　) in many ways.",
+  "rawAnswer": "④",
+  "ja": "デイビッドとジェームズは多くの点で似ている。",
+  "type": "choice",
+  "choices": [
+   "like",
+   "likely",
+   "dislike",
+   "alike"
+  ],
+  "answerIndex": 3,
+  "en": "David and James are alike in many ways."
+ },
+ {
+  "id": "794",
+  "tags": [],
+  "question": "John's family always enjoyed having (　　) discussions over dinner.",
+  "rawAnswer": "①",
+  "ja": "ジョンの家族はいつも，夕食をとりながらの活発な議論を楽しんだ。",
+  "type": "choice",
+  "choices": [
+   "lively",
+   "alive",
+   "lived",
+   "living"
+  ],
+  "answerIndex": 0,
+  "en": "John's family always enjoyed having lively discussions over dinner."
+ },
+ {
+  "id": "795",
+  "tags": [],
+  "question": "There seems to be no (　　) thing on this deserted island.",
+  "rawAnswer": "④",
+  "ja": "この無人島にはまったく生き物がいないようだ。",
+  "type": "choice",
+  "choices": [
+   "alive",
+   "life",
+   "lived",
+   "living"
+  ],
+  "answerIndex": 3,
+  "en": "There seems to be no living thing on this deserted island."
+ },
+ {
+  "id": "796",
+  "tags": [],
+  "question": "I've come to think that buying ①<u>in bulk</u> is more ②<u>economic</u> than shopping ③<u>for</u> small ④<u>quantities</u>.",
+  "rawAnswer": "②→economical",
+  "ja": "少量での買い物よりも，大量購入のほうがより経済的だと私は考えるようになった。",
+  "type": "error",
+  "en": "I've come to think that buying in bulk is more economical than shopping for small quantities.",
+  "answerIndex": 1,
+  "correction": "economical"
+ },
+ {
+  "id": "797",
+  "tags": [],
+  "question": "The ①<u>twentieth</u> century ②<u>saw</u> the rapid ③<u>industrious</u> and ④<u>agricultural</u> development of the U.S.",
+  "rawAnswer": "③→industrial",
+  "ja": "20世紀，アメリカでは産業と農業の急速な発達が見られた。",
+  "type": "error",
+  "en": "The twentieth century saw the rapid industrial and agricultural development of the U.S.",
+  "answerIndex": 2,
+  "correction": "industrial"
+ },
+ {
+  "id": "798",
+  "tags": [],
+  "question": "We would be glad to send (　　) information if you agree to the terms of the contract.",
+  "rawAnswer": "②",
+  "ja": "契約条件に同意していただければ，より詳しい情報をお送りいたします。",
+  "type": "choice",
+  "choices": [
+   "rich",
+   "further",
+   "large",
+   "farther"
+  ],
+  "answerIndex": 1,
+  "en": "We would be glad to send further information if you agree to the terms of the contract."
+ },
+ {
+  "id": "799",
+  "tags": [],
+  "question": "We are now in the (　　) half of our training camp.",
+  "rawAnswer": "②",
+  "ja": "今はトレーニング合宿の後半だ。",
+  "type": "choice",
+  "choices": [
+   "late",
+   "latter",
+   "later",
+   "last"
+  ],
+  "answerIndex": 1,
+  "en": "We are now in the latter half of our training camp."
+ },
+ {
+  "id": "800",
+  "tags": [],
+  "question": "Have you seen his (　　) movie?",
+  "rawAnswer": "②",
+  "ja": "あなたは彼が監督した映画の最新作を見ましたか。",
+  "type": "choice",
+  "choices": [
+   "late",
+   "latest",
+   "today",
+   "recently"
+  ],
+  "answerIndex": 1,
+  "en": "Have you seen his latest movie?"
+ },
+ {
+  "id": "801",
+  "tags": [],
+  "question": "Every morning he spends <u>considerable</u> time reading all the pages of three newspapers.",
+  "rawAnswer": "①",
+  "ja": "毎朝彼は，新聞３紙のすべてのページを読むことにかなりの時間を費やす。",
+  "type": "choice",
+  "choices": [
+   "a lot of",
+   "concentrated",
+   "excessive",
+   "important"
+  ],
+  "answerIndex": 0,
+  "en": "Every morning he spends considerable time reading all the pages of three newspapers."
+ },
+ {
+  "id": "802",
+  "tags": [],
+  "question": "Because of (　　) weather conditions, Shizuoka Prefecture has an advantage in the production of fruits and vegetables.",
+  "rawAnswer": "③",
+  "ja": "天候条件がよいため，静岡県は果物や野菜の生産において有利である。",
+  "type": "choice",
+  "choices": [
+   "favorite",
+   "favor",
+   "favorable",
+   "favorably"
+  ],
+  "answerIndex": 2,
+  "en": "Because of favorable weather conditions, Shizuoka Prefecture has an advantage in the production of fruits and vegetables."
+ },
+ {
+  "id": "803",
+  "tags": [],
+  "question": "Our charity project was (　　) because John gave us generous support.",
+  "rawAnswer": "①",
+  "ja": "ジョンの惜しみない支援のおかげで，私たちの慈善事業は成功を収めた。",
+  "type": "choice",
+  "choices": [
+   "successful",
+   "successive",
+   "succession",
+   "succeeding"
+  ],
+  "answerIndex": 0,
+  "en": "Our charity project was successful because John gave us generous support."
+ },
+ {
+  "id": "804",
+  "tags": [
+   "発展"
+  ],
+  "question": "King Arthur of England was an (　　) person.",
+  "rawAnswer": "④",
+  "ja": "イギリスのアーサー王は架空の人物だった。",
+  "type": "choice",
+  "choices": [
+   "image",
+   "imaginable",
+   "imagination",
+   "imaginary"
+  ],
+  "answerIndex": 3,
+  "en": "King Arthur of England was an imaginary person."
+ },
+ {
+  "id": "805",
+  "tags": [
+   "発展"
+  ],
+  "question": "I sometimes feel I have become less (　　) as I grow older.",
+  "rawAnswer": "②",
+  "ja": "私は年を取るにつれて想像力豊かでなくなってきたと，ときどき感じることがある。",
+  "type": "choice",
+  "choices": [
+   "imaginary",
+   "imaginative",
+   "image",
+   "imaginable"
+  ],
+  "answerIndex": 1,
+  "en": "I sometimes feel I have become less imaginative as I grow older."
+ },
+ {
+  "id": "806",
+  "tags": [
+   "発展"
+  ],
+  "question": "We always try to be (　　) of each other's opinions, no matter how much we disagree.",
+  "rawAnswer": "②",
+  "ja": "たとえどんなに意見が食い違っても，私たちは互いの意見を尊重するよういつも努めている。",
+  "type": "choice",
+  "choices": [
+   "respective",
+   "respectful",
+   "respecting",
+   "respectable"
+  ],
+  "answerIndex": 1,
+  "en": "We always try to be respectful of each other's opinions, no matter how much we disagree."
+ },
+ {
+  "id": "807",
+  "tags": [
+   "発展"
+  ],
+  "question": "You should be more (　　) to her feelings.",
+  "rawAnswer": "②",
+  "ja": "君は彼女の気持ちにもう少し敏感になるべきだ。",
+  "type": "choice",
+  "choices": [
+   "sensible",
+   "sensitive",
+   "sensual",
+   "sensory"
+  ],
+  "answerIndex": 1,
+  "en": "You should be more sensitive to her feelings."
+ },
+ {
+  "id": "808",
+  "tags": [
+   "発展"
+  ],
+  "question": "The Egyptian vessel is (　　) of art, so it is displayed behind a thick pane of glass in the museum.",
+  "rawAnswer": "②",
+  "ja": "そのエジプトのつぼはきわめて貴重な芸術作品なので，博物館内の分厚いガラス板の向こう側に展示されている。",
+  "type": "choice",
+  "choices": [
+   "a worthless work",
+   "an invaluable work",
+   "a penniless work",
+   "a valueless work"
+  ],
+  "answerIndex": 1,
+  "en": "The Egyptian vessel is an invaluable work of art, so it is displayed behind a thick pane of glass in the museum."
+ },
+ {
+  "id": "809",
+  "tags": [
+   "基本"
+  ],
+  "question": "I like my job, but I'd like to do (　　).",
+  "rawAnswer": "①",
+  "ja": "私は自分の仕事が気に入っているが，もっと創造的なことをやってみたい。",
+  "type": "choice",
+  "choices": [
+   "something more creative",
+   "more something creative",
+   "creative more something",
+   "creative something more"
+  ],
+  "answerIndex": 0,
+  "en": "I like my job, but I'd like to do something more creative."
+ },
+ {
+  "id": "810",
+  "tags": [
+   "発展"
+  ],
+  "question": "I am ①<u>frightfully</u> busy ②<u>because</u> I have just ③<u>gotten</u> back from a ④<u>two-weeks</u> vacation.",
+  "rawAnswer": "④→two-week",
+  "ja": "２週間の休暇から戻ったばかりなので，私は死ぬほど忙しい。",
+  "type": "error",
+  "en": "I am frightfully busy because I have just gotten back from a two-week vacation.",
+  "answerIndex": 3,
+  "correction": "two-week"
+ },
+ {
+  "id": "811",
+  "tags": [
+   "発展"
+  ],
+  "question": "The prize-winner was a (　　) boy.",
+  "rawAnswer": "②",
+  "ja": "受賞者は６歳の少年だった。",
+  "type": "choice",
+  "choices": [
+   "six-years",
+   "six-year-old",
+   "six-years-old",
+   "at-age-six"
+  ],
+  "answerIndex": 1,
+  "en": "The prize-winner was a six-year-old boy."
+ },
+ {
+  "id": "812",
+  "tags": [
+   "発展"
+  ],
+  "question": "The ①<u>suspect</u> is a ②<u>six-feet-tall</u> male, ③<u>wearing</u> a black sweater ④<u>with</u> a white logo.",
+  "rawAnswer": "②→ six-foot-tall",
+  "ja": "その容疑者は身長６フィートの男性で，白いロゴ入りの黒いセーターを着ている。",
+  "type": "error",
+  "en": "The suspect is a six-foot-tall male, wearing a black sweater with a white logo.",
+  "answerIndex": 1,
+  "correction": "six-foot-tall"
  }
 ];
 
@@ -1238,7 +1580,7 @@
                 <strong>解答:</strong> <span class="en">${answerSummary(i)}</span>
                 ${i.en ? `<br><span class="en">${i.en}</span>` : ''}
                 ${i.ja ? `<br><span class="ja">${i.ja.replace(/\n/g, '<br>')}</span>` : ''}</li>`).join('')}</ol>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 問題リスト');
+            openPrintWindow(html, '第20章　形容詞の語法 問題リスト');
         };
 
         document.getElementById('download-choice-btn').onclick = () => {
@@ -1246,7 +1588,7 @@
             if (!requireSelection(items, '4択・誤り指摘テスト')) return;
             const html = `<ol>${items.map(pdfChoiceItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${answerSummary(i)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 4択・誤り指摘テスト');
+            openPrintWindow(html, '第20章　形容詞の語法 4択・誤り指摘テスト');
         };
 
         document.getElementById('download-blank-btn').onclick = () => {
@@ -1255,7 +1597,7 @@
             const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}
                 ${i.ja && i.type === 'choice' ? `<br><span class="ja">${i.ja.split('\n')[0]}</span>` : ''}</li>`).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${i.type === 'choice' ? i.choices[i.answerIndex] : (i.answer || i.rawAnswer)}</li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 空所補充テスト');
+            openPrintWindow(html, '第20章　形容詞の語法 空所補充テスト');
         };
 
         document.getElementById('download-ordering-btn').onclick = () => {
@@ -1263,7 +1605,7 @@
             if (!requireSelection(items, '整序英作文テスト')) return;
             const html = `<ol>${items.map(pdfOrderingItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 整序英作文テスト');
+            openPrintWindow(html, '第20章　形容詞の語法 整序英作文テスト');
         };
 
         document.getElementById('download-composition-btn').onclick = () => {
@@ -1271,7 +1613,7 @@
             if (!requireSelection(items, '和文英訳テスト')) return;
             const html = `<ol>${items.map(pdfCompositionItem).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 和文英訳テスト');
+            openPrintWindow(html, '第20章　形容詞の語法 和文英訳テスト');
         };
 
         document.getElementById('download-mixed-btn').onclick = () => {
@@ -1285,7 +1627,7 @@
                 return `<li>[${i.id}] ${blankQuestionText(i)}</li>`;
             }).join('')}</ol>
                 <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en || answerSummary(i)}</span></li>`).join('')}</ol></div>`;
-            openPrintWindow(html, '第15章　語順（倒置）・省略・強調 ランダム混合テスト');
+            openPrintWindow(html, '第20章　形容詞の語法 ランダム混合テスト');
         };
 
         // --- Event wiring ---
@@ -1323,7 +1665,7 @@
         const db = getFirestore(app);
 
         // Vintage のデータは 'vintage_' プレフィックスで LEAP のデータと分離する
-        const appId = "vintage_chapter15";
+        const appId = "vintage_chapter20";
 
         window.localMasteredProblems = {};
 

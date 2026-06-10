@@ -1,0 +1,995 @@
+{
+  "number": 19,
+  "title": "代名詞の語法",
+  "fullTitle": "第19章　代名詞の語法",
+  "problems": [
+    {
+      "id": "705",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My mobile phone is broken. I must buy (　　) today.",
+      "rawAnswer": "④",
+      "ja": "私の携帯電話は壊れている。今日１台買わなくては。",
+      "type": "choice",
+      "choices": [
+        "it",
+        "that",
+        "this",
+        "one"
+      ],
+      "answerIndex": 3,
+      "en": "My mobile phone is broken. I must buy one today."
+    },
+    {
+      "id": "706",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "She gave me a lovely watch, but I lost (　　).",
+      "rawAnswer": "②",
+      "ja": "彼女は私にすてきな時計をくれたが，私はそれをなくしてしまった。",
+      "type": "choice",
+      "choices": [
+        "one",
+        "it",
+        "some",
+        "any"
+      ],
+      "answerIndex": 1,
+      "en": "She gave me a lovely watch, but I lost it."
+    },
+    {
+      "id": "707",
+      "tags": [],
+      "question": "\"Which do you like?\"\n\"I like the big (　　).\"",
+      "rawAnswer": "②",
+      "ja": "「どっちが好きですか」「大きいほうが好きです」",
+      "type": "choice",
+      "choices": [
+        "it",
+        "one",
+        "that",
+        "them"
+      ],
+      "answerIndex": 1,
+      "en": "\"I like the big one.\""
+    },
+    {
+      "id": "708",
+      "tags": [],
+      "question": "同封している写真は，先月シンガポールへ家族旅行に行ったときのものです。\nThe photo enclosed (was / while / is / taken / one / I / the) on a trip to Singapore with my family last month.",
+      "rawAnswer": "is the one taken while I was",
+      "ja": "同封している写真は，先月シンガポールへ家族旅行に行ったときのものです。",
+      "type": "ordering",
+      "answer": "is the one taken while I was",
+      "pieces": [
+        "was",
+        "while",
+        "is",
+        "taken",
+        "one",
+        "I",
+        "the"
+      ],
+      "en": "The photo enclosed is the one taken while I was on a trip to Singapore with my family last month."
+    },
+    {
+      "id": "709",
+      "tags": [
+        "発展"
+      ],
+      "question": "Can you tell the difference between rice grown in Japan and (　　)?",
+      "rawAnswer": "②",
+      "ja": "日本産のお米とアメリカのお米の違いがわかりますか。",
+      "type": "choice",
+      "choices": [
+        "American one",
+        "American rice",
+        "one of America",
+        "rice of America"
+      ],
+      "answerIndex": 1,
+      "en": "Can you tell the difference between rice grown in Japan and American rice?"
+    },
+    {
+      "id": "710",
+      "tags": [],
+      "question": "I have a great number of English books and keep (　　) in a box.",
+      "rawAnswer": "②",
+      "ja": "私はたくさんの英語の本を持っていて，高価なものは箱にしまってある。",
+      "type": "choice",
+      "choices": [
+        "some expensive",
+        "the expensive ones",
+        "them to be expensive",
+        "those which expensive"
+      ],
+      "answerIndex": 1,
+      "en": "I have a great number of English books and keep the expensive ones in a box."
+    },
+    {
+      "id": "711",
+      "tags": [],
+      "question": "I found these keys. Are they (　　) that you lost yesterday?",
+      "rawAnswer": "④",
+      "ja": "これらの鍵を見つけました。昨日あなたがなくしたものですか。",
+      "type": "choice",
+      "choices": [
+        "one",
+        "ones",
+        "the one",
+        "the ones"
+      ],
+      "answerIndex": 3,
+      "en": "I found these keys. Are they the ones that you lost yesterday?"
+    },
+    {
+      "id": "712",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "赤ん坊が泣き止まなくて困った。\n(that / didn't / me / crying / baby / it / stop / bothered / the).",
+      "rawAnswer": "It bothered me that the baby didn't stop crying",
+      "ja": "赤ん坊が泣き止まなくて困った。",
+      "type": "ordering",
+      "answer": "It bothered me that the baby didn't stop crying",
+      "pieces": [
+        "that",
+        "didn't",
+        "me",
+        "crying",
+        "baby",
+        "it",
+        "stop",
+        "bothered",
+        "the"
+      ],
+      "en": "It bothered me that the baby didn't stop crying."
+    },
+    {
+      "id": "713",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "\"Do you think we should write a letter of thanks to her?\"\n\"Yes. I consider (　　) necessary that we should write to her.\"",
+      "rawAnswer": "④",
+      "ja": "「私たちは彼女に感謝状を書くべきだと思いますか」\n「はい。私たちが彼女に手紙を書くことは必要だと思います」",
+      "type": "choice",
+      "choices": [
+        "her",
+        "us",
+        "them",
+        "it"
+      ],
+      "answerIndex": 3,
+      "en": "\"Yes. I consider it necessary that we should write to her.\""
+    },
+    {
+      "id": "714",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "ジョンが日本語を話せるのは興味深いことだと思います。\n(I / John / that / think / interesting / Japanese / can / it / speak).",
+      "rawAnswer": "I think it interesting that John can speak Japanese",
+      "ja": "ジョンが日本語を話せるのは興味深いことだと思います。",
+      "type": "ordering",
+      "answer": "I think it interesting that John can speak Japanese",
+      "pieces": [
+        "I",
+        "John",
+        "that",
+        "think",
+        "interesting",
+        "Japanese",
+        "can",
+        "it",
+        "speak"
+      ],
+      "en": "I think it interesting that John can speak Japanese."
+    },
+    {
+      "id": "715",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The climate of Hawaii is milder than (　　) of Alaska.",
+      "rawAnswer": "③",
+      "ja": "ハワイの気候はアラスカの気候よりも穏やかだ。",
+      "type": "choice",
+      "choices": [
+        "it",
+        "one",
+        "that",
+        "which"
+      ],
+      "answerIndex": 2,
+      "en": "The climate of Hawaii is milder than that of Alaska."
+    },
+    {
+      "id": "716",
+      "tags": [],
+      "question": "The cars we drive now are very different from (　　) we used to drive 40 years ago.",
+      "rawAnswer": "③",
+      "ja": "私たちが現在運転している車は，40年前に運転していたものとは大きく異なっている。",
+      "type": "choice",
+      "choices": [
+        "it",
+        "that",
+        "those",
+        "which"
+      ],
+      "answerIndex": 2,
+      "en": "The cars we drive now are very different from those we used to drive 40 years ago."
+    },
+    {
+      "id": "717",
+      "tags": [],
+      "question": "Trademarks make ①<u>it</u> possible for a company to distinguish ②<u>its</u> products from ③<u>these</u> of ④<u>another</u> company.",
+      "rawAnswer": "③→those",
+      "ja": "商標によって，企業は自社製品と他社製品を区別することが可能になる。",
+      "type": "error",
+      "en": "Trademarks make it possible for a company to distinguish its products from those of another company.",
+      "answerIndex": 2,
+      "correction": "those"
+    },
+    {
+      "id": "718",
+      "tags": [],
+      "question": "(　　) present at the meeting supported the plan.",
+      "rawAnswer": "②",
+      "ja": "会議の出席者はその計画を支持した。",
+      "type": "choice",
+      "choices": [
+        "They",
+        "Those",
+        "Who",
+        "That"
+      ],
+      "answerIndex": 1,
+      "en": "Those present at the meeting supported the plan."
+    },
+    {
+      "id": "719",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "先生によると，プリントに挙げられている本は大学で会計学を学ぶ学生の必読書だということだった。\nThe teacher said the books listed on the handout (accounting / essential / for / study / those / were / who) at college.",
+      "rawAnswer": "were essential for those who study accounting",
+      "ja": "先生によると，プリントに挙げられている本は大学で会計学を学ぶ学生の必読書だということだった。",
+      "type": "ordering",
+      "answer": "were essential for those who study accounting",
+      "pieces": [
+        "accounting",
+        "essential",
+        "for",
+        "study",
+        "those",
+        "were",
+        "who"
+      ],
+      "en": "The teacher said the books listed on the handout were essential for those who study accounting at college."
+    },
+    {
+      "id": "720",
+      "tags": [],
+      "question": "Akiko's essay got higher marks than (　　).",
+      "rawAnswer": "③",
+      "ja": "アキコのレポートは私のよりも高得点をとった。",
+      "type": "choice",
+      "choices": [
+        "me",
+        "myself",
+        "mine",
+        "I"
+      ],
+      "answerIndex": 2,
+      "en": "Akiko's essay got higher marks than mine."
+    },
+    {
+      "id": "721",
+      "tags": [],
+      "question": "Please take (　　) with you and tell me what you think of them tomorrow.",
+      "rawAnswer": "①",
+      "ja": "これらの彼の手紙を持ち帰って，明日感想を聞かせてください。",
+      "type": "choice",
+      "choices": [
+        "these letters of his",
+        "these his letters",
+        "his letters of these",
+        "his these letters"
+      ],
+      "answerIndex": 0,
+      "en": "Please take these letters of his with you and tell me what you think of them tomorrow."
+    },
+    {
+      "id": "722",
+      "tags": [],
+      "question": "(　　) of the jobs Susan performs include ordering office supplies, filing, and cleaning the office.",
+      "rawAnswer": "④",
+      "ja": "スーザンの行う業務の一部は，事務用品の発注，書類の整理，社内の清掃を含んでいる。",
+      "type": "choice",
+      "choices": [
+        "A little",
+        "Little",
+        "Much",
+        "Some"
+      ],
+      "answerIndex": 3,
+      "en": "Some of the jobs Susan performs include ordering office supplies, filing, and cleaning the office."
+    },
+    {
+      "id": "723",
+      "tags": [],
+      "question": "I saw several boys in the backyard. Some of (　　) were fighting.",
+      "rawAnswer": "③",
+      "ja": "裏庭で何人かの少年を見かけた。その少年のうちの何人かは，けんかをしていた。",
+      "type": "choice",
+      "choices": [
+        "boys",
+        "they",
+        "the boys",
+        "their boys"
+      ],
+      "answerIndex": 2,
+      "en": "I saw several boys in the backyard. Some of the boys were fighting."
+    },
+    {
+      "id": "724",
+      "tags": [],
+      "question": "(　　) boy who breaks a window while playing baseball should apologize to his teacher.",
+      "rawAnswer": "③",
+      "ja": "野球をしていて窓を割った男の子はだれでも，先生に謝ったほうがよい。",
+      "type": "choice",
+      "choices": [
+        "All",
+        "Some",
+        "Any",
+        "A lot of"
+      ],
+      "answerIndex": 2,
+      "en": "Any boy who breaks a window while playing baseball should apologize to his teacher."
+    },
+    {
+      "id": "725",
+      "tags": [],
+      "question": "My sister and I are afraid of heights, so (　　) of us hate to fly in airplanes.",
+      "rawAnswer": "③",
+      "ja": "妹［姉］と私は高所恐怖症なので，２人とも飛行機に乗るのがいやだ。",
+      "type": "choice",
+      "choices": [
+        "either",
+        "all",
+        "both",
+        "neither"
+      ],
+      "answerIndex": 2,
+      "en": "My sister and I are afraid of heights, so both of us hate to fly in airplanes."
+    },
+    {
+      "id": "726",
+      "tags": [],
+      "question": "Yoko and I didn't know the time because (　　) of us had a watch.",
+      "rawAnswer": "③",
+      "ja": "２人とも時計を持っていなかったので，ヨウコも私も時間がわからなかった。",
+      "type": "choice",
+      "choices": [
+        "both",
+        "either",
+        "neither",
+        "not"
+      ],
+      "answerIndex": 2,
+      "en": "Yoko and I didn't know the time because neither of us had a watch."
+    },
+    {
+      "id": "727",
+      "tags": [],
+      "question": "Kenji has two brothers, but he is not on speaking terms with them. In other words, he doesn't talk to (　　) of them.",
+      "rawAnswer": "③",
+      "ja": "ケンジには２人の兄弟がいるが，彼らとは口をきく間柄ではない。つまり彼は２人のどちらとも話をしない。",
+      "type": "choice",
+      "choices": [
+        "which",
+        "both",
+        "either",
+        "neither"
+      ],
+      "answerIndex": 2,
+      "en": "Kenji has two brothers, but he is not on speaking terms with them. In other words, he doesn't talk to either of them."
+    },
+    {
+      "id": "728",
+      "tags": [
+        "発展",
+        "超頻出"
+      ],
+      "question": "There are tall buildings on (　　) side of the street.",
+      "rawAnswer": "③",
+      "ja": "通りの両側に高いビルが立っている。",
+      "type": "choice",
+      "choices": [
+        "both",
+        "opposite",
+        "either",
+        "all"
+      ],
+      "answerIndex": 2,
+      "en": "There are tall buildings on either side of the street."
+    },
+    {
+      "id": "729",
+      "tags": [],
+      "question": "Fortunately, (　　) of the three school children were hurt yesterday.",
+      "rawAnswer": "④",
+      "ja": "幸運にも，昨日その３人の生徒はだれもけがをしなかった。",
+      "type": "choice",
+      "choices": [
+        "either",
+        "neither",
+        "nobody",
+        "none"
+      ],
+      "answerIndex": 3,
+      "en": "Fortunately, none of the three school children were hurt yesterday."
+    },
+    {
+      "id": "730",
+      "tags": [],
+      "question": "I wanted to drink beer but there was (　　) in the refrigerator.",
+      "rawAnswer": "④",
+      "ja": "私はビールを飲みたかったのだが，冷蔵庫には１本もなかった。",
+      "type": "choice",
+      "choices": [
+        "nor",
+        "not",
+        "no",
+        "none"
+      ],
+      "answerIndex": 3,
+      "en": "I wanted to drink beer but there was none in the refrigerator."
+    },
+    {
+      "id": "731",
+      "tags": [],
+      "question": "(　　) of the three boys got a prize.",
+      "rawAnswer": "②",
+      "ja": "３人の少年それぞれが入賞した。",
+      "type": "choice",
+      "choices": [
+        "Both",
+        "Each",
+        "A few",
+        "Every"
+      ],
+      "answerIndex": 1,
+      "en": "Each of the three boys got a prize."
+    },
+    {
+      "id": "732",
+      "tags": [],
+      "question": "The two brothers had no parents, so they helped (　　).",
+      "rawAnswer": "③",
+      "ja": "その兄弟２人には両親がいなかったので，彼らは互いに助け合った。",
+      "type": "choice",
+      "choices": [
+        "each another",
+        "one other",
+        "each other",
+        "each them"
+      ],
+      "answerIndex": 2,
+      "en": "The two brothers had no parents, so they helped each other."
+    },
+    {
+      "id": "733",
+      "tags": [
+        "基本"
+      ],
+      "question": "(　　) student in the class passed the examination.",
+      "rawAnswer": "②",
+      "ja": "クラスのどの生徒も試験に受かった。",
+      "type": "choice",
+      "choices": [
+        "All",
+        "Every",
+        "Some",
+        "A lot of"
+      ],
+      "answerIndex": 1,
+      "en": "Every student in the class passed the examination."
+    },
+    {
+      "id": "734",
+      "tags": [
+        "発展",
+        "超頻出"
+      ],
+      "question": "The parade is held once (　　) two years.",
+      "rawAnswer": "④",
+      "ja": "パレードは２年に一度行われる。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "on",
+        "for",
+        "every"
+      ],
+      "answerIndex": 3,
+      "en": "The parade is held once every two years."
+    },
+    {
+      "id": "735",
+      "tags": [
+        "発展"
+      ],
+      "question": "私は１日おきに息子に皿洗いをさせている。\nI have my son (other / dishes / the / day / do / every).",
+      "rawAnswer": "do the dishes every other day",
+      "ja": "私は１日おきに息子に皿洗いをさせている。",
+      "type": "ordering",
+      "answer": "do the dishes every other day",
+      "pieces": [
+        "other",
+        "dishes",
+        "the",
+        "day",
+        "do",
+        "every"
+      ],
+      "en": "I have my son do the dishes every other day."
+    },
+    {
+      "id": "736",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The teacher was disappointed when (　　) her students did badly on the test.",
+      "rawAnswer": "③",
+      "ja": "自分の生徒のほとんどがテストで悪い点をとったとき，その教師はがっかりした。",
+      "type": "choice",
+      "choices": [
+        "almost",
+        "most",
+        "most of",
+        "the most"
+      ],
+      "answerIndex": 2,
+      "en": "The teacher was disappointed when most of her students did badly on the test."
+    },
+    {
+      "id": "737",
+      "tags": [],
+      "question": "(　　) students attended the science class every week.",
+      "rawAnswer": "②",
+      "ja": "ほとんどの学生は毎週，科学の授業に出席した。",
+      "type": "choice",
+      "choices": [
+        "Almost",
+        "Most",
+        "Most of",
+        "About"
+      ],
+      "answerIndex": 1,
+      "en": "Most students attended the science class every week."
+    },
+    {
+      "id": "738",
+      "tags": [],
+      "question": "(　　) students in the classroom looked older than me.",
+      "rawAnswer": "①",
+      "ja": "この教室にいる生徒のほとんどが私よりも年上に見えた。",
+      "type": "choice",
+      "choices": [
+        "Almost all the",
+        "Almost every",
+        "Most of",
+        "Most the"
+      ],
+      "answerIndex": 0,
+      "en": "Almost all the students in the classroom looked older than me."
+    },
+    {
+      "id": "739",
+      "tags": [],
+      "question": "(　　) computer languages use letters and numbers.",
+      "rawAnswer": "②",
+      "ja": "ほとんどのコンピューター言語が文字と数字を用いる。",
+      "type": "choice",
+      "choices": [
+        "Almost",
+        "Almost all",
+        "Most every",
+        "Nearly"
+      ],
+      "answerIndex": 1,
+      "en": "Almost all computer languages use letters and numbers."
+    },
+    {
+      "id": "740",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The two dogs are so alike that no one can tell one from (　　).",
+      "rawAnswer": "④",
+      "ja": "その２匹の犬はとても似ているので，だれにも見分けがつかない。",
+      "type": "choice",
+      "choices": [
+        "another",
+        "other",
+        "others",
+        "the other"
+      ],
+      "answerIndex": 3,
+      "en": "The two dogs are so alike that no one can tell one from the other."
+    },
+    {
+      "id": "741",
+      "tags": [
+        "基本"
+      ],
+      "question": "I don't like this bag. Would you please show me (　　)?",
+      "rawAnswer": "③",
+      "ja": "このバッグは好みではありません。別のものを見せてもらえますか。",
+      "type": "choice",
+      "choices": [
+        "one",
+        "other",
+        "another",
+        "something"
+      ],
+      "answerIndex": 2,
+      "en": "I don't like this bag. Would you please show me another?"
+    },
+    {
+      "id": "742",
+      "tags": [],
+      "question": "I have five boxes here. One is full of books and (　　) are all empty.",
+      "rawAnswer": "④",
+      "ja": "ここに箱が５つあります。１つは本でいっぱいで，残りはすべて空です。",
+      "type": "choice",
+      "choices": [
+        "other",
+        "the ones",
+        "the other",
+        "the others"
+      ],
+      "answerIndex": 3,
+      "en": "I have five boxes here. One is full of books and the others are all empty."
+    },
+    {
+      "id": "743",
+      "tags": [],
+      "question": "There're many kinds of flowers in this garden. Some are red, and (　　) are yellow.",
+      "rawAnswer": "④",
+      "ja": "この庭園にはたくさんの種類の花がある。赤いものもあれば，黄色いものもある。",
+      "type": "choice",
+      "choices": [
+        "the other",
+        "other",
+        "another",
+        "others"
+      ],
+      "answerIndex": 3,
+      "en": "There're many kinds of flowers in this garden. Some are red, and others are yellow."
+    },
+    {
+      "id": "744",
+      "tags": [],
+      "question": "To say is one thing, and to do is quite (　　).",
+      "rawAnswer": "②",
+      "ja": "言うことと，することはまったく別だ。",
+      "type": "choice",
+      "choices": [
+        "other",
+        "another",
+        "the other",
+        "others"
+      ],
+      "answerIndex": 1,
+      "en": "To say is one thing, and to do is quite another."
+    },
+    {
+      "id": "745",
+      "tags": [],
+      "question": "The physician will examine all of you (　　).",
+      "rawAnswer": "③",
+      "ja": "その内科医が皆さん全員をひとりひとり順に診察します。",
+      "type": "choice",
+      "choices": [
+        "one after others",
+        "the one after the other",
+        "one after another",
+        "one after the another"
+      ],
+      "answerIndex": 2,
+      "en": "The physician will examine all of you one after another."
+    },
+    {
+      "id": "746",
+      "tags": [
+        "発展"
+      ],
+      "question": "We had to wait (　　) two hours for the train to come.",
+      "rawAnswer": "②",
+      "ja": "電車が来るまで，私たちはさらに２時間待たなければならなかった。",
+      "type": "choice",
+      "choices": [
+        "other",
+        "another",
+        "more",
+        "any"
+      ],
+      "answerIndex": 1,
+      "en": "We had to wait another two hours for the train to come."
+    },
+    {
+      "id": "747",
+      "tags": [
+        "発展"
+      ],
+      "question": "Sexual harassment is a serious issue and should be treated as (　　).",
+      "rawAnswer": "③",
+      "ja": "セクシャルハラスメントは深刻な問題であり，そういうものとして扱われるべきである。",
+      "type": "choice",
+      "choices": [
+        "if",
+        "much",
+        "such",
+        "yet"
+      ],
+      "answerIndex": 2,
+      "en": "Sexual harassment is a serious issue and should be treated as such."
+    },
+    {
+      "id": "748",
+      "tags": [
+        "発展"
+      ],
+      "question": "空所に共通する１語を書きなさい。\n(a) Wealth, as (　　), does not matter much.\n(b) She told her story in (　　) a way that we all laughed.",
+      "rawAnswer": "such",
+      "ja": "(a) 富はそれ自体は大して重要ではない。\n(b) 私たち全員が笑うように彼女は自分の話をした。",
+      "type": "fill",
+      "answer": "such",
+      "en": "She told her story in such a way that we all laughed."
+    },
+    {
+      "id": "749",
+      "tags": [],
+      "question": "\"Do you think the teacher will really fail us?\"\n\"From the low scores on our final test, (　　).\"",
+      "rawAnswer": "④",
+      "ja": "「先生が本当に私たちを落第させると思う？」\n「期末テストの悪い成績からすれば，残念だけどそうなるね」",
+      "type": "choice",
+      "choices": [
+        "I hope so",
+        "I'm afraid not",
+        "I cannot hope so",
+        "I'm afraid so"
+      ],
+      "answerIndex": 3,
+      "en": "\"From the low scores on our final test, I'm afraid so.\""
+    },
+    {
+      "id": "750",
+      "tags": [],
+      "question": "\"Is Betty coming to my birthday party tonight?\"\n\"(　　). She is busy with her homework.\"",
+      "rawAnswer": "③",
+      "ja": "「ベティーは今夜の僕の誕生日パーティーに来るかな？」\n「来ないだろうな。彼女は宿題で忙しいよ」",
+      "type": "choice",
+      "choices": [
+        "I don't suppose it",
+        "I suppose it",
+        "I suppose not",
+        "I suppose so"
+      ],
+      "answerIndex": 2,
+      "en": "\"I suppose not. She is busy with her homework.\""
+    },
+    {
+      "id": "751",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "(a) The matter doesn't concern me in the least.\n(b) I have (　　) to do with the matter.",
+      "rawAnswer": "nothing",
+      "ja": "(a) その件は私にはまったく関係がない。\n(b) 私はその件とは何の関係もない。",
+      "type": "fill",
+      "answer": "nothing",
+      "en": "I have nothing to do with the matter."
+    },
+    {
+      "id": "752",
+      "tags": [],
+      "question": "われわれのチームの勝利は，監督の攻撃的な戦術と大いに関係があった。\nOur team's (to / had / our / victory / with / much / do) coach's aggressive strategies.",
+      "rawAnswer": "victory had much to do with our",
+      "ja": "われわれのチームの勝利は，監督の攻撃的な戦術と大いに関係があった。",
+      "type": "ordering",
+      "answer": "victory had much to do with our",
+      "pieces": [
+        "to",
+        "had",
+        "our",
+        "victory",
+        "with",
+        "much",
+        "do"
+      ],
+      "en": "Our team's victory had much to do with our coach's aggressive strategies."
+    },
+    {
+      "id": "753",
+      "tags": [],
+      "question": "There is something noble (　　) her.",
+      "rawAnswer": "①",
+      "ja": "彼女にはどこか高貴なところがある。",
+      "type": "choice",
+      "choices": [
+        "about",
+        "around",
+        "on",
+        "along"
+      ],
+      "answerIndex": 0,
+      "en": "There is something noble about her."
+    },
+    {
+      "id": "754",
+      "tags": [],
+      "question": "There seems to be (　　) with this wall clock; it doesn't work at all.",
+      "rawAnswer": "①",
+      "ja": "この掛け時計はどこか調子が悪いようだ。まったく動かない。",
+      "type": "choice",
+      "choices": [
+        "something the matter",
+        "something matter",
+        "anything matter",
+        "nothing the matter"
+      ],
+      "answerIndex": 0,
+      "en": "There seems to be something the matter with this wall clock; it doesn't work at all."
+    },
+    {
+      "id": "755",
+      "tags": [
+        "発展"
+      ],
+      "question": "She is (　　) of a musician and composes her own music.",
+      "rawAnswer": "①",
+      "ja": "彼女はちょっとした音楽家で，自身で作曲もする。",
+      "type": "choice",
+      "choices": [
+        "something",
+        "somebody",
+        "anything",
+        "everything"
+      ],
+      "answerIndex": 0,
+      "en": "She is something of a musician and composes her own music."
+    },
+    {
+      "id": "756",
+      "tags": [
+        "発展"
+      ],
+      "question": "If worrying were harmless, it would (a problem / be / much / not / of).",
+      "rawAnswer": "not be much of a problem",
+      "ja": "もし心配するという行為が無害ならば，たいした問題にはならないだろう。",
+      "type": "ordering",
+      "answer": "not be much of a problem",
+      "pieces": [
+        "a problem",
+        "be",
+        "much",
+        "not",
+        "of"
+      ],
+      "en": "If worrying were harmless, it would not be much of a problem."
+    },
+    {
+      "id": "757",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "We enjoyed (　　) at the party last week.",
+      "rawAnswer": "②",
+      "ja": "私たちは先週のパーティーで楽しんだ。",
+      "type": "choice",
+      "choices": [
+        "our",
+        "ourselves",
+        "really",
+        "us"
+      ],
+      "answerIndex": 1,
+      "en": "We enjoyed ourselves at the party last week."
+    },
+    {
+      "id": "758",
+      "tags": [],
+      "question": "Why don't you (　　) some ice cream?",
+      "rawAnswer": "②",
+      "ja": "アイスクリームを自由に召し上がってください。",
+      "type": "choice",
+      "choices": [
+        "keep up with",
+        "help yourself to",
+        "make much of",
+        "get out of"
+      ],
+      "answerIndex": 1,
+      "en": "Why don't you help yourself to some ice cream?"
+    },
+    {
+      "id": "759",
+      "tags": [],
+      "question": "お疲れのようですね。どうぞ入っておくつろぎください。\nYou look tired. Do (make / home / come in / at / yourself /and).",
+      "rawAnswer": "come in and make yourself at home",
+      "ja": "お疲れのようですね。どうぞ入っておくつろぎください。",
+      "type": "ordering",
+      "answer": "come in and make yourself at home",
+      "pieces": [
+        "make",
+        "home",
+        "come in",
+        "at",
+        "yourself",
+        "and"
+      ],
+      "en": "You look tired. Do come in and make yourself at home."
+    },
+    {
+      "id": "760",
+      "tags": [],
+      "question": "\"Who did you go to the movie with?\" \"No one. I went (　　).\"",
+      "rawAnswer": "①",
+      "ja": "「だれと映画を見に行ったの？」「だれとも。ひとりで行ったんだ」",
+      "type": "choice",
+      "choices": [
+        "by myself",
+        "with him",
+        "with anyone",
+        "by nobody"
+      ],
+      "answerIndex": 0,
+      "en": "\"Who did you go to the movie with?\" \"No one. I went by myself.\""
+    },
+    {
+      "id": "761",
+      "tags": [],
+      "question": "He was (　　) himself with worry about his sick mother.",
+      "rawAnswer": "③",
+      "ja": "彼は病気の母のことが心配で，我を忘れていた。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "beside",
+        "beyond"
+      ],
+      "answerIndex": 2,
+      "en": "He was beside himself with worry about his sick mother."
+    },
+    {
+      "id": "762",
+      "tags": [
+        "発展"
+      ],
+      "question": "Most of the work that most people have to do is not in (　　) interesting.",
+      "rawAnswer": "①",
+      "ja": "ほとんどの人々がしなければならない仕事の大半は，それ自体は，おもしろいものではない。",
+      "type": "choice",
+      "choices": [
+        "itself",
+        "little",
+        "that",
+        "them"
+      ],
+      "answerIndex": 0,
+      "en": "Most of the work that most people have to do is not in itself interesting."
+    }
+  ]
+}
