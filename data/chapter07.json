@@ -1,0 +1,451 @@
+{
+  "number": 7,
+  "title": "分詞",
+  "fullTitle": "第7章　分詞",
+  "problems": [
+    {
+      "id": "179",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Don't make any noise near the (　　) baby.",
+      "rawAnswer": "③",
+      "ja": "眠っている赤ちゃんのそばで音を立てるな。",
+      "type": "choice",
+      "choices": [
+        "sleep",
+        "sleeper",
+        "sleeping",
+        "slept"
+      ],
+      "answerIndex": 2,
+      "en": "Don't make any noise near the sleeping baby."
+    },
+    {
+      "id": "180",
+      "tags": [
+        "基本"
+      ],
+      "question": "\"Do you know that Chris had a skiing accident?\"  \"Yes. He has a (　　) leg, but I think he'll be OK.\"",
+      "rawAnswer": "③",
+      "ja": "「クリスがスキーで事故にあったって知ってる？」「ええ。脚を骨折したけど，心配ないと思うよ」",
+      "type": "choice",
+      "choices": [
+        "breaking",
+        "broke",
+        "broken",
+        "break"
+      ],
+      "answerIndex": 2,
+      "en": "\"Do you know that Chris had a skiing accident?\" \"Yes. He has a broken leg, but I think he'll be OK.\""
+    },
+    {
+      "id": "181",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Yesterday a friend of mine (　　) in China came to Tokyo to attend a meeting.",
+      "rawAnswer": "③",
+      "ja": "昨日，中国に住む私の友人の一人が会議に出席するため東京にやってきた。",
+      "type": "choice",
+      "choices": [
+        "to live",
+        "lived",
+        "living",
+        "lives"
+      ],
+      "answerIndex": 2,
+      "en": "Yesterday a friend of mine living in China came to Tokyo to attend a meeting."
+    },
+    {
+      "id": "182",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "The language (　　) in New Zealand is mainly English.",
+      "rawAnswer": "①",
+      "ja": "ニュージーランドで話されている言語は主に英語です。",
+      "type": "choice",
+      "choices": [
+        "spoken",
+        "be spoken",
+        "speaking",
+        "be speaking"
+      ],
+      "answerIndex": 0,
+      "en": "The language spoken in New Zealand is mainly English."
+    },
+    {
+      "id": "183",
+      "tags": [
+        "基本"
+      ],
+      "question": "①<u>As</u> you know, Microsoft ②<u>developed</u> a computer③<u>operating</u> system ④<u>calling</u> Windows.",
+      "rawAnswer": "④→called",
+      "ja": "ご存じの通り，マイクロソフト社は，ウィンドウズと呼ばれるコンピューターオペレーティングシステムを開発した。",
+      "type": "error",
+      "en": "As you know, Microsoft developed a computeroperating system called Windows.",
+      "answerIndex": 3,
+      "correction": "called"
+    },
+    {
+      "id": "184",
+      "tags": [],
+      "question": "雲の向こうから光がさしている。\n(behind / light / coming / is / there / from) the clouds.",
+      "rawAnswer": "There is light coming from behind",
+      "ja": "雲の向こうから光がさしている。",
+      "type": "ordering",
+      "answer": "There is light coming from behind",
+      "pieces": [
+        "behind",
+        "light",
+        "coming",
+        "is",
+        "there",
+        "from"
+      ],
+      "en": "There is light coming from behind the clouds."
+    },
+    {
+      "id": "185",
+      "tags": [],
+      "question": "There was an expensive watch (　　) in the locker room.",
+      "rawAnswer": "③",
+      "ja": "ロッカールームに高価な腕時計が置き忘れてあった。",
+      "type": "choice",
+      "choices": [
+        "leaving",
+        "to be leaving",
+        "left",
+        "to have left"
+      ],
+      "answerIndex": 2,
+      "en": "There was an expensive watch left in the locker room."
+    },
+    {
+      "id": "186",
+      "tags": [],
+      "question": "Please remain (　　) for a couple of minutes.",
+      "rawAnswer": "③",
+      "ja": "数分の間，座ったままでお願いします。",
+      "type": "choice",
+      "choices": [
+        "in seat",
+        "seating",
+        "seated",
+        "to seat"
+      ],
+      "answerIndex": 2,
+      "en": "Please remain seated for a couple of minutes."
+    },
+    {
+      "id": "187",
+      "tags": [],
+      "question": "I am sorry to have kept you (　　).",
+      "rawAnswer": "④",
+      "ja": "お待たせしてすみません。",
+      "type": "choice",
+      "choices": [
+        "to wait",
+        "wait",
+        "waited",
+        "waiting"
+      ],
+      "answerIndex": 3,
+      "en": "I am sorry to have kept you waiting."
+    },
+    {
+      "id": "188",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "You should keep the door (　　) at all times.",
+      "rawAnswer": "②",
+      "ja": "常にドアに鍵をかけておくべきだ。",
+      "type": "choice",
+      "choices": [
+        "lock",
+        "locked",
+        "locking",
+        "to lock"
+      ],
+      "answerIndex": 1,
+      "en": "You should keep the door locked at all times."
+    },
+    {
+      "id": "189",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I was glad to see birds (　　) in the blue sky.",
+      "rawAnswer": "①",
+      "ja": "鳥たちが青空高く飛んでいるのを見て，私はうれしかった。",
+      "type": "choice",
+      "choices": [
+        "flying high",
+        "to fly high",
+        "were highly flying",
+        "highly fly"
+      ],
+      "answerIndex": 0,
+      "en": "I was glad to see birds flying high in the blue sky."
+    },
+    {
+      "id": "190",
+      "tags": [
+        "基本"
+      ],
+      "question": "I saw the injured schoolboys (　　) to the hospital.",
+      "rawAnswer": "③",
+      "ja": "けがをした男子生徒たちが病院に運ばれるのを私は見た。",
+      "type": "choice",
+      "choices": [
+        "to be carried",
+        "be carried",
+        "carried",
+        "carrying"
+      ],
+      "answerIndex": 2,
+      "en": "I saw the injured schoolboys carried to the hospital."
+    },
+    {
+      "id": "191",
+      "tags": [],
+      "question": "Though he had tried to run away secretly, he was (　　) out of the house.",
+      "rawAnswer": "③",
+      "ja": "彼はひそかに逃げ出そうとしたが，家から出るところを目撃された。",
+      "type": "choice",
+      "choices": [
+        "seeing to come",
+        "seen come",
+        "seen coming",
+        "seeing coming"
+      ],
+      "answerIndex": 2,
+      "en": "Though he had tried to run away secretly, he was seen coming out of the house."
+    },
+    {
+      "id": "192",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I had no ①<u>difficulty</u> in making ②<u>myself</u> ③<u>understand</u> in English when I ④<u>went to</u> America last summer.",
+      "rawAnswer": "③→understood",
+      "ja": "この前の夏アメリカに行ったとき，私は英語で自分の考えを理解してもらうことに苦労しなかった。",
+      "type": "error",
+      "en": "I had no difficulty in making myself understood in English when I went to America last summer.",
+      "answerIndex": 2,
+      "correction": "understood"
+    },
+    {
+      "id": "193",
+      "tags": [],
+      "question": "I couldn't make myself (　　) because the room was terribly noisy.",
+      "rawAnswer": "②",
+      "ja": "その部屋がひどく騒々しかったので，私は自分の声を聞き取ってもらえなかった。",
+      "type": "choice",
+      "choices": [
+        "hear",
+        "heard",
+        "hearing",
+        "to hear"
+      ],
+      "answerIndex": 1,
+      "en": "I couldn't make myself heard because the room was terribly noisy."
+    },
+    {
+      "id": "194",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) exactly the same job, he understands my situation better.",
+      "rawAnswer": "①",
+      "ja": "まったく同じ仕事をしているので，彼は私の状況をより理解してくれる。",
+      "type": "choice",
+      "choices": [
+        "Doing",
+        "Doing as",
+        "For doing",
+        "That we are doing"
+      ],
+      "answerIndex": 0,
+      "en": "Doing exactly the same job, he understands my situation better."
+    },
+    {
+      "id": "195",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) how to study, the students decided to visit their advisor in his office.",
+      "rawAnswer": "①",
+      "ja": "勉強の仕方がわからなかったので，生徒たちは職員室の指導教官を訪ねることにした。",
+      "type": "choice",
+      "choices": [
+        "Not knowing",
+        "Knowing not to",
+        "Not to knowing",
+        "To not knowing"
+      ],
+      "answerIndex": 0,
+      "en": "Not knowing how to study, the students decided to visit their advisor in his office."
+    },
+    {
+      "id": "196",
+      "tags": [],
+      "question": "(　　) the joke before, I didn't find it funny the second time.",
+      "rawAnswer": "③",
+      "ja": "その冗談は以前に聞いたことがあったので，２回目に聞いても私はおもしろいと思わなかった。",
+      "type": "choice",
+      "choices": [
+        "Hearing",
+        "Heard",
+        "Having heard",
+        "Hear"
+      ],
+      "answerIndex": 2,
+      "en": "Having heard the joke before, I didn't find it funny the second time."
+    },
+    {
+      "id": "197",
+      "tags": [],
+      "question": "(　　) the night before, the road was muddy.",
+      "rawAnswer": "①",
+      "ja": "前の晩に雨が降ったので，道路はぬかるんでいた。",
+      "type": "choice",
+      "choices": [
+        "It having rained",
+        "Having rained",
+        "Having been rained",
+        "It being rained"
+      ],
+      "answerIndex": 0,
+      "en": "It having rained the night before, the road was muddy."
+    },
+    {
+      "id": "198",
+      "tags": [
+        "発展"
+      ],
+      "question": "There (　　) no available information on the crime, the police asked the mass media for cooperation.",
+      "rawAnswer": "①",
+      "ja": "その犯罪に関して情報が入手できなかったので，警察はマスコミに協力を求めた。",
+      "type": "choice",
+      "choices": [
+        "being",
+        "having",
+        "is",
+        "seems"
+      ],
+      "answerIndex": 0,
+      "en": "There being no available information on the crime, the police asked the mass media for cooperation."
+    },
+    {
+      "id": "199",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "(　　) from the airplane, the lake looks like a huge doughnut.",
+      "rawAnswer": "③",
+      "ja": "飛行機から見ると，その湖は巨大なドーナツのように見える。",
+      "type": "choice",
+      "choices": [
+        "See",
+        "Seeing",
+        "Seen",
+        "Having seen"
+      ],
+      "answerIndex": 2,
+      "en": "Seen from the airplane, the lake looks like a huge doughnut."
+    },
+    {
+      "id": "200",
+      "tags": [],
+      "question": "All things (　　), we have done a good job.",
+      "rawAnswer": "②",
+      "ja": "総合的に考えてみると，我々はいい仕事をした。",
+      "type": "choice",
+      "choices": [
+        "considering",
+        "considered",
+        "to consider",
+        "consider"
+      ],
+      "answerIndex": 1,
+      "en": "All things considered, we have done a good job."
+    },
+    {
+      "id": "201",
+      "tags": [],
+      "question": "(　　) your love of the outdoors, I am really surprised that you decided to live in the city rather than in the countryside.",
+      "rawAnswer": "③",
+      "ja": "あなたのアウトドア好きを考えれば，田舎ではなく，むしろ都会に住むとあなたが決めたことに私は本当に驚いている。",
+      "type": "choice",
+      "choices": [
+        "Considered",
+        "Considerate",
+        "Considering",
+        "Considerable"
+      ],
+      "answerIndex": 2,
+      "en": "Considering your love of the outdoors, I am really surprised that you decided to live in the city rather than in the countryside."
+    },
+    {
+      "id": "202",
+      "tags": [],
+      "question": "(　　) cars, I've got an environmentally-friendly one.",
+      "rawAnswer": "①",
+      "ja": "車と言えば，私は環境にやさしい車を持っている。",
+      "type": "choice",
+      "choices": [
+        "Speaking of",
+        "Talking to",
+        "To talk",
+        "To be spoken"
+      ],
+      "answerIndex": 0,
+      "en": "Speaking of cars, I've got an environmentally-friendly one."
+    },
+    {
+      "id": "203",
+      "tags": [
+        "基本"
+      ],
+      "question": "With summer (　　), medical experts have made recommendations to prevent sunburn.",
+      "rawAnswer": "②",
+      "ja": "夏の到来にあわせて，医療専門家は日焼け防止の提言をした。",
+      "type": "choice",
+      "choices": [
+        "approaches",
+        "approaching",
+        "has approached",
+        "is approaching"
+      ],
+      "answerIndex": 1,
+      "en": "With summer approaching, medical experts have made recommendations to prevent sunburn."
+    },
+    {
+      "id": "204",
+      "tags": [
+        "基本"
+      ],
+      "question": "The thief was taken away with his (　　) behind his back.",
+      "rawAnswer": "④",
+      "ja": "その泥棒は後ろ手に縛られて連行された。",
+      "type": "choice",
+      "choices": [
+        "hands tying",
+        "tied hands",
+        "tying hands",
+        "hands tied"
+      ],
+      "answerIndex": 3,
+      "en": "The thief was taken away with his hands tied behind his back."
+    }
+  ]
+}

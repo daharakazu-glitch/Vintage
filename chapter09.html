@@ -1,0 +1,2037 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage学習アプリ (第9章　接続詞)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Tinos:wght@700&display=swap');
+
+        body {
+            background-color: #166534;
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        .font-english {
+            font-family: 'Tinos', 'Times New Roman', serif;
+            font-weight: 700;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .btn-primary { background-color: #16a34a; color: white; }
+        .btn-primary:hover { background-color: #15803d; }
+        .btn-secondary { background-color: #6b7280; color: white; }
+        .btn-secondary:hover { background-color: #4b5563; }
+
+        .tag-badge {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 9999px;
+            margin-right: 4px;
+        }
+
+        .choice-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 8px 14px;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            background: white;
+            transition: all 0.15s;
+        }
+
+        .choice-btn:hover:not(:disabled) { border-color: #86efac; background: #f0fdf4; }
+        .choice-btn.correct { border-color: #22c55e; background: #dcfce7; }
+        .choice-btn.wrong { border-color: #ef4444; background: #fee2e2; }
+
+        .piece-chip {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 3px;
+            border: 2px solid #86efac;
+            border-radius: 9999px;
+            background: #f0fdf4;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.15s;
+            user-select: none;
+        }
+
+        .piece-chip:hover { background: #bbf7d0; }
+        .piece-chip.used { opacity: 0.25; pointer-events: none; }
+
+        .built-chip {
+            display: inline-block;
+            padding: 5px 12px;
+            margin: 3px;
+            border: 2px solid #16a34a;
+            border-radius: 9999px;
+            background: #dcfce7;
+            cursor: pointer;
+            font-weight: bold;
+            user-select: none;
+        }
+
+        .answer-area { display: none; }
+        .problem-item.show-answer .answer-area { display: block; }
+
+        .problem-item.problem-mastered {
+            background-color: #fefce8 !important;
+            border-color: #facc15 !important;
+        }
+
+        u { text-underline-offset: 4px; }
+    </style>
+</head>
+
+<body class="text-gray-800 m-0 p-0" style="height: 100vh; height: 100dvh; overflow: hidden;">
+
+    <div id="main-scroll-wrapper" style="height: 100%; width: 100%; overflow-y: auto; display: flex; flex-direction: column; position: relative;">
+
+        <div id="app-container" class="container mx-auto p-4 md:p-8 max-w-4xl flex-grow flex flex-col">
+            <header class="flex-shrink-0 text-center mb-4 bg-green-800 p-4 rounded-xl shadow-lg">
+                <h1 class="text-2xl md:text-3xl font-bold text-white">Vintage 学習アプリ</h1>
+                <h2 id="app-subtitle" class="text-xl md:text-2xl font-bold text-yellow-300">第9章　接続詞</h2>
+            </header>
+
+            <main class="flex-grow bg-white/90 backdrop-blur-sm p-4 md:p-6 rounded-xl shadow-lg mb-2">
+                <div class="flex justify-between items-center mb-6">
+                    <a href="index.html" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded-lg shadow transition-colors text-sm">
+                        ← ダッシュボード
+                    </a>
+                    <button id="start-quiz-btn"
+                        class="bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">
+                        ランダムテスト
+                    </button>
+                </div>
+
+                <div class="mb-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                    <h3 class="font-bold text-lg mb-2">選択した問題でPDFを作成</h3>
+                    <p class="text-gray-600 mb-4 text-sm">学習したい問題のチェックボックスを選択してから、下のボタンを押してください。</p>
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" id="select-all-checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-green-600 focus:ring-green-500">
+                        <label for="select-all-checkbox" class="ml-2 block text-sm text-gray-900">すべて選択 / 解除</label>
+                    </div>
+                    <div class="flex justify-center">
+                        <button id="open-pdf-modal-btn"
+                            class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg shadow transition-transform transform hover:scale-105">PDFダウンロードの種類を選択</button>
+                    </div>
+                </div>
+
+                <div id="problem-list" class="space-y-6">
+                    <!-- Problems will be populated by JS -->
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Message/Score Modal -->
+    <div id="message-modal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div id="message-content" class="bg-white p-8 rounded-lg shadow-xl text-center max-w-lg mx-4">
+        </div>
+    </div>
+
+    <!-- Quiz Modal -->
+    <div id="quiz-modal" class="hidden fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-40 p-4">
+        <div class="bg-white w-full max-w-2xl p-8 rounded-2xl shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            <button id="close-quiz-btn"
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold">&times;</button>
+            <div id="quiz-content"></div>
+        </div>
+    </div>
+
+    <!-- PDF Download Modal -->
+    <div id="pdf-modal"
+        class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full flex items-center justify-center z-50">
+        <div class="relative mx-auto p-5 border w-11/12 md:w-1/2 lg:w-1/3 shadow-lg rounded-md bg-white">
+            <div class="mt-3 text-center">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">ダウンロードするPDFの種類を選択</h3>
+                <div class="mt-4 px-7 py-3 space-y-3">
+                    <button id="download-list-btn" class="btn btn-primary w-full justify-start">1. 完全な問題リスト（解答・和訳付き）</button>
+                    <button id="download-choice-btn" class="btn btn-primary w-full justify-start">2. 4択・誤り指摘テスト</button>
+                    <button id="download-blank-btn" class="btn btn-primary w-full justify-start">3. 空所補充テスト（選択肢なし）</button>
+                    <button id="download-ordering-btn" class="btn btn-primary w-full justify-start">4. 整序英作文テスト</button>
+                    <button id="download-composition-btn" class="btn btn-primary w-full justify-start">5. 和文英訳テスト</button>
+                    <button id="download-mixed-btn" class="btn btn-primary w-full justify-start">6. ランダム混合テスト</button>
+                </div>
+                <div class="items-center px-4 py-3">
+                    <button id="close-modal-btn" class="btn btn-secondary w-full">キャンセル</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- App State ---
+        const chapterData = [
+ {
+  "id": "260",
+  "tags": [
+   "基本"
+  ],
+  "question": "I think he is a very intelligent person, (　　) many people don't agree with me.",
+  "rawAnswer": "①",
+  "ja": "彼はとても知的な人だと私は思うが，多くの人は私に同意しない。",
+  "type": "choice",
+  "choices": [
+   "but",
+   "for",
+   "which",
+   "who"
+  ],
+  "answerIndex": 0,
+  "en": "I think he is a very intelligent person, but many people don't agree with me."
+ },
+ {
+  "id": "261",
+  "tags": [],
+  "question": "I have never been to the country, (　　) do I want to go there in the future.",
+  "rawAnswer": "③",
+  "ja": "私はその国に今まで行ったことはないし，将来そこに行きたいとも思わない。",
+  "type": "choice",
+  "choices": [
+   "but",
+   "or",
+   "nor",
+   "so"
+  ],
+  "answerIndex": 2,
+  "en": "I have never been to the country, nor do I want to go there in the future."
+ },
+ {
+  "id": "262",
+  "tags": [],
+  "question": "We sometimes have strong differences of opinion, (　　) we remain close friends.",
+  "rawAnswer": "②",
+  "ja": "ときどきは意見が大きく異なることもあるが，それでも私たちが親しい友人であることに変わりはない。",
+  "type": "choice",
+  "choices": [
+   "nor",
+   "yet",
+   "so",
+   "therefore"
+  ],
+  "answerIndex": 1,
+  "en": "We sometimes have strong differences of opinion, yet we remain close friends."
+ },
+ {
+  "id": "263",
+  "tags": [
+   "基本"
+  ],
+  "question": "Make haste, (　　) you will miss the last train.",
+  "rawAnswer": "④",
+  "ja": "急ぎなさい。さもないと，終電に乗り遅れますよ。",
+  "type": "choice",
+  "choices": [
+   "and",
+   "but",
+   "for",
+   "or"
+  ],
+  "answerIndex": 3,
+  "en": "Make haste, or you will miss the last train."
+ },
+ {
+  "id": "264",
+  "tags": [
+   "基本"
+  ],
+  "question": "Think success, (　　) you are more likely to succeed.",
+  "rawAnswer": "②",
+  "ja": "成功を思い描きなさい。そうすれば，より成功する可能性が高まります。",
+  "type": "choice",
+  "choices": [
+   "unless",
+   "and",
+   "but",
+   "or"
+  ],
+  "answerIndex": 1,
+  "en": "Think success, and you are more likely to succeed."
+ },
+ {
+  "id": "265",
+  "tags": [
+   "基本"
+  ],
+  "question": "We have stayed at both good (　　) bad camping sites.",
+  "rawAnswer": "①",
+  "ja": "私たちは，良いキャンプ場と悪いキャンプ場の両方に泊まったことがある。",
+  "type": "choice",
+  "choices": [
+   "and",
+   "or",
+   "nor",
+   "also"
+  ],
+  "answerIndex": 0,
+  "en": "We have stayed at both good and bad camping sites."
+ },
+ {
+  "id": "266",
+  "tags": [
+   "基本"
+  ],
+  "question": "太郎は雨だから家に帰ったのではなく，疲れていたから家に戻ったのです。\nTaro returned home (not because / it / but / he / was rainy / was tired / because).",
+  "rawAnswer": "not because it was rainy but because he was tired",
+  "ja": "太郎は雨だから家に帰ったのではなく，疲れていたから家に戻ったのです。",
+  "type": "ordering",
+  "answer": "not because it was rainy but because he was tired",
+  "pieces": [
+   "not because",
+   "it",
+   "but",
+   "he",
+   "was rainy",
+   "was tired",
+   "because"
+  ],
+  "en": "Taro returned home not because it was rainy but because he was tired."
+ },
+ {
+  "id": "267",
+  "tags": [
+   "基本"
+  ],
+  "question": "人間は，言葉だけでなく，表情によっても意思を伝達するものだ。\nPeople (also / but / communicate / expressions / facial / languages / not / only / with / with).",
+  "rawAnswer": "communicate not only with languages but also with facial expressions",
+  "ja": "人間は，言葉だけでなく，表情によっても意思を伝達するものだ。",
+  "type": "ordering",
+  "answer": "communicate not only with languages but also with facial expressions",
+  "pieces": [
+   "also",
+   "but",
+   "communicate",
+   "expressions",
+   "facial",
+   "languages",
+   "not",
+   "only",
+   "with",
+   "with"
+  ],
+  "en": "People communicate not only with languages but also with facial expressions."
+ },
+ {
+  "id": "268",
+  "tags": [],
+  "question": "We will (　　) go to the movies or go to a baseball game Friday night.",
+  "rawAnswer": "①",
+  "ja": "金曜の夜，私たちは映画か野球の試合を見に行きます。",
+  "type": "choice",
+  "choices": [
+   "either",
+   "neither",
+   "both",
+   "at"
+  ],
+  "answerIndex": 0,
+  "en": "We will either go to the movies or go to a baseball game Friday night."
+ },
+ {
+  "id": "269",
+  "tags": [],
+  "question": "(a) Mike doesn't like coffee.  He doesn't like tea, either.\n(b) Mike likes (　　) coffee (　　) tea.",
+  "rawAnswer": "neither, nor",
+  "ja": "(a) マイクはコーヒーが好きではない。紅茶も好きではない。\n(b) マイクはコーヒーも紅茶も好きではない。",
+  "type": "fill",
+  "answer": "neither, nor",
+  "en": "Mike likes neither, nor coffee neither, nor tea."
+ },
+ {
+  "id": "270",
+  "tags": [
+   "基本"
+  ],
+  "question": "(　　) it took only three months to finish the project is an amazing achievement.",
+  "rawAnswer": "④",
+  "ja": "そのプロジェクトを終えるのにたった３か月しかかからなかったということは，驚くべき成果だ。",
+  "type": "choice",
+  "choices": [
+   "While",
+   "If",
+   "What",
+   "That"
+  ],
+  "answerIndex": 3,
+  "en": "That it took only three months to finish the project is an amazing achievement."
+ },
+ {
+  "id": "271",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "Many scientists are researching the theory (　　) global warming is caused by human activity.",
+  "rawAnswer": "②",
+  "ja": "地球温暖化は人間の活動によって引き起こされるという理論を，多くの科学者たちが検証しているところだ。",
+  "type": "choice",
+  "choices": [
+   "of",
+   "that",
+   "which",
+   "what"
+  ],
+  "answerIndex": 1,
+  "en": "Many scientists are researching the theory that global warming is caused by human activity."
+ },
+ {
+  "id": "272",
+  "tags": [
+   "発展"
+  ],
+  "question": "It is often assumed that humans differ from other creatures (　　) they can think and speak.",
+  "rawAnswer": "①",
+  "ja": "考えたり話したりできるという点で，人間は他の生物とは違うと，しばしば考えられている。",
+  "type": "choice",
+  "choices": [
+   "in that",
+   "in which",
+   "to that",
+   "to which"
+  ],
+  "answerIndex": 0,
+  "en": "It is often assumed that humans differ from other creatures in that they can think and speak."
+ },
+ {
+  "id": "273",
+  "tags": [
+   "発展"
+  ],
+  "question": "We know nothing about him (　　) he is a good teacher.",
+  "rawAnswer": "②",
+  "ja": "よい教師であるということを除いて，私たちは彼について何も知らない。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "except that",
+   "in that",
+   "if not"
+  ],
+  "answerIndex": 1,
+  "en": "We know nothing about him except that he is a good teacher."
+ },
+ {
+  "id": "274",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "Bob asked me (　　) I felt well.",
+  "rawAnswer": "①",
+  "ja": "ボブは私に体調がいいかどうか尋ねた。",
+  "type": "choice",
+  "choices": [
+   "if",
+   "what",
+   "which",
+   "who"
+  ],
+  "answerIndex": 0,
+  "en": "Bob asked me if I felt well."
+ },
+ {
+  "id": "275",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "(　　) he is famous doesn't matter.",
+  "rawAnswer": "④",
+  "ja": "彼が有名かどうかなど，どうでもいいことだ。",
+  "type": "choice",
+  "choices": [
+   "Although",
+   "If",
+   "Unless",
+   "Whether"
+  ],
+  "answerIndex": 3,
+  "en": "Whether he is famous doesn't matter."
+ },
+ {
+  "id": "276",
+  "tags": [
+   "基本"
+  ],
+  "question": "The situation at work got better (　　) the new boss arrived.",
+  "rawAnswer": "①",
+  "ja": "新しい上司が来て，職場の状況が良くなった。",
+  "type": "choice",
+  "choices": [
+   "when",
+   "where",
+   "which",
+   "while"
+  ],
+  "answerIndex": 0,
+  "en": "The situation at work got better when the new boss arrived."
+ },
+ {
+  "id": "277",
+  "tags": [
+   "基本"
+  ],
+  "question": "I have been living in Nagoya (　　) I came to Japan six years ago.",
+  "rawAnswer": "②",
+  "ja": "６年前に日本に来てから，私はずっと名古屋に住んでいる。",
+  "type": "choice",
+  "choices": [
+   "from",
+   "since",
+   "until",
+   "after"
+  ],
+  "answerIndex": 1,
+  "en": "I have been living in Nagoya since I came to Japan six years ago."
+ },
+ {
+  "id": "278",
+  "tags": [
+   "基本"
+  ],
+  "question": "You had better write the number down in the notebook (　　) you forget it.",
+  "rawAnswer": "③",
+  "ja": "忘れないうちにノートにその番号を書きとめておいた方がいいよ。",
+  "type": "choice",
+  "choices": [
+   "whether",
+   "if",
+   "before",
+   "unless"
+  ],
+  "answerIndex": 2,
+  "en": "You had better write the number down in the notebook before you forget it."
+ },
+ {
+  "id": "279",
+  "tags": [],
+  "question": "彼の息子が薬局を引き継ぐのもそう遠くないでしょう。\n(takes / won't / his son / before / it / be / over / long) the drugstore.",
+  "rawAnswer": "It won't be long before his son takes over",
+  "ja": "彼の息子が薬局を引き継ぐのもそう遠くないでしょう。",
+  "type": "ordering",
+  "answer": "It won't be long before his son takes over",
+  "pieces": [
+   "takes",
+   "won't",
+   "his son",
+   "before",
+   "it",
+   "be",
+   "over",
+   "long"
+  ],
+  "en": "It won't be long before his son takes over the drugstore."
+ },
+ {
+  "id": "280",
+  "tags": [],
+  "question": "私は初めて彼を見たとき，彼を学生だと思った。\nI (student / saw / time / a / the / I / took / for / him / first) him.",
+  "rawAnswer": "took him for a student the first time I saw",
+  "ja": "私は初めて彼を見たとき，彼を学生だと思った。",
+  "type": "ordering",
+  "answer": "took him for a student the first time I saw",
+  "pieces": [
+   "student",
+   "saw",
+   "time",
+   "a",
+   "the",
+   "I",
+   "took",
+   "for",
+   "him",
+   "first"
+  ],
+  "en": "I took him for a student the first time I saw him."
+ },
+ {
+  "id": "281",
+  "tags": [
+   "基本"
+  ],
+  "question": "You will never enjoy watching the game (　　) you learn the rules.",
+  "rawAnswer": "④",
+  "ja": "ルールを覚えるまで，あなたはその試合を見て楽しむことはないだろう。",
+  "type": "choice",
+  "choices": [
+   "by",
+   "for",
+   "since",
+   "until"
+  ],
+  "answerIndex": 3,
+  "en": "You will never enjoy watching the game until you learn the rules."
+ },
+ {
+  "id": "282",
+  "tags": [
+   "基本"
+  ],
+  "question": "The exam had started (　　) I got to class.",
+  "rawAnswer": "①",
+  "ja": "私が教室に着いたときには，試験は始まっていた。",
+  "type": "choice",
+  "choices": [
+   "by the time",
+   "on the time",
+   "after the time",
+   "until"
+  ],
+  "answerIndex": 0,
+  "en": "The exam had started by the time I got to class."
+ },
+ {
+  "id": "283",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "(a) On arriving at the hotel, he called his son.\n(b) (　　) (　　) (　　) he arrived at the hotel, he called his son.",
+  "rawAnswer": "As soon as",
+  "ja": "(a) (b) ホテルに着くとすぐ，彼は息子に電話をかけた。",
+  "type": "fill",
+  "answer": "As soon as",
+  "en": "As soon as he arrived at the hotel, he called his son."
+ },
+ {
+  "id": "284",
+  "tags": [],
+  "question": "テレビをつけたとたん，おかしいなと思った。\nI recognized something strange about the (I / it / moment / on / switched / television / the).",
+  "rawAnswer": "television the moment I switched it on",
+  "ja": "テレビをつけたとたん，おかしいなと思った。",
+  "type": "ordering",
+  "answer": "television the moment I switched it on",
+  "pieces": [
+   "I",
+   "it",
+   "moment",
+   "on",
+   "switched",
+   "television",
+   "the"
+  ],
+  "en": "I recognized something strange about the television the moment I switched it on."
+ },
+ {
+  "id": "285",
+  "tags": [],
+  "question": "I had no sooner sat down to read the newspaper (　　) the telephone rang.",
+  "rawAnswer": "③",
+  "ja": "新聞を読もうと座ったとたん，電話が鳴った。",
+  "type": "choice",
+  "choices": [
+   "as",
+   "after",
+   "than",
+   "while"
+  ],
+  "answerIndex": 2,
+  "en": "I had no sooner sat down to read the newspaper than the telephone rang."
+ },
+ {
+  "id": "286",
+  "tags": [],
+  "question": "その車が角を曲がるやいなや，車輪が外れた。\nNo (the car / the corner / had / sooner / than / turned) a wheel came off.",
+  "rawAnswer": "sooner had the car turned the corner than",
+  "ja": "その車が角を曲がるやいなや，車輪が外れた。",
+  "type": "ordering",
+  "answer": "sooner had the car turned the corner than",
+  "pieces": [
+   "the car",
+   "the corner",
+   "had",
+   "sooner",
+   "than",
+   "turned"
+  ],
+  "en": "No sooner had the car turned the corner than a wheel came off."
+ },
+ {
+  "id": "287",
+  "tags": [],
+  "question": "I had (　　) gone to bed when the telephone rang.",
+  "rawAnswer": "②",
+  "ja": "ベッドに入ったとたん，電話が鳴った。",
+  "type": "choice",
+  "choices": [
+   "closely",
+   "hardly",
+   "shortly",
+   "rarely"
+  ],
+  "answerIndex": 1,
+  "en": "I had hardly gone to bed when the telephone rang."
+ },
+ {
+  "id": "288",
+  "tags": [
+   "基本"
+  ],
+  "question": "(　　) the sun rises in the east, Japan has long been called \"the land of the rising sun.\"",
+  "rawAnswer": "①",
+  "ja": "太陽は東から昇るため，日本は長い間「日出づる国」と呼ばれてきた。",
+  "type": "choice",
+  "choices": [
+   "Since",
+   "If",
+   "When",
+   "For"
+  ],
+  "answerIndex": 0,
+  "en": "Since the sun rises in the east, Japan has long been called \"the land of the rising sun.\""
+ },
+ {
+  "id": "289",
+  "tags": [
+   "基本"
+  ],
+  "question": "He will not come to the party (　　) he has so many assignments to do by tomorrow morning.",
+  "rawAnswer": "①",
+  "ja": "明朝までにやらなければならない宿題が非常に多くあるので，彼はパーティーには来ないだろう。",
+  "type": "choice",
+  "choices": [
+   "because",
+   "yet",
+   "or",
+   "about"
+  ],
+  "answerIndex": 0,
+  "en": "He will not come to the party because he has so many assignments to do by tomorrow morning."
+ },
+ {
+  "id": "290",
+  "tags": [],
+  "question": "Many exam candidates lose marks simply (　　) they do not read the questions properly.",
+  "rawAnswer": "①",
+  "ja": "きちんと設問を読まないという理由だけで，失点する受験者も大勢いる。",
+  "type": "choice",
+  "choices": [
+   "because",
+   "because of",
+   "for",
+   "since"
+  ],
+  "answerIndex": 0,
+  "en": "Many exam candidates lose marks simply because they do not read the questions properly."
+ },
+ {
+  "id": "291",
+  "tags": [],
+  "question": "本に書いてあるからといって，何でもすぐに信用してはいけない。\nDon't believe everything (in books / it's / because / immediately / just / written).",
+  "rawAnswer": "immediately just because it's written in books",
+  "ja": "本に書いてあるからといって，何でもすぐに信用してはいけない。",
+  "type": "ordering",
+  "answer": "immediately just because it's written in books",
+  "pieces": [
+   "in books",
+   "it's",
+   "because",
+   "immediately",
+   "just",
+   "written"
+  ],
+  "en": "Don't believe everything immediately just because it's written in books."
+ },
+ {
+  "id": "292",
+  "tags": [],
+  "question": "(　　) the country has a new democratic government, the people will at last have more freedom.",
+  "rawAnswer": "④",
+  "ja": "その国には，今や新たな民主主義政府があるのだから，国民はより多くの自由をついに手にすることだろう。",
+  "type": "choice",
+  "choices": [
+   "Although",
+   "Even if",
+   "Even though",
+   "Now that"
+  ],
+  "answerIndex": 3,
+  "en": "Now that the country has a new democratic government, the people will at last have more freedom."
+ },
+ {
+  "id": "293",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "Helen jogs every morning (　　) she is too tired.",
+  "rawAnswer": "④",
+  "ja": "ひどく疲れていない限り［ひどく疲れていなければ］，ヘレンは毎朝ジョギングをする。",
+  "type": "choice",
+  "choices": [
+   "despite",
+   "without",
+   "whether",
+   "unless"
+  ],
+  "answerIndex": 3,
+  "en": "Helen jogs every morning unless she is too tired."
+ },
+ {
+  "id": "294",
+  "tags": [
+   "発展"
+  ],
+  "question": "You can go ahead and use any book you like on the shelves, (　　) you leave all your bags in the lockers.",
+  "rawAnswer": "③",
+  "ja": "ロッカーにカバンをすべて置いたら，先へ進んで棚にあるあなたの好きなどんな本でも利用することができます。",
+  "type": "choice",
+  "choices": [
+   "unless",
+   "so that",
+   "provided",
+   "before"
+  ],
+  "answerIndex": 2,
+  "en": "You can go ahead and use any book you like on the shelves, provided you leave all your bags in the lockers."
+ },
+ {
+  "id": "295",
+  "tags": [
+   "発展"
+  ],
+  "question": "(　　) we miss the train, what shall we do?",
+  "rawAnswer": "④",
+  "ja": "もし電車に乗り遅れたら，どうしよう。",
+  "type": "choice",
+  "choices": [
+   "Having",
+   "Looking",
+   "Being",
+   "Supposing"
+  ],
+  "answerIndex": 3,
+  "en": "Supposing we miss the train, what shall we do?"
+ },
+ {
+  "id": "296",
+  "tags": [
+   "発展"
+  ],
+  "question": "(　　) you were President, what would you do?",
+  "rawAnswer": "①",
+  "ja": "もしあなたが大統領だったら，何をしますか。",
+  "type": "choice",
+  "choices": [
+   "Suppose",
+   "Supposed",
+   "Supposedly",
+   "Supposition"
+  ],
+  "answerIndex": 0,
+  "en": "Suppose you were President, what would you do?"
+ },
+ {
+  "id": "297",
+  "tags": [],
+  "question": "They'll lend us their flat <u>on condition that</u> we look after it.",
+  "rawAnswer": "③",
+  "ja": "留守を預かるという条件で，彼らはアパートを貸してくれます。",
+  "type": "choice",
+  "choices": [
+   "for",
+   "as",
+   "if",
+   "while"
+  ],
+  "answerIndex": 2,
+  "en": "They'll lend us their flat on condition that we look after it."
+ },
+ {
+  "id": "298",
+  "tags": [],
+  "question": "At Emi's birthday party he behaved (　　) he were a child.",
+  "rawAnswer": "②",
+  "ja": "エミの誕生日パーティーで，彼はまるで子どものようにふるまった。",
+  "type": "choice",
+  "choices": [
+   "as to",
+   "as if",
+   "as soon as",
+   "as long as"
+  ],
+  "answerIndex": 1,
+  "en": "At Emi's birthday party he behaved as if he were a child."
+ },
+ {
+  "id": "299",
+  "tags": [],
+  "question": "Mathew looks very tired. He looks (　　) he hasn't slept for days.",
+  "rawAnswer": "③",
+  "ja": "マシューはとても疲れているようだ。何日も眠っていないかのように見える。",
+  "type": "choice",
+  "choices": [
+   "even though",
+   "although",
+   "as though",
+   "though"
+  ],
+  "answerIndex": 2,
+  "en": "Mathew looks very tired. He looks as though he hasn't slept for days."
+ },
+ {
+  "id": "300",
+  "tags": [],
+  "question": "(　　) I learned how to hold the club properly, my golf game improved a lot.",
+  "rawAnswer": "③",
+  "ja": "ひとたびクラブの正しい持ち方を学んだら，私のゴルフの腕はかなり上がった。",
+  "type": "choice",
+  "choices": [
+   "As a result",
+   "Nevertheless",
+   "Once",
+   "Whether"
+  ],
+  "answerIndex": 2,
+  "en": "Once I learned how to hold the club properly, my golf game improved a lot."
+ },
+ {
+  "id": "301",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "I like the restaurant we went to last night, (　　) it was a little too expensive.",
+  "rawAnswer": "②",
+  "ja": "少し値段が高すぎたけれども，昨晩行ったレストランは良かった。",
+  "type": "choice",
+  "choices": [
+   "whether",
+   "although",
+   "since",
+   "because"
+  ],
+  "answerIndex": 1,
+  "en": "I like the restaurant we went to last night, although it was a little too expensive."
+ },
+ {
+  "id": "302",
+  "tags": [],
+  "question": "It is important not to give out your credit card number to anyone over the phone (　　) you know who you are talking to.",
+  "rawAnswer": "②",
+  "ja": "たとえ話し相手がだれか知っていても，電話ではクレジットカード番号をだれにも教えないことが大事です。",
+  "type": "choice",
+  "choices": [
+   "so that",
+   "even if",
+   "but",
+   "or"
+  ],
+  "answerIndex": 1,
+  "en": "It is important not to give out your credit card number to anyone over the phone even if you know who you are talking to."
+ },
+ {
+  "id": "303",
+  "tags": [],
+  "question": "(　　) a vast amount of research has been conducted, there is still a great deal that is not known about the workings of the human brain.",
+  "rawAnswer": "②",
+  "ja": "膨大な量の研究がなされてきたけれども，人間の脳の働きにはまだ未知の部分がたくさんある。",
+  "type": "choice",
+  "choices": [
+   "Despite",
+   "Even though",
+   "In spite of",
+   "Whether"
+  ],
+  "answerIndex": 1,
+  "en": "Even though a vast amount of research has been conducted, there is still a great deal that is not known about the workings of the human brain."
+ },
+ {
+  "id": "304",
+  "tags": [
+   "発展"
+  ],
+  "question": "Sleepy (　　) he was, he kept on studying for the examination.",
+  "rawAnswer": "③",
+  "ja": "彼は眠かったけれども，テストの勉強を続けた。",
+  "type": "choice",
+  "choices": [
+   "when",
+   "because",
+   "as",
+   "before"
+  ],
+  "answerIndex": 2,
+  "en": "Sleepy as he was, he kept on studying for the examination."
+ },
+ {
+  "id": "305",
+  "tags": [],
+  "question": "(　　) they agree or not, I will carry out the plan.",
+  "rawAnswer": "④",
+  "ja": "彼らが賛成しようがしまいが，私はその計画を実行する。",
+  "type": "choice",
+  "choices": [
+   "Either",
+   "However",
+   "Whatever",
+   "Whether"
+  ],
+  "answerIndex": 3,
+  "en": "Whether they agree or not, I will carry out the plan."
+ },
+ {
+  "id": "306",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "The movie was (　　) interesting that I wanted to see it again.",
+  "rawAnswer": "③",
+  "ja": "その映画はとてもおもしろかったので，私はもう一度見たいと思った。",
+  "type": "choice",
+  "choices": [
+   "such",
+   "too",
+   "so",
+   "much"
+  ],
+  "answerIndex": 2,
+  "en": "The movie was so interesting that I wanted to see it again."
+ },
+ {
+  "id": "307",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "It was (　　) a fine day that they went hiking.",
+  "rawAnswer": "①",
+  "ja": "とても良い天気だったので，彼らはハイキングに出かけた。",
+  "type": "choice",
+  "choices": [
+   "such",
+   "so",
+   "what",
+   "then"
+  ],
+  "answerIndex": 0,
+  "en": "It was such a fine day that they went hiking."
+ },
+ {
+  "id": "308",
+  "tags": [
+   "発展"
+  ],
+  "question": "(　　) was the force of the explosion that all the windows broke into pieces.",
+  "rawAnswer": "④",
+  "ja": "爆発の威力がとてもすごかったので，窓はすべて粉々に砕けた。",
+  "type": "choice",
+  "choices": [
+   "So",
+   "That",
+   "What",
+   "Such"
+  ],
+  "answerIndex": 3,
+  "en": "Such was the force of the explosion that all the windows broke into pieces."
+ },
+ {
+  "id": "309",
+  "tags": [],
+  "question": "I overslept, (　　) I was late for the meeting.",
+  "rawAnswer": "③",
+  "ja": "寝坊をした。それで会議に遅れてしまった。",
+  "type": "choice",
+  "choices": [
+   "because",
+   "as",
+   "so",
+   "but"
+  ],
+  "answerIndex": 2,
+  "en": "I overslept, so I was late for the meeting."
+ },
+ {
+  "id": "310",
+  "tags": [
+   "基本"
+  ],
+  "question": "She wanted to publish her poetry (　　) everyone could read it.",
+  "rawAnswer": "③",
+  "ja": "彼女はだれもが読めるように，自分の詩集を出版したいと思っていた。",
+  "type": "choice",
+  "choices": [
+   "in that",
+   "so much",
+   "so that",
+   "that which"
+  ],
+  "answerIndex": 2,
+  "en": "She wanted to publish her poetry so that everyone could read it."
+ },
+ {
+  "id": "311",
+  "tags": [],
+  "question": "■英文の意味に最も近いものを，①～④から一つ選べ。\nYou need to speak up so everyone can hear you.",
+  "rawAnswer": "③",
+  "ja": "みんなに聞こえるようにあなたは大声で話す必要がある。\n①あなたが言うことをみんな聞く準備ができている。\n②あなたの言うことにみんなが賛成するとは限らない。\n③あなたはもっと大声で話さなければならない。さもないと，人々は聞き取ることができないだろう。\n④他のみんなの考えることにあなたは耳を傾けるべきだ。",
+  "type": "choice",
+  "choices": [
+   "Everybody is ready to listen to what you are going to say.",
+   "Not everybody is going to agree with what you say.",
+   "You have to talk louder, otherwise people will not be able to hear.",
+   "You should listen to what everyone else thinks."
+  ],
+  "answerIndex": 2,
+  "en": "You need to speak up so everyone can hear you."
+ },
+ {
+  "id": "312",
+  "tags": [],
+  "question": "He got to the station early for (　　) that he might miss the last train.",
+  "rawAnswer": "fear",
+  "ja": "最終電車を逃さないように，彼は早めに駅に着いた。",
+  "type": "fill",
+  "answer": "fear",
+  "en": "He got to the station early for fear that he might miss the last train."
+ },
+ {
+  "id": "313",
+  "tags": [
+   "超頻出"
+  ],
+  "question": "You should write down Satsuki's number (　　) you forget it.",
+  "rawAnswer": "①",
+  "ja": "忘れた場合に備えて，サツキの電話番号を書きとめておくべきです。",
+  "type": "choice",
+  "choices": [
+   "in case",
+   "in the case",
+   "so far as",
+   "so long as"
+  ],
+  "answerIndex": 0,
+  "en": "You should write down Satsuki's number in case you forget it."
+ },
+ {
+  "id": "314",
+  "tags": [],
+  "question": "A desert stretched on all sides (　　) the eye could reach.",
+  "rawAnswer": "①",
+  "ja": "見渡す限り，あらゆる方角に砂漠が広がっていた。",
+  "type": "choice",
+  "choices": [
+   "as far as",
+   "as long as",
+   "so that",
+   "regarding"
+  ],
+  "answerIndex": 0,
+  "en": "A desert stretched on all sides as far as the eye could reach."
+ },
+ {
+  "id": "315",
+  "tags": [],
+  "question": "Any bread will do as (　　) as it's fresh.",
+  "rawAnswer": "④",
+  "ja": "焼きたてでありさえすれば，どんなパンでもいいですよ。",
+  "type": "choice",
+  "choices": [
+   "many",
+   "far",
+   "much",
+   "long"
+  ],
+  "answerIndex": 3,
+  "en": "Any bread will do as long as it's fresh."
+ },
+ {
+  "id": "316",
+  "tags": [
+   "基本",
+   "超頻出"
+  ],
+  "question": "I went swimming almost every day (　　) I stayed in Okinawa.",
+  "rawAnswer": "③",
+  "ja": "沖縄滞在中は，ほぼ毎日泳ぎに行った。",
+  "type": "choice",
+  "choices": [
+   "though",
+   "during",
+   "while",
+   "if"
+  ],
+  "answerIndex": 2,
+  "en": "I went swimming almost every day while I stayed in Okinawa."
+ },
+ {
+  "id": "317",
+  "tags": [],
+  "question": "Some people say that the Internet is a passing fashion, (　　) others believe it is a turning point in human history.",
+  "rawAnswer": "②",
+  "ja": "インターネットは一時の流行だと言う人もいるが，一方で，人類の歴史における転換点だと考える人もいる。",
+  "type": "choice",
+  "choices": [
+   "during",
+   "while",
+   "judging from",
+   "considering"
+  ],
+  "answerIndex": 1,
+  "en": "Some people say that the Internet is a passing fashion, while others believe it is a turning point in human history."
+ },
+ {
+  "id": "318",
+  "tags": [
+   "発展"
+  ],
+  "question": "(　　) Joe agreed with Mary for the most part, there were still some points that he could not accept.",
+  "rawAnswer": "②",
+  "ja": "ジョーはほとんどの部分でメアリーに同意したが，受け入れることができないところがまだいくつかあった。",
+  "type": "choice",
+  "choices": [
+   "Since",
+   "While",
+   "Whether",
+   "Whichever"
+  ],
+  "answerIndex": 1,
+  "en": "While Joe agreed with Mary for the most part, there were still some points that he could not accept."
+ },
+ {
+  "id": "319",
+  "tags": [],
+  "question": "年がいくと，だんだん骨がもろくなるらしい。\nThey say our bones get weaker and weaker (　　) we get older.",
+  "rawAnswer": "②",
+  "ja": "年がいくと，だんだん骨がもろくなるらしい。",
+  "type": "choice",
+  "choices": [
+   "so",
+   "as",
+   "like",
+   "with"
+  ],
+  "answerIndex": 1,
+  "en": "They say our bones get weaker and weaker as we get older."
+ },
+ {
+  "id": "320",
+  "tags": [],
+  "question": "The students did it (　　) they were told to do it.",
+  "rawAnswer": "③",
+  "ja": "生徒たちはそれを言われるようにやった。",
+  "type": "choice",
+  "choices": [
+   "that",
+   "so",
+   "as",
+   "unless"
+  ],
+  "answerIndex": 2,
+  "en": "The students did it as they were told to do it."
+ },
+ {
+  "id": "321",
+  "tags": [
+   "発展"
+  ],
+  "question": "私たちはあるがままに物事を受け入れなければなりません。\n(accept / they / we / are / have / things / as / to).",
+  "rawAnswer": "We have to accept things as they are",
+  "ja": "私たちはあるがままに物事を受け入れなければなりません。",
+  "type": "ordering",
+  "answer": "We have to accept things as they are",
+  "pieces": [
+   "accept",
+   "they",
+   "we",
+   "are",
+   "have",
+   "things",
+   "as",
+   "to"
+  ],
+  "en": "We have to accept things as they are."
+ }
+];
+
+        const CIRCLED = ['①', '②', '③', '④', '⑤', '⑥'];
+        let activeProblemElement = null;
+        let selectedProblems = new Set();
+
+        const problemList = document.getElementById('problem-list');
+        const startQuizBtn = document.getElementById('start-quiz-btn');
+        const messageModal = document.getElementById('message-modal');
+        const messageContent = document.getElementById('message-content');
+        const quizModal = document.getElementById('quiz-modal');
+        const closeQuizBtn = document.getElementById('close-quiz-btn');
+        const quizContent = document.getElementById('quiz-content');
+        const selectAllCheckbox = document.getElementById('select-all-checkbox');
+        const pdfModal = document.getElementById('pdf-modal');
+        const openPdfModalBtn = document.getElementById('open-pdf-modal-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+
+        // --- Voice Synthesis Setup ---
+        if (typeof speechSynthesis !== 'undefined') {
+            speechSynthesis.getVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = () => { speechSynthesis.getVoices(); };
+            }
+        }
+
+        function getBestEnglishVoice(voices) {
+            const excludedVoices = [
+                'albert', 'bad news', 'bells', 'boing', 'bubbles', 'cellos',
+                'deranged', 'good news', 'hysterical', 'pipe organ', 'trinoids',
+                'whisper', 'zarvox', 'fred', 'juniper', 'ralph', 'kathy', 'siri'
+            ];
+
+            const englishVoices = voices.filter(v => {
+                const lang = v.lang.toLowerCase();
+                const name = v.name.toLowerCase();
+                return lang.startsWith('en') && !excludedVoices.some(ex => name.includes(ex));
+            });
+
+            if (englishVoices.length === 0) {
+                return voices.find(v => v.lang.toLowerCase().startsWith('en')) || null;
+            }
+
+            const isGoogle = v => v.name.toLowerCase().includes('google');
+            const isSamantha = v => v.name.toLowerCase().includes('samantha');
+            const isDaniel = v => v.name.toLowerCase().includes('daniel');
+            const isPremium = v => v.name.toLowerCase().includes('premium') || v.name.toLowerCase().includes('enhanced') || v.name.toLowerCase().includes('natural');
+            const isUS = v => v.lang.toLowerCase() === 'en-us';
+            const isGB = v => v.lang.toLowerCase() === 'en-gb';
+
+            let voice = englishVoices.find(v => isUS(v) && isGoogle(v));
+            if (voice) return voice;
+            voice = englishVoices.find(v => isGB(v) && isGoogle(v));
+            if (voice) return voice;
+            voice = englishVoices.find(isGoogle);
+            if (voice) return voice;
+            voice = englishVoices.find(isSamantha);
+            if (voice) return voice;
+            voice = englishVoices.find(isDaniel);
+            if (voice) return voice;
+            voice = englishVoices.find(v => isUS(v) && isPremium(v));
+            if (voice) return voice;
+            voice = englishVoices.find(isPremium);
+            if (voice) return voice;
+            voice = englishVoices.find(v => isUS(v));
+            if (voice) return voice;
+            voice = englishVoices.find(v => isGB(v));
+            if (voice) return voice;
+            return englishVoices[0];
+        }
+
+        // --- Rendering helpers ---
+        const TYPE_LABELS = {
+            choice: '4択', error: '誤り指摘', ordering: '整序英作文',
+            fill: '空所補充', rewrite: '書き換え'
+        };
+
+        function tagBadges(item) {
+            let html = `<span class="tag-badge bg-gray-200 text-gray-600">${TYPE_LABELS[item.type] || ''}</span>`;
+            (item.tags || []).forEach(tag => {
+                if (tag === '基本') html += `<span class="tag-badge bg-blue-100 text-blue-700">基本</span>`;
+                else if (tag === '発展') html += `<span class="tag-badge bg-purple-100 text-purple-700">発展</span>`;
+                else if (tag.includes('頻出')) html += `<span class="tag-badge bg-red-100 text-red-700">●${tag}</span>`;
+                else html += `<span class="tag-badge bg-gray-100 text-gray-700">${tag}</span>`;
+            });
+            return html;
+        }
+
+        function isJaLine(line) {
+            return /[぀-ヿ一-鿿。，、]/.test(line) && !/<u>/.test(line) && !/[a-zA-Z]{3}/.test(line);
+        }
+
+        function questionHtml(item) {
+            return item.question.split('\n').map(line => {
+                if (isJaLine(line)) return `<p class="mb-1 text-gray-700">${line}</p>`;
+                return `<p class="mb-1 font-english">${line}</p>`;
+            }).join('');
+        }
+
+        function shuffle(arr) {
+            const a = [...arr];
+            for (let i = a.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [a[i], a[j]] = [a[j], a[i]];
+            }
+            return a;
+        }
+
+        function normalizeSentence(s) {
+            return s.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, ' ').trim();
+        }
+
+        function answerSummary(item) {
+            if (item.type === 'choice') {
+                return `${CIRCLED[item.answerIndex] || ''} ${item.choices[item.answerIndex] || ''}`;
+            }
+            if (item.type === 'error') return item.rawAnswer;
+            return item.answer || item.rawAnswer;
+        }
+
+        // --- Interaction builders per type ---
+        function buildInteraction(item, container, onAnswered) {
+            if (item.type === 'choice') {
+                const wrap = document.createElement('div');
+                wrap.className = 'space-y-2 mt-3';
+                item.choices.forEach((choice, idx) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn font-english';
+                    btn.innerHTML = `${CIRCLED[idx]}　${choice}`;
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        const correct = idx === item.answerIndex;
+                        btn.classList.add(correct ? 'correct' : 'wrong');
+                        wrap.querySelectorAll('button').forEach((b, i) => {
+                            b.disabled = true;
+                            if (i === item.answerIndex) b.classList.add('correct');
+                        });
+                        onAnswered(correct);
+                    };
+                    wrap.appendChild(btn);
+                });
+                container.appendChild(wrap);
+            } else if (item.type === 'error') {
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = '下線部①〜④のうち、誤りを含むものを選んでください。';
+                container.appendChild(hint);
+                const wrap = document.createElement('div');
+                wrap.className = 'flex gap-2 mt-2 flex-wrap';
+                for (let idx = 0; idx < 4; idx++) {
+                    const btn = document.createElement('button');
+                    btn.className = 'choice-btn font-english';
+                    btn.style.width = 'auto';
+                    btn.textContent = CIRCLED[idx];
+                    btn.onclick = (e) => {
+                        e.stopPropagation();
+                        const correct = idx === item.answerIndex;
+                        btn.classList.add(correct ? 'correct' : 'wrong');
+                        wrap.querySelectorAll('button').forEach((b, i) => {
+                            b.disabled = true;
+                            if (i === item.answerIndex) b.classList.add('correct');
+                        });
+                        onAnswered(correct);
+                    };
+                    wrap.appendChild(btn);
+                }
+                container.appendChild(wrap);
+            } else if (item.type === 'ordering') {
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = '語句を正しい順に並べてください。' + (item.note ? `（${item.note}）` : '');
+                container.appendChild(hint);
+
+                const builtArea = document.createElement('div');
+                builtArea.className = 'min-h-[44px] p-2 border-2 border-dashed border-gray-300 rounded-lg mt-2 bg-gray-50';
+                container.appendChild(builtArea);
+
+                const chipArea = document.createElement('div');
+                chipArea.className = 'mt-2';
+                container.appendChild(chipArea);
+
+                let built = [];
+
+                function renderChips() {
+                    builtArea.innerHTML = '';
+                    built.forEach((piece, bi) => {
+                        const chip = document.createElement('span');
+                        chip.className = 'built-chip font-english';
+                        chip.textContent = piece;
+                        chip.title = 'クリックで戻す';
+                        chip.onclick = (e) => {
+                            e.stopPropagation();
+                            built.splice(bi, 1);
+                            renderChips();
+                        };
+                        builtArea.appendChild(chip);
+                    });
+                    chipArea.querySelectorAll('.piece-chip').forEach(chip => {
+                        const idx = Number(chip.dataset.idx);
+                        const usedCount = built.filter(b => b === chip.dataset.piece).length;
+                        const sameChips = Array.from(chipArea.querySelectorAll('.piece-chip')).filter(c => c.dataset.piece === chip.dataset.piece);
+                        sameChips.forEach((c, i) => c.classList.toggle('used', i < usedCount));
+                    });
+                }
+
+                shuffle(item.pieces.map((p, i) => ({ p, i }))).forEach(({ p, i }) => {
+                    const chip = document.createElement('span');
+                    chip.className = 'piece-chip font-english';
+                    chip.textContent = p;
+                    chip.dataset.piece = p;
+                    chip.dataset.idx = i;
+                    chip.onclick = (e) => {
+                        e.stopPropagation();
+                        if (chip.classList.contains('used')) return;
+                        built.push(p);
+                        renderChips();
+                    };
+                    chipArea.appendChild(chip);
+                });
+
+                const btnRow = document.createElement('div');
+                btnRow.className = 'flex gap-2 mt-3';
+                const checkBtn = document.createElement('button');
+                checkBtn.className = 'bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                checkBtn.textContent = '答え合わせ';
+                checkBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    const correct = normalizeSentence(built.join(' ')) === normalizeSentence(item.answer);
+                    builtArea.style.borderColor = correct ? '#22c55e' : '#ef4444';
+                    builtArea.style.background = correct ? '#dcfce7' : '#fee2e2';
+                    checkBtn.disabled = true;
+                    resetBtn.disabled = true;
+                    onAnswered(correct);
+                };
+                const resetBtn = document.createElement('button');
+                resetBtn.className = 'bg-gray-400 hover:bg-gray-500 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                resetBtn.textContent = 'やり直す';
+                resetBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    built = [];
+                    renderChips();
+                };
+                btnRow.appendChild(checkBtn);
+                btnRow.appendChild(resetBtn);
+                container.appendChild(btnRow);
+            } else {
+                // fill / rewrite: 解答を頭の中で考え、表示して自己採点
+                const hint = document.createElement('p');
+                hint.className = 'mt-3 text-sm text-gray-500';
+                hint.textContent = item.type === 'fill' ? '空所に入る語句を考えてから、解答を表示して自己採点してください。' : '答えを考えてから、解答を表示して自己採点してください。';
+                container.appendChild(hint);
+                const btnRow = document.createElement('div');
+                btnRow.className = 'flex gap-2 mt-2 flex-wrap';
+                const revealBtn = document.createElement('button');
+                revealBtn.className = 'bg-green-600 hover:bg-green-700 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                revealBtn.textContent = '解答を表示';
+                const okBtn = document.createElement('button');
+                okBtn.className = 'hidden bg-blue-500 hover:bg-blue-600 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                okBtn.textContent = '○ できた';
+                const ngBtn = document.createElement('button');
+                ngBtn.className = 'hidden bg-red-400 hover:bg-red-500 text-white font-bold py-1 px-4 rounded shadow text-sm';
+                ngBtn.textContent = '× できなかった';
+                revealBtn.onclick = (e) => {
+                    e.stopPropagation();
+                    revealBtn.classList.add('hidden');
+                    okBtn.classList.remove('hidden');
+                    ngBtn.classList.remove('hidden');
+                    container.closest('.problem-item').classList.add('show-answer');
+                };
+                okBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(true); };
+                ngBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(false); };
+                btnRow.appendChild(revealBtn);
+                btnRow.appendChild(okBtn);
+                btnRow.appendChild(ngBtn);
+                container.appendChild(btnRow);
+            }
+        }
+
+        // --- Main render ---
+        function renderChapter() {
+            problemList.innerHTML = '';
+            chapterData.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'problem-item p-4 border border-gray-200 rounded-lg bg-white transition-shadow duration-300 hover:shadow-md';
+                div.dataset.id = item.id;
+                div.dataset.fullSentence = item.en || '';
+
+                div.innerHTML = `
+        <div class="flex items-start space-x-3">
+            <input type="checkbox" class="problem-checkbox mt-1 h-5 w-5 rounded border-gray-300 text-green-600 focus:ring-green-500" data-id="${item.id}">
+            <span class="text-sm font-bold text-gray-400 w-12 flex-shrink-0">${item.id}</span>
+            <div class="flex-1 cursor-pointer min-w-0">
+                <div class="mb-2">${tagBadges(item)}</div>
+                <div class="question-area">${questionHtml(item)}</div>
+                <div class="interaction-area"></div>
+                <div class="answer-area mt-4 p-4 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                    <p class="font-bold text-green-800 mb-1">解答: <span class="font-english">${answerSummary(item)}</span></p>
+                    ${item.en ? `<p class="font-english text-green-900 mb-1">${item.en}</p>` : ''}
+                    ${item.ja ? `<p class="text-gray-700 text-sm whitespace-pre-wrap">${item.ja}</p>` : ''}
+                </div>
+                <div class="action-buttons mt-4 hidden flex-wrap gap-2">
+                    <button class="play-sound-btn-local bg-green-500 hover:bg-green-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">音声再生</button>
+                    <button class="play-slow-btn-local bg-teal-500 hover:bg-teal-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">ゆっくり</button>
+                    <button class="record-btn-local bg-red-500 hover:bg-red-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">録音評価</button>
+                    <button class="toggle-master-btn-local bg-gray-500 hover:bg-gray-600 text-white font-bold py-1 px-3 rounded shadow-md text-sm">⭐ マスター</button>
+                </div>
+            </div>
+        </div>
+        `;
+
+                const interactionArea = div.querySelector('.interaction-area');
+                buildInteraction(item, interactionArea, (correct) => {
+                    div.classList.add('show-answer');
+                    div.querySelector('.action-buttons').classList.remove('hidden');
+                    div.querySelector('.action-buttons').classList.add('flex');
+                    activateProblem(div);
+                    if (window.saveSolvedResult) window.saveSolvedResult(item.id, correct);
+                });
+
+                problemList.appendChild(div);
+            });
+
+            document.querySelectorAll('.problem-item .flex-1').forEach(item => {
+                item.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.classList.contains('piece-chip') || e.target.classList.contains('built-chip')) return;
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                });
+
+                item.querySelector('.play-sound-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    playSound(1.0);
+                });
+
+                item.querySelector('.play-slow-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    playSound(0.7);
+                });
+
+                item.querySelector('.record-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    activateProblem(e.currentTarget.closest('.problem-item'));
+                    handleRecording();
+                });
+
+                item.querySelector('.toggle-master-btn-local').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const wrapper = e.currentTarget.closest('.problem-item');
+                    const problemId = wrapper.dataset.id;
+                    const isMastered = wrapper.classList.contains('problem-mastered');
+                    if (window.toggleProblemMasterState) {
+                        window.toggleProblemMasterState(problemId, !isMastered);
+                    } else {
+                        wrapper.classList.toggle('problem-mastered');
+                        e.currentTarget.innerText = wrapper.classList.contains('problem-mastered') ? '⭐ マスター解除' : '⭐ マスター';
+                    }
+                });
+            });
+
+            document.querySelectorAll('.problem-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (e.target.checked) selectedProblems.add(e.target.dataset.id);
+                    else selectedProblems.delete(e.target.dataset.id);
+                });
+            });
+
+            if (window.applyLoadedMasteredProblems) {
+                window.applyLoadedMasteredProblems(window.localMasteredProblems);
+            }
+        }
+
+        function activateProblem(wrapper) {
+            if (activeProblemElement && activeProblemElement !== wrapper) {
+                activeProblemElement.classList.remove('ring-2', 'ring-green-400', 'shadow-xl');
+            }
+            activeProblemElement = wrapper;
+            activeProblemElement.classList.add('ring-2', 'ring-green-400', 'shadow-xl');
+        }
+
+        function showMessage(htmlContent, duration = null) {
+            messageContent.innerHTML = htmlContent;
+            messageModal.classList.remove('hidden');
+            if (duration) setTimeout(() => messageModal.classList.add('hidden'), duration);
+        }
+
+        // --- Audio ---
+        function playSound(speed = 1.0) {
+            if (!activeProblemElement) return;
+            const text = activeProblemElement.dataset.fullSentence;
+            if (!text) {
+                showMessage('<p>この問題には読み上げる英文がありません。</p>', 2000);
+                return;
+            }
+
+            try { speechSynthesis.cancel(); } catch (e) { }
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'en-US';
+            utterance.rate = speed;
+
+            const voices = speechSynthesis.getVoices();
+            const bestVoice = getBestEnglishVoice(voices);
+            if (bestVoice) {
+                utterance.voice = bestVoice;
+                utterance.lang = bestVoice.lang;
+            }
+            utterance.onerror = (e) => console.error('SpeechSynthesis error:', e.error);
+            speechSynthesis.speak(utterance);
+        }
+
+        // --- Recording / pronunciation evaluation ---
+        function handleRecording() {
+            if (!activeProblemElement) return;
+            if (!activeProblemElement.dataset.fullSentence) {
+                showMessage('<p>この問題には評価対象の英文がありません。</p>', 2000);
+                return;
+            }
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            if (!SpeechRecognition) {
+                showMessage('<p>お使いのブラウザは音声認識に対応していません。</p>', 3000);
+                return;
+            }
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'en-US';
+            recognition.onstart = () => showMessage('<p class="text-2xl">マイクに向かって英文を読んでください...</p><div class="animate-pulse text-red-500 text-4xl mt-4">●</div>');
+            recognition.onresult = (event) => evaluatePronunciation(event.results[0][0].transcript);
+            recognition.onerror = () => showMessage('<p>認識エラーが発生しました。</p>', 2000);
+            recognition.start();
+        }
+
+        function evaluatePronunciation(transcript) {
+            const original = activeProblemElement.dataset.fullSentence.toLowerCase().replace(/[^\w\s]/g, '');
+            const user = transcript.toLowerCase().replace(/[^\w\s]/g, '');
+            const score = Math.min(100, Math.floor((user.split(' ').filter(w => original.includes(w)).length / original.split(' ').length) * 100) + 15);
+
+            if (score >= 80) {
+                const problemId = activeProblemElement.dataset.id;
+                if (window.toggleProblemMasterState) {
+                    window.toggleProblemMasterState(problemId, true);
+                } else {
+                    activeProblemElement.classList.add('problem-mastered');
+                    const btn = activeProblemElement.querySelector('.toggle-master-btn-local');
+                    if (btn) btn.innerText = '⭐ マスター解除';
+                }
+            }
+
+            if (window.saveVintageScore) window.saveVintageScore('pronunciationScore_' + activeProblemElement.dataset.id, score);
+            showMessage(`
+                <h3 class="text-2xl font-bold mb-4">評価結果</h3>
+                <p class="text-7xl font-bold text-green-600 mb-4">${score}<span class="text-2xl">点</span></p>
+                <p class="text-gray-600 mb-2"><strong>認識結果:</strong> ${transcript}</p>
+                ${score >= 80 ? '<p class="text-yellow-600 font-bold">⭐ 80点以上！この問題をマスターしました</p>' : ''}
+                <button onclick="document.getElementById('message-modal').classList.add('hidden')" class="mt-6 bg-green-600 text-white py-2 px-6 rounded-lg">閉じる</button>
+            `);
+        }
+
+        // --- Random Quiz (choice / error 問題から10問) ---
+        function startQuiz() {
+            const pool = chapterData.filter(d => d.type === 'choice' || d.type === 'error');
+            if (pool.length === 0) {
+                showMessage('<p>この章には選択式の問題がありません。</p>', 2500);
+                return;
+            }
+            const questions = shuffle(pool).slice(0, Math.min(10, pool.length));
+            let currentIdx = 0, score = 0;
+
+            function nextQuestion() {
+                if (currentIdx >= questions.length) {
+                    const finalScore = Math.round(score / questions.length * 100);
+                    if (window.saveVintageScore) window.saveVintageScore('quizScore', finalScore);
+                    quizContent.innerHTML = `<h3 class="text-3xl font-bold mb-4">結果: ${score}/${questions.length}</h3><p class="text-6xl text-purple-600 font-bold">${finalScore}点</p>`;
+                    return;
+                }
+                const q = questions[currentIdx];
+                let optionsHtml, prompt;
+                if (q.type === 'choice') {
+                    prompt = '空所に入る最も適切なものを選んでください。';
+                    optionsHtml = q.choices.map((opt, idx) =>
+                        `<button data-idx="${idx}" class="quiz-opt p-3 border-2 border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-300 font-english transition-colors text-left">${CIRCLED[idx]}　${opt}</button>`).join('');
+                } else {
+                    prompt = '下線部①〜④のうち、誤りを含むものを選んでください。';
+                    optionsHtml = [0, 1, 2, 3].map(idx =>
+                        `<button data-idx="${idx}" class="quiz-opt p-3 border-2 border-gray-200 rounded-lg hover:bg-green-50 hover:border-green-300 font-english transition-colors text-left">${CIRCLED[idx]}</button>`).join('');
+                }
+
+                quizContent.innerHTML = `
+                    <p class="mb-2 text-gray-500">問題 ${currentIdx + 1}/${questions.length}　[${q.id}]</p>
+                    <p class="text-sm text-gray-500 mb-2">${prompt}</p>
+                    <div class="text-lg font-bold mb-6 text-green-900">${questionHtml(q)}</div>
+                    <div class="grid grid-cols-1 gap-3">${optionsHtml}</div>
+                    <div id="quiz-feedback" class="mt-4"></div>
+                `;
+                quizContent.querySelectorAll('.quiz-opt').forEach(btn => {
+                    btn.onclick = () => {
+                        const idx = Number(btn.dataset.idx);
+                        const correct = idx === q.answerIndex;
+                        if (correct) { btn.classList.add('bg-green-200', 'border-green-400'); score++; }
+                        else btn.classList.add('bg-red-200', 'border-red-400');
+                        quizContent.querySelectorAll('.quiz-opt').forEach((b) => {
+                            b.disabled = true;
+                            if (Number(b.dataset.idx) === q.answerIndex) b.classList.add('bg-green-200', 'border-green-400');
+                        });
+                        document.getElementById('quiz-feedback').innerHTML = `
+                            <div class="p-3 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
+                                <p class="font-bold text-green-800">解答: <span class="font-english">${answerSummary(q)}</span></p>
+                                ${q.en ? `<p class="font-english text-green-900">${q.en}</p>` : ''}
+                                ${q.ja ? `<p class="text-gray-700 text-sm whitespace-pre-wrap">${q.ja}</p>` : ''}
+                            </div>`;
+                        setTimeout(() => { currentIdx++; nextQuestion(); }, 3500);
+                    };
+                });
+            }
+            quizModal.classList.remove('hidden');
+            nextQuestion();
+        }
+
+        // --- PDF (印刷) ---
+        function openPrintWindow(content, title) {
+            const win = window.open('', '_blank');
+            win.document.write(`<html><head><title>${title}</title><style>
+                body{font-family:'Noto Sans JP',sans-serif;padding:40px;line-height:1.7}
+                h1{font-size:1.4rem;border-bottom:2px solid #166534;padding-bottom:8px}
+                ol li{margin-bottom:16px}
+                .en{font-family:'Times New Roman',serif}
+                .ja{color:#444;font-size:0.9rem}
+                .meta{color:#888;font-size:0.8rem}
+                .ans{margin-top:50px;border-top:1px solid #000;padding-top:20px;page-break-before:always}
+                .ans li{margin-bottom:6px}
+                u{text-underline-offset:4px}
+            </style></head><body><h1>${title}</h1>${content}</body></html>`);
+            win.document.close();
+            setTimeout(() => { win.focus(); win.print(); }, 500);
+        }
+
+        function getSelected() {
+            return Array.from(selectedProblems)
+                .map(id => chapterData.find(d => d.id == id))
+                .filter(Boolean)
+                .sort((a, b) => String(a.id).localeCompare(String(b.id), undefined, { numeric: true }));
+        }
+
+        function requireSelection(items, typeName) {
+            if (items.length === 0) {
+                pdfModal.classList.add('hidden');
+                showMessage(`<p>選択した問題の中に「${typeName}」に使える問題がありません。</p>`, 2500);
+                return false;
+            }
+            return true;
+        }
+
+        function blankQuestionText(item) {
+            // 選択肢なしの空所問題として表示する英文
+            return item.question.split('\n').map(line =>
+                isJaLine(line) ? `<span class="ja">${line}</span>` : `<span class="en">${line}</span>`
+            ).join('<br>');
+        }
+
+        function choicesLine(item) {
+            return item.choices.map((c, i) => `${CIRCLED[i]} ${c}`).join('　');
+        }
+
+        function pdfChoiceItem(item) {
+            if (item.type === 'choice') {
+                return `<li>[${item.id}] ${blankQuestionText(item)}<br><span class="en">${choicesLine(item)}</span></li>`;
+            }
+            return `<li>[${item.id}] <span class="meta">誤りを含む下線部を選びなさい。</span><br>${blankQuestionText(item)}</li>`;
+        }
+
+        function pdfOrderingItem(item) {
+            return `<li>[${item.id}] ${blankQuestionText(item)}</li>`;
+        }
+
+        function pdfCompositionItem(item) {
+            const ja = (item.ja || '').split('\n')[0];
+            return `<li>[${item.id}] <span class="ja">${ja}</span><br><span class="en">____________________________________________</span></li>`;
+        }
+
+        document.getElementById('download-list-btn').onclick = () => {
+            const items = getSelected();
+            if (!requireSelection(items, '問題リスト')) return;
+            const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}<br>
+                <strong>解答:</strong> <span class="en">${answerSummary(i)}</span>
+                ${i.en ? `<br><span class="en">${i.en}</span>` : ''}
+                ${i.ja ? `<br><span class="ja">${i.ja.replace(/\n/g, '<br>')}</span>` : ''}</li>`).join('')}</ol>`;
+            openPrintWindow(html, '第9章　接続詞 問題リスト');
+        };
+
+        document.getElementById('download-choice-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'choice' || i.type === 'error');
+            if (!requireSelection(items, '4択・誤り指摘テスト')) return;
+            const html = `<ol>${items.map(pdfChoiceItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${answerSummary(i)}</li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第9章　接続詞 4択・誤り指摘テスト');
+        };
+
+        document.getElementById('download-blank-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'choice' || i.type === 'fill');
+            if (!requireSelection(items, '空所補充テスト')) return;
+            const html = `<ol>${items.map(i => `<li>[${i.id}] ${blankQuestionText(i)}
+                ${i.ja && i.type === 'choice' ? `<br><span class="ja">${i.ja.split('\n')[0]}</span>` : ''}</li>`).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] ${i.type === 'choice' ? i.choices[i.answerIndex] : (i.answer || i.rawAnswer)}</li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第9章　接続詞 空所補充テスト');
+        };
+
+        document.getElementById('download-ordering-btn').onclick = () => {
+            const items = getSelected().filter(i => i.type === 'ordering');
+            if (!requireSelection(items, '整序英作文テスト')) return;
+            const html = `<ol>${items.map(pdfOrderingItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第9章　接続詞 整序英作文テスト');
+        };
+
+        document.getElementById('download-composition-btn').onclick = () => {
+            const items = getSelected().filter(i => i.en && i.ja);
+            if (!requireSelection(items, '和文英訳テスト')) return;
+            const html = `<ol>${items.map(pdfCompositionItem).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第9章　接続詞 和文英訳テスト');
+        };
+
+        document.getElementById('download-mixed-btn').onclick = () => {
+            const items = getSelected();
+            if (!requireSelection(items, 'ランダム混合テスト')) return;
+            const html = `<ol>${items.map(i => {
+                const r = Math.random();
+                if ((i.type === 'choice' || i.type === 'error') && r < 0.5) return pdfChoiceItem(i);
+                if (i.type === 'ordering') return pdfOrderingItem(i);
+                if (i.en && i.ja && r >= 0.5) return pdfCompositionItem(i);
+                return `<li>[${i.id}] ${blankQuestionText(i)}</li>`;
+            }).join('')}</ol>
+                <div class="ans"><h3>解答</h3><ol>${items.map(i => `<li>[${i.id}] <span class="en">${i.en || answerSummary(i)}</span></li>`).join('')}</ol></div>`;
+            openPrintWindow(html, '第9章　接続詞 ランダム混合テスト');
+        };
+
+        // --- Event wiring ---
+        startQuizBtn.onclick = startQuiz;
+        closeQuizBtn.onclick = () => quizModal.classList.add('hidden');
+        openPdfModalBtn.onclick = () => selectedProblems.size ? pdfModal.classList.remove('hidden') : showMessage('問題を選択してください', 2000);
+        closeModalBtn.onclick = () => pdfModal.classList.add('hidden');
+        selectAllCheckbox.onchange = (e) => {
+            document.querySelectorAll('.problem-checkbox').forEach(cb => {
+                cb.checked = e.target.checked;
+                if (e.target.checked) selectedProblems.add(cb.dataset.id);
+                else selectedProblems.delete(cb.dataset.id);
+            });
+        };
+
+        document.addEventListener('DOMContentLoaded', renderChapter);
+    </script>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-auth.js";
+        import { getFirestore, doc, setDoc, getDoc } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCNrvDMnlN_geijgRguQrolnTIZ_rdZwyw",
+            authDomain: "sokudoku-stories-db.firebaseapp.com",
+            projectId: "sokudoku-stories-db",
+            storageBucket: "sokudoku-stories-db.firebasestorage.app",
+            messagingSenderId: "979353290932",
+            appId: "1:979353290932:web:f0c512cfbe64a7afe36fe1"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        // Vintage のデータは 'vintage_' プレフィックスで LEAP のデータと分離する
+        const appId = "vintage_chapter09";
+
+        window.localMasteredProblems = {};
+
+        window.applyLoadedMasteredProblems = (mastered) => {
+            window.localMasteredProblems = mastered || {};
+            document.querySelectorAll('.problem-item').forEach(wrapper => {
+                const problemId = wrapper.dataset.id;
+                const btn = wrapper.querySelector('.toggle-master-btn-local');
+                if (window.localMasteredProblems[problemId] === true) {
+                    wrapper.classList.add('problem-mastered');
+                    if (btn) btn.innerText = '⭐ マスター解除';
+                } else {
+                    wrapper.classList.remove('problem-mastered');
+                    if (btn) btn.innerText = '⭐ マスター';
+                }
+            });
+        };
+
+        window.toggleProblemMasterState = (problemId, makeMastered) => {
+            window.localMasteredProblems[problemId] = makeMastered;
+            if (window.currentUser) {
+                const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+                setDoc(docRef, { masteredWords: { [problemId]: makeMastered } }, { merge: true })
+                    .then(() => window.applyLoadedMasteredProblems(window.localMasteredProblems))
+                    .catch(e => {
+                        console.error("Error updating master state:", e);
+                        alert("マスター状態の保存に失敗しました: " + e.message);
+                    });
+            } else {
+                window.applyLoadedMasteredProblems(window.localMasteredProblems);
+                console.warn("Saving locally only.");
+            }
+        };
+
+        window.saveSolvedResult = (problemId, correct) => {
+            if (!window.currentUser) return;
+            const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+            setDoc(docRef, {
+                solvedProblems: { [problemId]: correct },
+                lastAccessed: new Date().toISOString()
+            }, { merge: true }).catch(e => console.error("Solved save error:", e));
+        };
+
+        window.saveVintageScore = (type, score) => {
+            if (window.currentUser) {
+                const docRef = doc(db, "leap_users", window.currentUser.uid, "progress", appId);
+                setDoc(docRef, { [type]: score }, { merge: true })
+                    .catch(e => {
+                        console.error("Score save error:", e);
+                        alert("テスト結果の保存に失敗しました: " + e.message);
+                    });
+            } else {
+                console.error("Score save failed: No user is logged in.");
+                alert("ログイン状態が確認できないため、テスト結果を保存できませんでした。ダッシュボードから再度ログインしてください。");
+            }
+        };
+
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+                window.currentUser = user;
+                const docRef = doc(db, "leap_users", user.uid, "progress", appId);
+
+                getDoc(docRef).then((docSnap) => {
+                    let mastered = {};
+                    let alreadyStarted = false;
+
+                    if (docSnap.exists()) {
+                        const data = docSnap.data();
+                        alreadyStarted = data.started || false;
+                        mastered = data.masteredWords || {};
+                    }
+
+                    window.applyLoadedMasteredProblems(mastered);
+
+                    if (!alreadyStarted) {
+                        setDoc(docRef, {
+                            started: true,
+                            lastAccessed: new Date().toISOString()
+                        }, { merge: true }).catch(e => console.error("Progress save error:", e));
+                    }
+                }).catch(e => {
+                    console.error("Error loading progress:", e);
+                    window.applyLoadedMasteredProblems(window.localMasteredProblems || {});
+                });
+
+                setDoc(doc(db, "leap_users", user.uid), {
+                    displayName: user.displayName,
+                    email: user.email,
+                    photoURL: user.photoURL,
+                    lastLogin: new Date().toISOString()
+                }, { merge: true }).catch(e => console.error("User profile save error:", e));
+            } else {
+                console.warn("No user session active on this page.");
+            }
+        });
+    </script>
+</body>
+
+</html>

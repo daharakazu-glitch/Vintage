@@ -129,12 +129,12 @@ def parse_problem(num, lines):
     if answer is None:
         raise ValueError(f'問題 {num}: 解答行 (#...) が見つかりません')
 
-    # 選択肢行 (①で始まる行)
-    choice_line = None
+    # 選択肢行 (①で始まる行)。意味一致問題などでは選択肢が複数行に分かれる
+    choice_lines = []
     q_lines = []
     for line in body:
-        if line.startswith('①') and '<u>' not in line:
-            choice_line = line
+        if re.match(r'^[①②③④]', line) and '<u>' not in line:
+            choice_lines.append(line)
         else:
             q_lines.append(line)
 
@@ -153,19 +153,20 @@ def parse_problem(num, lines):
     }
 
     has_blank = bool(BLANK_RE.search(question))
-    has_underline = '<u>' in question
+    # 誤り指摘は ①<u>...</u> 形式。番号なしの <u> は下線部言い換えなどの4択
+    has_numbered_underline = bool(re.search(r'[①②③④]<u>', question))
     has_ordering = bool(re.search(r'\([^()]*\s/\s[^()]*\)', question))
 
-    if has_underline:
+    if has_numbered_underline:
         prob['type'] = 'error'
         en_src = '\n'.join(en_q) if en_q else question
         sentence, wrong_idx, correction = build_error_sentence(en_src, answer)
         prob['en'] = sentence
         prob['answerIndex'] = wrong_idx
         prob['correction'] = correction
-    elif choice_line:
+    elif choice_lines:
         prob['type'] = 'choice'
-        prob['choices'] = split_choices(choice_line)
+        prob['choices'] = split_choices(''.join(choice_lines))
         idx = normalize_answer_index(answer)
         prob['answerIndex'] = idx
         # 正解文: (b) 行があればそれを優先
@@ -175,7 +176,9 @@ def parse_problem(num, lines):
         if idx is not None and base and len(prob['choices']) > idx:
             prob['en'] = fill_blanks(base, prob['choices'][idx])
         else:
-            prob['en'] = base
+            # 空所なし (下線部言い換え・意味一致など) は英文をそのまま使う
+            plain = [re.sub(r'</?u>', '', l) for l in en_q if re.search(r'[a-zA-Z]{3,}', l)]
+            prob['en'] = base or (plain[0] if plain else '')
     elif has_ordering:
         prob['type'] = 'ordering'
         clean = strip_fuyou(answer)

@@ -1,0 +1,880 @@
+{
+  "number": 10,
+  "title": "前置詞",
+  "fullTitle": "第10章　前置詞",
+  "problems": [
+    {
+      "id": "322",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I'm tired. I got up (　　) 5:00 this morning.",
+      "rawAnswer": "④",
+      "ja": "疲れているよ。今朝は５時に起きたんだ。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "on",
+        "to",
+        "at"
+      ],
+      "answerIndex": 3,
+      "en": "I'm tired. I got up at 5:00 this morning."
+    },
+    {
+      "id": "323",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "We are expecting our grandparents to arrive (　　) November 28th.",
+      "rawAnswer": "①",
+      "ja": "11月28日に私たちの祖父母がやってくることになっている。",
+      "type": "choice",
+      "choices": [
+        "on",
+        "for",
+        "at",
+        "in"
+      ],
+      "answerIndex": 0,
+      "en": "We are expecting our grandparents to arrive on November 28th."
+    },
+    {
+      "id": "324",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "My sister was born (　　).",
+      "rawAnswer": "④",
+      "ja": "私の姉［妹］は1949年の４月に生まれた。",
+      "type": "choice",
+      "choices": [
+        "at 1949 in April",
+        "on April 1949",
+        "1949 at April",
+        "in April 1949"
+      ],
+      "answerIndex": 3,
+      "en": "My sister was born in April 1949."
+    },
+    {
+      "id": "325",
+      "tags": [
+        "基本"
+      ],
+      "question": "私たちは朝７時に朝食をとる。\nWe (breakfast / have / in / at / seven / the) morning.",
+      "rawAnswer": "have breakfast at seven in the",
+      "ja": "私たちは朝７時に朝食をとる。",
+      "type": "ordering",
+      "answer": "have breakfast at seven in the",
+      "pieces": [
+        "breakfast",
+        "have",
+        "in",
+        "at",
+        "seven",
+        "the"
+      ],
+      "en": "We have breakfast at seven in the morning."
+    },
+    {
+      "id": "326",
+      "tags": [],
+      "question": "We went to a disco (　　).",
+      "rawAnswer": "④",
+      "ja": "私たちは金曜日の夜にディスコに行った。",
+      "type": "choice",
+      "choices": [
+        "at Friday night",
+        "for Friday night",
+        "in Friday night",
+        "on Friday night"
+      ],
+      "answerIndex": 3,
+      "en": "We went to a disco on Friday night."
+    },
+    {
+      "id": "327",
+      "tags": [
+        "基本"
+      ],
+      "question": "His house is almost (　　) the top of the hill.",
+      "rawAnswer": "④",
+      "ja": "彼の家はほぼ丘のてっぺんに建っている。",
+      "type": "choice",
+      "choices": [
+        "to",
+        "for",
+        "with",
+        "at"
+      ],
+      "answerIndex": 3,
+      "en": "His house is almost at the top of the hill."
+    },
+    {
+      "id": "328",
+      "tags": [
+        "基本"
+      ],
+      "question": "He made up his mind to fish (　　) the sea next week.",
+      "rawAnswer": "③",
+      "ja": "彼は来週，海で釣りをすることに決めた。",
+      "type": "choice",
+      "choices": [
+        "to",
+        "from",
+        "in",
+        "into"
+      ],
+      "answerIndex": 2,
+      "en": "He made up his mind to fish in the sea next week."
+    },
+    {
+      "id": "329",
+      "tags": [
+        "基本"
+      ],
+      "question": "A fly is (　　) the ceiling and she is trying to hit it.",
+      "rawAnswer": "on",
+      "ja": "一匹のハエが天井にとまっていて，彼女はそれを叩こうとしている。",
+      "type": "fill",
+      "answer": "on",
+      "en": "A fly is on the ceiling and she is trying to hit it."
+    },
+    {
+      "id": "330",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "He's still painting the picture but will finish it (　　) a week or two.",
+      "rawAnswer": "④",
+      "ja": "彼はまだ絵の制作中だが，あと１，２週間で終えるだろう。",
+      "type": "choice",
+      "choices": [
+        "until",
+        "for",
+        "about",
+        "in"
+      ],
+      "answerIndex": 3,
+      "en": "He's still painting the picture but will finish it in a week or two."
+    },
+    {
+      "id": "331",
+      "tags": [],
+      "question": "The construction of the building will be completed (　　) two months.",
+      "rawAnswer": "①",
+      "ja": "そのビルの建築工事は２か月以内に終わるだろう。",
+      "type": "choice",
+      "choices": [
+        "within",
+        "for",
+        "until",
+        "among"
+      ],
+      "answerIndex": 0,
+      "en": "The construction of the building will be completed within two months."
+    },
+    {
+      "id": "332",
+      "tags": [],
+      "question": "Please wait here (　　) five minutes.",
+      "rawAnswer": "②",
+      "ja": "５分間ここでお待ちください。",
+      "type": "choice",
+      "choices": [
+        "until",
+        "for",
+        "by",
+        "during"
+      ],
+      "answerIndex": 1,
+      "en": "Please wait here for five minutes."
+    },
+    {
+      "id": "333",
+      "tags": [],
+      "question": "(a) I met him twice while I was staying in Paris.\n(b) I met him twice (　　) (　　) stay in Paris.",
+      "rawAnswer": "during my",
+      "ja": "(a) パリにいる間，私は彼に２度会った。\n(b) パリ滞在中，私は彼に２度会った。",
+      "type": "fill",
+      "answer": "during my",
+      "en": "I met him twice during my stay in Paris."
+    },
+    {
+      "id": "334",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "I will continue analyzing this data (　　) the end of this academic year.",
+      "rawAnswer": "③",
+      "ja": "この学年の終わりまで，このデータの分析を続けるつもりだ。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "till",
+        "within"
+      ],
+      "answerIndex": 2,
+      "en": "I will continue analyzing this data till the end of this academic year."
+    },
+    {
+      "id": "335",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Please complete the assignment (　　) next Monday.",
+      "rawAnswer": "①",
+      "ja": "次の月曜までに課題を終えてください。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "until",
+        "since",
+        "to"
+      ],
+      "answerIndex": 0,
+      "en": "Please complete the assignment by next Monday."
+    },
+    {
+      "id": "336",
+      "tags": [],
+      "question": "There was a full moon (　　) the mountain.",
+      "rawAnswer": "③",
+      "ja": "山の上に満月が出ていた。",
+      "type": "choice",
+      "choices": [
+        "of",
+        "on",
+        "above",
+        "out"
+      ],
+      "answerIndex": 2,
+      "en": "There was a full moon above the mountain."
+    },
+    {
+      "id": "337",
+      "tags": [],
+      "question": "This cafe is popular (　　) local residents as well as visitors.",
+      "rawAnswer": "②",
+      "ja": "このカフェは観光客だけでなく地元住民の間でも人気がある。",
+      "type": "choice",
+      "choices": [
+        "between",
+        "among",
+        "in",
+        "to"
+      ],
+      "answerIndex": 1,
+      "en": "This cafe is popular among local residents as well as visitors."
+    },
+    {
+      "id": "338",
+      "tags": [],
+      "question": "There is no connection (　　) the two incidents.",
+      "rawAnswer": "③",
+      "ja": "２つの事件には何の関連性もない。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "in",
+        "between",
+        "among"
+      ],
+      "answerIndex": 2,
+      "en": "There is no connection between the two incidents."
+    },
+    {
+      "id": "339",
+      "tags": [],
+      "question": "Are you (　　) or against the proposal?",
+      "rawAnswer": "①",
+      "ja": "あなたはその提案に賛成ですか，それとも反対ですか。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "of",
+        "on",
+        "with"
+      ],
+      "answerIndex": 0,
+      "en": "Are you for or against the proposal?"
+    },
+    {
+      "id": "340",
+      "tags": [],
+      "question": "It's (　　) the law to smoke cigarettes before you are twenty.",
+      "rawAnswer": "③",
+      "ja": "二十歳になる前の喫煙は違法だ。",
+      "type": "choice",
+      "choices": [
+        "for",
+        "under",
+        "against",
+        "away"
+      ],
+      "answerIndex": 2,
+      "en": "It's against the law to smoke cigarettes before you are twenty."
+    },
+    {
+      "id": "341",
+      "tags": [
+        "基本"
+      ],
+      "question": "(a) He sings as if he were a rock star.\n(b) He sings (　　) a rock star.",
+      "rawAnswer": "like",
+      "ja": "(a) 彼はまるでロックスターであるかのように歌う。\n(b) 彼はロックスターのように歌う。",
+      "type": "fill",
+      "answer": "like",
+      "en": "He sings like a rock star."
+    },
+    {
+      "id": "342",
+      "tags": [],
+      "question": "(　　) sharks, whales and dolphins are warm-blooded mammals.",
+      "rawAnswer": "②",
+      "ja": "サメとは違い，クジラやイルカは温血の哺乳類である。",
+      "type": "choice",
+      "choices": [
+        "Dislike",
+        "Unlike",
+        "Despite their being",
+        "Similar to"
+      ],
+      "answerIndex": 1,
+      "en": "Unlike sharks, whales and dolphins are warm-blooded mammals."
+    },
+    {
+      "id": "343",
+      "tags": [],
+      "question": "彼らはその新しい小説を，いきいきとした場面に満ちた子ども向けの本として計画した。\nThey designed the new novel (a children's / with / book / packed / as) colorful scenes.",
+      "rawAnswer": "as a children's book packed with",
+      "ja": "彼らはその新しい小説を，いきいきとした場面に満ちた子ども向けの本として計画した。",
+      "type": "ordering",
+      "answer": "as a children's book packed with",
+      "pieces": [
+        "a children's",
+        "with",
+        "book",
+        "packed",
+        "as"
+      ],
+      "en": "They designed the new novel as a children's book packed with colorful scenes."
+    },
+    {
+      "id": "344",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Mary is taller than Judy (　　) two inches.",
+      "rawAnswer": "①",
+      "ja": "メアリーはジュディーよりも２インチ背が高い。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "in",
+        "with"
+      ],
+      "answerIndex": 0,
+      "en": "Mary is taller than Judy by two inches."
+    },
+    {
+      "id": "345",
+      "tags": [
+        "基本"
+      ],
+      "question": "The knife to cut the bread (　　) was very blunt.",
+      "rawAnswer": "④",
+      "ja": "パンを切るのに使うナイフはとても切れ味が悪かった。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "into",
+        "for",
+        "with"
+      ],
+      "answerIndex": 3,
+      "en": "The knife to cut the bread with was very blunt."
+    },
+    {
+      "id": "346",
+      "tags": [
+        "基本"
+      ],
+      "question": "You can contact me (　　) e-mail.",
+      "rawAnswer": "③",
+      "ja": "私とはメールで連絡がとれます。",
+      "type": "choice",
+      "choices": [
+        "under",
+        "of",
+        "by",
+        "for"
+      ],
+      "answerIndex": 2,
+      "en": "You can contact me by e-mail."
+    },
+    {
+      "id": "347",
+      "tags": [],
+      "question": "Please refrain from talking (　　) the phone near the priority seats in the train.",
+      "rawAnswer": "①",
+      "ja": "電車内の優先席付近での携帯電話での通話はお控えください。",
+      "type": "choice",
+      "choices": [
+        "on",
+        "by",
+        "at",
+        "of"
+      ],
+      "answerIndex": 0,
+      "en": "Please refrain from talking on the phone near the priority seats in the train."
+    },
+    {
+      "id": "348",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "It is not polite to talk (　　) your mouth full.",
+      "rawAnswer": "④",
+      "ja": "口に食べ物をほおばったまま話をするのは失礼だ。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "on",
+        "over",
+        "with"
+      ],
+      "answerIndex": 3,
+      "en": "It is not polite to talk with your mouth full."
+    },
+    {
+      "id": "349",
+      "tags": [],
+      "question": "コートを着たまま台所に入ってはいけません。\nYou should not (the kitchen / with / on / your / enter / overcoat).",
+      "rawAnswer": "enter the kitchen with your overcoat on",
+      "ja": "コートを着たまま台所に入ってはいけません。",
+      "type": "ordering",
+      "answer": "enter the kitchen with your overcoat on",
+      "pieces": [
+        "the kitchen",
+        "with",
+        "on",
+        "your",
+        "enter",
+        "overcoat"
+      ],
+      "en": "You should not enter the kitchen with your overcoat on."
+    },
+    {
+      "id": "350",
+      "tags": [],
+      "question": "その少年は，彼女の首に腕を回したまま眠ってしまった。\n(the boy / arms / her / asleep / with / neck / around / fell / his).",
+      "rawAnswer": "The boy fell asleep with his arms around her neck",
+      "ja": "その少年は，彼女の首に腕を回したまま眠ってしまった。",
+      "type": "ordering",
+      "answer": "The boy fell asleep with his arms around her neck",
+      "pieces": [
+        "the boy",
+        "arms",
+        "her",
+        "asleep",
+        "with",
+        "neck",
+        "around",
+        "fell",
+        "his"
+      ],
+      "en": "The boy fell asleep with his arms around her neck."
+    },
+    {
+      "id": "351",
+      "tags": [],
+      "question": "The pianist (　　) long hair is my girlfriend.",
+      "rawAnswer": "②",
+      "ja": "その長い髪のピアニストは僕のガールフレンドだ。",
+      "type": "choice",
+      "choices": [
+        "whose",
+        "with",
+        "wears",
+        "has"
+      ],
+      "answerIndex": 1,
+      "en": "The pianist with long hair is my girlfriend."
+    },
+    {
+      "id": "352",
+      "tags": [],
+      "question": "あの赤い服の女性があなたのことを知りたがっていたよ。\nThe (was / woman / in / curious / red) to know about you.",
+      "rawAnswer": "woman in red was curious",
+      "ja": "あの赤い服の女性があなたのことを知りたがっていたよ。",
+      "type": "ordering",
+      "answer": "woman in red was curious",
+      "pieces": [
+        "was",
+        "woman",
+        "in",
+        "curious",
+        "red"
+      ],
+      "en": "The woman in red was curious to know about you."
+    },
+    {
+      "id": "353",
+      "tags": [],
+      "question": "They discussed the matter (　　) tea and cakes.",
+      "rawAnswer": "③",
+      "ja": "彼らはお茶を飲みケーキを食べながら，その問題について話し合った。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "for",
+        "over",
+        "with"
+      ],
+      "answerIndex": 2,
+      "en": "They discussed the matter over tea and cakes."
+    },
+    {
+      "id": "354",
+      "tags": [],
+      "question": "(　　) literature, we have to study Japanese and world history.",
+      "rawAnswer": "④",
+      "ja": "文学に加えて，私たちは日本語と世界史の勉強をしなければならない。",
+      "type": "choice",
+      "choices": [
+        "Nothing but",
+        "Not all",
+        "Beside",
+        "Besides"
+      ],
+      "answerIndex": 3,
+      "en": "Besides literature, we have to study Japanese and world history."
+    },
+    {
+      "id": "355",
+      "tags": [],
+      "question": "I will eat anything (　　) natto.",
+      "rawAnswer": "②",
+      "ja": "納豆以外は何でも食べます。",
+      "type": "choice",
+      "choices": [
+        "above",
+        "but",
+        "despite",
+        "for"
+      ],
+      "answerIndex": 1,
+      "en": "I will eat anything but natto."
+    },
+    {
+      "id": "356",
+      "tags": [],
+      "question": "All of the audience was impressed by his lecture (　　) the early history of Japan.",
+      "rawAnswer": "③",
+      "ja": "聴衆はみな，日本の初期の歴史についての彼の講義に感銘を受けた。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "in",
+        "on",
+        "of"
+      ],
+      "answerIndex": 2,
+      "en": "All of the audience was impressed by his lecture on the early history of Japan."
+    },
+    {
+      "id": "357",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) his efforts, he was not able to pass the examination for a driver's license.",
+      "rawAnswer": "①",
+      "ja": "努力したにもかかわらず，彼は運転免許の取得試験に合格できなかった。",
+      "type": "choice",
+      "choices": [
+        "Despite",
+        "Due to",
+        "Although",
+        "With"
+      ],
+      "answerIndex": 0,
+      "en": "Despite his efforts, he was not able to pass the examination for a driver's license."
+    },
+    {
+      "id": "358",
+      "tags": [],
+      "question": "Mike is very active (　　) his age.",
+      "rawAnswer": "③",
+      "ja": "マイクは年齢のわりにはとても活動的だ。",
+      "type": "choice",
+      "choices": [
+        "against",
+        "spite",
+        "for",
+        "through"
+      ],
+      "answerIndex": 2,
+      "en": "Mike is very active for his age."
+    },
+    {
+      "id": "359",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "Is that project worth (　　) at a great expense to the taxpayer?",
+      "rawAnswer": "②",
+      "ja": "そのプロジェクトは，納税者に多大な負担をかけてまで立ち上げる価値があるのか。",
+      "type": "choice",
+      "choices": [
+        "launch",
+        "launching",
+        "launched",
+        "to launch"
+      ],
+      "answerIndex": 1,
+      "en": "Is that project worth launching at a great expense to the taxpayer?"
+    },
+    {
+      "id": "360",
+      "tags": [],
+      "question": "その企画の見積もり額は考慮に値する。\nIt is worth (　　) the estimated cost of the project.",
+      "rawAnswer": "③",
+      "ja": "その企画の見積もり額は考慮に値する。",
+      "type": "choice",
+      "choices": [
+        "to consider",
+        "in considering",
+        "considering",
+        "considered"
+      ],
+      "answerIndex": 2,
+      "en": "It is worth considering the estimated cost of the project."
+    },
+    {
+      "id": "361",
+      "tags": [],
+      "question": "Most of the questions are easy, but this particular one is (　　) me.",
+      "rawAnswer": "④",
+      "ja": "ほとんどの問題は簡単だが，特にこの問題は難しくて私には理解できない［私の能力を超えている］。",
+      "type": "choice",
+      "choices": [
+        "over",
+        "outside",
+        "out of",
+        "beyond"
+      ],
+      "answerIndex": 3,
+      "en": "Most of the questions are easy, but this particular one is beyond me."
+    },
+    {
+      "id": "362",
+      "tags": [],
+      "question": "My stolen bicycle was destroyed (　　) recognition.",
+      "rawAnswer": "③",
+      "ja": "私の盗まれた自転車は，見分けがつかないほどに壊されていた。",
+      "type": "choice",
+      "choices": [
+        "above",
+        "below",
+        "beyond",
+        "over"
+      ],
+      "answerIndex": 2,
+      "en": "My stolen bicycle was destroyed beyond recognition."
+    },
+    {
+      "id": "363",
+      "tags": [],
+      "question": "I went fishing (　　) the river.",
+      "rawAnswer": "②",
+      "ja": "私は川に釣りに行った。",
+      "type": "choice",
+      "choices": [
+        "to",
+        "in",
+        "for",
+        "of"
+      ],
+      "answerIndex": 1,
+      "en": "I went fishing in the river."
+    },
+    {
+      "id": "364",
+      "tags": [],
+      "question": "They were close to home now, but David turned (　　) the opposite direction.",
+      "rawAnswer": "③",
+      "ja": "彼らはもう家の近くまで来ていたが，デイビッドは反対方向に曲がった。",
+      "type": "choice",
+      "choices": [
+        "of",
+        "at",
+        "in",
+        "to"
+      ],
+      "answerIndex": 2,
+      "en": "They were close to home now, but David turned in the opposite direction."
+    },
+    {
+      "id": "365",
+      "tags": [],
+      "question": "I went skiing for the first time (　　) fifteen years.",
+      "rawAnswer": "②",
+      "ja": "私は15年ぶりにスキーに行った。",
+      "type": "choice",
+      "choices": [
+        "before",
+        "in",
+        "during",
+        "of"
+      ],
+      "answerIndex": 1,
+      "en": "I went skiing for the first time in fifteen years."
+    },
+    {
+      "id": "366",
+      "tags": [],
+      "question": "(　　) my surprise, she didn't come to their wedding party.",
+      "rawAnswer": "③",
+      "ja": "驚いたことに，彼女は彼らの結婚パーティーに来なかった。",
+      "type": "choice",
+      "choices": [
+        "At",
+        "By",
+        "To",
+        "With"
+      ],
+      "answerIndex": 2,
+      "en": "To my surprise, she didn't come to their wedding party."
+    },
+    {
+      "id": "367",
+      "tags": [],
+      "question": "We danced (　　) the music.",
+      "rawAnswer": "④",
+      "ja": "私たちは音楽に合わせて踊った。",
+      "type": "choice",
+      "choices": [
+        "by",
+        "of",
+        "in",
+        "to"
+      ],
+      "answerIndex": 3,
+      "en": "We danced to the music."
+    },
+    {
+      "id": "368",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "The president said that it was (　　) great importance to develop the US-China constructive partnership.",
+      "rawAnswer": "②",
+      "ja": "米中の建設的な協調関係を進展させることが非常に重要であると，大統領は述べた。",
+      "type": "choice",
+      "choices": [
+        "a",
+        "of",
+        "such",
+        "with"
+      ],
+      "answerIndex": 1,
+      "en": "The president said that it was of great importance to develop the US-China constructive partnership."
+    },
+    {
+      "id": "369",
+      "tags": [],
+      "question": "The dog jumped over the fence (　　) ease.",
+      "rawAnswer": "④",
+      "ja": "その犬は簡単に柵を飛び越えた。",
+      "type": "choice",
+      "choices": [
+        "in",
+        "at",
+        "by",
+        "with"
+      ],
+      "answerIndex": 3,
+      "en": "The dog jumped over the fence with ease."
+    },
+    {
+      "id": "370",
+      "tags": [],
+      "question": "I get paid (　　) the hour.",
+      "rawAnswer": "②",
+      "ja": "私は時間給で支払われる。",
+      "type": "choice",
+      "choices": [
+        "at",
+        "by",
+        "for",
+        "in"
+      ],
+      "answerIndex": 1,
+      "en": "I get paid by the hour."
+    },
+    {
+      "id": "371",
+      "tags": [],
+      "question": "The mother caught her baby (　　) when he fell forward.",
+      "rawAnswer": "①",
+      "ja": "赤ちゃんが前に倒れこんだとき，母親はその子の腕をつかんだ。",
+      "type": "choice",
+      "choices": [
+        "by the arm",
+        "with his arm",
+        "to his arm",
+        "of the arm"
+      ],
+      "answerIndex": 0,
+      "en": "The mother caught her baby by the arm when he fell forward."
+    },
+    {
+      "id": "372",
+      "tags": [],
+      "question": "コーチは私の肩をポンと叩きながら，励ましてくれた。（１語不要）\nThe coach encouraged me, (shoulder / patting / on / the / my / me).",
+      "rawAnswer": "patting me on the shoulder（my不要）",
+      "ja": "コーチは私の肩をポンと叩きながら，励ましてくれた。（１語不要）",
+      "type": "ordering",
+      "answer": "patting me on the shoulder",
+      "pieces": [
+        "shoulder",
+        "patting",
+        "on",
+        "the",
+        "my",
+        "me"
+      ],
+      "en": "The coach encouraged me, patting me on the shoulder.",
+      "note": "my不要"
+    },
+    {
+      "id": "373",
+      "tags": [],
+      "question": "必ず彼の目を見て話しなさい。さもないと，正直に話していないと思われてしまう。\nBe sure to (him / in / look / talking / the eye / while), or he might think you are not being honest.",
+      "rawAnswer": "look him in the eye while talking",
+      "ja": "必ず彼の目を見て話しなさい。さもないと，正直に話していないと思われてしまう。",
+      "type": "ordering",
+      "answer": "look him in the eye while talking",
+      "pieces": [
+        "him",
+        "in",
+        "look",
+        "talking",
+        "the eye",
+        "while"
+      ],
+      "en": "Be sure to look him in the eye while talking, or he might think you are not being honest."
+    }
+  ]
+}

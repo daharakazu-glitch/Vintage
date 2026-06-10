@@ -1,0 +1,975 @@
+{
+  "number": 8,
+  "title": "関係詞",
+  "fullTitle": "第8章　関係詞",
+  "problems": [
+    {
+      "id": "205",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "That was the man (　　) did it.",
+      "rawAnswer": "②",
+      "ja": "そいつがそれをやった男だった。",
+      "type": "choice",
+      "choices": [
+        "as",
+        "who",
+        "whom",
+        "whose"
+      ],
+      "answerIndex": 1,
+      "en": "That was the man who did it."
+    },
+    {
+      "id": "206",
+      "tags": [
+        "基本"
+      ],
+      "question": "\"Why is the bus late?\"  \"It crashed into a car (　　) came speeding down the hill.\"",
+      "rawAnswer": "①",
+      "ja": "「どうしてバスが遅れているのですか」「下り坂をスピードを出して下りてきた車と衝突したんですよ」",
+      "type": "choice",
+      "choices": [
+        "which",
+        "who",
+        "what",
+        "whose"
+      ],
+      "answerIndex": 0,
+      "en": "\"Why is the bus late?\" \"It crashed into a car which came speeding down the hill.\""
+    },
+    {
+      "id": "207",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "私たちの進歩は一生の間に出会う人々に左右されるといえる。\nWe can say that our development depends (upon / our lives / whom / of / we meet / in the course / the people).",
+      "rawAnswer": "upon the people whom we meet in the course of our lives",
+      "ja": "私たちの進歩は一生の間に出会う人々に左右されるといえる。",
+      "type": "ordering",
+      "answer": "upon the people whom we meet in the course of our lives",
+      "pieces": [
+        "upon",
+        "our lives",
+        "whom",
+        "of",
+        "we meet",
+        "in the course",
+        "the people"
+      ],
+      "en": "We can say that our development depends upon the people whom we meet in the course of our lives."
+    },
+    {
+      "id": "208",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Global warming is an important issue (　　) we have to discuss more seriously.",
+      "rawAnswer": "③",
+      "ja": "地球温暖化は私たちがもっと真剣に話し合うべき重要な問題だ。",
+      "type": "choice",
+      "choices": [
+        "how",
+        "what",
+        "which",
+        "why"
+      ],
+      "answerIndex": 2,
+      "en": "Global warming is an important issue which we have to discuss more seriously."
+    },
+    {
+      "id": "209",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "定員がすでにいっぱいで，希望していた講座を履修できず残念だ。\nIt's a pity that I (to / I / take / can't / wanted / course / the) because it's already full.",
+      "rawAnswer": "can't take the course I wanted to",
+      "ja": "定員がすでにいっぱいで，希望していた講座を履修できず残念だ。",
+      "type": "ordering",
+      "answer": "can't take the course I wanted to",
+      "pieces": [
+        "to",
+        "I",
+        "take",
+        "can't",
+        "wanted",
+        "course",
+        "the"
+      ],
+      "en": "It's a pity that I can't take the course I wanted to because it's already full."
+    },
+    {
+      "id": "210",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Are you the boy (　　) bicycle was stolen?",
+      "rawAnswer": "②",
+      "ja": "あなたが，自転車を盗まれた少年ですか。",
+      "type": "choice",
+      "choices": [
+        "who",
+        "whose",
+        "your",
+        "his"
+      ],
+      "answerIndex": 1,
+      "en": "Are you the boy whose bicycle was stolen?"
+    },
+    {
+      "id": "211",
+      "tags": [
+        "基本"
+      ],
+      "question": "You should avoid using technical terms (　　) meanings you don't understand very well.",
+      "rawAnswer": "④",
+      "ja": "意味があまりよくわからない専門用語を使うのは避けるべきだ。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "which",
+        "who",
+        "whose"
+      ],
+      "answerIndex": 3,
+      "en": "You should avoid using technical terms whose meanings you don't understand very well."
+    },
+    {
+      "id": "212",
+      "tags": [],
+      "question": "私があなたにお話をしたもう一人の女の子もブリストルに住んでいる。\nThe other girl (about / also / I / that / told / you) lives in Bristol.",
+      "rawAnswer": "that I told you about also",
+      "ja": "私があなたにお話をしたもう一人の女の子もブリストルに住んでいる。",
+      "type": "ordering",
+      "answer": "that I told you about also",
+      "pieces": [
+        "about",
+        "also",
+        "I",
+        "that",
+        "told",
+        "you"
+      ],
+      "en": "The other girl that I told you about also lives in Bristol."
+    },
+    {
+      "id": "213",
+      "tags": [],
+      "question": "これが昨日君が話していた本ですか。\n(the / book / this / you / were / talking / is / about) yesterday?",
+      "rawAnswer": "Is this the book you were talking about",
+      "ja": "これが昨日君が話していた本ですか。",
+      "type": "ordering",
+      "answer": "Is this the book you were talking about",
+      "pieces": [
+        "the",
+        "book",
+        "this",
+        "you",
+        "were",
+        "talking",
+        "is",
+        "about"
+      ],
+      "en": "Is this the book you were talking about yesterday?"
+    },
+    {
+      "id": "214",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "These are the tools (　　) he built his own house.",
+      "rawAnswer": "③",
+      "ja": "これらは，彼が自分の家を建てるのに使った道具だ。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "with that",
+        "with which",
+        "which"
+      ],
+      "answerIndex": 2,
+      "en": "These are the tools with which he built his own house."
+    },
+    {
+      "id": "215",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "Please tell me the name of the shop (　　) you bought that camera.",
+      "rawAnswer": "③",
+      "ja": "あなたがそのカメラを買った店の名前を教えてください。",
+      "type": "choice",
+      "choices": [
+        "which",
+        "that",
+        "where",
+        "why"
+      ],
+      "answerIndex": 2,
+      "en": "Please tell me the name of the shop where you bought that camera."
+    },
+    {
+      "id": "216",
+      "tags": [],
+      "question": "This is the museum (　　) my grandfather visited fifty years ago.",
+      "rawAnswer": "②",
+      "ja": "これは，私の祖父が50年前に訪れた美術館です。",
+      "type": "choice",
+      "choices": [
+        "where",
+        "which",
+        "at which",
+        "to which"
+      ],
+      "answerIndex": 1,
+      "en": "This is the museum which my grandfather visited fifty years ago."
+    },
+    {
+      "id": "217",
+      "tags": [
+        "基本"
+      ],
+      "question": "Summer is the season (　　) students want to travel most.",
+      "rawAnswer": "④",
+      "ja": "夏は，学生たちがもっとも旅に出たくなる季節だ。",
+      "type": "choice",
+      "choices": [
+        "with whom",
+        "which",
+        "where",
+        "when"
+      ],
+      "answerIndex": 3,
+      "en": "Summer is the season when students want to travel most."
+    },
+    {
+      "id": "218",
+      "tags": [
+        "基本"
+      ],
+      "question": "学生たちは講義に遅れた理由を私に説明した。\nThe students explained to me (for / late / reason / the / they / were / why) the lecture.",
+      "rawAnswer": "the reason why they were late for",
+      "ja": "学生たちは講義に遅れた理由を私に説明した。",
+      "type": "ordering",
+      "answer": "the reason why they were late for",
+      "pieces": [
+        "for",
+        "late",
+        "reason",
+        "the",
+        "they",
+        "were",
+        "why"
+      ],
+      "en": "The students explained to me the reason why they were late for the lecture."
+    },
+    {
+      "id": "219",
+      "tags": [],
+      "question": "このようにして子どもたちは母語を習得する。\n(children / how / this / their native language / is / learn)",
+      "rawAnswer": "This is how children learn their native language",
+      "ja": "このようにして子どもたちは母語を習得する。",
+      "type": "ordering",
+      "answer": "This is how children learn their native language",
+      "pieces": [
+        "children",
+        "how",
+        "this",
+        "their native language",
+        "is",
+        "learn"
+      ],
+      "en": "This is how children learn their native language"
+    },
+    {
+      "id": "220",
+      "tags": [],
+      "question": "私に対する彼らの口のきき方が嫌だった。\nI (by / irritated / spoke / the / they / was / way) to me.",
+      "rawAnswer": "was irritated by the way they spoke",
+      "ja": "私に対する彼らの口のきき方が嫌だった。",
+      "type": "ordering",
+      "answer": "was irritated by the way they spoke",
+      "pieces": [
+        "by",
+        "irritated",
+        "spoke",
+        "the",
+        "they",
+        "was",
+        "way"
+      ],
+      "en": "I was irritated by the way they spoke to me."
+    },
+    {
+      "id": "221",
+      "tags": [],
+      "question": "An important aspect of computer languages is the way (　　) they handle data items and structures.",
+      "rawAnswer": "③",
+      "ja": "コンピューター言語の重要な側面は，それがデータ項目とデータ構造を取り扱う方法だ。",
+      "type": "choice",
+      "choices": [
+        "for which",
+        "for that",
+        "in which",
+        "in whom"
+      ],
+      "answerIndex": 2,
+      "en": "An important aspect of computer languages is the way in which they handle data items and structures."
+    },
+    {
+      "id": "222",
+      "tags": [
+        "発展"
+      ],
+      "question": "私たちが立っていたところから樫の木まで100メートルもなかった。\nIt was less than a hundred meters (we / from / were / where / standing) to the oak tree.",
+      "rawAnswer": "from where we were standing",
+      "ja": "私たちが立っていたところから樫の木まで100メートルもなかった。",
+      "type": "ordering",
+      "answer": "from where we were standing",
+      "pieces": [
+        "we",
+        "from",
+        "were",
+        "where",
+        "standing"
+      ],
+      "en": "It was less than a hundred meters from where we were standing to the oak tree."
+    },
+    {
+      "id": "223",
+      "tags": [],
+      "question": "He has been in hospital for two weeks. That's (　　) he can't come today.",
+      "rawAnswer": "③",
+      "ja": "彼は２週間入院しています。そういうわけで，彼は今日は来られません。",
+      "type": "choice",
+      "choices": [
+        "because",
+        "how",
+        "why",
+        "the way"
+      ],
+      "answerIndex": 2,
+      "en": "He has been in hospital for two weeks. That's why he can't come today."
+    },
+    {
+      "id": "224",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "He lent me <i>The Lord of the Rings</i>, (　　) I found very interesting.",
+      "rawAnswer": "②",
+      "ja": "彼は『ロード・オブ・ザ・リング』を貸してくれたが，私はそれをとてもおもしろいと思った。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "which",
+        "what",
+        "where"
+      ],
+      "answerIndex": 1,
+      "en": "He lent me <i>The Lord of the Rings</i>, which I found very interesting."
+    },
+    {
+      "id": "225",
+      "tags": [
+        "基本"
+      ],
+      "question": "Soseki Natsume, (　　) wrote <i>Kokoro</i> and <i>Botchan</i>, was born in 1867.",
+      "rawAnswer": "②",
+      "ja": "夏目漱石は，『こころ』と『坊っちゃん』を書いたが，1867年に生まれた。",
+      "type": "choice",
+      "choices": [
+        "whom",
+        "who",
+        "of which",
+        "whose"
+      ],
+      "answerIndex": 1,
+      "en": "Soseki Natsume, who wrote <i>Kokoro</i> and <i>Botchan</i>, was born in 1867."
+    },
+    {
+      "id": "226",
+      "tags": [],
+      "question": "The movie star, (　　) Mary wrote a letter, never answered.",
+      "rawAnswer": "③",
+      "ja": "その映画スターは，メアリーが手紙を書き送った相手だが，一度も返事をよこさなかった。",
+      "type": "choice",
+      "choices": [
+        "who",
+        "whose",
+        "to whom",
+        "that"
+      ],
+      "answerIndex": 2,
+      "en": "The movie star, to whom Mary wrote a letter, never answered."
+    },
+    {
+      "id": "227",
+      "tags": [],
+      "question": "The winter ①<u>of</u> 1999, ②<u>which</u> I was preparing ③<u>for</u> the entrance examination, is still clear ④<u>in</u> my memory.",
+      "rawAnswer": "②→in which／when",
+      "ja": "1999年の冬，私は入学試験の準備をしていたが，その冬のことは私の記憶の中でまだ鮮明だ。",
+      "type": "error",
+      "en": "The winter of 1999, in which／when I was preparing for the entrance examination, is still clear in my memory.",
+      "answerIndex": 1,
+      "correction": "in which／when"
+    },
+    {
+      "id": "228",
+      "tags": [],
+      "question": "He bought a cottage in the countryside, (　　) he spent the last days of his life.",
+      "rawAnswer": "③",
+      "ja": "彼は田舎の別荘を買い，そこで晩年を過ごした。",
+      "type": "choice",
+      "choices": [
+        "which",
+        "when",
+        "where",
+        "why"
+      ],
+      "answerIndex": 2,
+      "en": "He bought a cottage in the countryside, where he spent the last days of his life."
+    },
+    {
+      "id": "229",
+      "tags": [],
+      "question": "Tom has three daughters, all (　　) live in different cities in Japan.",
+      "rawAnswer": "②",
+      "ja": "トムには３人の娘がいるが，３人とも日本の別々の都市に住んでいる。",
+      "type": "choice",
+      "choices": [
+        "of who",
+        "of whom",
+        "who",
+        "whom"
+      ],
+      "answerIndex": 1,
+      "en": "Tom has three daughters, all of whom live in different cities in Japan."
+    },
+    {
+      "id": "230",
+      "tags": [],
+      "question": "They spoke only English and French, neither of (　　) she understood.",
+      "rawAnswer": "②",
+      "ja": "彼らは英語とフランス語しか話さなかったが，どちらも彼女は理解できなかった。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "which",
+        "whose",
+        "that"
+      ],
+      "answerIndex": 1,
+      "en": "They spoke only English and French, neither of which she understood."
+    },
+    {
+      "id": "231",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "He learned to speak fluent Japanese in only one year, (　　) surprised me.",
+      "rawAnswer": "③",
+      "ja": "彼はたった１年で流暢な日本語を話せるようになったが，それには私も驚いた。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "who",
+        "which",
+        "it"
+      ],
+      "answerIndex": 2,
+      "en": "He learned to speak fluent Japanese in only one year, which surprised me."
+    },
+    {
+      "id": "232",
+      "tags": [],
+      "question": "She tried to swim across the river, (　　) was impossible to do.",
+      "rawAnswer": "②",
+      "ja": "彼女は泳いでその川を渡ろうとしたが，それは不可能だった。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "which",
+        "on which",
+        "where"
+      ],
+      "answerIndex": 1,
+      "en": "She tried to swim across the river, which was impossible to do."
+    },
+    {
+      "id": "233",
+      "tags": [
+        "発展"
+      ],
+      "question": "Please come at noon, (　　) I will be back in my office.",
+      "rawAnswer": "③",
+      "ja": "正午にいらしてください。そのころには私もオフィスに戻っていますので。",
+      "type": "choice",
+      "choices": [
+        "by its time",
+        "by time",
+        "by which time",
+        "during"
+      ],
+      "answerIndex": 2,
+      "en": "Please come at noon, by which time I will be back in my office."
+    },
+    {
+      "id": "234",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "(　　) matters most to him is where he works after graduation.",
+      "rawAnswer": "③",
+      "ja": "彼にとって一番大事なのは，卒業後どこで働くかということだ。",
+      "type": "choice",
+      "choices": [
+        "The thing",
+        "When",
+        "What",
+        "How"
+      ],
+      "answerIndex": 2,
+      "en": "What matters most to him is where he works after graduation."
+    },
+    {
+      "id": "235",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "彼について私が本当に考えていることはどうも言いたくない。\nI'd (I / not / rather / really / say / think / what) about him.",
+      "rawAnswer": "rather not say what I really think",
+      "ja": "彼について私が本当に考えていることはどうも言いたくない。",
+      "type": "ordering",
+      "answer": "rather not say what I really think",
+      "pieces": [
+        "I",
+        "not",
+        "rather",
+        "really",
+        "say",
+        "think",
+        "what"
+      ],
+      "en": "I'd rather not say what I really think about him."
+    },
+    {
+      "id": "236",
+      "tags": [],
+      "question": "A large portion of (　　) the Japanese eat every day is imported from other countries.",
+      "rawAnswer": "①",
+      "ja": "日本人が毎日食べるものの大半は，外国から輸入されている。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "that",
+        "which",
+        "where"
+      ],
+      "answerIndex": 0,
+      "en": "A large portion of what the Japanese eat every day is imported from other countries."
+    },
+    {
+      "id": "237",
+      "tags": [
+        "発展"
+      ],
+      "question": "I sent my brother living in the countryside (　　) little money I had at that time.",
+      "rawAnswer": "①",
+      "ja": "私は田舎に住む弟［兄］に，その時持っていたなけなしのお金を送った。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "where",
+        "which",
+        "whom"
+      ],
+      "answerIndex": 0,
+      "en": "I sent my brother living in the countryside what little money I had at that time."
+    },
+    {
+      "id": "238",
+      "tags": [],
+      "question": "Without American influences, Japanese culture would not be (　　) it is today.",
+      "rawAnswer": "②",
+      "ja": "アメリカの影響がなければ，日本文化は今日の姿になっていないだろう。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "what",
+        "when",
+        "which"
+      ],
+      "answerIndex": 1,
+      "en": "Without American influences, Japanese culture would not be what it is today."
+    },
+    {
+      "id": "239",
+      "tags": [],
+      "question": "This town is very different from (　　) it was twenty years ago.",
+      "rawAnswer": "②",
+      "ja": "この町は20年前と大きく異なっている。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "what",
+        "when",
+        "which"
+      ],
+      "answerIndex": 1,
+      "en": "This town is very different from what it was twenty years ago."
+    },
+    {
+      "id": "240",
+      "tags": [],
+      "question": "翻訳者にとっての言葉は，科学者にとっての事実と同じである。\nWords (the translator / facts / are / what / to) are to the scientist.",
+      "rawAnswer": "are to the translator what facts",
+      "ja": "翻訳者にとっての言葉は，科学者にとっての事実と同じである。",
+      "type": "ordering",
+      "answer": "are to the translator what facts",
+      "pieces": [
+        "the translator",
+        "facts",
+        "are",
+        "what",
+        "to"
+      ],
+      "en": "Words are to the translator what facts are to the scientist."
+    },
+    {
+      "id": "241",
+      "tags": [],
+      "question": "John is (　　) is called a man of culture.",
+      "rawAnswer": "②",
+      "ja": "ジョンはいわゆる文化人だ。",
+      "type": "choice",
+      "choices": [
+        "that",
+        "what",
+        "which",
+        "who"
+      ],
+      "answerIndex": 1,
+      "en": "John is what is called a man of culture."
+    },
+    {
+      "id": "242",
+      "tags": [],
+      "question": "It was cold, and (　　) was worse, the heater broke down.",
+      "rawAnswer": "①",
+      "ja": "寒かったし，さらに悪いことには，暖房器具も壊れた。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "but",
+        "whatever",
+        "that"
+      ],
+      "answerIndex": 0,
+      "en": "It was cold, and what was worse, the heater broke down."
+    },
+    {
+      "id": "243",
+      "tags": [],
+      "question": "He is a famous scholar, and (　　) is more, he is a talented poet.",
+      "rawAnswer": "①",
+      "ja": "彼は有名な学者であり，その上，才能ある詩人でもある。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "who",
+        "that",
+        "which"
+      ],
+      "answerIndex": 0,
+      "en": "He is a famous scholar, and what is more, he is a talented poet."
+    },
+    {
+      "id": "244",
+      "tags": [],
+      "question": "There was no objection from the man (　　) I thought was sure to protest.",
+      "rawAnswer": "①",
+      "ja": "必ず異議を唱えるだろうと思った男性からは，何の反対もなかった。",
+      "type": "choice",
+      "choices": [
+        "who",
+        "whom",
+        "of whom",
+        "by whom"
+      ],
+      "answerIndex": 0,
+      "en": "There was no objection from the man who I thought was sure to protest."
+    },
+    {
+      "id": "245",
+      "tags": [],
+      "question": "I'll always (best / do / for / is / I think / what) everybody.",
+      "rawAnswer": "do what I think is best for",
+      "ja": "私は，みんなのために最善だと私が思うことをいつでもするつもりだ。",
+      "type": "ordering",
+      "answer": "do what I think is best for",
+      "pieces": [
+        "best",
+        "do",
+        "for",
+        "is",
+        "I think",
+        "what"
+      ],
+      "en": "I'll always do what I think is best for everybody."
+    },
+    {
+      "id": "246",
+      "tags": [
+        "発展"
+      ],
+      "question": "あなたが提案したような計画では決してうまくいかないだろう。（１語不要）\nSuch a plan (you / as / would / proposed / which) never succeed.",
+      "rawAnswer": "as you proposed would（which不要）",
+      "ja": "あなたが提案したような計画では決してうまくいかないだろう。（１語不要）",
+      "type": "ordering",
+      "answer": "as you proposed would",
+      "pieces": [
+        "you",
+        "as",
+        "would",
+        "proposed",
+        "which"
+      ],
+      "en": "Such a plan as you proposed would never succeed.",
+      "note": "which不要"
+    },
+    {
+      "id": "247",
+      "tags": [
+        "発展"
+      ],
+      "question": "ナオミにとってはいつものことだが，彼女はとても早く起きた。\n(Naomi / the case / as / often / is / with), she got up very early.",
+      "rawAnswer": "As is often the case with Naomi",
+      "ja": "ナオミにとってはいつものことだが，彼女はとても早く起きた。",
+      "type": "ordering",
+      "answer": "As is often the case with Naomi",
+      "pieces": [
+        "Naomi",
+        "the case",
+        "as",
+        "often",
+        "is",
+        "with"
+      ],
+      "en": "As is often the case with Naomi, she got up very early."
+    },
+    {
+      "id": "248",
+      "tags": [
+        "発展"
+      ],
+      "question": "There is (has / rule / exceptions / but / no / some).",
+      "rawAnswer": "no rule but has some exceptions",
+      "ja": "例外のない規則など存在しない。",
+      "type": "ordering",
+      "answer": "no rule but has some exceptions",
+      "pieces": [
+        "has",
+        "rule",
+        "exceptions",
+        "but",
+        "no",
+        "some"
+      ],
+      "en": "There is no rule but has some exceptions."
+    },
+    {
+      "id": "249",
+      "tags": [
+        "発展"
+      ],
+      "question": "Pets should not be given more food (　　) they need. Otherwise, they will gain too much weight.",
+      "rawAnswer": "③",
+      "ja": "ペットには必要以上の食べ物を与えるべきではない。さもなければ，体重が増えすぎてしまうだろう。",
+      "type": "choice",
+      "choices": [
+        "which",
+        "that",
+        "than",
+        "what"
+      ],
+      "answerIndex": 2,
+      "en": "Pets should not be given more food than they need. Otherwise, they will gain too much weight."
+    },
+    {
+      "id": "250",
+      "tags": [
+        "発展"
+      ],
+      "question": "(a) Mary needs a well-equipped office to work in.\n(b) Mary needs a well-equipped office (　　) (　　) to work.",
+      "rawAnswer": "in which",
+      "ja": "メアリーには働くための設備が十分に整ったオフィスが必要だ。",
+      "type": "fill",
+      "answer": "in which",
+      "en": "Mary needs a well-equipped office in which to work."
+    },
+    {
+      "id": "251",
+      "tags": [],
+      "question": "You should give this CD to (　　) wants it.",
+      "rawAnswer": "③",
+      "ja": "このCDは，だれでもそれをほしがっている人にあげるべきです。",
+      "type": "choice",
+      "choices": [
+        "who",
+        "whom",
+        "whoever",
+        "whomever"
+      ],
+      "answerIndex": 2,
+      "en": "You should give this CD to whoever wants it."
+    },
+    {
+      "id": "252",
+      "tags": [],
+      "question": "Jane always agrees with (　　) her sister tells her to do.",
+      "rawAnswer": "②",
+      "ja": "ジェーンは姉がやれということには何でも常に同意する。",
+      "type": "choice",
+      "choices": [
+        "wherever",
+        "whatever",
+        "whenever",
+        "whichever"
+      ],
+      "answerIndex": 1,
+      "en": "Jane always agrees with whatever her sister tells her to do."
+    },
+    {
+      "id": "253",
+      "tags": [],
+      "question": "(　　) you do, don't use your left hand to offer or take things when you're in Indonesia.",
+      "rawAnswer": "③",
+      "ja": "インドネシアにいるときは，何をするにしても，ものを差し出したり，受け取ったりするために，左手を使ってはいけません。",
+      "type": "choice",
+      "choices": [
+        "Whichever",
+        "However",
+        "Whatever",
+        "Anything"
+      ],
+      "answerIndex": 2,
+      "en": "Whatever you do, don't use your left hand to offer or take things when you're in Indonesia."
+    },
+    {
+      "id": "254",
+      "tags": [],
+      "question": "何事が起ころうとも，彼女はほほえみを絶やさなかった。\nShe always (what / kept / matter / happened / smiling / no).",
+      "rawAnswer": "kept smiling no matter what happened",
+      "ja": "何事が起ころうとも，彼女はほほえみを絶やさなかった。",
+      "type": "ordering",
+      "answer": "kept smiling no matter what happened",
+      "pieces": [
+        "what",
+        "kept",
+        "matter",
+        "happened",
+        "smiling",
+        "no"
+      ],
+      "en": "She always kept smiling no matter what happened."
+    },
+    {
+      "id": "255",
+      "tags": [],
+      "question": "We are in a difficult position (　　) decision we make.",
+      "rawAnswer": "④",
+      "ja": "どちらの決定をしようとも，私たちは苦しい立場にある。",
+      "type": "choice",
+      "choices": [
+        "what",
+        "whoever",
+        "where",
+        "whichever"
+      ],
+      "answerIndex": 3,
+      "en": "We are in a difficult position whichever decision we make."
+    },
+    {
+      "id": "256",
+      "tags": [],
+      "question": "彼はどこに行っても新しい友人を作るようだ。\nHe (friends / make / new / seems / to / wherever / he / goes).",
+      "rawAnswer": "seems to make new friends wherever he goes",
+      "ja": "彼はどこに行っても新しい友人を作るようだ。",
+      "type": "ordering",
+      "answer": "seems to make new friends wherever he goes",
+      "pieces": [
+        "friends",
+        "make",
+        "new",
+        "seems",
+        "to",
+        "wherever",
+        "he",
+        "goes"
+      ],
+      "en": "He seems to make new friends wherever he goes."
+    },
+    {
+      "id": "257",
+      "tags": [],
+      "question": "Tim accompanies his five-year-old daughter (　　) she has to go somewhere.",
+      "rawAnswer": "④",
+      "ja": "５歳の娘がどこかに行く必要があるときはいつでも，ティムは彼女に付き添っていく。",
+      "type": "choice",
+      "choices": [
+        "whatever",
+        "whomever",
+        "whichever",
+        "whenever"
+      ],
+      "answerIndex": 3,
+      "en": "Tim accompanies his five-year-old daughter whenever she has to go somewhere."
+    },
+    {
+      "id": "258",
+      "tags": [],
+      "question": "(　　), you should always check your answers again.",
+      "rawAnswer": "①",
+      "ja": "どんなにテストが簡単でも，常に答えの見直しをするべきです。",
+      "type": "choice",
+      "choices": [
+        "However easy the test is",
+        "However the test is easy",
+        "Whatever easy the test is",
+        "Whatever the test is easy"
+      ],
+      "answerIndex": 0,
+      "en": "However easy the test is, you should always check your answers again."
+    },
+    {
+      "id": "259",
+      "tags": [],
+      "question": "どんなに健康に自信があっても，年に一度は健康診断を受けることが勧められている。\n(how / no / are / you / about / confident / matter) your health, you are advised to have a medical check-up once a year.",
+      "rawAnswer": "No matter how confident you are about",
+      "ja": "どんなに健康に自信があっても，年に一度は健康診断を受けることが勧められている。",
+      "type": "ordering",
+      "answer": "No matter how confident you are about",
+      "pieces": [
+        "how",
+        "no",
+        "are",
+        "you",
+        "about",
+        "confident",
+        "matter"
+      ],
+      "en": "No matter how confident you are about your health, you are advised to have a medical check-up once a year."
+    }
+  ]
+}

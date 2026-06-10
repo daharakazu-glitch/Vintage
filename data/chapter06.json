@@ -1,0 +1,435 @@
+{
+  "number": 6,
+  "title": "動名詞",
+  "fullTitle": "第6章　動名詞",
+  "problems": [
+    {
+      "id": "155",
+      "tags": [
+        "基本"
+      ],
+      "question": "そのバスに乗り遅れると30分待つことになる。\n(for / the bus / missing / half / waiting / means) an hour.",
+      "rawAnswer": "Missing the bus means waiting for half",
+      "ja": "そのバスに乗り遅れると30分待つことになる。",
+      "type": "ordering",
+      "answer": "Missing the bus means waiting for half",
+      "pieces": [
+        "for",
+        "the bus",
+        "missing",
+        "half",
+        "waiting",
+        "means"
+      ],
+      "en": "Missing the bus means waiting for half an hour."
+    },
+    {
+      "id": "156",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "He is fond of (　　) soccer.",
+      "rawAnswer": "③",
+      "ja": "彼はサッカーをするのが好きだ。",
+      "type": "choice",
+      "choices": [
+        "to play",
+        "play",
+        "playing",
+        "played"
+      ],
+      "answerIndex": 2,
+      "en": "He is fond of playing soccer."
+    },
+    {
+      "id": "157",
+      "tags": [
+        "基本"
+      ],
+      "question": "When I had dinner with Tom, I got angry at (　　) on his cell phone throughout the meal.",
+      "rawAnswer": "③",
+      "ja": "トムと食事をしたとき，その間ずっと彼が携帯電話で話していたことに私は腹を立てた。",
+      "type": "choice",
+      "choices": [
+        "he talks",
+        "he talked",
+        "his talking",
+        "he talking"
+      ],
+      "answerIndex": 2,
+      "en": "When I had dinner with Tom, I got angry at his talking on his cell phone throughout the meal."
+    },
+    {
+      "id": "158",
+      "tags": [
+        "基本",
+        "超頻出"
+      ],
+      "question": "彼女の表情から，彼女は子ども扱いされるのが嫌いなのだとわかる。\nHer expression shows that she (child / like / treated / dislikes / being / a).",
+      "rawAnswer": "dislikes being treated like a child",
+      "ja": "彼女の表情から，彼女は子ども扱いされるのが嫌いなのだとわかる。",
+      "type": "ordering",
+      "answer": "dislikes being treated like a child",
+      "pieces": [
+        "child",
+        "like",
+        "treated",
+        "dislikes",
+        "being",
+        "a"
+      ],
+      "en": "Her expression shows that she dislikes being treated like a child."
+    },
+    {
+      "id": "159",
+      "tags": [
+        "基本"
+      ],
+      "question": "彼は20年前に有名な俳優だったことを誇りにしている。\n(been / proud / 20 years ago / having / of / is / he / a well-known actor).",
+      "rawAnswer": "He is proud of having been a well-known actor 20 years ago",
+      "ja": "彼は20年前に有名な俳優だったことを誇りにしている。",
+      "type": "ordering",
+      "answer": "He is proud of having been a well-known actor 20 years ago",
+      "pieces": [
+        "been",
+        "proud",
+        "20 years ago",
+        "having",
+        "of",
+        "is",
+        "he",
+        "a well-known actor"
+      ],
+      "en": "He is proud of having been a well-known actor 20 years ago."
+    },
+    {
+      "id": "160",
+      "tags": [
+        "基本"
+      ],
+      "question": "I am ashamed (　　) kind to the old woman on the train.",
+      "rawAnswer": "④",
+      "ja": "電車の中で，老婦人に親切にしなかったことを私は恥じている。",
+      "type": "choice",
+      "choices": [
+        "not of having been",
+        "of having been not",
+        "of having not been",
+        "of not having been"
+      ],
+      "answerIndex": 3,
+      "en": "I am ashamed of not having been kind to the old woman on the train."
+    },
+    {
+      "id": "161",
+      "tags": [],
+      "question": "彼女にそれをするなと言ってもむだである。（１語不要）\nIt is (do / to / use / no / telling / useless / not / her) it.",
+      "rawAnswer": "no use telling her not to do（useless不要）",
+      "ja": "彼女にそれをするなと言ってもむだである。（１語不要）",
+      "type": "ordering",
+      "answer": "no use telling her not to do",
+      "pieces": [
+        "do",
+        "to",
+        "use",
+        "no",
+        "telling",
+        "useless",
+        "not",
+        "her"
+      ],
+      "en": "It is no use telling her not to do it.",
+      "note": "useless不要"
+    },
+    {
+      "id": "162",
+      "tags": [],
+      "question": "The line is dead. There is no use (　　) to use the phone.",
+      "rawAnswer": "①",
+      "ja": "回線が切れている。電話を使おうとしてもむだだよ。",
+      "type": "choice",
+      "choices": [
+        "trying",
+        "be trying",
+        "to try",
+        "have to try"
+      ],
+      "answerIndex": 0,
+      "en": "The line is dead. There is no use trying to use the phone."
+    },
+    {
+      "id": "163",
+      "tags": [],
+      "question": "There is no point (　　) an expensive personal computer if you never use it.",
+      "rawAnswer": "③",
+      "ja": "使うことがまったくないのなら，高価なパソコンを持っていてもむだである。",
+      "type": "choice",
+      "choices": [
+        "with having",
+        "to have",
+        "in having",
+        "for having"
+      ],
+      "answerIndex": 2,
+      "en": "There is no point in having an expensive personal computer if you never use it."
+    },
+    {
+      "id": "164",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "I ①<u>look</u> forward ②<u>to see</u> you ③<u>in</u> Japan ④<u>sometime</u> soon.",
+      "rawAnswer": "②→to seeing",
+      "ja": "近いうちに日本であなたに会えることを楽しみにしています。",
+      "type": "error",
+      "en": "I look forward to seeing you in Japan sometime soon.",
+      "answerIndex": 1,
+      "correction": "to seeing"
+    },
+    {
+      "id": "165",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "She is not used to (　　) formal letters.",
+      "rawAnswer": "②",
+      "ja": "彼女は正式な手紙を書くことに慣れていない。",
+      "type": "choice",
+      "choices": [
+        "write",
+        "writing",
+        "writes",
+        "written"
+      ],
+      "answerIndex": 1,
+      "en": "She is not used to writing formal letters."
+    },
+    {
+      "id": "166",
+      "tags": [],
+      "question": "私は人前で話すのには不慣れです。（１語不要）\nI'm (in / not / public / speaking / to / accustomed / speak).",
+      "rawAnswer": "not accustomed to speaking in public（speak不要）",
+      "ja": "私は人前で話すのには不慣れです。（１語不要）",
+      "type": "ordering",
+      "answer": "not accustomed to speaking in public",
+      "pieces": [
+        "in",
+        "not",
+        "public",
+        "speaking",
+        "to",
+        "accustomed",
+        "speak"
+      ],
+      "en": "I'm not accustomed to speaking in public.",
+      "note": "speak不要"
+    },
+    {
+      "id": "167",
+      "tags": [],
+      "question": "She did not object (　　) late at night.",
+      "rawAnswer": "③",
+      "ja": "彼女は，私が夜遅くまで働くことに反対しなかった。",
+      "type": "choice",
+      "choices": [
+        "me work",
+        "to me work",
+        "to my working",
+        "my working"
+      ],
+      "answerIndex": 2,
+      "en": "She did not object to my working late at night."
+    },
+    {
+      "id": "168",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "When it comes (　　), John is definitely the best in class.",
+      "rawAnswer": "④",
+      "ja": "走ることとなると，ジョンは間違いなくクラスで一番だ。",
+      "type": "choice",
+      "choices": [
+        "for run",
+        "for running",
+        "to run",
+        "to running"
+      ],
+      "answerIndex": 3,
+      "en": "When it comes to running, John is definitely the best in class."
+    },
+    {
+      "id": "169",
+      "tags": [],
+      "question": "What do you say (　　) tennis on Sunday?",
+      "rawAnswer": "③",
+      "ja": "日曜日にテニスをしませんか。",
+      "type": "choice",
+      "choices": [
+        "about play",
+        "to play",
+        "to playing",
+        "for playing"
+      ],
+      "answerIndex": 2,
+      "en": "What do you say to playing tennis on Sunday?"
+    },
+    {
+      "id": "170",
+      "tags": [],
+      "question": "彼は学生の質問すべてに答えるのに苦労した。\nHe (all / answering / difficulty / had / questions / the) asked by the students.",
+      "rawAnswer": "had difficulty answering all the questions",
+      "ja": "彼は学生の質問すべてに答えるのに苦労した。",
+      "type": "ordering",
+      "answer": "had difficulty answering all the questions",
+      "pieces": [
+        "all",
+        "answering",
+        "difficulty",
+        "had",
+        "questions",
+        "the"
+      ],
+      "en": "He had difficulty answering all the questions asked by the students."
+    },
+    {
+      "id": "171",
+      "tags": [],
+      "question": "People often have great (　　) my handwriting.",
+      "rawAnswer": "③",
+      "ja": "人々は私の手書きの字を読むのにしばしば四苦八苦している。",
+      "type": "choice",
+      "choices": [
+        "reading to trouble",
+        "reading trouble",
+        "trouble reading",
+        "trouble to read"
+      ],
+      "answerIndex": 2,
+      "en": "People often have great trouble reading my handwriting."
+    },
+    {
+      "id": "172",
+      "tags": [],
+      "question": "They are very busy (　　) their homework, aren't they?",
+      "rawAnswer": "①",
+      "ja": "彼らは宿題を片付けるのに大忙しですね。",
+      "type": "choice",
+      "choices": [
+        "doing",
+        "to do",
+        "to doing",
+        "being done"
+      ],
+      "answerIndex": 0,
+      "en": "They are very busy doing their homework, aren't they?"
+    },
+    {
+      "id": "173",
+      "tags": [],
+      "question": "私はいつも宿題をするのに２時間を費やす。\nI usually (hours / my / doing / spend / two / homework).",
+      "rawAnswer": "spend two hours doing my homework",
+      "ja": "私はいつも宿題をするのに２時間を費やす。",
+      "type": "ordering",
+      "answer": "spend two hours doing my homework",
+      "pieces": [
+        "hours",
+        "my",
+        "doing",
+        "spend",
+        "two",
+        "homework"
+      ],
+      "en": "I usually spend two hours doing my homework."
+    },
+    {
+      "id": "174",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "There is (　　) when John will show up.",
+      "rawAnswer": "②",
+      "ja": "いつジョンが現れるかわからない（←いつジョンが現れるかを判断することはできない）。",
+      "type": "choice",
+      "choices": [
+        "telling not",
+        "no telling",
+        "not telling",
+        "not to tell"
+      ],
+      "answerIndex": 1,
+      "en": "There is no telling when John will show up."
+    },
+    {
+      "id": "175",
+      "tags": [],
+      "question": "喫煙が健康に悪いことは言うまでもない。\nIt (for / smoking / saying / goes / bad / without / is / that) one's health.",
+      "rawAnswer": "goes without saying that smoking is bad for",
+      "ja": "喫煙が健康に悪いことは言うまでもない。",
+      "type": "ordering",
+      "answer": "goes without saying that smoking is bad for",
+      "pieces": [
+        "for",
+        "smoking",
+        "saying",
+        "goes",
+        "bad",
+        "without",
+        "is",
+        "that"
+      ],
+      "en": "It goes without saying that smoking is bad for one's health."
+    },
+    {
+      "id": "176",
+      "tags": [
+        "超頻出"
+      ],
+      "question": "She didn't mean to make him feel like (　　).",
+      "rawAnswer": "③",
+      "ja": "彼女は，彼を泣きたい気分にさせるつもりはなかった。",
+      "type": "choice",
+      "choices": [
+        "cried",
+        "cry",
+        "crying",
+        "to cry"
+      ],
+      "answerIndex": 2,
+      "en": "She didn't mean to make him feel like crying."
+    },
+    {
+      "id": "177",
+      "tags": [],
+      "question": "(　　), she smiled quietly to herself.",
+      "rawAnswer": "①",
+      "ja": "そのニュースを聞くとすぐに，彼女はひとり静かに笑った。",
+      "type": "choice",
+      "choices": [
+        "On hearing the news",
+        "To hearing the news",
+        "With the news hearing",
+        "Of hearing the news"
+      ],
+      "answerIndex": 0,
+      "en": "On hearing the news, she smiled quietly to herself."
+    },
+    {
+      "id": "178",
+      "tags": [],
+      "question": "(　　) trying to make a decision, it is important to keep a proper sense of priority.",
+      "rawAnswer": "④",
+      "ja": "決断をしようとするときは，何を優先すべきかの正しい感覚を保つことが重要だ。",
+      "type": "choice",
+      "choices": [
+        "At",
+        "By",
+        "During",
+        "In"
+      ],
+      "answerIndex": 3,
+      "en": "In trying to make a decision, it is important to keep a proper sense of priority."
+    }
+  ]
+}
