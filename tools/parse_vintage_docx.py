@@ -126,11 +126,13 @@ def build_error_sentence(question, answer):
     if m:
         wrong_idx = CIRCLED.index(m.group(1))
         correction = m.group(2).strip()
+    # 音声用の文では '[better lives]' のような別解表記は外す
+    clean_correction = re.sub(r'\s*\[[^\]]*\]', '', correction).strip() if correction else correction
     sentence = question
     segs = re.findall(r'([①②③④])<u>(.*?)</u>', sentence)
     for marker, seg in segs:
         idx = CIRCLED.index(marker)
-        rep = correction if (wrong_idx is not None and idx == wrong_idx) else seg
+        rep = clean_correction if (wrong_idx is not None and idx == wrong_idx) else seg
         sentence = sentence.replace(f'{marker}<u>{seg}</u>', rep, 1)
     return re.sub(r'\s+', ' ', sentence).strip(), wrong_idx, correction
 
@@ -228,6 +230,13 @@ def parse_problem(num, lines):
             # 日本語文に対する英文選択問題は正解の選択肢を正解英文とする
             if not prob['en'] and idx is not None and len(prob['choices']) > idx:
                 prob['en'] = prob['choices'][idx]
+        # 言い換え行の先頭の ＝/= は音声用の文からは外す
+        prob['en'] = re.sub(r'^[=＝]\s*', '', prob['en'])
+        # 「続く文を選ぶ」問題 (■1574): 末尾の ... を正解の選択肢で置き換える
+        if re.search(r'(\.\.\.|…)\s*$', prob['en']) and idx is not None \
+                and len(prob['choices']) > idx:
+            prob['en'] = re.sub(r'(\.\.\.|…)\s*$', '', prob['en']).strip() \
+                + ' ' + prob['choices'][idx]
     elif has_ordering:
         prob['type'] = 'ordering'
         clean = strip_fuyou(answer)

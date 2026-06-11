@@ -416,7 +416,7 @@
       "rawAnswer": "④→a better life [better lives]",
       "ja": "人類の歴史が始まって以来，人々はより良い生活を求めて，ある地域から別の地域へと移動してきた。",
       "type": "error",
-      "en": "Since the dawn of human history, people have moved from one region to another in search of a better life [better lives].",
+      "en": "Since the dawn of human history, people have moved from one region to another in search of a better life.",
       "answerIndex": 3,
       "correction": "a better life [better lives]"
     },
@@ -488,7 +488,7 @@
         "the rooms are very clean."
       ],
       "answerIndex": 3,
-      "en": "Stay in that hotel. It's new and ..."
+      "en": "Stay in that hotel. It's new and the rooms are very clean."
     },
     {
       "id": "1575",

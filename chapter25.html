@@ -1099,7 +1099,10 @@
                     revealBtn.classList.add('hidden');
                     okBtn.classList.remove('hidden');
                     ngBtn.classList.remove('hidden');
-                    container.closest('.problem-item').classList.add('show-answer');
+                    const wrapper = container.closest('.problem-item');
+                    wrapper.classList.add('show-answer');
+                    const rbtn = wrapper.querySelector('.reveal-answer-btn');
+                    if (rbtn) rbtn.innerText = '解答を隠す';
                 };
                 okBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(true); };
                 ngBtn.onclick = (e) => { e.stopPropagation(); okBtn.disabled = ngBtn.disabled = true; onAnswered(false); };
@@ -1124,7 +1127,10 @@
             <input type="checkbox" class="problem-checkbox mt-1 h-5 w-5 rounded border-gray-300 text-green-600 focus:ring-green-500" data-id="${item.id}">
             <span class="text-sm font-bold text-gray-400 w-12 flex-shrink-0">${item.id}</span>
             <div class="flex-1 cursor-pointer min-w-0">
-                <div class="mb-2">${tagBadges(item)}</div>
+                <div class="mb-2 flex justify-between items-start gap-2">
+                    <div>${tagBadges(item)}</div>
+                    <button class="reveal-answer-btn flex-shrink-0 text-xs font-bold text-green-700 border border-green-300 rounded px-2 py-1 hover:bg-green-50 transition-colors">解答を見る</button>
+                </div>
                 <div class="question-area">${questionHtml(item)}</div>
                 <div class="interaction-area"></div>
                 <div class="answer-area mt-4 p-4 bg-green-50 border-l-4 border-green-500 rounded-r-lg">
@@ -1147,6 +1153,8 @@
                     div.classList.add('show-answer');
                     div.querySelector('.action-buttons').classList.remove('hidden');
                     div.querySelector('.action-buttons').classList.add('flex');
+                    const rbtn = div.querySelector('.reveal-answer-btn');
+                    if (rbtn) rbtn.innerText = '解答を隠す';
                     activateProblem(div);
                     if (window.saveSolvedResult) window.saveSolvedResult(item.id, correct);
                 });
@@ -1158,6 +1166,18 @@
                 item.addEventListener('click', (e) => {
                     if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' || e.target.classList.contains('piece-chip') || e.target.classList.contains('built-chip')) return;
                     activateProblem(e.currentTarget.closest('.problem-item'));
+                });
+
+                item.querySelector('.reveal-answer-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const wrapper = e.currentTarget.closest('.problem-item');
+                    const shown = wrapper.classList.toggle('show-answer');
+                    if (shown) {
+                        wrapper.querySelector('.action-buttons').classList.remove('hidden');
+                        wrapper.querySelector('.action-buttons').classList.add('flex');
+                        activateProblem(wrapper);
+                    }
+                    e.currentTarget.innerText = shown ? '解答を隠す' : '解答を見る';
                 });
 
                 item.querySelector('.play-sound-btn-local').addEventListener('click', (e) => {
